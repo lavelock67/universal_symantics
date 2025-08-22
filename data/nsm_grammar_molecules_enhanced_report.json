@@ -1,0 +1,356 @@
+{
+  "test_configuration": {
+    "num_test_texts": 10,
+    "languages": [
+      "en",
+      "es",
+      "fr"
+    ],
+    "timestamp": 1755884110.9666271
+  },
+  "grammar_analysis": {
+    "en": {
+      "validations": [
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No grammar molecules found for primitives: ['NEAR', 'HAVE']"
+          ],
+          "recommendations": [
+            "Add grammar molecules for these primitives"
+          ]
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.2642609775066376,
+          "structural_score": 0.0,
+          "semantic_score": 0.5285219550132751,
+          "issues": [
+            "Low legality score: 0.264"
+          ],
+          "recommendations": [
+            "Improve explication structure and semantics"
+          ]
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No grammar molecules found for primitives: ['SIMILAR', 'HAVE']"
+          ],
+          "recommendations": [
+            "Add grammar molecules for these primitives"
+          ]
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.47816271185874937,
+          "structural_score": 0.45,
+          "semantic_score": 0.5063254237174988,
+          "issues": [
+            "Low legality score: 0.478"
+          ],
+          "recommendations": [
+            "Improve explication structure and semantics"
+          ]
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No grammar molecules found for primitives: ['LONG', 'VERY']"
+          ],
+          "recommendations": [
+            "Add grammar molecules for these primitives"
+          ]
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        }
+      ],
+      "improvements": [],
+      "avg_legality": 0.0742423689365387,
+      "avg_structural": 0.045,
+      "avg_semantic": 0.1034847378730774
+    },
+    "es": {
+      "validations": [
+        {
+          "is_valid": true,
+          "legality_score": 0.7374219191074372,
+          "structural_score": 0.54,
+          "semantic_score": 0.9348438382148743,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": true,
+          "legality_score": 0.7375,
+          "structural_score": 0.475,
+          "semantic_score": 1.0,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": true,
+          "legality_score": 0.7374219191074372,
+          "structural_score": 0.54,
+          "semantic_score": 0.9348438382148743,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": true,
+          "legality_score": 0.7374219191074372,
+          "structural_score": 0.54,
+          "semantic_score": 0.9348438382148743,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        }
+      ],
+      "improvements": [],
+      "avg_legality": 0.2949765757322311,
+      "avg_structural": 0.20950000000000002,
+      "avg_semantic": 0.3804531514644623
+    },
+    "fr": {
+      "validations": [
+        {
+          "is_valid": true,
+          "legality_score": 0.7284975838661194,
+          "structural_score": 0.54,
+          "semantic_score": 0.9169951677322388,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": true,
+          "legality_score": 0.7455928218364716,
+          "structural_score": 0.54,
+          "semantic_score": 0.9511856436729431,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": true,
+          "legality_score": 0.7455928218364716,
+          "structural_score": 0.54,
+          "semantic_score": 0.9511856436729431,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": true,
+          "legality_score": 0.7455928218364716,
+          "structural_score": 0.54,
+          "semantic_score": 0.9511856436729431,
+          "issues": [],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        },
+        {
+          "is_valid": false,
+          "legality_score": 0.0,
+          "structural_score": 0.0,
+          "semantic_score": 0.0,
+          "issues": [
+            "No primitives detected in explication"
+          ],
+          "recommendations": []
+        }
+      ],
+      "improvements": [],
+      "avg_legality": 0.2965276049375534,
+      "avg_structural": 0.21600000000000003,
+      "avg_semantic": 0.3770552098751068
+    }
+  },
+  "molecule_usage": {
+    "has_property": 4,
+    "tiene_propiedad": 4,
+    "a_propriete": 4,
+    "at_location": 1,
+    "similar_to": 1,
+    "esta_en": 1,
+    "similar_a": 1,
+    "est_a": 1,
+    "similaire_a": 1
+  },
+  "improvement_metrics": {
+    "avg_legality": 0.22191551653544112,
+    "avg_structural": 0.15683333333333335,
+    "avg_semantic": 0.28699769973754885,
+    "valid_explications": 8,
+    "total_explications": 30
+  },
+  "recommendations": [
+    "Low average legality score - focus on improving explication structure",
+    "Low structural score - add more grammar molecules for common patterns",
+    "Low semantic score - improve semantic coherence in explications",
+    "Most used molecule: has_property (4 times)",
+    "Low validity rate (26.7%) - improve grammar validation"
+  ]
+}

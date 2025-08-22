@@ -1,0 +1,159 @@
+{
+  "test_configuration": {
+    "use_sample_data": true,
+    "timestamp": 1755884539.165267
+  },
+  "uds_statistics": {
+    "total_graphs": 5,
+    "attribute_counts": {
+      "agent": 4,
+      "patient": 3,
+      "manner": 3,
+      "location": 2,
+      "tense": 5,
+      "aspect": 4,
+      "goal": 1,
+      "theme": 1,
+      "property": 1,
+      "time": 2,
+      "polarity": 2,
+      "modality": 1
+    },
+    "attribute_values": {
+      "agent": [
+        "children",
+        "cat",
+        "she",
+        "he"
+      ],
+      "patient": [
+        "mouse",
+        "project",
+        "book"
+      ],
+      "manner": [
+        "quickly",
+        "carefully",
+        "happily"
+      ],
+      "location": [
+        "park",
+        "garden"
+      ],
+      "tense": [
+        "future",
+        "present",
+        "past"
+      ],
+      "aspect": [
+        "perfective",
+        "imperfective"
+      ],
+      "goal": [
+        "shelf"
+      ],
+      "theme": [
+        "weather"
+      ],
+      "property": [
+        "cold"
+      ],
+      "time": [
+        "tomorrow",
+        "Friday"
+      ],
+      "polarity": [
+        "positive"
+      ],
+      "modality": [
+        "necessity"
+      ]
+    },
+    "category_distribution": {
+      "semantic": 6,
+      "temporal": 2
+    }
+  },
+  "idea_primes": [
+    {
+      "value": "past",
+      "attribute": "tense",
+      "frequency": 3,
+      "category": "temporal",
+      "semantic_score": 0.9200051426887512,
+      "nsm_compatibility": 0.3,
+      "confidence": 0.5480020642280579
+    },
+    {
+      "value": "positive",
+      "attribute": "polarity",
+      "frequency": 2,
+      "category": "general",
+      "semantic_score": 0.9386803507804871,
+      "nsm_compatibility": 0.3,
+      "confidence": 0.5354721546173096
+    },
+    {
+      "value": "perfective",
+      "attribute": "aspect",
+      "frequency": 2,
+      "category": "temporal",
+      "semantic_score": 0.9295979142189026,
+      "nsm_compatibility": 0.3,
+      "confidence": 0.5318391919136047
+    },
+    {
+      "value": "imperfective",
+      "attribute": "aspect",
+      "frequency": 2,
+      "category": "temporal",
+      "semantic_score": 0.9267677664756775,
+      "nsm_compatibility": 0.3,
+      "confidence": 0.5307071208953857
+    }
+  ],
+  "prime_candidates": [],
+  "mining_analysis": {
+    "total_idea_primes": 4,
+    "total_candidates": 0,
+    "category_distribution": {
+      "temporal": 3,
+      "general": 1
+    },
+    "confidence_distribution": {
+      "0.5": 4
+    },
+    "semantic_score_distribution": {
+      "0.9": 4
+    },
+    "nsm_compatibility_distribution": {
+      "0.3": 4
+    },
+    "top_candidates": [],
+    "category_analysis": {
+      "general": {
+        "total_primes": 1,
+        "total_candidates": 0,
+        "avg_confidence": 0.5354721546173096,
+        "avg_semantic_score": 0.9386803507804871,
+        "avg_nsm_compatibility": 0.3
+      },
+      "temporal": {
+        "total_primes": 3,
+        "total_candidates": 0,
+        "avg_confidence": 0.5368494391441345,
+        "avg_semantic_score": 0.9254569411277771,
+        "avg_nsm_compatibility": 0.3
+      }
+    }
+  },
+  "recommendations": [
+    "Low number of prime candidates - consider lowering confidence threshold",
+    "Low number of idea-primes - consider expanding UDS dataset",
+    "Low confidence for general category (53.5%) - improve semantic analysis",
+    "Low NSM compatibility for general category (30.0%) - refine primitive patterns",
+    "Low confidence for temporal category (53.7%) - improve semantic analysis",
+    "Low NSM compatibility for temporal category (30.0%) - refine primitive patterns",
+    "Sparse confidence distribution - consider adjusting mining parameters"
+  ]
+}
