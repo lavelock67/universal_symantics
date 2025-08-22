@@ -1,0 +1,1452 @@
+{
+  "mismatch_analysis": {
+    "nsm_primitives_count": 73,
+    "conceptnet_relations_count": 32,
+    "mapping_coverage": {
+      "nsm_to_conceptnet": 0.4794520547945205,
+      "conceptnet_to_nsm": 0.53125
+    },
+    "unmapped_nsm": [
+      "I",
+      "YOU",
+      "SOMEONE",
+      "PEOPLE",
+      "SOMETHING",
+      "BODY",
+      "THIS",
+      "ONE",
+      "TWO",
+      "SOME",
+      "ALL",
+      "MANY",
+      "MUCH",
+      "FEW",
+      "LITTLE",
+      "GOOD",
+      "BAD",
+      "BIG",
+      "SMALL",
+      "LONG",
+      "SHORT",
+      "THINK",
+      "KNOW",
+      "FEEL",
+      "SEE",
+      "HEAR",
+      "SAY",
+      "WORDS",
+      "TRUE",
+      "THERE_IS",
+      "A_LONG_TIME",
+      "A_SHORT_TIME",
+      "FOR_SOME_TIME",
+      "MOMENT",
+      "MAYBE",
+      "VERY",
+      "MORE",
+      "REALLY"
+    ],
+    "unmapped_conceptnet": [
+      "CausesDesire",
+      "CreatedBy",
+      "DefinedAs",
+      "DerivedFrom",
+      "Entails",
+      "EtymologicallyDerivedFrom",
+      "FormOf",
+      "HasFirstSubevent",
+      "MadeOf",
+      "MannerOf",
+      "MotivatedByGoal",
+      "NotDesires",
+      "ObstructedBy",
+      "ReceivesAction",
+      "SymbolOf"
+    ],
+    "mapping_quality": {
+      "direct_mappings": 28,
+      "indirect_mappings": 7,
+      "fallback_mappings": 38
+    },
+    "recommendations": [
+      "Low NSM to ConceptNet mapping coverage (47.9%) - many NSM primitives lack proper mappings",
+      "38 NSM primitives lack ConceptNet mappings - need to add these relations",
+      "15 ConceptNet relations lack NSM mappings - need to add NSM primitives",
+      "38 NSM primitives only have fallback 'RelatedTo' mappings - need specific mappings",
+      "IMPORTANT: Moderate mapping coverage - significant work needed"
+    ]
+  },
+  "aligned_database": {
+    "version": "1.0.0",
+    "description": "Aligned primitive database combining NSM primitives and ConceptNet relations",
+    "primitives": {
+      "I": {
+        "type": "nsm",
+        "category": "substantive",
+        "arity": 1,
+        "description": "First person singular",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "YOU": {
+        "type": "nsm",
+        "category": "substantive",
+        "arity": 1,
+        "description": "Second person",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "SOMEONE": {
+        "type": "nsm",
+        "category": "substantive",
+        "arity": 1,
+        "description": "Person reference",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "PEOPLE": {
+        "type": "nsm",
+        "category": "substantive",
+        "arity": 1,
+        "description": "Multiple persons",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "SOMETHING": {
+        "type": "nsm",
+        "category": "substantive",
+        "arity": 1,
+        "description": "Thing reference",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "BODY": {
+        "type": "nsm",
+        "category": "substantive",
+        "arity": 1,
+        "description": "Physical body",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "THIS": {
+        "type": "nsm",
+        "category": "determiner",
+        "arity": 1,
+        "description": "Proximal demonstrative",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "THE_SAME": {
+        "type": "nsm",
+        "category": "determiner",
+        "arity": 2,
+        "description": "Identity relation",
+        "conceptnet_mappings": [
+          "Synonym"
+        ]
+      },
+      "OTHER": {
+        "type": "nsm",
+        "category": "determiner",
+        "arity": 1,
+        "description": "Different from current",
+        "conceptnet_mappings": [
+          "DistinctFrom"
+        ]
+      },
+      "ONE": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Singular quantity",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "TWO": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Dual quantity",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "SOME": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Indefinite quantity",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "ALL": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Universal quantity",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "MANY": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Large quantity",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "MUCH": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Large amount",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "FEW": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Small quantity",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "LITTLE": {
+        "type": "nsm",
+        "category": "quantifier",
+        "arity": 1,
+        "description": "Small amount",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "GOOD": {
+        "type": "nsm",
+        "category": "evaluator",
+        "arity": 1,
+        "description": "Positive evaluation",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "BAD": {
+        "type": "nsm",
+        "category": "evaluator",
+        "arity": 1,
+        "description": "Negative evaluation",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "BIG": {
+        "type": "nsm",
+        "category": "descriptor",
+        "arity": 1,
+        "description": "Large size",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "SMALL": {
+        "type": "nsm",
+        "category": "descriptor",
+        "arity": 1,
+        "description": "Small size",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "LONG": {
+        "type": "nsm",
+        "category": "descriptor",
+        "arity": 1,
+        "description": "Extended dimension",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "SHORT": {
+        "type": "nsm",
+        "category": "descriptor",
+        "arity": 1,
+        "description": "Reduced dimension",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "THINK": {
+        "type": "nsm",
+        "category": "mental",
+        "arity": 2,
+        "description": "Cognitive process",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "KNOW": {
+        "type": "nsm",
+        "category": "mental",
+        "arity": 2,
+        "description": "Knowledge state",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "WANT": {
+        "type": "nsm",
+        "category": "mental",
+        "arity": 2,
+        "description": "Desire state",
+        "conceptnet_mappings": [
+          "Desires"
+        ]
+      },
+      "FEEL": {
+        "type": "nsm",
+        "category": "mental",
+        "arity": 1,
+        "description": "Emotional state",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "SEE": {
+        "type": "nsm",
+        "category": "mental",
+        "arity": 2,
+        "description": "Visual perception",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "HEAR": {
+        "type": "nsm",
+        "category": "mental",
+        "arity": 2,
+        "description": "Auditory perception",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "SAY": {
+        "type": "nsm",
+        "category": "speech",
+        "arity": 2,
+        "description": "Verbal communication",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "WORDS": {
+        "type": "nsm",
+        "category": "speech",
+        "arity": 1,
+        "description": "Verbal content",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "TRUE": {
+        "type": "nsm",
+        "category": "speech",
+        "arity": 1,
+        "description": "Truth value",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "DO": {
+        "type": "nsm",
+        "category": "action",
+        "arity": 2,
+        "description": "Action performance",
+        "conceptnet_mappings": [
+          "UsedFor",
+          "CapableOf"
+        ]
+      },
+      "HAPPEN": {
+        "type": "nsm",
+        "category": "action",
+        "arity": 1,
+        "description": "Event occurrence",
+        "conceptnet_mappings": [
+          "Causes",
+          "HasSubevent"
+        ]
+      },
+      "MOVE": {
+        "type": "nsm",
+        "category": "action",
+        "arity": 2,
+        "description": "Spatial movement",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "TOUCH": {
+        "type": "nsm",
+        "category": "action",
+        "arity": 2,
+        "description": "Physical contact",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "BE_SOMEWHERE": {
+        "type": "nsm",
+        "category": "location",
+        "arity": 2,
+        "description": "Spatial location",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "THERE_IS": {
+        "type": "nsm",
+        "category": "existence",
+        "arity": 1,
+        "description": "Existence assertion",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "HAVE": {
+        "type": "nsm",
+        "category": "possession",
+        "arity": 2,
+        "description": "Possession relation",
+        "conceptnet_mappings": [
+          "HasA",
+          "HasProperty"
+        ]
+      },
+      "BE_SOMEONE": {
+        "type": "nsm",
+        "category": "specification",
+        "arity": 2,
+        "description": "Identity specification",
+        "conceptnet_mappings": [
+          "IsA"
+        ]
+      },
+      "BE_SOMETHING": {
+        "type": "nsm",
+        "category": "specification",
+        "arity": 2,
+        "description": "Property specification",
+        "conceptnet_mappings": [
+          "IsA",
+          "HasProperty"
+        ]
+      },
+      "BE_LIKE": {
+        "type": "nsm",
+        "category": "specification",
+        "arity": 2,
+        "description": "Similarity specification",
+        "conceptnet_mappings": [
+          "SimilarTo"
+        ]
+      },
+      "LIVE": {
+        "type": "nsm",
+        "category": "life",
+        "arity": 2,
+        "description": "Life state",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "DIE": {
+        "type": "nsm",
+        "category": "life",
+        "arity": 1,
+        "description": "Death event",
+        "conceptnet_mappings": [
+          "Causes"
+        ]
+      },
+      "WHEN_TIME": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 2,
+        "description": "Temporal location",
+        "conceptnet_mappings": [
+          "HasContext"
+        ]
+      },
+      "NOW": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 1,
+        "description": "Present time",
+        "conceptnet_mappings": [
+          "HasContext"
+        ]
+      },
+      "BEFORE": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 2,
+        "description": "Temporal precedence",
+        "conceptnet_mappings": [
+          "HasPrerequisite"
+        ]
+      },
+      "AFTER": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 2,
+        "description": "Temporal succession",
+        "conceptnet_mappings": [
+          "Causes"
+        ]
+      },
+      "A_LONG_TIME": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 1,
+        "description": "Extended duration",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "A_SHORT_TIME": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 1,
+        "description": "Brief duration",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "FOR_SOME_TIME": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 1,
+        "description": "Indefinite duration",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "MOMENT": {
+        "type": "nsm",
+        "category": "time",
+        "arity": 1,
+        "description": "Instantaneous time",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "WHERE": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 2,
+        "description": "Spatial location",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "HERE": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 1,
+        "description": "Proximal location",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "ABOVE": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 2,
+        "description": "Vertical position",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "BELOW": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 2,
+        "description": "Vertical position",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "FAR": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 1,
+        "description": "Distant location",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "NEAR": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 1,
+        "description": "Proximal location",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "SIDE": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 1,
+        "description": "Lateral position",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "INSIDE": {
+        "type": "nsm",
+        "category": "space",
+        "arity": 2,
+        "description": "Containment relation",
+        "conceptnet_mappings": [
+          "AtLocation"
+        ]
+      },
+      "NOT": {
+        "type": "nsm",
+        "category": "logical",
+        "arity": 1,
+        "description": "Negation",
+        "conceptnet_mappings": [
+          "Antonym",
+          "DistinctFrom"
+        ]
+      },
+      "MAYBE": {
+        "type": "nsm",
+        "category": "logical",
+        "arity": 1,
+        "description": "Possibility",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "CAN": {
+        "type": "nsm",
+        "category": "logical",
+        "arity": 2,
+        "description": "Ability",
+        "conceptnet_mappings": [
+          "CapableOf"
+        ]
+      },
+      "BECAUSE": {
+        "type": "nsm",
+        "category": "logical",
+        "arity": 2,
+        "description": "Causation",
+        "conceptnet_mappings": [
+          "Causes",
+          "HasPrerequisite"
+        ]
+      },
+      "IF": {
+        "type": "nsm",
+        "category": "logical",
+        "arity": 2,
+        "description": "Conditional",
+        "conceptnet_mappings": [
+          "HasPrerequisite"
+        ]
+      },
+      "VERY": {
+        "type": "nsm",
+        "category": "augmentor",
+        "arity": 1,
+        "description": "Intensification",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "MORE": {
+        "type": "nsm",
+        "category": "augmentor",
+        "arity": 2,
+        "description": "Comparative",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "LIKE": {
+        "type": "nsm",
+        "category": "augmentor",
+        "arity": 2,
+        "description": "Similarity",
+        "conceptnet_mappings": [
+          "SimilarTo"
+        ]
+      },
+      "KIND": {
+        "type": "nsm",
+        "category": "taxonomy",
+        "arity": 2,
+        "description": "Taxonomic relation",
+        "conceptnet_mappings": [
+          "IsA"
+        ]
+      },
+      "PART": {
+        "type": "nsm",
+        "category": "partonomy",
+        "arity": 2,
+        "description": "Part-whole relation",
+        "conceptnet_mappings": [
+          "PartOf"
+        ]
+      },
+      "SIMILAR": {
+        "type": "nsm",
+        "category": "similarity",
+        "arity": 2,
+        "description": "Similarity relation",
+        "conceptnet_mappings": [
+          "SimilarTo"
+        ]
+      },
+      "DIFFERENT": {
+        "type": "nsm",
+        "category": "similarity",
+        "arity": 2,
+        "description": "Difference relation",
+        "conceptnet_mappings": [
+          "DistinctFrom",
+          "Antonym"
+        ]
+      },
+      "REALLY": {
+        "type": "nsm",
+        "category": "intensifier",
+        "arity": 1,
+        "description": "Emphasis",
+        "conceptnet_mappings": [
+          "RelatedTo"
+        ]
+      },
+      "Antonym": {
+        "type": "conceptnet",
+        "category": "logical",
+        "arity": 2,
+        "description": "Opposite meaning",
+        "nsm_mappings": [
+          "NOT",
+          "DIFFERENT"
+        ]
+      },
+      "AtLocation": {
+        "type": "conceptnet",
+        "category": "spatial",
+        "arity": 2,
+        "description": "Spatial location",
+        "nsm_mappings": [
+          "MOVE",
+          "TOUCH",
+          "BE_SOMEWHERE",
+          "LIVE",
+          "WHERE",
+          "HERE",
+          "ABOVE",
+          "BELOW",
+          "FAR",
+          "NEAR",
+          "SIDE",
+          "INSIDE"
+        ]
+      },
+      "CapableOf": {
+        "type": "conceptnet",
+        "category": "cognitive",
+        "arity": 2,
+        "description": "Ability relation",
+        "nsm_mappings": [
+          "CAN",
+          "DO"
+        ]
+      },
+      "Causes": {
+        "type": "conceptnet",
+        "category": "causal",
+        "arity": 2,
+        "description": "Causal relation",
+        "nsm_mappings": [
+          "BECAUSE",
+          "HAPPEN",
+          "DIE",
+          "AFTER"
+        ]
+      },
+      "CausesDesire": {
+        "type": "conceptnet",
+        "category": "informational",
+        "arity": 2,
+        "description": "Desire causation",
+        "nsm_mappings": []
+      },
+      "CreatedBy": {
+        "type": "conceptnet",
+        "category": "causal",
+        "arity": 2,
+        "description": "Creation relation",
+        "nsm_mappings": []
+      },
+      "DefinedAs": {
+        "type": "conceptnet",
+        "category": "informational",
+        "arity": 2,
+        "description": "Definition relation",
+        "nsm_mappings": []
+      },
+      "DerivedFrom": {
+        "type": "conceptnet",
+        "category": "causal",
+        "arity": 2,
+        "description": "Derivation relation",
+        "nsm_mappings": []
+      },
+      "Desires": {
+        "type": "conceptnet",
+        "category": "cognitive",
+        "arity": 2,
+        "description": "Desire relation",
+        "nsm_mappings": [
+          "WANT"
+        ]
+      },
+      "DistinctFrom": {
+        "type": "conceptnet",
+        "category": "logical",
+        "arity": 2,
+        "description": "Distinction relation",
+        "nsm_mappings": [
+          "NOT",
+          "DIFFERENT",
+          "OTHER"
+        ]
+      },
+      "Entails": {
+        "type": "conceptnet",
+        "category": "logical",
+        "arity": 2,
+        "description": "Entailment relation",
+        "nsm_mappings": []
+      },
+      "EtymologicallyDerivedFrom": {
+        "type": "conceptnet",
+        "category": "causal",
+        "arity": 2,
+        "description": "Etymological relation",
+        "nsm_mappings": []
+      },
+      "FormOf": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Form relation",
+        "nsm_mappings": []
+      },
+      "HasA": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Possession relation",
+        "nsm_mappings": [
+          "HAVE"
+        ]
+      },
+      "HasContext": {
+        "type": "conceptnet",
+        "category": "informational",
+        "arity": 2,
+        "description": "Context relation",
+        "nsm_mappings": [
+          "WHEN_TIME",
+          "NOW"
+        ]
+      },
+      "HasFirstSubevent": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Subevent relation",
+        "nsm_mappings": []
+      },
+      "HasPrerequisite": {
+        "type": "conceptnet",
+        "category": "causal",
+        "arity": 2,
+        "description": "Prerequisite relation",
+        "nsm_mappings": [
+          "BECAUSE",
+          "BEFORE",
+          "IF"
+        ]
+      },
+      "HasProperty": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Property relation",
+        "nsm_mappings": [
+          "HAVE",
+          "BE_SOMETHING"
+        ]
+      },
+      "HasSubevent": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Subevent relation",
+        "nsm_mappings": [
+          "HAPPEN"
+        ]
+      },
+      "IsA": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Taxonomic relation",
+        "nsm_mappings": [
+          "KIND",
+          "BE_SOMEONE",
+          "BE_SOMETHING"
+        ]
+      },
+      "MadeOf": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Material relation",
+        "nsm_mappings": []
+      },
+      "MannerOf": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Manner relation",
+        "nsm_mappings": []
+      },
+      "MotivatedByGoal": {
+        "type": "conceptnet",
+        "category": "cognitive",
+        "arity": 2,
+        "description": "Goal motivation",
+        "nsm_mappings": []
+      },
+      "NotDesires": {
+        "type": "conceptnet",
+        "category": "cognitive",
+        "arity": 2,
+        "description": "Negative desire",
+        "nsm_mappings": []
+      },
+      "ObstructedBy": {
+        "type": "conceptnet",
+        "category": "causal",
+        "arity": 2,
+        "description": "Obstruction relation",
+        "nsm_mappings": []
+      },
+      "PartOf": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Part-whole relation",
+        "nsm_mappings": [
+          "PART"
+        ]
+      },
+      "ReceivesAction": {
+        "type": "conceptnet",
+        "category": "structural",
+        "arity": 2,
+        "description": "Action reception",
+        "nsm_mappings": []
+      },
+      "RelatedTo": {
+        "type": "conceptnet",
+        "category": "informational",
+        "arity": 2,
+        "description": "General relation",
+        "nsm_mappings": [
+          "THERE_IS",
+          "THINK",
+          "KNOW",
+          "FEEL",
+          "SEE",
+          "SAY",
+          "MAYBE",
+          "VERY",
+          "MORE",
+          "REALLY",
+          "ALL",
+          "SOME",
+          "MANY",
+          "FEW",
+          "LITTLE",
+          "ONE",
+          "TWO",
+          "GOOD",
+          "BAD",
+          "BIG",
+          "SMALL",
+          "LONG",
+          "SHORT",
+          "I",
+          "YOU",
+          "SOMEONE",
+          "PEOPLE",
+          "SOMETHING",
+          "BODY",
+          "THIS",
+          "A_LONG_TIME",
+          "A_SHORT_TIME",
+          "FOR_SOME_TIME",
+          "MOMENT",
+          "WORDS",
+          "TRUE"
+        ]
+      },
+      "SimilarTo": {
+        "type": "conceptnet",
+        "category": "logical",
+        "arity": 2,
+        "description": "Similarity relation",
+        "nsm_mappings": [
+          "LIKE",
+          "SIMILAR",
+          "BE_LIKE"
+        ]
+      },
+      "SymbolOf": {
+        "type": "conceptnet",
+        "category": "informational",
+        "arity": 2,
+        "description": "Symbol relation",
+        "nsm_mappings": []
+      },
+      "Synonym": {
+        "type": "conceptnet",
+        "category": "logical",
+        "arity": 2,
+        "description": "Synonymy relation",
+        "nsm_mappings": [
+          "THE_SAME"
+        ]
+      },
+      "UsedFor": {
+        "type": "conceptnet",
+        "category": "functional",
+        "arity": 2,
+        "description": "Purpose relation",
+        "nsm_mappings": [
+          "DO"
+        ]
+      }
+    },
+    "mappings": {
+      "nsm_to_conceptnet": {
+        "NOT": [
+          "Antonym",
+          "DistinctFrom"
+        ],
+        "BECAUSE": [
+          "Causes",
+          "HasPrerequisite"
+        ],
+        "LIKE": [
+          "SimilarTo"
+        ],
+        "SIMILAR": [
+          "SimilarTo"
+        ],
+        "DIFFERENT": [
+          "DistinctFrom",
+          "Antonym"
+        ],
+        "PART": [
+          "PartOf"
+        ],
+        "KIND": [
+          "IsA"
+        ],
+        "HAVE": [
+          "HasA",
+          "HasProperty"
+        ],
+        "THERE_IS": [
+          "RelatedTo"
+        ],
+        "CAN": [
+          "CapableOf"
+        ],
+        "WANT": [
+          "Desires"
+        ],
+        "THINK": [
+          "RelatedTo"
+        ],
+        "KNOW": [
+          "RelatedTo"
+        ],
+        "FEEL": [
+          "RelatedTo"
+        ],
+        "SEE": [
+          "RelatedTo"
+        ],
+        "SAY": [
+          "RelatedTo"
+        ],
+        "DO": [
+          "UsedFor",
+          "CapableOf"
+        ],
+        "HAPPEN": [
+          "Causes",
+          "HasSubevent"
+        ],
+        "MOVE": [
+          "AtLocation"
+        ],
+        "TOUCH": [
+          "AtLocation"
+        ],
+        "BE_SOMEWHERE": [
+          "AtLocation"
+        ],
+        "BE_SOMEONE": [
+          "IsA"
+        ],
+        "BE_SOMETHING": [
+          "IsA",
+          "HasProperty"
+        ],
+        "BE_LIKE": [
+          "SimilarTo"
+        ],
+        "LIVE": [
+          "AtLocation"
+        ],
+        "DIE": [
+          "Causes"
+        ],
+        "WHEN_TIME": [
+          "HasContext"
+        ],
+        "NOW": [
+          "HasContext"
+        ],
+        "BEFORE": [
+          "HasPrerequisite"
+        ],
+        "AFTER": [
+          "Causes"
+        ],
+        "WHERE": [
+          "AtLocation"
+        ],
+        "HERE": [
+          "AtLocation"
+        ],
+        "ABOVE": [
+          "AtLocation"
+        ],
+        "BELOW": [
+          "AtLocation"
+        ],
+        "FAR": [
+          "AtLocation"
+        ],
+        "NEAR": [
+          "AtLocation"
+        ],
+        "SIDE": [
+          "AtLocation"
+        ],
+        "INSIDE": [
+          "AtLocation"
+        ],
+        "MAYBE": [
+          "RelatedTo"
+        ],
+        "IF": [
+          "HasPrerequisite"
+        ],
+        "VERY": [
+          "RelatedTo"
+        ],
+        "MORE": [
+          "RelatedTo"
+        ],
+        "REALLY": [
+          "RelatedTo"
+        ],
+        "ALL": [
+          "RelatedTo"
+        ],
+        "SOME": [
+          "RelatedTo"
+        ],
+        "MANY": [
+          "RelatedTo"
+        ],
+        "FEW": [
+          "RelatedTo"
+        ],
+        "LITTLE": [
+          "RelatedTo"
+        ],
+        "ONE": [
+          "RelatedTo"
+        ],
+        "TWO": [
+          "RelatedTo"
+        ],
+        "GOOD": [
+          "RelatedTo"
+        ],
+        "BAD": [
+          "RelatedTo"
+        ],
+        "BIG": [
+          "RelatedTo"
+        ],
+        "SMALL": [
+          "RelatedTo"
+        ],
+        "LONG": [
+          "RelatedTo"
+        ],
+        "SHORT": [
+          "RelatedTo"
+        ],
+        "I": [
+          "RelatedTo"
+        ],
+        "YOU": [
+          "RelatedTo"
+        ],
+        "SOMEONE": [
+          "RelatedTo"
+        ],
+        "PEOPLE": [
+          "RelatedTo"
+        ],
+        "SOMETHING": [
+          "RelatedTo"
+        ],
+        "BODY": [
+          "RelatedTo"
+        ],
+        "THIS": [
+          "RelatedTo"
+        ],
+        "THE_SAME": [
+          "Synonym"
+        ],
+        "OTHER": [
+          "DistinctFrom"
+        ],
+        "A_LONG_TIME": [
+          "RelatedTo"
+        ],
+        "A_SHORT_TIME": [
+          "RelatedTo"
+        ],
+        "FOR_SOME_TIME": [
+          "RelatedTo"
+        ],
+        "MOMENT": [
+          "RelatedTo"
+        ],
+        "WORDS": [
+          "RelatedTo"
+        ],
+        "TRUE": [
+          "RelatedTo"
+        ]
+      },
+      "conceptnet_to_nsm": {
+        "Antonym": [
+          "NOT",
+          "DIFFERENT"
+        ],
+        "DistinctFrom": [
+          "NOT",
+          "DIFFERENT",
+          "OTHER"
+        ],
+        "Causes": [
+          "BECAUSE",
+          "HAPPEN",
+          "DIE",
+          "AFTER"
+        ],
+        "HasPrerequisite": [
+          "BECAUSE",
+          "BEFORE",
+          "IF"
+        ],
+        "SimilarTo": [
+          "LIKE",
+          "SIMILAR",
+          "BE_LIKE"
+        ],
+        "PartOf": [
+          "PART"
+        ],
+        "IsA": [
+          "KIND",
+          "BE_SOMEONE",
+          "BE_SOMETHING"
+        ],
+        "HasA": [
+          "HAVE"
+        ],
+        "HasProperty": [
+          "HAVE",
+          "BE_SOMETHING"
+        ],
+        "RelatedTo": [
+          "THERE_IS",
+          "THINK",
+          "KNOW",
+          "FEEL",
+          "SEE",
+          "SAY",
+          "MAYBE",
+          "VERY",
+          "MORE",
+          "REALLY",
+          "ALL",
+          "SOME",
+          "MANY",
+          "FEW",
+          "LITTLE",
+          "ONE",
+          "TWO",
+          "GOOD",
+          "BAD",
+          "BIG",
+          "SMALL",
+          "LONG",
+          "SHORT",
+          "I",
+          "YOU",
+          "SOMEONE",
+          "PEOPLE",
+          "SOMETHING",
+          "BODY",
+          "THIS",
+          "A_LONG_TIME",
+          "A_SHORT_TIME",
+          "FOR_SOME_TIME",
+          "MOMENT",
+          "WORDS",
+          "TRUE"
+        ],
+        "CapableOf": [
+          "CAN",
+          "DO"
+        ],
+        "Desires": [
+          "WANT"
+        ],
+        "UsedFor": [
+          "DO"
+        ],
+        "HasSubevent": [
+          "HAPPEN"
+        ],
+        "AtLocation": [
+          "MOVE",
+          "TOUCH",
+          "BE_SOMEWHERE",
+          "LIVE",
+          "WHERE",
+          "HERE",
+          "ABOVE",
+          "BELOW",
+          "FAR",
+          "NEAR",
+          "SIDE",
+          "INSIDE"
+        ],
+        "HasContext": [
+          "WHEN_TIME",
+          "NOW"
+        ],
+        "Synonym": [
+          "THE_SAME"
+        ]
+      }
+    },
+    "categories": {
+      "nsm_categories": [
+        "specification",
+        "partonomy",
+        "logical",
+        "life",
+        "descriptor",
+        "intensifier",
+        "existence",
+        "space",
+        "time",
+        "determiner",
+        "quantifier",
+        "mental",
+        "similarity",
+        "taxonomy",
+        "augmentor",
+        "evaluator",
+        "substantive",
+        "location",
+        "speech",
+        "action",
+        "possession"
+      ],
+      "conceptnet_categories": [
+        "causal",
+        "spatial",
+        "functional",
+        "informational",
+        "cognitive",
+        "structural",
+        "logical"
+      ]
+    }
+  },
+  "recommendations": [
+    "Low NSM to ConceptNet mapping coverage (47.9%) - many NSM primitives lack proper mappings",
+    "38 NSM primitives lack ConceptNet mappings - need to add these relations",
+    "15 ConceptNet relations lack NSM mappings - need to add NSM primitives",
+    "38 NSM primitives only have fallback 'RelatedTo' mappings - need specific mappings",
+    "IMPORTANT: Moderate mapping coverage - significant work needed",
+    "Created aligned database with 105 primitives",
+    "Use aligned database for consistent primitive detection across both systems",
+    "Implement detection system that can handle both NSM primitives and ConceptNet relations",
+    "Create unified primitive detection interface that maps between approaches",
+    "Update existing detection code to use aligned primitive database"
+  ]
+}
