@@ -1,0 +1,1634 @@
+{
+  "test_configuration": {
+    "num_test_texts": 10,
+    "languages": [
+      "en",
+      "es",
+      "fr"
+    ],
+    "timestamp": 1755884908.323085
+  },
+  "explication_results": [
+    {
+      "text": "The red car is parked near the building",
+      "language": "en",
+      "primitives": [
+        "HasProperty",
+        "NEAR"
+      ],
+      "explication": "HasProperty AND NEAR(The red car is parked near the building)",
+      "confidence": 1.0,
+      "method": "semantic"
+    },
+    {
+      "text": "The cat is on the mat",
+      "language": "en",
+      "primitives": [
+        "HasProperty",
+        "AtLocation"
+      ],
+      "explication": "HasProperty AND AtLocation(The cat is on the mat)",
+      "confidence": 0.96726496219635,
+      "method": "semantic"
+    },
+    {
+      "text": "This is similar to that",
+      "language": "en",
+      "primitives": [
+        "HasProperty",
+        "SIMILAR",
+        "THIS",
+        "SimilarTo"
+      ],
+      "explication": "HasProperty AND SIMILAR AND THIS AND SimilarTo(This is similar to that)",
+      "confidence": 0.9859031915664673,
+      "method": "semantic"
+    },
+    {
+      "text": "The book contains important information",
+      "language": "en",
+      "primitives": [],
+      "explication": "unknown(The book contains important information)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The weather is cold today",
+      "language": "en",
+      "primitives": [
+        "HasProperty"
+      ],
+      "explication": "HasProperty(The weather is cold today)",
+      "confidence": 0.8837793827056885,
+      "method": "semantic"
+    },
+    {
+      "text": "She works at the hospital",
+      "language": "en",
+      "primitives": [],
+      "explication": "unknown(She works at the hospital)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The movie was very long",
+      "language": "en",
+      "primitives": [
+        "LONG",
+        "VERY"
+      ],
+      "explication": "LONG AND VERY(The movie was very long)",
+      "confidence": 1.0,
+      "method": "semantic"
+    },
+    {
+      "text": "I need to buy groceries",
+      "language": "en",
+      "primitives": [
+        "I"
+      ],
+      "explication": "I(I need to buy groceries)",
+      "confidence": 0.9996697068214416,
+      "method": "semantic"
+    },
+    {
+      "text": "Children play in the park",
+      "language": "en",
+      "primitives": [],
+      "explication": "unknown(Children play in the park)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The restaurant serves Italian food",
+      "language": "en",
+      "primitives": [],
+      "explication": "unknown(The restaurant serves Italian food)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The red car is parked near the building",
+      "language": "es",
+      "primitives": [
+        "HasProperty"
+      ],
+      "explication": "HasProperty(The red car is parked near the building)",
+      "confidence": 0.9949862122535705,
+      "method": "semantic"
+    },
+    {
+      "text": "The cat is on the mat",
+      "language": "es",
+      "primitives": [
+        "HasProperty",
+        "AtLocation"
+      ],
+      "explication": "HasProperty AND AtLocation(The cat is on the mat)",
+      "confidence": 0.96726496219635,
+      "method": "semantic"
+    },
+    {
+      "text": "This is similar to that",
+      "language": "es",
+      "primitives": [
+        "HasProperty",
+        "SIMILAR",
+        "SimilarTo"
+      ],
+      "explication": "HasProperty AND SIMILAR AND SimilarTo(This is similar to that)",
+      "confidence": 0.9581557393074036,
+      "method": "semantic"
+    },
+    {
+      "text": "The book contains important information",
+      "language": "es",
+      "primitives": [],
+      "explication": "unknown(The book contains important information)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The weather is cold today",
+      "language": "es",
+      "primitives": [
+        "HasProperty"
+      ],
+      "explication": "HasProperty(The weather is cold today)",
+      "confidence": 0.8837793827056885,
+      "method": "semantic"
+    },
+    {
+      "text": "She works at the hospital",
+      "language": "es",
+      "primitives": [],
+      "explication": "unknown(She works at the hospital)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The movie was very long",
+      "language": "es",
+      "primitives": [],
+      "explication": "unknown(The movie was very long)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "I need to buy groceries",
+      "language": "es",
+      "primitives": [],
+      "explication": "unknown(I need to buy groceries)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "Children play in the park",
+      "language": "es",
+      "primitives": [],
+      "explication": "unknown(Children play in the park)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The restaurant serves Italian food",
+      "language": "es",
+      "primitives": [],
+      "explication": "unknown(The restaurant serves Italian food)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The red car is parked near the building",
+      "language": "fr",
+      "primitives": [
+        "HasProperty",
+        "BECAUSE"
+      ],
+      "explication": "HasProperty AND BECAUSE(The red car is parked near the building)",
+      "confidence": 1.0,
+      "method": "semantic"
+    },
+    {
+      "text": "The cat is on the mat",
+      "language": "fr",
+      "primitives": [
+        "HasProperty",
+        "AtLocation"
+      ],
+      "explication": "HasProperty AND AtLocation(The cat is on the mat)",
+      "confidence": 0.96726496219635,
+      "method": "semantic"
+    },
+    {
+      "text": "This is similar to that",
+      "language": "fr",
+      "primitives": [
+        "HasProperty",
+        "SimilarTo"
+      ],
+      "explication": "HasProperty AND SimilarTo(This is similar to that)",
+      "confidence": 0.8765458583831787,
+      "method": "semantic"
+    },
+    {
+      "text": "The book contains important information",
+      "language": "fr",
+      "primitives": [],
+      "explication": "unknown(The book contains important information)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The weather is cold today",
+      "language": "fr",
+      "primitives": [
+        "HasProperty"
+      ],
+      "explication": "HasProperty(The weather is cold today)",
+      "confidence": 0.8837793827056885,
+      "method": "semantic"
+    },
+    {
+      "text": "She works at the hospital",
+      "language": "fr",
+      "primitives": [],
+      "explication": "unknown(She works at the hospital)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The movie was very long",
+      "language": "fr",
+      "primitives": [
+        "LONG"
+      ],
+      "explication": "LONG(The movie was very long)",
+      "confidence": 0.997071897983551,
+      "method": "semantic"
+    },
+    {
+      "text": "I need to buy groceries",
+      "language": "fr",
+      "primitives": [],
+      "explication": "unknown(I need to buy groceries)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "Children play in the park",
+      "language": "fr",
+      "primitives": [],
+      "explication": "unknown(Children play in the park)",
+      "confidence": 0.0,
+      "method": "fallback"
+    },
+    {
+      "text": "The restaurant serves Italian food",
+      "language": "fr",
+      "primitives": [],
+      "explication": "unknown(The restaurant serves Italian food)",
+      "confidence": 0.0,
+      "method": "fallback"
+    }
+  ],
+  "comparison_results": [
+    {
+      "text": "The red car is parked near the building",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "The red car is parked near the building",
+        "language": "en",
+        "primitives": [
+          "HasProperty",
+          "NEAR"
+        ],
+        "explication": "HasProperty AND NEAR(The red car is parked near the building)",
+        "confidence": 1.0,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The red car is parked near the building",
+        "language": "en",
+        "primitives": [
+          "HasProperty",
+          "NEAR"
+        ],
+        "explication": "HasProperty NEAR(The red car is parked near the building)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.880439817905426,
+          "template": 0.8875839114189148
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 0.8
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9521759271621704,
+          "template": 0.895033564567566
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.05714236259460437
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "The cat is on the mat",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "The cat is on the mat",
+        "language": "en",
+        "primitives": [
+          "HasProperty",
+          "AtLocation"
+        ],
+        "explication": "HasProperty AND AtLocation(The cat is on the mat)",
+        "confidence": 0.96726496219635,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The cat is on the mat",
+        "language": "en",
+        "primitives": [
+          "HasProperty",
+          "AtLocation"
+        ],
+        "explication": "HasProperty AtLocation(The cat is on the mat)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7672649621963501,
+          "template": 0.8038888573646545
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 0.8
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9069059848785401,
+          "template": 0.8615555429458619
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.04535044193267823
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "This is similar to that",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "This is similar to that",
+        "language": "en",
+        "primitives": [
+          "HasProperty",
+          "SIMILAR",
+          "THIS",
+          "SimilarTo"
+        ],
+        "explication": "HasProperty AND SIMILAR AND THIS AND SimilarTo(This is similar to that)",
+        "confidence": 0.9859031915664673,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "This is similar to that",
+        "language": "en",
+        "primitives": [
+          "HasProperty",
+          "SIMILAR",
+          "THIS",
+          "SimilarTo"
+        ],
+        "explication": "HasProperty SIMILAR THIS SimilarTo(This is similar to that)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.6859031915664673,
+          "template": 0.696830153465271
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.8,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.8143612766265869,
+          "template": 0.8787320613861085
+        },
+        "deep_nsm_better": false,
+        "quality_difference": -0.06437078475952163
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The book contains important information",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "The book contains important information",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(The book contains important information)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "The book contains important information",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(The book contains important information)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8136988878250122,
+          "template": 0.8136988878250122
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.520479555130005,
+          "template": 0.520479555130005
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The weather is cold today",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "The weather is cold today",
+        "language": "en",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The weather is cold today)",
+        "confidence": 0.8837793827056885,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The weather is cold today",
+        "language": "en",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The weather is cold today)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7837793827056885,
+          "template": 0.7837793827056885
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.9070235061645509,
+          "template": 0.6000000000000001
+        },
+        "quality_scores": {
+          "deep_nsm": 0.8856188049316406,
+          "template": 0.7935117530822754
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.09210705184936518
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "She works at the hospital",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "She works at the hospital",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(She works at the hospital)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "She works at the hospital",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(She works at the hospital)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8370215892791748,
+          "template": 0.8370215892791748
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.52980863571167,
+          "template": 0.52980863571167
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The movie was very long",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "The movie was very long",
+        "language": "en",
+        "primitives": [
+          "LONG",
+          "VERY"
+        ],
+        "explication": "LONG AND VERY(The movie was very long)",
+        "confidence": 1.0,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The movie was very long",
+        "language": "en",
+        "primitives": [
+          "LONG",
+          "VERY"
+        ],
+        "explication": "LONG VERY(The movie was very long)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8887082934379578,
+          "template": 0.8710101842880249
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 0.8
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9554833173751831,
+          "template": 0.8884040737152099
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.0670792436599732
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "I need to buy groceries",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "I need to buy groceries",
+        "language": "en",
+        "primitives": [
+          "I"
+        ],
+        "explication": "I(I need to buy groceries)",
+        "confidence": 0.9996697068214416,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "I need to buy groceries",
+        "language": "en",
+        "primitives": [
+          "I"
+        ],
+        "explication": "I(I need to buy groceries)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8996697068214417,
+          "template": 0.8996697068214417
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.9997357654571533,
+          "template": 0.6000000000000001
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9597886123657227,
+          "template": 0.8398678827285767
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.11992072963714595
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "Children play in the park",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "Children play in the park",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(Children play in the park)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "Children play in the park",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(Children play in the park)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7993266582489014,
+          "template": 0.7993266582489014
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5147306632995605,
+          "template": 0.5147306632995605
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The restaurant serves Italian food",
+      "language": "en",
+      "deep_nsm_result": {
+        "text": "The restaurant serves Italian food",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(The restaurant serves Italian food)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "The restaurant serves Italian food",
+        "language": "en",
+        "primitives": [],
+        "explication": "unknown(The restaurant serves Italian food)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8476070761680603,
+          "template": 0.8476070761680603
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5340428304672242,
+          "template": 0.5340428304672242
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The red car is parked near the building",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "The red car is parked near the building",
+        "language": "es",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The red car is parked near the building)",
+        "confidence": 0.9949862122535705,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The red car is parked near the building",
+        "language": "es",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The red car is parked near the building)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8949862122535706,
+          "template": 0.8949862122535706
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.9959889698028566,
+          "template": 0.6000000000000001
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9567911758422853,
+          "template": 0.8379944849014284
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.11879669094085699
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "The cat is on the mat",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "The cat is on the mat",
+        "language": "es",
+        "primitives": [
+          "HasProperty",
+          "AtLocation"
+        ],
+        "explication": "HasProperty AND AtLocation(The cat is on the mat)",
+        "confidence": 0.96726496219635,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The cat is on the mat",
+        "language": "es",
+        "primitives": [
+          "HasProperty",
+          "AtLocation"
+        ],
+        "explication": "HasProperty AtLocation(The cat is on the mat)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7672649621963501,
+          "template": 0.8038888573646545
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 0.8
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9069059848785401,
+          "template": 0.8615555429458619
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.04535044193267823
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "This is similar to that",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "This is similar to that",
+        "language": "es",
+        "primitives": [
+          "HasProperty",
+          "SIMILAR",
+          "SimilarTo"
+        ],
+        "explication": "HasProperty AND SIMILAR AND SimilarTo(This is similar to that)",
+        "confidence": 0.9581557393074036,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "This is similar to that",
+        "language": "es",
+        "primitives": [
+          "HasProperty",
+          "SIMILAR",
+          "SimilarTo"
+        ],
+        "explication": "HasProperty SIMILAR SimilarTo(This is similar to that)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.6581557393074036,
+          "template": 0.6617444753646851
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.8632622957229614,
+          "template": 0.8646977901458741
+        },
+        "deep_nsm_better": false,
+        "quality_difference": -0.0014354944229126865
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The book contains important information",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "The book contains important information",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(The book contains important information)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "The book contains important information",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(The book contains important information)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8136988878250122,
+          "template": 0.8136988878250122
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.520479555130005,
+          "template": 0.520479555130005
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The weather is cold today",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "The weather is cold today",
+        "language": "es",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The weather is cold today)",
+        "confidence": 0.8837793827056885,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The weather is cold today",
+        "language": "es",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The weather is cold today)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7837793827056885,
+          "template": 0.7837793827056885
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.9070235061645509,
+          "template": 0.6000000000000001
+        },
+        "quality_scores": {
+          "deep_nsm": 0.8856188049316406,
+          "template": 0.7935117530822754
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.09210705184936518
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "She works at the hospital",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "She works at the hospital",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(She works at the hospital)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "She works at the hospital",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(She works at the hospital)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8370215892791748,
+          "template": 0.8370215892791748
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.52980863571167,
+          "template": 0.52980863571167
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The movie was very long",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "The movie was very long",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(The movie was very long)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "The movie was very long",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(The movie was very long)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7920016050338745,
+          "template": 0.7920016050338745
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5118006420135499,
+          "template": 0.5118006420135499
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "I need to buy groceries",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "I need to buy groceries",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(I need to buy groceries)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "I need to buy groceries",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(I need to buy groceries)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7980886101722717,
+          "template": 0.7980886101722717
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5142354440689088,
+          "template": 0.5142354440689088
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "Children play in the park",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "Children play in the park",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(Children play in the park)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "Children play in the park",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(Children play in the park)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7993266582489014,
+          "template": 0.7993266582489014
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5147306632995605,
+          "template": 0.5147306632995605
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The restaurant serves Italian food",
+      "language": "es",
+      "deep_nsm_result": {
+        "text": "The restaurant serves Italian food",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(The restaurant serves Italian food)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "The restaurant serves Italian food",
+        "language": "es",
+        "primitives": [],
+        "explication": "unknown(The restaurant serves Italian food)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8476070761680603,
+          "template": 0.8476070761680603
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5340428304672242,
+          "template": 0.5340428304672242
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The red car is parked near the building",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "The red car is parked near the building",
+        "language": "fr",
+        "primitives": [
+          "HasProperty",
+          "BECAUSE"
+        ],
+        "explication": "HasProperty AND BECAUSE(The red car is parked near the building)",
+        "confidence": 1.0,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The red car is parked near the building",
+        "language": "fr",
+        "primitives": [
+          "HasProperty",
+          "BECAUSE"
+        ],
+        "explication": "HasProperty BECAUSE(The red car is parked near the building)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8187226057052612,
+          "template": 0.8256723284721375
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 0.8
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9274890422821045,
+          "template": 0.870268931388855
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.05722011089324952
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "The cat is on the mat",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "The cat is on the mat",
+        "language": "fr",
+        "primitives": [
+          "HasProperty",
+          "AtLocation"
+        ],
+        "explication": "HasProperty AND AtLocation(The cat is on the mat)",
+        "confidence": 0.96726496219635,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The cat is on the mat",
+        "language": "fr",
+        "primitives": [
+          "HasProperty",
+          "AtLocation"
+        ],
+        "explication": "HasProperty AtLocation(The cat is on the mat)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7672649621963501,
+          "template": 0.8038888573646545
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 0.8
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9069059848785401,
+          "template": 0.8615555429458619
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.04535044193267823
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "This is similar to that",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "This is similar to that",
+        "language": "fr",
+        "primitives": [
+          "HasProperty",
+          "SimilarTo"
+        ],
+        "explication": "HasProperty AND SimilarTo(This is similar to that)",
+        "confidence": 0.8765458583831787,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "This is similar to that",
+        "language": "fr",
+        "primitives": [
+          "HasProperty",
+          "SimilarTo"
+        ],
+        "explication": "HasProperty SimilarTo(This is similar to that)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.6765458583831787,
+          "template": 0.6614616513252258
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 1.0,
+          "template": 0.8
+        },
+        "quality_scores": {
+          "deep_nsm": 0.8706183433532715,
+          "template": 0.8045846605300904
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.06603368282318112
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "The book contains important information",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "The book contains important information",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(The book contains important information)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "The book contains important information",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(The book contains important information)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8136988878250122,
+          "template": 0.8136988878250122
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.520479555130005,
+          "template": 0.520479555130005
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The weather is cold today",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "The weather is cold today",
+        "language": "fr",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The weather is cold today)",
+        "confidence": 0.8837793827056885,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The weather is cold today",
+        "language": "fr",
+        "primitives": [
+          "HasProperty"
+        ],
+        "explication": "HasProperty(The weather is cold today)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7837793827056885,
+          "template": 0.7837793827056885
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.9070235061645509,
+          "template": 0.6000000000000001
+        },
+        "quality_scores": {
+          "deep_nsm": 0.8856188049316406,
+          "template": 0.7935117530822754
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.09210705184936518
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "She works at the hospital",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "She works at the hospital",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(She works at the hospital)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "She works at the hospital",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(She works at the hospital)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8370215892791748,
+          "template": 0.8370215892791748
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.52980863571167,
+          "template": 0.52980863571167
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The movie was very long",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "The movie was very long",
+        "language": "fr",
+        "primitives": [
+          "LONG"
+        ],
+        "explication": "LONG(The movie was very long)",
+        "confidence": 0.997071897983551,
+        "method": "semantic"
+      },
+      "template_result": {
+        "text": "The movie was very long",
+        "language": "fr",
+        "primitives": [
+          "LONG"
+        ],
+        "explication": "LONG(The movie was very long)",
+        "confidence": 0.5,
+        "method": "template"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.897071897983551,
+          "template": 0.897071897983551
+        },
+        "fluency_scores": {
+          "deep_nsm": 1.0,
+          "template": 1.0
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.9976575183868408,
+          "template": 0.6000000000000001
+        },
+        "quality_scores": {
+          "deep_nsm": 0.9581260147094727,
+          "template": 0.8388287591934205
+        },
+        "deep_nsm_better": true,
+        "quality_difference": 0.11929725551605219
+      },
+      "recommendation": "prefer_deep_nsm"
+    },
+    {
+      "text": "I need to buy groceries",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "I need to buy groceries",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(I need to buy groceries)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "I need to buy groceries",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(I need to buy groceries)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7980886101722717,
+          "template": 0.7980886101722717
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5142354440689088,
+          "template": 0.5142354440689088
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "Children play in the park",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "Children play in the park",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(Children play in the park)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "Children play in the park",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(Children play in the park)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.7993266582489014,
+          "template": 0.7993266582489014
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5147306632995605,
+          "template": 0.5147306632995605
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    },
+    {
+      "text": "The restaurant serves Italian food",
+      "language": "fr",
+      "deep_nsm_result": {
+        "text": "The restaurant serves Italian food",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(The restaurant serves Italian food)",
+        "confidence": 0.0,
+        "method": "fallback"
+      },
+      "template_result": {
+        "text": "The restaurant serves Italian food",
+        "language": "fr",
+        "primitives": [],
+        "explication": "unknown(The restaurant serves Italian food)",
+        "confidence": 0.0,
+        "method": "template_fallback"
+      },
+      "comparison": {
+        "semantic_similarity": {
+          "deep_nsm": 0.8476070761680603,
+          "template": 0.8476070761680603
+        },
+        "fluency_scores": {
+          "deep_nsm": 0.65,
+          "template": 0.65
+        },
+        "coverage_scores": {
+          "deep_nsm": 0.0,
+          "template": 0.0
+        },
+        "quality_scores": {
+          "deep_nsm": 0.5340428304672242,
+          "template": 0.5340428304672242
+        },
+        "deep_nsm_better": false,
+        "quality_difference": 0.0
+      },
+      "recommendation": "prefer_template"
+    }
+  ],
+  "integration_analysis": {
+    "total_explications": 30,
+    "successful_explications": 15,
+    "deep_nsm_wins": 13,
+    "template_wins": 17,
+    "avg_deep_nsm_confidence": 0.4788488547007243,
+    "avg_template_confidence": 0.0,
+    "avg_quality_difference": 0.03173520927429198,
+    "method_distribution": {
+      "semantic": 15,
+      "fallback": 15
+    },
+    "quality_distribution": {
+      "excellent": 15,
+      "fair": 15
+    }
+  },
+  "recommendations": [
+    "Low success rate (50.0%) - improve explication generation",
+    "DeepNSM and templates perform similarly - consider hybrid approach",
+    "Low average DeepNSM confidence - improve model training",
+    "Minimal quality difference - consider cost-benefit analysis"
+  ]
+}
