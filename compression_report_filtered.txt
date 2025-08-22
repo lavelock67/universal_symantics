@@ -1,0 +1,15 @@
+============================================================
+COMPRESSION VALIDATION REPORT
+============================================================
+Total domains tested: 1
+Successful tests: 1
+
+Domain: text
+  Average compression ratio: 1.096
+  Median compression ratio: 1.050
+  Average MDL score: 5.591
+  Average naive length: 6.070
+  ❌ Gate failed: 1.096 < 2.0
+
+Compression Gates: 0/1 passed
+❌ Overall: Compression validation failed

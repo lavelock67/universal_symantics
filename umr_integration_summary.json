@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "components": [
+    "UMRGraph",
+    "UMRParser",
+    "UMRGenerator",
+    "UMREvaluator"
+  ],
+  "integrations": [
+    "UMRParseMetrics",
+    "UMRToTextTranslator"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "files_created": 9,
+  "test_results": "successful"
+}

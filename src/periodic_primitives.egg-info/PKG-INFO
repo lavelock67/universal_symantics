@@ -1,0 +1,184 @@
+Metadata-Version: 2.4
+Name: periodic-primitives
+Version: 0.1.0
+Summary: Periodic Table of Information Primitives - Cross-modal primitive discovery and integration
+Author: Periodic Primitives Team
+Author-email: Periodic Primitives Team <team@periodic-primitives.org>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: torch>=1.9.0
+Requires-Dist: transformers>=4.15.0
+Requires-Dist: networkx>=2.6.0
+Requires-Dist: rdflib>=6.0.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: tqdm>=4.62.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: pydantic>=1.8.0
+Requires-Dist: fastapi>=0.68.0
+Requires-Dist: uvicorn>=0.15.0
+Requires-Dist: plotly>=5.0.0
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: ipywidgets>=7.6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.12.0; extra == "dev"
+Requires-Dist: black>=21.0.0; extra == "dev"
+Requires-Dist: isort>=5.9.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: mypy>=0.910; extra == "dev"
+Requires-Dist: pre-commit>=2.15.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "docs"
+Requires-Dist: myst-parser>=0.15.0; extra == "docs"
+Dynamic: author
+Dynamic: requires-python
+
+# Periodic Table of Information Primitives
+
+A systematic approach to discovering and organizing fundamental information primitives across multiple modalities (text, vision, logic) through cross-model mining, validation, and integration.
+
+## ⚠️ CRITICAL WARNING
+
+**This is a proof-of-concept implementation with theatrical (misleading) results. The current system contains placeholder components that produce artificial performance metrics.**
+
+**For detailed information about what's real vs. theatrical, see [PLACEHOLDER_WARNINGS.md](PLACEHOLDER_WARNINGS.md).**
+
+### 🚨 Key Issues:
+- **Fake factorization** creates generic primitives for any input
+- **Theatrical compression ratios** (6-23×) due to simple test data
+- **Hard-coded activations** make Φ computation artificial
+- **Artificial test signals** inflate integration scores
+
+### ✅ Safe to Use For:
+- Architecture exploration
+- Framework development  
+- API testing
+- Integration testing
+
+### ❌ NOT Safe For:
+- Research evaluation
+- Performance comparison
+- Publication results
+- Production deployment
+
+## Overview
+
+This project implements a "periodic table" of information primitives by:
+- **Mining** stable patterns across diverse embedding models and knowledge graphs
+- **Validating** primitives through compression, reconstruction, and transfer tests
+- **Integrating** cross-modal information using difference-based memory and temporal coherence
+- **Measuring** integration (Φ) as a proxy for consciousness-like properties
+
+## Architecture
+
+```
+periodic-primitives/
+├── src/
+│   ├── mining/          # Primitive discovery from embeddings, KGs, vision
+│   ├── table/           # Periodic table schema and algebra
+│   ├── validate/        # Compression, reconstruction, transfer tests
+│   ├── specialists/     # Domain-specific processors + integration hub
+│   └── ui/             # Demo API and visualization
+├── data/               # ConceptNet, samples, indices
+└── tests/              # Comprehensive test suite
+```
+
+## Quick Start
+
+1. **Setup Environment**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -e .
+   ```
+
+2. **Run Mining Pipeline**
+   ```bash
+   python -m src.mining.embedding_miner --models bert gpt2 --concepts 500
+   python -m src.mining.conceptnet_miner --languages 20
+   ```
+
+3. **Validate Primitives**
+   ```bash
+   python -m src.validate.compression --domains text vision logic
+   ```
+
+4. **Demo Integration**
+   ```bash
+   python -m src.ui.demo_api
+   ```
+
+## Core Components
+
+### Primitive Mining
+- **Embedding Intersection**: Cross-model stable directions via Procrustes + NMF
+- **KG Universals**: Multilingual ConceptNet relations present across ≥20 languages
+- **Vision Bases**: Conv filter clustering from multiple vision backbones
+- **Logic/Math**: Operator/quantifier patterns from code/math corpora
+
+### Validation Battery
+- **Compression**: >2× compression vs. naive baselines
+- **Reconstruction**: <10% error across domains
+- **Transfer**: Positive cross-domain transfer learning
+- **Integration**: Φ proxy for coherent multi-modal inputs
+
+### Specialists & Integration
+- **Domain Specialists**: Vision, language, logic processors
+- **Temporal ESN**: Echo-state networks for sequence memory
+- **Central Hub**: Cross-modal integration with Φ computation
+
+## Success Metrics
+
+- **Universality**: Jaccard overlap >0.5 across models
+- **Parsimony**: 100-200 primitives total
+- **Compression**: >2× across 3 domains
+- **Transfer**: ≥+5pp vs. baseline on cross-domain tasks
+- **Integration**: Φ significantly higher for coherent inputs
+
+## Development
+
+This project follows Python best practices:
+- Type hints throughout
+- PEP 257 docstrings
+- Modular classes and functions
+- Comprehensive error handling
+- Incremental development with git branches
+
+## License
+
+MIT License - see LICENSE file for details.
+
+## Contributing
+
+1. Create a feature branch: `git checkout -b feature/amazing-feature`
+2. Make incremental commits with clear messages
+3. Add tests for new functionality
+4. Ensure all validation gates pass
+5. Submit a pull request
+
+## Roadmap
+
+- **Week 1-2**: Primitive mining (embedding intersection, KG universals, vision bases)
+- **Week 3**: Table induction & algebra implementation
+- **Week 4**: Validation battery (compression, reconstruction, transfer)
+- **Week 5-6**: Specialists + integration hub
+- **Week 7**: Structured complexity upgrade (height links)
+- **Week 8**: MVP demo & documentation

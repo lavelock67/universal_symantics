@@ -1,0 +1,1802 @@
+[
+  {
+    "key": "language-amod-foreign",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 38,
+    "examples": [
+      {
+        "text": "I find foreign languages very interesting.",
+        "head": "languages",
+        "child": "foreign",
+        "head_lemma": "language",
+        "child_lemma": "foreign"
+      },
+      {
+        "text": "It is important for you to learn a foreign language.",
+        "head": "language",
+        "child": "foreign",
+        "head_lemma": "language",
+        "child_lemma": "foreign"
+      },
+      {
+        "text": "Students often find it very difficult to understand a lecture in a foreign language.",
+        "head": "language",
+        "child": "foreign",
+        "head_lemma": "language",
+        "child_lemma": "foreign"
+      }
+    ],
+    "head": "language",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "vacation-compound-summer",
+    "name": "Cand_compound_NOUN_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 38,
+    "examples": [
+      {
+        "text": "Have a nice summer vacation.",
+        "head": "vacation",
+        "child": "summer",
+        "head_lemma": "vacation",
+        "child_lemma": "summer"
+      },
+      {
+        "text": "The students were all looking forward to the summer vacation.",
+        "head": "vacation",
+        "child": "summer",
+        "head_lemma": "vacation",
+        "child_lemma": "summer"
+      },
+      {
+        "text": "School will soon be over for summer vacation.",
+        "head": "vacation",
+        "child": "summer",
+        "head_lemma": "vacation",
+        "child_lemma": "summer"
+      }
+    ],
+    "head": "vacation",
+    "relation": "compound",
+    "arg_types": [
+      "NOUN",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "year-amod-last",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 29,
+    "examples": [
+      {
+        "text": "We went to London last year.",
+        "head": "year",
+        "child": "last",
+        "head_lemma": "year",
+        "child_lemma": "last"
+      },
+      {
+        "text": "Your idea cannot be brand new. I heard about it from another source last year.",
+        "head": "year",
+        "child": "last",
+        "head_lemma": "year",
+        "child_lemma": "last"
+      },
+      {
+        "text": "I had an operation for glaucoma last year.",
+        "head": "year",
+        "child": "last",
+        "head_lemma": "year",
+        "child_lemma": "last"
+      }
+    ],
+    "head": "year",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "make-dobj-mistake",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 27,
+    "examples": [
+      {
+        "text": "James had a great fear of making mistakes in class and being reprimanded.",
+        "head": "making",
+        "child": "mistakes",
+        "head_lemma": "make",
+        "child_lemma": "mistake"
+      },
+      {
+        "text": "Do you think he made that mistake on purpose?",
+        "head": "made",
+        "child": "mistake",
+        "head_lemma": "make",
+        "child_lemma": "mistake"
+      },
+      {
+        "text": "You made the same mistake as last time.",
+        "head": "made",
+        "child": "mistake",
+        "head_lemma": "make",
+        "child_lemma": "mistake"
+      }
+    ],
+    "head": "make",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "have-dobj-time",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 22,
+    "examples": [
+      {
+        "text": "I don't know if I have the time.",
+        "head": "have",
+        "child": "time",
+        "head_lemma": "have",
+        "child_lemma": "time"
+      },
+      {
+        "text": "You never have time for important things!",
+        "head": "have",
+        "child": "time",
+        "head_lemma": "have",
+        "child_lemma": "time"
+      },
+      {
+        "text": "The discrepancy between the stories of the two parties involved in the accident was so great that th...",
+        "head": "had",
+        "child": "time",
+        "head_lemma": "have",
+        "child_lemma": "time"
+      }
+    ],
+    "head": "have",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "read-dobj-book",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 22,
+    "examples": [
+      {
+        "text": "I read a book while eating.",
+        "head": "read",
+        "child": "book",
+        "head_lemma": "read",
+        "child_lemma": "book"
+      },
+      {
+        "text": "Professors should explain everything in detail, not be succinct and always tell students to go home ...",
+        "head": "read",
+        "child": "books",
+        "head_lemma": "read",
+        "child_lemma": "book"
+      },
+      {
+        "text": "He spent the evening reading a book.",
+        "head": "reading",
+        "child": "book",
+        "head_lemma": "read",
+        "child_lemma": "book"
+      }
+    ],
+    "head": "read",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "do-dobj-good",
+    "name": "Cand_dobj_VERB_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 20,
+    "examples": [
+      {
+        "text": "I'll do my best not to disturb your studying.",
+        "head": "do",
+        "child": "best",
+        "head_lemma": "do",
+        "child_lemma": "good"
+      },
+      {
+        "text": "All you have to do is do your best.",
+        "head": "do",
+        "child": "best",
+        "head_lemma": "do",
+        "child_lemma": "good"
+      },
+      {
+        "text": "You must do your best.",
+        "head": "do",
+        "child": "best",
+        "head_lemma": "do",
+        "child_lemma": "good"
+      }
+    ],
+    "head": "do",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "wind-amod-strong",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 20,
+    "examples": [
+      {
+        "text": "Flying against a strong wind is very difficult.",
+        "head": "wind",
+        "child": "strong",
+        "head_lemma": "wind",
+        "child_lemma": "strong"
+      },
+      {
+        "text": "The strong wind died away at night.",
+        "head": "wind",
+        "child": "strong",
+        "head_lemma": "wind",
+        "child_lemma": "strong"
+      },
+      {
+        "text": "Strong winds stripped the tree of its leaves.",
+        "head": "winds",
+        "child": "Strong",
+        "head_lemma": "wind",
+        "child_lemma": "strong"
+      }
+    ],
+    "head": "wind",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "do-dobj-thing",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 15,
+    "examples": [
+      {
+        "text": "A Japanese would never do such a thing.",
+        "head": "do",
+        "child": "thing",
+        "head_lemma": "do",
+        "child_lemma": "thing"
+      },
+      {
+        "text": "You will say and do things your parents said and did, even if you swore you would never do them.",
+        "head": "do",
+        "child": "things",
+        "head_lemma": "do",
+        "child_lemma": "thing"
+      },
+      {
+        "text": "You shouldn't do things by halves.",
+        "head": "do",
+        "child": "things",
+        "head_lemma": "do",
+        "child_lemma": "thing"
+      }
+    ],
+    "head": "do",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "people-amod-many",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 15,
+    "examples": [
+      {
+        "text": "With so many people around he naturally became a bit nervous.",
+        "head": "people",
+        "child": "many",
+        "head_lemma": "people",
+        "child_lemma": "many"
+      },
+      {
+        "text": "Many people drift through life without a purpose.",
+        "head": "people",
+        "child": "Many",
+        "head_lemma": "people",
+        "child_lemma": "many"
+      },
+      {
+        "text": "Sadly many people will believe things told to them via an email which they would find implausible fa...",
+        "head": "people",
+        "child": "many",
+        "head_lemma": "people",
+        "child_lemma": "many"
+      }
+    ],
+    "head": "people",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "take-dobj-care",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 15,
+    "examples": [
+      {
+        "text": "Take good care of yourself.",
+        "head": "Take",
+        "child": "care",
+        "head_lemma": "take",
+        "child_lemma": "care"
+      },
+      {
+        "text": "If you take care of the small things, the big things will take care of themselves.",
+        "head": "take",
+        "child": "care",
+        "head_lemma": "take",
+        "child_lemma": "care"
+      },
+      {
+        "text": "If you take care of the small things, the big things will take care of themselves.",
+        "head": "take",
+        "child": "care",
+        "head_lemma": "take",
+        "child_lemma": "care"
+      }
+    ],
+    "head": "take",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "be-attr-lot",
+    "name": "Cand_attr_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 14,
+    "examples": [
+      {
+        "text": "I hate it when there are a lot of people.",
+        "head": "are",
+        "child": "lot",
+        "head_lemma": "be",
+        "child_lemma": "lot"
+      },
+      {
+        "text": "There are a lot of things you don't know about my personality.",
+        "head": "are",
+        "child": "lot",
+        "head_lemma": "be",
+        "child_lemma": "lot"
+      },
+      {
+        "text": "There's quite a lot of things to do; do you want some help?",
+        "head": "'s",
+        "child": "lot",
+        "head_lemma": "be",
+        "child_lemma": "lot"
+      }
+    ],
+    "head": "be",
+    "relation": "attr",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "have-dobj-money",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 14,
+    "examples": [
+      {
+        "text": "Hey, I may have no money, but I still have my pride.",
+        "head": "have",
+        "child": "money",
+        "head_lemma": "have",
+        "child_lemma": "money"
+      },
+      {
+        "text": "You haven't any money.",
+        "head": "have",
+        "child": "money",
+        "head_lemma": "have",
+        "child_lemma": "money"
+      },
+      {
+        "text": "I don't have as much money as you think.",
+        "head": "have",
+        "child": "money",
+        "head_lemma": "have",
+        "child_lemma": "money"
+      }
+    ],
+    "head": "have",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "solve-dobj-problem",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 14,
+    "examples": [
+      {
+        "text": "You are too clever not to solve the hard problem.",
+        "head": "solve",
+        "child": "problem",
+        "head_lemma": "solve",
+        "child_lemma": "problem"
+      },
+      {
+        "text": "Have you solved all the problems yet?",
+        "head": "solved",
+        "child": "problems",
+        "head_lemma": "solve",
+        "child_lemma": "problem"
+      },
+      {
+        "text": "Could you solve the problem?",
+        "head": "solve",
+        "child": "problem",
+        "head_lemma": "solve",
+        "child_lemma": "problem"
+      }
+    ],
+    "head": "solve",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "miss-dobj-train",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 14,
+    "examples": [
+      {
+        "text": "Hurry up, or you will miss the train.",
+        "head": "miss",
+        "child": "train",
+        "head_lemma": "miss",
+        "child_lemma": "train"
+      },
+      {
+        "text": "Hurry up, or you will miss the last train.",
+        "head": "miss",
+        "child": "train",
+        "head_lemma": "miss",
+        "child_lemma": "train"
+      },
+      {
+        "text": "You will miss the train if you don't hurry.",
+        "head": "miss",
+        "child": "train",
+        "head_lemma": "miss",
+        "child_lemma": "train"
+      }
+    ],
+    "head": "miss",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "tell-dobj-truth",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 13,
+    "examples": [
+      {
+        "text": "\"To tell you the truth, I am scared of heights.\" \"You are a coward!\"",
+        "head": "tell",
+        "child": "truth",
+        "head_lemma": "tell",
+        "child_lemma": "truth"
+      },
+      {
+        "text": "The discrepancy between the stories of the two parties involved in the accident was so great that th...",
+        "head": "telling",
+        "child": "truth",
+        "head_lemma": "tell",
+        "child_lemma": "truth"
+      },
+      {
+        "text": "Ray was willing to corroborate Gary's story, but the police were still unconvinced that either of th...",
+        "head": "telling",
+        "child": "truth",
+        "head_lemma": "tell",
+        "child_lemma": "truth"
+      }
+    ],
+    "head": "tell",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "attend-dobj-meeting",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 13,
+    "examples": [
+      {
+        "text": "You should have attended the meeting.",
+        "head": "attended",
+        "child": "meeting",
+        "head_lemma": "attend",
+        "child_lemma": "meeting"
+      },
+      {
+        "text": "You are not entitled to attend the meeting.",
+        "head": "attend",
+        "child": "meeting",
+        "head_lemma": "attend",
+        "child_lemma": "meeting"
+      },
+      {
+        "text": "Either you or he has to attend the meeting.",
+        "head": "attend",
+        "child": "meeting",
+        "head_lemma": "attend",
+        "child_lemma": "meeting"
+      }
+    ],
+    "head": "attend",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "future-amod-near",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 13,
+    "examples": [
+      {
+        "text": "Your wish will come true in the near future.",
+        "head": "future",
+        "child": "near",
+        "head_lemma": "future",
+        "child_lemma": "near"
+      },
+      {
+        "text": "I would like to repay your kindness in the near future.",
+        "head": "future",
+        "child": "near",
+        "head_lemma": "future",
+        "child_lemma": "near"
+      },
+      {
+        "text": "In the near future, we may have a big earthquake in Japan.",
+        "head": "future",
+        "child": "near",
+        "head_lemma": "future",
+        "child_lemma": "near"
+      }
+    ],
+    "head": "future",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "begin-nsubj-school",
+    "name": "Cand_nsubj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 13,
+    "examples": [
+      {
+        "text": "School begins tomorrow.",
+        "head": "begins",
+        "child": "School",
+        "head_lemma": "begin",
+        "child_lemma": "school"
+      },
+      {
+        "text": "School begins the day after tomorrow.",
+        "head": "begins",
+        "child": "School",
+        "head_lemma": "begin",
+        "child_lemma": "school"
+      },
+      {
+        "text": "Our school begins at eight in the morning.",
+        "head": "begins",
+        "child": "school",
+        "head_lemma": "begin",
+        "child_lemma": "school"
+      }
+    ],
+    "head": "begin",
+    "relation": "nsubj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "summer-amod-last",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 12,
+    "examples": [
+      {
+        "text": "I visited my father's hometown last summer.",
+        "head": "summer",
+        "child": "last",
+        "head_lemma": "summer",
+        "child_lemma": "last"
+      },
+      {
+        "text": "She went there last summer.",
+        "head": "summer",
+        "child": "last",
+        "head_lemma": "summer",
+        "child_lemma": "last"
+      },
+      {
+        "text": "Last summer, I worked part time on the farm.",
+        "head": "summer",
+        "child": "Last",
+        "head_lemma": "summer",
+        "child_lemma": "last"
+      }
+    ],
+    "head": "summer",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "speak-dobj-English",
+    "name": "Cand_dobj_VERB_PROPN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "My mom doesn't speak English very well.",
+        "head": "speak",
+        "child": "English",
+        "head_lemma": "speak",
+        "child_lemma": "English"
+      },
+      {
+        "text": "Are you not able to speak English?",
+        "head": "speak",
+        "child": "English",
+        "head_lemma": "speak",
+        "child_lemma": "English"
+      },
+      {
+        "text": "You can't speak English, can you?",
+        "head": "speak",
+        "child": "English",
+        "head_lemma": "speak",
+        "child_lemma": "English"
+      }
+    ],
+    "head": "speak",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "PROPN"
+    ]
+  },
+  {
+    "key": "take-dobj-time",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "It would take me too much time to explain to you why it's not going to work.",
+        "head": "take",
+        "child": "time",
+        "head_lemma": "take",
+        "child_lemma": "time"
+      },
+      {
+        "text": "Be patient please. It takes time.",
+        "head": "takes",
+        "child": "time",
+        "head_lemma": "take",
+        "child_lemma": "time"
+      },
+      {
+        "text": "Any activity you need to accomplish will take more time than you have.",
+        "head": "take",
+        "child": "time",
+        "head_lemma": "take",
+        "child_lemma": "time"
+      }
+    ],
+    "head": "take",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "have-dobj-way",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "You have a way with women.",
+        "head": "have",
+        "child": "way",
+        "head_lemma": "have",
+        "child_lemma": "way"
+      },
+      {
+        "text": "You will have your own way.",
+        "head": "have",
+        "child": "way",
+        "head_lemma": "have",
+        "child_lemma": "way"
+      },
+      {
+        "text": "Educational reforms still have a long way to go.",
+        "head": "have",
+        "child": "way",
+        "head_lemma": "have",
+        "child_lemma": "way"
+      }
+    ],
+    "head": "have",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "give-dobj-smoking",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "You had better give up smoking for your health.",
+        "head": "give",
+        "child": "smoking",
+        "head_lemma": "give",
+        "child_lemma": "smoking"
+      },
+      {
+        "text": "You should give up smoking.",
+        "head": "give",
+        "child": "smoking",
+        "head_lemma": "give",
+        "child_lemma": "smoking"
+      },
+      {
+        "text": "You must give up smoking.",
+        "head": "give",
+        "child": "smoking",
+        "head_lemma": "give",
+        "child_lemma": "smoking"
+      }
+    ],
+    "head": "give",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "country-amod-foreign",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "You seem to be prejudiced against ideas that come from foreign countries.",
+        "head": "countries",
+        "child": "foreign",
+        "head_lemma": "country",
+        "child_lemma": "foreign"
+      },
+      {
+        "text": "The best way to know a foreign country is to go there yourself.",
+        "head": "country",
+        "child": "foreign",
+        "head_lemma": "country",
+        "child_lemma": "foreign"
+      },
+      {
+        "text": "The good way to know a foreign country is to go there.",
+        "head": "country",
+        "child": "foreign",
+        "head_lemma": "country",
+        "child_lemma": "foreign"
+      }
+    ],
+    "head": "country",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "weather-amod-cold",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "You'll soon get accustomed to this cold weather.",
+        "head": "weather",
+        "child": "cold",
+        "head_lemma": "weather",
+        "child_lemma": "cold"
+      },
+      {
+        "text": "The cold weather has turned the leaves red.",
+        "head": "weather",
+        "child": "cold",
+        "head_lemma": "weather",
+        "child_lemma": "cold"
+      },
+      {
+        "text": "The cold weather kept us indoors.",
+        "head": "weather",
+        "child": "cold",
+        "head_lemma": "weather",
+        "child_lemma": "cold"
+      }
+    ],
+    "head": "weather",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "learn-dobj-language",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "It is important for you to learn a foreign language.",
+        "head": "learn",
+        "child": "language",
+        "head_lemma": "learn",
+        "child_lemma": "language"
+      },
+      {
+        "text": "It is almost impossible to learn a foreign language in a short time.",
+        "head": "learn",
+        "child": "language",
+        "head_lemma": "learn",
+        "child_lemma": "language"
+      },
+      {
+        "text": "The best way to learn a foreign language is to go to the country where it is spoken.",
+        "head": "learn",
+        "child": "language",
+        "head_lemma": "learn",
+        "child_lemma": "language"
+      }
+    ],
+    "head": "learn",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "market-compound-stock",
+    "name": "Cand_compound_NOUN_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 11,
+    "examples": [
+      {
+        "text": "Improving corporate performances are behind the stock market recovery.",
+        "head": "market",
+        "child": "stock",
+        "head_lemma": "market",
+        "child_lemma": "stock"
+      },
+      {
+        "text": "The stock market is often called a dangerous one.",
+        "head": "market",
+        "child": "stock",
+        "head_lemma": "market",
+        "child_lemma": "stock"
+      },
+      {
+        "text": "The stock market tumbled.",
+        "head": "market",
+        "child": "stock",
+        "head_lemma": "market",
+        "child_lemma": "stock"
+      }
+    ],
+    "head": "market",
+    "relation": "compound",
+    "arg_types": [
+      "NOUN",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "have-dobj-idea",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "\"What's going on in the cave? I'm curious.\" \"I have no idea.\"",
+        "head": "have",
+        "child": "idea",
+        "head_lemma": "have",
+        "child_lemma": "idea"
+      },
+      {
+        "text": "It's difficult to have great ideas.",
+        "head": "have",
+        "child": "ideas",
+        "head_lemma": "have",
+        "child_lemma": "idea"
+      },
+      {
+        "text": "Do you have any idea what my life is like?",
+        "head": "have",
+        "child": "idea",
+        "head_lemma": "have",
+        "child_lemma": "idea"
+      }
+    ],
+    "head": "have",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "come-acomp-true",
+    "name": "Cand_acomp_VERB_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "Everyone would like to believe that dreams can come true.",
+        "head": "come",
+        "child": "true",
+        "head_lemma": "come",
+        "child_lemma": "true"
+      },
+      {
+        "text": "The best way to make your dreams come true is to wake up.",
+        "head": "come",
+        "child": "true",
+        "head_lemma": "come",
+        "child_lemma": "true"
+      },
+      {
+        "text": "Your prophecy has come true.",
+        "head": "come",
+        "child": "true",
+        "head_lemma": "come",
+        "child_lemma": "true"
+      }
+    ],
+    "head": "come",
+    "relation": "acomp",
+    "arg_types": [
+      "VERB",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "way-amod-good",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "The best way to make your dreams come true is to wake up.",
+        "head": "way",
+        "child": "best",
+        "head_lemma": "way",
+        "child_lemma": "good"
+      },
+      {
+        "text": "The best way to predict the future is to invent it.",
+        "head": "way",
+        "child": "best",
+        "head_lemma": "way",
+        "child_lemma": "good"
+      },
+      {
+        "text": "I admit this may not be the best way of doing it.",
+        "head": "way",
+        "child": "best",
+        "head_lemma": "way",
+        "child_lemma": "good"
+      }
+    ],
+    "head": "way",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "take-dobj-rest",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "Since you look tired, you had better take a rest.",
+        "head": "take",
+        "child": "rest",
+        "head_lemma": "take",
+        "child_lemma": "rest"
+      },
+      {
+        "text": "You had better take a little rest.",
+        "head": "take",
+        "child": "rest",
+        "head_lemma": "take",
+        "child_lemma": "rest"
+      },
+      {
+        "text": "I think you'd better take a rest; you look ill.",
+        "head": "take",
+        "child": "rest",
+        "head_lemma": "take",
+        "child_lemma": "rest"
+      }
+    ],
+    "head": "take",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "pay-dobj-attention",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "You must pay attention to his advice.",
+        "head": "pay",
+        "child": "attention",
+        "head_lemma": "pay",
+        "child_lemma": "attention"
+      },
+      {
+        "text": "You should pay more attention to what he says.",
+        "head": "pay",
+        "child": "attention",
+        "head_lemma": "pay",
+        "child_lemma": "attention"
+      },
+      {
+        "text": "You must pay attention to him.",
+        "head": "pay",
+        "child": "attention",
+        "head_lemma": "pay",
+        "child_lemma": "attention"
+      }
+    ],
+    "head": "pay",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "make-dobj-progress",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "Your English has made gradual progress.",
+        "head": "made",
+        "child": "progress",
+        "head_lemma": "make",
+        "child_lemma": "progress"
+      },
+      {
+        "text": "In recent years, science has made remarkable progress.",
+        "head": "made",
+        "child": "progress",
+        "head_lemma": "make",
+        "child_lemma": "progress"
+      },
+      {
+        "text": "Chemistry has made notable progress in recent years.",
+        "head": "made",
+        "child": "progress",
+        "head_lemma": "make",
+        "child_lemma": "progress"
+      }
+    ],
+    "head": "make",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "break-nsubj-fire",
+    "name": "Cand_nsubj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "A fire broke out near my house.",
+        "head": "broke",
+        "child": "fire",
+        "head_lemma": "break",
+        "child_lemma": "fire"
+      },
+      {
+        "text": "A fire broke out in the neighborhood yesterday.",
+        "head": "broke",
+        "child": "fire",
+        "head_lemma": "break",
+        "child_lemma": "fire"
+      },
+      {
+        "text": "A fire broke out nearby.",
+        "head": "broke",
+        "child": "fire",
+        "head_lemma": "break",
+        "child_lemma": "fire"
+      }
+    ],
+    "head": "break",
+    "relation": "nsubj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "have-dobj-lot",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 10,
+    "examples": [
+      {
+        "text": "We had a lot of snow last year.",
+        "head": "had",
+        "child": "lot",
+        "head_lemma": "have",
+        "child_lemma": "lot"
+      },
+      {
+        "text": "We had a lot of rain last year.",
+        "head": "had",
+        "child": "lot",
+        "head_lemma": "have",
+        "child_lemma": "lot"
+      },
+      {
+        "text": "Having been written in haste, the book has a lot of errors.",
+        "head": "has",
+        "child": "lot",
+        "head_lemma": "have",
+        "child_lemma": "lot"
+      }
+    ],
+    "head": "have",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "thing-amod-many",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 9,
+    "examples": [
+      {
+        "text": "I have too many things on my mind these days.",
+        "head": "things",
+        "child": "many",
+        "head_lemma": "thing",
+        "child_lemma": "many"
+      },
+      {
+        "text": "There are too many things to do!",
+        "head": "things",
+        "child": "many",
+        "head_lemma": "thing",
+        "child_lemma": "many"
+      },
+      {
+        "text": "The problem with many things is the pre-conceived ideas we have about them!",
+        "head": "things",
+        "child": "many",
+        "head_lemma": "thing",
+        "child_lemma": "many"
+      }
+    ],
+    "head": "thing",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "time-amod-many",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 9,
+    "examples": [
+      {
+        "text": "How many times a day do you look at yourself in the mirror?",
+        "head": "times",
+        "child": "many",
+        "head_lemma": "time",
+        "child_lemma": "many"
+      },
+      {
+        "text": "How many times a month do you write home?",
+        "head": "times",
+        "child": "many",
+        "head_lemma": "time",
+        "child_lemma": "many"
+      },
+      {
+        "text": "And, many times, I've cried.",
+        "head": "times",
+        "child": "many",
+        "head_lemma": "time",
+        "child_lemma": "many"
+      }
+    ],
+    "head": "time",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "money-amod-much",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 9,
+    "examples": [
+      {
+        "text": "You ought not to have spent so much money on your hobby.",
+        "head": "money",
+        "child": "much",
+        "head_lemma": "money",
+        "child_lemma": "much"
+      },
+      {
+        "text": "How much money do you want?",
+        "head": "money",
+        "child": "much",
+        "head_lemma": "money",
+        "child_lemma": "much"
+      },
+      {
+        "text": "I don't have as much money as you think.",
+        "head": "money",
+        "child": "much",
+        "head_lemma": "money",
+        "child_lemma": "much"
+      }
+    ],
+    "head": "money",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "friend-amod-old",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 9,
+    "examples": [
+      {
+        "text": "I ran across an old friend near the bank.",
+        "head": "friend",
+        "child": "old",
+        "head_lemma": "friend",
+        "child_lemma": "old"
+      },
+      {
+        "text": "I ran into an old friend.",
+        "head": "friend",
+        "child": "old",
+        "head_lemma": "friend",
+        "child_lemma": "old"
+      },
+      {
+        "text": "Meeting my old friend was very pleasant.",
+        "head": "friend",
+        "child": "old",
+        "head_lemma": "friend",
+        "child_lemma": "old"
+      }
+    ],
+    "head": "friend",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "master-dobj-language",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 9,
+    "examples": [
+      {
+        "text": "The best way to master a foreign language is to go to the country where it is spoken.",
+        "head": "master",
+        "child": "language",
+        "head_lemma": "master",
+        "child_lemma": "language"
+      },
+      {
+        "text": "It takes a great deal of practice to master a foreign language.",
+        "head": "master",
+        "child": "language",
+        "head_lemma": "master",
+        "child_lemma": "language"
+      },
+      {
+        "text": "It is by no means easy to master a foreign language.",
+        "head": "master",
+        "child": "language",
+        "head_lemma": "master",
+        "child_lemma": "language"
+      }
+    ],
+    "head": "master",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "have-dobj-friend",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "How many close friends do you have?",
+        "head": "have",
+        "child": "friends",
+        "head_lemma": "have",
+        "child_lemma": "friend"
+      },
+      {
+        "text": "Do you have friends in Antigua?",
+        "head": "have",
+        "child": "friends",
+        "head_lemma": "have",
+        "child_lemma": "friend"
+      },
+      {
+        "text": "You need to have friends who can help you out.",
+        "head": "have",
+        "child": "friends",
+        "head_lemma": "have",
+        "child_lemma": "friend"
+      }
+    ],
+    "head": "have",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "school-amod-high",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "Back in high school, I got up at 6 a.m. every morning.",
+        "head": "school",
+        "child": "high",
+        "head_lemma": "school",
+        "child_lemma": "high"
+      },
+      {
+        "text": "This is my friend Rachel. We went to high school together.",
+        "head": "school",
+        "child": "high",
+        "head_lemma": "school",
+        "child_lemma": "high"
+      },
+      {
+        "text": "When I ask people what they regret most about high school, they nearly all say the same thing: that ...",
+        "head": "school",
+        "child": "high",
+        "head_lemma": "school",
+        "child_lemma": "high"
+      }
+    ],
+    "head": "school",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "week-amod-next",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "It may freeze next week.",
+        "head": "week",
+        "child": "next",
+        "head_lemma": "week",
+        "child_lemma": "next"
+      },
+      {
+        "text": "Regardless of the amount, Brian wants the correct, entire amount by next week.",
+        "head": "week",
+        "child": "next",
+        "head_lemma": "week",
+        "child_lemma": "next"
+      },
+      {
+        "text": "Our campus festival is to be held next week.",
+        "head": "week",
+        "child": "next",
+        "head_lemma": "week",
+        "child_lemma": "next"
+      }
+    ],
+    "head": "week",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "ask-dobj-question",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "I need to ask you a silly question.",
+        "head": "ask",
+        "child": "question",
+        "head_lemma": "ask",
+        "child_lemma": "question"
+      },
+      {
+        "text": "Do you really need to ask the question to know the answer?",
+        "head": "ask",
+        "child": "question",
+        "head_lemma": "ask",
+        "child_lemma": "question"
+      },
+      {
+        "text": "May I ask a question?",
+        "head": "ask",
+        "child": "question",
+        "head_lemma": "ask",
+        "child_lemma": "question"
+      }
+    ],
+    "head": "ask",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "change-dobj-mind",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "What made you change your mind?",
+        "head": "change",
+        "child": "mind",
+        "head_lemma": "change",
+        "child_lemma": "mind"
+      },
+      {
+        "text": "What was it that caused you to change your mind?",
+        "head": "change",
+        "child": "mind",
+        "head_lemma": "change",
+        "child_lemma": "mind"
+      },
+      {
+        "text": "What I can't make out is why you have changed your mind.",
+        "head": "changed",
+        "child": "mind",
+        "head_lemma": "change",
+        "child_lemma": "mind"
+      }
+    ],
+    "head": "change",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "come-nsubj-dream",
+    "name": "Cand_nsubj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "Everyone would like to believe that dreams can come true.",
+        "head": "come",
+        "child": "dreams",
+        "head_lemma": "come",
+        "child_lemma": "dream"
+      },
+      {
+        "text": "The best way to make your dreams come true is to wake up.",
+        "head": "come",
+        "child": "dreams",
+        "head_lemma": "come",
+        "child_lemma": "dream"
+      },
+      {
+        "text": "Your dream will come true some day.",
+        "head": "come",
+        "child": "dream",
+        "head_lemma": "come",
+        "child_lemma": "dream"
+      }
+    ],
+    "head": "come",
+    "relation": "nsubj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "do-dobj-homework",
+    "name": "Cand_dobj_VERB_NOUN",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "I'm too lazy to do my homework.",
+        "head": "do",
+        "child": "homework",
+        "head_lemma": "do",
+        "child_lemma": "homework"
+      },
+      {
+        "text": "Did you do your homework by yourself?",
+        "head": "do",
+        "child": "homework",
+        "head_lemma": "do",
+        "child_lemma": "homework"
+      },
+      {
+        "text": "Have you finished doing your homework yet?",
+        "head": "doing",
+        "child": "homework",
+        "head_lemma": "do",
+        "child_lemma": "homework"
+      }
+    ],
+    "head": "do",
+    "relation": "dobj",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "time-amod-good",
+    "name": "Cand_amod_NOUN_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "If only we'd stop trying to be happy we could have a pretty good time.",
+        "head": "time",
+        "child": "good",
+        "head_lemma": "time",
+        "child_lemma": "good"
+      },
+      {
+        "text": "Take care of yourself, and have a good time!",
+        "head": "time",
+        "child": "good",
+        "head_lemma": "time",
+        "child_lemma": "good"
+      },
+      {
+        "text": "Have a good time.",
+        "head": "time",
+        "child": "good",
+        "head_lemma": "time",
+        "child_lemma": "good"
+      }
+    ],
+    "head": "time",
+    "relation": "amod",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "look-acomp-pale",
+    "name": "Cand_acomp_VERB_ADJ",
+    "category": "informational",
+    "arity": 1,
+    "frequency": 8,
+    "examples": [
+      {
+        "text": "You look very pale.",
+        "head": "look",
+        "child": "pale",
+        "head_lemma": "look",
+        "child_lemma": "pale"
+      },
+      {
+        "text": "You look pale today.",
+        "head": "look",
+        "child": "pale",
+        "head_lemma": "look",
+        "child_lemma": "pale"
+      },
+      {
+        "text": "You look pale.",
+        "head": "look",
+        "child": "pale",
+        "head_lemma": "look",
+        "child_lemma": "pale"
+      }
+    ],
+    "head": "look",
+    "relation": "acomp",
+    "arg_types": [
+      "VERB",
+      "ADJ"
+    ]
+  }
+]

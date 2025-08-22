@@ -1,0 +1,4 @@
+[console_scripts]
+periodic-demo = src.ui.demo_api:main
+periodic-miner = src.mining.cli:main
+periodic-validate = src.validate.cli:main

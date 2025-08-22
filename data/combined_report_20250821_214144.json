@@ -1,0 +1,4405 @@
+{
+  "timestamp": "2025-08-21T21:41:43.516357",
+  "system_info": {
+    "thresholds": {
+      "PERIODIC_SIM_THRESHOLD": "0.3",
+      "PERIODIC_TFIDF_THRESHOLD": "0.1",
+      "PERIODIC_DS_THRESHOLD": "0.6",
+      "PERIODIC_INTERNAL_THRESHOLD": "0.20"
+    }
+  },
+  "evaluations": {
+    "ud_recalls": {
+      "languages": {
+        "en": {
+          "total_sentences": 60,
+          "detected_patterns": 69,
+          "recall": 1.15,
+          "pattern_breakdown": {
+            "HasProperty": 33,
+            "Not": 8,
+            "Exist": 6,
+            "AtLocation": 5,
+            "SimilarTo": 2,
+            "UsedFor": 2,
+            "DifferentFrom": 1,
+            "IsA": 2,
+            "PartOf": 5,
+            "Causes": 5
+          }
+        },
+        "es": {
+          "total_sentences": 60,
+          "detected_patterns": 45,
+          "recall": 0.75,
+          "pattern_breakdown": {
+            "HasProperty": 19,
+            "Not": 8,
+            "AtLocation": 6,
+            "SimilarTo": 1,
+            "UsedFor": 3,
+            "DifferentFrom": 1,
+            "PartOf": 2,
+            "Causes": 5
+          }
+        },
+        "fr": {
+          "total_sentences": 60,
+          "detected_patterns": 54,
+          "recall": 0.9,
+          "pattern_breakdown": {
+            "HasProperty": 25,
+            "Exist": 6,
+            "AtLocation": 5,
+            "SimilarTo": 1,
+            "UsedFor": 3,
+            "DifferentFrom": 1,
+            "PartOf": 5,
+            "Causes": 5,
+            "Not": 3
+          }
+        }
+      },
+      "patterns": {
+        "AtLocation": {
+          "total_detections": 16,
+          "avg_per_language": 5.333333333333333,
+          "detection_by_language": {
+            "en": 5,
+            "es": 6,
+            "fr": 5
+          }
+        },
+        "PartOf": {
+          "total_detections": 12,
+          "avg_per_language": 4.0,
+          "detection_by_language": {
+            "en": 5,
+            "es": 2,
+            "fr": 5
+          }
+        },
+        "Causes": {
+          "total_detections": 15,
+          "avg_per_language": 5.0,
+          "detection_by_language": {
+            "en": 5,
+            "es": 5,
+            "fr": 5
+          }
+        },
+        "SimilarTo": {
+          "total_detections": 4,
+          "avg_per_language": 1.3333333333333333,
+          "detection_by_language": {
+            "en": 2,
+            "es": 1,
+            "fr": 1
+          }
+        },
+        "Exist": {
+          "total_detections": 12,
+          "avg_per_language": 4.0,
+          "detection_by_language": {
+            "en": 6,
+            "es": 0,
+            "fr": 6
+          }
+        },
+        "UsedFor": {
+          "total_detections": 8,
+          "avg_per_language": 2.6666666666666665,
+          "detection_by_language": {
+            "en": 2,
+            "es": 3,
+            "fr": 3
+          }
+        },
+        "HasProperty": {
+          "total_detections": 77,
+          "avg_per_language": 25.666666666666668,
+          "detection_by_language": {
+            "en": 33,
+            "es": 19,
+            "fr": 25
+          }
+        },
+        "DifferentFrom": {
+          "total_detections": 3,
+          "avg_per_language": 1.0,
+          "detection_by_language": {
+            "en": 1,
+            "es": 1,
+            "fr": 1
+          }
+        },
+        "IsA": {
+          "total_detections": 2,
+          "avg_per_language": 0.6666666666666666,
+          "detection_by_language": {
+            "en": 2,
+            "es": 0,
+            "fr": 0
+          }
+        },
+        "Not": {
+          "total_detections": 19,
+          "avg_per_language": 6.333333333333333,
+          "detection_by_language": {
+            "en": 8,
+            "es": 8,
+            "fr": 3
+          }
+        }
+      },
+      "overall": {
+        "total_sentences": 180,
+        "total_detections": 168,
+        "overall_recall": 0.9333333333333333,
+        "avg_recall_by_language": 0.9333333333333332
+      }
+    },
+    "nsm_legality": {
+      "languages": {
+        "en": {
+          "total_sentences": 60,
+          "legal_sentences": 9,
+          "legality_rate": 0.15,
+          "prime_detection": {
+            "total_primes": 39,
+            "unique_primes": [
+              "NOT",
+              "YOU",
+              "BAD",
+              "SOMETHING",
+              "GOOD",
+              "LIKE",
+              "I",
+              "HERE",
+              "SEE",
+              "WANT",
+              "THIS",
+              "SMALL",
+              "MOVE",
+              "MANY",
+              "DO",
+              "BIG"
+            ],
+            "prime_frequency": {
+              "I": 2,
+              "SEE": 1,
+              "YOU": 1,
+              "THIS": 8,
+              "GOOD": 1,
+              "WANT": 1,
+              "NOT": 8,
+              "BAD": 1,
+              "SOMETHING": 1,
+              "LIKE": 4,
+              "BIG": 2,
+              "SMALL": 3,
+              "MANY": 1,
+              "HERE": 1,
+              "MOVE": 1,
+              "DO": 3
+            }
+          }
+        },
+        "es": {
+          "total_sentences": 60,
+          "legal_sentences": 15,
+          "legality_rate": 0.25,
+          "prime_detection": {
+            "total_primes": 32,
+            "unique_primes": [
+              "NOT",
+              "BAD",
+              "SOMETHING",
+              "MANY",
+              "GOOD",
+              "LIKE",
+              "I",
+              "HERE",
+              "WANT",
+              "SMALL",
+              "ONE",
+              "THERE_IS",
+              "BIG"
+            ],
+            "prime_frequency": {
+              "I": 2,
+              "GOOD": 1,
+              "WANT": 1,
+              "NOT": 8,
+              "BAD": 1,
+              "THERE_IS": 6,
+              "SOMETHING": 1,
+              "LIKE": 4,
+              "BIG": 2,
+              "SMALL": 3,
+              "MANY": 1,
+              "HERE": 1,
+              "ONE": 1
+            }
+          }
+        },
+        "fr": {
+          "total_sentences": 60,
+          "legal_sentences": 13,
+          "legality_rate": 0.21666666666666667,
+          "prime_detection": {
+            "total_primes": 35,
+            "unique_primes": [
+              "NOT",
+              "BAD",
+              "SOMETHING",
+              "GOOD",
+              "LIKE",
+              "I",
+              "HERE",
+              "WANT",
+              "SMALL",
+              "ONE",
+              "MANY",
+              "DO",
+              "BIG"
+            ],
+            "prime_frequency": {
+              "I": 2,
+              "GOOD": 1,
+              "WANT": 1,
+              "NOT": 11,
+              "BAD": 1,
+              "SOMETHING": 1,
+              "LIKE": 4,
+              "BIG": 2,
+              "SMALL": 3,
+              "ONE": 2,
+              "MANY": 1,
+              "HERE": 1,
+              "DO": 5
+            }
+          }
+        }
+      },
+      "overall": {
+        "total_sentences": 180,
+        "total_legal_sentences": 37,
+        "overall_legality_rate": 0.20555555555555555,
+        "avg_legality_by_language": 0.20555555555555557
+      }
+    },
+    "umr_metrics": {
+      "languages": {
+        "en": {
+          "total_sentences": 60,
+          "successful_parses": 60,
+          "parse_success_rate": 1.0,
+          "avg_graph_size": {
+            "nodes": 5.216666666666667,
+            "edges": 4.216666666666667
+          },
+          "avg_round_trip_similarity": 0.30056116404153316,
+          "graph_metrics": [
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 1,
+                "function": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "acomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "function": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "neg": 1,
+                "acomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "expl": 1,
+                "attr": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 3,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 2,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 2,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "function": 2,
+                "property": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "acomp": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2,
+                "property": 1
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "acomp": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 1,
+                "function": 2,
+                "event": 2
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "auxpass": 1,
+                "mod": 1,
+                "pcomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "function": 1,
+                "event": 2
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "auxpass": 1,
+                "aux": 1,
+                "xcomp": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2
+              },
+              "relation_distribution": {
+                "det": 1,
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 1,
+                "function": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "property": 1,
+                "concept": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "property": 1,
+                "concept": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 1,
+                "function": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "acomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "property": 1,
+                "concept": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "property": 1,
+                "concept": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "function": 2,
+                "property": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "acomp": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1,
+                "function": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "neg": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 1,
+                "event": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "expl": 1,
+                "det": 1,
+                "attr": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "expl": 1,
+                "mod": 1,
+                "attr": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "event": 1
+              },
+              "relation_distribution": {
+                "expl": 1,
+                "attr": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "expl": 1,
+                "det": 1,
+                "attr": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "expl": 1,
+                "attr": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "attr": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "attr": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "attr": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "attr": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 1,
+                "attr": 1,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "event": 1,
+                "function": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 2,
+                "aux": 1,
+                "ccomp": 1,
+                "acomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "event": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 2,
+                "aux": 1,
+                "ccomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "event": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 2,
+                "aux": 1,
+                "ccomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 3,
+                "event": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 2,
+                "aux": 1,
+                "ccomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "concept": 4,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 2,
+                "ARG0": 2,
+                "aux": 1,
+                "ccomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "function": 1,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "aux": 1,
+                "neg": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "function": 1,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "aux": 1,
+                "neg": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "function": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "neg": 1,
+                "acomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "function": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "neg": 1,
+                "acomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "concept": 2,
+                "function": 1,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "ARG0": 1,
+                "aux": 1,
+                "neg": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "property": 1,
+                "concept": 2,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "mod": 2,
+                "ARG0": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 2
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "property": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "det": 1,
+                "mod": 2,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 2
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "property": 1,
+                "concept": 3,
+                "event": 1,
+                "function": 1
+              },
+              "relation_distribution": {
+                "det": 2,
+                "mod": 3,
+                "ARG0": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 3
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 1,
+                "property": 1,
+                "concept": 2,
+                "function": 2,
+                "event": 2
+              },
+              "relation_distribution": {
+                "det": 1,
+                "mod": 2,
+                "ARG0": 1,
+                "auxpass": 1,
+                "pcomp": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 2
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "quantifier": 2,
+                "property": 2,
+                "concept": 3,
+                "function": 2
+              },
+              "relation_distribution": {
+                "det": 2,
+                "mod": 3,
+                "ARG0": 1,
+                "neg": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 1,
+                "quantitative": 2,
+                "structural": 3
+              },
+              "total_nodes": 9,
+              "total_edges": 8,
+              "graph_density": 0.1111111111111111
+            }
+          ]
+        },
+        "es": {
+          "total_sentences": 60,
+          "successful_parses": 60,
+          "parse_success_rate": 1.0,
+          "avg_graph_size": {
+            "nodes": 5.066666666666666,
+            "edges": 4.066666666666666
+          },
+          "avg_round_trip_similarity": 0.40855194010691515,
+          "graph_metrics": [
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "function": 1
+              },
+              "relation_distribution": {
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "dep": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "appos": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "function": 1
+              },
+              "relation_distribution": {
+                "neg": 1,
+                "mod": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2
+              },
+              "relation_distribution": {
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 2,
+              "total_edges": 1,
+              "graph_density": 0.5
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5,
+                "function": 1
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5,
+                "function": 1
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "property": 2,
+                "concept": 3,
+                "function": 1
+              },
+              "relation_distribution": {
+                "nmod": 1,
+                "compound": 2,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "mod": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "property": 1,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "dep": 1,
+                "mod": 1,
+                "det": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 5
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "det": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "appos": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5,
+                "property": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "mod": 2,
+                "appos": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 2
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 5
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 5
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "property": 1,
+                "concept": 4
+              },
+              "relation_distribution": {
+                "mod": 1,
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "property": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 2
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "mod": 1,
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "nmod": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 5
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "event": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "mod": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6,
+                "property": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "intj": 2,
+                "npadvmod": 1,
+                "coord": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 4,
+                "appos": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "property": 1,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2
+              },
+              "relation_distribution": {
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 2,
+              "total_edges": 1,
+              "graph_density": 0.5
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "nmod": 2,
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 5
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 5
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "nmod": 3,
+                "mod": 1,
+                "compound": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "compound": 6
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 8
+              },
+              "relation_distribution": {
+                "compound": 4,
+                "ARG0": 2,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "compound": 4,
+                "nmod": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 8
+              },
+              "relation_distribution": {
+                "compound": 7
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "concept": 8
+              },
+              "relation_distribution": {
+                "compound": 4,
+                "dep": 1,
+                "nmod": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5,
+                "quantifier": 1,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 4,
+                "det": 1,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 1,
+                "det": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 1,
+                "det": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "npadvmod": 1,
+                "appos": 1,
+                "det": 1,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "det": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6,
+                "function": 1
+              },
+              "relation_distribution": {
+                "compound": 4,
+                "mod": 1,
+                "pobj": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "property": 2,
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "mod": 2,
+                "npadvmod": 1,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 2
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 8
+              },
+              "relation_distribution": {
+                "compound": 6,
+                "appos": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "concept": 8
+              },
+              "relation_distribution": {
+                "compound": 7
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "concept": 9
+              },
+              "relation_distribution": {
+                "compound": 6,
+                "det": 1,
+                "appos": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 9,
+              "total_edges": 8,
+              "graph_density": 0.1111111111111111
+            }
+          ]
+        },
+        "fr": {
+          "total_sentences": 60,
+          "successful_parses": 60,
+          "parse_success_rate": 1.0,
+          "avg_graph_size": {
+            "nodes": 5.183333333333334,
+            "edges": 4.183333333333334
+          },
+          "avg_round_trip_similarity": 0.3932422544629468,
+          "graph_metrics": [
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "nmod": 1,
+                "quant": 1,
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "quantifier": 1,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "dep": 1,
+                "det": 1,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "npadvmod": 1,
+                "punct": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "appos": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "mod": 2,
+                "nmod": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 2
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "event": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "mod": 1,
+                "compound": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "nmod": 1,
+                "compound": 2,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "property": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "nmod": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "nmod": 1,
+                "mod": 1,
+                "compound": 1,
+                "appos": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5,
+                "property": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "appos": 1,
+                "mod": 2
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 1,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 2
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "property": 2
+              },
+              "relation_distribution": {
+                "nmod": 1,
+                "mod": 2,
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 2
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5,
+                "property": 2
+              },
+              "relation_distribution": {
+                "nmod": 1,
+                "mod": 2,
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 2
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "nmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2,
+                "event": 1
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "event": 1
+              },
+              "relation_distribution": {
+                "ARG0": 2,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 2
+              },
+              "relation_distribution": {
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 2,
+              "total_edges": 1,
+              "graph_density": 0.5
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "nmod": 4
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "ARG0": 1,
+                "nmod": 1,
+                "mod": 1,
+                "compound": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "nmod": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "ARG0": 1,
+                "nmod": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "ARG0": 1,
+                "nmod": 3,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3
+              },
+              "relation_distribution": {
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 3,
+              "total_edges": 2,
+              "graph_density": 0.3333333333333333
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "det": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "det": 1,
+                "appos": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 2
+              },
+              "relation_distribution": {
+                "compound": 1,
+                "det": 1,
+                "nmod": 1,
+                "quant": 1,
+                "npadvmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 2,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "dep": 1,
+                "dative": 1,
+                "det": 1,
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 2,
+                "ARG0": 1,
+                "det": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 4,
+                "nmod": 1,
+                "det": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6
+              },
+              "relation_distribution": {
+                "compound": 5
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "poss": 1,
+                "nmod": 1,
+                "compound": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "compound": 6
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "compound": 5,
+                "nmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 5,
+                "ARG0": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "concept": 6,
+                "event": 1
+              },
+              "relation_distribution": {
+                "compound": 5,
+                "ARG0": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5,
+                "event": 1,
+                "property": 1
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "ARG0": 2,
+                "ccomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "compound": 6
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "event": 2,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "ARG0": 2,
+                "compound": 1,
+                "det": 1,
+                "ccomp": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 6,
+              "total_edges": 5,
+              "graph_density": 0.16666666666666666
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "mod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 1
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "compound": 4
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "nmod": 2,
+                "quant": 1,
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 3,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "nmod": 1,
+                "quant": 1,
+                "compound": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 4
+              },
+              "relation_distribution": {
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 4,
+              "total_edges": 3,
+              "graph_density": 0.25
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7
+              },
+              "relation_distribution": {
+                "compound": 5,
+                "nmod": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 7,
+              "total_edges": 6,
+              "graph_density": 0.14285714285714285
+            },
+            {
+              "node_type_distribution": {
+                "concept": 5
+              },
+              "relation_distribution": {
+                "compound": 4
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 5,
+              "total_edges": 4,
+              "graph_density": 0.2
+            },
+            {
+              "node_type_distribution": {
+                "concept": 8
+              },
+              "relation_distribution": {
+                "compound": 5,
+                "appos": 2
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            },
+            {
+              "node_type_distribution": {
+                "concept": 7,
+                "property": 1,
+                "quantifier": 1
+              },
+              "relation_distribution": {
+                "compound": 3,
+                "nmod": 2,
+                "mod": 1,
+                "det": 1,
+                "ARG1": 1
+              },
+              "primitive_patterns": {
+                "spatial": 0,
+                "temporal": 0,
+                "causal": 1,
+                "logical": 0,
+                "quantitative": 1,
+                "structural": 1
+              },
+              "total_nodes": 9,
+              "total_edges": 8,
+              "graph_density": 0.1111111111111111
+            },
+            {
+              "node_type_distribution": {
+                "concept": 8
+              },
+              "relation_distribution": {
+                "nmod": 4,
+                "compound": 3
+              },
+              "primitive_patterns": {
+                "spatial": 1,
+                "temporal": 0,
+                "causal": 0,
+                "logical": 0,
+                "quantitative": 0,
+                "structural": 0
+              },
+              "total_nodes": 8,
+              "total_edges": 7,
+              "graph_density": 0.125
+            }
+          ]
+        }
+      },
+      "overall": {
+        "total_sentences": 180,
+        "total_successful_parses": 180,
+        "overall_parse_success_rate": 1.0,
+        "avg_parse_success_by_language": 1.0
+      }
+    },
+    "cross_language_consistency": {
+      "consistency_scores": [
+        1.0,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.8333333333333333,
+        0.8333333333333333,
+        0.5,
+        0.8333333333333333,
+        0.8333333333333333,
+        1.0,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.6666666666666666,
+        0.8333333333333333,
+        0.6666666666666666,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.6666666666666666,
+        1.0,
+        0.5555555555555555,
+        0.5,
+        0.6666666666666666,
+        0.5555555555555555,
+        0.5,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.8333333333333333,
+        0.8333333333333333,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        1.0,
+        0.8333333333333333,
+        0.8333333333333333,
+        0.6666666666666666
+      ],
+      "pattern_agreement": {
+        "HasProperty": 0.7129629629629632,
+        "Not": 0.7916666666666666,
+        "Exist": 0.6666666666666666,
+        "AtLocation": 0.888888888888889,
+        "SimilarTo": 0.6666666666666666,
+        "UsedFor": 0.8888888888888888,
+        "DifferentFrom": 1.0,
+        "IsA": 0.3333333333333333,
+        "PartOf": 0.8,
+        "Causes": 1.0
+      },
+      "overall_consistency": 0.7979797979797982
+    }
+  },
+  "calibration_data": {
+    "similarity_threshold": {
+      "results": [],
+      "optimal_threshold": 0.3,
+      "test_cases": 9
+    },
+    "per_primitive": {},
+    "ud_thresholds": {
+      "ud_results": [
+        {
+          "threshold": 0.1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.30000000000000004,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.6000000000000001,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.7000000000000001,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        }
+      ],
+      "optimal_ud_threshold": 0.1
+    },
+    "timestamp": "2025-08-22T04:31:30",
+    "test_data_size": 9
+  },
+  "summary": {
+    "ud_overall_recall": 0.9333333333333333,
+    "ud_avg_recall_by_language": 0.9333333333333332,
+    "nsm_overall_legality_rate": 0.20555555555555555,
+    "nsm_avg_legality_by_language": 0.20555555555555557,
+    "umr_overall_parse_success_rate": 1.0,
+    "umr_avg_parse_success_by_language": 1.0,
+    "cross_language_consistency": 0.7979797979797982,
+    "overall_system_score": 0.7012626262626263
+  }
+}

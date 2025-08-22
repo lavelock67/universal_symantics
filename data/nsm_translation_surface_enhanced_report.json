@@ -1,0 +1,640 @@
+{
+  "metadata": {
+    "report_type": "enhanced_NSM_translation_surface_report",
+    "timestamp": "2025-08-22",
+    "enhanced_features": [
+      "exponent_surfacing",
+      "enhanced_primitive_detection",
+      "quality_assessment",
+      "fluency_evaluation",
+      "multi_step_pipeline"
+    ]
+  },
+  "test_translations": [
+    {
+      "success": true,
+      "source_text": "The book is on the table",
+      "target_text": "algo está ubicado en algún lugar",
+      "source_language": "en",
+      "target_language": "es",
+      "translation_method": "nsm_explication_surfacing",
+      "pipeline_steps": {
+        "source_explication": {
+          "success": true,
+          "text": "The book is on the table",
+          "language": "en",
+          "detected_primitives": [
+            {
+              "primitive": "AtLocation",
+              "prime": "IN",
+              "confidence": 0.7,
+              "detected_in_text": "The book is on the table"
+            }
+          ],
+          "primary_primitive": {
+            "primitive": "AtLocation",
+            "prime": "IN",
+            "confidence": 0.7,
+            "detected_in_text": "The book is on the table"
+          },
+          "explication": "this thing is in this place",
+          "legality_score": 0.4666666666666666,
+          "metadata": {
+            "confidence": 0.7,
+            "detection_method": "enhanced_pattern_detection"
+          }
+        },
+        "target_explication": {
+          "explication": "esta cosa está en este lugar",
+          "legality_score": 0.4666666666666666,
+          "primitive": "AtLocation"
+        },
+        "surfacing": {
+          "success": true,
+          "explication": "esta cosa está en este lugar",
+          "surfaced_text": "algo está ubicado en algún lugar",
+          "pattern_used": "{thing} está ubicado en {place}",
+          "quality_score": 0.8547784423828125,
+          "slots_used": {
+            "thing": "algo",
+            "place": "algún lugar",
+            "property": "alguna cualidad",
+            "cause": "algo",
+            "effect": "otra cosa",
+            "purpose": "algún propósito",
+            "part": "una parte",
+            "whole": "el todo",
+            "thing1": "una cosa",
+            "thing2": "otra cosa",
+            "statement": "esto",
+            "action": "hacer algo"
+          },
+          "all_options": [
+            {
+              "text": "algo está en algún lugar",
+              "pattern": "{thing} está en {place}",
+              "quality": 0.8547778701782227,
+              "slots_used": {
+                "thing": "algo",
+                "place": "algún lugar",
+                "property": "alguna cualidad",
+                "cause": "algo",
+                "effect": "otra cosa",
+                "purpose": "algún propósito",
+                "part": "una parte",
+                "whole": "el todo",
+                "thing1": "una cosa",
+                "thing2": "otra cosa",
+                "statement": "esto",
+                "action": "hacer algo"
+              }
+            },
+            {
+              "text": "algo se encuentra en algún lugar",
+              "pattern": "{thing} se encuentra en {place}",
+              "quality": 0.8430746769905091,
+              "slots_used": {
+                "thing": "algo",
+                "place": "algún lugar",
+                "property": "alguna cualidad",
+                "cause": "algo",
+                "effect": "otra cosa",
+                "purpose": "algún propósito",
+                "part": "una parte",
+                "whole": "el todo",
+                "thing1": "una cosa",
+                "thing2": "otra cosa",
+                "statement": "esto",
+                "action": "hacer algo"
+              }
+            },
+            {
+              "text": "algo está ubicado en algún lugar",
+              "pattern": "{thing} está ubicado en {place}",
+              "quality": 0.8547784423828125,
+              "slots_used": {
+                "thing": "algo",
+                "place": "algún lugar",
+                "property": "alguna cualidad",
+                "cause": "algo",
+                "effect": "otra cosa",
+                "purpose": "algún propósito",
+                "part": "una parte",
+                "whole": "el todo",
+                "thing1": "una cosa",
+                "thing2": "otra cosa",
+                "statement": "esto",
+                "action": "hacer algo"
+              }
+            },
+            {
+              "text": "puedes encontrar algo en algún lugar",
+              "pattern": "puedes encontrar {thing} en {place}",
+              "quality": 0.7453178143501282,
+              "slots_used": {
+                "thing": "algo",
+                "place": "algún lugar",
+                "property": "alguna cualidad",
+                "cause": "algo",
+                "effect": "otra cosa",
+                "purpose": "algún propósito",
+                "part": "una parte",
+                "whole": "el todo",
+                "thing1": "una cosa",
+                "thing2": "otra cosa",
+                "statement": "esto",
+                "action": "hacer algo"
+              }
+            }
+          ]
+        }
+      },
+      "quality_assessment": {
+        "semantic_similarity": 0.17190051078796387,
+        "target_fluency": 0.9,
+        "source_fluency": 1.0,
+        "length_consistency": 1.0,
+        "overall_quality": 0.6387602043151855
+      },
+      "metadata": {
+        "primitive_used": "AtLocation",
+        "source_confidence": 0.7,
+        "surfacing_quality": 0.8547784423828125,
+        "cross_translatable": true
+      }
+    },
+    {
+      "success": true,
+      "source_text": "The car is in the garage",
+      "target_text": "quelque chose est situé dans quelque part",
+      "source_language": "en",
+      "target_language": "fr",
+      "translation_method": "nsm_explication_surfacing",
+      "pipeline_steps": {
+        "source_explication": {
+          "success": true,
+          "text": "The car is in the garage",
+          "language": "en",
+          "detected_primitives": [
+            {
+              "primitive": "AtLocation",
+              "prime": "IN",
+              "confidence": 0.7,
+              "detected_in_text": "The car is in the garage"
+            }
+          ],
+          "primary_primitive": {
+            "primitive": "AtLocation",
+            "prime": "IN",
+            "confidence": 0.7,
+            "detected_in_text": "The car is in the garage"
+          },
+          "explication": "this thing is in this place",
+          "legality_score": 0.4666666666666666,
+          "metadata": {
+            "confidence": 0.7,
+            "detection_method": "enhanced_pattern_detection"
+          }
+        },
+        "target_explication": {
+          "explication": "cette chose est dans ce lieu",
+          "legality_score": 0.4666666666666666,
+          "primitive": "AtLocation"
+        },
+        "surfacing": {
+          "success": true,
+          "explication": "cette chose est dans ce lieu",
+          "surfaced_text": "quelque chose est situé dans quelque part",
+          "pattern_used": "{thing} est situé dans {place}",
+          "quality_score": 0.8860677695274353,
+          "slots_used": {
+            "thing": "quelque chose",
+            "place": "quelque part",
+            "property": "une qualité",
+            "cause": "quelque chose",
+            "effect": "autre chose",
+            "purpose": "un but",
+            "part": "une partie",
+            "whole": "le tout",
+            "thing1": "une chose",
+            "thing2": "une autre chose",
+            "statement": "ceci",
+            "action": "faire quelque chose"
+          },
+          "all_options": [
+            {
+              "text": "quelque chose est dans quelque part",
+              "pattern": "{thing} est dans {place}",
+              "quality": 0.8792058920860291,
+              "slots_used": {
+                "thing": "quelque chose",
+                "place": "quelque part",
+                "property": "une qualité",
+                "cause": "quelque chose",
+                "effect": "autre chose",
+                "purpose": "un but",
+                "part": "une partie",
+                "whole": "le tout",
+                "thing1": "une chose",
+                "thing2": "une autre chose",
+                "statement": "ceci",
+                "action": "faire quelque chose"
+              }
+            },
+            {
+              "text": "quelque chose se trouve dans quelque part",
+              "pattern": "{thing} se trouve dans {place}",
+              "quality": 0.8842063164710998,
+              "slots_used": {
+                "thing": "quelque chose",
+                "place": "quelque part",
+                "property": "une qualité",
+                "cause": "quelque chose",
+                "effect": "autre chose",
+                "purpose": "un but",
+                "part": "une partie",
+                "whole": "le tout",
+                "thing1": "une chose",
+                "thing2": "une autre chose",
+                "statement": "ceci",
+                "action": "faire quelque chose"
+              }
+            },
+            {
+              "text": "quelque chose est situé dans quelque part",
+              "pattern": "{thing} est situé dans {place}",
+              "quality": 0.8860677695274353,
+              "slots_used": {
+                "thing": "quelque chose",
+                "place": "quelque part",
+                "property": "une qualité",
+                "cause": "quelque chose",
+                "effect": "autre chose",
+                "purpose": "un but",
+                "part": "une partie",
+                "whole": "le tout",
+                "thing1": "une chose",
+                "thing2": "une autre chose",
+                "statement": "ceci",
+                "action": "faire quelque chose"
+              }
+            },
+            {
+              "text": "on peut trouver quelque chose dans quelque part",
+              "pattern": "on peut trouver {thing} dans {place}",
+              "quality": 0.7918126559257508,
+              "slots_used": {
+                "thing": "quelque chose",
+                "place": "quelque part",
+                "property": "une qualité",
+                "cause": "quelque chose",
+                "effect": "autre chose",
+                "purpose": "un but",
+                "part": "une partie",
+                "whole": "le tout",
+                "thing1": "une chose",
+                "thing2": "une autre chose",
+                "statement": "ceci",
+                "action": "faire quelque chose"
+              }
+            }
+          ]
+        }
+      },
+      "quality_assessment": {
+        "semantic_similarity": 0.1376081258058548,
+        "target_fluency": 0.9,
+        "source_fluency": 1.0,
+        "length_consistency": 0.8333333333333333,
+        "overall_quality": 0.6083765836556753
+      },
+      "metadata": {
+        "primitive_used": "AtLocation",
+        "source_confidence": 0.7,
+        "surfacing_quality": 0.8860677695274353,
+        "cross_translatable": true
+      }
+    },
+    {
+      "success": true,
+      "source_text": "Esta cosa es como otra cosa",
+      "target_text": "one thing is like another thing",
+      "source_language": "es",
+      "target_language": "en",
+      "translation_method": "nsm_explication_surfacing",
+      "pipeline_steps": {
+        "source_explication": {
+          "success": true,
+          "text": "Esta cosa es como otra cosa",
+          "language": "es",
+          "detected_primitives": [
+            {
+              "primitive": "SimilarTo",
+              "prime": "LIKE",
+              "confidence": 0.675,
+              "detected_in_text": "Esta cosa es como otra cosa"
+            }
+          ],
+          "primary_primitive": {
+            "primitive": "SimilarTo",
+            "prime": "LIKE",
+            "confidence": 0.675,
+            "detected_in_text": "Esta cosa es como otra cosa"
+          },
+          "explication": "esta cosa es como otra cosa",
+          "legality_score": 0.5833333333333334,
+          "metadata": {
+            "confidence": 0.675,
+            "detection_method": "enhanced_pattern_detection"
+          }
+        },
+        "target_explication": {
+          "explication": "this thing is like another thing",
+          "legality_score": 0.8833333333333333,
+          "primitive": "SimilarTo"
+        },
+        "surfacing": {
+          "success": true,
+          "explication": "this thing is like another thing",
+          "surfaced_text": "one thing is like another thing",
+          "pattern_used": "{thing1} is like {thing2}",
+          "quality_score": 0.893846531867981,
+          "slots_used": {
+            "thing": "something",
+            "place": "somewhere",
+            "property": "some quality",
+            "cause": "something",
+            "effect": "something else",
+            "purpose": "some purpose",
+            "part": "a part",
+            "whole": "the whole",
+            "thing1": "one thing",
+            "thing2": "another thing",
+            "statement": "this",
+            "action": "do something"
+          },
+          "all_options": [
+            {
+              "text": "one thing is like another thing",
+              "pattern": "{thing1} is like {thing2}",
+              "quality": 0.893846531867981,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            },
+            {
+              "text": "one thing is similar to another thing",
+              "pattern": "{thing1} is similar to {thing2}",
+              "quality": 0.842738862991333,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            },
+            {
+              "text": "one thing resembles another thing",
+              "pattern": "{thing1} resembles {thing2}",
+              "quality": 0.803646131515503,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            },
+            {
+              "text": "one thing and another thing are alike",
+              "pattern": "{thing1} and {thing2} are alike",
+              "quality": 0.7890076718330383,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            }
+          ]
+        }
+      },
+      "quality_assessment": {
+        "semantic_similarity": 0.8371730446815491,
+        "target_fluency": 0.9900000000000001,
+        "source_fluency": 1.0,
+        "length_consistency": 1.0,
+        "overall_quality": 0.9318692178726197
+      },
+      "metadata": {
+        "primitive_used": "SimilarTo",
+        "source_confidence": 0.675,
+        "surfacing_quality": 0.893846531867981,
+        "cross_translatable": true
+      }
+    },
+    {
+      "success": true,
+      "source_text": "Cette chose fait partie de l'ensemble",
+      "target_text": "something is used for some purpose",
+      "source_language": "fr",
+      "target_language": "en",
+      "translation_method": "nsm_explication_surfacing",
+      "pipeline_steps": {
+        "source_explication": {
+          "success": true,
+          "text": "Cette chose fait partie de l'ensemble",
+          "language": "fr",
+          "detected_primitives": [
+            {
+              "primitive": "UsedFor",
+              "prime": "DO",
+              "confidence": 0.6575,
+              "detected_in_text": "Cette chose fait partie de l'ensemble"
+            }
+          ],
+          "primary_primitive": {
+            "primitive": "UsedFor",
+            "prime": "DO",
+            "confidence": 0.6575,
+            "detected_in_text": "Cette chose fait partie de l'ensemble"
+          },
+          "explication": "quelqu'un peut faire quelque chose avec cette chose",
+          "legality_score": 0.5249999999999999,
+          "metadata": {
+            "confidence": 0.6575,
+            "detection_method": "enhanced_pattern_detection"
+          }
+        },
+        "target_explication": {
+          "explication": "someone can do something with this thing",
+          "legality_score": 0.6,
+          "primitive": "UsedFor"
+        },
+        "surfacing": {
+          "success": true,
+          "explication": "someone can do something with this thing",
+          "surfaced_text": "something is used for some purpose",
+          "pattern_used": "{thing} is used for {purpose}",
+          "quality_score": 0.7392465090751648,
+          "slots_used": {
+            "thing": "something",
+            "place": "somewhere",
+            "property": "some quality",
+            "cause": "something",
+            "effect": "something else",
+            "purpose": "some purpose",
+            "part": "a part",
+            "whole": "the whole",
+            "thing1": "one thing",
+            "thing2": "another thing",
+            "statement": "this",
+            "action": "do something"
+          },
+          "all_options": [
+            {
+              "text": "something is used for some purpose",
+              "pattern": "{thing} is used for {purpose}",
+              "quality": 0.7392465090751648,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            },
+            {
+              "text": "people use something to some purpose",
+              "pattern": "people use {thing} to {purpose}",
+              "quality": 0.6936818933486939,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            },
+            {
+              "text": "something serves to some purpose",
+              "pattern": "{thing} serves to {purpose}",
+              "quality": 0.6872803902626038,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            },
+            {
+              "text": "the purpose of something is some purpose",
+              "pattern": "the purpose of {thing} is {purpose}",
+              "quality": 0.5388726822137834,
+              "slots_used": {
+                "thing": "something",
+                "place": "somewhere",
+                "property": "some quality",
+                "cause": "something",
+                "effect": "something else",
+                "purpose": "some purpose",
+                "part": "a part",
+                "whole": "the whole",
+                "thing1": "one thing",
+                "thing2": "another thing",
+                "statement": "this",
+                "action": "do something"
+              }
+            }
+          ]
+        }
+      },
+      "quality_assessment": {
+        "semantic_similarity": 0.5083062648773193,
+        "target_fluency": 0.9,
+        "source_fluency": 1.0,
+        "length_consistency": 1.0,
+        "overall_quality": 0.7733225059509278
+      },
+      "metadata": {
+        "primitive_used": "UsedFor",
+        "source_confidence": 0.6575,
+        "surfacing_quality": 0.7392465090751648,
+        "cross_translatable": true
+      }
+    }
+  ],
+  "dataset_evaluation": {
+    "total_entries": 0,
+    "language_pairs": {},
+    "primitive_performance": {},
+    "overall_metrics": {
+      "avg_semantic_similarity": 0.0,
+      "avg_target_fluency": 0.0,
+      "avg_overall_quality": 0.0,
+      "success_rate": 0.0
+    }
+  },
+  "summary": {
+    "translation_examples": 4,
+    "successful_examples": 4,
+    "dataset_success_rate": 0.0,
+    "avg_translation_quality": 0.0
+  }
+}

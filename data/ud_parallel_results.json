@@ -1,0 +1,318 @@
+{
+  "en": {
+    "detection_rate": 0.9,
+    "primitive_counts": {
+      "AtLocation": 24,
+      "IsA": 24,
+      "Causes": 12,
+      "UsedFor": 12,
+      "SimilarTo": 12,
+      "DifferentFrom": 12,
+      "Not": 12
+    },
+    "examples": {
+      "AtLocation": [
+        {
+          "text": "The cat is on the table",
+          "backend": "struct"
+        },
+        {
+          "text": "There is a problem in the system",
+          "backend": "struct"
+        }
+      ],
+      "IsA": [
+        {
+          "text": "The engine is part of the car",
+          "backend": "struct"
+        },
+        {
+          "text": "A robin is a bird",
+          "backend": "struct"
+        }
+      ],
+      "Causes": [
+        {
+          "text": "The rain causes flooding",
+          "backend": "lex"
+        },
+        {
+          "text": "The rain causes flooding",
+          "backend": "lex"
+        }
+      ],
+      "UsedFor": [
+        {
+          "text": "This tool is used for cutting",
+          "backend": "struct"
+        },
+        {
+          "text": "This tool is used for cutting",
+          "backend": "struct"
+        }
+      ],
+      "SimilarTo": [
+        {
+          "text": "A whale is similar to a dolphin",
+          "backend": "struct"
+        },
+        {
+          "text": "A whale is similar to a dolphin",
+          "backend": "struct"
+        }
+      ],
+      "DifferentFrom": [
+        {
+          "text": "A plane is different from a bird",
+          "backend": "struct"
+        },
+        {
+          "text": "A plane is different from a bird",
+          "backend": "struct"
+        }
+      ],
+      "Not": [
+        {
+          "text": "The student does not understand",
+          "backend": "struct"
+        },
+        {
+          "text": "The student does not understand",
+          "backend": "struct"
+        }
+      ]
+    },
+    "struct_sentence_hits": 96,
+    "dep_sentence_hits": 0,
+    "lex_sentence_hits": 12,
+    "recall_per_primitive": {
+      "AtLocation": 1.0,
+      "Causes": 1.0,
+      "DifferentFrom": 0.0,
+      "Exist": 0.0,
+      "HasProperty": 0.0,
+      "Not": 0.0,
+      "PartOf": 0.0,
+      "SimilarTo": 0.0,
+      "UsedFor": 0.0
+    }
+  },
+  "es": {
+    "detection_rate": 0.8,
+    "primitive_counts": {
+      "AtLocation": 36,
+      "Causes": 12,
+      "UsedFor": 12,
+      "InOrderTo": 12,
+      "DifferentFrom": 12,
+      "Not": 12,
+      "Exist": 12,
+      "IsA": 12
+    },
+    "examples": {
+      "AtLocation": [
+        {
+          "text": "El gato está en la mesa",
+          "backend": "struct"
+        },
+        {
+          "text": "Una ballena es parecida a un delfín",
+          "backend": "struct"
+        }
+      ],
+      "Causes": [
+        {
+          "text": "La lluvia causa inundaciones",
+          "backend": "lex"
+        },
+        {
+          "text": "La lluvia causa inundaciones",
+          "backend": "lex"
+        }
+      ],
+      "UsedFor": [
+        {
+          "text": "Esta herramienta se usa para cortar",
+          "backend": "struct"
+        },
+        {
+          "text": "Esta herramienta se usa para cortar",
+          "backend": "struct"
+        }
+      ],
+      "InOrderTo": [
+        {
+          "text": "Esta herramienta se usa para cortar",
+          "backend": "struct"
+        },
+        {
+          "text": "Esta herramienta se usa para cortar",
+          "backend": "struct"
+        }
+      ],
+      "DifferentFrom": [
+        {
+          "text": "Un avión es diferente de un pájaro",
+          "backend": "struct"
+        },
+        {
+          "text": "Un avión es diferente de un pájaro",
+          "backend": "struct"
+        }
+      ],
+      "Not": [
+        {
+          "text": "El estudiante no entiende",
+          "backend": "struct"
+        },
+        {
+          "text": "El estudiante no entiende",
+          "backend": "struct"
+        }
+      ],
+      "Exist": [
+        {
+          "text": "Hay un problema en el sistema",
+          "backend": "struct"
+        },
+        {
+          "text": "Hay un problema en el sistema",
+          "backend": "struct"
+        }
+      ],
+      "IsA": [
+        {
+          "text": "Un petirrojo es un ave",
+          "backend": "lex"
+        },
+        {
+          "text": "Un petirrojo es un ave",
+          "backend": "lex"
+        }
+      ]
+    },
+    "struct_sentence_hits": 72,
+    "dep_sentence_hits": 0,
+    "lex_sentence_hits": 24,
+    "recall_per_primitive": {
+      "AtLocation": 1.0,
+      "Causes": 1.0,
+      "DifferentFrom": 0.0,
+      "Exist": 0.0,
+      "HasProperty": 0.0,
+      "Not": 0.0,
+      "PartOf": 0.0,
+      "SimilarTo": 0.0,
+      "UsedFor": 0.0
+    }
+  },
+  "fr": {
+    "detection_rate": 0.8,
+    "primitive_counts": {
+      "IsA": 36,
+      "PartOf": 12,
+      "Causes": 12,
+      "UsedFor": 12,
+      "AtLocation": 24,
+      "Not": 12,
+      "HasProperty": 12,
+      "Exist": 12
+    },
+    "examples": {
+      "IsA": [
+        {
+          "text": "Cette eau est très froide",
+          "backend": "struct"
+        },
+        {
+          "text": "Une baleine est semblable à un dauphin",
+          "backend": "struct"
+        }
+      ],
+      "PartOf": [
+        {
+          "text": "Le moteur fait partie de la voiture",
+          "backend": "lex"
+        },
+        {
+          "text": "Le moteur fait partie de la voiture",
+          "backend": "lex"
+        }
+      ],
+      "Causes": [
+        {
+          "text": "La pluie cause des inondations",
+          "backend": "lex"
+        },
+        {
+          "text": "La pluie cause des inondations",
+          "backend": "lex"
+        }
+      ],
+      "UsedFor": [
+        {
+          "text": "Cet outil est utilisé pour couper",
+          "backend": "lex"
+        },
+        {
+          "text": "Cet outil est utilisé pour couper",
+          "backend": "lex"
+        }
+      ],
+      "AtLocation": [
+        {
+          "text": "Une baleine est semblable à un dauphin",
+          "backend": "struct"
+        },
+        {
+          "text": "Il y a un problème dans le système",
+          "backend": "struct"
+        }
+      ],
+      "Not": [
+        {
+          "text": "L'étudiant ne comprend pas",
+          "backend": "lex"
+        },
+        {
+          "text": "L'étudiant ne comprend pas",
+          "backend": "lex"
+        }
+      ],
+      "HasProperty": [
+        {
+          "text": "Il y a un problème dans le système",
+          "backend": "struct"
+        },
+        {
+          "text": "Il y a un problème dans le système",
+          "backend": "struct"
+        }
+      ],
+      "Exist": [
+        {
+          "text": "Il y a un problème dans le système",
+          "backend": "struct"
+        },
+        {
+          "text": "Il y a un problème dans le système",
+          "backend": "struct"
+        }
+      ]
+    },
+    "struct_sentence_hits": 36,
+    "dep_sentence_hits": 0,
+    "lex_sentence_hits": 60,
+    "recall_per_primitive": {
+      "AtLocation": 0.0,
+      "Causes": 1.0,
+      "DifferentFrom": 0.0,
+      "Exist": 0.0,
+      "HasProperty": 0.0,
+      "Not": 0.0,
+      "PartOf": 1.0,
+      "SimilarTo": 0.0,
+      "UsedFor": 0.0
+    }
+  }
+}

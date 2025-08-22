@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "test_type": "Enhanced UD Patterns Evaluation",
+    "description": "Evaluation of enhanced UD patterns for primitive detection"
+  },
+  "pattern_statistics": {
+    "total_patterns": 9,
+    "languages": [
+      "es",
+      "fr",
+      "en"
+    ],
+    "primitives": [
+      "SimilarTo",
+      "AtLocation",
+      "Causes",
+      "Not",
+      "PartOf",
+      "HasProperty",
+      "Exist",
+      "UsedFor",
+      "DifferentFrom"
+    ],
+    "patterns_per_language": {
+      "es": 9,
+      "fr": 9,
+      "en": 9
+    },
+    "patterns_per_primitive": {
+      "SimilarTo": 1,
+      "AtLocation": 1,
+      "Causes": 1,
+      "Not": 1,
+      "PartOf": 1,
+      "HasProperty": 1,
+      "Exist": 1,
+      "UsedFor": 1,
+      "DifferentFrom": 1
+    }
+  },
+  "coverage_results": {
+    "en": {
+      "total_patterns": 9,
+      "primitives_covered": [
+        "SimilarTo",
+        "AtLocation",
+        "Causes",
+        "Not",
+        "PartOf",
+        "HasProperty",
+        "Exist",
+        "UsedFor",
+        "DifferentFrom"
+      ],
+      "test_sentences": 9,
+      "pattern_details": [
+        {
+          "name": "AtLocation",
+          "primitive": "AtLocation",
+          "confidence": 0.9,
+          "description": "Entity located at/in/on another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "HasProperty",
+          "primitive": "HasProperty",
+          "confidence": 0.95,
+          "description": "Entity has a specific property",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "PartOf",
+          "primitive": "PartOf",
+          "confidence": 0.9,
+          "description": "Entity is part of another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Causes",
+          "primitive": "Causes",
+          "confidence": 0.85,
+          "description": "Entity causes another entity or event",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "UsedFor",
+          "primitive": "UsedFor",
+          "confidence": 0.9,
+          "description": "Entity is used for a specific purpose",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "SimilarTo",
+          "primitive": "SimilarTo",
+          "confidence": 0.85,
+          "description": "Entity is similar to another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "DifferentFrom",
+          "primitive": "DifferentFrom",
+          "confidence": 0.85,
+          "description": "Entity is different from another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Exist",
+          "primitive": "Exist",
+          "confidence": 0.9,
+          "description": "Entity exists",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Not",
+          "primitive": "Not",
+          "confidence": 0.95,
+          "description": "Negation of a property or state",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        }
+      ]
+    },
+    "es": {
+      "total_patterns": 9,
+      "primitives_covered": [
+        "SimilarTo",
+        "AtLocation",
+        "Causes",
+        "Not",
+        "PartOf",
+        "HasProperty",
+        "Exist",
+        "UsedFor",
+        "DifferentFrom"
+      ],
+      "test_sentences": 9,
+      "pattern_details": [
+        {
+          "name": "AtLocation",
+          "primitive": "AtLocation",
+          "confidence": 0.9,
+          "description": "Entity located at/in/on another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "HasProperty",
+          "primitive": "HasProperty",
+          "confidence": 0.95,
+          "description": "Entity has a specific property",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "PartOf",
+          "primitive": "PartOf",
+          "confidence": 0.9,
+          "description": "Entity is part of another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Causes",
+          "primitive": "Causes",
+          "confidence": 0.85,
+          "description": "Entity causes another entity or event",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "UsedFor",
+          "primitive": "UsedFor",
+          "confidence": 0.9,
+          "description": "Entity is used for a specific purpose",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "SimilarTo",
+          "primitive": "SimilarTo",
+          "confidence": 0.85,
+          "description": "Entity is similar to another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "DifferentFrom",
+          "primitive": "DifferentFrom",
+          "confidence": 0.85,
+          "description": "Entity is different from another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Exist",
+          "primitive": "Exist",
+          "confidence": 0.9,
+          "description": "Entity exists",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Not",
+          "primitive": "Not",
+          "confidence": 0.95,
+          "description": "Negation of a property or state",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "total_patterns": 9,
+      "primitives_covered": [
+        "SimilarTo",
+        "AtLocation",
+        "Causes",
+        "Not",
+        "PartOf",
+        "HasProperty",
+        "Exist",
+        "UsedFor",
+        "DifferentFrom"
+      ],
+      "test_sentences": 9,
+      "pattern_details": [
+        {
+          "name": "AtLocation",
+          "primitive": "AtLocation",
+          "confidence": 0.9,
+          "description": "Entity located at/in/on another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "HasProperty",
+          "primitive": "HasProperty",
+          "confidence": 0.95,
+          "description": "Entity has a specific property",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "PartOf",
+          "primitive": "PartOf",
+          "confidence": 0.9,
+          "description": "Entity is part of another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Causes",
+          "primitive": "Causes",
+          "confidence": 0.85,
+          "description": "Entity causes another entity or event",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "UsedFor",
+          "primitive": "UsedFor",
+          "confidence": 0.9,
+          "description": "Entity is used for a specific purpose",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "SimilarTo",
+          "primitive": "SimilarTo",
+          "confidence": 0.85,
+          "description": "Entity is similar to another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "DifferentFrom",
+          "primitive": "DifferentFrom",
+          "confidence": 0.85,
+          "description": "Entity is different from another entity",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Exist",
+          "primitive": "Exist",
+          "confidence": 0.9,
+          "description": "Entity exists",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        },
+        {
+          "name": "Not",
+          "primitive": "Not",
+          "confidence": 0.95,
+          "description": "Negation of a property or state",
+          "languages": [
+            "en",
+            "es",
+            "fr"
+          ]
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_patterns": 9,
+    "languages_supported": [
+      "es",
+      "fr",
+      "en"
+    ],
+    "primitives_covered": [
+      "SimilarTo",
+      "AtLocation",
+      "Causes",
+      "Not",
+      "PartOf",
+      "HasProperty",
+      "Exist",
+      "UsedFor",
+      "DifferentFrom"
+    ],
+    "average_confidence": 0.8944444444444444
+  }
+}

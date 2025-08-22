@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "report_type": "NSM_cross_translatability_structural_report",
+    "timestamp": "2025-08-22",
+    "data_source": "data/nsm_substitutability_refined.json",
+    "models_used": {
+      "sbert": true
+    }
+  },
+  "analysis_results": {
+    "metadata": {
+      "analysis_type": "cross_language_pattern_analysis",
+      "languages_analyzed": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "total_primitives": 9,
+      "consistent_primitives": 9
+    },
+    "primitive_analysis": {
+      "AtLocation": {
+        "primitive": "AtLocation",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9408917427062988,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 0.9408917427062988,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            0.9472216367721558,
+            0.9020573496818542,
+            0.973396360874176
+          ],
+          "explications_used": [
+            "this thing is in this place",
+            "esta cosa está en este lugar",
+            "cette chose est dans cet endroit"
+          ]
+        }
+      },
+      "Exist": {
+        "primitive": "Exist",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 1.0000001192092896,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 1.0000001192092896,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            1.0000001192092896,
+            1.0000001192092896,
+            1.0000001192092896
+          ],
+          "explications_used": [
+            "default pattern",
+            "default pattern",
+            "default pattern"
+          ]
+        }
+      },
+      "HasProperty": {
+        "primitive": "HasProperty",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9078998565673828,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 0.9078998565673828,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            0.9367515444755554,
+            0.8470777273178101,
+            0.9398704171180725
+          ],
+          "explications_used": [
+            "this thing has this characteristic",
+            "esta cosa tiene esta característica",
+            "cette chose a cette caractéristique"
+          ]
+        }
+      },
+      "PartOf": {
+        "primitive": "PartOf",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.946450412273407,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 0.946450412273407,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            0.9583467841148376,
+            0.9289860725402832,
+            0.952018141746521
+          ],
+          "explications_used": [
+            "this thing is a component of this whole",
+            "esta cosa es un componente de este todo",
+            "cette chose est un composant de cet ensemble"
+          ]
+        }
+      },
+      "Causes": {
+        "primitive": "Causes",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9210345149040222,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 0.9210345149040222,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            0.9370682239532471,
+            0.8681340217590332,
+            0.9579013586044312
+          ],
+          "explications_used": [
+            "this thing makes this other thing happen",
+            "esta cosa hace que esta otra cosa suceda",
+            "cette chose fait que cette autre chose se passe"
+          ]
+        }
+      },
+      "SimilarTo": {
+        "primitive": "SimilarTo",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 1.0000001192092896,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 1.0000001192092896,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            1.0000001192092896,
+            1.0000001192092896,
+            1.0000001192092896
+          ],
+          "explications_used": [
+            "default pattern",
+            "default pattern",
+            "default pattern"
+          ]
+        }
+      },
+      "DifferentFrom": {
+        "primitive": "DifferentFrom",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 1.0000001192092896,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 1.0000001192092896,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            1.0000001192092896,
+            1.0000001192092896,
+            1.0000001192092896
+          ],
+          "explications_used": [
+            "default pattern",
+            "default pattern",
+            "default pattern"
+          ]
+        }
+      },
+      "Not": {
+        "primitive": "Not",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 1.0000001192092896,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 1.0000001192092896,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            1.0000001192092896,
+            1.0000001192092896,
+            1.0000001192092896
+          ],
+          "explications_used": [
+            "default pattern",
+            "default pattern",
+            "default pattern"
+          ]
+        }
+      },
+      "UsedFor": {
+        "primitive": "UsedFor",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9703710079193115,
+        "structural_patterns": {},
+        "validation_results": {
+          "consistency_score": 0.9703710079193115,
+          "structural_alignment": "excellent",
+          "pairwise_similarities": [
+            0.9703478813171387,
+            0.9510380029678345,
+            0.9897271990776062
+          ],
+          "explications_used": [
+            "people can use this thing to do this action",
+            "la gente puede usar esta cosa para hacer esta acción",
+            "les gens peuvent utiliser cette chose pour faire cette action"
+          ]
+        }
+      }
+    },
+    "language_comparison": {
+      "en": {
+        "total_entries": 120,
+        "average_improvement": 0.11802805579733106,
+        "positive_improvements": 117
+      },
+      "es": {
+        "total_entries": 120,
+        "average_improvement": 0.0686481079350536,
+        "positive_improvements": 119
+      },
+      "fr": {
+        "total_entries": 120,
+        "average_improvement": 0.09805295246579528,
+        "positive_improvements": 120
+      }
+    },
+    "overall_consistency": 0.9651831123563979
+  },
+  "summary": {
+    "overall_consistency": 0.9651831123563979,
+    "consistent_primitives": 9,
+    "total_primitives": 9,
+    "consistency_rate": 1.0
+  },
+  "recommendations": [
+    "Cross-language consistency is good. Maintain current structural patterns.",
+    "Consider implementing language-specific template optimization for better cross-translatability.",
+    "Monitor cross-language consistency as new primitives are added to the system."
+  ]
+}

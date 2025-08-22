@@ -1,0 +1,2542 @@
+{
+  "per_lang": {
+    "en": {
+      "avg_delta_ratio": 0.10010946010356664,
+      "entries": [
+        {
+          "idx": 0,
+          "primitive": "Entity",
+          "text_gzip": 42,
+          "exp_gzip": 40,
+          "delta_ratio": 0.047619047619047616
+        },
+        {
+          "idx": 1,
+          "primitive": "Entity",
+          "text_gzip": 42,
+          "exp_gzip": 40,
+          "delta_ratio": 0.047619047619047616
+        },
+        {
+          "idx": 2,
+          "primitive": "Action",
+          "text_gzip": 41,
+          "exp_gzip": 40,
+          "delta_ratio": 0.024390243902439025
+        },
+        {
+          "idx": 3,
+          "primitive": "Entity",
+          "text_gzip": 42,
+          "exp_gzip": 40,
+          "delta_ratio": 0.047619047619047616
+        },
+        {
+          "idx": 4,
+          "primitive": "Entity",
+          "text_gzip": 44,
+          "exp_gzip": 40,
+          "delta_ratio": 0.09090909090909091
+        },
+        {
+          "idx": 5,
+          "primitive": "see",
+          "text_gzip": 45,
+          "exp_gzip": 40,
+          "delta_ratio": 0.1111111111111111
+        },
+        {
+          "idx": 6,
+          "primitive": "is",
+          "text_gzip": 49,
+          "exp_gzip": 40,
+          "delta_ratio": 0.1836734693877551
+        },
+        {
+          "idx": 7,
+          "primitive": "this",
+          "text_gzip": 42,
+          "exp_gzip": 40,
+          "delta_ratio": 0.047619047619047616
+        },
+        {
+          "idx": 8,
+          "primitive": "Action",
+          "text_gzip": 42,
+          "exp_gzip": 40,
+          "delta_ratio": 0.047619047619047616
+        },
+        {
+          "idx": 9,
+          "primitive": "Entity",
+          "text_gzip": 52,
+          "exp_gzip": 40,
+          "delta_ratio": 0.23076923076923078
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1875
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 39,
+          "delta_ratio": 0.07142857142857142
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 39,
+          "delta_ratio": -0.11428571428571428
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 39,
+          "delta_ratio": -0.05405405405405406
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 39,
+          "delta_ratio": -0.11428571428571428
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 39,
+          "delta_ratio": 0.025
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 39,
+          "delta_ratio": -0.05405405405405406
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 39,
+          "delta_ratio": -0.11428571428571428
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 39,
+          "delta_ratio": -0.02631578947368421
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 39,
+          "delta_ratio": -0.02631578947368421
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 39,
+          "delta_ratio": -0.02631578947368421
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 39,
+          "delta_ratio": 0.13333333333333333
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 39,
+          "delta_ratio": 0.25
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2641509433962264
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 39,
+          "delta_ratio": 0.25
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 39,
+          "delta_ratio": 0.23529411764705882
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2777777777777778
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 39,
+          "delta_ratio": 0.13333333333333333
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 39,
+          "delta_ratio": 0.20408163265306123
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2777777777777778
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 39,
+          "delta_ratio": 0.23529411764705882
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 39,
+          "delta_ratio": 0.22
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 39,
+          "delta_ratio": 0.22
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 39,
+          "delta_ratio": 0.23529411764705882
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 39,
+          "delta_ratio": 0.07142857142857142
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 39,
+          "delta_ratio": 0.13333333333333333
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 39,
+          "delta_ratio": 0.07142857142857142
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 39,
+          "delta_ratio": 0.13333333333333333
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 39,
+          "delta_ratio": 0.23529411764705882
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 39,
+          "delta_ratio": -0.05405405405405406
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 39,
+          "delta_ratio": 0.09302325581395349
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 39,
+          "delta_ratio": 0.07142857142857142
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 39,
+          "delta_ratio": 0.025
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 39,
+          "delta_ratio": 0.07142857142857142
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 39,
+          "delta_ratio": 0.0
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 39,
+          "delta_ratio": -0.05405405405405406
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 39,
+          "delta_ratio": 0.20408163265306123
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2641509433962264
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 39,
+          "delta_ratio": 0.25
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "text_gzip": 57,
+          "exp_gzip": 39,
+          "delta_ratio": 0.3157894736842105
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2641509433962264
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 39,
+          "delta_ratio": 0.25
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2909090909090909
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 39,
+          "delta_ratio": 0.23529411764705882
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2909090909090909
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2777777777777778
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 39,
+          "delta_ratio": 0.30357142857142855
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 39,
+          "delta_ratio": 0.2641509433962264
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "text_gzip": 34,
+          "exp_gzip": 39,
+          "delta_ratio": -0.14705882352941177
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 39,
+          "delta_ratio": -0.11428571428571428
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 39,
+          "delta_ratio": -0.11428571428571428
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 39,
+          "delta_ratio": 0.0
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 39,
+          "delta_ratio": -0.11428571428571428
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 39,
+          "delta_ratio": -0.05405405405405406
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 39,
+          "delta_ratio": -0.08333333333333333
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 39,
+          "delta_ratio": 0.0
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 39,
+          "delta_ratio": -0.11428571428571428
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 39,
+          "delta_ratio": 0.025
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 39,
+          "delta_ratio": 0.09302325581395349
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 39,
+          "delta_ratio": 0.20408163265306123
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 39,
+          "delta_ratio": 0.09302325581395349
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 39,
+          "delta_ratio": 0.07142857142857142
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1875
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 39,
+          "delta_ratio": 0.13333333333333333
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 39,
+          "delta_ratio": 0.11363636363636363
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 39,
+          "delta_ratio": 0.09302325581395349
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 39,
+          "delta_ratio": 0.09302325581395349
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 39,
+          "delta_ratio": 0.0
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 39,
+          "delta_ratio": 0.09302325581395349
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 39,
+          "delta_ratio": 0.1702127659574468
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 39,
+          "delta_ratio": 0.025
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 39,
+          "delta_ratio": 0.025
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "text_gzip": 41,
+          "exp_gzip": 39,
+          "delta_ratio": 0.04878048780487805
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 39,
+          "delta_ratio": 0.13333333333333333
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 39,
+          "delta_ratio": 0.025
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 39,
+          "delta_ratio": 0.15217391304347827
+        }
+      ]
+    },
+    "es": {
+      "avg_delta_ratio": 0.2159257545877845,
+      "entries": [
+        {
+          "idx": 0,
+          "primitive": "Entity",
+          "text_gzip": 45,
+          "exp_gzip": 32,
+          "delta_ratio": 0.28888888888888886
+        },
+        {
+          "idx": 1,
+          "primitive": "Entity",
+          "text_gzip": 47,
+          "exp_gzip": 32,
+          "delta_ratio": 0.3191489361702128
+        },
+        {
+          "idx": 2,
+          "primitive": "Action",
+          "text_gzip": 49,
+          "exp_gzip": 32,
+          "delta_ratio": 0.3469387755102041
+        },
+        {
+          "idx": 3,
+          "primitive": "Entity",
+          "text_gzip": 54,
+          "exp_gzip": 32,
+          "delta_ratio": 0.4074074074074074
+        },
+        {
+          "idx": 4,
+          "primitive": "Entity",
+          "text_gzip": 50,
+          "exp_gzip": 32,
+          "delta_ratio": 0.36
+        },
+        {
+          "idx": 5,
+          "primitive": "see",
+          "text_gzip": 47,
+          "exp_gzip": 32,
+          "delta_ratio": 0.3191489361702128
+        },
+        {
+          "idx": 6,
+          "primitive": "is",
+          "text_gzip": 54,
+          "exp_gzip": 32,
+          "delta_ratio": 0.4074074074074074
+        },
+        {
+          "idx": 7,
+          "primitive": "this",
+          "text_gzip": 47,
+          "exp_gzip": 32,
+          "delta_ratio": 0.3191489361702128
+        },
+        {
+          "idx": 8,
+          "primitive": "Action",
+          "text_gzip": 47,
+          "exp_gzip": 32,
+          "delta_ratio": 0.3191489361702128
+        },
+        {
+          "idx": 9,
+          "primitive": "Entity",
+          "text_gzip": 48,
+          "exp_gzip": 32,
+          "delta_ratio": 0.3333333333333333
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 37,
+          "delta_ratio": 0.27450980392156865
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 37,
+          "delta_ratio": 0.13953488372093023
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 37,
+          "delta_ratio": -0.027777777777777776
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 37,
+          "delta_ratio": 0.05128205128205128
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 37,
+          "delta_ratio": 0.05128205128205128
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 37,
+          "delta_ratio": 0.05128205128205128
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 37,
+          "delta_ratio": 0.13953488372093023
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 37,
+          "delta_ratio": -0.05714285714285714
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 37,
+          "delta_ratio": 0.075
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3148148148148148
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3148148148148148
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "text_gzip": 61,
+          "exp_gzip": 37,
+          "delta_ratio": 0.39344262295081966
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 37,
+          "delta_ratio": 0.17777777777777778
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1956521739130435
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 37,
+          "delta_ratio": 0.2127659574468085
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1956521739130435
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3148148148148148
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 37,
+          "delta_ratio": 0.32727272727272727
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 37,
+          "delta_ratio": 0.24489795918367346
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 37,
+          "delta_ratio": 0.28846153846153844
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 37,
+          "delta_ratio": 0.24489795918367346
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 37,
+          "delta_ratio": 0.32727272727272727
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3392857142857143
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 37,
+          "delta_ratio": 0.28846153846153844
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3392857142857143
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 37,
+          "delta_ratio": 0.24489795918367346
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3018867924528302
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "text_gzip": 57,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3508771929824561
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3018867924528302
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 37,
+          "delta_ratio": 0.32727272727272727
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 37,
+          "delta_ratio": 0.27450980392156865
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 37,
+          "delta_ratio": 0.28846153846153844
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3018867924528302
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1956521739130435
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 37,
+          "delta_ratio": 0.32727272727272727
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1956521739130435
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 37,
+          "delta_ratio": 0.24489795918367346
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 37,
+          "delta_ratio": 0.27450980392156865
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 37,
+          "delta_ratio": 0.28846153846153844
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 37,
+          "delta_ratio": 0.17777777777777778
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "text_gzip": 59,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3728813559322034
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1590909090909091
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1956521739130435
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1590909090909091
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 37,
+          "delta_ratio": 0.13953488372093023
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 37,
+          "delta_ratio": 0.13953488372093023
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 37,
+          "delta_ratio": 0.17777777777777778
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 37,
+          "delta_ratio": 0.13953488372093023
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 37,
+          "delta_ratio": 0.28846153846153844
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "text_gzip": 58,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3620689655172414
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "text_gzip": 58,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3620689655172414
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "text_gzip": 58,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3620689655172414
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3148148148148148
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 37,
+          "delta_ratio": 0.27450980392156865
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "text_gzip": 58,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3620689655172414
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3392857142857143
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "text_gzip": 58,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3620689655172414
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "text_gzip": 59,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3728813559322034
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "text_gzip": 64,
+          "exp_gzip": 37,
+          "delta_ratio": 0.421875
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3018867924528302
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "text_gzip": 33,
+          "exp_gzip": 37,
+          "delta_ratio": -0.12121212121212122
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "text_gzip": 34,
+          "exp_gzip": 37,
+          "delta_ratio": -0.08823529411764706
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 37,
+          "delta_ratio": -0.027777777777777776
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 37,
+          "delta_ratio": 0.0
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 37,
+          "delta_ratio": 0.075
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 37,
+          "delta_ratio": 0.075
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 37,
+          "delta_ratio": 0.075
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 37,
+          "delta_ratio": -0.05714285714285714
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 37,
+          "delta_ratio": 0.075
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 37,
+          "delta_ratio": 0.02631578947368421
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 37,
+          "delta_ratio": 0.075
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 37,
+          "delta_ratio": 0.11904761904761904
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1590909090909091
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "text_gzip": 41,
+          "exp_gzip": 37,
+          "delta_ratio": 0.0975609756097561
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 37,
+          "delta_ratio": 0.17777777777777778
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 37,
+          "delta_ratio": 0.24489795918367346
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 37,
+          "delta_ratio": 0.26
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3018867924528302
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 37,
+          "delta_ratio": 0.13953488372093023
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3392857142857143
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1590909090909091
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1956521739130435
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3018867924528302
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 37,
+          "delta_ratio": 0.3148148148148148
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 37,
+          "delta_ratio": 0.17777777777777778
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 37,
+          "delta_ratio": 0.1956521739130435
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 37,
+          "delta_ratio": 0.22916666666666666
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 37,
+          "delta_ratio": 0.2127659574468085
+        }
+      ]
+    },
+    "fr": {
+      "avg_delta_ratio": 0.0718661571957295,
+      "entries": [
+        {
+          "idx": 0,
+          "primitive": "Entity",
+          "text_gzip": 45,
+          "exp_gzip": 46,
+          "delta_ratio": -0.022222222222222223
+        },
+        {
+          "idx": 1,
+          "primitive": "Entity",
+          "text_gzip": 49,
+          "exp_gzip": 46,
+          "delta_ratio": 0.061224489795918366
+        },
+        {
+          "idx": 2,
+          "primitive": "Action",
+          "text_gzip": 45,
+          "exp_gzip": 46,
+          "delta_ratio": -0.022222222222222223
+        },
+        {
+          "idx": 3,
+          "primitive": "Entity",
+          "text_gzip": 52,
+          "exp_gzip": 46,
+          "delta_ratio": 0.11538461538461539
+        },
+        {
+          "idx": 4,
+          "primitive": "Entity",
+          "text_gzip": 48,
+          "exp_gzip": 46,
+          "delta_ratio": 0.041666666666666664
+        },
+        {
+          "idx": 5,
+          "primitive": "see",
+          "text_gzip": 45,
+          "exp_gzip": 46,
+          "delta_ratio": -0.022222222222222223
+        },
+        {
+          "idx": 6,
+          "primitive": "is",
+          "text_gzip": 61,
+          "exp_gzip": 46,
+          "delta_ratio": 0.2459016393442623
+        },
+        {
+          "idx": 7,
+          "primitive": "this",
+          "text_gzip": 45,
+          "exp_gzip": 46,
+          "delta_ratio": -0.022222222222222223
+        },
+        {
+          "idx": 8,
+          "primitive": "Action",
+          "text_gzip": 41,
+          "exp_gzip": 46,
+          "delta_ratio": -0.12195121951219512
+        },
+        {
+          "idx": 9,
+          "primitive": "Entity",
+          "text_gzip": 49,
+          "exp_gzip": 46,
+          "delta_ratio": 0.061224489795918366
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 44,
+          "delta_ratio": 0.10204081632653061
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 44,
+          "delta_ratio": 0.022222222222222223
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 44,
+          "delta_ratio": -0.15789473684210525
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 44,
+          "delta_ratio": -0.2222222222222222
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1891891891891892
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "text_gzip": 41,
+          "exp_gzip": 44,
+          "delta_ratio": -0.07317073170731707
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "text_gzip": 41,
+          "exp_gzip": 44,
+          "delta_ratio": -0.07317073170731707
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 44,
+          "delta_ratio": -0.2222222222222222
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 44,
+          "delta_ratio": -0.2222222222222222
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "text_gzip": 38,
+          "exp_gzip": 44,
+          "delta_ratio": -0.15789473684210525
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1891891891891892
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "text_gzip": 39,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1282051282051282
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 44,
+          "delta_ratio": -0.023255813953488372
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 44,
+          "delta_ratio": 0.0
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 44,
+          "delta_ratio": 0.10204081632653061
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 44,
+          "delta_ratio": 0.18518518518518517
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 44,
+          "delta_ratio": 0.08333333333333333
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "text_gzip": 41,
+          "exp_gzip": 44,
+          "delta_ratio": -0.07317073170731707
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 44,
+          "delta_ratio": 0.08333333333333333
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 44,
+          "delta_ratio": 0.18518518518518517
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 44,
+          "delta_ratio": 0.12
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "text_gzip": 60,
+          "exp_gzip": 44,
+          "delta_ratio": 0.26666666666666666
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 44,
+          "delta_ratio": 0.16981132075471697
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "text_gzip": 58,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2413793103448276
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "text_gzip": 59,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2542372881355932
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "text_gzip": 62,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2903225806451613
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 44,
+          "delta_ratio": 0.16981132075471697
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "text_gzip": 57,
+          "exp_gzip": 44,
+          "delta_ratio": 0.22807017543859648
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "text_gzip": 61,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2786885245901639
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 44,
+          "delta_ratio": 0.21428571428571427
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "text_gzip": 61,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2786885245901639
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "text_gzip": 59,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2542372881355932
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 44,
+          "delta_ratio": 0.16981132075471697
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 44,
+          "delta_ratio": 0.16981132075471697
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 44,
+          "delta_ratio": 0.10204081632653061
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 44,
+          "delta_ratio": 0.18518518518518517
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 44,
+          "delta_ratio": 0.18518518518518517
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 44,
+          "delta_ratio": 0.13725490196078433
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 44,
+          "delta_ratio": 0.18518518518518517
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 44,
+          "delta_ratio": 0.16981132075471697
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 44,
+          "delta_ratio": 0.16981132075471697
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 44,
+          "delta_ratio": 0.12
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 44,
+          "delta_ratio": 0.043478260869565216
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 44,
+          "delta_ratio": 0.12
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "text_gzip": 63,
+          "exp_gzip": 44,
+          "delta_ratio": 0.30158730158730157
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 44,
+          "delta_ratio": 0.022222222222222223
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "text_gzip": 53,
+          "exp_gzip": 44,
+          "delta_ratio": 0.16981132075471697
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "text_gzip": 60,
+          "exp_gzip": 44,
+          "delta_ratio": 0.26666666666666666
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 44,
+          "delta_ratio": 0.022222222222222223
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 44,
+          "delta_ratio": 0.043478260869565216
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 44,
+          "delta_ratio": 0.21428571428571427
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 44,
+          "delta_ratio": 0.022222222222222223
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 44,
+          "delta_ratio": 0.12
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "text_gzip": 58,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2413793103448276
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "text_gzip": 62,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2903225806451613
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 44,
+          "delta_ratio": 0.18518518518518517
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "text_gzip": 57,
+          "exp_gzip": 44,
+          "delta_ratio": 0.22807017543859648
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "text_gzip": 60,
+          "exp_gzip": 44,
+          "delta_ratio": 0.26666666666666666
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "text_gzip": 55,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "text_gzip": 62,
+          "exp_gzip": 44,
+          "delta_ratio": 0.2903225806451613
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "text_gzip": 63,
+          "exp_gzip": 44,
+          "delta_ratio": 0.30158730158730157
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "text_gzip": 64,
+          "exp_gzip": 44,
+          "delta_ratio": 0.3125
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "text_gzip": 57,
+          "exp_gzip": 44,
+          "delta_ratio": 0.22807017543859648
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "text_gzip": 36,
+          "exp_gzip": 44,
+          "delta_ratio": -0.2222222222222222
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "text_gzip": 34,
+          "exp_gzip": 44,
+          "delta_ratio": -0.29411764705882354
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 44,
+          "delta_ratio": -0.2571428571428571
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "text_gzip": 35,
+          "exp_gzip": 44,
+          "delta_ratio": -0.2571428571428571
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1891891891891892
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "text_gzip": 40,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1891891891891892
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1891891891891892
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "text_gzip": 42,
+          "exp_gzip": 44,
+          "delta_ratio": -0.047619047619047616
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "text_gzip": 37,
+          "exp_gzip": 44,
+          "delta_ratio": -0.1891891891891892
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 44,
+          "delta_ratio": 0.022222222222222223
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 44,
+          "delta_ratio": 0.10204081632653061
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 44,
+          "delta_ratio": 0.043478260869565216
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "text_gzip": 54,
+          "exp_gzip": 44,
+          "delta_ratio": 0.18518518518518517
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 44,
+          "delta_ratio": 0.06382978723404255
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 44,
+          "delta_ratio": 0.08333333333333333
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "text_gzip": 51,
+          "exp_gzip": 44,
+          "delta_ratio": 0.13725490196078433
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "text_gzip": 46,
+          "exp_gzip": 44,
+          "delta_ratio": 0.043478260869565216
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "text_gzip": 56,
+          "exp_gzip": 44,
+          "delta_ratio": 0.21428571428571427
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "text_gzip": 57,
+          "exp_gzip": 44,
+          "delta_ratio": 0.22807017543859648
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "text_gzip": 57,
+          "exp_gzip": 44,
+          "delta_ratio": 0.22807017543859648
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "text_gzip": 49,
+          "exp_gzip": 44,
+          "delta_ratio": 0.10204081632653061
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 44,
+          "delta_ratio": 0.08333333333333333
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 44,
+          "delta_ratio": -0.023255813953488372
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 44,
+          "delta_ratio": 0.06382978723404255
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "text_gzip": 44,
+          "exp_gzip": 44,
+          "delta_ratio": 0.0
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "text_gzip": 52,
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 44,
+          "delta_ratio": 0.12
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "text_gzip": 47,
+          "exp_gzip": 44,
+          "delta_ratio": 0.06382978723404255
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "text_gzip": 43,
+          "exp_gzip": 44,
+          "delta_ratio": -0.023255813953488372
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 44,
+          "delta_ratio": 0.022222222222222223
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "text_gzip": 50,
+          "exp_gzip": 44,
+          "delta_ratio": 0.12
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "text_gzip": 45,
+          "exp_gzip": 44,
+          "delta_ratio": 0.022222222222222223
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "text_gzip": 48,
+          "exp_gzip": 44,
+          "delta_ratio": 0.08333333333333333
+        }
+      ]
+    }
+  },
+  "overall": {
+    "avg_delta_ratio": 0.12930045729569353
+  }
+}

@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Large data files
+*.csv
+*.tsv
+*.tar.bz2
+*.tar.gz
+*.tar
+*.bz2
+*.gz
+*.zip
+*.rar
+*.7z
+*.db
+*.sqlite
+*.sqlite3
+data/sentences.csv
+data/sentences.tar.bz2
+data/tatoeba_en.tsv
+data/tatoeba_*.tsv
+data/*.csv
+data/*.tsv
+data/*.db
+data/*.sqlite
+
+# Log files
+*.log
+.validate_candidates.log
+
+# IDE
+.vscode/
+.cursor/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+compression_report*.txt
+keep_union.txt
+keep_union.json
+filtered_primitives.json

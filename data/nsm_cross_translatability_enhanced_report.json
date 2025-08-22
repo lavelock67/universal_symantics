@@ -1,0 +1,1009 @@
+{
+  "metadata": {
+    "report_type": "enhanced_NSM_cross_translatability_structural_report",
+    "timestamp": "2025-08-22",
+    "data_source": "data/nsm_substitutability_refinement_results.json",
+    "models_used": {
+      "enhanced_sbert": true,
+      "enhanced_nli": true
+    },
+    "enhanced_features": [
+      "semantic_drift_detection",
+      "multi_metric_consistency",
+      "pattern_evolution_tracking",
+      "cross_language_adaptation_analysis"
+    ]
+  },
+  "analysis_results": {
+    "metadata": {
+      "analysis_type": "enhanced_cross_language_pattern_analysis",
+      "languages_analyzed": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "total_primitives": 9,
+      "consistent_primitives": 9,
+      "drift_detected_primitives": 0
+    },
+    "primitive_analysis": {
+      "AtLocation": {
+        "primitive": "AtLocation",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9763566911220551,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.3530360721051693,
+        "enhanced_validation_results": {
+          "consistency_score": 0.9763566911220551,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.9408917427062988,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9472216367721558,
+            0.9020573496818542,
+            0.973396360874176
+          ],
+          "explications_used": [
+            "this thing is in this place",
+            "esta cosa está en este lugar",
+            "cette chose est dans cet endroit"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing is in this place",
+              "semantic_focus": "spatial_relationship",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa está en este lugar",
+              "semantic_focus": "spatial_relationship",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose est dans cet endroit",
+              "semantic_focus": "spatial_relationship",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.3530360721051693,
+          "embedding_drift": 0.05910821631550789,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "AtLocation",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "spatial_relationship",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "this thing is in this place",
+                "this thing exists in this location"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "spatial_relationship",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "esta cosa está en este lugar",
+                "esta cosa existe en esta ubicación"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "spatial_relationship",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "cette chose est dans cet endroit",
+                "cette chose existe dans cet endroit"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 3.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "HasProperty": {
+        "primitive": "HasProperty",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9631599545478822,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.3640333687265714,
+        "enhanced_validation_results": {
+          "consistency_score": 0.9631599545478822,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.9078998565673828,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9367515444755554,
+            0.8470777273178101,
+            0.9398704171180725
+          ],
+          "explications_used": [
+            "this thing has this characteristic",
+            "esta cosa tiene esta característica",
+            "cette chose a cette caractéristique"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing has this characteristic",
+              "semantic_focus": "attribute_assignment",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa tiene esta característica",
+              "semantic_focus": "attribute_assignment",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose a cette caractéristique",
+              "semantic_focus": "attribute_assignment",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.3640333687265714,
+          "embedding_drift": 0.0921001061797142,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "HasProperty",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "attribute_assignment",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "this thing has this characteristic",
+                "this thing is characterized by this property"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "attribute_assignment",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "esta cosa tiene esta característica",
+                "esta cosa se caracteriza por esta propiedad"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "attribute_assignment",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "cette chose a cette caractéristique",
+                "cette chose se caractérise par cette propriété"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 4.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "Causes": {
+        "primitive": "Causes",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.968413805961609,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.35965515424807865,
+        "enhanced_validation_results": {
+          "consistency_score": 0.968413805961609,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.9210345149040222,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9370682239532471,
+            0.8681340217590332,
+            0.9579013586044312
+          ],
+          "explications_used": [
+            "this thing makes this other thing happen",
+            "esta cosa hace que esta otra cosa suceda",
+            "cette chose fait que cette autre chose se passe"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing makes this other thing happen",
+              "semantic_focus": "causal_relationship",
+              "structural_complexity": "high",
+              "cross_language_variants": 5
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa hace que esta otra cosa suceda",
+              "semantic_focus": "causal_relationship",
+              "structural_complexity": "high",
+              "cross_language_variants": 5
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose fait que cette autre chose se passe",
+              "semantic_focus": "causal_relationship",
+              "structural_complexity": "high",
+              "cross_language_variants": 5
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.35965515424807865,
+          "embedding_drift": 0.07896546274423599,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "Causes",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "causal_relationship",
+              "structural_complexity": "high",
+              "cross_language_variants": 5,
+              "patterns": [
+                "this thing makes this other thing happen",
+                "this thing leads to this result"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "causal_relationship",
+              "structural_complexity": "high",
+              "cross_language_variants": 5,
+              "patterns": [
+                "esta cosa hace que esta otra cosa suceda",
+                "esta cosa lleva a este resultado"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "causal_relationship",
+              "structural_complexity": "high",
+              "cross_language_variants": 5,
+              "patterns": [
+                "cette chose fait que cette autre chose se passe",
+                "cette chose mène à ce résultat"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 5.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "UsedFor": {
+        "primitive": "UsedFor",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9881483972072602,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.34320965719719726,
+        "enhanced_validation_results": {
+          "consistency_score": 0.9881483972072602,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.9703710079193115,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9703478813171387,
+            0.9510380029678345,
+            0.9897271990776062
+          ],
+          "explications_used": [
+            "people can use this thing to do this action",
+            "la gente puede usar esta cosa para hacer esta acción",
+            "les gens peuvent utiliser cette chose pour faire cette action"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "people can use this thing to do this action",
+              "semantic_focus": "functional_purpose",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            },
+            {
+              "language": "es",
+              "explication": "la gente puede usar esta cosa para hacer esta acción",
+              "semantic_focus": "functional_purpose",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            },
+            {
+              "language": "fr",
+              "explication": "les gens peuvent utiliser cette chose pour faire cette action",
+              "semantic_focus": "functional_purpose",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.34320965719719726,
+          "embedding_drift": 0.029628971591591835,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "UsedFor",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "functional_purpose",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "people can use this thing to do this action",
+                "this thing serves this purpose"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "functional_purpose",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "la gente puede usar esta cosa para hacer esta acción",
+                "esta cosa sirve para este propósito"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "functional_purpose",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "les gens peuvent utiliser cette chose pour faire cette action",
+                "cette chose sert à ce but"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 4.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "PartOf": {
+        "primitive": "PartOf",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9785801827907563,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.3511832219858964,
+        "enhanced_validation_results": {
+          "consistency_score": 0.9785801827907563,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.946450412273407,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9583467841148376,
+            0.9289860725402832,
+            0.952018141746521
+          ],
+          "explications_used": [
+            "this thing is a component of this whole",
+            "esta cosa es un componente de este todo",
+            "cette chose est un composant de cet ensemble"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing is a component of this whole",
+              "semantic_focus": "hierarchical_relationship",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa es un componente de este todo",
+              "semantic_focus": "hierarchical_relationship",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose est un composant de cet ensemble",
+              "semantic_focus": "hierarchical_relationship",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.3511832219858964,
+          "embedding_drift": 0.053549665957689285,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "PartOf",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "hierarchical_relationship",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "this thing is a component of this whole",
+                "this thing belongs to this larger thing"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "hierarchical_relationship",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "esta cosa es un componente de este todo",
+                "esta cosa pertenece a esta cosa más grande"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "hierarchical_relationship",
+              "structural_complexity": "medium",
+              "cross_language_variants": 4,
+              "patterns": [
+                "cette chose est un composant de cet ensemble",
+                "cette chose appartient à cette chose plus grande"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 4.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "SimilarTo": {
+        "primitive": "SimilarTo",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9742197155952455,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.35481690615415573,
+        "enhanced_validation_results": {
+          "consistency_score": 0.9742197155952455,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.935549259185791,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9150781035423279,
+            0.9154481291770935,
+            0.9761216044425964
+          ],
+          "explications_used": [
+            "this thing is like this other thing",
+            "esta cosa es como esta otra cosa",
+            "cette chose est comme cette autre chose"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing is like this other thing",
+              "semantic_focus": "similarity_assessment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa es como esta otra cosa",
+              "semantic_focus": "similarity_assessment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose est comme cette autre chose",
+              "semantic_focus": "similarity_assessment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.35481690615415573,
+          "embedding_drift": 0.0644507184624672,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "SimilarTo",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "similarity_assessment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "this thing is like this other thing",
+                "this thing resembles this other thing"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "similarity_assessment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "esta cosa es como esta otra cosa",
+                "esta cosa se parece a esta otra cosa"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "similarity_assessment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "cette chose est comme cette autre chose",
+                "cette chose ressemble à cette autre chose"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 3.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "DifferentFrom": {
+        "primitive": "DifferentFrom",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9785981237888337,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.3511682351430257,
+        "enhanced_validation_results": {
+          "consistency_score": 0.9785981237888337,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.9464952945709229,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.935685932636261,
+            0.9129979014396667,
+            0.9908020496368408
+          ],
+          "explications_used": [
+            "this thing is different from this other thing",
+            "esta cosa es diferente de esta otra cosa",
+            "cette chose est différente de cette autre chose"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing is different from this other thing",
+              "semantic_focus": "distinction_establishment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa es diferente de esta otra cosa",
+              "semantic_focus": "distinction_establishment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose est différente de cette autre chose",
+              "semantic_focus": "distinction_establishment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.3511682351430257,
+          "embedding_drift": 0.05350470542907715,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "DifferentFrom",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "distinction_establishment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "this thing is different from this other thing",
+                "this thing is distinct from this other thing"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "distinction_establishment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "esta cosa es diferente de esta otra cosa",
+                "esta cosa es distinta de esta otra cosa"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "distinction_establishment",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "cette chose est différente de cette autre chose",
+                "cette chose est distincte de cette autre chose"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 3.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "Not": {
+        "primitive": "Not",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.9773044347763062,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.35224631056189537,
+        "enhanced_validation_results": {
+          "consistency_score": 0.9773044347763062,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.9432610869407654,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9329065680503845,
+            0.9169432520866394,
+            0.9799333810806274
+          ],
+          "explications_used": [
+            "this thing is not this other thing",
+            "esta cosa no es esta otra cosa",
+            "cette chose n'est pas cette autre chose"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing is not this other thing",
+              "semantic_focus": "negation_operation",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa no es esta otra cosa",
+              "semantic_focus": "negation_operation",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose n'est pas cette autre chose",
+              "semantic_focus": "negation_operation",
+              "structural_complexity": "low",
+              "cross_language_variants": 3
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.35224631056189537,
+          "embedding_drift": 0.05673893168568611,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "Not",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "negation_operation",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "this thing is not this other thing",
+                "this thing does not have this property"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "negation_operation",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "esta cosa no es esta otra cosa",
+                "esta cosa no tiene esta propiedad"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "negation_operation",
+              "structural_complexity": "low",
+              "cross_language_variants": 3,
+              "patterns": [
+                "cette chose n'est pas cette autre chose",
+                "cette chose n'a pas cette propriété"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 3.0,
+            "total_patterns": 6
+          }
+        }
+      },
+      "Exist": {
+        "primitive": "Exist",
+        "languages_present": [
+          "en",
+          "es",
+          "fr"
+        ],
+        "mapping_consistency": 0.976104235649109,
+        "structural_alignment": "excellent",
+        "semantic_drift_detected": false,
+        "drift_score": 0.353246483951807,
+        "enhanced_validation_results": {
+          "consistency_score": 0.976104235649109,
+          "structural_alignment": "excellent",
+          "embedding_consistency": 0.9402605891227722,
+          "semantic_consistency": 1.0,
+          "structural_alignment_score": 1.0,
+          "pairwise_similarities": [
+            0.9259594082832336,
+            0.9034255743026733,
+            0.9913966655731201
+          ],
+          "explications_used": [
+            "this thing exists",
+            "esta cosa existe",
+            "cette chose existe"
+          ],
+          "metadata": [
+            {
+              "language": "en",
+              "explication": "this thing exists",
+              "semantic_focus": "existence_assertion",
+              "structural_complexity": "low",
+              "cross_language_variants": 2
+            },
+            {
+              "language": "es",
+              "explication": "esta cosa existe",
+              "semantic_focus": "existence_assertion",
+              "structural_complexity": "low",
+              "cross_language_variants": 2
+            },
+            {
+              "language": "fr",
+              "explication": "cette chose existe",
+              "semantic_focus": "existence_assertion",
+              "structural_complexity": "low",
+              "cross_language_variants": 2
+            }
+          ]
+        },
+        "drift_analysis": {
+          "drift_detected": false,
+          "drift_score": 0.353246483951807,
+          "embedding_drift": 0.059739451855421066,
+          "nli_drift": 1.0,
+          "structural_drift": 0.0,
+          "threshold": 0.6
+        },
+        "pattern_analysis": {
+          "primitive": "Exist",
+          "languages_present": [
+            "en",
+            "es",
+            "fr"
+          ],
+          "pattern_analysis": {
+            "en": {
+              "pattern_count": 2,
+              "semantic_focus": "existence_assertion",
+              "structural_complexity": "low",
+              "cross_language_variants": 2,
+              "patterns": [
+                "this thing exists",
+                "there is this thing"
+              ]
+            },
+            "es": {
+              "pattern_count": 2,
+              "semantic_focus": "existence_assertion",
+              "structural_complexity": "low",
+              "cross_language_variants": 2,
+              "patterns": [
+                "esta cosa existe",
+                "hay esta cosa"
+              ]
+            },
+            "fr": {
+              "pattern_count": 2,
+              "semantic_focus": "existence_assertion",
+              "structural_complexity": "low",
+              "cross_language_variants": 2,
+              "patterns": [
+                "cette chose existe",
+                "il y a cette chose"
+              ]
+            }
+          },
+          "cross_language_metrics": {
+            "semantic_consistency": true,
+            "structural_consistency": true,
+            "average_variants": 2.0,
+            "total_patterns": 6
+          }
+        }
+      }
+    },
+    "cross_language_metrics": {},
+    "semantic_drift_analysis": {},
+    "enhanced_recommendations": [
+      "Excellent cross-language consistency achieved. Maintain current structural patterns.",
+      "Implement pattern evolution tracking to monitor structural changes over time.",
+      "Consider language-specific structural adaptations for better cross-translatability.",
+      "Monitor semantic drift patterns and implement drift correction mechanisms."
+    ]
+  },
+  "summary": {
+    "overall_consistency": 0.9756539490487841,
+    "consistent_primitives": 9,
+    "total_primitives": 9,
+    "consistency_rate": 1.0,
+    "overall_drift_score": 0.3536217122304219,
+    "drift_detected_primitives": 0,
+    "drift_rate": 0.0
+  },
+  "enhanced_recommendations": [
+    "Excellent cross-language consistency achieved. Maintain current structural patterns.",
+    "Implement pattern evolution tracking to monitor structural changes over time.",
+    "Consider language-specific structural adaptations for better cross-translatability.",
+    "Monitor semantic drift patterns and implement drift correction mechanisms."
+  ]
+}

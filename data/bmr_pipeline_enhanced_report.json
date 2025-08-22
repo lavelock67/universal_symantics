@@ -1,0 +1,864 @@
+{
+  "metadata": {
+    "report_type": "enhanced_BMR_pipeline_report",
+    "timestamp": "2025-08-22",
+    "enhanced_features": [
+      "babelnet_synset_linking",
+      "semantic_relation_extraction",
+      "cross_language_generation",
+      "nsm_primitive_integration",
+      "quality_evaluation",
+      "graph_based_representation"
+    ]
+  },
+  "bmr_results": [
+    {
+      "example": {
+        "text": "The book is on the table",
+        "language": "en"
+      },
+      "bmr_graph": {
+        "graph_id": "bmr_1755879508",
+        "nodes": {
+          "node_0": {
+            "node_id": "node_0",
+            "synset_id": "bn:00072910n",
+            "lemma": "table",
+            "pos": null,
+            "language": "en",
+            "surface_form": "table",
+            "metadata": {
+              "all_synsets": [
+                "bn:00072910n",
+                "bn:00941661n",
+                "bn:00054482n",
+                "bn:00094717v",
+                "bn:01697591n",
+                "bn:02104867n",
+                "bn:01046451n",
+                "bn:00051979n",
+                "bn:00075814n",
+                "bn:00075815n",
+                "bn:00075812n",
+                "bn:00075813n",
+                "bn:00011641n",
+                "bn:00936901n",
+                "bn:00086459v"
+              ]
+            }
+          },
+          "node_1": {
+            "node_id": "node_1",
+            "synset_id": "bn:00083776v",
+            "lemma": "book",
+            "pos": null,
+            "language": "en",
+            "surface_form": "book",
+            "metadata": {
+              "all_synsets": [
+                "bn:00083776v",
+                "bn:00002370n",
+                "bn:00083774v",
+                "bn:01952150n",
+                "bn:03340641n",
+                "bn:00010217n",
+                "bn:00012061n",
+                "bn:00012063n",
+                "bn:00572110n",
+                "bn:15753493n",
+                "bn:00012065n",
+                "bn:00083773v",
+                "bn:00000748n",
+                "bn:15754677n",
+                "bn:00083775v",
+                "bn:00012059n",
+                "bn:00012060n",
+                "bn:02436230n",
+                "bn:00012062n",
+                "bn:00012064n",
+                "bn:03350217n",
+                "bn:02173164n",
+                "bn:16136963n",
+                "bn:00012066n",
+                "bn:15906224n",
+                "bn:07951251n",
+                "bn:00056458n"
+              ]
+            }
+          },
+          "nsm_primitive_0": {
+            "node_id": "nsm_primitive_0",
+            "synset_id": null,
+            "lemma": "HasProperty",
+            "pos": "PRIMITIVE",
+            "language": "en",
+            "surface_form": "HasProperty",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          },
+          "nsm_primitive_1": {
+            "node_id": "nsm_primitive_1",
+            "synset_id": null,
+            "lemma": "AtLocation",
+            "pos": "PRIMITIVE",
+            "language": "en",
+            "surface_form": "AtLocation",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          }
+        },
+        "edges": {},
+        "metadata": {
+          "source_text": "The book is on the table",
+          "language": "en",
+          "creation_time": 1755879508.25175,
+          "nsm_primitives": [
+            "HasProperty",
+            "AtLocation"
+          ]
+        }
+      },
+      "generated_text": "table book HasProperty AtLocation",
+      "quality_evaluation": {
+        "semantic_similarity": 0.5782785415649414,
+        "graph_completeness": 0.4,
+        "synset_coverage": 0.5,
+        "relation_quality": 0.0,
+        "overall_quality": 0.4113114166259766
+      }
+    },
+    {
+      "example": {
+        "text": "Esta cosa está en este lugar",
+        "language": "es"
+      },
+      "bmr_graph": {
+        "graph_id": "bmr_1755879517",
+        "nodes": {
+          "node_0": {
+            "node_id": "node_0",
+            "synset_id": "bn:00076928n",
+            "lemma": "cosa",
+            "pos": null,
+            "language": "es",
+            "surface_form": "cosa",
+            "metadata": {
+              "all_synsets": [
+                "bn:00076928n",
+                "bn:16956461n",
+                "bn:00076927n",
+                "bn:00058442n",
+                "bn:00076925n",
+                "bn:11368151n",
+                "bn:00076924n",
+                "bn:00074798n",
+                "bn:16512490n",
+                "bn:00076923n",
+                "bn:00076922n",
+                "bn:00076921n",
+                "bn:00076920n",
+                "bn:01260156n",
+                "bn:00028240n",
+                "bn:00053801n",
+                "bn:00001734n",
+                "bn:11389907n",
+                "bn:03630544n",
+                "bn:00750164n",
+                "bn:16854696n",
+                "bn:00076919n",
+                "bn:00076918n"
+              ]
+            }
+          },
+          "node_1": {
+            "node_id": "node_1",
+            "synset_id": "bn:00077575n",
+            "lemma": "esta",
+            "pos": null,
+            "language": "es",
+            "surface_form": "esta",
+            "metadata": {
+              "all_synsets": [
+                "bn:00077575n",
+                "bn:03329402n"
+              ]
+            }
+          },
+          "node_2": {
+            "node_id": "node_2",
+            "synset_id": "bn:03110853n",
+            "lemma": "este",
+            "pos": null,
+            "language": "es",
+            "surface_form": "este",
+            "metadata": {
+              "all_synsets": [
+                "bn:03110853n",
+                "bn:00029050n",
+                "bn:16631805n",
+                "bn:02342523n",
+                "bn:03397478n",
+                "bn:00101959a",
+                "bn:06872535n",
+                "bn:03811252n",
+                "bn:00073013n"
+              ]
+            }
+          },
+          "node_3": {
+            "node_id": "node_3",
+            "synset_id": "bn:16392170n",
+            "lemma": "lugar",
+            "pos": null,
+            "language": "es",
+            "surface_form": "lugar",
+            "metadata": {
+              "all_synsets": [
+                "bn:16392170n",
+                "bn:00063705n",
+                "bn:00063703n",
+                "bn:04679230n",
+                "bn:00062709n",
+                "bn:00062703n",
+                "bn:00030615n",
+                "bn:00062701n",
+                "bn:01493691n",
+                "bn:00000356n",
+                "bn:00064158n",
+                "bn:00063704n",
+                "bn:00987361n",
+                "bn:00051760n",
+                "bn:00051035n",
+                "bn:00115192r",
+                "bn:00051754n",
+                "bn:00051758n",
+                "bn:00051803n",
+                "bn:00115972r",
+                "bn:00062708n",
+                "bn:00115818r",
+                "bn:00062702n",
+                "bn:00239986n",
+                "bn:00062704n",
+                "bn:00062699n",
+                "bn:00062700n",
+                "bn:00114248r",
+                "bn:00010073n"
+              ]
+            }
+          },
+          "nsm_primitive_0": {
+            "node_id": "nsm_primitive_0",
+            "synset_id": null,
+            "lemma": "THIS",
+            "pos": "PRIMITIVE",
+            "language": "es",
+            "surface_form": "THIS",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          },
+          "nsm_primitive_1": {
+            "node_id": "nsm_primitive_1",
+            "synset_id": null,
+            "lemma": "WHERE",
+            "pos": "PRIMITIVE",
+            "language": "es",
+            "surface_form": "WHERE",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          },
+          "nsm_primitive_2": {
+            "node_id": "nsm_primitive_2",
+            "synset_id": null,
+            "lemma": "SOMETHING",
+            "pos": "PRIMITIVE",
+            "language": "es",
+            "surface_form": "SOMETHING",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          },
+          "nsm_primitive_3": {
+            "node_id": "nsm_primitive_3",
+            "synset_id": null,
+            "lemma": "AtLocation",
+            "pos": "PRIMITIVE",
+            "language": "es",
+            "surface_form": "AtLocation",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          }
+        },
+        "edges": {
+          "edge_0": {
+            "edge_id": "edge_0",
+            "source_id": "node_1",
+            "target_id": "node_0",
+            "relation_type": "PATIENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_1": {
+            "edge_id": "edge_1",
+            "source_id": "node_1",
+            "target_id": "node_0",
+            "relation_type": "AGENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_2": {
+            "edge_id": "edge_2",
+            "source_id": "node_2",
+            "target_id": "node_3",
+            "relation_type": "PATIENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_3": {
+            "edge_id": "edge_3",
+            "source_id": "node_2",
+            "target_id": "node_3",
+            "relation_type": "AGENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          }
+        },
+        "metadata": {
+          "source_text": "Esta cosa está en este lugar",
+          "language": "es",
+          "creation_time": 1755879517.1938848,
+          "nsm_primitives": [
+            "THIS",
+            "WHERE",
+            "SOMETHING",
+            "AtLocation"
+          ]
+        }
+      },
+      "generated_text": "esta cosa esta esta este lugar este este",
+      "quality_evaluation": {
+        "semantic_similarity": 0.9430335760116577,
+        "graph_completeness": 1.0,
+        "synset_coverage": 0.5,
+        "relation_quality": 1.0,
+        "overall_quality": 0.877213430404663
+      }
+    },
+    {
+      "example": {
+        "text": "Cette chose fait partie de l'ensemble",
+        "language": "fr"
+      },
+      "bmr_graph": {
+        "graph_id": "bmr_1755879523",
+        "nodes": {
+          "node_0": {
+            "node_id": "node_0",
+            "synset_id": "bn:03370967n",
+            "lemma": "cette",
+            "pos": null,
+            "language": "fr",
+            "surface_form": "cette",
+            "metadata": {
+              "all_synsets": [
+                "bn:03370967n"
+              ]
+            }
+          },
+          "node_1": {
+            "node_id": "node_1",
+            "synset_id": "bn:00101699a",
+            "lemma": "fait",
+            "pos": null,
+            "language": "fr",
+            "surface_form": "fait",
+            "metadata": {
+              "all_synsets": [
+                "bn:00101699a",
+                "bn:00032657n",
+                "bn:03622358n",
+                "bn:00019215n",
+                "bn:00114117r",
+                "bn:00114118r",
+                "bn:00114357r",
+                "bn:00032654n",
+                "bn:00032655n",
+                "bn:00032656n",
+                "bn:00025804n"
+              ]
+            }
+          },
+          "node_2": {
+            "node_id": "node_2",
+            "synset_id": "bn:00058443n",
+            "lemma": "chose",
+            "pos": null,
+            "language": "fr",
+            "surface_form": "chose",
+            "metadata": {
+              "all_synsets": [
+                "bn:00058443n",
+                "bn:00047731n",
+                "bn:00076927n",
+                "bn:00076925n",
+                "bn:00076923n",
+                "bn:00076921n",
+                "bn:00053869n",
+                "bn:01260156n",
+                "bn:04064026n",
+                "bn:00001734n",
+                "bn:00091114v",
+                "bn:00048237n",
+                "bn:00043267n",
+                "bn:00019884n",
+                "bn:00026623n",
+                "bn:00076919n",
+                "bn:00058444n",
+                "bn:00076928n",
+                "bn:00058442n",
+                "bn:00076926n",
+                "bn:04973571n",
+                "bn:00076924n",
+                "bn:00076922n",
+                "bn:00076920n",
+                "bn:00028240n",
+                "bn:00016407n",
+                "bn:00022157n",
+                "bn:00091115v",
+                "bn:00014140n",
+                "bn:17850544n",
+                "bn:13149446n",
+                "bn:00076918n"
+              ]
+            }
+          },
+          "node_3": {
+            "node_id": "node_3",
+            "synset_id": "bn:03177491n",
+            "lemma": "partie",
+            "pos": null,
+            "language": "fr",
+            "surface_form": "partie",
+            "metadata": {
+              "all_synsets": [
+                "bn:03177491n",
+                "bn:00070192n",
+                "bn:00060837n",
+                "bn:00009183n",
+                "bn:00037180n",
+                "bn:00027912n",
+                "bn:00010809n",
+                "bn:00071434n",
+                "bn:00060764n",
+                "bn:00116535r",
+                "bn:00071438n",
+                "bn:00060835n",
+                "bn:00022269n",
+                "bn:00060768n",
+                "bn:04755148n",
+                "bn:00060770n",
+                "bn:00063709n",
+                "bn:00037187n",
+                "bn:15988796n",
+                "bn:00070193n",
+                "bn:00064766n",
+                "bn:00060836n",
+                "bn:00037181n",
+                "bn:00074971n",
+                "bn:00060765n",
+                "bn:00060767n",
+                "bn:00060769n",
+                "bn:15685641n",
+                "bn:00070190n",
+                "bn:00017749n",
+                "bn:04878668n",
+                "bn:00021395n",
+                "bn:00071431n"
+              ]
+            }
+          },
+          "nsm_primitive_0": {
+            "node_id": "nsm_primitive_0",
+            "synset_id": null,
+            "lemma": "THIS",
+            "pos": "PRIMITIVE",
+            "language": "fr",
+            "surface_form": "THIS",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          },
+          "nsm_primitive_1": {
+            "node_id": "nsm_primitive_1",
+            "synset_id": null,
+            "lemma": "DO",
+            "pos": "PRIMITIVE",
+            "language": "fr",
+            "surface_form": "DO",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          },
+          "nsm_primitive_2": {
+            "node_id": "nsm_primitive_2",
+            "synset_id": null,
+            "lemma": "PartOf",
+            "pos": "PRIMITIVE",
+            "language": "fr",
+            "surface_form": "PartOf",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          },
+          "nsm_primitive_3": {
+            "node_id": "nsm_primitive_3",
+            "synset_id": null,
+            "lemma": "SOMETHING",
+            "pos": "PRIMITIVE",
+            "language": "fr",
+            "surface_form": "SOMETHING",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          }
+        },
+        "edges": {
+          "edge_0": {
+            "edge_id": "edge_0",
+            "source_id": "node_0",
+            "target_id": "node_2",
+            "relation_type": "PATIENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_1": {
+            "edge_id": "edge_1",
+            "source_id": "node_0",
+            "target_id": "node_2",
+            "relation_type": "AGENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_2": {
+            "edge_id": "edge_2",
+            "source_id": "node_2",
+            "target_id": "node_1",
+            "relation_type": "PATIENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_3": {
+            "edge_id": "edge_3",
+            "source_id": "node_2",
+            "target_id": "node_1",
+            "relation_type": "AGENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_4": {
+            "edge_id": "edge_4",
+            "source_id": "node_1",
+            "target_id": "node_3",
+            "relation_type": "PATIENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_5": {
+            "edge_id": "edge_5",
+            "source_id": "node_1",
+            "target_id": "node_3",
+            "relation_type": "AGENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          }
+        },
+        "metadata": {
+          "source_text": "Cette chose fait partie de l'ensemble",
+          "language": "fr",
+          "creation_time": 1755879523.731523,
+          "nsm_primitives": [
+            "THIS",
+            "DO",
+            "PartOf",
+            "SOMETHING"
+          ]
+        }
+      },
+      "generated_text": "cette chose cette cette chose fait chose chose fait partie fait fait",
+      "quality_evaluation": {
+        "semantic_similarity": 0.9028707146644592,
+        "graph_completeness": 1.0,
+        "synset_coverage": 0.5,
+        "relation_quality": 1.0,
+        "overall_quality": 0.8611482858657837
+      }
+    },
+    {
+      "example": {
+        "text": "The red car is fast",
+        "language": "en"
+      },
+      "bmr_graph": {
+        "graph_id": "bmr_1755879529",
+        "nodes": {
+          "node_0": {
+            "node_id": "node_0",
+            "synset_id": "bn:16947766n",
+            "lemma": "red",
+            "pos": null,
+            "language": "en",
+            "surface_form": "red",
+            "metadata": {
+              "all_synsets": [
+                "bn:16947766n",
+                "bn:03517357n",
+                "bn:03876982n",
+                "bn:02141942n",
+                "bn:13837299n",
+                "bn:15094702n",
+                "bn:15388904n",
+                "bn:02384879n",
+                "bn:00591461n",
+                "bn:02020170n",
+                "bn:00925604n",
+                "bn:14421507n",
+                "bn:00355975n",
+                "bn:07960484n",
+                "bn:03292814n",
+                "bn:02934551n",
+                "bn:00495078n",
+                "bn:14306262n",
+                "bn:00490264n",
+                "bn:17554845n",
+                "bn:00723474n",
+                "bn:01908792n",
+                "bn:17398617n",
+                "bn:00762177n",
+                "bn:00490644n",
+                "bn:00427355n",
+                "bn:02836566n",
+                "bn:15706318n",
+                "bn:00724599n",
+                "bn:01464283n",
+                "bn:15357115n",
+                "bn:01926396n",
+                "bn:03825229n",
+                "bn:17594579n",
+                "bn:00716892n",
+                "bn:03895848n",
+                "bn:02758860n",
+                "bn:14573155n",
+                "bn:03575534n",
+                "bn:02344224n",
+                "bn:02990063n",
+                "bn:01125273n",
+                "bn:21706052n",
+                "bn:03082446n",
+                "bn:00098581a",
+                "bn:02229438n",
+                "bn:14503626n",
+                "bn:00100654a",
+                "bn:02918437n",
+                "bn:00852993n",
+                "bn:03773768n",
+                "bn:14673305n",
+                "bn:01500012n",
+                "bn:00066631n",
+                "bn:03556971n",
+                "bn:14310198n",
+                "bn:16796951n",
+                "bn:03875855n",
+                "bn:03033894n",
+                "bn:00417256n",
+                "bn:00288139n",
+                "bn:00118750n",
+                "bn:02382966n",
+                "bn:01429946n",
+                "bn:00066632n",
+                "bn:18164245n",
+                "bn:02230991n",
+                "bn:03366993n",
+                "bn:01528074n",
+                "bn:01606782n",
+                "bn:00966822n",
+                "bn:00011893n",
+                "bn:03260180n",
+                "bn:01030793n",
+                "bn:00052054n",
+                "bn:07957264n",
+                "bn:17586349n",
+                "bn:03140486n",
+                "bn:00100653a"
+              ]
+            }
+          },
+          "node_1": {
+            "node_id": "node_1",
+            "synset_id": "bn:00497488n",
+            "lemma": "car",
+            "pos": null,
+            "language": "en",
+            "surface_form": "car",
+            "metadata": {
+              "all_synsets": [
+                "bn:00497488n",
+                "bn:15542381n",
+                "bn:00034046n",
+                "bn:16647291n",
+                "bn:02142237n",
+                "bn:08490963n",
+                "bn:01998884n",
+                "bn:04126555n",
+                "bn:01154351n",
+                "bn:00451062n",
+                "bn:00007309n",
+                "bn:15959664n",
+                "bn:09058880n",
+                "bn:00014462n",
+                "bn:03204308n",
+                "bn:00015787n",
+                "bn:00683253n",
+                "bn:14486345n",
+                "bn:06483025n",
+                "bn:03049212n",
+                "bn:00015785n",
+                "bn:02145572n",
+                "bn:03476293n",
+                "bn:02349566n",
+                "bn:00518825n",
+                "bn:02019083n",
+                "bn:01332592n",
+                "bn:00650485n",
+                "bn:15532556n",
+                "bn:00694637n",
+                "bn:03410363n",
+                "bn:00015786n",
+                "bn:00017169n"
+              ]
+            }
+          },
+          "node_2": {
+            "node_id": "node_2",
+            "synset_id": "bn:00102803a",
+            "lemma": "fast",
+            "pos": null,
+            "language": "en",
+            "surface_form": "fast",
+            "metadata": {
+              "all_synsets": [
+                "bn:00102803a",
+                "bn:03472516n",
+                "bn:00102805a",
+                "bn:00664493n",
+                "bn:00033737n",
+                "bn:00115335r",
+                "bn:00102807a",
+                "bn:07308523n",
+                "bn:00102809a",
+                "bn:21130634n",
+                "bn:00088050v",
+                "bn:15001997n",
+                "bn:17518115n",
+                "bn:00109438a",
+                "bn:11648174n",
+                "bn:03638210n",
+                "bn:00100989a",
+                "bn:02406186n",
+                "bn:00102804a",
+                "bn:16732427n",
+                "bn:00102806a",
+                "bn:00102810a",
+                "bn:00102802a",
+                "bn:00033758n",
+                "bn:00115336r",
+                "bn:00853770n",
+                "bn:00881060n",
+                "bn:00102808a",
+                "bn:00700996n",
+                "bn:00088049v"
+              ]
+            }
+          },
+          "nsm_primitive_0": {
+            "node_id": "nsm_primitive_0",
+            "synset_id": null,
+            "lemma": "HasProperty",
+            "pos": "PRIMITIVE",
+            "language": "en",
+            "surface_form": "HasProperty",
+            "metadata": {
+              "type": "nsm_primitive"
+            }
+          }
+        },
+        "edges": {
+          "edge_0": {
+            "edge_id": "edge_0",
+            "source_id": "node_0",
+            "target_id": "node_1",
+            "relation_type": "PATIENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          },
+          "edge_1": {
+            "edge_id": "edge_1",
+            "source_id": "node_0",
+            "target_id": "node_1",
+            "relation_type": "AGENT",
+            "weight": 1.0,
+            "metadata": {
+              "confidence": 0.7
+            }
+          }
+        },
+        "metadata": {
+          "source_text": "The red car is fast",
+          "language": "en",
+          "creation_time": 1755879529.8718212,
+          "nsm_primitives": [
+            "HasProperty"
+          ]
+        }
+      },
+      "generated_text": "red car red red",
+      "quality_evaluation": {
+        "semantic_similarity": 0.7783360481262207,
+        "graph_completeness": 0.6,
+        "synset_coverage": 0.75,
+        "relation_quality": 1.0,
+        "overall_quality": 0.7813344192504883
+      }
+    }
+  ],
+  "summary": {
+    "total_examples": 4,
+    "successful_parses": 4,
+    "avg_quality": 0.732751888036728
+  }
+}

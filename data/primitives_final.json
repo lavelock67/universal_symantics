@@ -1,0 +1,1481 @@
+{
+  "version": "0.1.0",
+  "categories": [
+    "causal",
+    "structural",
+    "cognitive",
+    "informational",
+    "spatial",
+    "logical"
+  ],
+  "primitives": [
+    {
+      "name": "Antonym",
+      "kind": "logical",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Antonym' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "AtLocation",
+      "kind": "spatial",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'AtLocation' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "CapableOf",
+      "kind": "cognitive",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'CapableOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Causes",
+      "kind": "causal",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Causes' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "CausesDesire",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'CausesDesire' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "CreatedBy",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'CreatedBy' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "DefinedAs",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'DefinedAs' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "DerivedFrom",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'DerivedFrom' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Desires",
+      "kind": "cognitive",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Desires' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "DistinctFrom",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'DistinctFrom' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Entails",
+      "kind": "causal",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Entails' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "EtymologicallyDerivedFrom",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'EtymologicallyDerivedFrom' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "FormOf",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'FormOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasA",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasA' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasContext",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasContext' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasFirstSubevent",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasFirstSubevent' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasPrerequisite",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasPrerequisite' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasProperty",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasProperty' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasSubevent",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasSubevent' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "IsA",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'IsA' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "MadeOf",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'MadeOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "MannerOf",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'MannerOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "MotivatedByGoal",
+      "kind": "causal",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'MotivatedByGoal' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "NotDesires",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'NotDesires' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "ObstructedBy",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'ObstructedBy' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "PartOf",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'PartOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "ReceivesAction",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'ReceivesAction' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "RelatedTo",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'RelatedTo' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "SimilarTo",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'SimilarTo' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "SymbolOf",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'SymbolOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Synonym",
+      "kind": "logical",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Synonym' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "UsedFor",
+      "kind": "cognitive",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'UsedFor' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasProperty_Foreign",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'language-amod-foreign' with frequency 38",
+      "examples": [
+        {
+          "text": "I find foreign languages very interesting.",
+          "head": "languages",
+          "child": "foreign",
+          "head_lemma": "language",
+          "child_lemma": "foreign"
+        },
+        {
+          "text": "It is important for you to learn a foreign language.",
+          "head": "language",
+          "child": "foreign",
+          "head_lemma": "language",
+          "child_lemma": "foreign"
+        },
+        {
+          "text": "Students often find it very difficult to understand a lecture in a foreign language.",
+          "head": "language",
+          "child": "foreign",
+          "head_lemma": "language",
+          "child_lemma": "foreign"
+        }
+      ]
+    },
+    {
+      "name": "IsTypeOf_Summer",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'vacation-compound-summer' with frequency 38",
+      "examples": [
+        {
+          "text": "Have a nice summer vacation.",
+          "head": "vacation",
+          "child": "summer",
+          "head_lemma": "vacation",
+          "child_lemma": "summer"
+        },
+        {
+          "text": "The students were all looking forward to the summer vacation.",
+          "head": "vacation",
+          "child": "summer",
+          "head_lemma": "vacation",
+          "child_lemma": "summer"
+        },
+        {
+          "text": "School will soon be over for summer vacation.",
+          "head": "vacation",
+          "child": "summer",
+          "head_lemma": "vacation",
+          "child_lemma": "summer"
+        }
+      ]
+    },
+    {
+      "name": "HasProperty_Last",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'year-amod-last' with frequency 29",
+      "examples": [
+        {
+          "text": "We went to London last year.",
+          "head": "year",
+          "child": "last",
+          "head_lemma": "year",
+          "child_lemma": "last"
+        },
+        {
+          "text": "Your idea cannot be brand new. I heard about it from another source last year.",
+          "head": "year",
+          "child": "last",
+          "head_lemma": "year",
+          "child_lemma": "last"
+        },
+        {
+          "text": "I had an operation for glaucoma last year.",
+          "head": "year",
+          "child": "last",
+          "head_lemma": "year",
+          "child_lemma": "last"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Mistake",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'make-dobj-mistake' with frequency 27",
+      "examples": [
+        {
+          "text": "James had a great fear of making mistakes in class and being reprimanded.",
+          "head": "making",
+          "child": "mistakes",
+          "head_lemma": "make",
+          "child_lemma": "mistake"
+        },
+        {
+          "text": "Do you think he made that mistake on purpose?",
+          "head": "made",
+          "child": "mistake",
+          "head_lemma": "make",
+          "child_lemma": "mistake"
+        },
+        {
+          "text": "You made the same mistake as last time.",
+          "head": "made",
+          "child": "mistake",
+          "head_lemma": "make",
+          "child_lemma": "mistake"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Time",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'have-dobj-time' with frequency 22",
+      "examples": [
+        {
+          "text": "I don't know if I have the time.",
+          "head": "have",
+          "child": "time",
+          "head_lemma": "have",
+          "child_lemma": "time"
+        },
+        {
+          "text": "You never have time for important things!",
+          "head": "have",
+          "child": "time",
+          "head_lemma": "have",
+          "child_lemma": "time"
+        },
+        {
+          "text": "The discrepancy between the stories of the two parties involved in the accident was so great that th...",
+          "head": "had",
+          "child": "time",
+          "head_lemma": "have",
+          "child_lemma": "time"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Book",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'read-dobj-book' with frequency 22",
+      "examples": [
+        {
+          "text": "I read a book while eating.",
+          "head": "read",
+          "child": "book",
+          "head_lemma": "read",
+          "child_lemma": "book"
+        },
+        {
+          "text": "Professors should explain everything in detail, not be succinct and always tell students to go home ...",
+          "head": "read",
+          "child": "books",
+          "head_lemma": "read",
+          "child_lemma": "book"
+        },
+        {
+          "text": "He spent the evening reading a book.",
+          "head": "reading",
+          "child": "book",
+          "head_lemma": "read",
+          "child_lemma": "book"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Good",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'do-dobj-good' with frequency 20",
+      "examples": [
+        {
+          "text": "I'll do my best not to disturb your studying.",
+          "head": "do",
+          "child": "best",
+          "head_lemma": "do",
+          "child_lemma": "good"
+        },
+        {
+          "text": "All you have to do is do your best.",
+          "head": "do",
+          "child": "best",
+          "head_lemma": "do",
+          "child_lemma": "good"
+        },
+        {
+          "text": "You must do your best.",
+          "head": "do",
+          "child": "best",
+          "head_lemma": "do",
+          "child_lemma": "good"
+        }
+      ]
+    },
+    {
+      "name": "HasProperty_Strong",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'wind-amod-strong' with frequency 20",
+      "examples": [
+        {
+          "text": "Flying against a strong wind is very difficult.",
+          "head": "wind",
+          "child": "strong",
+          "head_lemma": "wind",
+          "child_lemma": "strong"
+        },
+        {
+          "text": "The strong wind died away at night.",
+          "head": "wind",
+          "child": "strong",
+          "head_lemma": "wind",
+          "child_lemma": "strong"
+        },
+        {
+          "text": "Strong winds stripped the tree of its leaves.",
+          "head": "winds",
+          "child": "Strong",
+          "head_lemma": "wind",
+          "child_lemma": "strong"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Thing",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'do-dobj-thing' with frequency 15",
+      "examples": [
+        {
+          "text": "A Japanese would never do such a thing.",
+          "head": "do",
+          "child": "thing",
+          "head_lemma": "do",
+          "child_lemma": "thing"
+        },
+        {
+          "text": "You will say and do things your parents said and did, even if you swore you would never do them.",
+          "head": "do",
+          "child": "things",
+          "head_lemma": "do",
+          "child_lemma": "thing"
+        },
+        {
+          "text": "You shouldn't do things by halves.",
+          "head": "do",
+          "child": "things",
+          "head_lemma": "do",
+          "child_lemma": "thing"
+        }
+      ]
+    },
+    {
+      "name": "HasProperty_Many",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'people-amod-many' with frequency 15",
+      "examples": [
+        {
+          "text": "With so many people around he naturally became a bit nervous.",
+          "head": "people",
+          "child": "many",
+          "head_lemma": "people",
+          "child_lemma": "many"
+        },
+        {
+          "text": "Many people drift through life without a purpose.",
+          "head": "people",
+          "child": "Many",
+          "head_lemma": "people",
+          "child_lemma": "many"
+        },
+        {
+          "text": "Sadly many people will believe things told to them via an email which they would find implausible fa...",
+          "head": "people",
+          "child": "many",
+          "head_lemma": "people",
+          "child_lemma": "many"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Care",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'take-dobj-care' with frequency 15",
+      "examples": [
+        {
+          "text": "Take good care of yourself.",
+          "head": "Take",
+          "child": "care",
+          "head_lemma": "take",
+          "child_lemma": "care"
+        },
+        {
+          "text": "If you take care of the small things, the big things will take care of themselves.",
+          "head": "take",
+          "child": "care",
+          "head_lemma": "take",
+          "child_lemma": "care"
+        },
+        {
+          "text": "If you take care of the small things, the big things will take care of themselves.",
+          "head": "take",
+          "child": "care",
+          "head_lemma": "take",
+          "child_lemma": "care"
+        }
+      ]
+    },
+    {
+      "name": "IsA_Lot",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'be-attr-lot' with frequency 14",
+      "examples": [
+        {
+          "text": "I hate it when there are a lot of people.",
+          "head": "are",
+          "child": "lot",
+          "head_lemma": "be",
+          "child_lemma": "lot"
+        },
+        {
+          "text": "There are a lot of things you don't know about my personality.",
+          "head": "are",
+          "child": "lot",
+          "head_lemma": "be",
+          "child_lemma": "lot"
+        },
+        {
+          "text": "There's quite a lot of things to do; do you want some help?",
+          "head": "'s",
+          "child": "lot",
+          "head_lemma": "be",
+          "child_lemma": "lot"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Money",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'have-dobj-money' with frequency 14",
+      "examples": [
+        {
+          "text": "Hey, I may have no money, but I still have my pride.",
+          "head": "have",
+          "child": "money",
+          "head_lemma": "have",
+          "child_lemma": "money"
+        },
+        {
+          "text": "You haven't any money.",
+          "head": "have",
+          "child": "money",
+          "head_lemma": "have",
+          "child_lemma": "money"
+        },
+        {
+          "text": "I don't have as much money as you think.",
+          "head": "have",
+          "child": "money",
+          "head_lemma": "have",
+          "child_lemma": "money"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Problem",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'solve-dobj-problem' with frequency 14",
+      "examples": [
+        {
+          "text": "You are too clever not to solve the hard problem.",
+          "head": "solve",
+          "child": "problem",
+          "head_lemma": "solve",
+          "child_lemma": "problem"
+        },
+        {
+          "text": "Have you solved all the problems yet?",
+          "head": "solved",
+          "child": "problems",
+          "head_lemma": "solve",
+          "child_lemma": "problem"
+        },
+        {
+          "text": "Could you solve the problem?",
+          "head": "solve",
+          "child": "problem",
+          "head_lemma": "solve",
+          "child_lemma": "problem"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Train",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'miss-dobj-train' with frequency 14",
+      "examples": [
+        {
+          "text": "Hurry up, or you will miss the train.",
+          "head": "miss",
+          "child": "train",
+          "head_lemma": "miss",
+          "child_lemma": "train"
+        },
+        {
+          "text": "Hurry up, or you will miss the last train.",
+          "head": "miss",
+          "child": "train",
+          "head_lemma": "miss",
+          "child_lemma": "train"
+        },
+        {
+          "text": "You will miss the train if you don't hurry.",
+          "head": "miss",
+          "child": "train",
+          "head_lemma": "miss",
+          "child_lemma": "train"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Truth",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'tell-dobj-truth' with frequency 13",
+      "examples": [
+        {
+          "text": "\"To tell you the truth, I am scared of heights.\" \"You are a coward!\"",
+          "head": "tell",
+          "child": "truth",
+          "head_lemma": "tell",
+          "child_lemma": "truth"
+        },
+        {
+          "text": "The discrepancy between the stories of the two parties involved in the accident was so great that th...",
+          "head": "telling",
+          "child": "truth",
+          "head_lemma": "tell",
+          "child_lemma": "truth"
+        },
+        {
+          "text": "Ray was willing to corroborate Gary's story, but the police were still unconvinced that either of th...",
+          "head": "telling",
+          "child": "truth",
+          "head_lemma": "tell",
+          "child_lemma": "truth"
+        }
+      ]
+    },
+    {
+      "name": "DoesAction_Meeting",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'attend-dobj-meeting' with frequency 13",
+      "examples": [
+        {
+          "text": "You should have attended the meeting.",
+          "head": "attended",
+          "child": "meeting",
+          "head_lemma": "attend",
+          "child_lemma": "meeting"
+        },
+        {
+          "text": "You are not entitled to attend the meeting.",
+          "head": "attend",
+          "child": "meeting",
+          "head_lemma": "attend",
+          "child_lemma": "meeting"
+        },
+        {
+          "text": "Either you or he has to attend the meeting.",
+          "head": "attend",
+          "child": "meeting",
+          "head_lemma": "attend",
+          "child_lemma": "meeting"
+        }
+      ]
+    },
+    {
+      "name": "HasProperty_Near",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'future-amod-near' with frequency 13",
+      "examples": [
+        {
+          "text": "Your wish will come true in the near future.",
+          "head": "future",
+          "child": "near",
+          "head_lemma": "future",
+          "child_lemma": "near"
+        },
+        {
+          "text": "I would like to repay your kindness in the near future.",
+          "head": "future",
+          "child": "near",
+          "head_lemma": "future",
+          "child_lemma": "near"
+        },
+        {
+          "text": "In the near future, we may have a big earthquake in Japan.",
+          "head": "future",
+          "child": "near",
+          "head_lemma": "future",
+          "child_lemma": "near"
+        }
+      ]
+    },
+    {
+      "name": "IsActor_Begin",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'begin-nsubj-school' with frequency 13",
+      "examples": [
+        {
+          "text": "School begins tomorrow.",
+          "head": "begins",
+          "child": "School",
+          "head_lemma": "begin",
+          "child_lemma": "school"
+        },
+        {
+          "text": "School begins the day after tomorrow.",
+          "head": "begins",
+          "child": "School",
+          "head_lemma": "begin",
+          "child_lemma": "school"
+        },
+        {
+          "text": "Our school begins at eight in the morning.",
+          "head": "begins",
+          "child": "school",
+          "head_lemma": "begin",
+          "child_lemma": "school"
+        }
+      ]
+    }
+  ],
+  "algebra": {
+    "compose": [],
+    "inverse_pairs": []
+  }
+}

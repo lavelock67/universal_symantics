@@ -1,0 +1,146 @@
+{
+  "test_metadata": {
+    "test_type": "honest_parallel_cross_language",
+    "similarity_threshold": 0.3,
+    "parallel_data_used": true,
+    "multilingual_bias_removed": true
+  },
+  "summary": {
+    "total_languages": 3,
+    "total_primitives": 8,
+    "universal_primitives": [],
+    "universality_rate": 0.0,
+    "translation_potential": "None",
+    "confidence": "No universal primitives found"
+  },
+  "per_language_results": {
+    "en": {
+      "total_sentences": 10,
+      "successful_detections": 4,
+      "detection_rate": 0.4,
+      "average_similarity": "0.14194994",
+      "primitive_counts": {
+        "DoesAction_Book": 1,
+        "PartOf": 1,
+        "SimilarTo": 1,
+        "NotDesires": 1,
+        "Causes": 1,
+        "DoesAction_Problem": 1,
+        "CausesDesire": 1
+      },
+      "detection_examples": {
+        "DoesAction_Book": [
+          {
+            "sentence": "The book is part of the library",
+            "similarity": 0.4913167655467987
+          }
+        ],
+        "PartOf": [
+          {
+            "sentence": "The book is part of the library",
+            "similarity": 0.34885984659194946
+          }
+        ],
+        "SimilarTo": [
+          {
+            "sentence": "The bird is similar to a plane",
+            "similarity": 0.3019019663333893
+          }
+        ],
+        "NotDesires": [
+          {
+            "sentence": "The student does not understand",
+            "similarity": 0.30053019523620605
+          }
+        ],
+        "Causes": [
+          {
+            "sentence": "The problem exists in the system",
+            "similarity": 0.32575052976608276
+          }
+        ],
+        "DoesAction_Problem": [
+          {
+            "sentence": "The problem exists in the system",
+            "similarity": 0.32452067732810974
+          }
+        ],
+        "CausesDesire": [
+          {
+            "sentence": "The problem exists in the system",
+            "similarity": 0.3214830756187439
+          }
+        ]
+      },
+      "unique_primitives": 7
+    },
+    "es": {
+      "total_sentences": 10,
+      "successful_detections": 2,
+      "detection_rate": 0.2,
+      "average_similarity": "0.06858783",
+      "primitive_counts": {
+        "SimilarTo": 1,
+        "DefinedAs": 1
+      },
+      "detection_examples": {
+        "SimilarTo": [
+          {
+            "sentence": "El pájaro es similar a un avión",
+            "similarity": 0.3585224151611328
+          }
+        ],
+        "DefinedAs": [
+          {
+            "sentence": "El problema existe en el sistema",
+            "similarity": 0.32735592126846313
+          }
+        ]
+      },
+      "unique_primitives": 2
+    },
+    "fr": {
+      "total_sentences": 10,
+      "successful_detections": 0,
+      "detection_rate": 0.0,
+      "average_similarity": 0.0,
+      "primitive_counts": {},
+      "detection_examples": {},
+      "unique_primitives": 0
+    }
+  },
+  "universality_analysis": {
+    "total_languages": 3,
+    "total_primitives": 8,
+    "universal_primitives": [],
+    "universality_rate": 0.0,
+    "cross_language_primitives": [
+      "SimilarTo"
+    ],
+    "language_specific_primitives": [
+      "DoesAction_Book",
+      "PartOf",
+      "NotDesires",
+      "Causes",
+      "DoesAction_Problem",
+      "CausesDesire",
+      "DefinedAs"
+    ],
+    "primitive_coverage": {
+      "DoesAction_Book": "{'en'}",
+      "PartOf": "{'en'}",
+      "SimilarTo": "{'en', 'es'}",
+      "NotDesires": "{'en'}",
+      "Causes": "{'en'}",
+      "DoesAction_Problem": "{'en'}",
+      "CausesDesire": "{'en'}",
+      "DefinedAs": "{'es'}"
+    }
+  },
+  "translation_analysis": {
+    "potential": "None",
+    "confidence": "No universal primitives found",
+    "universality_rate": 0.0,
+    "universal_primitive_count": 0
+  }
+}

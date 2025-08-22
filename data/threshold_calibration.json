@@ -1,0 +1,71 @@
+{
+  "similarity_threshold": {
+    "results": [],
+    "optimal_threshold": 0.3,
+    "test_cases": 9
+  },
+  "per_primitive": {},
+  "ud_thresholds": {
+    "ud_results": [
+      {
+        "threshold": 0.1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      },
+      {
+        "threshold": 0.8,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "test_count": 4
+      }
+    ],
+    "optimal_ud_threshold": 0.1
+  },
+  "timestamp": "2025-08-22T04:31:30",
+  "test_data_size": 9
+}

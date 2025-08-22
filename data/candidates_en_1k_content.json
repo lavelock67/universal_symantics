@@ -1,0 +1,184 @@
+[
+  {
+    "key": "be-mark-that",
+    "head": "be",
+    "relation": "mark",
+    "arg_types": [
+      "that"
+    ],
+    "frequency": 16,
+    "examples": [
+      "I found a solution, but I found it so fast that it can't be the right solution.",
+      "It may be that the happiness awaiting us is not at all the sort of happiness we would want.",
+      "Seeing that you're not surprised, I think you must have known."
+    ]
+  },
+  {
+    "key": "be-advcl-be",
+    "head": "be",
+    "relation": "advcl",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 14,
+    "examples": [
+      "If the world weren't in the shape it is now, I could trust anyone.",
+      "America is a lovely place to be, if you are here to earn money.",
+      "That's because you're a girl."
+    ]
+  },
+  {
+    "key": "be-mark-if",
+    "head": "be",
+    "relation": "mark",
+    "arg_types": [
+      "if"
+    ],
+    "frequency": 11,
+    "examples": [
+      "I can only wonder if this is the same for everyone else.",
+      "If the world weren't in the shape it is now, I could trust anyone.",
+      "America is a lovely place to be, if you are here to earn money."
+    ]
+  },
+  {
+    "key": "be-ccomp-be",
+    "head": "be",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 11,
+    "examples": [
+      "No I'm not; you are!",
+      "I'm not a real fish, I'm just a mere plushy.",
+      "It's not much of a surprise, is it?"
+    ]
+  },
+  {
+    "key": "have-mark-if",
+    "head": "have",
+    "relation": "mark",
+    "arg_types": [
+      "if"
+    ],
+    "frequency": 9,
+    "examples": [
+      "I don't know if I have the time.",
+      "I don't know if I still have it.",
+      "There's no point saying \"Hi, how are you?\" to me if you have nothing else to say."
+    ]
+  },
+  {
+    "key": "be-mark-because",
+    "head": "be",
+    "relation": "mark",
+    "arg_types": [
+      "because"
+    ],
+    "frequency": 8,
+    "examples": [
+      "That's because you're a girl.",
+      "Every person who is alone is alone because they are afraid of others.",
+      "If you don't understand something, it's because you aren't aware of its context."
+    ]
+  },
+  {
+    "key": "say-ccomp-be",
+    "head": "say",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 8,
+    "examples": [
+      "They say love is blind.",
+      "It is said that \"Hamlet\" is the most interesting play ever written.",
+      "My friends always say I'm too calm, but my family always says I'm too annoying."
+    ]
+  },
+  {
+    "key": "do-dobj-what",
+    "head": "do",
+    "relation": "dobj",
+    "arg_types": [
+      "dobj"
+    ],
+    "frequency": 7,
+    "examples": [
+      "I don't know what to do anymore.",
+      "What do you think I've been doing?",
+      "And what are we going to do?"
+    ]
+  },
+  {
+    "key": "want-xcomp-be",
+    "head": "want",
+    "relation": "xcomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 6,
+    "examples": [
+      "It's because you don't want to be alone.",
+      "I once wanted to be an astrophysicist.",
+      "I don't want to be lame; I want to be cool!!"
+    ]
+  },
+  {
+    "key": "think-ccomp-be",
+    "head": "think",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 6,
+    "examples": [
+      "Most people think I'm crazy.",
+      "I think it is best not to be impolite.",
+      "I don't think, therefore I am not."
+    ]
+  },
+  {
+    "key": "know-ccomp-be",
+    "head": "know",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 6,
+    "examples": [
+      "It is inevitable that I go to France someday, I just don't know when.",
+      "When you're trying to prove something, it helps to know it's true.",
+      "You don't know who I am."
+    ]
+  },
+  {
+    "key": "ask-ccomp-be",
+    "head": "ask",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 5,
+    "examples": [
+      "If anyone was to ask what the point of the story is, I really don't know.",
+      "She's asking how that's possible.",
+      "\"What's the matter?\" asked the little white rabbit."
+    ]
+  },
+  {
+    "key": "have-mark-that",
+    "head": "have",
+    "relation": "mark",
+    "arg_types": [
+      "that"
+    ],
+    "frequency": 5,
+    "examples": [
+      "I suppose that behind each thing we have to do, there's something we want to do...",
+      "Mathematicians are poets, except that they have to prove what their fantasy creates.",
+      "The discrepancy between the stories of the two parties involved in the accident was so great that the authorities had a hard time deciding which side was telling the truth."
+    ]
+  }
+]

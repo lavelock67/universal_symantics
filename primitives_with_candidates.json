@@ -1,0 +1,897 @@
+{
+  "version": "0.1.0",
+  "categories": [
+    "logical",
+    "causal",
+    "cognitive",
+    "structural",
+    "informational",
+    "spatial"
+  ],
+  "primitives": [
+    {
+      "name": "Antonym",
+      "kind": "logical",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Antonym' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "AtLocation",
+      "kind": "spatial",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'AtLocation' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "CapableOf",
+      "kind": "cognitive",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'CapableOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Causes",
+      "kind": "causal",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Causes' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "CausesDesire",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'CausesDesire' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "CreatedBy",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'CreatedBy' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "DefinedAs",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'DefinedAs' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "DerivedFrom",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'DerivedFrom' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Desires",
+      "kind": "cognitive",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Desires' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "DistinctFrom",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'DistinctFrom' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Entails",
+      "kind": "causal",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Entails' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "EtymologicallyDerivedFrom",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'EtymologicallyDerivedFrom' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "FormOf",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'FormOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasA",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasA' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasContext",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasContext' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasFirstSubevent",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasFirstSubevent' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasPrerequisite",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasPrerequisite' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasProperty",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasProperty' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "HasSubevent",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'HasSubevent' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "IsA",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'IsA' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "MadeOf",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'MadeOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "MannerOf",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'MannerOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "MotivatedByGoal",
+      "kind": "causal",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'MotivatedByGoal' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "NotDesires",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'NotDesires' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "ObstructedBy",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'ObstructedBy' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "PartOf",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'PartOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "ReceivesAction",
+      "kind": "structural",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'ReceivesAction' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "RelatedTo",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'RelatedTo' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "SimilarTo",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'SimilarTo' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "SymbolOf",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'SymbolOf' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Synonym",
+      "kind": "logical",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'Synonym' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "UsedFor",
+      "kind": "cognitive",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Universal relation 'UsedFor' found in 30 languages",
+      "examples": [
+        "Appears in 30 languages",
+        "Average count: 200.0",
+        "Universality score: 6.000"
+      ]
+    },
+    {
+      "name": "Cand_nsubj_nsubj",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'be-nsubj-it' with frequency 91",
+      "examples": [
+        "Today is June 18th and it is Muiriel's birthday!",
+        "Is it a recent picture?",
+        "It's because you don't want to be alone."
+      ]
+    },
+    {
+      "name": "Cand_mark_that",
+      "kind": "informational",
+      "signature": {
+        "arity": 1,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'be-mark-that' with frequency 16",
+      "examples": [
+        "I found a solution, but I found it so fast that it can't be the right solution.",
+        "It may be that the happiness awaiting us is not at all the sort of happiness we would want.",
+        "Seeing that you're not surprised, I think you must have known."
+      ]
+    },
+    {
+      "name": "Cand_advcl_be",
+      "kind": "informational",
+      "signature": {
+        "arity": 1,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'be-advcl-be' with frequency 14",
+      "examples": [
+        "If the world weren't in the shape it is now, I could trust anyone.",
+        "America is a lovely place to be, if you are here to earn money.",
+        "That's because you're a girl."
+      ]
+    },
+    {
+      "name": "Cand_mark_if",
+      "kind": "informational",
+      "signature": {
+        "arity": 1,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'be-mark-if' with frequency 11",
+      "examples": [
+        "I can only wonder if this is the same for everyone else.",
+        "If the world weren't in the shape it is now, I could trust anyone.",
+        "America is a lovely place to be, if you are here to earn money."
+      ]
+    },
+    {
+      "name": "Cand_ccomp_be",
+      "kind": "informational",
+      "signature": {
+        "arity": 1,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'be-ccomp-be' with frequency 11",
+      "examples": [
+        "No I'm not; you are!",
+        "I'm not a real fish, I'm just a mere plushy.",
+        "It's not much of a surprise, is it?"
+      ]
+    },
+    {
+      "name": "Cand_mark_because",
+      "kind": "informational",
+      "signature": {
+        "arity": 1,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'be-mark-because' with frequency 8",
+      "examples": [
+        "That's because you're a girl.",
+        "Every person who is alone is alone because they are afraid of others.",
+        "If you don't understand something, it's because you aren't aware of its context."
+      ]
+    },
+    {
+      "name": "Cand_dobj_dobj",
+      "kind": "informational",
+      "signature": {
+        "arity": 2,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'do-dobj-what' with frequency 7",
+      "examples": [
+        "I don't know what to do anymore.",
+        "What do you think I've been doing?",
+        "And what are we going to do?"
+      ]
+    },
+    {
+      "name": "Cand_xcomp_be",
+      "kind": "informational",
+      "signature": {
+        "arity": 1,
+        "input_types": [],
+        "output_type": "any",
+        "constraints": {}
+      },
+      "inverse": null,
+      "neutral": null,
+      "compose_rules": [],
+      "symmetric": false,
+      "transitive": false,
+      "antisymmetric": false,
+      "description": "Pattern 'want-xcomp-be' with frequency 6",
+      "examples": [
+        "It's because you don't want to be alone.",
+        "I once wanted to be an astrophysicist.",
+        "I don't want to be lame; I want to be cool!!"
+      ]
+    }
+  ],
+  "algebra": {
+    "compose": [],
+    "inverse_pairs": []
+  }
+}

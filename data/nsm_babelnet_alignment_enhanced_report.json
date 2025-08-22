@@ -1,0 +1,3889 @@
+{
+  "metadata": {
+    "report_type": "enhanced_nsm_babelnet_alignment_report",
+    "timestamp": "2025-08-22",
+    "enhanced_features": [
+      "nsm_explication_generation",
+      "babelnet_synset_extraction",
+      "semantic_similarity_alignment",
+      "primitive_overlap_scoring",
+      "cross_language_consistency",
+      "graph_based_alignment",
+      "quality_assessment"
+    ]
+  },
+  "alignment_results": [
+    {
+      "example": {
+        "text": "The red car is parked near the building",
+        "language": "en"
+      },
+      "alignment_graph": {
+        "graph_id": "nsm_babelnet_alignment_1755881406",
+        "nodes": {
+          "nsm_explication_0": {
+            "node_id": "nsm_explication_0",
+            "node_type": "nsm_explication",
+            "content": "NEAR(The red car is parked near the building)",
+            "language": "en",
+            "metadata": {
+              "primitive_type": "unknown"
+            }
+          },
+          "nsm_explication_1": {
+            "node_id": "nsm_explication_1",
+            "node_type": "nsm_explication",
+            "content": "HasProperty(The red car is parked near the building)",
+            "language": "en",
+            "metadata": {
+              "primitive_type": "property"
+            }
+          },
+          "babelnet_synset_0": {
+            "node_id": "babelnet_synset_0",
+            "node_type": "babelnet_synset",
+            "content": "bn:16947766n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_1": {
+            "node_id": "babelnet_synset_1",
+            "node_type": "babelnet_synset",
+            "content": "bn:03517357n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_2": {
+            "node_id": "babelnet_synset_2",
+            "node_type": "babelnet_synset",
+            "content": "bn:03876982n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_3": {
+            "node_id": "babelnet_synset_3",
+            "node_type": "babelnet_synset",
+            "content": "bn:02141942n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_4": {
+            "node_id": "babelnet_synset_4",
+            "node_type": "babelnet_synset",
+            "content": "bn:13837299n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_5": {
+            "node_id": "babelnet_synset_5",
+            "node_type": "babelnet_synset",
+            "content": "bn:15094702n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_6": {
+            "node_id": "babelnet_synset_6",
+            "node_type": "babelnet_synset",
+            "content": "bn:15388904n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_7": {
+            "node_id": "babelnet_synset_7",
+            "node_type": "babelnet_synset",
+            "content": "bn:02384879n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_8": {
+            "node_id": "babelnet_synset_8",
+            "node_type": "babelnet_synset",
+            "content": "bn:00591461n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_9": {
+            "node_id": "babelnet_synset_9",
+            "node_type": "babelnet_synset",
+            "content": "bn:02020170n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_10": {
+            "node_id": "babelnet_synset_10",
+            "node_type": "babelnet_synset",
+            "content": "bn:00925604n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_11": {
+            "node_id": "babelnet_synset_11",
+            "node_type": "babelnet_synset",
+            "content": "bn:14421507n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_12": {
+            "node_id": "babelnet_synset_12",
+            "node_type": "babelnet_synset",
+            "content": "bn:00355975n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_13": {
+            "node_id": "babelnet_synset_13",
+            "node_type": "babelnet_synset",
+            "content": "bn:07960484n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_14": {
+            "node_id": "babelnet_synset_14",
+            "node_type": "babelnet_synset",
+            "content": "bn:03292814n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_15": {
+            "node_id": "babelnet_synset_15",
+            "node_type": "babelnet_synset",
+            "content": "bn:02934551n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_16": {
+            "node_id": "babelnet_synset_16",
+            "node_type": "babelnet_synset",
+            "content": "bn:00495078n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_17": {
+            "node_id": "babelnet_synset_17",
+            "node_type": "babelnet_synset",
+            "content": "bn:14306262n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_18": {
+            "node_id": "babelnet_synset_18",
+            "node_type": "babelnet_synset",
+            "content": "bn:00490264n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_19": {
+            "node_id": "babelnet_synset_19",
+            "node_type": "babelnet_synset",
+            "content": "bn:17554845n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_20": {
+            "node_id": "babelnet_synset_20",
+            "node_type": "babelnet_synset",
+            "content": "bn:00723474n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_21": {
+            "node_id": "babelnet_synset_21",
+            "node_type": "babelnet_synset",
+            "content": "bn:01908792n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_22": {
+            "node_id": "babelnet_synset_22",
+            "node_type": "babelnet_synset",
+            "content": "bn:17398617n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_23": {
+            "node_id": "babelnet_synset_23",
+            "node_type": "babelnet_synset",
+            "content": "bn:00762177n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_24": {
+            "node_id": "babelnet_synset_24",
+            "node_type": "babelnet_synset",
+            "content": "bn:00490644n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_25": {
+            "node_id": "babelnet_synset_25",
+            "node_type": "babelnet_synset",
+            "content": "bn:00427355n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_26": {
+            "node_id": "babelnet_synset_26",
+            "node_type": "babelnet_synset",
+            "content": "bn:02836566n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_27": {
+            "node_id": "babelnet_synset_27",
+            "node_type": "babelnet_synset",
+            "content": "bn:15706318n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_28": {
+            "node_id": "babelnet_synset_28",
+            "node_type": "babelnet_synset",
+            "content": "bn:00724599n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_29": {
+            "node_id": "babelnet_synset_29",
+            "node_type": "babelnet_synset",
+            "content": "bn:01464283n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_30": {
+            "node_id": "babelnet_synset_30",
+            "node_type": "babelnet_synset",
+            "content": "bn:15357115n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_31": {
+            "node_id": "babelnet_synset_31",
+            "node_type": "babelnet_synset",
+            "content": "bn:01926396n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_32": {
+            "node_id": "babelnet_synset_32",
+            "node_type": "babelnet_synset",
+            "content": "bn:03825229n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_33": {
+            "node_id": "babelnet_synset_33",
+            "node_type": "babelnet_synset",
+            "content": "bn:17594579n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_34": {
+            "node_id": "babelnet_synset_34",
+            "node_type": "babelnet_synset",
+            "content": "bn:00716892n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_35": {
+            "node_id": "babelnet_synset_35",
+            "node_type": "babelnet_synset",
+            "content": "bn:03895848n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_36": {
+            "node_id": "babelnet_synset_36",
+            "node_type": "babelnet_synset",
+            "content": "bn:02758860n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_37": {
+            "node_id": "babelnet_synset_37",
+            "node_type": "babelnet_synset",
+            "content": "bn:14573155n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_38": {
+            "node_id": "babelnet_synset_38",
+            "node_type": "babelnet_synset",
+            "content": "bn:03575534n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_39": {
+            "node_id": "babelnet_synset_39",
+            "node_type": "babelnet_synset",
+            "content": "bn:02344224n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_40": {
+            "node_id": "babelnet_synset_40",
+            "node_type": "babelnet_synset",
+            "content": "bn:02990063n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_41": {
+            "node_id": "babelnet_synset_41",
+            "node_type": "babelnet_synset",
+            "content": "bn:01125273n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_42": {
+            "node_id": "babelnet_synset_42",
+            "node_type": "babelnet_synset",
+            "content": "bn:21706052n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_43": {
+            "node_id": "babelnet_synset_43",
+            "node_type": "babelnet_synset",
+            "content": "bn:03082446n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_44": {
+            "node_id": "babelnet_synset_44",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098581a",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_45": {
+            "node_id": "babelnet_synset_45",
+            "node_type": "babelnet_synset",
+            "content": "bn:02229438n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_46": {
+            "node_id": "babelnet_synset_46",
+            "node_type": "babelnet_synset",
+            "content": "bn:14503626n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_47": {
+            "node_id": "babelnet_synset_47",
+            "node_type": "babelnet_synset",
+            "content": "bn:00100654a",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_48": {
+            "node_id": "babelnet_synset_48",
+            "node_type": "babelnet_synset",
+            "content": "bn:02918437n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_49": {
+            "node_id": "babelnet_synset_49",
+            "node_type": "babelnet_synset",
+            "content": "bn:00852993n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_50": {
+            "node_id": "babelnet_synset_50",
+            "node_type": "babelnet_synset",
+            "content": "bn:03773768n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_51": {
+            "node_id": "babelnet_synset_51",
+            "node_type": "babelnet_synset",
+            "content": "bn:14673305n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_52": {
+            "node_id": "babelnet_synset_52",
+            "node_type": "babelnet_synset",
+            "content": "bn:01500012n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_53": {
+            "node_id": "babelnet_synset_53",
+            "node_type": "babelnet_synset",
+            "content": "bn:00066631n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_54": {
+            "node_id": "babelnet_synset_54",
+            "node_type": "babelnet_synset",
+            "content": "bn:03556971n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_55": {
+            "node_id": "babelnet_synset_55",
+            "node_type": "babelnet_synset",
+            "content": "bn:14310198n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_56": {
+            "node_id": "babelnet_synset_56",
+            "node_type": "babelnet_synset",
+            "content": "bn:16796951n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_57": {
+            "node_id": "babelnet_synset_57",
+            "node_type": "babelnet_synset",
+            "content": "bn:03875855n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_58": {
+            "node_id": "babelnet_synset_58",
+            "node_type": "babelnet_synset",
+            "content": "bn:03033894n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_59": {
+            "node_id": "babelnet_synset_59",
+            "node_type": "babelnet_synset",
+            "content": "bn:00417256n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_60": {
+            "node_id": "babelnet_synset_60",
+            "node_type": "babelnet_synset",
+            "content": "bn:00288139n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_61": {
+            "node_id": "babelnet_synset_61",
+            "node_type": "babelnet_synset",
+            "content": "bn:00118750n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_62": {
+            "node_id": "babelnet_synset_62",
+            "node_type": "babelnet_synset",
+            "content": "bn:02382966n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_63": {
+            "node_id": "babelnet_synset_63",
+            "node_type": "babelnet_synset",
+            "content": "bn:01429946n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_64": {
+            "node_id": "babelnet_synset_64",
+            "node_type": "babelnet_synset",
+            "content": "bn:00066632n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_65": {
+            "node_id": "babelnet_synset_65",
+            "node_type": "babelnet_synset",
+            "content": "bn:18164245n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_66": {
+            "node_id": "babelnet_synset_66",
+            "node_type": "babelnet_synset",
+            "content": "bn:02230991n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_67": {
+            "node_id": "babelnet_synset_67",
+            "node_type": "babelnet_synset",
+            "content": "bn:03366993n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_68": {
+            "node_id": "babelnet_synset_68",
+            "node_type": "babelnet_synset",
+            "content": "bn:01528074n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_69": {
+            "node_id": "babelnet_synset_69",
+            "node_type": "babelnet_synset",
+            "content": "bn:01606782n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_70": {
+            "node_id": "babelnet_synset_70",
+            "node_type": "babelnet_synset",
+            "content": "bn:00966822n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_71": {
+            "node_id": "babelnet_synset_71",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011893n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_72": {
+            "node_id": "babelnet_synset_72",
+            "node_type": "babelnet_synset",
+            "content": "bn:03260180n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_73": {
+            "node_id": "babelnet_synset_73",
+            "node_type": "babelnet_synset",
+            "content": "bn:01030793n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_74": {
+            "node_id": "babelnet_synset_74",
+            "node_type": "babelnet_synset",
+            "content": "bn:00052054n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_75": {
+            "node_id": "babelnet_synset_75",
+            "node_type": "babelnet_synset",
+            "content": "bn:07957264n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_76": {
+            "node_id": "babelnet_synset_76",
+            "node_type": "babelnet_synset",
+            "content": "bn:17586349n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_77": {
+            "node_id": "babelnet_synset_77",
+            "node_type": "babelnet_synset",
+            "content": "bn:03140486n",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_78": {
+            "node_id": "babelnet_synset_78",
+            "node_type": "babelnet_synset",
+            "content": "bn:00100653a",
+            "language": "en",
+            "metadata": {
+              "lemma": "red",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_79": {
+            "node_id": "babelnet_synset_79",
+            "node_type": "babelnet_synset",
+            "content": "bn:00108275a",
+            "language": "en",
+            "metadata": {
+              "lemma": "parked",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_80": {
+            "node_id": "babelnet_synset_80",
+            "node_type": "babelnet_synset",
+            "content": "bn:02815928n",
+            "language": "en",
+            "metadata": {
+              "lemma": "parked",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_81": {
+            "node_id": "babelnet_synset_81",
+            "node_type": "babelnet_synset",
+            "content": "bn:03227147n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_82": {
+            "node_id": "babelnet_synset_82",
+            "node_type": "babelnet_synset",
+            "content": "bn:17721831n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_83": {
+            "node_id": "babelnet_synset_83",
+            "node_type": "babelnet_synset",
+            "content": "bn:02434204n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_84": {
+            "node_id": "babelnet_synset_84",
+            "node_type": "babelnet_synset",
+            "content": "bn:03891838n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_85": {
+            "node_id": "babelnet_synset_85",
+            "node_type": "babelnet_synset",
+            "content": "bn:01443064n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_86": {
+            "node_id": "babelnet_synset_86",
+            "node_type": "babelnet_synset",
+            "content": "bn:16016902n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_87": {
+            "node_id": "babelnet_synset_87",
+            "node_type": "babelnet_synset",
+            "content": "bn:00013722n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_88": {
+            "node_id": "babelnet_synset_88",
+            "node_type": "babelnet_synset",
+            "content": "bn:02111572n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_89": {
+            "node_id": "babelnet_synset_89",
+            "node_type": "babelnet_synset",
+            "content": "bn:00013723n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_90": {
+            "node_id": "babelnet_synset_90",
+            "node_type": "babelnet_synset",
+            "content": "bn:00013724n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_91": {
+            "node_id": "babelnet_synset_91",
+            "node_type": "babelnet_synset",
+            "content": "bn:00013725n",
+            "language": "en",
+            "metadata": {
+              "lemma": "building",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_92": {
+            "node_id": "babelnet_synset_92",
+            "node_type": "babelnet_synset",
+            "content": "bn:00497488n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_93": {
+            "node_id": "babelnet_synset_93",
+            "node_type": "babelnet_synset",
+            "content": "bn:15542381n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_94": {
+            "node_id": "babelnet_synset_94",
+            "node_type": "babelnet_synset",
+            "content": "bn:00034046n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_95": {
+            "node_id": "babelnet_synset_95",
+            "node_type": "babelnet_synset",
+            "content": "bn:16647291n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_96": {
+            "node_id": "babelnet_synset_96",
+            "node_type": "babelnet_synset",
+            "content": "bn:02142237n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_97": {
+            "node_id": "babelnet_synset_97",
+            "node_type": "babelnet_synset",
+            "content": "bn:08490963n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_98": {
+            "node_id": "babelnet_synset_98",
+            "node_type": "babelnet_synset",
+            "content": "bn:01998884n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_99": {
+            "node_id": "babelnet_synset_99",
+            "node_type": "babelnet_synset",
+            "content": "bn:04126555n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_100": {
+            "node_id": "babelnet_synset_100",
+            "node_type": "babelnet_synset",
+            "content": "bn:01154351n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_101": {
+            "node_id": "babelnet_synset_101",
+            "node_type": "babelnet_synset",
+            "content": "bn:00451062n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_102": {
+            "node_id": "babelnet_synset_102",
+            "node_type": "babelnet_synset",
+            "content": "bn:00007309n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_103": {
+            "node_id": "babelnet_synset_103",
+            "node_type": "babelnet_synset",
+            "content": "bn:15959664n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_104": {
+            "node_id": "babelnet_synset_104",
+            "node_type": "babelnet_synset",
+            "content": "bn:09058880n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_105": {
+            "node_id": "babelnet_synset_105",
+            "node_type": "babelnet_synset",
+            "content": "bn:00014462n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_106": {
+            "node_id": "babelnet_synset_106",
+            "node_type": "babelnet_synset",
+            "content": "bn:03204308n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_107": {
+            "node_id": "babelnet_synset_107",
+            "node_type": "babelnet_synset",
+            "content": "bn:00015787n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_108": {
+            "node_id": "babelnet_synset_108",
+            "node_type": "babelnet_synset",
+            "content": "bn:00683253n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_109": {
+            "node_id": "babelnet_synset_109",
+            "node_type": "babelnet_synset",
+            "content": "bn:14486345n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_110": {
+            "node_id": "babelnet_synset_110",
+            "node_type": "babelnet_synset",
+            "content": "bn:06483025n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_111": {
+            "node_id": "babelnet_synset_111",
+            "node_type": "babelnet_synset",
+            "content": "bn:03049212n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_112": {
+            "node_id": "babelnet_synset_112",
+            "node_type": "babelnet_synset",
+            "content": "bn:00015785n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_113": {
+            "node_id": "babelnet_synset_113",
+            "node_type": "babelnet_synset",
+            "content": "bn:02145572n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_114": {
+            "node_id": "babelnet_synset_114",
+            "node_type": "babelnet_synset",
+            "content": "bn:03476293n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_115": {
+            "node_id": "babelnet_synset_115",
+            "node_type": "babelnet_synset",
+            "content": "bn:02349566n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_116": {
+            "node_id": "babelnet_synset_116",
+            "node_type": "babelnet_synset",
+            "content": "bn:00518825n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_117": {
+            "node_id": "babelnet_synset_117",
+            "node_type": "babelnet_synset",
+            "content": "bn:02019083n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_118": {
+            "node_id": "babelnet_synset_118",
+            "node_type": "babelnet_synset",
+            "content": "bn:01332592n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_119": {
+            "node_id": "babelnet_synset_119",
+            "node_type": "babelnet_synset",
+            "content": "bn:00650485n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_120": {
+            "node_id": "babelnet_synset_120",
+            "node_type": "babelnet_synset",
+            "content": "bn:15532556n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_121": {
+            "node_id": "babelnet_synset_121",
+            "node_type": "babelnet_synset",
+            "content": "bn:00694637n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_122": {
+            "node_id": "babelnet_synset_122",
+            "node_type": "babelnet_synset",
+            "content": "bn:03410363n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_123": {
+            "node_id": "babelnet_synset_123",
+            "node_type": "babelnet_synset",
+            "content": "bn:00015786n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_124": {
+            "node_id": "babelnet_synset_124",
+            "node_type": "babelnet_synset",
+            "content": "bn:00017169n",
+            "language": "en",
+            "metadata": {
+              "lemma": "car",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_125": {
+            "node_id": "babelnet_synset_125",
+            "node_type": "babelnet_synset",
+            "content": "bn:00107174a",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_126": {
+            "node_id": "babelnet_synset_126",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114747r",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_127": {
+            "node_id": "babelnet_synset_127",
+            "node_type": "babelnet_synset",
+            "content": "bn:00100981a",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_128": {
+            "node_id": "babelnet_synset_128",
+            "node_type": "babelnet_synset",
+            "content": "bn:00107175a",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_129": {
+            "node_id": "babelnet_synset_129",
+            "node_type": "babelnet_synset",
+            "content": "bn:03088190n",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_130": {
+            "node_id": "babelnet_synset_130",
+            "node_type": "babelnet_synset",
+            "content": "bn:00099859a",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_131": {
+            "node_id": "babelnet_synset_131",
+            "node_type": "babelnet_synset",
+            "content": "bn:00082732v",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_132": {
+            "node_id": "babelnet_synset_132",
+            "node_type": "babelnet_synset",
+            "content": "bn:00099570a",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_133": {
+            "node_id": "babelnet_synset_133",
+            "node_type": "babelnet_synset",
+            "content": "bn:00933080n",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_134": {
+            "node_id": "babelnet_synset_134",
+            "node_type": "babelnet_synset",
+            "content": "bn:16757300n",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_135": {
+            "node_id": "babelnet_synset_135",
+            "node_type": "babelnet_synset",
+            "content": "bn:00097402a",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_136": {
+            "node_id": "babelnet_synset_136",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114079r",
+            "language": "en",
+            "metadata": {
+              "lemma": "near",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          }
+        },
+        "edges": {
+          "alignment_0": {
+            "edge_id": "alignment_0",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_78",
+            "relation_type": "aligns_to",
+            "weight": 0.49610988948287965,
+            "confidence": 0.49610988948287965,
+            "metadata": {
+              "semantic_similarity": 0.2906012237071991,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.899347,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_1": {
+            "edge_id": "alignment_1",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_128",
+            "relation_type": "aligns_to",
+            "weight": 0.4952021583938599,
+            "confidence": 0.4952021583938599,
+            "metadata": {
+              "semantic_similarity": 0.29159289598464966,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.892825,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_2": {
+            "edge_id": "alignment_2",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_125",
+            "relation_type": "aligns_to",
+            "weight": 0.4940570789863586,
+            "confidence": 0.4940570789863586,
+            "metadata": {
+              "semantic_similarity": 0.2887296974658966,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.892826,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_3": {
+            "edge_id": "alignment_3",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_47",
+            "relation_type": "aligns_to",
+            "weight": 0.4937822473136902,
+            "confidence": 0.4937822473136902,
+            "metadata": {
+              "semantic_similarity": 0.28478261828422546,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.899346,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_4": {
+            "edge_id": "alignment_4",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_79",
+            "relation_type": "aligns_to",
+            "weight": 0.48904805109024047,
+            "confidence": 0.48904805109024047,
+            "metadata": {
+              "semantic_similarity": 0.2767576277256012,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.891725,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_5": {
+            "edge_id": "alignment_5",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_127",
+            "relation_type": "aligns_to",
+            "weight": 0.4880676144493103,
+            "confidence": 0.4880676144493103,
+            "metadata": {
+              "semantic_similarity": 0.27065953612327576,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.899019,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_6": {
+            "edge_id": "alignment_6",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_135",
+            "relation_type": "aligns_to",
+            "weight": 0.486533947076416,
+            "confidence": 0.486533947076416,
+            "metadata": {
+              "semantic_similarity": 0.26503586769104004,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.902598,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_7": {
+            "edge_id": "alignment_7",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_130",
+            "relation_type": "aligns_to",
+            "weight": 0.47757782325096126,
+            "confidence": 0.47757782325096126,
+            "metadata": {
+              "semantic_similarity": 0.24387405812740326,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.900141,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_8": {
+            "edge_id": "alignment_8",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_132",
+            "relation_type": "aligns_to",
+            "weight": 0.45972457054710386,
+            "confidence": 0.45972457054710386,
+            "metadata": {
+              "semantic_similarity": 0.1990964263677597,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.90043,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          },
+          "alignment_9": {
+            "edge_id": "alignment_9",
+            "source_id": "nsm_explication_1",
+            "target_id": "babelnet_synset_44",
+            "relation_type": "aligns_to",
+            "weight": 0.4421992632091522,
+            "confidence": 0.4421992632091522,
+            "metadata": {
+              "semantic_similarity": 0.15478865802288055,
+              "primitive_overlap": 0.5,
+              "cross_language_consistency": 0.901419,
+              "alignment_strategy": "cross_language_consistency"
+            }
+          }
+        },
+        "metadata": {
+          "source_text": "The red car is parked near the building",
+          "language": "en",
+          "creation_time": 1755881406.137144
+        }
+      },
+      "quality_evaluation": {
+        "quality_score": 0.3336522930416526,
+        "avg_confidence": 0.4822302643799972,
+        "avg_weight": 0.4822302643799972,
+        "alignment_coverage": 0.0364963503649635,
+        "nsm_nodes": 2,
+        "synset_nodes": 137,
+        "total_alignments": 10,
+        "issues": [
+          "low_confidence",
+          "low_weight",
+          "low_coverage"
+        ],
+        "recommendations": [
+          "Consider improving semantic similarity calculation",
+          "Review alignment scoring weights and thresholds",
+          "Increase number of alignments or improve coverage"
+        ]
+      }
+    },
+    {
+      "example": {
+        "text": "El gato negro está durmiendo en el jardín",
+        "language": "es"
+      },
+      "alignment_graph": {
+        "graph_id": "nsm_babelnet_alignment_1755881416",
+        "nodes": {
+          "babelnet_synset_0": {
+            "node_id": "babelnet_synset_0",
+            "node_type": "babelnet_synset",
+            "content": "bn:01840528n",
+            "language": "es",
+            "metadata": {
+              "lemma": "jardín",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_1": {
+            "node_id": "babelnet_synset_1",
+            "node_type": "babelnet_synset",
+            "content": "bn:00037302n",
+            "language": "es",
+            "metadata": {
+              "lemma": "jardín",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_2": {
+            "node_id": "babelnet_synset_2",
+            "node_type": "babelnet_synset",
+            "content": "bn:00037301n",
+            "language": "es",
+            "metadata": {
+              "lemma": "jardín",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_3": {
+            "node_id": "babelnet_synset_3",
+            "node_type": "babelnet_synset",
+            "content": "bn:00037300n",
+            "language": "es",
+            "metadata": {
+              "lemma": "jardín",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_4": {
+            "node_id": "babelnet_synset_4",
+            "node_type": "babelnet_synset",
+            "content": "bn:04736325n",
+            "language": "es",
+            "metadata": {
+              "lemma": "jardín",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_5": {
+            "node_id": "babelnet_synset_5",
+            "node_type": "babelnet_synset",
+            "content": "bn:00059772n",
+            "language": "es",
+            "metadata": {
+              "lemma": "jardín",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_6": {
+            "node_id": "babelnet_synset_6",
+            "node_type": "babelnet_synset",
+            "content": "bn:00009473n",
+            "language": "es",
+            "metadata": {
+              "lemma": "jardín",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_7": {
+            "node_id": "babelnet_synset_7",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098484a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_8": {
+            "node_id": "babelnet_synset_8",
+            "node_type": "babelnet_synset",
+            "content": "bn:02492086n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_9": {
+            "node_id": "babelnet_synset_9",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098480a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_10": {
+            "node_id": "babelnet_synset_10",
+            "node_type": "babelnet_synset",
+            "content": "bn:01042561n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_11": {
+            "node_id": "babelnet_synset_11",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098492a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_12": {
+            "node_id": "babelnet_synset_12",
+            "node_type": "babelnet_synset",
+            "content": "bn:16167075n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_13": {
+            "node_id": "babelnet_synset_13",
+            "node_type": "babelnet_synset",
+            "content": "bn:00101434a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_14": {
+            "node_id": "babelnet_synset_14",
+            "node_type": "babelnet_synset",
+            "content": "bn:14348672n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_15": {
+            "node_id": "babelnet_synset_15",
+            "node_type": "babelnet_synset",
+            "content": "bn:00010849n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_16": {
+            "node_id": "babelnet_synset_16",
+            "node_type": "babelnet_synset",
+            "content": "bn:00010936n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_17": {
+            "node_id": "babelnet_synset_17",
+            "node_type": "babelnet_synset",
+            "content": "bn:00010817n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_18": {
+            "node_id": "babelnet_synset_18",
+            "node_type": "babelnet_synset",
+            "content": "bn:00022443n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_19": {
+            "node_id": "babelnet_synset_19",
+            "node_type": "babelnet_synset",
+            "content": "bn:01125818n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_20": {
+            "node_id": "babelnet_synset_20",
+            "node_type": "babelnet_synset",
+            "content": "bn:02093014n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_21": {
+            "node_id": "babelnet_synset_21",
+            "node_type": "babelnet_synset",
+            "content": "bn:00107209a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_22": {
+            "node_id": "babelnet_synset_22",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098483a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_23": {
+            "node_id": "babelnet_synset_23",
+            "node_type": "babelnet_synset",
+            "content": "bn:08286189n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_24": {
+            "node_id": "babelnet_synset_24",
+            "node_type": "babelnet_synset",
+            "content": "bn:00020726n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_25": {
+            "node_id": "babelnet_synset_25",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098485a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_26": {
+            "node_id": "babelnet_synset_26",
+            "node_type": "babelnet_synset",
+            "content": "bn:01982793n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_27": {
+            "node_id": "babelnet_synset_27",
+            "node_type": "babelnet_synset",
+            "content": "bn:01329985n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_28": {
+            "node_id": "babelnet_synset_28",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098481a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_29": {
+            "node_id": "babelnet_synset_29",
+            "node_type": "babelnet_synset",
+            "content": "bn:00010820n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_30": {
+            "node_id": "babelnet_synset_30",
+            "node_type": "babelnet_synset",
+            "content": "bn:00010866n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_31": {
+            "node_id": "babelnet_synset_31",
+            "node_type": "babelnet_synset",
+            "content": "bn:00040369n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_32": {
+            "node_id": "babelnet_synset_32",
+            "node_type": "babelnet_synset",
+            "content": "bn:00010816n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_33": {
+            "node_id": "babelnet_synset_33",
+            "node_type": "babelnet_synset",
+            "content": "bn:00022442n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_34": {
+            "node_id": "babelnet_synset_34",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011005n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_35": {
+            "node_id": "babelnet_synset_35",
+            "node_type": "babelnet_synset",
+            "content": "bn:04128103n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_36": {
+            "node_id": "babelnet_synset_36",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098611a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_37": {
+            "node_id": "babelnet_synset_37",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098487a",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_38": {
+            "node_id": "babelnet_synset_38",
+            "node_type": "babelnet_synset",
+            "content": "bn:08267280n",
+            "language": "es",
+            "metadata": {
+              "lemma": "negro",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_39": {
+            "node_id": "babelnet_synset_39",
+            "node_type": "babelnet_synset",
+            "content": "bn:00077530n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_40": {
+            "node_id": "babelnet_synset_40",
+            "node_type": "babelnet_synset",
+            "content": "bn:16457842n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_41": {
+            "node_id": "babelnet_synset_41",
+            "node_type": "babelnet_synset",
+            "content": "bn:03413162n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_42": {
+            "node_id": "babelnet_synset_42",
+            "node_type": "babelnet_synset",
+            "content": "bn:00016609n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_43": {
+            "node_id": "babelnet_synset_43",
+            "node_type": "babelnet_synset",
+            "content": "bn:00016606n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_44": {
+            "node_id": "babelnet_synset_44",
+            "node_type": "babelnet_synset",
+            "content": "bn:00028030n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_45": {
+            "node_id": "babelnet_synset_45",
+            "node_type": "babelnet_synset",
+            "content": "bn:03273288n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_46": {
+            "node_id": "babelnet_synset_46",
+            "node_type": "babelnet_synset",
+            "content": "bn:02754907n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_47": {
+            "node_id": "babelnet_synset_47",
+            "node_type": "babelnet_synset",
+            "content": "bn:00840476n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_48": {
+            "node_id": "babelnet_synset_48",
+            "node_type": "babelnet_synset",
+            "content": "bn:17971049n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_49": {
+            "node_id": "babelnet_synset_49",
+            "node_type": "babelnet_synset",
+            "content": "bn:01503037n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_50": {
+            "node_id": "babelnet_synset_50",
+            "node_type": "babelnet_synset",
+            "content": "bn:01632721n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_51": {
+            "node_id": "babelnet_synset_51",
+            "node_type": "babelnet_synset",
+            "content": "bn:15842152n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_52": {
+            "node_id": "babelnet_synset_52",
+            "node_type": "babelnet_synset",
+            "content": "bn:07025150n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_53": {
+            "node_id": "babelnet_synset_53",
+            "node_type": "babelnet_synset",
+            "content": "bn:00049273n",
+            "language": "es",
+            "metadata": {
+              "lemma": "gato",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_54": {
+            "node_id": "babelnet_synset_54",
+            "node_type": "babelnet_synset",
+            "content": "bn:00072117n",
+            "language": "es",
+            "metadata": {
+              "lemma": "durmiendo",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          }
+        },
+        "edges": {},
+        "metadata": {
+          "source_text": "El gato negro está durmiendo en el jardín",
+          "language": "es",
+          "creation_time": 1755881416.407458
+        }
+      },
+      "quality_evaluation": {
+        "quality_score": 0.0,
+        "avg_confidence": 0.0,
+        "avg_weight": 0.0,
+        "alignment_coverage": 0.0,
+        "nsm_nodes": 0,
+        "synset_nodes": 0,
+        "total_alignments": 0,
+        "issues": [
+          "no_alignments_found"
+        ],
+        "recommendations": [
+          "Generate NSM explications and BabelNet synsets"
+        ]
+      }
+    },
+    {
+      "example": {
+        "text": "La voiture bleue roule sur la route",
+        "language": "fr"
+      },
+      "alignment_graph": {
+        "graph_id": "nsm_babelnet_alignment_1755881416",
+        "nodes": {
+          "babelnet_synset_0": {
+            "node_id": "babelnet_synset_0",
+            "node_type": "babelnet_synset",
+            "content": "bn:00007309n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "voiture",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_1": {
+            "node_id": "babelnet_synset_1",
+            "node_type": "babelnet_synset",
+            "content": "bn:00015785n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "voiture",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_2": {
+            "node_id": "babelnet_synset_2",
+            "node_type": "babelnet_synset",
+            "content": "bn:00082943v",
+            "language": "fr",
+            "metadata": {
+              "lemma": "voiture",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_3": {
+            "node_id": "babelnet_synset_3",
+            "node_type": "babelnet_synset",
+            "content": "bn:00016241n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "voiture",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_4": {
+            "node_id": "babelnet_synset_4",
+            "node_type": "babelnet_synset",
+            "content": "bn:00016240n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "voiture",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_5": {
+            "node_id": "babelnet_synset_5",
+            "node_type": "babelnet_synset",
+            "content": "bn:00014462n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "voiture",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_6": {
+            "node_id": "babelnet_synset_6",
+            "node_type": "babelnet_synset",
+            "content": "bn:00015787n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "voiture",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_7": {
+            "node_id": "babelnet_synset_7",
+            "node_type": "babelnet_synset",
+            "content": "bn:00083687v",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_8": {
+            "node_id": "babelnet_synset_8",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011482n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_9": {
+            "node_id": "babelnet_synset_9",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011481n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_10": {
+            "node_id": "babelnet_synset_10",
+            "node_type": "babelnet_synset",
+            "content": "bn:00100909a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_11": {
+            "node_id": "babelnet_synset_11",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011480n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_12": {
+            "node_id": "babelnet_synset_12",
+            "node_type": "babelnet_synset",
+            "content": "bn:00003578n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_13": {
+            "node_id": "babelnet_synset_13",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098608a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_14": {
+            "node_id": "babelnet_synset_14",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011479n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_15": {
+            "node_id": "babelnet_synset_15",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011478n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_16": {
+            "node_id": "babelnet_synset_16",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098607a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_17": {
+            "node_id": "babelnet_synset_17",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098606a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_18": {
+            "node_id": "babelnet_synset_18",
+            "node_type": "babelnet_synset",
+            "content": "bn:00011477n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_19": {
+            "node_id": "babelnet_synset_19",
+            "node_type": "babelnet_synset",
+            "content": "bn:00097493a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_20": {
+            "node_id": "babelnet_synset_20",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098533a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_21": {
+            "node_id": "babelnet_synset_21",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098610a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_22": {
+            "node_id": "babelnet_synset_22",
+            "node_type": "babelnet_synset",
+            "content": "bn:00036487n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_23": {
+            "node_id": "babelnet_synset_23",
+            "node_type": "babelnet_synset",
+            "content": "bn:00105958a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_24": {
+            "node_id": "babelnet_synset_24",
+            "node_type": "babelnet_synset",
+            "content": "bn:00098612a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "bleue",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_25": {
+            "node_id": "babelnet_synset_25",
+            "node_type": "babelnet_synset",
+            "content": "bn:00047741n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_26": {
+            "node_id": "babelnet_synset_26",
+            "node_type": "babelnet_synset",
+            "content": "bn:00023288n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_27": {
+            "node_id": "babelnet_synset_27",
+            "node_type": "babelnet_synset",
+            "content": "bn:02768266n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_28": {
+            "node_id": "babelnet_synset_28",
+            "node_type": "babelnet_synset",
+            "content": "bn:00044128n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_29": {
+            "node_id": "babelnet_synset_29",
+            "node_type": "babelnet_synset",
+            "content": "bn:00007500n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_30": {
+            "node_id": "babelnet_synset_30",
+            "node_type": "babelnet_synset",
+            "content": "bn:00048463n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_31": {
+            "node_id": "babelnet_synset_31",
+            "node_type": "babelnet_synset",
+            "content": "bn:02076411n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_32": {
+            "node_id": "babelnet_synset_32",
+            "node_type": "babelnet_synset",
+            "content": "bn:17828592n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_33": {
+            "node_id": "babelnet_synset_33",
+            "node_type": "babelnet_synset",
+            "content": "bn:00077889n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_34": {
+            "node_id": "babelnet_synset_34",
+            "node_type": "babelnet_synset",
+            "content": "bn:01823122n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_35": {
+            "node_id": "babelnet_synset_35",
+            "node_type": "babelnet_synset",
+            "content": "bn:00002181n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_36": {
+            "node_id": "babelnet_synset_36",
+            "node_type": "babelnet_synset",
+            "content": "bn:00044127n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_37": {
+            "node_id": "babelnet_synset_37",
+            "node_type": "babelnet_synset",
+            "content": "bn:00786202n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_38": {
+            "node_id": "babelnet_synset_38",
+            "node_type": "babelnet_synset",
+            "content": "bn:01107118n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_39": {
+            "node_id": "babelnet_synset_39",
+            "node_type": "babelnet_synset",
+            "content": "bn:00067998n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_40": {
+            "node_id": "babelnet_synset_40",
+            "node_type": "babelnet_synset",
+            "content": "bn:00067976n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_41": {
+            "node_id": "babelnet_synset_41",
+            "node_type": "babelnet_synset",
+            "content": "bn:00067975n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_42": {
+            "node_id": "babelnet_synset_42",
+            "node_type": "babelnet_synset",
+            "content": "bn:00016294n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_43": {
+            "node_id": "babelnet_synset_43",
+            "node_type": "babelnet_synset",
+            "content": "bn:04798025n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "route",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_44": {
+            "node_id": "babelnet_synset_44",
+            "node_type": "babelnet_synset",
+            "content": "bn:16940530n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_45": {
+            "node_id": "babelnet_synset_45",
+            "node_type": "babelnet_synset",
+            "content": "bn:00006689n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_46": {
+            "node_id": "babelnet_synset_46",
+            "node_type": "babelnet_synset",
+            "content": "bn:13952281n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_47": {
+            "node_id": "babelnet_synset_47",
+            "node_type": "babelnet_synset",
+            "content": "bn:00110947a",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_48": {
+            "node_id": "babelnet_synset_48",
+            "node_type": "babelnet_synset",
+            "content": "bn:15251306n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_49": {
+            "node_id": "babelnet_synset_49",
+            "node_type": "babelnet_synset",
+            "content": "bn:01059925n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_50": {
+            "node_id": "babelnet_synset_50",
+            "node_type": "babelnet_synset",
+            "content": "bn:02658147n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_51": {
+            "node_id": "babelnet_synset_51",
+            "node_type": "babelnet_synset",
+            "content": "bn:03121260n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_52": {
+            "node_id": "babelnet_synset_52",
+            "node_type": "babelnet_synset",
+            "content": "bn:00059835n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_53": {
+            "node_id": "babelnet_synset_53",
+            "node_type": "babelnet_synset",
+            "content": "bn:00084726v",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_54": {
+            "node_id": "babelnet_synset_54",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114236r",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_55": {
+            "node_id": "babelnet_synset_55",
+            "node_type": "babelnet_synset",
+            "content": "bn:03659762n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_56": {
+            "node_id": "babelnet_synset_56",
+            "node_type": "babelnet_synset",
+            "content": "bn:00088402v",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_57": {
+            "node_id": "babelnet_synset_57",
+            "node_type": "babelnet_synset",
+            "content": "bn:00088404v",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_58": {
+            "node_id": "babelnet_synset_58",
+            "node_type": "babelnet_synset",
+            "content": "bn:00075361n",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_59": {
+            "node_id": "babelnet_synset_59",
+            "node_type": "babelnet_synset",
+            "content": "bn:00088403v",
+            "language": "fr",
+            "metadata": {
+              "lemma": "sur",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          }
+        },
+        "edges": {},
+        "metadata": {
+          "source_text": "La voiture bleue roule sur la route",
+          "language": "fr",
+          "creation_time": 1755881416.415319
+        }
+      },
+      "quality_evaluation": {
+        "quality_score": 0.0,
+        "avg_confidence": 0.0,
+        "avg_weight": 0.0,
+        "alignment_coverage": 0.0,
+        "nsm_nodes": 0,
+        "synset_nodes": 0,
+        "total_alignments": 0,
+        "issues": [
+          "no_alignments_found"
+        ],
+        "recommendations": [
+          "Generate NSM explications and BabelNet synsets"
+        ]
+      }
+    },
+    {
+      "example": {
+        "text": "The book contains important information about science",
+        "language": "en"
+      },
+      "alignment_graph": {
+        "graph_id": "nsm_babelnet_alignment_1755881416",
+        "nodes": {
+          "babelnet_synset_0": {
+            "node_id": "babelnet_synset_0",
+            "node_type": "babelnet_synset",
+            "content": "bn:00069670n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_1": {
+            "node_id": "babelnet_synset_1",
+            "node_type": "babelnet_synset",
+            "content": "bn:01571414n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_2": {
+            "node_id": "babelnet_synset_2",
+            "node_type": "babelnet_synset",
+            "content": "bn:00668848n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_3": {
+            "node_id": "babelnet_synset_3",
+            "node_type": "babelnet_synset",
+            "content": "bn:13749258v",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_4": {
+            "node_id": "babelnet_synset_4",
+            "node_type": "babelnet_synset",
+            "content": "bn:17358476n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_5": {
+            "node_id": "babelnet_synset_5",
+            "node_type": "babelnet_synset",
+            "content": "bn:02480574n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_6": {
+            "node_id": "babelnet_synset_6",
+            "node_type": "babelnet_synset",
+            "content": "bn:14623129n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_7": {
+            "node_id": "babelnet_synset_7",
+            "node_type": "babelnet_synset",
+            "content": "bn:01206735n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_8": {
+            "node_id": "babelnet_synset_8",
+            "node_type": "babelnet_synset",
+            "content": "bn:00234678n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_9": {
+            "node_id": "babelnet_synset_9",
+            "node_type": "babelnet_synset",
+            "content": "bn:00069671n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_10": {
+            "node_id": "babelnet_synset_10",
+            "node_type": "babelnet_synset",
+            "content": "bn:02760763n",
+            "language": "en",
+            "metadata": {
+              "lemma": "science",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_11": {
+            "node_id": "babelnet_synset_11",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114076r",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_12": {
+            "node_id": "babelnet_synset_12",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114077r",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_13": {
+            "node_id": "babelnet_synset_13",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114074r",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_14": {
+            "node_id": "babelnet_synset_14",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114075r",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_15": {
+            "node_id": "babelnet_synset_15",
+            "node_type": "babelnet_synset",
+            "content": "bn:03347031n",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_16": {
+            "node_id": "babelnet_synset_16",
+            "node_type": "babelnet_synset",
+            "content": "bn:00096174a",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_17": {
+            "node_id": "babelnet_synset_17",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114073r",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_18": {
+            "node_id": "babelnet_synset_18",
+            "node_type": "babelnet_synset",
+            "content": "bn:03104257n",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_19": {
+            "node_id": "babelnet_synset_19",
+            "node_type": "babelnet_synset",
+            "content": "bn:01807323n",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_20": {
+            "node_id": "babelnet_synset_20",
+            "node_type": "babelnet_synset",
+            "content": "bn:14457974n",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_21": {
+            "node_id": "babelnet_synset_21",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114078r",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_22": {
+            "node_id": "babelnet_synset_22",
+            "node_type": "babelnet_synset",
+            "content": "bn:00114079r",
+            "language": "en",
+            "metadata": {
+              "lemma": "about",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_23": {
+            "node_id": "babelnet_synset_23",
+            "node_type": "babelnet_synset",
+            "content": "bn:15411034n",
+            "language": "en",
+            "metadata": {
+              "lemma": "contains",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_24": {
+            "node_id": "babelnet_synset_24",
+            "node_type": "babelnet_synset",
+            "content": "bn:00083776v",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_25": {
+            "node_id": "babelnet_synset_25",
+            "node_type": "babelnet_synset",
+            "content": "bn:00002370n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_26": {
+            "node_id": "babelnet_synset_26",
+            "node_type": "babelnet_synset",
+            "content": "bn:00083774v",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_27": {
+            "node_id": "babelnet_synset_27",
+            "node_type": "babelnet_synset",
+            "content": "bn:01952150n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_28": {
+            "node_id": "babelnet_synset_28",
+            "node_type": "babelnet_synset",
+            "content": "bn:03340641n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_29": {
+            "node_id": "babelnet_synset_29",
+            "node_type": "babelnet_synset",
+            "content": "bn:00010217n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_30": {
+            "node_id": "babelnet_synset_30",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012061n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_31": {
+            "node_id": "babelnet_synset_31",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012063n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_32": {
+            "node_id": "babelnet_synset_32",
+            "node_type": "babelnet_synset",
+            "content": "bn:00572110n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_33": {
+            "node_id": "babelnet_synset_33",
+            "node_type": "babelnet_synset",
+            "content": "bn:15753493n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_34": {
+            "node_id": "babelnet_synset_34",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012065n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_35": {
+            "node_id": "babelnet_synset_35",
+            "node_type": "babelnet_synset",
+            "content": "bn:00083773v",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_36": {
+            "node_id": "babelnet_synset_36",
+            "node_type": "babelnet_synset",
+            "content": "bn:00000748n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_37": {
+            "node_id": "babelnet_synset_37",
+            "node_type": "babelnet_synset",
+            "content": "bn:15754677n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_38": {
+            "node_id": "babelnet_synset_38",
+            "node_type": "babelnet_synset",
+            "content": "bn:00083775v",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_39": {
+            "node_id": "babelnet_synset_39",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012059n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_40": {
+            "node_id": "babelnet_synset_40",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012060n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_41": {
+            "node_id": "babelnet_synset_41",
+            "node_type": "babelnet_synset",
+            "content": "bn:02436230n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_42": {
+            "node_id": "babelnet_synset_42",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012062n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_43": {
+            "node_id": "babelnet_synset_43",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012064n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_44": {
+            "node_id": "babelnet_synset_44",
+            "node_type": "babelnet_synset",
+            "content": "bn:03350217n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_45": {
+            "node_id": "babelnet_synset_45",
+            "node_type": "babelnet_synset",
+            "content": "bn:02173164n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_46": {
+            "node_id": "babelnet_synset_46",
+            "node_type": "babelnet_synset",
+            "content": "bn:16136963n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_47": {
+            "node_id": "babelnet_synset_47",
+            "node_type": "babelnet_synset",
+            "content": "bn:00012066n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_48": {
+            "node_id": "babelnet_synset_48",
+            "node_type": "babelnet_synset",
+            "content": "bn:15906224n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_49": {
+            "node_id": "babelnet_synset_49",
+            "node_type": "babelnet_synset",
+            "content": "bn:07951251n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_50": {
+            "node_id": "babelnet_synset_50",
+            "node_type": "babelnet_synset",
+            "content": "bn:00056458n",
+            "language": "en",
+            "metadata": {
+              "lemma": "book",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_51": {
+            "node_id": "babelnet_synset_51",
+            "node_type": "babelnet_synset",
+            "content": "bn:01373743n",
+            "language": "en",
+            "metadata": {
+              "lemma": "important",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_52": {
+            "node_id": "babelnet_synset_52",
+            "node_type": "babelnet_synset",
+            "content": "bn:00100716a",
+            "language": "en",
+            "metadata": {
+              "lemma": "important",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_53": {
+            "node_id": "babelnet_synset_53",
+            "node_type": "babelnet_synset",
+            "content": "bn:00104680a",
+            "language": "en",
+            "metadata": {
+              "lemma": "important",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_54": {
+            "node_id": "babelnet_synset_54",
+            "node_type": "babelnet_synset",
+            "content": "bn:00097799a",
+            "language": "en",
+            "metadata": {
+              "lemma": "important",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_55": {
+            "node_id": "babelnet_synset_55",
+            "node_type": "babelnet_synset",
+            "content": "bn:00104681a",
+            "language": "en",
+            "metadata": {
+              "lemma": "important",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_56": {
+            "node_id": "babelnet_synset_56",
+            "node_type": "babelnet_synset",
+            "content": "bn:00104682a",
+            "language": "en",
+            "metadata": {
+              "lemma": "important",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_57": {
+            "node_id": "babelnet_synset_57",
+            "node_type": "babelnet_synset",
+            "content": "bn:02830953n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_58": {
+            "node_id": "babelnet_synset_58",
+            "node_type": "babelnet_synset",
+            "content": "bn:03620119n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_59": {
+            "node_id": "babelnet_synset_59",
+            "node_type": "babelnet_synset",
+            "content": "bn:02233442n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_60": {
+            "node_id": "babelnet_synset_60",
+            "node_type": "babelnet_synset",
+            "content": "bn:00916477n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_61": {
+            "node_id": "babelnet_synset_61",
+            "node_type": "babelnet_synset",
+            "content": "bn:02776737n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_62": {
+            "node_id": "babelnet_synset_62",
+            "node_type": "babelnet_synset",
+            "content": "bn:00046706n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_63": {
+            "node_id": "babelnet_synset_63",
+            "node_type": "babelnet_synset",
+            "content": "bn:00046705n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_64": {
+            "node_id": "babelnet_synset_64",
+            "node_type": "babelnet_synset",
+            "content": "bn:17349830n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_65": {
+            "node_id": "babelnet_synset_65",
+            "node_type": "babelnet_synset",
+            "content": "bn:00025314n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_66": {
+            "node_id": "babelnet_synset_66",
+            "node_type": "babelnet_synset",
+            "content": "bn:00046698n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_67": {
+            "node_id": "babelnet_synset_67",
+            "node_type": "babelnet_synset",
+            "content": "bn:18208677n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_68": {
+            "node_id": "babelnet_synset_68",
+            "node_type": "babelnet_synset",
+            "content": "bn:01468426n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_69": {
+            "node_id": "babelnet_synset_69",
+            "node_type": "babelnet_synset",
+            "content": "bn:03662501n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_70": {
+            "node_id": "babelnet_synset_70",
+            "node_type": "babelnet_synset",
+            "content": "bn:00031060n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_71": {
+            "node_id": "babelnet_synset_71",
+            "node_type": "babelnet_synset",
+            "content": "bn:03644012n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          },
+          "babelnet_synset_72": {
+            "node_id": "babelnet_synset_72",
+            "node_type": "babelnet_synset",
+            "content": "bn:00993379n",
+            "language": "en",
+            "metadata": {
+              "lemma": "information",
+              "confidence": 0.7,
+              "frequency_score": 0.5
+            }
+          }
+        },
+        "edges": {},
+        "metadata": {
+          "source_text": "The book contains important information about science",
+          "language": "en",
+          "creation_time": 1755881416.420653
+        }
+      },
+      "quality_evaluation": {
+        "quality_score": 0.0,
+        "avg_confidence": 0.0,
+        "avg_weight": 0.0,
+        "alignment_coverage": 0.0,
+        "nsm_nodes": 0,
+        "synset_nodes": 0,
+        "total_alignments": 0,
+        "issues": [
+          "no_alignments_found"
+        ],
+        "recommendations": [
+          "Generate NSM explications and BabelNet synsets"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_examples": 4,
+    "successful_alignments": 4,
+    "avg_quality": 0.08341307326041315,
+    "avg_confidence": 0.1205575660949993
+  }
+}

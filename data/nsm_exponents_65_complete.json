@@ -1,0 +1,1088 @@
+{
+  "metadata": {
+    "description": "Complete NSM exponents for all 65 primes across EN/ES/FR",
+    "total_primes": 84,
+    "languages": [
+      "en",
+      "es",
+      "fr"
+    ],
+    "version": "2.0"
+  },
+  "primes": {
+    "I": {
+      "en": [
+        "i"
+      ],
+      "es": [
+        "yo"
+      ],
+      "fr": [
+        "je"
+      ]
+    },
+    "YOU": {
+      "en": [
+        "you"
+      ],
+      "es": [
+        "tú",
+        "usted"
+      ],
+      "fr": [
+        "tu",
+        "vous"
+      ]
+    },
+    "SOMEONE": {
+      "en": [
+        "someone",
+        "somebody",
+        "person"
+      ],
+      "es": [
+        "alguien",
+        "persona"
+      ],
+      "fr": [
+        "quelqu'un",
+        "personne"
+      ]
+    },
+    "PEOPLE": {
+      "en": [
+        "people"
+      ],
+      "es": [
+        "gente",
+        "personas"
+      ],
+      "fr": [
+        "gens",
+        "personnes"
+      ]
+    },
+    "SOMETHING": {
+      "en": [
+        "something",
+        "thing"
+      ],
+      "es": [
+        "algo",
+        "cosa"
+      ],
+      "fr": [
+        "quelque chose",
+        "chose"
+      ]
+    },
+    "BODY": {
+      "en": [
+        "body"
+      ],
+      "es": [
+        "cuerpo"
+      ],
+      "fr": [
+        "corps"
+      ]
+    },
+    "DO": {
+      "en": [
+        "do",
+        "does",
+        "did"
+      ],
+      "es": [
+        "hacer",
+        "hace",
+        "hizo"
+      ],
+      "fr": [
+        "faire",
+        "fait",
+        "fais"
+      ]
+    },
+    "HAPPEN": {
+      "en": [
+        "happen",
+        "happens",
+        "happened"
+      ],
+      "es": [
+        "suceder",
+        "ocurrir",
+        "pasa"
+      ],
+      "fr": [
+        "arriver",
+        "se passer",
+        "arrive"
+      ]
+    },
+    "MOVE": {
+      "en": [
+        "go",
+        "come",
+        "move"
+      ],
+      "es": [
+        "ir",
+        "venir",
+        "mover"
+      ],
+      "fr": [
+        "aller",
+        "venir",
+        "bouger"
+      ]
+    },
+    "THINK": {
+      "en": [
+        "think",
+        "thinks"
+      ],
+      "es": [
+        "pensar",
+        "piensa"
+      ],
+      "fr": [
+        "penser",
+        "pense"
+      ]
+    },
+    "KNOW": {
+      "en": [
+        "know",
+        "knows"
+      ],
+      "es": [
+        "saber",
+        "sabe"
+      ],
+      "fr": [
+        "savoir",
+        "sait"
+      ]
+    },
+    "WANT": {
+      "en": [
+        "want",
+        "wants",
+        "wanted"
+      ],
+      "es": [
+        "querer",
+        "quiere",
+        "quiero"
+      ],
+      "fr": [
+        "vouloir",
+        "veut",
+        "veux"
+      ]
+    },
+    "FEEL": {
+      "en": [
+        "feel",
+        "feels"
+      ],
+      "es": [
+        "sentir",
+        "siente"
+      ],
+      "fr": [
+        "sentir",
+        "ressent"
+      ]
+    },
+    "SEE": {
+      "en": [
+        "see",
+        "sees"
+      ],
+      "es": [
+        "ver",
+        "ve"
+      ],
+      "fr": [
+        "voir",
+        "voit"
+      ]
+    },
+    "HEAR": {
+      "en": [
+        "hear",
+        "hears"
+      ],
+      "es": [
+        "oír",
+        "oye"
+      ],
+      "fr": [
+        "entendre",
+        "entend"
+      ]
+    },
+    "SAY": {
+      "en": [
+        "say",
+        "says"
+      ],
+      "es": [
+        "decir",
+        "dice"
+      ],
+      "fr": [
+        "dire",
+        "dit"
+      ]
+    },
+    "WORDS": {
+      "en": [
+        "words"
+      ],
+      "es": [
+        "palabras"
+      ],
+      "fr": [
+        "mots"
+      ]
+    },
+    "TRUE": {
+      "en": [
+        "true"
+      ],
+      "es": [
+        "verdad",
+        "verdadero",
+        "verdadera"
+      ],
+      "fr": [
+        "vrai",
+        "vraie"
+      ]
+    },
+    "TIME": {
+      "en": [
+        "time"
+      ],
+      "es": [
+        "tiempo"
+      ],
+      "fr": [
+        "temps"
+      ]
+    },
+    "NOW": {
+      "en": [
+        "now"
+      ],
+      "es": [
+        "ahora"
+      ],
+      "fr": [
+        "maintenant"
+      ]
+    },
+    "BEFORE": {
+      "en": [
+        "before"
+      ],
+      "es": [
+        "antes"
+      ],
+      "fr": [
+        "avant"
+      ]
+    },
+    "AFTER": {
+      "en": [
+        "after"
+      ],
+      "es": [
+        "después"
+      ],
+      "fr": [
+        "après"
+      ]
+    },
+    "WHERE": {
+      "en": [
+        "where",
+        "place"
+      ],
+      "es": [
+        "donde",
+        "lugar"
+      ],
+      "fr": [
+        "où",
+        "lieu"
+      ]
+    },
+    "HERE": {
+      "en": [
+        "here"
+      ],
+      "es": [
+        "aquí"
+      ],
+      "fr": [
+        "ici"
+      ]
+    },
+    "ABOVE_BELOW": {
+      "en": [
+        "above",
+        "below"
+      ],
+      "es": [
+        "arriba",
+        "abajo"
+      ],
+      "fr": [
+        "au-dessus",
+        "au-dessous"
+      ]
+    },
+    "NOT": {
+      "en": [
+        "not",
+        "no"
+      ],
+      "es": [
+        "no"
+      ],
+      "fr": [
+        "ne",
+        "pas",
+        "n'"
+      ]
+    },
+    "MAYBE": {
+      "en": [
+        "maybe"
+      ],
+      "es": [
+        "quizás",
+        "tal vez"
+      ],
+      "fr": [
+        "peut-être"
+      ]
+    },
+    "CAN": {
+      "en": [
+        "can",
+        "cannot",
+        "can't"
+      ],
+      "es": [
+        "poder",
+        "puede",
+        "puedo"
+      ],
+      "fr": [
+        "pouvoir",
+        "peut",
+        "peux"
+      ]
+    },
+    "BECAUSE": {
+      "en": [
+        "because",
+        "since"
+      ],
+      "es": [
+        "porque",
+        "debido a"
+      ],
+      "fr": [
+        "parce que",
+        "car",
+        "puisque"
+      ]
+    },
+    "IF": {
+      "en": [
+        "if"
+      ],
+      "es": [
+        "si"
+      ],
+      "fr": [
+        "si"
+      ]
+    },
+    "GOOD": {
+      "en": [
+        "good"
+      ],
+      "es": [
+        "bueno",
+        "buena"
+      ],
+      "fr": [
+        "bon",
+        "bonne"
+      ]
+    },
+    "BAD": {
+      "en": [
+        "bad"
+      ],
+      "es": [
+        "malo",
+        "mala"
+      ],
+      "fr": [
+        "mauvais",
+        "mauvaise"
+      ]
+    },
+    "BIG": {
+      "en": [
+        "big",
+        "large"
+      ],
+      "es": [
+        "grande"
+      ],
+      "fr": [
+        "grand",
+        "grande"
+      ]
+    },
+    "SMALL": {
+      "en": [
+        "small",
+        "little"
+      ],
+      "es": [
+        "pequeño",
+        "pequeña"
+      ],
+      "fr": [
+        "petit",
+        "petite"
+      ]
+    },
+    "ONE": {
+      "en": [
+        "one"
+      ],
+      "es": [
+        "uno",
+        "una"
+      ],
+      "fr": [
+        "un",
+        "une"
+      ]
+    },
+    "TWO": {
+      "en": [
+        "two"
+      ],
+      "es": [
+        "dos"
+      ],
+      "fr": [
+        "deux"
+      ]
+    },
+    "SOME": {
+      "en": [
+        "some"
+      ],
+      "es": [
+        "algunos",
+        "algunas"
+      ],
+      "fr": [
+        "quelques"
+      ]
+    },
+    "ALL": {
+      "en": [
+        "all"
+      ],
+      "es": [
+        "todos",
+        "todas"
+      ],
+      "fr": [
+        "tous",
+        "toutes"
+      ]
+    },
+    "MANY": {
+      "en": [
+        "many",
+        "much"
+      ],
+      "es": [
+        "muchos",
+        "muchas"
+      ],
+      "fr": [
+        "beaucoup"
+      ]
+    },
+    "FEW": {
+      "en": [
+        "few",
+        "little"
+      ],
+      "es": [
+        "pocos",
+        "pocas"
+      ],
+      "fr": [
+        "peu",
+        "peu de"
+      ]
+    },
+    "THIS": {
+      "en": [
+        "this"
+      ],
+      "es": [
+        "este",
+        "esta"
+      ],
+      "fr": [
+        "ce",
+        "cette"
+      ]
+    },
+    "SAME": {
+      "en": [
+        "same"
+      ],
+      "es": [
+        "mismo",
+        "misma"
+      ],
+      "fr": [
+        "même"
+      ]
+    },
+    "OTHER": {
+      "en": [
+        "other",
+        "else",
+        "another"
+      ],
+      "es": [
+        "otro",
+        "otra"
+      ],
+      "fr": [
+        "autre"
+      ]
+    },
+    "KIND": {
+      "en": [
+        "kind of",
+        "a kind of"
+      ],
+      "es": [
+        "clase de",
+        "tipo de"
+      ],
+      "fr": [
+        "genre de",
+        "une sorte de"
+      ]
+    },
+    "PART": {
+      "en": [
+        "part of"
+      ],
+      "es": [
+        "parte de"
+      ],
+      "fr": [
+        "partie de"
+      ]
+    },
+    "SAY_TRUE": {
+      "en": [
+        "say",
+        "true"
+      ],
+      "es": [
+        "decir",
+        "verdad"
+      ],
+      "fr": [
+        "dire",
+        "vrai"
+      ]
+    },
+    "BE_SOMEWHERE": {
+      "en": [
+        "be in",
+        "be at",
+        "be on"
+      ],
+      "es": [
+        "estar en",
+        "estar a",
+        "estar sobre"
+      ],
+      "fr": [
+        "être à",
+        "être dans",
+        "être sur"
+      ]
+    },
+    "THERE_IS": {
+      "en": [
+        "there is",
+        "there are"
+      ],
+      "es": [
+        "hay",
+        "existe"
+      ],
+      "fr": [
+        "il y a",
+        "existe"
+      ]
+    },
+    "BE_SOMEONE_SOMETHING": {
+      "en": [
+        "be a",
+        "be an"
+      ],
+      "es": [
+        "ser un",
+        "ser una"
+      ],
+      "fr": [
+        "être un",
+        "être une"
+      ]
+    },
+    "MINE": {
+      "en": [
+        "mine"
+      ],
+      "es": [
+        "mío",
+        "mía"
+      ],
+      "fr": [
+        "à moi",
+        "mien",
+        "mienne"
+      ]
+    },
+    "LIVE_DIE": {
+      "en": [
+        "live",
+        "die"
+      ],
+      "es": [
+        "vivir",
+        "morir"
+      ],
+      "fr": [
+        "vivre",
+        "mourir"
+      ]
+    },
+    "VERY": {
+      "en": [
+        "very"
+      ],
+      "es": [
+        "muy"
+      ],
+      "fr": [
+        "très"
+      ]
+    },
+    "MORE": {
+      "en": [
+        "more"
+      ],
+      "es": [
+        "más"
+      ],
+      "fr": [
+        "plus"
+      ]
+    },
+    "LIKE": {
+      "en": [
+        "like"
+      ],
+      "es": [
+        "como"
+      ],
+      "fr": [
+        "comme"
+      ]
+    },
+    "THE_SAME": {
+      "en": [
+        "the same"
+      ],
+      "es": [
+        "el mismo",
+        "la misma"
+      ],
+      "fr": [
+        "le même",
+        "la même"
+      ]
+    },
+    "MUCH": {
+      "en": [
+        "much"
+      ],
+      "es": [
+        "mucho",
+        "mucha"
+      ],
+      "fr": [
+        "beaucoup de"
+      ]
+    },
+    "LITTLE": {
+      "en": [
+        "little"
+      ],
+      "es": [
+        "poco",
+        "poca"
+      ],
+      "fr": [
+        "peu de"
+      ]
+    },
+    "LONG": {
+      "en": [
+        "long"
+      ],
+      "es": [
+        "largo",
+        "larga"
+      ],
+      "fr": [
+        "long",
+        "longue"
+      ]
+    },
+    "SHORT": {
+      "en": [
+        "short"
+      ],
+      "es": [
+        "corto",
+        "corta"
+      ],
+      "fr": [
+        "court",
+        "courte"
+      ]
+    },
+    "WIDE": {
+      "en": [
+        "wide"
+      ],
+      "es": [
+        "ancho",
+        "ancha"
+      ],
+      "fr": [
+        "large"
+      ]
+    },
+    "NARROW": {
+      "en": [
+        "narrow"
+      ],
+      "es": [
+        "estrecho",
+        "estrecha"
+      ],
+      "fr": [
+        "étroit",
+        "étroite"
+      ]
+    },
+    "THICK": {
+      "en": [
+        "thick"
+      ],
+      "es": [
+        "grueso",
+        "gruesa"
+      ],
+      "fr": [
+        "épais",
+        "épaisse"
+      ]
+    },
+    "THIN": {
+      "en": [
+        "thin"
+      ],
+      "es": [
+        "delgado",
+        "delgada"
+      ],
+      "fr": [
+        "mince"
+      ]
+    },
+    "TOUCH": {
+      "en": [
+        "touch"
+      ],
+      "es": [
+        "tocar"
+      ],
+      "fr": [
+        "toucher"
+      ]
+    },
+    "HOLD": {
+      "en": [
+        "hold"
+      ],
+      "es": [
+        "sostener",
+        "tener"
+      ],
+      "fr": [
+        "tenir"
+      ]
+    },
+    "LIVE": {
+      "en": [
+        "live"
+      ],
+      "es": [
+        "vivir"
+      ],
+      "fr": [
+        "vivre"
+      ]
+    },
+    "DIE": {
+      "en": [
+        "die"
+      ],
+      "es": [
+        "morir"
+      ],
+      "fr": [
+        "mourir"
+      ]
+    },
+    "HAVE": {
+      "en": [
+        "have",
+        "has"
+      ],
+      "es": [
+        "tener",
+        "tiene"
+      ],
+      "fr": [
+        "avoir",
+        "a"
+      ]
+    },
+    "BE_SOMEONE": {
+      "en": [
+        "be a",
+        "be an"
+      ],
+      "es": [
+        "ser un",
+        "ser una"
+      ],
+      "fr": [
+        "être un",
+        "être une"
+      ]
+    },
+    "BE_SOMETHING": {
+      "en": [
+        "be a",
+        "be an"
+      ],
+      "es": [
+        "ser un",
+        "ser una"
+      ],
+      "fr": [
+        "être un",
+        "être une"
+      ]
+    },
+    "BE_MINE": {
+      "en": [
+        "be mine"
+      ],
+      "es": [
+        "ser mío",
+        "ser mía"
+      ],
+      "fr": [
+        "être à moi"
+      ]
+    },
+    "A_LONG_TIME": {
+      "en": [
+        "a long time"
+      ],
+      "es": [
+        "mucho tiempo"
+      ],
+      "fr": [
+        "longtemps"
+      ]
+    },
+    "A_SHORT_TIME": {
+      "en": [
+        "a short time"
+      ],
+      "es": [
+        "poco tiempo"
+      ],
+      "fr": [
+        "peu de temps"
+      ]
+    },
+    "FOR_SOME_TIME": {
+      "en": [
+        "for some time"
+      ],
+      "es": [
+        "por algún tiempo"
+      ],
+      "fr": [
+        "pendant quelque temps"
+      ]
+    },
+    "MOMENT": {
+      "en": [
+        "moment"
+      ],
+      "es": [
+        "momento"
+      ],
+      "fr": [
+        "moment"
+      ]
+    },
+    "ABOVE": {
+      "en": [
+        "above"
+      ],
+      "es": [
+        "arriba"
+      ],
+      "fr": [
+        "au-dessus"
+      ]
+    },
+    "BELOW": {
+      "en": [
+        "below"
+      ],
+      "es": [
+        "abajo"
+      ],
+      "fr": [
+        "au-dessous"
+      ]
+    },
+    "FAR": {
+      "en": [
+        "far"
+      ],
+      "es": [
+        "lejos"
+      ],
+      "fr": [
+        "loin"
+      ]
+    },
+    "NEAR": {
+      "en": [
+        "near"
+      ],
+      "es": [
+        "cerca"
+      ],
+      "fr": [
+        "près"
+      ]
+    },
+    "SIDE": {
+      "en": [
+        "side"
+      ],
+      "es": [
+        "lado"
+      ],
+      "fr": [
+        "côté"
+      ]
+    },
+    "INSIDE": {
+      "en": [
+        "inside"
+      ],
+      "es": [
+        "dentro"
+      ],
+      "fr": [
+        "dedans"
+      ]
+    },
+    "SIMILAR": {
+      "en": [
+        "similar"
+      ],
+      "es": [
+        "similar"
+      ],
+      "fr": [
+        "similaire"
+      ]
+    },
+    "DIFFERENT": {
+      "en": [
+        "different"
+      ],
+      "es": [
+        "diferente"
+      ],
+      "fr": [
+        "différent"
+      ]
+    },
+    "REALLY": {
+      "en": [
+        "really"
+      ],
+      "es": [
+        "realmente"
+      ],
+      "fr": [
+        "vraiment"
+      ]
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "timestamp": "2025-08-21T21:36:41.564068",
+  "system_info": {
+    "thresholds": {
+      "PERIODIC_SIM_THRESHOLD": "0.3",
+      "PERIODIC_TFIDF_THRESHOLD": "0.1",
+      "PERIODIC_DS_THRESHOLD": "0.6",
+      "PERIODIC_INTERNAL_THRESHOLD": "0.20"
+    }
+  },
+  "evaluations": {
+    "ud_recalls": {
+      "languages": {
+        "en": {
+          "total_sentences": 0,
+          "detected_patterns": 0,
+          "recall": 0.0,
+          "pattern_breakdown": {}
+        },
+        "es": {
+          "total_sentences": 0,
+          "detected_patterns": 0,
+          "recall": 0.0,
+          "pattern_breakdown": {}
+        },
+        "fr": {
+          "total_sentences": 0,
+          "detected_patterns": 0,
+          "recall": 0.0,
+          "pattern_breakdown": {}
+        }
+      },
+      "patterns": {},
+      "overall": {
+        "total_sentences": 0,
+        "total_detections": 0,
+        "overall_recall": 0.0,
+        "avg_recall_by_language": 0.0
+      }
+    },
+    "nsm_legality": {
+      "languages": {
+        "en": {
+          "total_sentences": 0,
+          "legal_sentences": 0,
+          "legality_rate": 0.0,
+          "prime_detection": {
+            "total_primes": 0,
+            "unique_primes": [],
+            "prime_frequency": {}
+          }
+        },
+        "es": {
+          "total_sentences": 0,
+          "legal_sentences": 0,
+          "legality_rate": 0.0,
+          "prime_detection": {
+            "total_primes": 0,
+            "unique_primes": [],
+            "prime_frequency": {}
+          }
+        },
+        "fr": {
+          "total_sentences": 0,
+          "legal_sentences": 0,
+          "legality_rate": 0.0,
+          "prime_detection": {
+            "total_primes": 0,
+            "unique_primes": [],
+            "prime_frequency": {}
+          }
+        }
+      },
+      "overall": {
+        "total_sentences": 0,
+        "total_legal_sentences": 0,
+        "overall_legality_rate": 0.0,
+        "avg_legality_by_language": 0.0
+      }
+    },
+    "umr_metrics": {
+      "languages": {
+        "en": {
+          "total_sentences": 0,
+          "successful_parses": 0,
+          "parse_success_rate": 0.0,
+          "avg_graph_size": 0.0,
+          "avg_round_trip_similarity": 0.0,
+          "graph_metrics": []
+        },
+        "es": {
+          "total_sentences": 0,
+          "successful_parses": 0,
+          "parse_success_rate": 0.0,
+          "avg_graph_size": 0.0,
+          "avg_round_trip_similarity": 0.0,
+          "graph_metrics": []
+        },
+        "fr": {
+          "total_sentences": 0,
+          "successful_parses": 0,
+          "parse_success_rate": 0.0,
+          "avg_graph_size": 0.0,
+          "avg_round_trip_similarity": 0.0,
+          "graph_metrics": []
+        }
+      },
+      "overall": {
+        "total_sentences": 0,
+        "total_successful_parses": 0,
+        "overall_parse_success_rate": 0.0,
+        "avg_parse_success_by_language": 0.0
+      }
+    },
+    "cross_language_consistency": {
+      "consistency_scores": [],
+      "pattern_agreement": {},
+      "overall_consistency": 0.0
+    }
+  },
+  "calibration_data": {
+    "similarity_threshold": {
+      "results": [],
+      "optimal_threshold": 0.3,
+      "test_cases": 9
+    },
+    "per_primitive": {},
+    "ud_thresholds": {
+      "ud_results": [
+        {
+          "threshold": 0.1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.30000000000000004,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.6000000000000001,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.7000000000000001,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "test_count": 4
+        }
+      ],
+      "optimal_ud_threshold": 0.1
+    },
+    "timestamp": "2025-08-22T04:31:30",
+    "test_data_size": 9
+  },
+  "summary": {
+    "ud_overall_recall": 0.0,
+    "ud_avg_recall_by_language": 0.0,
+    "nsm_overall_legality_rate": 0.0,
+    "nsm_avg_legality_by_language": 0.0,
+    "umr_overall_parse_success_rate": 0.0,
+    "umr_avg_parse_success_by_language": 0.0,
+    "cross_language_consistency": 0.0,
+    "overall_system_score": 0.0
+  }
+}

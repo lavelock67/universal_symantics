@@ -1,0 +1,2862 @@
+{
+  "languages": {
+    "en": {
+      "total_sentences": 60,
+      "successful_evaluations": 51,
+      "avg_substitutability": 0.0,
+      "avg_bidirectional_score": 0.0,
+      "evaluations": [
+        {
+          "text": "I see you",
+          "primitives": [
+            "YOU",
+            "SEE",
+            "I"
+          ],
+          "explication": "something is like this AND something is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "This is good",
+          "primitives": [
+            "HasProperty",
+            "THIS",
+            "GOOD"
+          ],
+          "explication": "this thing is like this AND something is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "I want this",
+          "primitives": [
+            "WANT",
+            "THIS",
+            "I"
+          ],
+          "explication": "something is like this AND something is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "This is not bad",
+          "primitives": [
+            "HasProperty",
+            "NOT",
+            "THIS",
+            "Not",
+            "BAD"
+          ],
+          "explication": "this thing is like this AND something is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "There is something",
+          "primitives": [
+            "HasProperty",
+            "SOMETHING",
+            "Exist"
+          ],
+          "explication": "this thing is like this AND something is like this AND there is something",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The cat is on the mat",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "this thing is like this AND something is in a place",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The book is in the bag",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "this thing is like this AND something is in a place",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The car is at the station",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "this thing is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The bird is in the tree",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "this thing is like this AND something is in a place",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The fish is in the water",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "this thing is like this AND something is in a place",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "This is similar to that",
+          "primitives": [
+            "HasProperty",
+            "THIS",
+            "SimilarTo"
+          ],
+          "explication": "this thing is like this AND something is like this AND this thing is like another thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The cat is like the dog",
+          "primitives": [
+            "HasProperty",
+            "LIKE"
+          ],
+          "explication": "this thing is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "This resembles that",
+          "primitives": [
+            "THIS"
+          ],
+          "explication": "something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The apple is like the orange",
+          "primitives": [
+            "HasProperty",
+            "LIKE"
+          ],
+          "explication": "this thing is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The house is similar to the building",
+          "primitives": [
+            "HasProperty",
+            "SimilarTo"
+          ],
+          "explication": "this thing is like this AND this thing is like another thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The tool is used for cutting",
+          "primitives": [
+            "HasProperty",
+            "UsedFor"
+          ],
+          "explication": "this thing is like this AND someone can do something with this thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "This is used to open doors",
+          "primitives": [
+            "HasProperty",
+            "THIS"
+          ],
+          "explication": "this thing is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The pen is for writing",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "this thing is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The big house",
+          "primitives": [
+            "BIG"
+          ],
+          "explication": "something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The cat is fast",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "this thing is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The small bird",
+          "primitives": [
+            "SMALL"
+          ],
+          "explication": "something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "This is different from that",
+          "primitives": [
+            "HasProperty",
+            "DifferentFrom",
+            "THIS"
+          ],
+          "explication": "this thing is like this AND this thing is not like another thing AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The cat is unlike the dog",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "this thing is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "This differs from that",
+          "primitives": [
+            "THIS"
+          ],
+          "explication": "something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The apple is not like the stone",
+          "primitives": [
+            "HasProperty",
+            "Not",
+            "NOT",
+            "LIKE"
+          ],
+          "explication": "this thing is like this AND someone does not do something AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The house is unlike the car",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "this thing is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "There is a cat",
+          "primitives": [
+            "HasProperty",
+            "Exist",
+            "IsA"
+          ],
+          "explication": "this thing is like this AND there is something AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "There are many birds",
+          "primitives": [
+            "MANY",
+            "Exist"
+          ],
+          "explication": "something is like this AND there is something",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "There is water here",
+          "primitives": [
+            "HasProperty",
+            "HERE",
+            "Exist"
+          ],
+          "explication": "this thing is like this AND something is like this AND there is something",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "There is a house",
+          "primitives": [
+            "HasProperty",
+            "Exist",
+            "IsA"
+          ],
+          "explication": "this thing is like this AND there is something AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "There are trees",
+          "primitives": [
+            "Exist"
+          ],
+          "explication": "there is something",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The wheel is part of the car",
+          "primitives": [
+            "HasProperty",
+            "PartOf"
+          ],
+          "explication": "this thing is like this AND one part is part of another thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The branch is part of the tree",
+          "primitives": [
+            "HasProperty",
+            "PartOf"
+          ],
+          "explication": "this thing is like this AND one part is part of another thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The wing is part of the bird",
+          "primitives": [
+            "HasProperty",
+            "PartOf"
+          ],
+          "explication": "this thing is like this AND one part is part of another thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The leaf is part of the plant",
+          "primitives": [
+            "HasProperty",
+            "PartOf"
+          ],
+          "explication": "this thing is like this AND one part is part of another thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The door is part of the house",
+          "primitives": [
+            "HasProperty",
+            "PartOf"
+          ],
+          "explication": "this thing is like this AND one part is part of another thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The rain causes the ground to be wet",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "something happens because something else happens",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The sun causes the plant to grow",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "something happens because something else happens",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The wind causes the leaves to move",
+          "primitives": [
+            "Causes",
+            "MOVE"
+          ],
+          "explication": "something happens because something else happens AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The fire causes the wood to burn",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "something happens because something else happens",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The water causes the seed to sprout",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "something happens because something else happens",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The cat does not fly",
+          "primitives": [
+            "Not",
+            "NOT",
+            "DO"
+          ],
+          "explication": "someone does not do something AND something is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The fish does not walk",
+          "primitives": [
+            "Not",
+            "NOT",
+            "DO"
+          ],
+          "explication": "someone does not do something AND something is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The stone is not alive",
+          "primitives": [
+            "HasProperty",
+            "Not",
+            "NOT"
+          ],
+          "explication": "this thing is like this AND someone does not do something AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The water is not hot",
+          "primitives": [
+            "HasProperty",
+            "Not",
+            "NOT"
+          ],
+          "explication": "this thing is like this AND someone does not do something AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The bird does not swim",
+          "primitives": [
+            "Not",
+            "NOT",
+            "DO"
+          ],
+          "explication": "someone does not do something AND something is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The red car is on the road",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "this thing is like this AND something is in a place",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The big cat runs quickly",
+          "primitives": [
+            "BIG"
+          ],
+          "explication": "something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The small bird flies high in the sky",
+          "primitives": [
+            "SMALL"
+          ],
+          "explication": "something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The sharp knife is used for cutting meat",
+          "primitives": [
+            "HasProperty",
+            "UsedFor"
+          ],
+          "explication": "this thing is like this AND someone can do something with this thing",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "The tall tree is not like the small bush",
+          "primitives": [
+            "SMALL",
+            "HasProperty",
+            "NOT",
+            "Not",
+            "LIKE"
+          ],
+          "explication": "something is like this AND this thing is like this AND something is like this",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        }
+      ]
+    },
+    "es": {
+      "total_sentences": 60,
+      "successful_evaluations": 50,
+      "avg_substitutability": 0.0,
+      "avg_bidirectional_score": 0.0,
+      "evaluations": [
+        {
+          "text": "Yo te veo",
+          "primitives": [
+            "I"
+          ],
+          "explication": "algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Esto es bueno",
+          "primitives": [
+            "HasProperty",
+            "GOOD"
+          ],
+          "explication": "esta cosa es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Yo quiero esto",
+          "primitives": [
+            "WANT",
+            "I"
+          ],
+          "explication": "algo es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Esto no es malo",
+          "primitives": [
+            "BAD",
+            "Not",
+            "NOT",
+            "HasProperty"
+          ],
+          "explication": "algo es así AND alguien no hace algo AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Hay algo",
+          "primitives": [
+            "THERE_IS",
+            "SOMETHING"
+          ],
+          "explication": "algo es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El gato está en la alfombra",
+          "primitives": [
+            "AtLocation"
+          ],
+          "explication": "algo está en un lugar",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El libro está en la bolsa",
+          "primitives": [
+            "AtLocation"
+          ],
+          "explication": "algo está en un lugar",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El coche está en la estación",
+          "primitives": [
+            "AtLocation"
+          ],
+          "explication": "algo está en un lugar",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El pájaro está en el árbol",
+          "primitives": [
+            "AtLocation"
+          ],
+          "explication": "algo está en un lugar",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El pez está en el agua",
+          "primitives": [
+            "AtLocation"
+          ],
+          "explication": "algo está en un lugar",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Esto es similar a eso",
+          "primitives": [
+            "HasProperty",
+            "SimilarTo"
+          ],
+          "explication": "esta cosa es así AND esta cosa es como otra cosa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El gato es como el perro",
+          "primitives": [
+            "HasProperty",
+            "LIKE"
+          ],
+          "explication": "esta cosa es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Esto se parece a eso",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La manzana es como la naranja",
+          "primitives": [
+            "HasProperty",
+            "LIKE"
+          ],
+          "explication": "esta cosa es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La casa es similar al edificio",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La herramienta se usa para cortar",
+          "primitives": [
+            "UsedFor"
+          ],
+          "explication": "alguien puede hacer algo con esta cosa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Esto se usa para abrir puertas",
+          "primitives": [
+            "UsedFor"
+          ],
+          "explication": "alguien puede hacer algo con esta cosa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El bolígrafo es para escribir",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La casa grande",
+          "primitives": [
+            "BIG"
+          ],
+          "explication": "algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El gato es rápido",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El pájaro pequeño",
+          "primitives": [
+            "SMALL"
+          ],
+          "explication": "algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Esto es diferente de eso",
+          "primitives": [
+            "HasProperty",
+            "DifferentFrom"
+          ],
+          "explication": "esta cosa es así AND esta cosa no es como otra cosa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El gato es diferente del perro",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La manzana no es como la piedra",
+          "primitives": [
+            "HasProperty",
+            "Not",
+            "NOT",
+            "LIKE"
+          ],
+          "explication": "esta cosa es así AND alguien no hace algo AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La casa es diferente del coche",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Hay un gato",
+          "primitives": [
+            "THERE_IS"
+          ],
+          "explication": "algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Hay muchos pájaros",
+          "primitives": [
+            "MANY",
+            "THERE_IS"
+          ],
+          "explication": "algo es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Hay agua aquí",
+          "primitives": [
+            "THERE_IS",
+            "HERE"
+          ],
+          "explication": "algo es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Hay una casa",
+          "primitives": [
+            "THERE_IS",
+            "ONE"
+          ],
+          "explication": "algo es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Hay árboles",
+          "primitives": [
+            "THERE_IS"
+          ],
+          "explication": "algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La rueda es parte del coche",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La rama es parte del árbol",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El ala es parte del pájaro",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "esta cosa es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La hoja es parte de la planta",
+          "primitives": [
+            "HasProperty",
+            "PartOf"
+          ],
+          "explication": "esta cosa es así AND una parte es parte de otra cosa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La puerta es parte de la casa",
+          "primitives": [
+            "HasProperty",
+            "PartOf"
+          ],
+          "explication": "esta cosa es así AND una parte es parte de otra cosa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La lluvia causa que el suelo esté mojado",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "algo pasa porque otra cosa pasa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El sol causa que la planta crezca",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "algo pasa porque otra cosa pasa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El viento causa que las hojas se muevan",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "algo pasa porque otra cosa pasa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El fuego causa que la madera se queme",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "algo pasa porque otra cosa pasa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El agua causa que la semilla brote",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "algo pasa porque otra cosa pasa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El gato no vuela",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "alguien no hace algo AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El pez no camina",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "alguien no hace algo AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La piedra no está viva",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "alguien no hace algo AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El agua no está caliente",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "alguien no hace algo AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El pájaro no nada",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "alguien no hace algo AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El coche rojo está en la carretera",
+          "primitives": [
+            "AtLocation"
+          ],
+          "explication": "algo está en un lugar",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El gato grande corre rápidamente",
+          "primitives": [
+            "BIG"
+          ],
+          "explication": "algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El pájaro pequeño vuela alto en el cielo",
+          "primitives": [
+            "SMALL"
+          ],
+          "explication": "algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El cuchillo afilado se usa para cortar carne",
+          "primitives": [
+            "UsedFor"
+          ],
+          "explication": "alguien puede hacer algo con esta cosa",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "El árbol alto no es como el arbusto pequeño",
+          "primitives": [
+            "SMALL",
+            "HasProperty",
+            "NOT",
+            "Not",
+            "LIKE"
+          ],
+          "explication": "algo es así AND esta cosa es así AND algo es así",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        }
+      ]
+    },
+    "fr": {
+      "total_sentences": 60,
+      "successful_evaluations": 49,
+      "avg_substitutability": 0.0,
+      "avg_bidirectional_score": 0.0,
+      "evaluations": [
+        {
+          "text": "Je te vois",
+          "primitives": [
+            "I"
+          ],
+          "explication": "quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Ceci est bon",
+          "primitives": [
+            "HasProperty",
+            "GOOD"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Je veux ceci",
+          "primitives": [
+            "WANT",
+            "I"
+          ],
+          "explication": "quelque chose est comme cela AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Ceci n'est pas mauvais",
+          "primitives": [
+            "BAD",
+            "NOT"
+          ],
+          "explication": "quelque chose est comme cela AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Il y a quelque chose",
+          "primitives": [
+            "HasProperty",
+            "SOMETHING",
+            "Exist"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est comme cela AND il y a quelque chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le chat est sur le tapis",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le livre est dans le sac",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La voiture est à la gare",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "cette chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "L'oiseau est dans l'arbre",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le poisson est dans l'eau",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Ceci est similaire à cela",
+          "primitives": [
+            "HasProperty",
+            "SimilarTo"
+          ],
+          "explication": "cette chose est comme cela AND cette chose est comme une autre chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le chat est comme le chien",
+          "primitives": [
+            "HasProperty",
+            "LIKE"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La pomme est comme l'orange",
+          "primitives": [
+            "HasProperty",
+            "LIKE"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La maison est similaire au bâtiment",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "cette chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "L'outil est utilisé pour couper",
+          "primitives": [
+            "HasProperty",
+            "UsedFor"
+          ],
+          "explication": "cette chose est comme cela AND quelqu'un peut faire quelque chose avec cette chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Ceci est utilisé pour ouvrir les portes",
+          "primitives": [
+            "HasProperty",
+            "UsedFor"
+          ],
+          "explication": "cette chose est comme cela AND quelqu'un peut faire quelque chose avec cette chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le stylo est pour écrire",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "cette chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La grande maison",
+          "primitives": [
+            "BIG"
+          ],
+          "explication": "quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le chat est rapide",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "cette chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le petit oiseau",
+          "primitives": [
+            "SMALL"
+          ],
+          "explication": "quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Ceci est différent de cela",
+          "primitives": [
+            "HasProperty",
+            "DifferentFrom"
+          ],
+          "explication": "cette chose est comme cela AND cette chose n'est pas comme une autre chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le chat est différent du chien",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "cette chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La pomme n'est pas comme la pierre",
+          "primitives": [
+            "NOT",
+            "LIKE"
+          ],
+          "explication": "quelque chose est comme cela AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La maison est différente de la voiture",
+          "primitives": [
+            "HasProperty"
+          ],
+          "explication": "cette chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Il y a un chat",
+          "primitives": [
+            "HasProperty",
+            "ONE",
+            "Exist"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est comme cela AND il y a quelque chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Il y a beaucoup d'oiseaux",
+          "primitives": [
+            "MANY",
+            "HasProperty",
+            "Exist"
+          ],
+          "explication": "quelque chose est comme cela AND cette chose est comme cela AND il y a quelque chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Il y a de l'eau ici",
+          "primitives": [
+            "HasProperty",
+            "HERE",
+            "Exist"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est comme cela AND il y a quelque chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Il y a une maison",
+          "primitives": [
+            "HasProperty",
+            "ONE",
+            "Exist"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est comme cela AND il y a quelque chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Il y a des arbres",
+          "primitives": [
+            "HasProperty",
+            "Exist"
+          ],
+          "explication": "cette chose est comme cela AND il y a quelque chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La roue fait partie de la voiture",
+          "primitives": [
+            "PartOf",
+            "DO"
+          ],
+          "explication": "une partie est partie d'une autre chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La branche fait partie de l'arbre",
+          "primitives": [
+            "PartOf",
+            "DO"
+          ],
+          "explication": "une partie est partie d'une autre chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "L'aile fait partie de l'oiseau",
+          "primitives": [
+            "PartOf",
+            "DO"
+          ],
+          "explication": "une partie est partie d'une autre chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La feuille fait partie de la plante",
+          "primitives": [
+            "PartOf",
+            "DO"
+          ],
+          "explication": "une partie est partie d'une autre chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La porte fait partie de la maison",
+          "primitives": [
+            "PartOf",
+            "DO"
+          ],
+          "explication": "une partie est partie d'une autre chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La pluie cause que le sol soit mouillé",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "quelque chose arrive parce qu'une autre chose arrive",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le soleil cause que la plante grandisse",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "quelque chose arrive parce qu'une autre chose arrive",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le vent cause que les feuilles bougent",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "quelque chose arrive parce qu'une autre chose arrive",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le feu cause que le bois brûle",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "quelque chose arrive parce qu'une autre chose arrive",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "L'eau cause que la graine germe",
+          "primitives": [
+            "Causes"
+          ],
+          "explication": "quelque chose arrive parce qu'une autre chose arrive",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le chat ne vole pas",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "quelqu'un ne fait pas quelque chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le poisson ne marche pas",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "quelqu'un ne fait pas quelque chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La pierre n'est pas vivante",
+          "primitives": [
+            "NOT"
+          ],
+          "explication": "quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "L'eau n'est pas chaude",
+          "primitives": [
+            "NOT"
+          ],
+          "explication": "quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "L'oiseau ne nage pas",
+          "primitives": [
+            "Not",
+            "NOT"
+          ],
+          "explication": "quelqu'un ne fait pas quelque chose AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "La voiture rouge est sur la route",
+          "primitives": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "explication": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le grand chat court rapidement",
+          "primitives": [
+            "BIG"
+          ],
+          "explication": "quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le petit oiseau vole haut dans le ciel",
+          "primitives": [
+            "SMALL"
+          ],
+          "explication": "quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "Le couteau tranchant est utilisé pour couper la viande",
+          "primitives": [
+            "HasProperty",
+            "UsedFor"
+          ],
+          "explication": "cette chose est comme cela AND quelqu'un peut faire quelque chose avec cette chose",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        {
+          "text": "L'arbre haut n'est pas comme le petit buisson",
+          "primitives": [
+            "SMALL",
+            "NOT",
+            "LIKE"
+          ],
+          "explication": "quelque chose est comme cela AND quelque chose est comme cela AND quelque chose est comme cela",
+          "scores": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        }
+      ]
+    }
+  },
+  "cross_language": {
+    "evaluations": [
+      {
+        "success": false,
+        "error": "Translation failed",
+        "source_text": "I see you",
+        "substitutability_scores": {}
+      },
+      {
+        "success": false,
+        "error": "Translation failed",
+        "source_text": "I see you",
+        "substitutability_scores": {}
+      },
+      {
+        "success": true,
+        "source_text": "This is good",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "This is good",
+          "target_text": "esta cosa es así",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "THIS",
+            "GOOD"
+          ],
+          "source_legality": 0.5599999999999999,
+          "target_legality": 0.35,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this",
+            "target": "esta cosa es así"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "This is good",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "This is good",
+          "target_text": "cette chose est comme cela",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "THIS",
+            "GOOD"
+          ],
+          "source_legality": 0.5599999999999999,
+          "target_legality": 0.42,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this",
+            "target": "cette chose est comme cela"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": false,
+        "error": "Translation failed",
+        "source_text": "I want this",
+        "substitutability_scores": {}
+      },
+      {
+        "success": false,
+        "error": "Translation failed",
+        "source_text": "I want this",
+        "substitutability_scores": {}
+      },
+      {
+        "success": true,
+        "source_text": "This is not bad",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "This is not bad",
+          "target_text": "esta cosa es así AND alguien no hace algo",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "NOT",
+            "THIS",
+            "Not",
+            "BAD"
+          ],
+          "source_legality": 0.9363636363636363,
+          "target_legality": 0.8444444444444443,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND someone does not do something",
+            "target": "esta cosa es así AND alguien no hace algo"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "This is not bad",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "This is not bad",
+          "target_text": "cette chose est comme cela AND quelqu'un ne fait pas quelque chose",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "NOT",
+            "THIS",
+            "Not",
+            "BAD"
+          ],
+          "source_legality": 0.9363636363636363,
+          "target_legality": 0.825,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND someone does not do something",
+            "target": "cette chose est comme cela AND quelqu'un ne fait pas quelque chose"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "There is something",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "There is something",
+          "target_text": "esta cosa es así AND hay algo",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "SOMETHING",
+            "Exist"
+          ],
+          "source_legality": 0.7666666666666666,
+          "target_legality": 0.8,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND there is something",
+            "target": "esta cosa es así AND hay algo"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "There is something",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "There is something",
+          "target_text": "cette chose est comme cela AND il y a quelque chose",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "SOMETHING",
+            "Exist"
+          ],
+          "source_legality": 0.7666666666666666,
+          "target_legality": 0.7454545454545454,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND there is something",
+            "target": "cette chose est comme cela AND il y a quelque chose"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The cat is on the mat",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "The cat is on the mat",
+          "target_text": "esta cosa es así AND algo está en un lugar",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.42,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "esta cosa es así AND algo está en un lugar"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The cat is on the mat",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "The cat is on the mat",
+          "target_text": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.4083333333333333,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "cette chose est comme cela AND quelque chose est dans un lieu"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The book is in the bag",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "The book is in the bag",
+          "target_text": "esta cosa es así AND algo está en un lugar",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.42,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "esta cosa es así AND algo está en un lugar"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The book is in the bag",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "The book is in the bag",
+          "target_text": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.4083333333333333,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "cette chose est comme cela AND quelque chose est dans un lieu"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The car is at the station",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "The car is at the station",
+          "target_text": "esta cosa es así",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty"
+          ],
+          "source_legality": 0.5599999999999999,
+          "target_legality": 0.35,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this",
+            "target": "esta cosa es así"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The car is at the station",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "The car is at the station",
+          "target_text": "cette chose est comme cela",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty"
+          ],
+          "source_legality": 0.5599999999999999,
+          "target_legality": 0.42,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this",
+            "target": "cette chose est comme cela"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The bird is in the tree",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "The bird is in the tree",
+          "target_text": "esta cosa es así AND algo está en un lugar",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.42,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "esta cosa es así AND algo está en un lugar"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The bird is in the tree",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "The bird is in the tree",
+          "target_text": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.4083333333333333,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "cette chose est comme cela AND quelque chose est dans un lieu"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The fish is in the water",
+        "source_lang": "en",
+        "target_lang": "es",
+        "translation_result": {
+          "success": true,
+          "source_text": "The fish is in the water",
+          "target_text": "esta cosa es así AND algo está en un lugar",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.42,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "esta cosa es así AND algo está en un lugar"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      },
+      {
+        "success": true,
+        "source_text": "The fish is in the water",
+        "source_lang": "en",
+        "target_lang": "fr",
+        "translation_result": {
+          "success": true,
+          "source_text": "The fish is in the water",
+          "target_text": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "translation_method": "nsm_explication",
+          "primitives_used": [
+            "HasProperty",
+            "AtLocation"
+          ],
+          "source_legality": 0.509090909090909,
+          "target_legality": 0.4083333333333333,
+          "cross_translatable": true,
+          "explications": {
+            "source": "this thing is like this AND something is in a place",
+            "target": "cette chose est comme cela AND quelque chose est dans un lieu"
+          }
+        },
+        "substitutability_scores": {
+          "source": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "target": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          },
+          "cross_consistency": {
+            "text_to_explication": 0.0,
+            "explication_to_text": 0.0,
+            "bidirectional_score": 0.0,
+            "substitutability_score": 0.0
+          }
+        },
+        "overall_substitutability": 0.0,
+        "cross_translatable": true
+      }
+    ],
+    "total_evaluations": 20,
+    "successful_evaluations": 16
+  },
+  "overall": {
+    "avg_substitutability": 0.0,
+    "total_evaluations": 150,
+    "languages_evaluated": 3
+  }
+}

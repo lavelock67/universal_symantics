@@ -1,0 +1,267 @@
+{
+  "corpus_results": [
+    {
+      "corpus_name": "academic_corpus",
+      "text_count": 10,
+      "primitive_counts": {
+        "IsA": 9,
+        "PartOf": 9,
+        "Antonym": 1,
+        "UsedFor": 1
+      },
+      "detection_examples": {
+        "IsA": [
+          "The quantum algorithm demonstrates exponential speedup over classical methods....",
+          "Machine learning models require substantial computational resources for training....",
+          "The neural network architecture consists of multiple convolutional layers...."
+        ],
+        "PartOf": [
+          "The quantum algorithm demonstrates exponential speedup over classical methods....",
+          "Machine learning models require substantial computational resources for training....",
+          "The neural network architecture consists of multiple convolutional layers...."
+        ],
+        "Antonym": [
+          "The literature review identified gaps in current research...."
+        ],
+        "UsedFor": [
+          "The literature review identified gaps in current research...."
+        ]
+      },
+      "unique_primitives": 4,
+      "total_detections": 20
+    },
+    {
+      "corpus_name": "business_corpus",
+      "text_count": 10,
+      "primitive_counts": {
+        "HasProperty_Strong": 1,
+        "IsA": 9,
+        "PartOf": 9
+      },
+      "detection_examples": {
+        "HasProperty_Strong": [
+          "The quarterly report indicates strong growth in international markets...."
+        ],
+        "IsA": [
+          "Our team successfully completed the project ahead of schedule....",
+          "The conference featured presentations from industry experts....",
+          "Strategic planning sessions identified new market opportunities...."
+        ],
+        "PartOf": [
+          "Our team successfully completed the project ahead of schedule....",
+          "The conference featured presentations from industry experts....",
+          "Strategic planning sessions identified new market opportunities...."
+        ]
+      },
+      "unique_primitives": 3,
+      "total_detections": 19
+    },
+    {
+      "corpus_name": "fiction_corpus",
+      "text_count": 10,
+      "primitive_counts": {
+        "IsA": 5,
+        "PartOf": 5,
+        "AtLocation": 4,
+        "DoesAction_Time": 1,
+        "Antonym": 1,
+        "UsedFor": 1
+      },
+      "detection_examples": {
+        "IsA": [
+          "The old wizard cast a powerful spell that illuminated the dark chamber....",
+          "Magic flowed through the ancient runes carved into the stone walls....",
+          "The spaceship navigated through the asteroid field with precision...."
+        ],
+        "PartOf": [
+          "The old wizard cast a powerful spell that illuminated the dark chamber....",
+          "Magic flowed through the ancient runes carved into the stone walls....",
+          "The spaceship navigated through the asteroid field with precision...."
+        ],
+        "AtLocation": [
+          "She gazed at the stars, wondering about the mysteries of the universe....",
+          "The detective carefully examined the evidence at the crime scene....",
+          "Destiny called to the young warrior standing at the crossroads...."
+        ],
+        "DoesAction_Time": [
+          "Time seemed to slow as the hero faced the final challenge...."
+        ],
+        "Antonym": [
+          "Courage burned brightly in the hearts of the brave adventurers...."
+        ],
+        "UsedFor": [
+          "Courage burned brightly in the hearts of the brave adventurers...."
+        ]
+      },
+      "unique_primitives": 6,
+      "total_detections": 17
+    },
+    {
+      "corpus_name": "news_corpus",
+      "text_count": 10,
+      "primitive_counts": {
+        "IsA": 8,
+        "PartOf": 8,
+        "Antonym": 2,
+        "UsedFor": 2
+      },
+      "detection_examples": {
+        "IsA": [
+          "The government announced new economic policies to address inflation concerns....",
+          "The company reported record profits despite market volatility....",
+          "International leaders met to discuss climate change initiatives...."
+        ],
+        "PartOf": [
+          "The government announced new economic policies to address inflation concerns....",
+          "The company reported record profits despite market volatility....",
+          "International leaders met to discuss climate change initiatives...."
+        ],
+        "Antonym": [
+          "Scientists discovered evidence of ancient civilizations in remote regions....",
+          "Technology companies invested heavily in artificial intelligence research...."
+        ],
+        "UsedFor": [
+          "Scientists discovered evidence of ancient civilizations in remote regions....",
+          "Technology companies invested heavily in artificial intelligence research...."
+        ]
+      },
+      "unique_primitives": 4,
+      "total_detections": 20
+    },
+    {
+      "corpus_name": "sample_diverse",
+      "text_count": 24,
+      "primitive_counts": {
+        "IsA": 19,
+        "PartOf": 19,
+        "Antonym": 1,
+        "UsedFor": 1,
+        "AtLocation": 2,
+        "DoesAction_Book": 1,
+        "HasProperty_Strong": 1
+      },
+      "detection_examples": {
+        "IsA": [
+          "The quantum algorithm demonstrates exponential speedup over classical methods....",
+          "Machine learning models require substantial computational resources for training....",
+          "The neural network architecture consists of multiple convolutional layers...."
+        ],
+        "PartOf": [
+          "The quantum algorithm demonstrates exponential speedup over classical methods....",
+          "Machine learning models require substantial computational resources for training....",
+          "The neural network architecture consists of multiple convolutional layers...."
+        ],
+        "Antonym": [
+          "Scientists discovered evidence of ancient civilizations in remote regions...."
+        ],
+        "UsedFor": [
+          "Scientists discovered evidence of ancient civilizations in remote regions...."
+        ],
+        "AtLocation": [
+          "She gazed at the stars, wondering about the mysteries of the universe....",
+          "The detective carefully examined the evidence at the crime scene...."
+        ],
+        "DoesAction_Book": [
+          "Just finished reading an amazing book about space exploration!..."
+        ],
+        "HasProperty_Strong": [
+          "The quarterly report indicates strong growth in international markets...."
+        ]
+      },
+      "unique_primitives": 7,
+      "total_detections": 44
+    },
+    {
+      "corpus_name": "technical_corpus",
+      "text_count": 10,
+      "primitive_counts": {
+        "IsA": 10,
+        "PartOf": 10
+      },
+      "detection_examples": {
+        "IsA": [
+          "Install the software package using the command line interface....",
+          "Configure the network settings to enable remote access....",
+          "The API requires authentication tokens for secure communication...."
+        ],
+        "PartOf": [
+          "Install the software package using the command line interface....",
+          "Configure the network settings to enable remote access....",
+          "The API requires authentication tokens for secure communication...."
+        ]
+      },
+      "unique_primitives": 2,
+      "total_detections": 20
+    }
+  ],
+  "cross_corpus_analysis": {
+    "all_primitives": {
+      "IsA": 60,
+      "PartOf": 60,
+      "Antonym": 5,
+      "UsedFor": 5,
+      "HasProperty_Strong": 2,
+      "AtLocation": 6,
+      "DoesAction_Time": 1,
+      "DoesAction_Book": 1
+    },
+    "universal_primitives": {
+      "IsA": 60,
+      "PartOf": 60
+    },
+    "corpus_specific": {
+      "DoesAction_Time": 1,
+      "DoesAction_Book": 1
+    },
+    "corpus_coverage": {
+      "IsA": [
+        "sample_diverse",
+        "news_corpus",
+        "academic_corpus",
+        "business_corpus",
+        "fiction_corpus",
+        "technical_corpus"
+      ],
+      "PartOf": [
+        "sample_diverse",
+        "news_corpus",
+        "academic_corpus",
+        "business_corpus",
+        "fiction_corpus",
+        "technical_corpus"
+      ],
+      "Antonym": [
+        "academic_corpus",
+        "sample_diverse",
+        "news_corpus",
+        "fiction_corpus"
+      ],
+      "UsedFor": [
+        "academic_corpus",
+        "sample_diverse",
+        "news_corpus",
+        "fiction_corpus"
+      ],
+      "HasProperty_Strong": [
+        "business_corpus",
+        "sample_diverse"
+      ],
+      "AtLocation": [
+        "sample_diverse",
+        "fiction_corpus"
+      ],
+      "DoesAction_Time": [
+        "fiction_corpus"
+      ],
+      "DoesAction_Book": [
+        "sample_diverse"
+      ]
+    }
+  },
+  "summary": {
+    "total_corpora": 6,
+    "total_primitives": 8,
+    "universal_primitives": 2,
+    "corpus_specific_primitives": 2
+  }
+}

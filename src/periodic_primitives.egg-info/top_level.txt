@@ -1,0 +1,7 @@
+detect
+generate
+mining
+specialists
+table
+ui
+validate

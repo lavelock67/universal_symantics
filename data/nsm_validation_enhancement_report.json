@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "report_type": "NSM_validation_enhancement_report",
+    "timestamp": "2025-08-22"
+  },
+  "validation_summary": {
+    "total_entries_validated": 360,
+    "average_quality_score": 0.6728916144286592,
+    "high_quality_rate": 0.005555555555555556,
+    "validation_coverage": {
+      "en": {
+        "entries_validated": 120,
+        "average_quality": 0.7523895801673331,
+        "high_quality_rate": 0.016666666666666666
+      },
+      "es": {
+        "entries_validated": 120,
+        "average_quality": 0.6373327297742168,
+        "high_quality_rate": 0.0
+      },
+      "fr": {
+        "entries_validated": 120,
+        "average_quality": 0.6289525333444278,
+        "high_quality_rate": 0.0
+      }
+    }
+  },
+  "quality_analysis": {
+    "AtLocation": {
+      "average_quality": 0.6882131466865539,
+      "quality_std": 0.039440848203003205,
+      "high_quality_rate": 0.0
+    },
+    "HasProperty": {
+      "average_quality": 0.6722040314383451,
+      "quality_std": 0.059507297138383784,
+      "high_quality_rate": 0.0
+    },
+    "PartOf": {
+      "average_quality": 0.7018841174443563,
+      "quality_std": 0.06288183429450221,
+      "high_quality_rate": 0.0
+    },
+    "Causes": {
+      "average_quality": 0.6486001961429914,
+      "quality_std": 0.008544205056778248,
+      "high_quality_rate": 0.0
+    },
+    "UsedFor": {
+      "average_quality": 0.703551414489746,
+      "quality_std": 0.06797099244687571,
+      "high_quality_rate": 0.0
+    },
+    "SimilarTo": {
+      "average_quality": 0.7259977587858836,
+      "quality_std": 0.07424621292372029,
+      "high_quality_rate": 0.3333333333333333
+    },
+    "DifferentFrom": {
+      "average_quality": 0.7125657924811045,
+      "quality_std": 0.07424621292372029,
+      "high_quality_rate": 0.3333333333333333
+    },
+    "Not": {
+      "average_quality": 0.6100690274238586,
+      "quality_std": 0.05397583493887895,
+      "high_quality_rate": 0.0
+    },
+    "Exist": {
+      "average_quality": 0.6692607568899791,
+      "quality_std": 0.06167759284685925,
+      "high_quality_rate": 0.0
+    }
+  },
+  "recommendations": [
+    "Quality is moderate. Consider enhancing cross-language alignment and semantic validation.",
+    "Focus on improving quality for AtLocation primitive (current: 0.688)",
+    "Focus on improving quality for HasProperty primitive (current: 0.672)",
+    "Focus on improving quality for Causes primitive (current: 0.649)",
+    "Focus on improving quality for Not primitive (current: 0.610)",
+    "Focus on improving quality for Exist primitive (current: 0.669)",
+    "Implement automated validation pipeline for new explications",
+    "Add more sophisticated semantic constraint checking",
+    "Enhance cross-language alignment validation with context awareness",
+    "Consider implementing quality-based template selection",
+    "Monitor validation metrics over time for quality trends"
+  ]
+}

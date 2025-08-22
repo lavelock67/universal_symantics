@@ -1,0 +1,112 @@
+[
+  {
+    "key": "language-amod-foreign",
+    "frequency": 38,
+    "relation": "amod",
+    "head": "language",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "vacation-compound-summer",
+    "frequency": 38,
+    "relation": "compound",
+    "head": "vacation",
+    "arg_types": [
+      "NOUN",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "year-amod-last",
+    "frequency": 29,
+    "relation": "amod",
+    "head": "year",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "make-dobj-mistake",
+    "frequency": 27,
+    "relation": "dobj",
+    "head": "make",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "have-dobj-time",
+    "frequency": 22,
+    "relation": "dobj",
+    "head": "have",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "read-dobj-book",
+    "frequency": 22,
+    "relation": "dobj",
+    "head": "read",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "do-dobj-good",
+    "frequency": 20,
+    "relation": "dobj",
+    "head": "do",
+    "arg_types": [
+      "VERB",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "wind-amod-strong",
+    "frequency": 20,
+    "relation": "amod",
+    "head": "wind",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "do-dobj-thing",
+    "frequency": 15,
+    "relation": "dobj",
+    "head": "do",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  },
+  {
+    "key": "people-amod-many",
+    "frequency": 15,
+    "relation": "amod",
+    "head": "people",
+    "arg_types": [
+      "NOUN",
+      "ADJ"
+    ]
+  },
+  {
+    "key": "take-dobj-care",
+    "frequency": 15,
+    "relation": "dobj",
+    "head": "take",
+    "arg_types": [
+      "VERB",
+      "NOUN"
+    ]
+  }
+]

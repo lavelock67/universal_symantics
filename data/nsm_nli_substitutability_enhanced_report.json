@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "report_type": "enhanced_NLI_substitutability_report",
+    "timestamp": "2025-08-22",
+    "enhanced_features": [
+      "multilingual_XNLI_evaluation",
+      "bidirectional_entailment_analysis",
+      "context_awareness_evaluation",
+      "primitive_specific_strategies",
+      "cross_language_validation",
+      "confidence_assessment"
+    ]
+  },
+  "test_evaluations": [
+    {
+      "example": {
+        "text": "The book is on the table",
+        "language": "en",
+        "primitive": "AtLocation"
+      },
+      "explication": "this thing is in this place",
+      "evaluation": {
+        "success": true,
+        "substitutability_score": 0.1308733141422272,
+        "confidence": 0.38386261463165283,
+        "substitutability_level": "poor",
+        "entailment_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "primary": 0.0,
+          "secondary": 0.0
+        },
+        "contradiction_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "penalty": 0.0
+        },
+        "semantic_similarity": 0.16931307315826416,
+        "context_awareness": 0.75,
+        "evaluation_metadata": {
+          "primitive": "AtLocation",
+          "strategy_used": {
+            "focus_elements": [
+              "location",
+              "place",
+              "spatial"
+            ],
+            "entailment_priority": "forward",
+            "semantic_weight": 1.1
+          },
+          "language_adjustments": {
+            "entailment_boost": 1.0,
+            "contradiction_penalty": 1.0,
+            "semantic_focus_weight": 1.0
+          },
+          "model_confidence": 0.38386261463165283
+        }
+      }
+    },
+    {
+      "example": {
+        "text": "This thing is like that thing",
+        "language": "en",
+        "primitive": "SimilarTo"
+      },
+      "explication": "this thing is like another thing",
+      "evaluation": {
+        "success": true,
+        "substitutability_score": 0.3256664323806763,
+        "confidence": 0.5671603202819824,
+        "substitutability_level": "low",
+        "entailment_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "primary": 0.0,
+          "secondary": 0.0
+        },
+        "contradiction_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "penalty": 0.0
+        },
+        "semantic_similarity": 0.8358016014099121,
+        "context_awareness": 1.0,
+        "evaluation_metadata": {
+          "primitive": "SimilarTo",
+          "strategy_used": {
+            "focus_elements": [
+              "similarity",
+              "resemblance",
+              "like"
+            ],
+            "entailment_priority": "bidirectional",
+            "semantic_weight": 0.9
+          },
+          "language_adjustments": {
+            "entailment_boost": 1.0,
+            "contradiction_penalty": 1.0,
+            "semantic_focus_weight": 1.0
+          },
+          "model_confidence": 0.5671603202819824
+        }
+      }
+    },
+    {
+      "example": {
+        "text": "Esta cosa está en este lugar",
+        "language": "es",
+        "primitive": "AtLocation"
+      },
+      "explication": "esta cosa está en este lugar",
+      "evaluation": {
+        "success": true,
+        "substitutability_score": 0.42484748244285586,
+        "confidence": 0.5999075651168824,
+        "substitutability_level": "low",
+        "entailment_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "primary": 0.0,
+          "secondary": 0.0
+        },
+        "contradiction_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "penalty": 0.0
+        },
+        "semantic_similarity": 0.9995378255844116,
+        "context_awareness": 1.0,
+        "evaluation_metadata": {
+          "primitive": "AtLocation",
+          "strategy_used": {
+            "focus_elements": [
+              "location",
+              "place",
+              "spatial"
+            ],
+            "entailment_priority": "forward",
+            "semantic_weight": 1.1
+          },
+          "language_adjustments": {
+            "entailment_boost": 0.95,
+            "contradiction_penalty": 1.05,
+            "semantic_focus_weight": 0.95
+          },
+          "model_confidence": 0.5999075651168824
+        }
+      }
+    },
+    {
+      "example": {
+        "text": "Cette chose fait partie de l'ensemble",
+        "language": "fr",
+        "primitive": "PartOf"
+      },
+      "explication": "une partie est partie d'une autre chose",
+      "evaluation": {
+        "success": true,
+        "substitutability_score": 0.34160617709159846,
+        "confidence": 0.5644041180610657,
+        "substitutability_level": "low",
+        "entailment_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "primary": 0.0,
+          "secondary": 0.0
+        },
+        "contradiction_scores": {
+          "forward": 0.0,
+          "backward": 0.0,
+          "penalty": 0.0
+        },
+        "semantic_similarity": 0.8220205903053284,
+        "context_awareness": 1.0,
+        "evaluation_metadata": {
+          "primitive": "PartOf",
+          "strategy_used": {
+            "focus_elements": [
+              "part",
+              "whole",
+              "component"
+            ],
+            "entailment_priority": "bidirectional",
+            "semantic_weight": 1.0
+          },
+          "language_adjustments": {
+            "entailment_boost": 0.95,
+            "contradiction_penalty": 1.05,
+            "semantic_focus_weight": 0.95
+          },
+          "model_confidence": 0.5644041180610657
+        }
+      }
+    }
+  ],
+  "dataset_evaluation": {
+    "total_entries": 0,
+    "language_analysis": {},
+    "primitive_analysis": {},
+    "overall_metrics": {
+      "avg_substitutability": 0.0,
+      "avg_confidence": 0.0,
+      "success_rate": 0.0,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 0
+      }
+    }
+  },
+  "summary": {
+    "evaluation_examples": 4,
+    "successful_evaluations": 4,
+    "dataset_success_rate": 0.0,
+    "avg_substitutability": 0.0,
+    "avg_confidence": 0.0
+  }
+}

@@ -1,0 +1,3686 @@
+{
+  "metadata": {
+    "report_type": "enhanced_babelnet_linking_report",
+    "timestamp": "2025-08-22",
+    "enhanced_features": [
+      "sense_disambiguation",
+      "context_aware_linking",
+      "semantic_similarity_scoring",
+      "cross_language_consistency",
+      "nsm_primitive_alignment",
+      "quality_assessment",
+      "confidence_scoring"
+    ]
+  },
+  "linking_results": [
+    {
+      "text": "The red car is parked near the building",
+      "language": "en",
+      "enhanced_links": {
+        "car_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00034046n",
+              "frequency_score": 0.965954,
+              "semantic_coherence": 0.0880528911948204,
+              "cross_language_consistency": 0.7862,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5122473564779282
+            },
+            {
+              "synset_id": "bn:00007309n",
+              "frequency_score": 0.992691,
+              "semantic_coherence": 0.09469126909971237,
+              "cross_language_consistency": 0.7073,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.507143807639885
+            },
+            {
+              "synset_id": "bn:00017169n",
+              "frequency_score": 0.982831,
+              "semantic_coherence": 0.02499745413661003,
+              "cross_language_consistency": 0.7493,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.48470828165464397
+            },
+            {
+              "synset_id": "bn:00014462n",
+              "frequency_score": 0.985538,
+              "semantic_coherence": 0.05754654482007027,
+              "cross_language_consistency": 0.6614,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4809600179280281
+            },
+            {
+              "synset_id": "bn:00015787n",
+              "frequency_score": 0.984213,
+              "semantic_coherence": 0.10052327066659927,
+              "cross_language_consistency": 0.5639,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.47825320826663964
+            },
+            {
+              "synset_id": "bn:00015785n",
+              "frequency_score": 0.984215,
+              "semantic_coherence": 0.09038017690181732,
+              "cross_language_consistency": 0.5645,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.47431657076072686
+            },
+            {
+              "synset_id": "bn:00015786n",
+              "frequency_score": 0.984214,
+              "semantic_coherence": 0.08840914070606232,
+              "cross_language_consistency": 0.5642,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.47346785628242494
+            },
+            {
+              "synset_id": "bn:00451062n",
+              "frequency_score": 0.5489379999999999,
+              "semantic_coherence": 0.16281630098819733,
+              "cross_language_consistency": 0.7814,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.416087920395279
+            },
+            {
+              "synset_id": "bn:00497488n",
+              "frequency_score": 0.5025120000000001,
+              "semantic_coherence": 0.13081546127796173,
+              "cross_language_consistency": 0.6536,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3637997845111848
+            },
+            {
+              "synset_id": "bn:00518825n",
+              "frequency_score": 0.481175,
+              "semantic_coherence": 0.1147964745759964,
+              "cross_language_consistency": 0.5525,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3307710898303986
+            },
+            {
+              "synset_id": "bn:00650485n",
+              "frequency_score": 0.349515,
+              "semantic_coherence": 0.16033004224300385,
+              "cross_language_consistency": 0.6545,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3298865168972015
+            },
+            {
+              "synset_id": "bn:00683253n",
+              "frequency_score": 0.316747,
+              "semantic_coherence": 0.11656724661588669,
+              "cross_language_consistency": 0.7241,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.31647099864635464
+            },
+            {
+              "synset_id": "bn:00694637n",
+              "frequency_score": 0.30536300000000005,
+              "semantic_coherence": 0.159688338637352,
+              "cross_language_consistency": 0.6089,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.30726423545494086
+            },
+            {
+              "synset_id": "bn:06483025n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.19087599217891693,
+              "cross_language_consistency": 0.7925,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2948503968715668
+            },
+            {
+              "synset_id": "bn:02019083n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15885333716869354,
+              "cross_language_consistency": 0.7751,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2785613348674775
+            },
+            {
+              "synset_id": "bn:03476293n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15795981884002686,
+              "cross_language_consistency": 0.7121,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2656039275360107
+            },
+            {
+              "synset_id": "bn:03204308n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15792842209339142,
+              "cross_language_consistency": 0.7076,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.26469136883735656
+            },
+            {
+              "synset_id": "bn:01154351n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15005022287368774,
+              "cross_language_consistency": 0.6947,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2589600891494751
+            },
+            {
+              "synset_id": "bn:02142237n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12947089970111847,
+              "cross_language_consistency": 0.7289,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25756835988044735
+            },
+            {
+              "synset_id": "bn:15959664n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.190823033452034,
+              "cross_language_consistency": 0.6008,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25648921338081365
+            },
+            {
+              "synset_id": "bn:03410363n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1425243318080902,
+              "cross_language_consistency": 0.6911,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2552297327232361
+            },
+            {
+              "synset_id": "bn:03049212n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.10501883924007416,
+              "cross_language_consistency": 0.7363999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24928753569602966
+            },
+            {
+              "synset_id": "bn:01332592n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15913589298725128,
+              "cross_language_consistency": 0.6224000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24813435719490054
+            },
+            {
+              "synset_id": "bn:02145572n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1518867462873459,
+              "cross_language_consistency": 0.6284000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24643469851493838
+            },
+            {
+              "synset_id": "bn:02349566n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.14967748522758484,
+              "cross_language_consistency": 0.6302,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24591099409103395
+            },
+            {
+              "synset_id": "bn:04126555n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1450752317905426,
+              "cross_language_consistency": 0.6335,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24473009271621704
+            },
+            {
+              "synset_id": "bn:15542381n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11564075946807861,
+              "cross_language_consistency": 0.6857,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24339630378723145
+            },
+            {
+              "synset_id": "bn:09058880n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.17183569073677063,
+              "cross_language_consistency": 0.536,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23593427629470828
+            },
+            {
+              "synset_id": "bn:15532556n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11687413603067398,
+              "cross_language_consistency": 0.6332,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23338965441226958
+            },
+            {
+              "synset_id": "bn:14486345n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.07223929464817047,
+              "cross_language_consistency": 0.6965,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2281957178592682
+            },
+            {
+              "synset_id": "bn:16647291n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.06233702972531319,
+              "cross_language_consistency": 0.7127,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22747481189012528
+            },
+            {
+              "synset_id": "bn:01998884n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.10342451930046082,
+              "cross_language_consistency": 0.5347999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.20832980772018433
+            },
+            {
+              "synset_id": "bn:08490963n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.10927558690309525,
+              "cross_language_consistency": 0.5111,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2059302347612381
+            }
+          ],
+          "best_synset": "bn:00034046n",
+          "confidence": 0.41855480994961747,
+          "quality_metrics": {
+            "frequency_score": 0.34496684848484854,
+            "semantic_coherence": 0.1251673297674367,
+            "cross_language_consistency": 0.6616818181818181,
+            "context_relevance": 0.30000000000000004,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.3158933500887929
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "red_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00052054n",
+              "frequency_score": 0.947946,
+              "semantic_coherence": 0.11771968752145767,
+              "cross_language_consistency": 0.7838,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.518231675008583
+            },
+            {
+              "synset_id": "bn:00100653a",
+              "frequency_score": 0.899347,
+              "semantic_coherence": 0.18291006982326508,
+              "cross_language_consistency": 0.6041,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.49378812792930604
+            },
+            {
+              "synset_id": "bn:00100654a",
+              "frequency_score": 0.899346,
+              "semantic_coherence": 0.1778385192155838,
+              "cross_language_consistency": 0.6038,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.49169920768623354
+            },
+            {
+              "synset_id": "bn:00118750n",
+              "frequency_score": 0.88125,
+              "semantic_coherence": 0.18028685450553894,
+              "cross_language_consistency": 0.575,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4814897418022156
+            },
+            {
+              "synset_id": "bn:00066631n",
+              "frequency_score": 0.933369,
+              "semantic_coherence": 0.09195742011070251,
+              "cross_language_consistency": 0.6107,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.46893366804428105
+            },
+            {
+              "synset_id": "bn:00011893n",
+              "frequency_score": 0.988107,
+              "semantic_coherence": 0.08393619954586029,
+              "cross_language_consistency": 0.5321,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4664265798183441
+            },
+            {
+              "synset_id": "bn:00066632n",
+              "frequency_score": 0.933368,
+              "semantic_coherence": 0.06717691570520401,
+              "cross_language_consistency": 0.6104,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4589611662820816
+            },
+            {
+              "synset_id": "bn:00288139n",
+              "frequency_score": 0.7118610000000001,
+              "semantic_coherence": 0.15307797491550446,
+              "cross_language_consistency": 0.7583,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4564494899662018
+            },
+            {
+              "synset_id": "bn:00098581a",
+              "frequency_score": 0.901419,
+              "semantic_coherence": 0.06837956607341766,
+              "cross_language_consistency": 0.6257,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4529175264293671
+            },
+            {
+              "synset_id": "bn:00427355n",
+              "frequency_score": 0.5726450000000001,
+              "semantic_coherence": 0.19654597342014313,
+              "cross_language_consistency": 0.6935,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4191118893680573
+            },
+            {
+              "synset_id": "bn:00495078n",
+              "frequency_score": 0.504922,
+              "semantic_coherence": 0.19471031427383423,
+              "cross_language_consistency": 0.7766,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.41468072570953374
+            },
+            {
+              "synset_id": "bn:00417256n",
+              "frequency_score": 0.5827439999999999,
+              "semantic_coherence": 0.12567360699176788,
+              "cross_language_consistency": 0.7232,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.39973264279670717
+            },
+            {
+              "synset_id": "bn:00355975n",
+              "frequency_score": 0.6440250000000001,
+              "semantic_coherence": 0.16643588244915009,
+              "cross_language_consistency": 0.5075000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3912818529796601
+            },
+            {
+              "synset_id": "bn:00490264n",
+              "frequency_score": 0.509736,
+              "semantic_coherence": 0.09139731526374817,
+              "cross_language_consistency": 0.7208,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.36363972610549933
+            },
+            {
+              "synset_id": "bn:00490644n",
+              "frequency_score": 0.5093559999999999,
+              "semantic_coherence": 0.12158674001693726,
+              "cross_language_consistency": 0.6068,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3528014960067749
+            },
+            {
+              "synset_id": "bn:00591461n",
+              "frequency_score": 0.408539,
+              "semantic_coherence": 0.15460172295570374,
+              "cross_language_consistency": 0.6617,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3467423891822815
+            },
+            {
+              "synset_id": "bn:00762177n",
+              "frequency_score": 0.237823,
+              "semantic_coherence": 0.15051712095737457,
+              "cross_language_consistency": 0.7469,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.31093374838294985
+            },
+            {
+              "synset_id": "bn:00723474n",
+              "frequency_score": 0.27652600000000005,
+              "semantic_coherence": 0.1476716250181198,
+              "cross_language_consistency": 0.6577999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.30358645000724793
+            },
+            {
+              "synset_id": "bn:00724599n",
+              "frequency_score": 0.275401,
+              "semantic_coherence": 0.15662793815135956,
+              "cross_language_consistency": 0.6203,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2993314752605438
+            },
+            {
+              "synset_id": "bn:01528074n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16545386612415314,
+              "cross_language_consistency": 0.7778,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2817415464496613
+            },
+            {
+              "synset_id": "bn:01500012n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1542237251996994,
+              "cross_language_consistency": 0.7964,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2809694900798798
+            },
+            {
+              "synset_id": "bn:00716892n",
+              "frequency_score": 0.283108,
+              "semantic_coherence": 0.1349123865365982,
+              "cross_language_consistency": 0.5324,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2753773546146393
+            },
+            {
+              "synset_id": "bn:03825229n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16923075914382935,
+              "cross_language_consistency": 0.7313000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.27395230365753176
+            },
+            {
+              "synset_id": "bn:02990063n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.14341749250888824,
+              "cross_language_consistency": 0.7811,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2735869970035553
+            },
+            {
+              "synset_id": "bn:21706052n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12467919290065765,
+              "cross_language_consistency": 0.7844,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.26675167716026305
+            },
+            {
+              "synset_id": "bn:03260180n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1399594247341156,
+              "cross_language_consistency": 0.746,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2651837698936462
+            },
+            {
+              "synset_id": "bn:01125273n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15244528651237488,
+              "cross_language_consistency": 0.7181,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.26459811460495
+            },
+            {
+              "synset_id": "bn:01926396n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16849638521671295,
+              "cross_language_consistency": 0.6812,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2636385540866852
+            },
+            {
+              "synset_id": "bn:01464283n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15102984011173248,
+              "cross_language_consistency": 0.7151000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.263431936044693
+            },
+            {
+              "synset_id": "bn:02229438n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1655201017856598,
+              "cross_language_consistency": 0.6686,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2599280407142639
+            },
+            {
+              "synset_id": "bn:02918437n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16479414701461792,
+              "cross_language_consistency": 0.6688999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25969765880584716
+            },
+            {
+              "synset_id": "bn:15357115n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11399172246456146,
+              "cross_language_consistency": 0.7655000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2586966889858246
+            },
+            {
+              "synset_id": "bn:02836566n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1797046959400177,
+              "cross_language_consistency": 0.6302,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2579218783760071
+            },
+            {
+              "synset_id": "bn:15706318n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.137295201420784,
+              "cross_language_consistency": 0.7046,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2558380805683136
+            },
+            {
+              "synset_id": "bn:18164245n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12630297243595123,
+              "cross_language_consistency": 0.7264999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25582118897438044
+            },
+            {
+              "synset_id": "bn:00966822n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.21114595234394073,
+              "cross_language_consistency": 0.5534,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2551383809375763
+            },
+            {
+              "synset_id": "bn:03575534n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1677871197462082,
+              "cross_language_consistency": 0.6397999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2550748478984832
+            },
+            {
+              "synset_id": "bn:02344224n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1162102147936821,
+              "cross_language_consistency": 0.7328,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25304408591747285
+            },
+            {
+              "synset_id": "bn:03517357n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1333545297384262,
+              "cross_language_consistency": 0.6929,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2519218118953705
+            },
+            {
+              "synset_id": "bn:14573155n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.09147972613573074,
+              "cross_language_consistency": 0.7535000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2472918904542923
+            },
+            {
+              "synset_id": "bn:01606782n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.18323133885860443,
+              "cross_language_consistency": 0.5654,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24637253554344177
+            },
+            {
+              "synset_id": "bn:00925604n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15555573999881744,
+              "cross_language_consistency": 0.6188,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24598229599952698
+            },
+            {
+              "synset_id": "bn:02020170n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.09039928019046783,
+              "cross_language_consistency": 0.749,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24595971207618714
+            },
+            {
+              "synset_id": "bn:02934551n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13890893757343292,
+              "cross_language_consistency": 0.6347,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2425035750293732
+            },
+            {
+              "synset_id": "bn:14310198n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.08570539206266403,
+              "cross_language_consistency": 0.7406,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2424021568250656
+            },
+            {
+              "synset_id": "bn:03082446n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12261875718832016,
+              "cross_language_consistency": 0.6662,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24228750287532805
+            },
+            {
+              "synset_id": "bn:14421507n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13152536749839783,
+              "cross_language_consistency": 0.6479,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24219014699935912
+            },
+            {
+              "synset_id": "bn:01908792n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.17220023274421692,
+              "cross_language_consistency": 0.5624,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24136009309768677
+            },
+            {
+              "synset_id": "bn:13837299n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.09507670998573303,
+              "cross_language_consistency": 0.7103,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24009068399429323
+            },
+            {
+              "synset_id": "bn:17586349n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.10088412463665009,
+              "cross_language_consistency": 0.6953,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23941364985466004
+            },
+            {
+              "synset_id": "bn:01030793n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16468051075935364,
+              "cross_language_consistency": 0.5621,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23829220430374146
+            },
+            {
+              "synset_id": "bn:03773768n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1580946147441864,
+              "cross_language_consistency": 0.5696,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23715784589767455
+            },
+            {
+              "synset_id": "bn:02758860n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1702323704957962,
+              "cross_language_consistency": 0.542,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23649294819831848
+            },
+            {
+              "synset_id": "bn:16947766n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1547531932592392,
+              "cross_language_consistency": 0.5702,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2359412773036957
+            },
+            {
+              "synset_id": "bn:03140486n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11153288185596466,
+              "cross_language_consistency": 0.6542,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23545315274238587
+            },
+            {
+              "synset_id": "bn:03895848n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16401082277297974,
+              "cross_language_consistency": 0.5456,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2347243291091919
+            },
+            {
+              "synset_id": "bn:07957264n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.07502298802137375,
+              "cross_language_consistency": 0.7208,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2341691952085495
+            },
+            {
+              "synset_id": "bn:02384879n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16542823612689972,
+              "cross_language_consistency": 0.5363,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2334312944507599
+            },
+            {
+              "synset_id": "bn:00852993n",
+              "frequency_score": 0.147007,
+              "semantic_coherence": 0.1469399482011795,
+              "cross_language_consistency": 0.5021,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2332980792804718
+            },
+            {
+              "synset_id": "bn:17594579n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11994744837284088,
+              "cross_language_consistency": 0.6263,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23323897934913637
+            },
+            {
+              "synset_id": "bn:03875855n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15487809479236603,
+              "cross_language_consistency": 0.5435,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23065123791694642
+            },
+            {
+              "synset_id": "bn:17398617n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11763051152229309,
+              "cross_language_consistency": 0.6149,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23003220460891724
+            },
+            {
+              "synset_id": "bn:03292814n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.14614485204219818,
+              "cross_language_consistency": 0.5558000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22961794081687928
+            },
+            {
+              "synset_id": "bn:03556971n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16756051778793335,
+              "cross_language_consistency": 0.5087,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22876420711517334
+            },
+            {
+              "synset_id": "bn:02382966n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16264896094799042,
+              "cross_language_consistency": 0.5102,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22709958437919617
+            },
+            {
+              "synset_id": "bn:01429946n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.14883501827716827,
+              "cross_language_consistency": 0.5162,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2227740073108673
+            },
+            {
+              "synset_id": "bn:14673305n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.051996707916259766,
+              "cross_language_consistency": 0.7085,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22249868316650392
+            },
+            {
+              "synset_id": "bn:03876982n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15326064825057983,
+              "cross_language_consistency": 0.5054,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22238425930023195
+            },
+            {
+              "synset_id": "bn:17554845n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13171839714050293,
+              "cross_language_consistency": 0.5465,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2219873588562012
+            },
+            {
+              "synset_id": "bn:14306262n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.04303576052188873,
+              "cross_language_consistency": 0.7214,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22149430420875552
+            },
+            {
+              "synset_id": "bn:07960484n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.07205698639154434,
+              "cross_language_consistency": 0.6548,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21978279455661776
+            },
+            {
+              "synset_id": "bn:15388904n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12987202405929565,
+              "cross_language_consistency": 0.5287999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21770880962371825
+            },
+            {
+              "synset_id": "bn:14503626n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.08509308844804764,
+              "cross_language_consistency": 0.6122,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21647723537921906
+            },
+            {
+              "synset_id": "bn:16796951n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1326969563961029,
+              "cross_language_consistency": 0.5147,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21601878255844117
+            },
+            {
+              "synset_id": "bn:03366993n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13840089738368988,
+              "cross_language_consistency": 0.5021,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21578035895347597
+            },
+            {
+              "synset_id": "bn:03033894n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11851241439580917,
+              "cross_language_consistency": 0.5318,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21376496575832368
+            },
+            {
+              "synset_id": "bn:02230991n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13074712455272675,
+              "cross_language_consistency": 0.5027,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21283884982109072
+            },
+            {
+              "synset_id": "bn:02141942n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.10385994613170624,
+              "cross_language_consistency": 0.5174,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2050239784526825
+            },
+            {
+              "synset_id": "bn:15094702n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.05331877991557121,
+              "cross_language_consistency": 0.5894,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.1992075119662285
+            }
+          ],
+          "best_synset": "bn:00052054n",
+          "confidence": 0.42936857625987057,
+          "quality_metrics": {
+            "frequency_score": 0.23858031645569638,
+            "semantic_coherence": 0.1353101616701748,
+            "cross_language_consistency": 0.6370164556962025,
+            "context_relevance": 0.3000000000000001,
+            "nsm_alignment": 0.30000000000000004,
+            "overall_quality": 0.28310145074401927
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "parked_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00108275a",
+              "frequency_score": 0.891725,
+              "semantic_coherence": 0.1693568229675293,
+              "cross_language_consistency": 0.7175,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5087602291870117
+            },
+            {
+              "synset_id": "bn:02815928n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16218939423561096,
+              "cross_language_consistency": 0.5216,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22919575769424438
+            }
+          ],
+          "best_synset": "bn:00108275a",
+          "confidence": 0.4278111385650635,
+          "quality_metrics": {
+            "frequency_score": 0.4958625,
+            "semantic_coherence": 0.16577310860157013,
+            "cross_language_consistency": 0.61955,
+            "context_relevance": 0.30000000000000004,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.36897799344062804
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "building_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00013725n",
+              "frequency_score": 0.986275,
+              "semantic_coherence": 0.054582785815000534,
+              "cross_language_consistency": 0.5825,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4642156143260002
+            },
+            {
+              "synset_id": "bn:00013724n",
+              "frequency_score": 0.986276,
+              "semantic_coherence": 0.03882060572504997,
+              "cross_language_consistency": 0.5828,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.45797104229001995
+            },
+            {
+              "synset_id": "bn:00013722n",
+              "frequency_score": 0.986278,
+              "semantic_coherence": 0.0349288247525692,
+              "cross_language_consistency": 0.5834,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4565349299010276
+            },
+            {
+              "synset_id": "bn:00013723n",
+              "frequency_score": 0.986277,
+              "semantic_coherence": 0.03332104533910751,
+              "cross_language_consistency": 0.5831,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.45583151813564293
+            },
+            {
+              "synset_id": "bn:01443064n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16097433865070343,
+              "cross_language_consistency": 0.7807999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2805497354602814
+            },
+            {
+              "synset_id": "bn:02434204n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15308095514774323,
+              "cross_language_consistency": 0.7388,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.26899238205909726
+            },
+            {
+              "synset_id": "bn:03227147n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12544891238212585,
+              "cross_language_consistency": 0.7559,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.26135956495285034
+            },
+            {
+              "synset_id": "bn:02111572n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1432047039270401,
+              "cross_language_consistency": 0.6284000000000001,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24296188157081605
+            },
+            {
+              "synset_id": "bn:03891838n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.17413687705993652,
+              "cross_language_consistency": 0.5486,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2393747508239746
+            },
+            {
+              "synset_id": "bn:17721831n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.10672944784164429,
+              "cross_language_consistency": 0.5507,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2128317791366577
+            },
+            {
+              "synset_id": "bn:16016902n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.05290394276380539,
+              "cross_language_consistency": 0.5294,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.18704157710552216
+            }
+          ],
+          "best_synset": "bn:00013725n",
+          "confidence": 0.3485610814749003,
+          "quality_metrics": {
+            "frequency_score": 0.42228236363636357,
+            "semantic_coherence": 0.09801203994588419,
+            "cross_language_consistency": 0.6240363636363636,
+            "context_relevance": 0.3,
+            "nsm_alignment": 0.29999999999999993,
+            "overall_quality": 0.3206967977965355
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "near_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00107174a",
+              "frequency_score": 0.892826,
+              "semantic_coherence": 0.1780625581741333,
+              "cross_language_consistency": 0.7478,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.5686328232696534
+            },
+            {
+              "synset_id": "bn:00107175a",
+              "frequency_score": 0.892825,
+              "semantic_coherence": 0.17734064161777496,
+              "cross_language_consistency": 0.7474999999999999,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.56828375664711
+            },
+            {
+              "synset_id": "bn:00097402a",
+              "frequency_score": 0.902598,
+              "semantic_coherence": 0.15567424893379211,
+              "cross_language_consistency": 0.6794,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.5489290995735169
+            },
+            {
+              "synset_id": "bn:00082732v",
+              "frequency_score": 0.917268,
+              "semantic_coherence": 0.148341104388237,
+              "cross_language_consistency": 0.5804,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.5305968417552949
+            },
+            {
+              "synset_id": "bn:00100981a",
+              "frequency_score": 0.899019,
+              "semantic_coherence": 0.1708456128835678,
+              "cross_language_consistency": 0.5057,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.5191839451534271
+            },
+            {
+              "synset_id": "bn:00099859a",
+              "frequency_score": 0.900141,
+              "semantic_coherence": 0.1414022296667099,
+              "cross_language_consistency": 0.5423,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.5150631918666839
+            },
+            {
+              "synset_id": "bn:00099570a",
+              "frequency_score": 0.90043,
+              "semantic_coherence": 0.09675353020429611,
+              "cross_language_consistency": 0.629,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.5146304120817184
+            },
+            {
+              "synset_id": "bn:00114747r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.16337552666664124,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.3953502106666565
+            },
+            {
+              "synset_id": "bn:00114079r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.07467658817768097,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.3598706352710724
+            },
+            {
+              "synset_id": "bn:00933080n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1541977971792221,
+              "cross_language_consistency": 0.776,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.32687911887168886
+            },
+            {
+              "synset_id": "bn:03088190n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12383284419775009,
+              "cross_language_consistency": 0.743,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.30813313767910006
+            },
+            {
+              "synset_id": "bn:16757300n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11609914153814316,
+              "cross_language_consistency": 0.71,
+              "context_relevance": 0.30000000000000004,
+              "nsm_alignment": 0.8,
+              "metadata": {},
+              "overall_score": 0.2984396566152573
+            }
+          ],
+          "best_synset": "bn:00107174a",
+          "confidence": 0.5104318967601014,
+          "quality_metrics": {
+            "frequency_score": 0.6337589166666665,
+            "semantic_coherence": 0.1417168186356624,
+            "cross_language_consistency": 0.638425,
+            "context_relevance": 0.3,
+            "nsm_alignment": 0.8000000000000002,
+            "overall_quality": 0.45449940245426484
+          },
+          "disambiguation_strategy": "frequency_based"
+        }
+      },
+      "linking_analysis": {
+        "quality_score": 0.3877896497533794,
+        "avg_confidence": 0.4269455006019106,
+        "avg_quality": 0.34863379890484814,
+        "issues": [
+          "low_confidence",
+          "low_quality"
+        ],
+        "recommendations": [
+          "Consider providing more context for better disambiguation",
+          "Review term extraction and consider domain-specific vocabulary"
+        ]
+      },
+      "summary": {
+        "total_terms": 5,
+        "successful_links": 5,
+        "avg_confidence": 0.4269455006019106,
+        "avg_quality": 0.34863379890484814
+      }
+    },
+    {
+      "text": "El gato negro está durmiendo en el jardín",
+      "language": "es",
+      "enhanced_links": {
+        "durmiendo_ES": {
+          "synsets": [
+            {
+              "synset_id": "bn:00072117n",
+              "frequency_score": 0.927883,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7648999999999999,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.43350840999999996
+            }
+          ],
+          "best_synset": "bn:00072117n",
+          "confidence": 0.35638336400000004,
+          "quality_metrics": {
+            "frequency_score": 0.927883,
+            "semantic_coherence": 0.0,
+            "cross_language_consistency": 0.7648999999999999,
+            "context_relevance": 0.5,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.43350840999999996
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "está_ES": {
+          "synsets": [],
+          "best_synset": null,
+          "confidence": 0.0,
+          "quality_metrics": {
+            "frequency_score": 0.0,
+            "semantic_coherence": 0.0,
+            "cross_language_consistency": 0.0,
+            "context_relevance": 0.0,
+            "nsm_alignment": 0.0,
+            "overall_quality": 0.0
+          },
+          "disambiguation_strategy": "none"
+        },
+        "jardín_ES": {
+          "synsets": [
+            {
+              "synset_id": "bn:00037300n",
+              "frequency_score": 0.9627,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.71,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.431929
+            },
+            {
+              "synset_id": "bn:00037301n",
+              "frequency_score": 0.962699,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7097,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.43186873000000003
+            },
+            {
+              "synset_id": "bn:00037302n",
+              "frequency_score": 0.962698,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7094,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.43180846000000006
+            },
+            {
+              "synset_id": "bn:00009473n",
+              "frequency_score": 0.990527,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6581,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.42906228999999996
+            },
+            {
+              "synset_id": "bn:00059772n",
+              "frequency_score": 0.940228,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5684,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.39754155999999996
+            },
+            {
+              "synset_id": "bn:04736325n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7025,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.1975
+            },
+            {
+              "synset_id": "bn:01840528n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6416,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.18531999999999998
+            }
+          ],
+          "best_synset": "bn:00037300n",
+          "confidence": 0.34477160000000007,
+          "quality_metrics": {
+            "frequency_score": 0.7169788571428571,
+            "semantic_coherence": 0.0,
+            "cross_language_consistency": 0.6713857142857143,
+            "context_relevance": 0.5,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.3578614342857143
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "gato_ES": {
+          "synsets": [
+            {
+              "synset_id": "bn:00028030n",
+              "frequency_score": 0.97197,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7909999999999999,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4506319
+            },
+            {
+              "synset_id": "bn:00049273n",
+              "frequency_score": 0.950727,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7181,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.43031629000000005
+            },
+            {
+              "synset_id": "bn:00016606n",
+              "frequency_score": 0.983394,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6182,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.41915638
+            },
+            {
+              "synset_id": "bn:00016609n",
+              "frequency_score": 0.983391,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6173,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.41897556999999996
+            },
+            {
+              "synset_id": "bn:00077530n",
+              "frequency_score": 0.92247,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.641,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4072669
+            },
+            {
+              "synset_id": "bn:01503037n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7888999999999999,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21478
+            },
+            {
+              "synset_id": "bn:17971049n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7853,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21406
+            },
+            {
+              "synset_id": "bn:07025150n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.755,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.20800000000000002
+            },
+            {
+              "synset_id": "bn:15842152n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7544,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.20788
+            },
+            {
+              "synset_id": "bn:03413162n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7514,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.20728
+            },
+            {
+              "synset_id": "bn:00840476n",
+              "frequency_score": 0.159524,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6572,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.20451148
+            },
+            {
+              "synset_id": "bn:03273288n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7136,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.19972
+            },
+            {
+              "synset_id": "bn:01632721n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5837,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.17374
+            },
+            {
+              "synset_id": "bn:16457842n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5474,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.16648000000000002
+            },
+            {
+              "synset_id": "bn:02754907n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5279,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.16258
+            }
+          ],
+          "best_synset": "bn:00028030n",
+          "confidence": 0.36845276000000005,
+          "quality_metrics": {
+            "frequency_score": 0.39143173333333325,
+            "semantic_coherence": 0.0,
+            "cross_language_consistency": 0.6833600000000001,
+            "context_relevance": 0.5,
+            "nsm_alignment": 0.29999999999999993,
+            "overall_quality": 0.27235856799999997
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "negro_ES": {
+          "synsets": [
+            {
+              "synset_id": "bn:00011005n",
+              "frequency_score": 0.988995,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7985,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.45672864999999996
+            },
+            {
+              "synset_id": "bn:00022442n",
+              "frequency_score": 0.977558,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6674,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.42742066
+            },
+            {
+              "synset_id": "bn:00022443n",
+              "frequency_score": 0.977557,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6671,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.42736039000000003
+            },
+            {
+              "synset_id": "bn:00040369n",
+              "frequency_score": 0.959631,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6893,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4269603700000001
+            },
+            {
+              "synset_id": "bn:00107209a",
+              "frequency_score": 0.892791,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7373000000000001,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.41851357
+            },
+            {
+              "synset_id": "bn:00020726n",
+              "frequency_score": 0.979274,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5822,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.41084398
+            },
+            {
+              "synset_id": "bn:00010816n",
+              "frequency_score": 0.989184,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5552,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40811968
+            },
+            {
+              "synset_id": "bn:00010817n",
+              "frequency_score": 0.989183,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5549000000000001,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40805941
+            },
+            {
+              "synset_id": "bn:00010820n",
+              "frequency_score": 0.98918,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.554,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4078786
+            },
+            {
+              "synset_id": "bn:00101434a",
+              "frequency_score": 0.898566,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6698,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40657281999999995
+            },
+            {
+              "synset_id": "bn:00010849n",
+              "frequency_score": 0.989151,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5453,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40613077
+            },
+            {
+              "synset_id": "bn:00010866n",
+              "frequency_score": 0.989134,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5402,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40510618
+            },
+            {
+              "synset_id": "bn:00098480a",
+              "frequency_score": 0.90152,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.656,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40461040000000004
+            },
+            {
+              "synset_id": "bn:00098481a",
+              "frequency_score": 0.901519,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6557,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40455012999999995
+            },
+            {
+              "synset_id": "bn:00098483a",
+              "frequency_score": 0.901517,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6551,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40442959
+            },
+            {
+              "synset_id": "bn:00098484a",
+              "frequency_score": 0.901516,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6548,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40436932000000003
+            },
+            {
+              "synset_id": "bn:00098485a",
+              "frequency_score": 0.901515,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6545,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40430904999999995
+            },
+            {
+              "synset_id": "bn:00098487a",
+              "frequency_score": 0.901513,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6539,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40418851
+            },
+            {
+              "synset_id": "bn:00098492a",
+              "frequency_score": 0.901508,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6524,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40388716
+            },
+            {
+              "synset_id": "bn:00010936n",
+              "frequency_score": 0.989064,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5192,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.40088727999999996
+            },
+            {
+              "synset_id": "bn:00098611a",
+              "frequency_score": 0.901389,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6167,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3967150300000001
+            },
+            {
+              "synset_id": "bn:02093014n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7958000000000001,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21616000000000002
+            },
+            {
+              "synset_id": "bn:16167075n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7775000000000001,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21250000000000002
+            },
+            {
+              "synset_id": "bn:02492086n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7742,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21184
+            },
+            {
+              "synset_id": "bn:04128103n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7691,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21082
+            },
+            {
+              "synset_id": "bn:08286189n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.7433,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.20565999999999998
+            },
+            {
+              "synset_id": "bn:08267280n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.716,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2002
+            },
+            {
+              "synset_id": "bn:01042561n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.6316999999999999,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.18333999999999998
+            },
+            {
+              "synset_id": "bn:14348672n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5984,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.17668
+            },
+            {
+              "synset_id": "bn:01982793n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5621,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.16942000000000002
+            },
+            {
+              "synset_id": "bn:01125818n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5546,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.16792
+            },
+            {
+              "synset_id": "bn:01329985n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0,
+              "cross_language_consistency": 0.5045,
+              "context_relevance": 0.5,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.15789999999999998
+            }
+          ],
+          "best_synset": "bn:00011005n",
+          "confidence": 0.37239146,
+          "quality_metrics": {
+            "frequency_score": 0.65378953125,
+            "semantic_coherence": 0.0,
+            "cross_language_consistency": 0.647084375,
+            "context_relevance": 0.5,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.3359400484375
+          },
+          "disambiguation_strategy": "frequency_based"
+        }
+      },
+      "linking_analysis": {
+        "quality_score": 0.2841667644723215,
+        "avg_confidence": 0.28839983680000003,
+        "avg_quality": 0.27993369214464286,
+        "issues": [
+          "low_confidence",
+          "low_quality"
+        ],
+        "recommendations": [
+          "Consider providing more context for better disambiguation",
+          "Review term extraction and consider domain-specific vocabulary"
+        ]
+      },
+      "summary": {
+        "total_terms": 5,
+        "successful_links": 4,
+        "avg_confidence": 0.28839983680000003,
+        "avg_quality": 0.27993369214464286
+      }
+    },
+    {
+      "text": "La voiture bleue roule sur la route",
+      "language": "fr",
+      "enhanced_links": {
+        "sur_FR": {
+          "synsets": [
+            {
+              "synset_id": "bn:00006689n",
+              "frequency_score": 0.993311,
+              "semantic_coherence": 0.3294622302055359,
+              "cross_language_consistency": 0.5933,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5420496174781037
+            },
+            {
+              "synset_id": "bn:00084726v",
+              "frequency_score": 0.915274,
+              "semantic_coherence": 0.37565168738365173,
+              "cross_language_consistency": 0.5822,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5363116212057877
+            },
+            {
+              "synset_id": "bn:00088403v",
+              "frequency_score": 0.911597,
+              "semantic_coherence": 0.2900524139404297,
+              "cross_language_consistency": 0.6791,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5221711072973633
+            },
+            {
+              "synset_id": "bn:00088404v",
+              "frequency_score": 0.911596,
+              "semantic_coherence": 0.28186219930648804,
+              "cross_language_consistency": 0.6788,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5189985557364655
+            },
+            {
+              "synset_id": "bn:00088402v",
+              "frequency_score": 0.911598,
+              "semantic_coherence": 0.27630627155303955,
+              "cross_language_consistency": 0.6794,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.517007843190155
+            },
+            {
+              "synset_id": "bn:00075361n",
+              "frequency_score": 0.924639,
+              "semantic_coherence": 0.2248038500547409,
+              "cross_language_consistency": 0.6917,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5034179930208016
+            },
+            {
+              "synset_id": "bn:00059835n",
+              "frequency_score": 0.940165,
+              "semantic_coherence": 0.27205199003219604,
+              "cross_language_consistency": 0.5495,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.49712430621223447
+            },
+            {
+              "synset_id": "bn:00110947a",
+              "frequency_score": 0.889053,
+              "semantic_coherence": 0.2508309483528137,
+              "cross_language_consistency": 0.5159,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4685400703740692
+            },
+            {
+              "synset_id": "bn:00114236r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.26700037717819214,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.36646014332771304
+            },
+            {
+              "synset_id": "bn:03121260n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.3365372121334076,
+              "cross_language_consistency": 0.722,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3292841406106949
+            },
+            {
+              "synset_id": "bn:02658147n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.296502947807312,
+              "cross_language_consistency": 0.7559,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.32085112016677864
+            },
+            {
+              "synset_id": "bn:15251306n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.3101271092891693,
+              "cross_language_consistency": 0.7081999999999999,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3164883015298844
+            },
+            {
+              "synset_id": "bn:13952281n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.25443074107170105,
+              "cross_language_consistency": 0.7157,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.29682368160724637
+            },
+            {
+              "synset_id": "bn:16940530n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.29090383648872375,
+              "cross_language_consistency": 0.641,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2957434578657151
+            },
+            {
+              "synset_id": "bn:03659762n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.3143719434738159,
+              "cross_language_consistency": 0.5714,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.29074133852005
+            },
+            {
+              "synset_id": "bn:01059925n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.3251646161079407,
+              "cross_language_consistency": 0.5225,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.28506255412101744
+            }
+          ],
+          "best_synset": "bn:00006689n",
+          "confidence": 0.4643185160529023,
+          "quality_metrics": {
+            "frequency_score": 0.5373270625,
+            "semantic_coherence": 0.2935037733986974,
+            "cross_language_consistency": 0.6316625,
+            "context_relevance": 0.4,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.412942240766505
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "roule_FR": {
+          "synsets": [],
+          "best_synset": null,
+          "confidence": 0.0,
+          "quality_metrics": {
+            "frequency_score": 0.0,
+            "semantic_coherence": 0.0,
+            "cross_language_consistency": 0.0,
+            "context_relevance": 0.0,
+            "nsm_alignment": 0.0,
+            "overall_quality": 0.0
+          },
+          "disambiguation_strategy": "none"
+        },
+        "voiture_FR": {
+          "synsets": [
+            {
+              "synset_id": "bn:00016240n",
+              "frequency_score": 0.98376,
+              "semantic_coherence": 0.35119107365608215,
+              "cross_language_consistency": 0.728,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5746678079893113
+            },
+            {
+              "synset_id": "bn:00007309n",
+              "frequency_score": 0.992691,
+              "semantic_coherence": 0.252953439950943,
+              "cross_language_consistency": 0.7073,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5356088771813584
+            },
+            {
+              "synset_id": "bn:00016241n",
+              "frequency_score": 0.983759,
+              "semantic_coherence": 0.2215612679719925,
+              "cross_language_consistency": 0.7277,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5253482118293572
+            },
+            {
+              "synset_id": "bn:00014462n",
+              "frequency_score": 0.985538,
+              "semantic_coherence": 0.24763263761997223,
+              "cross_language_consistency": 0.6614,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5224756622955894
+            },
+            {
+              "synset_id": "bn:00082943v",
+              "frequency_score": 0.917057,
+              "semantic_coherence": 0.36271217465400696,
+              "cross_language_consistency": 0.5171,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5188560163685226
+            },
+            {
+              "synset_id": "bn:00015787n",
+              "frequency_score": 0.984213,
+              "semantic_coherence": 0.26062074303627014,
+              "cross_language_consistency": 0.5639,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5075533923537826
+            },
+            {
+              "synset_id": "bn:00015785n",
+              "frequency_score": 0.984215,
+              "semantic_coherence": 0.25684982538223267,
+              "cross_language_consistency": 0.5645,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5062409836452484
+            }
+          ],
+          "best_synset": "bn:00016240n",
+          "confidence": 0.5108244452925492,
+          "quality_metrics": {
+            "frequency_score": 0.9758904285714286,
+            "semantic_coherence": 0.2790744517530714,
+            "cross_language_consistency": 0.6385571428571428,
+            "context_relevance": 0.39999999999999997,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.5272501359518814
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "route_FR": {
+          "synsets": [
+            {
+              "synset_id": "bn:00044127n",
+              "frequency_score": 0.955873,
+              "semantic_coherence": 0.3259240984916687,
+              "cross_language_consistency": 0.7619,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5643168674268342
+            },
+            {
+              "synset_id": "bn:00007500n",
+              "frequency_score": 0.9925,
+              "semantic_coherence": 0.34069204330444336,
+              "cross_language_consistency": 0.65,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5574379764556885
+            },
+            {
+              "synset_id": "bn:00023288n",
+              "frequency_score": 0.976712,
+              "semantic_coherence": 0.31622275710105896,
+              "cross_language_consistency": 0.7136,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5565968876984024
+            },
+            {
+              "synset_id": "bn:00044128n",
+              "frequency_score": 0.955872,
+              "semantic_coherence": 0.3043069541454315,
+              "cross_language_consistency": 0.7616,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.556042082575264
+            },
+            {
+              "synset_id": "bn:00002181n",
+              "frequency_score": 0.997819,
+              "semantic_coherence": 0.23755046725273132,
+              "cross_language_consistency": 0.7457,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5388203075560379
+            },
+            {
+              "synset_id": "bn:00048463n",
+              "frequency_score": 0.951537,
+              "semantic_coherence": 0.3015870153903961,
+              "cross_language_consistency": 0.6611,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5337380558483505
+            },
+            {
+              "synset_id": "bn:00016294n",
+              "frequency_score": 0.983706,
+              "semantic_coherence": 0.2387874871492386,
+              "cross_language_consistency": 0.7118,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5286998651167107
+            },
+            {
+              "synset_id": "bn:00047741n",
+              "frequency_score": 0.952259,
+              "semantic_coherence": 0.28385353088378906,
+              "cross_language_consistency": 0.5777,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5105142717358399
+            },
+            {
+              "synset_id": "bn:00077889n",
+              "frequency_score": 0.922111,
+              "semantic_coherence": 0.2549639344215393,
+              "cross_language_consistency": 0.5333,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.48251626508018497
+            },
+            {
+              "synset_id": "bn:00067976n",
+              "frequency_score": 0.932024,
+              "semantic_coherence": 0.25838783383369446,
+              "cross_language_consistency": 0.5072,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4812738568568039
+            },
+            {
+              "synset_id": "bn:00067975n",
+              "frequency_score": 0.932025,
+              "semantic_coherence": 0.24316886067390442,
+              "cross_language_consistency": 0.5075000000000001,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.47555091705608377
+            },
+            {
+              "synset_id": "bn:00067998n",
+              "frequency_score": 0.932002,
+              "semantic_coherence": 0.23031967878341675,
+              "cross_language_consistency": 0.5006,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4692820179376984
+            },
+            {
+              "synset_id": "bn:00786202n",
+              "frequency_score": 0.21379800000000004,
+              "semantic_coherence": 0.31398850679397583,
+              "cross_language_consistency": 0.7394000000000001,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3549210925817109
+            },
+            {
+              "synset_id": "bn:02768266n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.34607863426208496,
+              "cross_language_consistency": 0.7202,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.33254988101959226
+            },
+            {
+              "synset_id": "bn:04798025n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.29368525743484497,
+              "cross_language_consistency": 0.7925,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.32710039782524114
+            },
+            {
+              "synset_id": "bn:01107118n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.308331161737442,
+              "cross_language_consistency": 0.7646,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.327085841460228
+            },
+            {
+              "synset_id": "bn:01823122n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.3049148917198181,
+              "cross_language_consistency": 0.7634,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3255476588535309
+            },
+            {
+              "synset_id": "bn:02076411n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.3235871493816376,
+              "cross_language_consistency": 0.6767,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3153031167650223
+            },
+            {
+              "synset_id": "bn:17828592n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.2619253695011139,
+              "cross_language_consistency": 0.6224000000000001,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.28101164041042326
+            }
+          ],
+          "best_synset": "bn:00044127n",
+          "confidence": 0.5058839765182344,
+          "quality_metrics": {
+            "frequency_score": 0.6472756842105263,
+            "semantic_coherence": 0.2888566122243279,
+            "cross_language_consistency": 0.6690105263157895,
+            "context_relevance": 0.4000000000000001,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.44833205264524456
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "bleue_FR": {
+          "synsets": [
+            {
+              "synset_id": "bn:00011477n",
+              "frequency_score": 0.988523,
+              "semantic_coherence": 0.34375715255737305,
+              "cross_language_consistency": 0.6569,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5589089279718018
+            },
+            {
+              "synset_id": "bn:00011479n",
+              "frequency_score": 0.988521,
+              "semantic_coherence": 0.33552953600883484,
+              "cross_language_consistency": 0.6563,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5556618936833573
+            },
+            {
+              "synset_id": "bn:00003578n",
+              "frequency_score": 0.996422,
+              "semantic_coherence": 0.3433588445186615,
+              "cross_language_consistency": 0.6266,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5548303009170914
+            },
+            {
+              "synset_id": "bn:00011480n",
+              "frequency_score": 0.98852,
+              "semantic_coherence": 0.32050710916519165,
+              "cross_language_consistency": 0.656,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5498931014827728
+            },
+            {
+              "synset_id": "bn:00011478n",
+              "frequency_score": 0.988522,
+              "semantic_coherence": 0.31864556670188904,
+              "cross_language_consistency": 0.6566,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5493062553467178
+            },
+            {
+              "synset_id": "bn:00097493a",
+              "frequency_score": 0.902507,
+              "semantic_coherence": 0.36441245675086975,
+              "cross_language_consistency": 0.6521,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5425736235653306
+            },
+            {
+              "synset_id": "bn:00011481n",
+              "frequency_score": 0.988519,
+              "semantic_coherence": 0.29268085956573486,
+              "cross_language_consistency": 0.6557,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5392588566349793
+            },
+            {
+              "synset_id": "bn:00098607a",
+              "frequency_score": 0.901393,
+              "semantic_coherence": 0.3211205303668976,
+              "cross_language_consistency": 0.6179,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5189819115394211
+            },
+            {
+              "synset_id": "bn:00036487n",
+              "frequency_score": 0.963513,
+              "semantic_coherence": 0.2557032108306885,
+              "cross_language_consistency": 0.6539,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5180957301156617
+            },
+            {
+              "synset_id": "bn:00098606a",
+              "frequency_score": 0.901394,
+              "semantic_coherence": 0.3082697093486786,
+              "cross_language_consistency": 0.6182,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5141588695524979
+            },
+            {
+              "synset_id": "bn:00011482n",
+              "frequency_score": 0.988518,
+              "semantic_coherence": 0.22165630757808685,
+              "cross_language_consistency": 0.6554,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.512209256879673
+            },
+            {
+              "synset_id": "bn:00098608a",
+              "frequency_score": 0.901392,
+              "semantic_coherence": 0.30021944642066956,
+              "cross_language_consistency": 0.6176,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5109792296398544
+            },
+            {
+              "synset_id": "bn:00098612a",
+              "frequency_score": 0.901388,
+              "semantic_coherence": 0.3005923628807068,
+              "cross_language_consistency": 0.6164000000000001,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5108798578946686
+            },
+            {
+              "synset_id": "bn:00098610a",
+              "frequency_score": 0.90139,
+              "semantic_coherence": 0.2948443591594696,
+              "cross_language_consistency": 0.617,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5088161564805984
+            },
+            {
+              "synset_id": "bn:00083687v",
+              "frequency_score": 0.916313,
+              "semantic_coherence": 0.2937223017215729,
+              "cross_language_consistency": 0.5939,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5077989846541977
+            },
+            {
+              "synset_id": "bn:00105958a",
+              "frequency_score": 0.894042,
+              "semantic_coherence": 0.350146621465683,
+              "cross_language_consistency": 0.5126000000000001,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5069670561569595
+            },
+            {
+              "synset_id": "bn:00098533a",
+              "frequency_score": 0.901467,
+              "semantic_coherence": 0.2653496265411377,
+              "cross_language_consistency": 0.6401,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5022489480856324
+            },
+            {
+              "synset_id": "bn:00100909a",
+              "frequency_score": 0.899091,
+              "semantic_coherence": 0.32624882459640503,
+              "cross_language_consistency": 0.5273,
+              "context_relevance": 0.4,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5021891233466339
+            }
+          ],
+          "best_synset": "bn:00011477n",
+          "confidence": 0.48807071695593274,
+          "quality_metrics": {
+            "frequency_score": 0.9395241666666665,
+            "semantic_coherence": 0.30870915700991947,
+            "cross_language_consistency": 0.6239166666666667,
+            "context_relevance": 0.4000000000000001,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.5257643379971028
+          },
+          "disambiguation_strategy": "frequency_based"
+        }
+      },
+      "linking_analysis": {
+        "quality_score": 0.38833864221803527,
+        "avg_confidence": 0.39381953096392375,
+        "avg_quality": 0.38285775347214673,
+        "issues": [
+          "low_confidence",
+          "low_quality"
+        ],
+        "recommendations": [
+          "Consider providing more context for better disambiguation",
+          "Review term extraction and consider domain-specific vocabulary"
+        ]
+      },
+      "summary": {
+        "total_terms": 5,
+        "successful_links": 4,
+        "avg_confidence": 0.39381953096392375,
+        "avg_quality": 0.38285775347214673
+      }
+    },
+    {
+      "text": "The book contains important information about science",
+      "language": "en",
+      "enhanced_links": {
+        "about_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00096174a",
+              "frequency_score": 0.903826,
+              "semantic_coherence": 0.18488866090774536,
+              "cross_language_consistency": 0.7478,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5246632643630982
+            },
+            {
+              "synset_id": "bn:00114073r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.16686928272247314,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.34674771308898933
+            },
+            {
+              "synset_id": "bn:00114074r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.1630854606628418,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.34523418426513675
+            },
+            {
+              "synset_id": "bn:00114077r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.15898753702640533,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3435950148105622
+            },
+            {
+              "synset_id": "bn:00114076r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.15305888652801514,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3412235546112061
+            },
+            {
+              "synset_id": "bn:00114079r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.1520044505596161,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.34080178022384644
+            },
+            {
+              "synset_id": "bn:00114078r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.148093581199646,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3392374324798584
+            },
+            {
+              "synset_id": "bn:00114075r",
+              "frequency_score": 0.5,
+              "semantic_coherence": 0.14800326526165009,
+              "cross_language_consistency": 0.5,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.33920130610466004
+            },
+            {
+              "synset_id": "bn:03347031n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15081886947155,
+              "cross_language_consistency": 0.7907,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.27846754778862004
+            },
+            {
+              "synset_id": "bn:03104257n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16183897852897644,
+              "cross_language_consistency": 0.7229,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.26931559141159056
+            },
+            {
+              "synset_id": "bn:01807323n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1459970474243164,
+              "cross_language_consistency": 0.7031000000000001,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25901881896972656
+            },
+            {
+              "synset_id": "bn:14457974n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11684305965900421,
+              "cross_language_consistency": 0.5078,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2082972238636017
+            }
+          ],
+          "best_synset": "bn:00096174a",
+          "confidence": 0.44489190401756296,
+          "quality_metrics": {
+            "frequency_score": 0.40031883333333323,
+            "semantic_coherence": 0.15420742332935333,
+            "cross_language_consistency": 0.581025,
+            "context_relevance": 0.5999999999999999,
+            "nsm_alignment": 0.29999999999999993,
+            "overall_quality": 0.32798361933174136
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "information_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00025314n",
+              "frequency_score": 0.974686,
+              "semantic_coherence": 0.15554635226726532,
+              "cross_language_consistency": 0.7058,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5257843409069062
+            },
+            {
+              "synset_id": "bn:00031060n",
+              "frequency_score": 0.96894,
+              "semantic_coherence": 0.11596265435218811,
+              "cross_language_consistency": 0.782,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5234670617408753
+            },
+            {
+              "synset_id": "bn:00046698n",
+              "frequency_score": 0.953302,
+              "semantic_coherence": 0.1547934114933014,
+              "cross_language_consistency": 0.5906,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.49602796459732057
+            },
+            {
+              "synset_id": "bn:00046706n",
+              "frequency_score": 0.953294,
+              "semantic_coherence": 0.13025212287902832,
+              "cross_language_consistency": 0.5882000000000001,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4857290491516113
+            },
+            {
+              "synset_id": "bn:00046705n",
+              "frequency_score": 0.953295,
+              "semantic_coherence": 0.12782572209835052,
+              "cross_language_consistency": 0.5885,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.48481878883934026
+            },
+            {
+              "synset_id": "bn:03620119n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.19273395836353302,
+              "cross_language_consistency": 0.7643,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2899535833454132
+            },
+            {
+              "synset_id": "bn:03644012n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1661791056394577,
+              "cross_language_consistency": 0.7964,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2857516422557831
+            },
+            {
+              "synset_id": "bn:03662501n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1654677838087082,
+              "cross_language_consistency": 0.6496999999999999,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2561271135234833
+            },
+            {
+              "synset_id": "bn:00993379n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12340495735406876,
+              "cross_language_consistency": 0.6863,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24662198294162752
+            },
+            {
+              "synset_id": "bn:01468426n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12794139981269836,
+              "cross_language_consistency": 0.6722,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24561655992507936
+            },
+            {
+              "synset_id": "bn:02233442n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12098891288042068,
+              "cross_language_consistency": 0.6674,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2418755651521683
+            },
+            {
+              "synset_id": "bn:18208677n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15511897206306458,
+              "cross_language_consistency": 0.5969,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24142758882522583
+            },
+            {
+              "synset_id": "bn:02776737n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13236060738563538,
+              "cross_language_consistency": 0.5789,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22872424295425414
+            },
+            {
+              "synset_id": "bn:00916477n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.0922362357378006,
+              "cross_language_consistency": 0.6569,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22827449429512026
+            },
+            {
+              "synset_id": "bn:02830953n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1299363523721695,
+              "cross_language_consistency": 0.5141,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21479454094886782
+            },
+            {
+              "synset_id": "bn:17349830n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.10285483300685883,
+              "cross_language_consistency": 0.551,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21134193320274355
+            }
+          ],
+          "best_synset": "bn:00025314n",
+          "confidence": 0.42813764204294213,
+          "quality_metrics": {
+            "frequency_score": 0.3689698125,
+            "semantic_coherence": 0.13710021134465933,
+            "cross_language_consistency": 0.649325,
+            "context_relevance": 0.6,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.32539602828786374
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "important_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00104682a",
+              "frequency_score": 0.8953180000000001,
+              "semantic_coherence": 0.1682138442993164,
+              "cross_language_consistency": 0.5953999999999999,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4849609377197266
+            },
+            {
+              "synset_id": "bn:00097799a",
+              "frequency_score": 0.902201,
+              "semantic_coherence": 0.17771361768245697,
+              "cross_language_consistency": 0.5603,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.48380574707298285
+            },
+            {
+              "synset_id": "bn:00104681a",
+              "frequency_score": 0.895319,
+              "semantic_coherence": 0.15867288410663605,
+              "cross_language_consistency": 0.5957,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4812048536426544
+            },
+            {
+              "synset_id": "bn:00104680a",
+              "frequency_score": 0.89532,
+              "semantic_coherence": 0.14959608018398285,
+              "cross_language_consistency": 0.596,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.47763443207359313
+            },
+            {
+              "synset_id": "bn:00100716a",
+              "frequency_score": 0.899284,
+              "semantic_coherence": 0.14270037412643433,
+              "cross_language_consistency": 0.5852,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.47390534965057374
+            },
+            {
+              "synset_id": "bn:01373743n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11840346455574036,
+              "cross_language_consistency": 0.5771,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22278138582229615
+            }
+          ],
+          "best_synset": "bn:00104682a",
+          "confidence": 0.3935285283776856,
+          "quality_metrics": {
+            "frequency_score": 0.7645736666666666,
+            "semantic_coherence": 0.15255004415909448,
+            "cross_language_consistency": 0.58495,
+            "context_relevance": 0.6,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.4373821176636378
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "contains_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:15411034n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13739806413650513,
+              "cross_language_consistency": 0.7898000000000001,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.272919225654602
+            }
+          ],
+          "best_synset": "bn:15411034n",
+          "confidence": 0.33834710950279234,
+          "quality_metrics": {
+            "frequency_score": 0.1,
+            "semantic_coherence": 0.13739806413650513,
+            "cross_language_consistency": 0.7898000000000001,
+            "context_relevance": 0.6,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.272919225654602
+          },
+          "disambiguation_strategy": "cross_language_alignment"
+        },
+        "science_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00069671n",
+              "frequency_score": 0.930329,
+              "semantic_coherence": 0.13700400292873383,
+              "cross_language_consistency": 0.5987,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4836403011714935
+            },
+            {
+              "synset_id": "bn:00069670n",
+              "frequency_score": 0.93033,
+              "semantic_coherence": 0.12577174603939056,
+              "cross_language_consistency": 0.599,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4792076984157563
+            },
+            {
+              "synset_id": "bn:00234678n",
+              "frequency_score": 0.7653220000000001,
+              "semantic_coherence": 0.1319686770439148,
+              "cross_language_consistency": 0.5966,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.431704070817566
+            },
+            {
+              "synset_id": "bn:14623129n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.23898503184318542,
+              "cross_language_consistency": 0.7613,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.3078540127372742
+            },
+            {
+              "synset_id": "bn:00668848n",
+              "frequency_score": 0.331152,
+              "semantic_coherence": 0.10947849601507187,
+              "cross_language_consistency": 0.5456,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2822569984060287
+            },
+            {
+              "synset_id": "bn:17358476n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.2163117527961731,
+              "cross_language_consistency": 0.6572,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.27796470111846927
+            },
+            {
+              "synset_id": "bn:13749258v",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16507838666439056,
+              "cross_language_consistency": 0.7226,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2705513546657562
+            },
+            {
+              "synset_id": "bn:01571414n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15511249005794525,
+              "cross_language_consistency": 0.6758,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25720499602317815
+            },
+            {
+              "synset_id": "bn:01206735n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16068986058235168,
+              "cross_language_consistency": 0.5795,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24017594423294067
+            },
+            {
+              "synset_id": "bn:02480574n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.12098456174135208,
+              "cross_language_consistency": 0.6278,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23395382469654083
+            },
+            {
+              "synset_id": "bn:02760763n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.11167215555906296,
+              "cross_language_consistency": 0.5710999999999999,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.21888886222362516
+            }
+          ],
+          "best_synset": "bn:00069671n",
+          "confidence": 0.3842973213472176,
+          "quality_metrics": {
+            "frequency_score": 0.3324666363636364,
+            "semantic_coherence": 0.15209610557014291,
+            "cross_language_consistency": 0.6304727272727273,
+            "context_relevance": 0.5999999999999999,
+            "nsm_alignment": 0.29999999999999993,
+            "overall_quality": 0.3166729785916935
+          },
+          "disambiguation_strategy": "frequency_based"
+        },
+        "book_EN": {
+          "synsets": [
+            {
+              "synset_id": "bn:00012061n",
+              "frequency_score": 0.987939,
+              "semantic_coherence": 0.16552701592445374,
+              "cross_language_consistency": 0.7817000000000001,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5489325063697815
+            },
+            {
+              "synset_id": "bn:00012063n",
+              "frequency_score": 0.987937,
+              "semantic_coherence": 0.16248242557048798,
+              "cross_language_consistency": 0.7811,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5475940702281952
+            },
+            {
+              "synset_id": "bn:00012064n",
+              "frequency_score": 0.987936,
+              "semantic_coherence": 0.1467028111219406,
+              "cross_language_consistency": 0.7807999999999999,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5412219244487763
+            },
+            {
+              "synset_id": "bn:00012062n",
+              "frequency_score": 0.987938,
+              "semantic_coherence": 0.14446908235549927,
+              "cross_language_consistency": 0.7814,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5404490329421997
+            },
+            {
+              "synset_id": "bn:00012060n",
+              "frequency_score": 0.98794,
+              "semantic_coherence": 0.1346340924501419,
+              "cross_language_consistency": 0.782,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5366356369800568
+            },
+            {
+              "synset_id": "bn:00012066n",
+              "frequency_score": 0.987934,
+              "semantic_coherence": 0.13212735950946808,
+              "cross_language_consistency": 0.7802,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5352711438037873
+            },
+            {
+              "synset_id": "bn:00012059n",
+              "frequency_score": 0.987941,
+              "semantic_coherence": 0.13092312216758728,
+              "cross_language_consistency": 0.7823,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5352115488670349
+            },
+            {
+              "synset_id": "bn:00012065n",
+              "frequency_score": 0.987935,
+              "semantic_coherence": 0.1290922611951828,
+              "cross_language_consistency": 0.7805,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5341174044780732
+            },
+            {
+              "synset_id": "bn:00010217n",
+              "frequency_score": 0.989783,
+              "semantic_coherence": 0.1500568389892578,
+              "cross_language_consistency": 0.7349,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5339376355957032
+            },
+            {
+              "synset_id": "bn:00002370n",
+              "frequency_score": 0.99763,
+              "semantic_coherence": 0.1464822143316269,
+              "cross_language_consistency": 0.6890000000000001,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5256818857326507
+            },
+            {
+              "synset_id": "bn:00000748n",
+              "frequency_score": 0.999252,
+              "semantic_coherence": 0.15705589950084686,
+              "cross_language_consistency": 0.5756,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.5077179598003387
+            },
+            {
+              "synset_id": "bn:00056458n",
+              "frequency_score": 0.943542,
+              "semantic_coherence": 0.14715775847434998,
+              "cross_language_consistency": 0.6626,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.50444570338974
+            },
+            {
+              "synset_id": "bn:00083774v",
+              "frequency_score": 0.916226,
+              "semantic_coherence": 0.12546201050281525,
+              "cross_language_consistency": 0.5678,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.46861260420112605
+            },
+            {
+              "synset_id": "bn:00083773v",
+              "frequency_score": 0.916227,
+              "semantic_coherence": 0.12072829157114029,
+              "cross_language_consistency": 0.5681,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4667794166284561
+            },
+            {
+              "synset_id": "bn:00083776v",
+              "frequency_score": 0.916224,
+              "semantic_coherence": 0.10777929425239563,
+              "cross_language_consistency": 0.5672,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.4614189177009582
+            },
+            {
+              "synset_id": "bn:00083775v",
+              "frequency_score": 0.916225,
+              "semantic_coherence": 0.10133269429206848,
+              "cross_language_consistency": 0.5675,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.45890057771682735
+            },
+            {
+              "synset_id": "bn:00572110n",
+              "frequency_score": 0.42789,
+              "semantic_coherence": 0.12091333419084549,
+              "cross_language_consistency": 0.767,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.36013233367633823
+            },
+            {
+              "synset_id": "bn:02173164n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15880638360977173,
+              "cross_language_consistency": 0.7507999999999999,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2736825534439087
+            },
+            {
+              "synset_id": "bn:03350217n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16494469344615936,
+              "cross_language_consistency": 0.7349,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2729578773784638
+            },
+            {
+              "synset_id": "bn:07951251n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16917762160301208,
+              "cross_language_consistency": 0.7247,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2726110486412049
+            },
+            {
+              "synset_id": "bn:01952150n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13420696556568146,
+              "cross_language_consistency": 0.755,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2646827862262726
+            },
+            {
+              "synset_id": "bn:02436230n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1256515234708786,
+              "cross_language_consistency": 0.731,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25646060938835147
+            },
+            {
+              "synset_id": "bn:15906224n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.1116802990436554,
+              "cross_language_consistency": 0.7328,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.25123211961746217
+            },
+            {
+              "synset_id": "bn:03340641n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.16168108582496643,
+              "cross_language_consistency": 0.6077,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.2462124343299866
+            },
+            {
+              "synset_id": "bn:15753493n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13375312089920044,
+              "cross_language_consistency": 0.6521,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.24392124835968018
+            },
+            {
+              "synset_id": "bn:15754677n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.13512729108333588,
+              "cross_language_consistency": 0.5969,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.23343091643333433
+            },
+            {
+              "synset_id": "bn:16136963n",
+              "frequency_score": 0.1,
+              "semantic_coherence": 0.15916407108306885,
+              "cross_language_consistency": 0.5111,
+              "context_relevance": 0.6,
+              "nsm_alignment": 0.3,
+              "metadata": {},
+              "overall_score": 0.22588562843322754
+            }
+          ],
+          "best_synset": "bn:00012061n",
+          "confidence": 0.45557110732524875,
+          "quality_metrics": {
+            "frequency_score": 0.6269073703703706,
+            "semantic_coherence": 0.13989331711221625,
+            "cross_language_consistency": 0.6943222222222224,
+            "context_relevance": 0.6,
+            "nsm_alignment": 0.3,
+            "overall_quality": 0.412893982400442
+          },
+          "disambiguation_strategy": "frequency_based"
+        }
+      },
+      "linking_analysis": {
+        "quality_score": 0.37816846371195245,
+        "avg_confidence": 0.40746226876890823,
+        "avg_quality": 0.3488746586549967,
+        "issues": [
+          "low_confidence",
+          "low_quality"
+        ],
+        "recommendations": [
+          "Consider providing more context for better disambiguation",
+          "Review term extraction and consider domain-specific vocabulary"
+        ]
+      },
+      "summary": {
+        "total_terms": 6,
+        "successful_links": 6,
+        "avg_confidence": 0.40746226876890823,
+        "avg_quality": 0.3488746586549967
+      }
+    }
+  ],
+  "summary": {
+    "total_examples": 4,
+    "successful_linkings": 4,
+    "avg_confidence": 0.37915678428368566,
+    "avg_quality": 0.3400749757941586
+  }
+}

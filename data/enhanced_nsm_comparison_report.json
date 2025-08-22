@@ -1,0 +1,1581 @@
+{
+  "metadata": {
+    "test_type": "Enhanced NSM System Comparison",
+    "description": "Comparison between original and enhanced NSM systems"
+  },
+  "summary": {
+    "avg_legality_improvement": 0.37588235294117645,
+    "avg_template_legality_improvement": 0.3978873771730914,
+    "avg_substitutability": 0.490893819143819,
+    "avg_legality_score": 0.7212499999999995,
+    "total_test_cases": 140
+  },
+  "detailed_results": {
+    "legality_comparison": [
+      {
+        "text": "I see you",
+        "lang": "en",
+        "description": "High legality (NSM primes)",
+        "original_score": 0.7,
+        "original_legal": true,
+        "enhanced_score": 1.0,
+        "enhanced_legal": true,
+        "improvement": 0.30000000000000004,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "YOU",
+            "SEE",
+            "I"
+          ]
+        }
+      },
+      {
+        "text": "This is good",
+        "lang": "en",
+        "description": "High legality (NSM primes)",
+        "original_score": 0.4666666666666666,
+        "original_legal": false,
+        "enhanced_score": 0.8999999999999999,
+        "enhanced_legal": true,
+        "improvement": 0.4333333333333333,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "THIS",
+            "GOOD"
+          ]
+        }
+      },
+      {
+        "text": "There is something",
+        "lang": "en",
+        "description": "High legality (NSM primes)",
+        "original_score": 0.5333333333333333,
+        "original_legal": true,
+        "enhanced_score": 0.8,
+        "enhanced_legal": true,
+        "improvement": 0.2666666666666667,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "SOMETHING"
+          ]
+        }
+      },
+      {
+        "text": "Someone wants something",
+        "lang": "en",
+        "description": "High legality (NSM primes)",
+        "original_score": 0.7,
+        "original_legal": true,
+        "enhanced_score": 1.0,
+        "enhanced_legal": true,
+        "improvement": 0.30000000000000004,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "SOMETHING",
+            "WANT",
+            "SOMEONE"
+          ]
+        }
+      },
+      {
+        "text": "Something happens because something else happens",
+        "lang": "en",
+        "description": "High legality (NSM primes)",
+        "original_score": 1.0,
+        "original_legal": true,
+        "enhanced_score": 1.0,
+        "enhanced_legal": true,
+        "improvement": 0.0,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "SOMETHING",
+            "HAPPEN",
+            "OTHER",
+            "BECAUSE"
+          ]
+        }
+      },
+      {
+        "text": "The cat is on the mat",
+        "lang": "en",
+        "description": "Medium legality (location)",
+        "original_score": 0.0,
+        "original_legal": false,
+        "enhanced_score": 0.7,
+        "enhanced_legal": true,
+        "improvement": 0.7,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 0.5,
+          "violations": [],
+          "detected_primes": []
+        }
+      },
+      {
+        "text": "This is similar to that",
+        "lang": "en",
+        "description": "Medium legality (similarity)",
+        "original_score": 0.27999999999999997,
+        "original_legal": false,
+        "enhanced_score": 0.78,
+        "enhanced_legal": true,
+        "improvement": 0.5,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 0.6666666666666666,
+          "violations": [],
+          "detected_primes": [
+            "THIS"
+          ]
+        }
+      },
+      {
+        "text": "A book is used for reading",
+        "lang": "en",
+        "description": "Medium legality (purpose)",
+        "original_score": 0.11666666666666665,
+        "original_legal": false,
+        "enhanced_score": 0.65,
+        "enhanced_legal": true,
+        "improvement": 0.5333333333333333,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 0.5,
+          "violations": [],
+          "detected_primes": []
+        }
+      },
+      {
+        "text": "The complex algorithmic optimization procedure",
+        "lang": "en",
+        "description": "Low legality (technical)",
+        "original_score": 0.0,
+        "original_legal": false,
+        "enhanced_score": 0.6100000000000001,
+        "enhanced_legal": true,
+        "improvement": 0.6100000000000001,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 0.5,
+          "violations": [],
+          "detected_primes": []
+        }
+      },
+      {
+        "text": "Supercalifragilisticexpialidocious",
+        "lang": "en",
+        "description": "Low legality (nonsense)",
+        "original_score": 0.0,
+        "original_legal": false,
+        "enhanced_score": 0.64,
+        "enhanced_legal": true,
+        "improvement": 0.64,
+        "detailed_analysis": {
+          "structural_score": 0.7,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [
+            "Sentence too short"
+          ],
+          "detected_primes": []
+        }
+      },
+      {
+        "text": "However, nevertheless, furthermore, moreover, consequently",
+        "lang": "en",
+        "description": "Low legality (complex discourse)",
+        "original_score": 0.0,
+        "original_legal": false,
+        "enhanced_score": 0.45000000000000007,
+        "enhanced_legal": false,
+        "improvement": 0.45000000000000007,
+        "detailed_analysis": {
+          "structural_score": 0.8,
+          "semantic_score": 1.0,
+          "grammar_score": 0.3,
+          "violations": [
+            "Contains complex discourse markers",
+            "Contains complex discourse markers"
+          ],
+          "detected_primes": []
+        }
+      },
+      {
+        "text": "Yo veo algo",
+        "lang": "es",
+        "description": "Spanish high legality",
+        "original_score": 0.4666666666666666,
+        "original_legal": false,
+        "enhanced_score": 0.8999999999999999,
+        "enhanced_legal": true,
+        "improvement": 0.4333333333333333,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "SOMETHING",
+            "I"
+          ]
+        }
+      },
+      {
+        "text": "Esto es bueno",
+        "lang": "es",
+        "description": "Spanish high legality",
+        "original_score": 0.5333333333333333,
+        "original_legal": true,
+        "enhanced_score": 0.8,
+        "enhanced_legal": true,
+        "improvement": 0.2666666666666667,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "GOOD"
+          ]
+        }
+      },
+      {
+        "text": "Hay algo aquí",
+        "lang": "es",
+        "description": "Spanish high legality",
+        "original_score": 1.0,
+        "original_legal": true,
+        "enhanced_score": 1.0,
+        "enhanced_legal": true,
+        "improvement": 0.0,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "SOMETHING",
+            "THERE_IS",
+            "HERE"
+          ]
+        }
+      },
+      {
+        "text": "Je vois quelque chose",
+        "lang": "fr",
+        "description": "French high legality",
+        "original_score": 0.35,
+        "original_legal": false,
+        "enhanced_score": 0.7,
+        "enhanced_legal": true,
+        "improvement": 0.35,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 0.5,
+          "violations": [],
+          "detected_primes": [
+            "SOMETHING",
+            "I"
+          ]
+        }
+      },
+      {
+        "text": "Ceci est bon",
+        "lang": "fr",
+        "description": "French high legality",
+        "original_score": 0.2333333333333333,
+        "original_legal": false,
+        "enhanced_score": 0.8,
+        "enhanced_legal": true,
+        "improvement": 0.5666666666666668,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "GOOD"
+          ]
+        }
+      },
+      {
+        "text": "Il y a quelque chose",
+        "lang": "fr",
+        "description": "French high legality",
+        "original_score": 0.72,
+        "original_legal": true,
+        "enhanced_score": 0.76,
+        "enhanced_legal": true,
+        "improvement": 0.040000000000000036,
+        "detailed_analysis": {
+          "structural_score": 1.0,
+          "semantic_score": 1.0,
+          "grammar_score": 1.0,
+          "violations": [],
+          "detected_primes": [
+            "SOMETHING"
+          ]
+        }
+      }
+    ],
+    "template_comparison": [
+      {
+        "primitive": "AtLocation",
+        "lang": "en",
+        "original_template": "something is in a place",
+        "enhanced_template": "this thing is in this place",
+        "original_legality": 0.42,
+        "enhanced_legality": 0.8499999999999999,
+        "legality_improvement": 0.4299999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "AtLocation",
+        "lang": "es",
+        "original_template": "algo está en un lugar",
+        "enhanced_template": "esta cosa está en este lugar",
+        "original_legality": 0.42,
+        "enhanced_legality": 0.77,
+        "legality_improvement": 0.35000000000000003,
+        "template_different": true
+      },
+      {
+        "primitive": "AtLocation",
+        "lang": "fr",
+        "original_template": "quelque chose est dans un lieu",
+        "enhanced_template": "cette chose est dans ce lieu",
+        "original_legality": 0.35,
+        "enhanced_legality": 0.77,
+        "legality_improvement": 0.42000000000000004,
+        "template_different": true
+      },
+      {
+        "primitive": "HasProperty",
+        "lang": "en",
+        "original_template": "this thing is like this",
+        "enhanced_template": "this thing is like this",
+        "original_legality": 0.5599999999999999,
+        "enhanced_legality": 0.8799999999999999,
+        "legality_improvement": 0.31999999999999995,
+        "template_different": false
+      },
+      {
+        "primitive": "HasProperty",
+        "lang": "es",
+        "original_template": "esta cosa es así",
+        "enhanced_template": "esta cosa es así",
+        "original_legality": 0.35,
+        "enhanced_legality": 0.65,
+        "legality_improvement": 0.30000000000000004,
+        "template_different": false
+      },
+      {
+        "primitive": "HasProperty",
+        "lang": "fr",
+        "original_template": "cette chose est comme cela",
+        "enhanced_template": "cette chose est comme cela",
+        "original_legality": 0.42,
+        "enhanced_legality": 0.8200000000000001,
+        "legality_improvement": 0.4000000000000001,
+        "template_different": false
+      },
+      {
+        "primitive": "UsedFor",
+        "lang": "en",
+        "original_template": "someone can do something with this thing",
+        "enhanced_template": "someone can do something with this thing",
+        "original_legality": 0.6,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4,
+        "template_different": false
+      },
+      {
+        "primitive": "UsedFor",
+        "lang": "es",
+        "original_template": "alguien puede hacer algo con esta cosa",
+        "enhanced_template": "alguien puede hacer algo con esta cosa",
+        "original_legality": 0.6,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4,
+        "template_different": false
+      },
+      {
+        "primitive": "UsedFor",
+        "lang": "fr",
+        "original_template": "quelqu'un peut faire quelque chose avec cette chose",
+        "enhanced_template": "quelqu'un peut faire quelque chose avec cette chose",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 0.8433333333333333,
+        "legality_improvement": 0.31833333333333336,
+        "template_different": false
+      },
+      {
+        "primitive": "SimilarTo",
+        "lang": "en",
+        "original_template": "this thing is like another thing",
+        "enhanced_template": "this thing is like another thing",
+        "original_legality": 0.8833333333333333,
+        "enhanced_legality": 0.95,
+        "legality_improvement": 0.06666666666666665,
+        "template_different": false
+      },
+      {
+        "primitive": "SimilarTo",
+        "lang": "es",
+        "original_template": "esta cosa es como otra cosa",
+        "enhanced_template": "esta cosa es como otra cosa",
+        "original_legality": 0.5833333333333334,
+        "enhanced_legality": 0.77,
+        "legality_improvement": 0.18666666666666665,
+        "template_different": false
+      },
+      {
+        "primitive": "SimilarTo",
+        "lang": "fr",
+        "original_template": "cette chose est comme une autre chose",
+        "enhanced_template": "cette chose est comme une autre chose",
+        "original_legality": 0.8999999999999999,
+        "enhanced_legality": 0.857142857142857,
+        "legality_improvement": -0.04285714285714293,
+        "template_different": false
+      },
+      {
+        "primitive": "DifferentFrom",
+        "lang": "en",
+        "original_template": "this thing is not like another thing",
+        "enhanced_template": "this thing is not like another thing",
+        "original_legality": 0.8999999999999999,
+        "enhanced_legality": 0.9571428571428571,
+        "legality_improvement": 0.05714285714285716,
+        "template_different": false
+      },
+      {
+        "primitive": "DifferentFrom",
+        "lang": "es",
+        "original_template": "esta cosa no es como otra cosa",
+        "enhanced_template": "esta cosa no es como otra cosa",
+        "original_legality": 0.8999999999999999,
+        "enhanced_legality": 0.7771428571428571,
+        "legality_improvement": -0.12285714285714278,
+        "template_different": false
+      },
+      {
+        "primitive": "DifferentFrom",
+        "lang": "fr",
+        "original_template": "cette chose n'est pas comme une autre chose",
+        "enhanced_template": "cette chose n'est pas comme une autre chose",
+        "original_legality": 0.9124999999999999,
+        "enhanced_legality": 0.8333333333333333,
+        "legality_improvement": -0.07916666666666661,
+        "template_different": false
+      },
+      {
+        "primitive": "PartOf",
+        "lang": "en",
+        "original_template": "one part is part of another thing",
+        "enhanced_template": "one part is part of another thing",
+        "original_legality": 0.6,
+        "enhanced_legality": 0.7714285714285714,
+        "legality_improvement": 0.17142857142857137,
+        "template_different": false
+      },
+      {
+        "primitive": "PartOf",
+        "lang": "es",
+        "original_template": "una parte es parte de otra cosa",
+        "enhanced_template": "una parte es parte de otra cosa",
+        "original_legality": 0.39999999999999997,
+        "enhanced_legality": 0.7114285714285713,
+        "legality_improvement": 0.31142857142857133,
+        "template_different": false
+      },
+      {
+        "primitive": "PartOf",
+        "lang": "fr",
+        "original_template": "une partie est partie d'une autre chose",
+        "enhanced_template": "une partie est partie d'une autre chose",
+        "original_legality": 0.6,
+        "enhanced_legality": 0.75,
+        "legality_improvement": 0.15000000000000002,
+        "template_different": false
+      },
+      {
+        "primitive": "Causes",
+        "lang": "en",
+        "original_template": "something happens because something else happens",
+        "enhanced_template": "something happens because something else happens",
+        "original_legality": 1.0,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.0,
+        "template_different": false
+      },
+      {
+        "primitive": "Causes",
+        "lang": "es",
+        "original_template": "algo pasa porque otra cosa pasa",
+        "enhanced_template": "algo pasa porque otra cosa pasa",
+        "original_legality": 1.0,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.0,
+        "template_different": false
+      },
+      {
+        "primitive": "Causes",
+        "lang": "fr",
+        "original_template": "quelque chose arrive parce qu'une autre chose arrive",
+        "enhanced_template": "quelque chose arrive parce qu'une autre chose arrive",
+        "original_legality": 0.7375,
+        "enhanced_legality": 0.8999999999999999,
+        "legality_improvement": 0.16249999999999987,
+        "template_different": false
+      },
+      {
+        "primitive": "Not",
+        "lang": "en",
+        "original_template": "someone does not do something",
+        "enhanced_template": "someone does not do something",
+        "original_legality": 1.0,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.0,
+        "template_different": false
+      },
+      {
+        "primitive": "Not",
+        "lang": "es",
+        "original_template": "alguien no hace algo",
+        "enhanced_template": "alguien no hace algo",
+        "original_legality": 1.0,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.0,
+        "template_different": false
+      },
+      {
+        "primitive": "Not",
+        "lang": "fr",
+        "original_template": "quelqu'un ne fait pas quelque chose",
+        "enhanced_template": "quelqu'un ne fait pas quelque chose",
+        "original_legality": 0.8833333333333333,
+        "enhanced_legality": 0.9142857142857141,
+        "legality_improvement": 0.030952380952380842,
+        "template_different": false
+      },
+      {
+        "primitive": "Exist",
+        "lang": "en",
+        "original_template": "there is something",
+        "enhanced_template": "there is something",
+        "original_legality": 0.5333333333333333,
+        "enhanced_legality": 0.8,
+        "legality_improvement": 0.2666666666666667,
+        "template_different": false
+      },
+      {
+        "primitive": "Exist",
+        "lang": "es",
+        "original_template": "hay algo",
+        "enhanced_template": "hay algo",
+        "original_legality": 1.0,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.0,
+        "template_different": false
+      },
+      {
+        "primitive": "Exist",
+        "lang": "fr",
+        "original_template": "il y a quelque chose",
+        "enhanced_template": "il y a quelque chose",
+        "original_legality": 0.72,
+        "enhanced_legality": 0.76,
+        "legality_improvement": 0.040000000000000036,
+        "template_different": false
+      },
+      {
+        "primitive": "Can",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "someone can do something",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "Can",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "alguien puede hacer algo",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Can",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelqu'un peut faire quelque chose",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.81,
+        "legality_improvement": 0.53,
+        "template_different": true
+      },
+      {
+        "primitive": "Want",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "someone wants something",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "Want",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "alguien quiere algo",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Want",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelqu'un veut quelque chose",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.8799999999999999,
+        "legality_improvement": 0.5999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Think",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "someone thinks something",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "Think",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "alguien piensa algo",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Think",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelqu'un pense quelque chose",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.8799999999999999,
+        "legality_improvement": 0.5999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Feel",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "someone feels something",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "Feel",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "alguien siente algo",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Feel",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelqu'un ressent quelque chose",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.8799999999999999,
+        "legality_improvement": 0.5999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "See",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "someone sees something",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "See",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "alguien ve algo",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "See",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelqu'un voit quelque chose",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.8799999999999999,
+        "legality_improvement": 0.5999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Say",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "someone says something",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "Say",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "alguien dice algo",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Say",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelqu'un dit quelque chose",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.8799999999999999,
+        "legality_improvement": 0.5999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Do",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "someone does something",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "Do",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "alguien hace algo",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Do",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelqu'un fait quelque chose",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.8799999999999999,
+        "legality_improvement": 0.5999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Happen",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "something happens",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.4750000000000001,
+        "template_different": true
+      },
+      {
+        "primitive": "Happen",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "algo pasa",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 1.0,
+        "legality_improvement": 0.7666666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Happen",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "quelque chose arrive",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.8999999999999999,
+        "legality_improvement": 0.6199999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Good",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "this thing is good",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 0.9249999999999998,
+        "legality_improvement": 0.3999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Good",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "esta cosa es buena",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 0.7249999999999999,
+        "legality_improvement": 0.4916666666666666,
+        "template_different": true
+      },
+      {
+        "primitive": "Good",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "cette chose est bonne",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.825,
+        "legality_improvement": 0.5449999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Bad",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "this thing is bad",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 0.9249999999999998,
+        "legality_improvement": 0.3999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Bad",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "esta cosa es mala",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 0.7249999999999999,
+        "legality_improvement": 0.4916666666666666,
+        "template_different": true
+      },
+      {
+        "primitive": "Bad",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "cette chose est mauvaise",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.825,
+        "legality_improvement": 0.5449999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Big",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "this thing is big",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 0.9249999999999998,
+        "legality_improvement": 0.3999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Big",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "esta cosa es grande",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 0.825,
+        "legality_improvement": 0.5916666666666667,
+        "template_different": true
+      },
+      {
+        "primitive": "Big",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "cette chose est grande",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.825,
+        "legality_improvement": 0.5449999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Small",
+        "lang": "en",
+        "original_template": "something is like this",
+        "enhanced_template": "this thing is small",
+        "original_legality": 0.5249999999999999,
+        "enhanced_legality": 0.9249999999999998,
+        "legality_improvement": 0.3999999999999999,
+        "template_different": true
+      },
+      {
+        "primitive": "Small",
+        "lang": "es",
+        "original_template": "algo es así",
+        "enhanced_template": "esta cosa es pequeña",
+        "original_legality": 0.2333333333333333,
+        "enhanced_legality": 0.7249999999999999,
+        "legality_improvement": 0.4916666666666666,
+        "template_different": true
+      },
+      {
+        "primitive": "Small",
+        "lang": "fr",
+        "original_template": "quelque chose est comme cela",
+        "enhanced_template": "cette chose est petite",
+        "original_legality": 0.27999999999999997,
+        "enhanced_legality": 0.825,
+        "legality_improvement": 0.5449999999999999,
+        "template_different": true
+      }
+    ],
+    "substitutability_evaluation": [
+      {
+        "idx": 0,
+        "lang": "en",
+        "sentence": "The book is on the table",
+        "explication": "this thing is in this place",
+        "substitutability": 0.5094444444444444,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 1,
+        "lang": "en",
+        "sentence": "The car is in the garage",
+        "explication": "this thing is in this place",
+        "substitutability": 0.565,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 2,
+        "lang": "en",
+        "sentence": "The bird is in the tree",
+        "explication": "this thing is in this place",
+        "substitutability": 0.565,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 3,
+        "lang": "en",
+        "sentence": "The phone is on the desk",
+        "explication": "this thing is in this place",
+        "substitutability": 0.5094444444444444,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 4,
+        "lang": "en",
+        "sentence": "The keys are in the pocket",
+        "explication": "this thing is in this place",
+        "substitutability": 0.5094444444444444,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 5,
+        "lang": "en",
+        "sentence": "The picture is on the wall",
+        "explication": "this thing is in this place",
+        "substitutability": 0.5094444444444444,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 6,
+        "lang": "en",
+        "sentence": "The food is in the refrigerator",
+        "explication": "this thing is in this place",
+        "substitutability": 0.565,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 7,
+        "lang": "en",
+        "sentence": "The money is in the bank",
+        "explication": "this thing is in this place",
+        "substitutability": 0.565,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 8,
+        "lang": "en",
+        "sentence": "The people are at the park",
+        "explication": "this thing is in this place",
+        "substitutability": 0.4709999999999999,
+        "sentence_legality": 0.72,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7849999999999999
+      },
+      {
+        "idx": 9,
+        "lang": "en",
+        "sentence": "The students are in the classroom",
+        "explication": "this thing is in this place",
+        "substitutability": 0.5094444444444444,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 10,
+        "lang": "en",
+        "sentence": "The doctor is at the hospital",
+        "explication": "this thing is in this place",
+        "substitutability": 0.5544444444444443,
+        "sentence_legality": 0.8499999999999999,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.8499999999999999
+      },
+      {
+        "idx": 11,
+        "lang": "en",
+        "sentence": "The fish is in the water",
+        "explication": "this thing is in this place",
+        "substitutability": 0.565,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.8499999999999999,
+        "avg_legality": 0.7749999999999999
+      },
+      {
+        "idx": 12,
+        "lang": "en",
+        "sentence": "The apple is red",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 13,
+        "lang": "en",
+        "sentence": "The sky is blue",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 14,
+        "lang": "en",
+        "sentence": "The snow is white",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 15,
+        "lang": "en",
+        "sentence": "The grass is green",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 16,
+        "lang": "en",
+        "sentence": "The car is fast",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 17,
+        "lang": "en",
+        "sentence": "The building is tall",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 18,
+        "lang": "en",
+        "sentence": "The water is cold",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 19,
+        "lang": "en",
+        "sentence": "The fire is hot",
+        "explication": "this thing is like this",
+        "substitutability": 0.5086428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.8799999999999999,
+        "avg_legality": 0.7525
+      },
+      {
+        "idx": 0,
+        "lang": "es",
+        "sentence": "El libro está en la mesa",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.512,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 1,
+        "lang": "es",
+        "sentence": "El coche está en el garaje",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.5208888888888888,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 2,
+        "lang": "es",
+        "sentence": "El pájaro está en el árbol",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.5208888888888888,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 3,
+        "lang": "es",
+        "sentence": "El teléfono está en el escritorio",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.5208888888888888,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 4,
+        "lang": "es",
+        "sentence": "Las llaves están en el bolsillo",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.4773636363636364,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.77,
+        "avg_legality": 0.735
+      },
+      {
+        "idx": 5,
+        "lang": "es",
+        "sentence": "El cuadro está en la pared",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.512,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 6,
+        "lang": "es",
+        "sentence": "La comida está en el refrigerador",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.512,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 7,
+        "lang": "es",
+        "sentence": "El dinero está en el banco",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.5208888888888888,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 8,
+        "lang": "es",
+        "sentence": "La gente está en el parque",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.527,
+        "sentence_legality": 0.72,
+        "explication_legality": 0.77,
+        "avg_legality": 0.745
+      },
+      {
+        "idx": 9,
+        "lang": "es",
+        "sentence": "Los estudiantes están en el aula",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.46836363636363637,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 10,
+        "lang": "es",
+        "sentence": "El médico está en el hospital",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.5208888888888888,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 11,
+        "lang": "es",
+        "sentence": "El pez está en el agua",
+        "explication": "esta cosa está en este lugar",
+        "substitutability": 0.5208888888888888,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 12,
+        "lang": "es",
+        "sentence": "La manzana es roja",
+        "explication": "esta cosa es así",
+        "substitutability": 0.42464285714285716,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6125
+      },
+      {
+        "idx": 13,
+        "lang": "es",
+        "sentence": "El cielo es azul",
+        "explication": "esta cosa es así",
+        "substitutability": 0.42464285714285716,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6125
+      },
+      {
+        "idx": 14,
+        "lang": "es",
+        "sentence": "La nieve es blanca",
+        "explication": "esta cosa es así",
+        "substitutability": 0.4396428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6375
+      },
+      {
+        "idx": 15,
+        "lang": "es",
+        "sentence": "La hierba es verde",
+        "explication": "esta cosa es así",
+        "substitutability": 0.4396428571428571,
+        "sentence_legality": 0.625,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6375
+      },
+      {
+        "idx": 16,
+        "lang": "es",
+        "sentence": "El coche es rápido",
+        "explication": "esta cosa es así",
+        "substitutability": 0.42464285714285716,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6125
+      },
+      {
+        "idx": 17,
+        "lang": "es",
+        "sentence": "El edificio es alto",
+        "explication": "esta cosa es así",
+        "substitutability": 0.42464285714285716,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6125
+      },
+      {
+        "idx": 18,
+        "lang": "es",
+        "sentence": "El agua está fría",
+        "explication": "esta cosa es así",
+        "substitutability": 0.3735,
+        "sentence_legality": 0.595,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6225
+      },
+      {
+        "idx": 19,
+        "lang": "es",
+        "sentence": "El fuego está caliente",
+        "explication": "esta cosa es así",
+        "substitutability": 0.3735,
+        "sentence_legality": 0.595,
+        "explication_legality": 0.65,
+        "avg_legality": 0.6225
+      },
+      {
+        "idx": 0,
+        "lang": "fr",
+        "sentence": "Le livre est sur la table",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.46836363636363637,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 1,
+        "lang": "fr",
+        "sentence": "La voiture est dans le garage",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.566,
+        "sentence_legality": 0.8499999999999999,
+        "explication_legality": 0.77,
+        "avg_legality": 0.8099999999999999
+      },
+      {
+        "idx": 2,
+        "lang": "fr",
+        "sentence": "L'oiseau est dans l'arbre",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.502,
+        "sentence_legality": 0.5700000000000001,
+        "explication_legality": 0.77,
+        "avg_legality": 0.67
+      },
+      {
+        "idx": 3,
+        "lang": "fr",
+        "sentence": "Le téléphone est sur le bureau",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.472,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 4,
+        "lang": "fr",
+        "sentence": "Les clés sont dans la poche",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.46836363636363637,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 5,
+        "lang": "fr",
+        "sentence": "Le tableau est sur le mur",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.472,
+        "sentence_legality": 0.67,
+        "explication_legality": 0.77,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 6,
+        "lang": "fr",
+        "sentence": "La nourriture est dans le réfrigérateur",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.521,
+        "sentence_legality": 0.7,
+        "explication_legality": 0.77,
+        "avg_legality": 0.735
+      },
+      {
+        "idx": 7,
+        "lang": "fr",
+        "sentence": "L'argent est à la banque",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.4570000000000001,
+        "sentence_legality": 0.62,
+        "explication_legality": 0.77,
+        "avg_legality": 0.6950000000000001
+      },
+      {
+        "idx": 8,
+        "lang": "fr",
+        "sentence": "Les gens sont au parc",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.432,
+        "sentence_legality": 0.62,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.72
+      },
+      {
+        "idx": 9,
+        "lang": "fr",
+        "sentence": "Les étudiants sont en classe",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.42900000000000005,
+        "sentence_legality": 0.6100000000000001,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.7150000000000001
+      },
+      {
+        "idx": 10,
+        "lang": "fr",
+        "sentence": "Le médecin est à l'hôpital",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.4570000000000001,
+        "sentence_legality": 0.62,
+        "explication_legality": 0.77,
+        "avg_legality": 0.6950000000000001
+      },
+      {
+        "idx": 11,
+        "lang": "fr",
+        "sentence": "Le poisson est dans l'eau",
+        "explication": "cette chose est dans ce lieu",
+        "substitutability": 0.5058888888888889,
+        "sentence_legality": 0.62,
+        "explication_legality": 0.77,
+        "avg_legality": 0.6950000000000001
+      },
+      {
+        "idx": 12,
+        "lang": "fr",
+        "sentence": "La pomme est rouge",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.46849999999999997,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.6975
+      },
+      {
+        "idx": 13,
+        "lang": "fr",
+        "sentence": "Le ciel est bleu",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.46849999999999997,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.6975
+      },
+      {
+        "idx": 14,
+        "lang": "fr",
+        "sentence": "La neige est blanche",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.46849999999999997,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.6975
+      },
+      {
+        "idx": 15,
+        "lang": "fr",
+        "sentence": "L'herbe est verte",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.4531428571428572,
+        "sentence_legality": 0.5,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.66
+      },
+      {
+        "idx": 16,
+        "lang": "fr",
+        "sentence": "La voiture est rapide",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.5285,
+        "sentence_legality": 0.7749999999999999,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.7975
+      },
+      {
+        "idx": 17,
+        "lang": "fr",
+        "sentence": "Le bâtiment est haut",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.46849999999999997,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.6975
+      },
+      {
+        "idx": 18,
+        "lang": "fr",
+        "sentence": "L'eau est froide",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.4531428571428572,
+        "sentence_legality": 0.5,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.66
+      },
+      {
+        "idx": 19,
+        "lang": "fr",
+        "sentence": "Le feu est chaud",
+        "explication": "cette chose est comme cela",
+        "substitutability": 0.46849999999999997,
+        "sentence_legality": 0.575,
+        "explication_legality": 0.8200000000000001,
+        "avg_legality": 0.6975
+      }
+    ]
+  }
+}

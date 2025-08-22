@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "description": "Gold labels for primitive detection evaluation",
+    "num_sentences": 10,
+    "created": "2024-08-21"
+  },
+  "labels": [
+    [
+      "AtLocation",
+      "Entity"
+    ],
+    [
+      "SimilarTo",
+      "Entity"
+    ],
+    [
+      "UsedFor",
+      "Entity",
+      "Action"
+    ],
+    [
+      "HasProperty",
+      "Entity"
+    ],
+    [
+      "DifferentFrom",
+      "Entity"
+    ],
+    [
+      "I",
+      "you",
+      "see"
+    ],
+    [
+      "this",
+      "is",
+      "good"
+    ],
+    [
+      "I",
+      "want",
+      "this"
+    ],
+    [
+      "Entity",
+      "Action",
+      "Property"
+    ],
+    [
+      "AtLocation",
+      "Entity"
+    ]
+  ]
+}

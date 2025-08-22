@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "report_type": "NSM_substitutability_refinement_report",
+    "timestamp": "2025-08-22"
+  },
+  "summary": {
+    "total_entries_evaluated": 360,
+    "overall_avg_combined_score": 0.19628844865531808,
+    "quality_distribution": {
+      "high": 0,
+      "medium": 0,
+      "low": 5,
+      "poor": 355
+    }
+  },
+  "language_analysis": {
+    "en": {
+      "entries": 120,
+      "avg_combined_score": 0.18895921544839328,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 120
+      }
+    },
+    "es": {
+      "entries": 120,
+      "avg_combined_score": 0.19724769999242084,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 3,
+        "poor": 117
+      }
+    },
+    "fr": {
+      "entries": 120,
+      "avg_combined_score": 0.20265843052514054,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 2,
+        "poor": 118
+      }
+    }
+  },
+  "primitive_analysis": {
+    "AtLocation": {
+      "entries": 3,
+      "avg_combined_score": 0.18806366364161176,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    },
+    "HasProperty": {
+      "entries": 336,
+      "avg_combined_score": 0.19943898473196897,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 5,
+        "poor": 331
+      }
+    },
+    "PartOf": {
+      "entries": 3,
+      "avg_combined_score": 0.1354345552623272,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    },
+    "Causes": {
+      "entries": 3,
+      "avg_combined_score": 0.11548715293407441,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    },
+    "UsedFor": {
+      "entries": 3,
+      "avg_combined_score": 0.20107301831245425,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    },
+    "SimilarTo": {
+      "entries": 3,
+      "avg_combined_score": 0.1383729863166809,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    },
+    "DifferentFrom": {
+      "entries": 3,
+      "avg_combined_score": 0.14938946962356567,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    },
+    "Not": {
+      "entries": 3,
+      "avg_combined_score": 0.16698553040623665,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    },
+    "Exist": {
+      "entries": 3,
+      "avg_combined_score": 0.12264117216070496,
+      "quality_distribution": {
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "poor": 3
+      }
+    }
+  },
+  "recommendations": [
+    "Overall substitutability is low. Focus on improving explication templates.",
+    "Focus on improving substitutability for en language.",
+    "Focus on improving substitutability for es language.",
+    "Focus on improving substitutability for fr language.",
+    "Focus on improving substitutability for AtLocation primitive.",
+    "Focus on improving substitutability for HasProperty primitive.",
+    "Focus on improving substitutability for PartOf primitive.",
+    "Focus on improving substitutability for Causes primitive.",
+    "Focus on improving substitutability for UsedFor primitive.",
+    "Focus on improving substitutability for SimilarTo primitive.",
+    "Focus on improving substitutability for DifferentFrom primitive.",
+    "Focus on improving substitutability for Not primitive.",
+    "Focus on improving substitutability for Exist primitive."
+  ]
+}

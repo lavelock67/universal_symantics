@@ -1,0 +1,891 @@
+{
+  "test_configuration": {
+    "source_language": "en",
+    "target_languages": [
+      "es",
+      "fr"
+    ],
+    "num_test_texts": 10,
+    "timestamp": 1755881389.241475
+  },
+  "improvement_analysis": {
+    "es": [
+      {
+        "source_text": "The red car is parked near the building",
+        "current_translation": "esta cosa es así",
+        "improved_translation": "red tiene la propiedad car",
+        "current_analysis": {
+          "source_text": "The red car is parked near the building",
+          "target_text": "esta cosa es así",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "Contains 1 generic explication phrases"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.25,
+            "explication_specificity": 0.5,
+            "surface_fluency": 0.8,
+            "context_relevance": 0.056757837533950806
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The red car is parked near the building",
+          "target_text": "red tiene la propiedad car",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.3069479465484619
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.19999999999999996,
+          "specificity_improvement": 0.5,
+          "context_improvement": 0.2501901090145111
+        }
+      },
+      {
+        "source_text": "The cat is on the mat",
+        "current_translation": "esta cosa es así AND algo está en un lugar",
+        "improved_translation": "cat tiene la propiedad is",
+        "current_analysis": {
+          "source_text": "The cat is on the mat",
+          "target_text": "esta cosa es así AND algo está en un lugar",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "Contains 1 generic explication phrases",
+            "Contains AND patterns - poor surface realization"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context",
+            "Improve surface form generation to eliminate AND patterns"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.1,
+            "explication_specificity": 0.5,
+            "surface_fluency": 0.49999999999999994,
+            "context_relevance": 0.16897571086883545
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The cat is on the mat",
+          "target_text": "cat tiene la propiedad is",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.540915846824646
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.5,
+          "specificity_improvement": 0.5,
+          "context_improvement": 0.37194013595581055
+        }
+      },
+      {
+        "source_text": "This is similar to that",
+        "current_translation": "esta cosa es como otra cosa AND esta cosa es así",
+        "improved_translation": "is es similar a that",
+        "current_analysis": {
+          "source_text": "This is similar to that",
+          "target_text": "esta cosa es como otra cosa AND esta cosa es así",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "Contains 1 generic explication phrases",
+            "Contains AND patterns - poor surface realization"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context",
+            "Improve surface form generation to eliminate AND patterns"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.09090909090909091,
+            "explication_specificity": 0.75,
+            "surface_fluency": 0.3181818181818181,
+            "context_relevance": 0.7177696228027344
+          }
+        },
+        "improved_analysis": {
+          "source_text": "This is similar to that",
+          "target_text": "is es similar a that",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.6793791651725769
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.6818181818181819,
+          "specificity_improvement": 0.25,
+          "context_improvement": -0.03839045763015747
+        }
+      },
+      {
+        "source_text": "The book contains important information about science",
+        "current_translation": "The book contains important information about science",
+        "improved_translation": "book está en un lugar",
+        "current_analysis": {
+          "source_text": "The book contains important information about science",
+          "target_text": "The book contains important information about science",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0000001192092896
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The book contains important information about science",
+          "target_text": "book está en un lugar",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.5364529490470886
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.4635471701622009
+        }
+      },
+      {
+        "source_text": "The weather is cold today",
+        "current_translation": "esta cosa es así",
+        "improved_translation": "weather tiene la propiedad is",
+        "current_analysis": {
+          "source_text": "The weather is cold today",
+          "target_text": "esta cosa es así",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "Contains 1 generic explication phrases"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.25,
+            "explication_specificity": 0.0,
+            "surface_fluency": 0.8,
+            "context_relevance": 0.13524284958839417
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The weather is cold today",
+          "target_text": "weather tiene la propiedad is",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.5053765773773193
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.19999999999999996,
+          "specificity_improvement": 1.0,
+          "context_improvement": 0.37013372778892517
+        }
+      },
+      {
+        "source_text": "She works at the hospital",
+        "current_translation": "She works at the hospital",
+        "improved_translation": "works está en un lugar",
+        "current_analysis": {
+          "source_text": "She works at the hospital",
+          "target_text": "She works at the hospital",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0
+          }
+        },
+        "improved_analysis": {
+          "source_text": "She works at the hospital",
+          "target_text": "works está en un lugar",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.19728399813175201
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.802716001868248
+        }
+      },
+      {
+        "source_text": "The movie was very long",
+        "current_translation": "The movie was very long",
+        "improved_translation": "movie está en un lugar",
+        "current_analysis": {
+          "source_text": "The movie was very long",
+          "target_text": "The movie was very long",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0000001192092896
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The movie was very long",
+          "target_text": "movie está en un lugar",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.45329150557518005
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.5467086136341095
+        }
+      },
+      {
+        "source_text": "I need to buy groceries",
+        "current_translation": "I need to buy groceries",
+        "improved_translation": "need está en un lugar",
+        "current_analysis": {
+          "source_text": "I need to buy groceries",
+          "target_text": "I need to buy groceries",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0
+          }
+        },
+        "improved_analysis": {
+          "source_text": "I need to buy groceries",
+          "target_text": "need está en un lugar",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.3938474655151367
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.6061525344848633
+        }
+      },
+      {
+        "source_text": "Children play in the park",
+        "current_translation": "Children play in the park",
+        "improved_translation": "play está en un lugar",
+        "current_analysis": {
+          "source_text": "Children play in the park",
+          "target_text": "Children play in the park",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0000001192092896
+          }
+        },
+        "improved_analysis": {
+          "source_text": "Children play in the park",
+          "target_text": "play está en un lugar",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.16957004368305206
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.8304300755262375
+        }
+      },
+      {
+        "source_text": "The restaurant serves Italian food",
+        "current_translation": "The restaurant serves Italian food",
+        "improved_translation": "restaurant está en un lugar",
+        "current_analysis": {
+          "source_text": "The restaurant serves Italian food",
+          "target_text": "The restaurant serves Italian food",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The restaurant serves Italian food",
+          "target_text": "restaurant está en un lugar",
+          "source_lang": "en",
+          "target_lang": "es",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.6584761142730713
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.3415238857269287
+        }
+      }
+    ],
+    "fr": [
+      {
+        "source_text": "The red car is parked near the building",
+        "current_translation": "cette chose est comme cela",
+        "improved_translation": "red a la propriété car",
+        "current_analysis": {
+          "source_text": "The red car is parked near the building",
+          "target_text": "cette chose est comme cela",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "Contains 1 generic explication phrases"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.2,
+            "explication_specificity": 0.5,
+            "surface_fluency": 0.8,
+            "context_relevance": 0.08368315547704697
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The red car is parked near the building",
+          "target_text": "red a la propriété car",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.6814452409744263
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.19999999999999996,
+          "specificity_improvement": 0.5,
+          "context_improvement": 0.5977620854973793
+        }
+      },
+      {
+        "source_text": "The cat is on the mat",
+        "current_translation": "cette chose est comme cela AND quelque chose est dans un lieu",
+        "improved_translation": "cat a la propriété is",
+        "current_analysis": {
+          "source_text": "The cat is on the mat",
+          "target_text": "cette chose est comme cela AND quelque chose est dans un lieu",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "Contains 1 generic explication phrases",
+            "Contains AND patterns - poor surface realization"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context",
+            "Improve surface form generation to eliminate AND patterns"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.08333333333333333,
+            "explication_specificity": 0.5,
+            "surface_fluency": 0.41666666666666663,
+            "context_relevance": 0.15858827531337738
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The cat is on the mat",
+          "target_text": "cat a la propriété is",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.5213446021080017
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.5833333333333334,
+          "specificity_improvement": 0.5,
+          "context_improvement": 0.36275632679462433
+        }
+      },
+      {
+        "source_text": "This is similar to that",
+        "current_translation": "cette chose est comme une autre chose AND cette chose est comme cela",
+        "improved_translation": "is a la propriété similar",
+        "current_analysis": {
+          "source_text": "This is similar to that",
+          "target_text": "cette chose est comme une autre chose AND cette chose est comme cela",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "Contains 1 generic explication phrases",
+            "Contains AND patterns - poor surface realization"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context",
+            "Improve surface form generation to eliminate AND patterns"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.07692307692307693,
+            "explication_specificity": 0.75,
+            "surface_fluency": 0.30769230769230765,
+            "context_relevance": 0.7236677408218384
+          }
+        },
+        "improved_analysis": {
+          "source_text": "This is similar to that",
+          "target_text": "is a la propriété similar",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.4669557511806488
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.6923076923076923,
+          "specificity_improvement": 0.25,
+          "context_improvement": -0.2567119896411896
+        }
+      },
+      {
+        "source_text": "The book contains important information about science",
+        "current_translation": "The book contains important information about science",
+        "improved_translation": "book est dans un lieu",
+        "current_analysis": {
+          "source_text": "The book contains important information about science",
+          "target_text": "The book contains important information about science",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0000001192092896
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The book contains important information about science",
+          "target_text": "book est dans un lieu",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.5217845439910889
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.4782155752182007
+        }
+      },
+      {
+        "source_text": "The weather is cold today",
+        "current_translation": "cette chose est comme cela",
+        "improved_translation": "weather a la propriété is",
+        "current_analysis": {
+          "source_text": "The weather is cold today",
+          "target_text": "cette chose est comme cela",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "Contains 1 generic explication phrases"
+          ],
+          "recommendations": [
+            "Generate more specific explications based on context"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.2,
+            "explication_specificity": 0.0,
+            "surface_fluency": 0.8,
+            "context_relevance": 0.13798406720161438
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The weather is cold today",
+          "target_text": "weather a la propriété is",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.4136454463005066
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.19999999999999996,
+          "specificity_improvement": 1.0,
+          "context_improvement": 0.2756613790988922
+        }
+      },
+      {
+        "source_text": "She works at the hospital",
+        "current_translation": "She works at the hospital",
+        "improved_translation": "works est dans un lieu",
+        "current_analysis": {
+          "source_text": "She works at the hospital",
+          "target_text": "She works at the hospital",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0
+          }
+        },
+        "improved_analysis": {
+          "source_text": "She works at the hospital",
+          "target_text": "works est dans un lieu",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.226802796125412
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.773197203874588
+        }
+      },
+      {
+        "source_text": "The movie was very long",
+        "current_translation": "The movie was very long",
+        "improved_translation": "movie est dans un lieu",
+        "current_analysis": {
+          "source_text": "The movie was very long",
+          "target_text": "The movie was very long",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0000001192092896
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The movie was very long",
+          "target_text": "movie est dans un lieu",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.44964975118637085
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.5503503680229187
+        }
+      },
+      {
+        "source_text": "I need to buy groceries",
+        "current_translation": "I need to buy groceries",
+        "improved_translation": "need est dans un lieu",
+        "current_analysis": {
+          "source_text": "I need to buy groceries",
+          "target_text": "I need to buy groceries",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0
+          }
+        },
+        "improved_analysis": {
+          "source_text": "I need to buy groceries",
+          "target_text": "need est dans un lieu",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [],
+          "recommendations": [],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.3945939838886261
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.6054060161113739
+        }
+      },
+      {
+        "source_text": "Children play in the park",
+        "current_translation": "Children play in the park",
+        "improved_translation": "play est dans un lieu",
+        "current_analysis": {
+          "source_text": "Children play in the park",
+          "target_text": "Children play in the park",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0000001192092896
+          }
+        },
+        "improved_analysis": {
+          "source_text": "Children play in the park",
+          "target_text": "play est dans un lieu",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.1706106960773468
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.8293894231319427
+        }
+      },
+      {
+        "source_text": "The restaurant serves Italian food",
+        "current_translation": "The restaurant serves Italian food",
+        "improved_translation": "restaurant est dans un lieu",
+        "current_analysis": {
+          "source_text": "The restaurant serves Italian food",
+          "target_text": "The restaurant serves Italian food",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 1.0
+          }
+        },
+        "improved_analysis": {
+          "source_text": "The restaurant serves Italian food",
+          "target_text": "restaurant est dans un lieu",
+          "source_lang": "en",
+          "target_lang": "fr",
+          "issues": [
+            "No primitives detected in source text"
+          ],
+          "recommendations": [
+            "Improve primitive detection for this text type"
+          ],
+          "quality_metrics": {
+            "generic_phrase_ratio": 0.0,
+            "explication_specificity": 1.0,
+            "surface_fluency": 1.0,
+            "context_relevance": 0.657804548740387
+          }
+        },
+        "improvement": {
+          "fluency_improvement": 0.0,
+          "specificity_improvement": 0.0,
+          "context_improvement": -0.34219545125961304
+        }
+      }
+    ]
+  },
+  "recommendations": [
+    "Limited improvement achieved - consider more fundamental changes to translation pipeline"
+  ],
+  "quality_metrics": {
+    "avg_fluency_improvement": 0.16287296037296034,
+    "avg_specificity_improvement": 0.225,
+    "avg_context_improvement": -0.26182455010712147,
+    "total_improvements": 20,
+    "significant_improvements": 8
+  }
+}

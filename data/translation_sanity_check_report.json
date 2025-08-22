@@ -1,0 +1,632 @@
+{
+  "test_configuration": {
+    "source_language": "en",
+    "target_languages": [
+      "es",
+      "fr"
+    ],
+    "num_test_texts": 10,
+    "timestamp": 1755880958.5590222
+  },
+  "system_comparisons": {
+    "es": {
+      "nsm_translations": [
+        "esta cosa es así",
+        "algo está en un lugar AND esta cosa es así",
+        "esta cosa es como otra cosa AND esta cosa es así",
+        "The book contains important information about science",
+        "esta cosa es así",
+        "She works at the hospital",
+        "The movie was very long",
+        "I need to buy groceries",
+        "Children play in the park",
+        "The restaurant serves Italian food"
+      ],
+      "baseline_translations": [
+        "el rojo coche está parked cerca de el edificio",
+        "el gato está en el mat",
+        "this está similar to that",
+        "el libro contiene importante información sobre ciencia",
+        "el clima está frío hoy",
+        "she trabaja en el hospital",
+        "el película was very largo",
+        "i necesito to comprar groceries",
+        "niños juegan en el parque",
+        "el restaurante sirve italian comida"
+      ],
+      "human_references": [
+        "El coche rojo está aparcado cerca del edificio",
+        "El gato está en la alfombra",
+        "Esto es similar a eso",
+        "El libro contiene información importante sobre la ciencia",
+        "El clima está frío hoy",
+        "Ella trabaja en el hospital",
+        "La película fue muy larga",
+        "Necesito comprar comestibles",
+        "Los niños juegan en el parque",
+        "El restaurante sirve comida italiana"
+      ],
+      "quality_comparisons": [
+        {
+          "source_text": "The red car is parked near the building",
+          "nsm_quality": {
+            "human_similarity": 0.07969897985458374,
+            "baseline_similarity": 0.06961046159267426,
+            "length_consistency": 0.5,
+            "primitive_coverage": 0.25,
+            "overall_quality": 0.17776273041963578
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9883705973625183,
+            "baseline_similarity": 1.0,
+            "length_consistency": 0.875,
+            "primitive_coverage": 0.25,
+            "overall_quality": 0.8953482389450075
+          },
+          "human_quality": {
+            "human_similarity": 0.9999999403953552,
+            "baseline_similarity": 0.9883705973625183,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.25,
+            "overall_quality": 0.9215111553668976
+          }
+        },
+        {
+          "source_text": "The cat is on the mat",
+          "nsm_quality": {
+            "human_similarity": 0.19201743602752686,
+            "baseline_similarity": 0.19302192330360413,
+            "length_consistency": 0.5,
+            "primitive_coverage": 0.3333333333333333,
+            "overall_quality": 0.2680468847354253
+          },
+          "baseline_quality": {
+            "human_similarity": 0.7152098417282104,
+            "baseline_similarity": 1.0000001192092896,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.3333333333333333,
+            "overall_quality": 0.8194173057874042
+          },
+          "human_quality": {
+            "human_similarity": 1.0,
+            "baseline_similarity": 0.7152098417282104,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.3333333333333333,
+            "overall_quality": 0.8478962858517965
+          }
+        },
+        {
+          "source_text": "This is similar to that",
+          "nsm_quality": {
+            "human_similarity": 0.7629842162132263,
+            "baseline_similarity": 0.7201395630836487,
+            "length_consistency": 0.5,
+            "primitive_coverage": 0.8,
+            "overall_quality": 0.7012355554103851
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9514716863632202,
+            "baseline_similarity": 0.9999998807907104,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.8,
+            "overall_quality": 0.9605886387825013
+          },
+          "human_quality": {
+            "human_similarity": 1.0,
+            "baseline_similarity": 0.9514716863632202,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.8,
+            "overall_quality": 0.965441505908966
+          }
+        },
+        {
+          "source_text": "The book contains important information about science",
+          "nsm_quality": {
+            "human_similarity": 0.9967522621154785,
+            "baseline_similarity": 0.9961405396461487,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8975430667400359
+          },
+          "baseline_quality": {
+            "human_similarity": 0.998580276966095,
+            "baseline_similarity": 1.0000001192092896,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8994321465492248
+          },
+          "human_quality": {
+            "human_similarity": 1.0000001192092896,
+            "baseline_similarity": 0.998580276966095,
+            "length_consistency": 0.8571428571428572,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8710027022021158
+          }
+        },
+        {
+          "source_text": "The weather is cold today",
+          "nsm_quality": {
+            "human_similarity": 0.1809895634651184,
+            "baseline_similarity": 0.1888737976551056,
+            "length_consistency": 0.8,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.30905796468257907
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9996626973152161,
+            "baseline_similarity": 1.0,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.9198650789260865
+          },
+          "human_quality": {
+            "human_similarity": 1.0000001192092896,
+            "baseline_similarity": 0.9996626973152161,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.9198988568782807
+          }
+        },
+        {
+          "source_text": "She works at the hospital",
+          "nsm_quality": {
+            "human_similarity": 0.9927731156349182,
+            "baseline_similarity": 0.9936570525169373,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8952063620090485
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9990540742874146,
+            "baseline_similarity": 0.9999999403953552,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8996216118335725
+          },
+          "human_quality": {
+            "human_similarity": 1.0,
+            "baseline_similarity": 0.9990540742874146,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8997162222862243
+          }
+        },
+        {
+          "source_text": "The movie was very long",
+          "nsm_quality": {
+            "human_similarity": 0.978762149810791,
+            "baseline_similarity": 0.9626196622848511,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.4,
+            "overall_quality": 0.9202907586097717
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9663629531860352,
+            "baseline_similarity": 0.9999999403953552,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.4,
+            "overall_quality": 0.9265451633930206
+          },
+          "human_quality": {
+            "human_similarity": 1.0000001192092896,
+            "baseline_similarity": 0.9663629531860352,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.4,
+            "overall_quality": 0.9299089336395263
+          }
+        },
+        {
+          "source_text": "I need to buy groceries",
+          "nsm_quality": {
+            "human_similarity": 0.874458372592926,
+            "baseline_similarity": 0.9211984276771545,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.8461428773403168
+          },
+          "baseline_quality": {
+            "human_similarity": 0.8324605226516724,
+            "baseline_similarity": 1.0,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.852984209060669
+          },
+          "human_quality": {
+            "human_similarity": 1.0000001192092896,
+            "baseline_similarity": 0.8324605226516724,
+            "length_consistency": 0.6,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.7897382044792175
+          }
+        },
+        {
+          "source_text": "Children play in the park",
+          "nsm_quality": {
+            "human_similarity": 0.9802959561347961,
+            "baseline_similarity": 0.9792506694793701,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8858935832977295
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9939591884613037,
+            "baseline_similarity": 1.0000001192092896,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8975837111473084
+          },
+          "human_quality": {
+            "human_similarity": 1.0,
+            "baseline_similarity": 0.9939591884613037,
+            "length_consistency": 0.8,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8581877565383912
+          }
+        },
+        {
+          "source_text": "The restaurant serves Italian food",
+          "nsm_quality": {
+            "human_similarity": 0.9927383065223694,
+            "baseline_similarity": 0.981407880783081,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8915176868438721
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9950405955314636,
+            "baseline_similarity": 0.9999999403953552,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8980162203311921
+          },
+          "human_quality": {
+            "human_similarity": 0.9999999403953552,
+            "baseline_similarity": 0.9950405955314636,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8985121548175812
+          }
+        }
+      ],
+      "sanity_check_passed": false,
+      "issues_found": [
+        "NSM translation quality (0.178) significantly worse than baseline (0.895)",
+        "NSM translation too different from human reference (similarity: 0.080)",
+        "NSM translation too different from baseline (similarity: 0.070)",
+        "Low primitive coverage (0.250)",
+        "NSM translation quality (0.268) significantly worse than baseline (0.819)",
+        "NSM translation too different from human reference (similarity: 0.192)",
+        "NSM translation too different from baseline (similarity: 0.193)",
+        "Low primitive coverage (0.333)",
+        "Low primitive coverage (0.000)",
+        "NSM translation quality (0.309) significantly worse than baseline (0.920)",
+        "NSM translation too different from human reference (similarity: 0.181)",
+        "NSM translation too different from baseline (similarity: 0.189)",
+        "Low primitive coverage (0.200)",
+        "Low primitive coverage (0.000)",
+        "Low primitive coverage (0.400)",
+        "Low primitive coverage (0.200)",
+        "Low primitive coverage (0.000)",
+        "Low primitive coverage (0.000)"
+      ]
+    },
+    "fr": {
+      "nsm_translations": [
+        "cette chose est comme cela",
+        "quelque chose est dans un lieu AND cette chose est comme cela",
+        "cette chose est comme une autre chose AND cette chose est comme cela",
+        "The book contains important information about science",
+        "cette chose est comme cela",
+        "She works at the hospital",
+        "The movie was very long",
+        "I need to buy groceries",
+        "Children play in the park",
+        "The restaurant serves Italian food"
+      ],
+      "baseline_translations": [
+        "le rouge voiture est parked près de le bâtiment",
+        "le chat est sur le mat",
+        "this est similar to that",
+        "le livre contient important information sur science",
+        "le temps est froid aujourd'hui",
+        "she travaille à le hôpital",
+        "le film was very long",
+        "i besoin to acheter groceries",
+        "enfants jouent dans le parc",
+        "le restaurant sert italian nourriture"
+      ],
+      "human_references": [
+        "La voiture rouge est garée près du bâtiment",
+        "Le chat est sur le tapis",
+        "Ceci est similaire à cela",
+        "Le livre contient des informations importantes sur la science",
+        "Le temps est froid aujourd'hui",
+        "Elle travaille à l'hôpital",
+        "Le film était très long",
+        "J'ai besoin d'acheter des provisions",
+        "Les enfants jouent dans le parc",
+        "Le restaurant sert de la nourriture italienne"
+      ],
+      "quality_comparisons": [
+        {
+          "source_text": "The red car is parked near the building",
+          "nsm_quality": {
+            "human_similarity": 0.15643130242824554,
+            "baseline_similarity": 0.12035850435495377,
+            "length_consistency": 0.625,
+            "primitive_coverage": 0.25,
+            "overall_quality": 0.24868007227778435
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9752953052520752,
+            "baseline_similarity": 1.0000001192092896,
+            "length_consistency": 0.875,
+            "primitive_coverage": 0.25,
+            "overall_quality": 0.8901181578636169
+          },
+          "human_quality": {
+            "human_similarity": 1.0,
+            "baseline_similarity": 0.9752953052520752,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.25,
+            "overall_quality": 0.9175885915756227
+          }
+        },
+        {
+          "source_text": "The cat is on the mat",
+          "nsm_quality": {
+            "human_similarity": 0.22419984638690948,
+            "baseline_similarity": 0.22898370027542114,
+            "length_consistency": 0.5,
+            "primitive_coverage": 0.3333333333333333,
+            "overall_quality": 0.29170838197072346
+          },
+          "baseline_quality": {
+            "human_similarity": 0.8244857788085938,
+            "baseline_similarity": 1.0,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.3333333333333333,
+            "overall_quality": 0.8631276448567707
+          },
+          "human_quality": {
+            "human_similarity": 0.9999999403953552,
+            "baseline_similarity": 0.8244857788085938,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.3333333333333333,
+            "overall_quality": 0.8806790431340535
+          }
+        },
+        {
+          "source_text": "This is similar to that",
+          "nsm_quality": {
+            "human_similarity": 0.7874630689620972,
+            "baseline_similarity": 0.6414873003959656,
+            "length_consistency": 0.5,
+            "primitive_coverage": 0.8,
+            "overall_quality": 0.6874314177036285
+          },
+          "baseline_quality": {
+            "human_similarity": 0.8554854393005371,
+            "baseline_similarity": 0.9999998807907104,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.8,
+            "overall_quality": 0.922194139957428
+          },
+          "human_quality": {
+            "human_similarity": 1.0,
+            "baseline_similarity": 0.8554854393005371,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.8,
+            "overall_quality": 0.9366456317901612
+          }
+        },
+        {
+          "source_text": "The book contains important information about science",
+          "nsm_quality": {
+            "human_similarity": 0.9922392964363098,
+            "baseline_similarity": 0.9902889728546143,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8939824104309082
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9982191324234009,
+            "baseline_similarity": 1.0,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8992876529693603
+          },
+          "human_quality": {
+            "human_similarity": 0.9999998807907104,
+            "baseline_similarity": 0.9982191324234009,
+            "length_consistency": 0.7142857142857142,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8423228349004472
+          }
+        },
+        {
+          "source_text": "The weather is cold today",
+          "nsm_quality": {
+            "human_similarity": 0.16754280030727386,
+            "baseline_similarity": 0.17352350056171417,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.33907417029142384
+          },
+          "baseline_quality": {
+            "human_similarity": 0.999823808670044,
+            "baseline_similarity": 1.0000001192092896,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.9199295592308043
+          },
+          "human_quality": {
+            "human_similarity": 1.0000001192092896,
+            "baseline_similarity": 0.999823808670044,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.9199471902847289
+          }
+        },
+        {
+          "source_text": "She works at the hospital",
+          "nsm_quality": {
+            "human_similarity": 0.9888424873352051,
+            "baseline_similarity": 0.9882606863975525,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8920152008533477
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9993305802345276,
+            "baseline_similarity": 1.0000001192092896,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8997322678565978
+          },
+          "human_quality": {
+            "human_similarity": 0.9999999403953552,
+            "baseline_similarity": 0.9993305802345276,
+            "length_consistency": 0.8,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8597991502285004
+          }
+        },
+        {
+          "source_text": "The movie was very long",
+          "nsm_quality": {
+            "human_similarity": 0.9814689755439758,
+            "baseline_similarity": 0.8675730228424072,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.4,
+            "overall_quality": 0.8928594970703125
+          },
+          "baseline_quality": {
+            "human_similarity": 0.8817675113677979,
+            "baseline_similarity": 1.0,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.4,
+            "overall_quality": 0.8927070045471193
+          },
+          "human_quality": {
+            "human_similarity": 1.0000001192092896,
+            "baseline_similarity": 0.8817675113677979,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.4,
+            "overall_quality": 0.9045303010940553
+          }
+        },
+        {
+          "source_text": "I need to buy groceries",
+          "nsm_quality": {
+            "human_similarity": 0.7790365815162659,
+            "baseline_similarity": 0.8491201996803284,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.7863506925106047
+          },
+          "baseline_quality": {
+            "human_similarity": 0.7724634408950806,
+            "baseline_similarity": 1.0,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.8289853763580322
+          },
+          "human_quality": {
+            "human_similarity": 1.0,
+            "baseline_similarity": 0.7724634408950806,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.2,
+            "overall_quality": 0.8517390322685241
+          }
+        },
+        {
+          "source_text": "Children play in the park",
+          "nsm_quality": {
+            "human_similarity": 0.9792227745056152,
+            "baseline_similarity": 0.9796578288078308,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8855864584445954
+          },
+          "baseline_quality": {
+            "human_similarity": 0.997056782245636,
+            "baseline_similarity": 1.0000001192092896,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8988227486610412
+          },
+          "human_quality": {
+            "human_similarity": 0.9999998807907104,
+            "baseline_similarity": 0.997056782245636,
+            "length_consistency": 0.8,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.859116986989975
+          }
+        },
+        {
+          "source_text": "The restaurant serves Italian food",
+          "nsm_quality": {
+            "human_similarity": 0.9744955897331238,
+            "baseline_similarity": 0.9463218450546265,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8736947894096374
+          },
+          "baseline_quality": {
+            "human_similarity": 0.9909917116165161,
+            "baseline_similarity": 0.9999999403953552,
+            "length_consistency": 1.0,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.896396666765213
+          },
+          "human_quality": {
+            "human_similarity": 0.9999999403953552,
+            "baseline_similarity": 0.9909917116165161,
+            "length_consistency": 0.6000000000000001,
+            "primitive_coverage": 0.0,
+            "overall_quality": 0.8172974896430969
+          }
+        }
+      ],
+      "sanity_check_passed": false,
+      "issues_found": [
+        "NSM translation quality (0.249) significantly worse than baseline (0.890)",
+        "NSM translation too different from human reference (similarity: 0.156)",
+        "NSM translation too different from baseline (similarity: 0.120)",
+        "Low primitive coverage (0.250)",
+        "NSM translation quality (0.292) significantly worse than baseline (0.863)",
+        "NSM translation too different from human reference (similarity: 0.224)",
+        "NSM translation too different from baseline (similarity: 0.229)",
+        "Low primitive coverage (0.333)",
+        "Low primitive coverage (0.000)",
+        "NSM translation quality (0.339) significantly worse than baseline (0.920)",
+        "NSM translation too different from human reference (similarity: 0.168)",
+        "NSM translation too different from baseline (similarity: 0.174)",
+        "Low primitive coverage (0.200)",
+        "Low primitive coverage (0.000)",
+        "Low primitive coverage (0.400)",
+        "Low primitive coverage (0.200)",
+        "Low primitive coverage (0.000)",
+        "Low primitive coverage (0.000)"
+      ]
+    }
+  },
+  "sanity_check_results": {
+    "total_tests": 20,
+    "passed_tests": 0,
+    "failed_tests": 20,
+    "avg_nsm_quality": 0.6792040280525883,
+    "avg_baseline_quality": 0.8940351771910985,
+    "avg_human_quality": 0.8845740014939081,
+    "quality_gaps": {
+      "nsm_to_human": -0.2053699734413198,
+      "baseline_to_human": 0.009461175697190405,
+      "nsm_to_baseline": -0.2148311491385102
+    }
+  },
+  "recommendations": [
+    "NSM translation quality is below baseline - consider improving primitive detection and explication generation",
+    "Found 36 sanity check issues - review translation quality and system configuration"
+  ]
+}

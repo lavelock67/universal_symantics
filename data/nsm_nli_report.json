@@ -1,0 +1,3263 @@
+{
+  "per_lang": {
+    "en": {
+      "avg_entail_sent_to_exp": 0.7748007280596843,
+      "avg_bi_entail": 0.39227424678944467,
+      "entries": [
+        {
+          "idx": 0,
+          "primitive": "AtLocation",
+          "source": "The cat is on the table",
+          "explication": "something is in a place",
+          "entails_sent_to_exp": 0.9963738322257996,
+          "entails_exp_to_sent": 0.0004559136286843568,
+          "bi_entail": 0.49841487292724196
+        },
+        {
+          "idx": 1,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 2,
+          "primitive": "PartOf",
+          "source": "The engine is part of the car",
+          "explication": "one part is part of another thing",
+          "entails_sent_to_exp": 0.9816250205039978,
+          "entails_exp_to_sent": 0.00020363727526273578,
+          "bi_entail": 0.49091432888963027
+        },
+        {
+          "idx": 3,
+          "primitive": "Causes",
+          "source": "The rain causes flooding",
+          "explication": "something happens because something else happens",
+          "entails_sent_to_exp": 0.10046249628067017,
+          "entails_exp_to_sent": 0.0004838214081246406,
+          "bi_entail": 0.0504731588443974
+        },
+        {
+          "idx": 4,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 5,
+          "primitive": "UsedFor",
+          "source": "A whale is similar to a dolphin",
+          "explication": "someone can do something with this thing",
+          "entails_sent_to_exp": 0.03223578631877899,
+          "entails_exp_to_sent": 0.08824100345373154,
+          "bi_entail": 0.060238394886255264
+        },
+        {
+          "idx": 6,
+          "primitive": "SimilarTo",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like another thing",
+          "entails_sent_to_exp": 0.027037013322114944,
+          "entails_exp_to_sent": 0.00360975693911314,
+          "bi_entail": 0.015323385130614042
+        },
+        {
+          "idx": 7,
+          "primitive": "DifferentFrom",
+          "source": "The student does not understand",
+          "explication": "this thing is not like another thing",
+          "entails_sent_to_exp": 0.02715812809765339,
+          "entails_exp_to_sent": 0.020311707630753517,
+          "bi_entail": 0.023734917864203453
+        },
+        {
+          "idx": 8,
+          "primitive": "Not",
+          "source": "There is a problem in the system",
+          "explication": "someone does not do something",
+          "entails_sent_to_exp": 0.9747986197471619,
+          "entails_exp_to_sent": 0.015583168715238571,
+          "bi_entail": 0.4951908942312002
+        },
+        {
+          "idx": 9,
+          "primitive": "Exist",
+          "source": "A robin is a bird",
+          "explication": "there is something",
+          "entails_sent_to_exp": 0.980660617351532,
+          "entails_exp_to_sent": 0.018813302740454674,
+          "bi_entail": 0.49973696004599333
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "source": "The cat is on the table",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9801392555236816,
+          "entails_exp_to_sent": 0.005717943888157606,
+          "bi_entail": 0.4929285997059196
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "source": "This water is very cold",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9864697456359863,
+          "entails_exp_to_sent": 0.0017073069466277957,
+          "bi_entail": 0.49408852629130706
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "source": "The engine is part of the car",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9502689838409424,
+          "entails_exp_to_sent": 0.0029743097256869078,
+          "bi_entail": 0.47662164678331465
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "source": "The rain causes flooding",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.8239964246749878,
+          "entails_exp_to_sent": 0.0033323075622320175,
+          "bi_entail": 0.4136643661186099
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "source": "This tool is used for cutting",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9747825264930725,
+          "entails_exp_to_sent": 0.002271159552037716,
+          "bi_entail": 0.4885268430225551
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "source": "A whale is similar to a dolphin",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9827256202697754,
+          "entails_exp_to_sent": 0.0136728435754776,
+          "bi_entail": 0.4981992319226265
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "source": "A plane is different from a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.07374580204486847,
+          "entails_exp_to_sent": 0.016984228044748306,
+          "bi_entail": 0.04536501504480839
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "source": "The student does not understand",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.19197341799736023,
+          "entails_exp_to_sent": 0.004154165741056204,
+          "bi_entail": 0.09806379186920822
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "source": "There is a problem in the system",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9909635782241821,
+          "entails_exp_to_sent": 0.025906860828399658,
+          "bi_entail": 0.5084352195262909
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "source": "A robin is a bird",
+          "explication": "this thing is like this",
+          "entails_sent_to_exp": 0.9444331526756287,
+          "entails_exp_to_sent": 0.015828972682356834,
+          "bi_entail": 0.48013106267899275
+        }
+      ]
+    },
+    "es": {
+      "avg_entail_sent_to_exp": 0.722846002955339,
+      "avg_bi_entail": 0.3715505160636288,
+      "entries": [
+        {
+          "idx": 0,
+          "primitive": "AtLocation",
+          "source": "El gato está en la mesa",
+          "explication": "algo está en un lugar",
+          "entails_sent_to_exp": 0.9983585476875305,
+          "entails_exp_to_sent": 0.000646332511678338,
+          "bi_entail": 0.49950244009960443
+        },
+        {
+          "idx": 1,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 2,
+          "primitive": "PartOf",
+          "source": "El motor es parte del coche",
+          "explication": "una parte es parte de otra cosa",
+          "entails_sent_to_exp": 0.9968720078468323,
+          "entails_exp_to_sent": 0.00016253427020274103,
+          "bi_entail": 0.4985172710585175
+        },
+        {
+          "idx": 3,
+          "primitive": "Causes",
+          "source": "La lluvia causa inundaciones",
+          "explication": "algo pasa porque otra cosa pasa",
+          "entails_sent_to_exp": 0.8642546534538269,
+          "entails_exp_to_sent": 0.00030553530086763203,
+          "bi_entail": 0.43228009437734727
+        },
+        {
+          "idx": 4,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 5,
+          "primitive": "UsedFor",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "alguien puede hacer algo con esta cosa",
+          "entails_sent_to_exp": 0.0008114074589684606,
+          "entails_exp_to_sent": 0.1504732370376587,
+          "bi_entail": 0.07564232224831358
+        },
+        {
+          "idx": 6,
+          "primitive": "SimilarTo",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es como otra cosa",
+          "entails_sent_to_exp": 0.9890901446342468,
+          "entails_exp_to_sent": 0.0015028059715405107,
+          "bi_entail": 0.49529647530289367
+        },
+        {
+          "idx": 7,
+          "primitive": "DifferentFrom",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa no es como otra cosa",
+          "entails_sent_to_exp": 0.9636046290397644,
+          "entails_exp_to_sent": 0.024124708026647568,
+          "bi_entail": 0.493864668533206
+        },
+        {
+          "idx": 8,
+          "primitive": "Not",
+          "source": "Hay un problema en el sistema",
+          "explication": "alguien no hace algo",
+          "entails_sent_to_exp": 0.9912909269332886,
+          "entails_exp_to_sent": 0.018285948783159256,
+          "bi_entail": 0.5047884378582239
+        },
+        {
+          "idx": 9,
+          "primitive": "Exist",
+          "source": "Un petirrojo es un ave",
+          "explication": "hay algo",
+          "entails_sent_to_exp": 0.9924518465995789,
+          "entails_exp_to_sent": 0.0031190128065645695,
+          "bi_entail": 0.4977854297030717
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "source": "El gato está en la mesa",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7687298655509949,
+          "entails_exp_to_sent": 0.045010995119810104,
+          "bi_entail": 0.4068704303354025
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "source": "Esta agua es muy fría",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9779540300369263,
+          "entails_exp_to_sent": 0.002094344003126025,
+          "bi_entail": 0.49002418702002615
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "source": "El motor es parte del coche",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.859276533126831,
+          "entails_exp_to_sent": 0.000661412428598851,
+          "bi_entail": 0.42996897277771495
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "source": "La lluvia causa inundaciones",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.9359766244888306,
+          "entails_exp_to_sent": 0.0039154659025371075,
+          "bi_entail": 0.46994604519568384
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "source": "Esta herramienta se usa para cortar",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.971924901008606,
+          "entails_exp_to_sent": 0.004555731080472469,
+          "bi_entail": 0.4882403160445392
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "source": "Una ballena es parecida a un delfín",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.43059423565864563,
+          "entails_exp_to_sent": 0.0919647142291069,
+          "bi_entail": 0.26127947494387627
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "source": "Un avión es diferente de un pájaro",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.17940762639045715,
+          "entails_exp_to_sent": 0.04176430404186249,
+          "bi_entail": 0.11058596521615982
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "source": "El estudiante no entiende",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.33604371547698975,
+          "entails_exp_to_sent": 0.0072474353946745396,
+          "bi_entail": 0.17164557543583214
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "source": "Hay un problema en el sistema",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.8562859892845154,
+          "entails_exp_to_sent": 0.0016690957127138972,
+          "bi_entail": 0.42897754249861464
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "source": "Un petirrojo es un ave",
+          "explication": "esta cosa es así",
+          "entails_sent_to_exp": 0.7742525935173035,
+          "entails_exp_to_sent": 0.0034195303451269865,
+          "bi_entail": 0.3888360619312152
+        }
+      ]
+    },
+    "fr": {
+      "avg_entail_sent_to_exp": 0.7931131097951342,
+      "avg_bi_entail": 0.40033620149248844,
+      "entries": [
+        {
+          "idx": 0,
+          "primitive": "AtLocation",
+          "source": "Le chat est sur la table",
+          "explication": "quelque chose est dans un lieu",
+          "entails_sent_to_exp": 0.9984839558601379,
+          "entails_exp_to_sent": 0.00037720054388046265,
+          "bi_entail": 0.4994305782020092
+        },
+        {
+          "idx": 1,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 2,
+          "primitive": "PartOf",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "une partie est partie d'une autre chose",
+          "entails_sent_to_exp": 0.8067068457603455,
+          "entails_exp_to_sent": 0.00014980135892983526,
+          "bi_entail": 0.40342832355963765
+        },
+        {
+          "idx": 3,
+          "primitive": "Causes",
+          "source": "La pluie cause des inondations",
+          "explication": "quelque chose arrive parce qu'une autre chose arrive",
+          "entails_sent_to_exp": 0.9912413358688354,
+          "entails_exp_to_sent": 0.0001695347746135667,
+          "bi_entail": 0.4957054353217245
+        },
+        {
+          "idx": 4,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 5,
+          "primitive": "UsedFor",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "quelqu'un peut faire quelque chose avec cette chose",
+          "entails_sent_to_exp": 0.0004114973999094218,
+          "entails_exp_to_sent": 0.014841065742075443,
+          "bi_entail": 0.0076262815709924325
+        },
+        {
+          "idx": 6,
+          "primitive": "SimilarTo",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme une autre chose",
+          "entails_sent_to_exp": 0.21330778300762177,
+          "entails_exp_to_sent": 0.001268843188881874,
+          "bi_entail": 0.10728831309825182
+        },
+        {
+          "idx": 7,
+          "primitive": "DifferentFrom",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose n'est pas comme une autre chose",
+          "entails_sent_to_exp": 0.35491564869880676,
+          "entails_exp_to_sent": 0.002356794197112322,
+          "bi_entail": 0.17863622144795954
+        },
+        {
+          "idx": 8,
+          "primitive": "Not",
+          "source": "Il y a un problème dans le système",
+          "explication": "quelqu'un ne fait pas quelque chose",
+          "entails_sent_to_exp": 0.9971900582313538,
+          "entails_exp_to_sent": 0.006418317090719938,
+          "bi_entail": 0.5018041876610368
+        },
+        {
+          "idx": 9,
+          "primitive": "Exist",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "il y a quelque chose",
+          "entails_sent_to_exp": 0.9649192094802856,
+          "entails_exp_to_sent": 0.004783261567354202,
+          "bi_entail": 0.4848512355238199
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "source": "Le chat est sur la table",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.899311363697052,
+          "entails_exp_to_sent": 0.005084590520709753,
+          "bi_entail": 0.4521979771088809
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "source": "Cette eau est très froide",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9782236218452454,
+          "entails_exp_to_sent": 0.00296201603487134,
+          "bi_entail": 0.49059281894005835
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "source": "Le moteur fait partie de la voiture",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9374997615814209,
+          "entails_exp_to_sent": 0.0007076129550114274,
+          "bi_entail": 0.46910368726821616
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "source": "La pluie cause des inondations",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9641998410224915,
+          "entails_exp_to_sent": 0.0021550217643380165,
+          "bi_entail": 0.48317743139341474
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "source": "Cet outil est utilisé pour couper",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9851893186569214,
+          "entails_exp_to_sent": 0.004139545373618603,
+          "bi_entail": 0.49466443201527
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "source": "Une baleine est semblable à un dauphin",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9571041464805603,
+          "entails_exp_to_sent": 0.01192400697618723,
+          "bi_entail": 0.48451407672837377
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "source": "Un avion est différent d'un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.023261837661266327,
+          "entails_exp_to_sent": 0.035063136368989944,
+          "bi_entail": 0.029162487015128136
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "source": "L'étudiant ne comprend pas",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.5220990777015686,
+          "entails_exp_to_sent": 0.0032685957849025726,
+          "bi_entail": 0.2626838367432356
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "source": "Il y a un problème dans le système",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.9944263696670532,
+          "entails_exp_to_sent": 0.0015609478577971458,
+          "bi_entail": 0.4979936587624252
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "source": "Un rouge-gorge est un oiseau",
+          "explication": "cette chose est comme cela",
+          "entails_sent_to_exp": 0.7280468344688416,
+          "entails_exp_to_sent": 0.012193508446216583,
+          "bi_entail": 0.37012017145752907
+        }
+      ]
+    }
+  },
+  "overall": {}
+}

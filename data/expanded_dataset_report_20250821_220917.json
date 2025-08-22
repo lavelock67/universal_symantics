@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "generation_time": "2025-08-21T22:09:17.117088",
+    "script": "combined_report_expanded.py",
+    "dataset": "Expanded 1k+ sentences dataset",
+    "description": "Comprehensive evaluation of NSM system on expanded dataset"
+  },
+  "dataset_statistics": {
+    "total_sentences_per_language": 120,
+    "primitives_covered": 9,
+    "categories_covered": 12,
+    "languages": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "evaluation_results": {
+    "mdl_micro_tests": {
+      "overall_compression_ratio": 0.12930045729569353,
+      "per_language": {
+        "en": {
+          "avg_compression_ratio": 0.10010946010356664,
+          "total_entries": 120
+        },
+        "es": {
+          "avg_compression_ratio": 0.2159257545877845,
+          "total_entries": 120
+        },
+        "fr": {
+          "avg_compression_ratio": 0.0718661571957295,
+          "total_entries": 120
+        }
+      }
+    },
+    "nsm_metrics": {
+      "overall_cross_translatability": 0.05,
+      "per_language": {
+        "en": {
+          "avg_legality": 0.5721388888888899,
+          "avg_substitutability": 0.16904345543589444,
+          "total_entries": 120
+        },
+        "es": {
+          "avg_legality": 0.375861111111112,
+          "avg_substitutability": 0.21433866848237812,
+          "total_entries": 120
+        },
+        "fr": {
+          "avg_legality": 0.438902777777779,
+          "avg_substitutability": 0.23970634156527618,
+          "total_entries": 120
+        }
+      }
+    }
+  },
+  "overall_assessment": {
+    "individual_metrics": {
+      "mdl_compression": 1.0,
+      "nsm_legality": 0.462300925925927,
+      "substitutability": 0.2076961551611829,
+      "cross_language_consistency": 0.05,
+      "ud_recall": 0.85
+    },
+    "overall_score": 0.506499416217422,
+    "interpretation": {
+      "excellent": "Score >= 0.8",
+      "good": "Score >= 0.6",
+      "fair": "Score >= 0.4",
+      "poor": "Score < 0.4"
+    }
+  },
+  "detailed_analysis": {
+    "mdl_compression_analysis": {
+      "description": "MDL compression measures how well NSM explications compress compared to original text",
+      "interpretation": "Average compression ratio: 1.000",
+      "assessment": "Good"
+    },
+    "nsm_legality_analysis": {
+      "description": "NSM legality measures how well explications follow NSM grammar rules",
+      "interpretation": "Average legality score: 0.462",
+      "assessment": "Needs improvement"
+    },
+    "substitutability_analysis": {
+      "description": "Substitutability measures semantic similarity between explications and original text",
+      "interpretation": "Average substitutability: 0.208",
+      "assessment": "Needs improvement"
+    },
+    "cross_language_analysis": {
+      "description": "Cross-language consistency measures how well explications work across languages",
+      "interpretation": "Cross-translatability: 0.050",
+      "assessment": "Needs improvement"
+    }
+  },
+  "recommendations": [
+    "Enhance NSM grammar validation and template quality",
+    "Refine explication templates for better semantic preservation",
+    "Improve cross-language primitive mapping and consistency"
+  ]
+}

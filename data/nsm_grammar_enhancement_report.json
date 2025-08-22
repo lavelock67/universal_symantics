@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "report_type": "NSM_grammar_enhancement_report",
+    "timestamp": "2025-08-22"
+  },
+  "enhancement_summary": {
+    "total_patterns_enhanced": 9,
+    "languages_supported": 3,
+    "contextual_modifiers": 5
+  },
+  "pattern_analysis": {
+    "AtLocation": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "basic",
+        "abstract",
+        "relative",
+        "temporal",
+        "spatial"
+      ],
+      "total_variations": 15
+    },
+    "HasProperty": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "conditional",
+        "basic",
+        "temporary",
+        "inherent",
+        "acquired"
+      ],
+      "total_variations": 15
+    },
+    "PartOf": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "basic",
+        "functional",
+        "optional",
+        "hierarchical",
+        "essential"
+      ],
+      "total_variations": 15
+    },
+    "Causes": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "conditional",
+        "basic",
+        "direct",
+        "immediate",
+        "indirect",
+        "delayed"
+      ],
+      "total_variations": 18
+    },
+    "UsedFor": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "basic",
+        "primary",
+        "general",
+        "specialized",
+        "contextual",
+        "secondary"
+      ],
+      "total_variations": 18
+    },
+    "Exist": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "conditional",
+        "basic",
+        "abstract",
+        "temporal",
+        "spatial"
+      ],
+      "total_variations": 15
+    },
+    "Not": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "alternative",
+        "basic",
+        "exclusive",
+        "negation",
+        "contrastive"
+      ],
+      "total_variations": 15
+    },
+    "SimilarTo": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "basic",
+        "partial",
+        "appearance",
+        "behavior",
+        "function"
+      ],
+      "total_variations": 15
+    },
+    "DifferentFrom": {
+      "language_coverage": 3,
+      "pattern_types": [
+        "basic",
+        "completely",
+        "qualitatively",
+        "fundamentally",
+        "quantitatively"
+      ],
+      "total_variations": 15
+    }
+  },
+  "language_coverage": {
+    "en": {
+      "primitives_covered": 9,
+      "total_variations": 47,
+      "modifier_types": 5
+    },
+    "es": {
+      "primitives_covered": 9,
+      "total_variations": 47,
+      "modifier_types": 5
+    },
+    "fr": {
+      "primitives_covered": 9,
+      "total_variations": 47,
+      "modifier_types": 5
+    }
+  },
+  "recommendations": [
+    "Consider adding more specialized pattern types for complex semantic relationships",
+    "Expand contextual modifiers to include pragmatic considerations",
+    "Implement pattern validation to ensure grammatical correctness",
+    "Add pattern complexity scoring for better template selection",
+    "Consider cross-language pattern alignment for better translation consistency"
+  ]
+}

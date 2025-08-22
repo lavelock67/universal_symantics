@@ -1,0 +1,716 @@
+[
+  {
+    "key": "be-nsubj-it",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 91,
+    "examples": [
+      "Today is June 18th and it is Muiriel's birthday!",
+      "Is it a recent picture?",
+      "It's because you don't want to be alone."
+    ]
+  },
+  {
+    "key": "be-nsubj-I",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 62,
+    "examples": [
+      "I will be back soon.",
+      "I'm at a loss for words.",
+      "I was in the mountains."
+    ]
+  },
+  {
+    "key": "be-nsubj-you",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 42,
+    "examples": [
+      "You're in better shape than I am.",
+      "You are in my way.",
+      "You're so impatient with me."
+    ]
+  },
+  {
+    "key": "have-nsubj-I",
+    "head": "have",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 35,
+    "examples": [
+      "I have to go to sleep.",
+      "I don't know if I have the time.",
+      "It would be something I'd have to program."
+    ]
+  },
+  {
+    "key": "be-nsubj-that",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 23,
+    "examples": [
+      "That was an evil bunny.",
+      "That's MY line!",
+      "That's the stupidest thing I've ever said."
+    ]
+  },
+  {
+    "key": "want-nsubj-I",
+    "head": "want",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 22,
+    "examples": [
+      "I once wanted to be an astrophysicist.",
+      "I don't want to be lame; I want to be cool!!",
+      "I don't want to be lame; I want to be cool!!"
+    ]
+  },
+  {
+    "key": "have-nsubj-you",
+    "head": "have",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 22,
+    "examples": [
+      "How many close friends do you have?",
+      "In order to do that, you have to take risks.",
+      "You never have class or what?!"
+    ]
+  },
+  {
+    "key": "be-nsubj-he",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 21,
+    "examples": [
+      "Sometimes he can be a strange guy.",
+      "No, he's not my new boyfriend.",
+      "He's very sexy."
+    ]
+  },
+  {
+    "key": "know-nsubj-I",
+    "head": "know",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 18,
+    "examples": [
+      "I just don't know what to say.",
+      "I don't know if I have the time.",
+      "If anyone was to ask what the point of the story is, I really don't know."
+    ]
+  },
+  {
+    "key": "like-nsubj-I",
+    "head": "like",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 18,
+    "examples": [
+      "I always liked mysterious characters more.",
+      "I never liked biology.",
+      "It's a word I'd like to find a substitute for."
+    ]
+  },
+  {
+    "key": "be-mark-that",
+    "head": "be",
+    "relation": "mark",
+    "arg_types": [
+      "that"
+    ],
+    "frequency": 16,
+    "examples": [
+      "I found a solution, but I found it so fast that it can't be the right solution.",
+      "It may be that the happiness awaiting us is not at all the sort of happiness we would want.",
+      "Seeing that you're not surprised, I think you must have known."
+    ]
+  },
+  {
+    "key": "think-nsubj-I",
+    "head": "think",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 15,
+    "examples": [
+      "I think it is best not to be impolite.",
+      "I thought you liked to learn new things.",
+      "I think I have a theory about that."
+    ]
+  },
+  {
+    "key": "be-nsubj-this",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 14,
+    "examples": [
+      "I can only wonder if this is the same for everyone else.",
+      "This is what I would have said.",
+      "This is always the way it has been."
+    ]
+  },
+  {
+    "key": "go-nsubj-I",
+    "head": "go",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 14,
+    "examples": [
+      "I'm going to go.",
+      "I'm gonna shoot him.",
+      "I wish I could go to Japan."
+    ]
+  },
+  {
+    "key": "be-advcl-be",
+    "head": "be",
+    "relation": "advcl",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 14,
+    "examples": [
+      "If the world weren't in the shape it is now, I could trust anyone.",
+      "America is a lovely place to be, if you are here to earn money.",
+      "That's because you're a girl."
+    ]
+  },
+  {
+    "key": "be-nsubj-life",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 13,
+    "examples": [
+      "Life is hard, but I am harder.",
+      "Life without love is just totally pointless.",
+      "Life is what happens to you while you're busy making other plans."
+    ]
+  },
+  {
+    "key": "be-mark-if",
+    "head": "be",
+    "relation": "mark",
+    "arg_types": [
+      "if"
+    ],
+    "frequency": 11,
+    "examples": [
+      "I can only wonder if this is the same for everyone else.",
+      "If the world weren't in the shape it is now, I could trust anyone.",
+      "America is a lovely place to be, if you are here to earn money."
+    ]
+  },
+  {
+    "key": "be-ccomp-be",
+    "head": "be",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 11,
+    "examples": [
+      "No I'm not; you are!",
+      "I'm not a real fish, I'm just a mere plushy.",
+      "It's not much of a surprise, is it?"
+    ]
+  },
+  {
+    "key": "know-nsubj-you",
+    "head": "know",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 11,
+    "examples": [
+      "If you didn't know me that way then you simply didn't know me.",
+      "If you didn't know me that way then you simply didn't know me.",
+      "Next thing you know, you'll be in the papers."
+    ]
+  },
+  {
+    "key": "have-mark-if",
+    "head": "have",
+    "relation": "mark",
+    "arg_types": [
+      "if"
+    ],
+    "frequency": 9,
+    "examples": [
+      "I don't know if I have the time.",
+      "I don't know if I still have it.",
+      "There's no point saying \"Hi, how are you?\" to me if you have nothing else to say."
+    ]
+  },
+  {
+    "key": "do-nsubj-I",
+    "head": "do",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 9,
+    "examples": [
+      "I'll do my best not to disturb your studying.",
+      "Theoretically, I'm doing math.",
+      "I don't like it when mathematicians who know much more than I do can't express themselves explicitly."
+    ]
+  },
+  {
+    "key": "be-nsubj-they",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 8,
+    "examples": [
+      "They are too busy fighting against each other to care for common ideals.",
+      "Every person who is alone is alone because they are afraid of others.",
+      "I wish I could care more about my grades but it seems that, at a certain point of my life, I decided they wouldn't be so important anymore."
+    ]
+  },
+  {
+    "key": "be-mark-because",
+    "head": "be",
+    "relation": "mark",
+    "arg_types": [
+      "because"
+    ],
+    "frequency": 8,
+    "examples": [
+      "That's because you're a girl.",
+      "Every person who is alone is alone because they are afraid of others.",
+      "If you don't understand something, it's because you aren't aware of its context."
+    ]
+  },
+  {
+    "key": "need-nsubj-I",
+    "head": "need",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 8,
+    "examples": [
+      "I need to ask you a silly question.",
+      "It's too bad that I don't need to lose weight.",
+      "Let me know if I need to make any changes."
+    ]
+  },
+  {
+    "key": "go-nsubj-we",
+    "head": "go",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 8,
+    "examples": [
+      "It is up to you to decide whether we will go there or not.",
+      "Why don't we go home?",
+      "This is my friend Rachel. We went to high school together."
+    ]
+  },
+  {
+    "key": "say-ccomp-be",
+    "head": "say",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 8,
+    "examples": [
+      "They say love is blind.",
+      "It is said that \"Hamlet\" is the most interesting play ever written.",
+      "My friends always say I'm too calm, but my family always says I'm too annoying."
+    ]
+  },
+  {
+    "key": "do-nsubj-you",
+    "head": "do",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 7,
+    "examples": [
+      "You can do it.",
+      "All you can do is trust one another.",
+      "Why are you sorry for something you haven't done?"
+    ]
+  },
+  {
+    "key": "do-dobj-what",
+    "head": "do",
+    "relation": "dobj",
+    "arg_types": [
+      "dobj"
+    ],
+    "frequency": 7,
+    "examples": [
+      "I don't know what to do anymore.",
+      "What do you think I've been doing?",
+      "And what are we going to do?"
+    ]
+  },
+  {
+    "key": "have-nsubj-we",
+    "head": "have",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 7,
+    "examples": [
+      "I suppose that behind each thing we have to do, there's something we want to do...",
+      "We have a Pope.",
+      "Our opinion is an idea which we have; our conviction an idea which has us."
+    ]
+  },
+  {
+    "key": "give-nsubj-I",
+    "head": "give",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "I may give up soon and just nap instead.",
+      "Do you need me to give you some money?",
+      "I give you my word."
+    ]
+  },
+  {
+    "key": "want-xcomp-be",
+    "head": "want",
+    "relation": "xcomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 6,
+    "examples": [
+      "It's because you don't want to be alone.",
+      "I once wanted to be an astrophysicist.",
+      "I don't want to be lame; I want to be cool!!"
+    ]
+  },
+  {
+    "key": "think-nsubj-you",
+    "head": "think",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "I suppose it's different when you think about it over the long term.",
+      "What do you think I've been doing?",
+      "Don't you even think of eating my chocolate!"
+    ]
+  },
+  {
+    "key": "be-nsubj-world",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "If the world weren't in the shape it is now, I could trust anyone.",
+      "The world is a den of crazies.",
+      "What would the world be without women?"
+    ]
+  },
+  {
+    "key": "think-ccomp-be",
+    "head": "think",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 6,
+    "examples": [
+      "Most people think I'm crazy.",
+      "I think it is best not to be impolite.",
+      "I don't think, therefore I am not."
+    ]
+  },
+  {
+    "key": "take-nsubj-it",
+    "head": "take",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "It would take forever for me to explain everything.",
+      "It would take me too much time to explain to you why it's not going to work.",
+      "How long does it take to get to the station?"
+    ]
+  },
+  {
+    "key": "get-nsubj-I",
+    "head": "get",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "Back in high school, I got up at 6 a.m. every morning.",
+      "\"The phone is ringing.\" \"I'll get it.\"",
+      "So annoying... Now I get a headache whenever I use the computer!"
+    ]
+  },
+  {
+    "key": "find-nsubj-I",
+    "head": "find",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "Whenever I find something I like, it's too expensive.",
+      "I found a solution, but I found it so fast that it can't be the right solution.",
+      "I found a solution, but I found it so fast that it can't be the right solution."
+    ]
+  },
+  {
+    "key": "say-nsubj-you",
+    "head": "say",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "You are saying you intentionally hide your good looks?",
+      "How do you say that in Italian?",
+      "If you raise an eyebrow, it can mean \"I want to have sex with you\", but also \"I find that what you just said is completely idiotic.\""
+    ]
+  },
+  {
+    "key": "know-ccomp-be",
+    "head": "know",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 6,
+    "examples": [
+      "It is inevitable that I go to France someday, I just don't know when.",
+      "When you're trying to prove something, it helps to know it's true.",
+      "You don't know who I am."
+    ]
+  },
+  {
+    "key": "go-nsubj-you",
+    "head": "go",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "I was wondering if you were going to show up today.",
+      "\"Why aren't you going?\" \"Because I don't want to.\"",
+      "When you're beginning to look like the photo in your passport, you should go on a holiday."
+    ]
+  },
+  {
+    "key": "be-nsubj-we",
+    "head": "be",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 6,
+    "examples": [
+      "We don't see things as they are, but as we are.",
+      "The consensus indicates that we are opposed to the proposed idea.",
+      "When we are small, everything seems so big."
+    ]
+  },
+  {
+    "key": "want-nsubj-you",
+    "head": "want",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "It's because you don't want to be alone.",
+      "You wanted to tell me about freedom?",
+      "What do you want?"
+    ]
+  },
+  {
+    "key": "wonder-nsubj-I",
+    "head": "wonder",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "I can only wonder if this is the same for everyone else.",
+      "I've always wondered what it'd be like to have siblings.",
+      "I was wondering if you were going to show up today."
+    ]
+  },
+  {
+    "key": "feel-nsubj-I",
+    "head": "feel",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "For some reason I feel more alive at night.",
+      "\"I feel like playing cards.\" \"So do I.\"",
+      "I don't feel well."
+    ]
+  },
+  {
+    "key": "like-nsubj-you",
+    "head": "like",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "I thought you liked to learn new things.",
+      "Would you like something to drink?",
+      "Would you like to dance with me?"
+    ]
+  },
+  {
+    "key": "ask-ccomp-be",
+    "head": "ask",
+    "relation": "ccomp",
+    "arg_types": [
+      "be"
+    ],
+    "frequency": 5,
+    "examples": [
+      "If anyone was to ask what the point of the story is, I really don't know.",
+      "She's asking how that's possible.",
+      "\"What's the matter?\" asked the little white rabbit."
+    ]
+  },
+  {
+    "key": "speak-nsubj-I",
+    "head": "speak",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "I don't speak French well enough!",
+      "I don't speak Japanese.",
+      "It would be so cool if I could speak ten languages!"
+    ]
+  },
+  {
+    "key": "make-nsubj-you",
+    "head": "make",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "Stop it! You're making her feel uncomfortable!",
+      "You make me dream.",
+      "You made me lose my mind."
+    ]
+  },
+  {
+    "key": "have-mark-that",
+    "head": "have",
+    "relation": "mark",
+    "arg_types": [
+      "that"
+    ],
+    "frequency": 5,
+    "examples": [
+      "I suppose that behind each thing we have to do, there's something we want to do...",
+      "Mathematicians are poets, except that they have to prove what their fantasy creates.",
+      "The discrepancy between the stories of the two parties involved in the accident was so great that the authorities had a hard time deciding which side was telling the truth."
+    ]
+  },
+  {
+    "key": "lose-nsubj-I",
+    "head": "lose",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "I have lost my wallet.",
+      "Thanks to you I've lost my appetite.",
+      "You made me lose my mind."
+    ]
+  },
+  {
+    "key": "tell-nsubj-you",
+    "head": "tell",
+    "relation": "nsubj",
+    "arg_types": [
+      "nsubj"
+    ],
+    "frequency": 5,
+    "examples": [
+      "Mathematicians are like French people: whatever you tell them they translate it into their own language and turn it into something totally different.",
+      "You didn't tell him anything?",
+      "He doesn't want you to tell him about your sex life."
+    ]
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "spanish_translations": [
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The weather is cold today",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "She works at the hospital",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The movie was very long",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "I need to buy groceries",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The computer crashed yesterday",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "Children play in the park",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The restaurant serves Italian food",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "He drives a red car",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The book contains many chapters",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "Students study for exams",
+      "target_text": null
+    }
+  ],
+  "french_translations": [
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The weather is cold today",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "She works at the hospital",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The movie was very long",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "I need to buy groceries",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The computer crashed yesterday",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "Children play in the park",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The restaurant serves Italian food",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "He drives a red car",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "The book contains many chapters",
+      "target_text": null
+    },
+    {
+      "success": false,
+      "error": "No universal primitives detected",
+      "source_text": "Students study for exams",
+      "target_text": null
+    }
+  ],
+  "spanish_quality": {
+    "total_texts": 10,
+    "successful_translations": 0,
+    "failed_translations": 10,
+    "success_rate": 0.0,
+    "average_confidence": 0,
+    "primitive_usage": {},
+    "most_used_primitives": []
+  },
+  "french_quality": {
+    "total_texts": 10,
+    "successful_translations": 0,
+    "failed_translations": 10,
+    "success_rate": 0.0,
+    "average_confidence": 0,
+    "primitive_usage": {},
+    "most_used_primitives": []
+  },
+  "test_texts": [
+    "The weather is cold today",
+    "She works at the hospital",
+    "The movie was very long",
+    "I need to buy groceries",
+    "The computer crashed yesterday",
+    "Children play in the park",
+    "The restaurant serves Italian food",
+    "He drives a red car",
+    "The book contains many chapters",
+    "Students study for exams"
+  ]
+}

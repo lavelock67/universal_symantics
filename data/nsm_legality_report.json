@@ -1,0 +1,2182 @@
+{
+  "per_lang": {
+    "en": {
+      "avg_legality": 0.5721388888888899,
+      "templates": [
+        {
+          "idx": 0,
+          "primitive": "AtLocation",
+          "template": "something is in a place",
+          "legality": 0.42
+        },
+        {
+          "idx": 1,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 2,
+          "primitive": "PartOf",
+          "template": "one part is part of another thing",
+          "legality": 0.6
+        },
+        {
+          "idx": 3,
+          "primitive": "Causes",
+          "template": "something happens because something else happens",
+          "legality": 1.0
+        },
+        {
+          "idx": 4,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 5,
+          "primitive": "UsedFor",
+          "template": "someone can do something with this thing",
+          "legality": 0.6
+        },
+        {
+          "idx": 6,
+          "primitive": "SimilarTo",
+          "template": "this thing is like another thing",
+          "legality": 0.8833333333333333
+        },
+        {
+          "idx": 7,
+          "primitive": "DifferentFrom",
+          "template": "this thing is not like another thing",
+          "legality": 0.8999999999999999
+        },
+        {
+          "idx": 8,
+          "primitive": "Not",
+          "template": "someone does not do something",
+          "legality": 1.0
+        },
+        {
+          "idx": 9,
+          "primitive": "Exist",
+          "template": "there is something",
+          "legality": 0.5333333333333333
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "template": "this thing is like this",
+          "legality": 0.5599999999999999
+        }
+      ]
+    },
+    "es": {
+      "avg_legality": 0.375861111111112,
+      "templates": [
+        {
+          "idx": 0,
+          "primitive": "AtLocation",
+          "template": "algo está en un lugar",
+          "legality": 0.42
+        },
+        {
+          "idx": 1,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 2,
+          "primitive": "PartOf",
+          "template": "una parte es parte de otra cosa",
+          "legality": 0.39999999999999997
+        },
+        {
+          "idx": 3,
+          "primitive": "Causes",
+          "template": "algo pasa porque otra cosa pasa",
+          "legality": 1.0
+        },
+        {
+          "idx": 4,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 5,
+          "primitive": "UsedFor",
+          "template": "alguien puede hacer algo con esta cosa",
+          "legality": 0.6
+        },
+        {
+          "idx": 6,
+          "primitive": "SimilarTo",
+          "template": "esta cosa es como otra cosa",
+          "legality": 0.5833333333333334
+        },
+        {
+          "idx": 7,
+          "primitive": "DifferentFrom",
+          "template": "esta cosa no es como otra cosa",
+          "legality": 0.8999999999999999
+        },
+        {
+          "idx": 8,
+          "primitive": "Not",
+          "template": "alguien no hace algo",
+          "legality": 1.0
+        },
+        {
+          "idx": 9,
+          "primitive": "Exist",
+          "template": "hay algo",
+          "legality": 1.0
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "template": "esta cosa es así",
+          "legality": 0.35
+        }
+      ]
+    },
+    "fr": {
+      "avg_legality": 0.438902777777779,
+      "templates": [
+        {
+          "idx": 0,
+          "primitive": "AtLocation",
+          "template": "quelque chose est dans un lieu",
+          "legality": 0.35
+        },
+        {
+          "idx": 1,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 2,
+          "primitive": "PartOf",
+          "template": "une partie est partie d'une autre chose",
+          "legality": 0.6
+        },
+        {
+          "idx": 3,
+          "primitive": "Causes",
+          "template": "quelque chose arrive parce qu'une autre chose arrive",
+          "legality": 0.7375
+        },
+        {
+          "idx": 4,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 5,
+          "primitive": "UsedFor",
+          "template": "quelqu'un peut faire quelque chose avec cette chose",
+          "legality": 0.5249999999999999
+        },
+        {
+          "idx": 6,
+          "primitive": "SimilarTo",
+          "template": "cette chose est comme une autre chose",
+          "legality": 0.8999999999999999
+        },
+        {
+          "idx": 7,
+          "primitive": "DifferentFrom",
+          "template": "cette chose n'est pas comme une autre chose",
+          "legality": 0.9124999999999999
+        },
+        {
+          "idx": 8,
+          "primitive": "Not",
+          "template": "quelqu'un ne fait pas quelque chose",
+          "legality": 0.8833333333333333
+        },
+        {
+          "idx": 9,
+          "primitive": "Exist",
+          "template": "il y a quelque chose",
+          "legality": 0.72
+        },
+        {
+          "idx": 10,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 11,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 12,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 13,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 14,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 15,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 16,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 17,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 18,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 19,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 20,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 21,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 22,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 23,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 24,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 25,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 26,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 27,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 28,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 29,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 30,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 31,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 32,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 33,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 34,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 35,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 36,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 37,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 38,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 39,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 40,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 41,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 42,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 43,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 44,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 45,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 46,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 47,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 48,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 49,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 50,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 51,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 52,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 53,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 54,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 55,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 56,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 57,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 58,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 59,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 60,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 61,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 62,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 63,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 64,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 65,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 66,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 67,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 68,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 69,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 70,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 71,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 72,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 73,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 74,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 75,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 76,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 77,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 78,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 79,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 80,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 81,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 82,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 83,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 84,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 85,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 86,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 87,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 88,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 89,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 90,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 91,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 92,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 93,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 94,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 95,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 96,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 97,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 98,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 99,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 100,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 101,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 102,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 103,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 104,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 105,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 106,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 107,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 108,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 109,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 110,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 111,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 112,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 113,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 114,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 115,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 116,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 117,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 118,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        },
+        {
+          "idx": 119,
+          "primitive": "HasProperty",
+          "template": "cette chose est comme cela",
+          "legality": 0.42
+        }
+      ]
+    }
+  },
+  "overall": {
+    "avg_legality": 0.462300925925927
+  }
+}
