@@ -1,0 +1,1974 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": 1755888018.099961,
+    "total_entries": 111
+  },
+  "evidence_log": [
+    {
+      "primitive": "NOT",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is not on the mat",
+      "language": "en",
+      "evidence_text": "not",
+      "evidence_type": "lexical_match",
+      "evidence_details": {
+        "pattern": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+        "pattern_category": "nsm_negation",
+        "match_start": 11,
+        "match_end": 14,
+        "full_match": "not"
+      },
+      "timestamp": 1755888011.8837
+    },
+    {
+      "primitive": "AtLocation",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is not on the mat",
+      "language": "en",
+      "evidence_text": "on",
+      "evidence_type": "spatial_preposition",
+      "evidence_details": {
+        "pattern": "\\b(at|in|on|under|over|beside|near|far|inside|outside)\\b",
+        "pattern_category": "conceptnet_spatial",
+        "match_start": 15,
+        "match_end": 17,
+        "full_match": "on"
+      },
+      "timestamp": 1755888011.8846872
+    },
+    {
+      "primitive": "NOT",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "not",
+      "evidence_type": "lexical_match",
+      "evidence_details": {
+        "pattern": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+        "pattern_category": "nsm_negation",
+        "match_start": 5,
+        "match_end": 8,
+        "full_match": "not"
+      },
+      "timestamp": 1755888012.893457
+    },
+    {
+      "primitive": "DO",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 2,
+        "match_end": 4,
+        "full_match": "do"
+      },
+      "timestamp": 1755888012.893478
+    },
+    {
+      "primitive": "HAPPEN",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 2,
+        "match_end": 4,
+        "full_match": "do"
+      },
+      "timestamp": 1755888012.8934789
+    },
+    {
+      "primitive": "MOVE",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 2,
+        "match_end": 4,
+        "full_match": "do"
+      },
+      "timestamp": 1755888012.893481
+    },
+    {
+      "primitive": "TOUCH",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 2,
+        "match_end": 4,
+        "full_match": "do"
+      },
+      "timestamp": 1755888012.893483
+    },
+    {
+      "primitive": "LIKE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "like",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "nsm_similarity",
+        "match_start": 9,
+        "match_end": 13,
+        "full_match": "like"
+      },
+      "timestamp": 1755888012.893489
+    },
+    {
+      "primitive": "SIMILAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "like",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "nsm_similarity",
+        "match_start": 9,
+        "match_end": 13,
+        "full_match": "like"
+      },
+      "timestamp": 1755888012.8934898
+    },
+    {
+      "primitive": "DIFFERENT",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "like",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "nsm_similarity",
+        "match_start": 9,
+        "match_end": 13,
+        "full_match": "like"
+      },
+      "timestamp": 1755888012.893492
+    },
+    {
+      "primitive": "SimilarTo",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I do not like this weather",
+      "language": "en",
+      "evidence_text": "like",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(similar|like|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "conceptnet_similarity",
+        "match_start": 9,
+        "match_end": 13,
+        "full_match": "like"
+      },
+      "timestamp": 1755888012.893497
+    },
+    {
+      "primitive": "NOT",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "She does not work here",
+      "language": "en",
+      "evidence_text": "not",
+      "evidence_type": "lexical_match",
+      "evidence_details": {
+        "pattern": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+        "pattern_category": "nsm_negation",
+        "match_start": 9,
+        "match_end": 12,
+        "full_match": "not"
+      },
+      "timestamp": 1755888013.324623
+    },
+    {
+      "primitive": "HERE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "She does not work here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 18,
+        "match_end": 22,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.324637
+    },
+    {
+      "primitive": "WHERE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "She does not work here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 18,
+        "match_end": 22,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.324639
+    },
+    {
+      "primitive": "ABOVE",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "She does not work here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 18,
+        "match_end": 22,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.32464
+    },
+    {
+      "primitive": "BELOW",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "She does not work here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 18,
+        "match_end": 22,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.324641
+    },
+    {
+      "primitive": "NEAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "She does not work here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 18,
+        "match_end": 22,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.324642
+    },
+    {
+      "primitive": "FAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "She does not work here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 18,
+        "match_end": 22,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.3246431
+    },
+    {
+      "primitive": "CAN",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "can"
+      },
+      "timestamp": 1755888013.7411861
+    },
+    {
+      "primitive": "MUST",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "can"
+      },
+      "timestamp": 1755888013.741189
+    },
+    {
+      "primitive": "SHOULD",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "can"
+      },
+      "timestamp": 1755888013.74119
+    },
+    {
+      "primitive": "MIGHT",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "can"
+      },
+      "timestamp": 1755888013.7411919
+    },
+    {
+      "primitive": "WILL",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "can"
+      },
+      "timestamp": 1755888013.741193
+    },
+    {
+      "primitive": "ALL",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "all",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 3,
+        "full_match": "all"
+      },
+      "timestamp": 1755888013.741196
+    },
+    {
+      "primitive": "SOME",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "all",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 3,
+        "full_match": "all"
+      },
+      "timestamp": 1755888013.741197
+    },
+    {
+      "primitive": "MANY",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "all",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 3,
+        "full_match": "all"
+      },
+      "timestamp": 1755888013.741198
+    },
+    {
+      "primitive": "FEW",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "all",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 3,
+        "full_match": "all"
+      },
+      "timestamp": 1755888013.7412
+    },
+    {
+      "primitive": "MOST",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "all",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 3,
+        "full_match": "all"
+      },
+      "timestamp": 1755888013.741201
+    },
+    {
+      "primitive": "HERE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 22,
+        "match_end": 26,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.741209
+    },
+    {
+      "primitive": "WHERE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 22,
+        "match_end": 26,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.741211
+    },
+    {
+      "primitive": "ABOVE",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 22,
+        "match_end": 26,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.741212
+    },
+    {
+      "primitive": "BELOW",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 22,
+        "match_end": 26,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.741214
+    },
+    {
+      "primitive": "NEAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 22,
+        "match_end": 26,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.741215
+    },
+    {
+      "primitive": "FAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "All children can play here",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 22,
+        "match_end": 26,
+        "full_match": "here"
+      },
+      "timestamp": 1755888013.741216
+    },
+    {
+      "primitive": "ALL",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "some",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 4,
+        "full_match": "some"
+      },
+      "timestamp": 1755888014.075947
+    },
+    {
+      "primitive": "SOME",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "some",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 4,
+        "full_match": "some"
+      },
+      "timestamp": 1755888014.0759501
+    },
+    {
+      "primitive": "MANY",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "some",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 4,
+        "full_match": "some"
+      },
+      "timestamp": 1755888014.075951
+    },
+    {
+      "primitive": "FEW",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "some",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 4,
+        "full_match": "some"
+      },
+      "timestamp": 1755888014.075952
+    },
+    {
+      "primitive": "MOST",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "some",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 0,
+        "match_end": 4,
+        "full_match": "some"
+      },
+      "timestamp": 1755888014.075954
+    },
+    {
+      "primitive": "THINK",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "want",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 12,
+        "match_end": 16,
+        "full_match": "want"
+      },
+      "timestamp": 1755888014.075975
+    },
+    {
+      "primitive": "KNOW",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "want",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 12,
+        "match_end": 16,
+        "full_match": "want"
+      },
+      "timestamp": 1755888014.075978
+    },
+    {
+      "primitive": "WANT",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "want",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 12,
+        "match_end": 16,
+        "full_match": "want"
+      },
+      "timestamp": 1755888014.07598
+    },
+    {
+      "primitive": "FEEL",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "want",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 12,
+        "match_end": 16,
+        "full_match": "want"
+      },
+      "timestamp": 1755888014.0759811
+    },
+    {
+      "primitive": "SEE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "want",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 12,
+        "match_end": 16,
+        "full_match": "want"
+      },
+      "timestamp": 1755888014.075982
+    },
+    {
+      "primitive": "HEAR",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "want",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 12,
+        "match_end": 16,
+        "full_match": "want"
+      },
+      "timestamp": 1755888014.075995
+    },
+    {
+      "primitive": "WANT",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3207330107688904,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "desire, want, wish, desire",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3207330107688904,
+        "description": "desire, want, wish, desire",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888014.1649878
+    },
+    {
+      "primitive": "Desires",
+      "detection_type": "conceptnet",
+      "detection_method": "semantic",
+      "confidence": 0.3119543194770813,
+      "source_text": "Some people want to help",
+      "language": "en",
+      "evidence_text": "desire relation, want, desire, wish",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3119543194770813,
+        "description": "desire relation, want, desire, wish",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888014.374891
+    },
+    {
+      "primitive": "GOOD",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The weather is good today",
+      "language": "en",
+      "evidence_text": "good",
+      "evidence_type": "evaluator_word",
+      "evidence_details": {
+        "pattern": "\\b(good|bad|nice|terrible|wonderful|awful|excellent|horrible)\\b",
+        "pattern_category": "nsm_evaluator",
+        "match_start": 15,
+        "match_end": 19,
+        "full_match": "good"
+      },
+      "timestamp": 1755888014.424741
+    },
+    {
+      "primitive": "BAD",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The weather is good today",
+      "language": "en",
+      "evidence_text": "good",
+      "evidence_type": "evaluator_word",
+      "evidence_details": {
+        "pattern": "\\b(good|bad|nice|terrible|wonderful|awful|excellent|horrible)\\b",
+        "pattern_category": "nsm_evaluator",
+        "match_start": 15,
+        "match_end": 19,
+        "full_match": "good"
+      },
+      "timestamp": 1755888014.424744
+    },
+    {
+      "primitive": "GOOD",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3755725920200348,
+      "source_text": "The weather is good today",
+      "language": "en",
+      "evidence_text": "positive evaluation, good, nice, excellent",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3755725920200348,
+        "description": "positive evaluation, good, nice, excellent",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888014.582888
+    },
+    {
+      "primitive": "BIG",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This book is big and heavy",
+      "language": "en",
+      "evidence_text": "big",
+      "evidence_type": "descriptor_word",
+      "evidence_details": {
+        "pattern": "\\b(big|small|large|little|huge|tiny|long|short|wide|narrow)\\b",
+        "pattern_category": "nsm_descriptor",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "big"
+      },
+      "timestamp": 1755888014.75822
+    },
+    {
+      "primitive": "SMALL",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This book is big and heavy",
+      "language": "en",
+      "evidence_text": "big",
+      "evidence_type": "descriptor_word",
+      "evidence_details": {
+        "pattern": "\\b(big|small|large|little|huge|tiny|long|short|wide|narrow)\\b",
+        "pattern_category": "nsm_descriptor",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "big"
+      },
+      "timestamp": 1755888014.758223
+    },
+    {
+      "primitive": "LONG",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This book is big and heavy",
+      "language": "en",
+      "evidence_text": "big",
+      "evidence_type": "descriptor_word",
+      "evidence_details": {
+        "pattern": "\\b(big|small|large|little|huge|tiny|long|short|wide|narrow)\\b",
+        "pattern_category": "nsm_descriptor",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "big"
+      },
+      "timestamp": 1755888014.7582238
+    },
+    {
+      "primitive": "SHORT",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This book is big and heavy",
+      "language": "en",
+      "evidence_text": "big",
+      "evidence_type": "descriptor_word",
+      "evidence_details": {
+        "pattern": "\\b(big|small|large|little|huge|tiny|long|short|wide|narrow)\\b",
+        "pattern_category": "nsm_descriptor",
+        "match_start": 13,
+        "match_end": 16,
+        "full_match": "big"
+      },
+      "timestamp": 1755888014.758225
+    },
+    {
+      "primitive": "MANY",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.4293675124645233,
+      "source_text": "This book is big and heavy",
+      "language": "en",
+      "evidence_text": "large quantity, many, much, numerous",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.4293675124645233,
+        "description": "large quantity, many, much, numerous",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888014.908214
+    },
+    {
+      "primitive": "BIG",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.46023884415626526,
+      "source_text": "This book is big and heavy",
+      "language": "en",
+      "evidence_text": "large size, big, large, huge",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.46023884415626526,
+        "description": "large size, big, large, huge",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888014.9689379
+    },
+    {
+      "primitive": "THINK",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I think you are right",
+      "language": "en",
+      "evidence_text": "think",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 2,
+        "match_end": 7,
+        "full_match": "think"
+      },
+      "timestamp": 1755888015.12367
+    },
+    {
+      "primitive": "KNOW",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I think you are right",
+      "language": "en",
+      "evidence_text": "think",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 2,
+        "match_end": 7,
+        "full_match": "think"
+      },
+      "timestamp": 1755888015.1236732
+    },
+    {
+      "primitive": "WANT",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I think you are right",
+      "language": "en",
+      "evidence_text": "think",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 2,
+        "match_end": 7,
+        "full_match": "think"
+      },
+      "timestamp": 1755888015.1236742
+    },
+    {
+      "primitive": "FEEL",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I think you are right",
+      "language": "en",
+      "evidence_text": "think",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 2,
+        "match_end": 7,
+        "full_match": "think"
+      },
+      "timestamp": 1755888015.1236749
+    },
+    {
+      "primitive": "SEE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I think you are right",
+      "language": "en",
+      "evidence_text": "think",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 2,
+        "match_end": 7,
+        "full_match": "think"
+      },
+      "timestamp": 1755888015.1236758
+    },
+    {
+      "primitive": "HEAR",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "I think you are right",
+      "language": "en",
+      "evidence_text": "think",
+      "evidence_type": "mental_verb",
+      "evidence_details": {
+        "pattern": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b",
+        "pattern_category": "nsm_mental",
+        "match_start": 2,
+        "match_end": 7,
+        "full_match": "think"
+      },
+      "timestamp": 1755888015.123677
+    },
+    {
+      "primitive": "GOOD",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.30172765254974365,
+      "source_text": "I think you are right",
+      "language": "en",
+      "evidence_text": "positive evaluation, good, nice, excellent",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.30172765254974365,
+        "description": "positive evaluation, good, nice, excellent",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888015.293092
+    },
+    {
+      "primitive": "BECAUSE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The rain caused the flood",
+      "language": "en",
+      "evidence_text": "caused",
+      "evidence_type": "causal_word",
+      "evidence_details": {
+        "pattern": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b",
+        "pattern_category": "nsm_causation",
+        "match_start": 9,
+        "match_end": 15,
+        "full_match": "caused"
+      },
+      "timestamp": 1755888015.483155
+    },
+    {
+      "primitive": "Causes",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The rain caused the flood",
+      "language": "en",
+      "evidence_text": "caused",
+      "evidence_type": "causal_word",
+      "evidence_details": {
+        "pattern": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b",
+        "pattern_category": "conceptnet_causal",
+        "match_start": 9,
+        "match_end": 15,
+        "full_match": "caused"
+      },
+      "timestamp": 1755888015.4831622
+    },
+    {
+      "primitive": "LIKE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "similar",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "nsm_similarity",
+        "match_start": 8,
+        "match_end": 15,
+        "full_match": "similar"
+      },
+      "timestamp": 1755888015.824754
+    },
+    {
+      "primitive": "SIMILAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "similar",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "nsm_similarity",
+        "match_start": 8,
+        "match_end": 15,
+        "full_match": "similar"
+      },
+      "timestamp": 1755888015.824756
+    },
+    {
+      "primitive": "DIFFERENT",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "similar",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "nsm_similarity",
+        "match_start": 8,
+        "match_end": 15,
+        "full_match": "similar"
+      },
+      "timestamp": 1755888015.824758
+    },
+    {
+      "primitive": "SimilarTo",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "similar",
+      "evidence_type": "similarity_word",
+      "evidence_details": {
+        "pattern": "\\b(similar|like|same|different|alike|unlike|resemble|match)\\b",
+        "pattern_category": "conceptnet_similarity",
+        "match_start": 8,
+        "match_end": 15,
+        "full_match": "similar"
+      },
+      "timestamp": 1755888015.8247628
+    },
+    {
+      "primitive": "BECAUSE",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3535623848438263,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "causation, because, since, as",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3535623848438263,
+        "description": "causation, because, since, as",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888015.873633
+    },
+    {
+      "primitive": "LIKE",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.5953297019004822,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "similarity, like, similar, same",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.5953297019004822,
+        "description": "similarity, like, similar, same",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888015.8847659
+    },
+    {
+      "primitive": "MANY",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3684142529964447,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "large quantity, many, much, numerous",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3684142529964447,
+        "description": "large quantity, many, much, numerous",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888015.958051
+    },
+    {
+      "primitive": "BIG",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.33090919256210327,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "large size, big, large, huge",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.33090919256210327,
+        "description": "large size, big, large, huge",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.016811
+    },
+    {
+      "primitive": "SMALL",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3217979967594147,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "small size, small, little, tiny",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3217979967594147,
+        "description": "small size, small, little, tiny",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.03313
+    },
+    {
+      "primitive": "SimilarTo",
+      "detection_type": "conceptnet",
+      "detection_method": "semantic",
+      "confidence": 0.523869514465332,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "similarity relation, similar, like, same",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.523869514465332,
+        "description": "similarity relation, similar, like, same",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.0820339
+    },
+    {
+      "primitive": "PartOf",
+      "detection_type": "conceptnet",
+      "detection_method": "semantic",
+      "confidence": 0.32557979226112366,
+      "source_text": "This is similar to that",
+      "language": "en",
+      "evidence_text": "part-whole relation, part of, component",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.32557979226112366,
+        "description": "part-whole relation, part of, component",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.093044
+    },
+    {
+      "primitive": "PartOf",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The part of the machine",
+      "language": "en",
+      "evidence_text": "part of",
+      "evidence_type": "part_whole_phrase",
+      "evidence_details": {
+        "pattern": "\\b(part of|piece of|component of|element of|member of)\\b",
+        "pattern_category": "conceptnet_structural",
+        "match_start": 4,
+        "match_end": 11,
+        "full_match": "part of"
+      },
+      "timestamp": 1755888016.166497
+    },
+    {
+      "primitive": "BIG",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3348393738269806,
+      "source_text": "The part of the machine",
+      "language": "en",
+      "evidence_text": "large size, big, large, huge",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3348393738269806,
+        "description": "large size, big, large, huge",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.36782
+    },
+    {
+      "primitive": "SMALL",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3412055969238281,
+      "source_text": "The part of the machine",
+      "language": "en",
+      "evidence_text": "small size, small, little, tiny",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3412055969238281,
+        "description": "small size, small, little, tiny",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.382962
+    },
+    {
+      "primitive": "PartOf",
+      "detection_type": "conceptnet",
+      "detection_method": "semantic",
+      "confidence": 0.5038712620735168,
+      "source_text": "The part of the machine",
+      "language": "en",
+      "evidence_text": "part-whole relation, part of, component",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.5038712620735168,
+        "description": "part-whole relation, part of, component",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.435426
+    },
+    {
+      "primitive": "UsedFor",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "This tool is used for cutting",
+      "language": "en",
+      "evidence_text": "used for",
+      "evidence_type": "purpose_phrase",
+      "evidence_details": {
+        "pattern": "\\b(used for|purpose|function|serve|designed for|intended for)\\b",
+        "pattern_category": "conceptnet_functional",
+        "match_start": 13,
+        "match_end": 21,
+        "full_match": "used for"
+      },
+      "timestamp": 1755888016.5082061
+    },
+    {
+      "primitive": "CAN",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 3,
+        "match_end": 6,
+        "full_match": "can"
+      },
+      "timestamp": 1755888016.850006
+    },
+    {
+      "primitive": "MUST",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 3,
+        "match_end": 6,
+        "full_match": "can"
+      },
+      "timestamp": 1755888016.8500092
+    },
+    {
+      "primitive": "SHOULD",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 3,
+        "match_end": 6,
+        "full_match": "can"
+      },
+      "timestamp": 1755888016.8500102
+    },
+    {
+      "primitive": "MIGHT",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 3,
+        "match_end": 6,
+        "full_match": "can"
+      },
+      "timestamp": 1755888016.8500109
+    },
+    {
+      "primitive": "WILL",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "can",
+      "evidence_type": "modal_verb",
+      "evidence_details": {
+        "pattern": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+        "pattern_category": "nsm_modality",
+        "match_start": 3,
+        "match_end": 6,
+        "full_match": "can"
+      },
+      "timestamp": 1755888016.8500118
+    },
+    {
+      "primitive": "ALL",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "many",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 10,
+        "match_end": 14,
+        "full_match": "many"
+      },
+      "timestamp": 1755888016.850015
+    },
+    {
+      "primitive": "SOME",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "many",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 10,
+        "match_end": 14,
+        "full_match": "many"
+      },
+      "timestamp": 1755888016.850016
+    },
+    {
+      "primitive": "MANY",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "many",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 10,
+        "match_end": 14,
+        "full_match": "many"
+      },
+      "timestamp": 1755888016.850017
+    },
+    {
+      "primitive": "FEW",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "many",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 10,
+        "match_end": 14,
+        "full_match": "many"
+      },
+      "timestamp": 1755888016.850018
+    },
+    {
+      "primitive": "MOST",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "many",
+      "evidence_type": "quantifier_word",
+      "evidence_details": {
+        "pattern": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+        "pattern_category": "nsm_quantifier",
+        "match_start": 10,
+        "match_end": 14,
+        "full_match": "many"
+      },
+      "timestamp": 1755888016.850019
+    },
+    {
+      "primitive": "DO",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 7,
+        "match_end": 9,
+        "full_match": "do"
+      },
+      "timestamp": 1755888016.850025
+    },
+    {
+      "primitive": "HAPPEN",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 7,
+        "match_end": 9,
+        "full_match": "do"
+      },
+      "timestamp": 1755888016.850026
+    },
+    {
+      "primitive": "MOVE",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 7,
+        "match_end": 9,
+        "full_match": "do"
+      },
+      "timestamp": 1755888016.850027
+    },
+    {
+      "primitive": "TOUCH",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "do",
+      "evidence_type": "action_verb",
+      "evidence_details": {
+        "pattern": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+        "pattern_category": "nsm_action",
+        "match_start": 7,
+        "match_end": 9,
+        "full_match": "do"
+      },
+      "timestamp": 1755888016.850028
+    },
+    {
+      "primitive": "CapableOf",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "can do",
+      "evidence_type": "ability_phrase",
+      "evidence_details": {
+        "pattern": "\\b(can do|able to|capable of|know how to|skilled at)\\b",
+        "pattern_category": "conceptnet_cognitive",
+        "match_start": 3,
+        "match_end": 9,
+        "full_match": "can do"
+      },
+      "timestamp": 1755888016.85004
+    },
+    {
+      "primitive": "CAN",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.4646371304988861,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "ability, can, able to, capable of",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.4646371304988861,
+        "description": "ability, can, able to, capable of",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.925193
+    },
+    {
+      "primitive": "MANY",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.4055383503437042,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "large quantity, many, much, numerous",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.4055383503437042,
+        "description": "large quantity, many, much, numerous",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888016.9852722
+    },
+    {
+      "primitive": "BIG",
+      "detection_type": "nsm",
+      "detection_method": "semantic",
+      "confidence": 0.3018341362476349,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "large size, big, large, huge",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3018341362476349,
+        "description": "large size, big, large, huge",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888017.043232
+    },
+    {
+      "primitive": "CapableOf",
+      "detection_type": "conceptnet",
+      "detection_method": "semantic",
+      "confidence": 0.4230296313762665,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "ability relation, can, able to, capable",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.4230296313762665,
+        "description": "ability relation, can, able to, capable",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888017.140144
+    },
+    {
+      "primitive": "HasProperty",
+      "detection_type": "conceptnet",
+      "detection_method": "semantic",
+      "confidence": 0.3309016227722168,
+      "source_text": "He can do many things",
+      "language": "en",
+      "evidence_text": "property relation, has, property, characteristic",
+      "evidence_type": "semantic_similarity",
+      "evidence_details": {
+        "similarity_score": 0.3309016227722168,
+        "description": "property relation, has, property, characteristic",
+        "threshold": 0.3
+      },
+      "timestamp": 1755888017.166537
+    },
+    {
+      "primitive": "HERE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 11,
+        "match_end": 15,
+        "full_match": "here"
+      },
+      "timestamp": 1755888017.62478
+    },
+    {
+      "primitive": "WHERE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 11,
+        "match_end": 15,
+        "full_match": "here"
+      },
+      "timestamp": 1755888017.6247838
+    },
+    {
+      "primitive": "ABOVE",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 11,
+        "match_end": 15,
+        "full_match": "here"
+      },
+      "timestamp": 1755888017.624786
+    },
+    {
+      "primitive": "BELOW",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 11,
+        "match_end": 15,
+        "full_match": "here"
+      },
+      "timestamp": 1755888017.6247869
+    },
+    {
+      "primitive": "NEAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 11,
+        "match_end": 15,
+        "full_match": "here"
+      },
+      "timestamp": 1755888017.624789
+    },
+    {
+      "primitive": "FAR",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "here",
+      "evidence_type": "location_word",
+      "evidence_details": {
+        "pattern": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+        "pattern_category": "nsm_location",
+        "match_start": 11,
+        "match_end": 15,
+        "full_match": "here"
+      },
+      "timestamp": 1755888017.62479
+    },
+    {
+      "primitive": "NOW",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "now",
+      "evidence_type": "temporal_word",
+      "evidence_details": {
+        "pattern": "\\b(now|then|when|before|after|during|while|since|until|always|never)\\b",
+        "pattern_category": "nsm_time",
+        "match_start": 16,
+        "match_end": 19,
+        "full_match": "now"
+      },
+      "timestamp": 1755888017.624794
+    },
+    {
+      "primitive": "WHEN",
+      "detection_type": "conceptnet",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "now",
+      "evidence_type": "temporal_word",
+      "evidence_details": {
+        "pattern": "\\b(now|then|when|before|after|during|while|since|until|always|never)\\b",
+        "pattern_category": "nsm_time",
+        "match_start": 16,
+        "match_end": 19,
+        "full_match": "now"
+      },
+      "timestamp": 1755888017.624795
+    },
+    {
+      "primitive": "BEFORE",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "now",
+      "evidence_type": "temporal_word",
+      "evidence_details": {
+        "pattern": "\\b(now|then|when|before|after|during|while|since|until|always|never)\\b",
+        "pattern_category": "nsm_time",
+        "match_start": 16,
+        "match_end": 19,
+        "full_match": "now"
+      },
+      "timestamp": 1755888017.624796
+    },
+    {
+      "primitive": "AFTER",
+      "detection_type": "nsm",
+      "detection_method": "pattern",
+      "confidence": 0.7,
+      "source_text": "The cat is here now",
+      "language": "en",
+      "evidence_text": "now",
+      "evidence_type": "temporal_word",
+      "evidence_details": {
+        "pattern": "\\b(now|then|when|before|after|during|while|since|until|always|never)\\b",
+        "pattern_category": "nsm_time",
+        "match_start": 16,
+        "match_end": 19,
+        "full_match": "now"
+      },
+      "timestamp": 1755888017.624798
+    }
+  ],
+  "detection_stats": {
+    "nsm_pattern": 51,
+    "total_nsm": 66,
+    "total_detections": 111,
+    "conceptnet_pattern": 39,
+    "total_conceptnet": 45,
+    "nsm_semantic": 15,
+    "conceptnet_semantic": 6
+  }
+}
