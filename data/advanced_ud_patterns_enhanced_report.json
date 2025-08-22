@@ -1,0 +1,845 @@
+{
+  "test_configuration": {
+    "num_test_texts": 15,
+    "languages": [
+      "en"
+    ],
+    "timestamp": 1755885733.03796
+  },
+  "detection_results": [
+    {
+      "text": "The red car is parked near the building",
+      "language": "en",
+      "primitives": [],
+      "patterns_matched": [],
+      "confidence": 0.0,
+      "doc_info": {
+        "num_tokens": 8,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 2,
+          "ADJ": 1,
+          "NOUN": 2,
+          "AUX": 1,
+          "VERB": 1,
+          "ADP": 1
+        }
+      },
+      "baseline_primitives": [
+        "HasProperty",
+        "NEAR"
+      ]
+    },
+    {
+      "text": "The cat is on the mat",
+      "language": "en",
+      "primitives": [],
+      "patterns_matched": [],
+      "confidence": 0.0,
+      "doc_info": {
+        "num_tokens": 6,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 2,
+          "NOUN": 2,
+          "AUX": 1,
+          "ADP": 1
+        }
+      },
+      "baseline_primitives": [
+        "HasProperty",
+        "AtLocation"
+      ]
+    },
+    {
+      "text": "This is similar to that",
+      "language": "en",
+      "primitives": [],
+      "patterns_matched": [],
+      "confidence": 0.0,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "PRON": 2,
+          "AUX": 1,
+          "ADJ": 1,
+          "ADP": 1
+        }
+      },
+      "baseline_primitives": [
+        "HasProperty",
+        "SIMILAR",
+        "SimilarTo",
+        "THIS"
+      ]
+    },
+    {
+      "text": "The book contains important information",
+      "language": "en",
+      "primitives": [
+        "action",
+        "possession"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_dobj",
+          "primitive_type": "action",
+          "confidence": 0.9,
+          "tokens": [
+            "book",
+            "contains",
+            "information"
+          ],
+          "lemmas": [
+            "book",
+            "contain",
+            "information"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9620993733406067,
+          "final_score": 0.9310496866703033
+        },
+        {
+          "pattern_name": "nsubj_verb_det_noun",
+          "primitive_type": "possession",
+          "confidence": 0.8,
+          "tokens": [
+            "book",
+            "contains",
+            "information"
+          ],
+          "lemmas": [
+            "book",
+            "contain",
+            "information"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9620993733406067,
+          "final_score": 0.8810496866703034
+        }
+      ],
+      "confidence": 1.0,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 1,
+          "NOUN": 2,
+          "VERB": 1,
+          "ADJ": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The weather is cold today",
+      "language": "en",
+      "primitives": [
+        "property"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_cop_amod",
+          "primitive_type": "property",
+          "confidence": 0.9,
+          "tokens": [
+            "weather",
+            "is",
+            "cold"
+          ],
+          "lemmas": [
+            "weather",
+            "be",
+            "cold"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "acomp"
+          ],
+          "pos": [
+            "NOUN",
+            "AUX",
+            "ADJ"
+          ],
+          "semantic_score": 0.9580771923065186,
+          "final_score": 0.9290385961532592
+        }
+      ],
+      "confidence": 0.9290385961532592,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 1,
+          "NOUN": 2,
+          "AUX": 1,
+          "ADJ": 1
+        }
+      },
+      "baseline_primitives": [
+        "HasProperty"
+      ]
+    },
+    {
+      "text": "She works at the hospital",
+      "language": "en",
+      "primitives": [],
+      "patterns_matched": [],
+      "confidence": 0.0,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "PRON": 1,
+          "VERB": 1,
+          "ADP": 1,
+          "DET": 1,
+          "NOUN": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The movie was very long",
+      "language": "en",
+      "primitives": [
+        "property"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_cop_amod",
+          "primitive_type": "property",
+          "confidence": 0.9,
+          "tokens": [
+            "movie",
+            "was",
+            "long"
+          ],
+          "lemmas": [
+            "movie",
+            "be",
+            "long"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "acomp"
+          ],
+          "pos": [
+            "NOUN",
+            "AUX",
+            "ADJ"
+          ],
+          "semantic_score": 0.9610683917999268,
+          "final_score": 0.9305341958999633
+        }
+      ],
+      "confidence": 0.9305341958999633,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 1,
+          "NOUN": 1,
+          "AUX": 1,
+          "ADV": 1,
+          "ADJ": 1
+        }
+      },
+      "baseline_primitives": [
+        "LONG",
+        "VERY"
+      ]
+    },
+    {
+      "text": "I need to buy groceries",
+      "language": "en",
+      "primitives": [],
+      "patterns_matched": [],
+      "confidence": 0.0,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "PRON": 1,
+          "VERB": 2,
+          "PART": 1,
+          "NOUN": 1
+        }
+      },
+      "baseline_primitives": [
+        "I"
+      ]
+    },
+    {
+      "text": "Children play in the park",
+      "language": "en",
+      "primitives": [
+        "location"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_prep_pobj",
+          "primitive_type": "location",
+          "confidence": 0.8,
+          "tokens": [
+            "Children",
+            "play",
+            "in",
+            "park"
+          ],
+          "lemmas": [
+            "child",
+            "play",
+            "in",
+            "park"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "prep",
+            "pobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "ADP",
+            "NOUN"
+          ],
+          "semantic_score": 0.9940965175628662,
+          "final_score": 0.8970482587814331
+        }
+      ],
+      "confidence": 0.8970482587814331,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "NOUN": 2,
+          "VERB": 1,
+          "ADP": 1,
+          "DET": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The restaurant serves Italian food",
+      "language": "en",
+      "primitives": [
+        "action",
+        "possession"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_dobj",
+          "primitive_type": "action",
+          "confidence": 0.9,
+          "tokens": [
+            "restaurant",
+            "serves",
+            "food"
+          ],
+          "lemmas": [
+            "restaurant",
+            "serve",
+            "food"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.7921395897865295,
+          "final_score": 0.8460697948932647
+        },
+        {
+          "pattern_name": "nsubj_verb_det_noun",
+          "primitive_type": "possession",
+          "confidence": 0.8,
+          "tokens": [
+            "restaurant",
+            "serves",
+            "food"
+          ],
+          "lemmas": [
+            "restaurant",
+            "serve",
+            "food"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.7921395897865295,
+          "final_score": 0.7960697948932648
+        }
+      ],
+      "confidence": 0.9460697948932647,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 1,
+          "NOUN": 2,
+          "VERB": 1,
+          "ADJ": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The dog chased the cat",
+      "language": "en",
+      "primitives": [
+        "action",
+        "possession"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_dobj",
+          "primitive_type": "action",
+          "confidence": 0.9,
+          "tokens": [
+            "dog",
+            "chased",
+            "cat"
+          ],
+          "lemmas": [
+            "dog",
+            "chase",
+            "cat"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9546777606010437,
+          "final_score": 0.9273388803005218
+        },
+        {
+          "pattern_name": "nsubj_verb_det_noun",
+          "primitive_type": "possession",
+          "confidence": 0.8,
+          "tokens": [
+            "dog",
+            "chased",
+            "cat"
+          ],
+          "lemmas": [
+            "dog",
+            "chase",
+            "cat"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9546777606010437,
+          "final_score": 0.8773388803005219
+        }
+      ],
+      "confidence": 1.0,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 2,
+          "NOUN": 2,
+          "VERB": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The teacher explained the lesson",
+      "language": "en",
+      "primitives": [
+        "action",
+        "possession"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_dobj",
+          "primitive_type": "action",
+          "confidence": 0.9,
+          "tokens": [
+            "teacher",
+            "explained",
+            "lesson"
+          ],
+          "lemmas": [
+            "teacher",
+            "explain",
+            "lesson"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9845533967018127,
+          "final_score": 0.9422766983509063
+        },
+        {
+          "pattern_name": "nsubj_verb_det_noun",
+          "primitive_type": "possession",
+          "confidence": 0.8,
+          "tokens": [
+            "teacher",
+            "explained",
+            "lesson"
+          ],
+          "lemmas": [
+            "teacher",
+            "explain",
+            "lesson"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9845533967018127,
+          "final_score": 0.8922766983509064
+        }
+      ],
+      "confidence": 1.0,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 2,
+          "NOUN": 2,
+          "VERB": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The student studied for the exam",
+      "language": "en",
+      "primitives": [
+        "location"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_prep_pobj",
+          "primitive_type": "location",
+          "confidence": 0.8,
+          "tokens": [
+            "student",
+            "studied",
+            "for",
+            "exam"
+          ],
+          "lemmas": [
+            "student",
+            "study",
+            "for",
+            "exam"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "prep",
+            "pobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "ADP",
+            "NOUN"
+          ],
+          "semantic_score": 0.9645503163337708,
+          "final_score": 0.8822751581668854
+        }
+      ],
+      "confidence": 0.8822751581668854,
+      "doc_info": {
+        "num_tokens": 6,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 2,
+          "NOUN": 2,
+          "VERB": 1,
+          "ADP": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The company hired new employees",
+      "language": "en",
+      "primitives": [
+        "action",
+        "possession"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_dobj",
+          "primitive_type": "action",
+          "confidence": 0.9,
+          "tokens": [
+            "company",
+            "hired",
+            "employees"
+          ],
+          "lemmas": [
+            "company",
+            "hire",
+            "employee"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.8507547378540039,
+          "final_score": 0.8753773689270019
+        },
+        {
+          "pattern_name": "nsubj_verb_det_noun",
+          "primitive_type": "possession",
+          "confidence": 0.8,
+          "tokens": [
+            "company",
+            "hired",
+            "employees"
+          ],
+          "lemmas": [
+            "company",
+            "hire",
+            "employee"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.8507547378540039,
+          "final_score": 0.825377368927002
+        }
+      ],
+      "confidence": 0.9753773689270019,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 1,
+          "NOUN": 2,
+          "VERB": 1,
+          "ADJ": 1
+        }
+      },
+      "baseline_primitives": []
+    },
+    {
+      "text": "The government passed the law",
+      "language": "en",
+      "primitives": [
+        "action",
+        "possession"
+      ],
+      "patterns_matched": [
+        {
+          "pattern_name": "nsubj_verb_dobj",
+          "primitive_type": "action",
+          "confidence": 0.9,
+          "tokens": [
+            "government",
+            "passed",
+            "law"
+          ],
+          "lemmas": [
+            "government",
+            "pass",
+            "law"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9655933976173401,
+          "final_score": 0.93279669880867
+        },
+        {
+          "pattern_name": "nsubj_verb_det_noun",
+          "primitive_type": "possession",
+          "confidence": 0.8,
+          "tokens": [
+            "government",
+            "passed",
+            "law"
+          ],
+          "lemmas": [
+            "government",
+            "pass",
+            "law"
+          ],
+          "deps": [
+            "nsubj",
+            "ROOT",
+            "dobj"
+          ],
+          "pos": [
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "semantic_score": 0.9655933976173401,
+          "final_score": 0.8827966988086701
+        }
+      ],
+      "confidence": 1.0,
+      "doc_info": {
+        "num_tokens": 5,
+        "num_sentences": 1,
+        "pos_distribution": {
+          "DET": 2,
+          "NOUN": 2,
+          "VERB": 1
+        }
+      },
+      "baseline_primitives": []
+    }
+  ],
+  "pattern_performance": {
+    "nsubj_verb_dobj": {
+      "matches": 6,
+      "total_confidence": 5.4549091279506685,
+      "successful_detections": 6,
+      "baseline_agreement": 0,
+      "avg_confidence": 0.9091515213251115,
+      "success_rate": 1.0,
+      "agreement_rate": 0.0
+    },
+    "nsubj_verb_det_noun": {
+      "matches": 6,
+      "total_confidence": 5.154909127950669,
+      "successful_detections": 6,
+      "baseline_agreement": 0,
+      "avg_confidence": 0.8591515213251114,
+      "success_rate": 1.0,
+      "agreement_rate": 0.0
+    },
+    "nsubj_cop_amod": {
+      "matches": 2,
+      "total_confidence": 1.8595727920532226,
+      "successful_detections": 2,
+      "baseline_agreement": 0,
+      "avg_confidence": 0.9297863960266113,
+      "success_rate": 1.0,
+      "agreement_rate": 0.0
+    },
+    "nsubj_verb_prep_pobj": {
+      "matches": 2,
+      "total_confidence": 1.7793234169483185,
+      "successful_detections": 2,
+      "baseline_agreement": 0,
+      "avg_confidence": 0.8896617084741593,
+      "success_rate": 1.0,
+      "agreement_rate": 0.0
+    }
+  },
+  "primitive_distribution": {
+    "action": 6,
+    "possession": 6,
+    "property": 2,
+    "location": 2
+  },
+  "confidence_analysis": {
+    "avg_confidence": 0.6373562248547873,
+    "min_confidence": 0.0,
+    "max_confidence": 1.0,
+    "confidence_distribution": {
+      "high": 10,
+      "medium": 0,
+      "low": 5
+    }
+  },
+  "recommendations": [
+    "Pattern 'nsubj_verb_dobj' has low baseline agreement (0.0%) - consider refinement",
+    "Pattern 'nsubj_verb_det_noun' has low baseline agreement (0.0%) - consider refinement",
+    "Pattern 'nsubj_cop_amod' has low baseline agreement (0.0%) - consider refinement",
+    "Pattern 'nsubj_verb_prep_pobj' has low baseline agreement (0.0%) - consider refinement"
+  ],
+  "system_summary": {
+    "total_detections": 15,
+    "successful_detections": 10,
+    "success_rate": 0.6666666666666666,
+    "avg_confidence": 0.6373562248547873,
+    "total_patterns": 4,
+    "high_performing_patterns": 4,
+    "pattern_success_rate": 1.0
+  }
+}
