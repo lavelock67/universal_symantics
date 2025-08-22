@@ -1,0 +1,210 @@
+{
+  "test_configuration": {
+    "num_test_cases": 5,
+    "timestamp": 1755886210.378904
+  },
+  "processing_results": [
+    {
+      "original_text": "Please close the door",
+      "primitives": [],
+      "canonical_explication": "Please close the door",
+      "pragmatics_result": {
+        "canonical_surface": "Please close the door",
+        "styled_surface": "Please close the door",
+        "meaning_preserved": true,
+        "style_score": 1.0
+      },
+      "pragmatics_applied": {
+        "speech_act": "REQUEST",
+        "politeness": "deferential",
+        "directness": "indirect",
+        "formality": "formal",
+        "register": "general",
+        "dialect": "en-US",
+        "implicatures": [],
+        "presuppositions": [],
+        "connotation": {
+          "valence": 0.5,
+          "certainty": 0.5,
+          "arousal": 0.5
+        }
+      },
+      "literalness": 0.6,
+      "error": "No primitives detected"
+    },
+    {
+      "original_text": "You should take a jacket",
+      "primitives": [
+        "YOU",
+        "HasProperty"
+      ],
+      "canonical_explication": "YOU HasProperty(You should take a jacket)",
+      "pragmatics_result": {
+        "canonical_surface": "You might like to YOU HasProperty(You should take a jacket)",
+        "styled_surface": "You might like to YOU HasProperty(You should take a jacket)",
+        "meaning_preserved": true,
+        "style_score": 1.0,
+        "pragmatics_applied": {
+          "speech_act": "SUGGEST",
+          "politeness": "neutral",
+          "directness": "direct",
+          "formality": "casual",
+          "register": "general",
+          "dialect": "en-GB",
+          "implicatures": [],
+          "presuppositions": [],
+          "connotation": {
+            "valence": 0.5,
+            "certainty": 0.5,
+            "arousal": 0.5
+          }
+        },
+        "literalness": 0.7
+      },
+      "pragmatics_applied": {
+        "speech_act": "SUGGEST",
+        "politeness": "neutral",
+        "directness": "direct",
+        "formality": "casual",
+        "register": "general",
+        "dialect": "en-GB",
+        "implicatures": [],
+        "presuppositions": [],
+        "connotation": {
+          "valence": 0.5,
+          "certainty": 0.5,
+          "arousal": 0.5
+        }
+      },
+      "literalness": 0.7
+    },
+    {
+      "original_text": "I am sorry for the delay",
+      "primitives": [],
+      "canonical_explication": "I am sorry for the delay",
+      "pragmatics_result": {
+        "canonical_surface": "I am sorry for the delay",
+        "styled_surface": "I am sorry for the delay",
+        "meaning_preserved": true,
+        "style_score": 1.0
+      },
+      "pragmatics_applied": {
+        "speech_act": "APOLOGIZE",
+        "politeness": "deferential",
+        "directness": "direct",
+        "formality": "formal",
+        "register": "general",
+        "dialect": "es-ES",
+        "implicatures": [],
+        "presuppositions": [],
+        "connotation": {
+          "valence": 0.5,
+          "certainty": 0.5,
+          "arousal": 0.5
+        }
+      },
+      "literalness": 0.8,
+      "error": "No primitives detected"
+    },
+    {
+      "original_text": "The weather is cold",
+      "primitives": [
+        "HasProperty"
+      ],
+      "canonical_explication": "HasProperty(The weather is cold)",
+      "pragmatics_result": {
+        "canonical_surface": "HasProperty(The weather is cold)",
+        "styled_surface": "HasProperty(The weather is cold)",
+        "meaning_preserved": true,
+        "style_score": 1.0,
+        "pragmatics_applied": {
+          "speech_act": "INFORM",
+          "politeness": "neutral",
+          "directness": "direct",
+          "formality": "neutral",
+          "register": "general",
+          "dialect": "fr-FR",
+          "implicatures": [],
+          "presuppositions": [],
+          "connotation": {
+            "valence": 0.5,
+            "certainty": 0.5,
+            "arousal": 0.5
+          }
+        },
+        "literalness": 0.9
+      },
+      "pragmatics_applied": {
+        "speech_act": "INFORM",
+        "politeness": "neutral",
+        "directness": "direct",
+        "formality": "neutral",
+        "register": "general",
+        "dialect": "fr-FR",
+        "implicatures": [],
+        "presuppositions": [],
+        "connotation": {
+          "valence": 0.5,
+          "certainty": 0.5,
+          "arousal": 0.5
+        }
+      },
+      "literalness": 0.9
+    },
+    {
+      "original_text": "Could you help me?",
+      "primitives": [],
+      "canonical_explication": "Could you help me?",
+      "pragmatics_result": {
+        "canonical_surface": "Could you help me?",
+        "styled_surface": "Could you help me?",
+        "meaning_preserved": true,
+        "style_score": 1.0
+      },
+      "pragmatics_applied": {
+        "speech_act": "REQUEST",
+        "politeness": "deferential",
+        "directness": "indirect",
+        "formality": "neutral",
+        "register": "general",
+        "dialect": "es-MX",
+        "implicatures": [],
+        "presuppositions": [],
+        "connotation": {
+          "valence": 0.5,
+          "certainty": 0.5,
+          "arousal": 0.5
+        }
+      },
+      "literalness": 0.5,
+      "error": "No primitives detected"
+    }
+  ],
+  "pragmatics_analysis": {
+    "total_cases": 5,
+    "successful_cases": 2,
+    "meaning_preserved_cases": 5,
+    "avg_style_score": 1.0,
+    "pragmatics_distribution": {
+      "REQUEST": 2,
+      "SUGGEST": 1,
+      "APOLOGIZE": 1,
+      "INFORM": 1
+    },
+    "literalness_distribution": {
+      "60%": 1,
+      "70%": 1,
+      "80%": 1,
+      "90%": 1,
+      "50%": 1
+    },
+    "style_effectiveness": {
+      "high_style_scores": 5,
+      "medium_style_scores": 0,
+      "low_style_scores": 0
+    }
+  },
+  "recommendations": [
+    "Low success rate (40.0%) - improve pragmatics processing"
+  ]
+}
