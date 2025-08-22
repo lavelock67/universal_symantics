@@ -1,0 +1,2399 @@
+{
+  "test_configuration": {
+    "num_test_texts": 48,
+    "languages": [
+      "en"
+    ],
+    "timestamp": 1755887494.447696
+  },
+  "detection_results": [
+    {
+      "text": "The cat is not on the mat",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "FAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "AtLocation",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat is not on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|beside|near|far|inside|outside)\\b"
+        }
+      ],
+      "detection_count": 8,
+      "detection_success": true
+    },
+    {
+      "text": "I do not like this weather",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "DO",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "LIKE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "matched_word": "this"
+        },
+        {
+          "primitive": "SimilarTo",
+          "detection_method": "pattern",
+          "confidence": 0.75,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(similar|like|same|different|alike|unlike|resemble|match)\\b",
+          "detection_methods": [
+            "pattern",
+            "conceptnet_phrase"
+          ]
+        },
+        {
+          "primitive": "HAPPEN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "MOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "TOUCH",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "SIMILAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b"
+        },
+        {
+          "primitive": "DIFFERENT",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I do not like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "She does not work here",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "She does not work here",
+          "language": "en",
+          "pattern_matched": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "She does not work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She does not work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She does not work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She does not work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She does not work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "FAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She does not work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        }
+      ],
+      "detection_count": 7,
+      "detection_success": true
+    },
+    {
+      "text": "The book does not contain that information",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "The book does not contain that information",
+          "language": "en",
+          "pattern_matched": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        }
+      ],
+      "detection_count": 1,
+      "detection_success": true
+    },
+    {
+      "text": "Children do not play here",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "DO",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "HAPPEN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "MOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "TOUCH",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children do not play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "The cat might be on the mat",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b"
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "FAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "AtLocation",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The cat might be on the mat",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|beside|near|far|inside|outside)\\b"
+        }
+      ],
+      "detection_count": 8,
+      "detection_success": true
+    },
+    {
+      "text": "The weather could be cold",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "The weather could be cold",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        }
+      ],
+      "detection_count": 1,
+      "detection_success": true
+    },
+    {
+      "text": "She should work here",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "She should work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She should work here",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She should work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She should work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She should work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She should work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "FAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She should work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        }
+      ],
+      "detection_count": 7,
+      "detection_success": true
+    },
+    {
+      "text": "The book must contain this",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "matched_word": "this"
+        },
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+          "detection_methods": [
+            "pattern",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "CapableOf",
+          "detection_method": "semantic",
+          "confidence": 0.4071654677391052,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "semantic_similarity": 0.4071654677391052
+        },
+        {
+          "primitive": "HasProperty",
+          "detection_method": "semantic",
+          "confidence": 0.33609890937805176,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "semantic_similarity": 0.33609890937805176
+        },
+        {
+          "primitive": "PART",
+          "detection_method": "semantic",
+          "confidence": 0.33380693197250366,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "semantic_similarity": 0.33380693197250366
+        },
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "semantic",
+          "confidence": 0.3316439092159271,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "semantic_similarity": 0.3316439092159271
+        },
+        {
+          "primitive": "UsedFor",
+          "detection_method": "semantic",
+          "confidence": 0.32860153913497925,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "semantic_similarity": 0.32860153913497925
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "semantic",
+          "confidence": 0.31997841596603394,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "semantic_similarity": 0.31997841596603394
+        },
+        {
+          "primitive": "PartOf",
+          "detection_method": "semantic",
+          "confidence": 0.30761176347732544,
+          "source_text": "The book must contain this",
+          "language": "en",
+          "semantic_similarity": 0.30761176347732544
+        }
+      ],
+      "detection_count": 9,
+      "detection_success": true
+    },
+    {
+      "text": "Children can play here",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "FAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "CapableOf",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(can|able to|capable of|know how to|skilled at)\\b"
+        },
+        {
+          "primitive": "Desires",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Children can play here",
+          "language": "en",
+          "pattern_matched": "\\b(can|able to|capable of|know how to|skilled at)\\b"
+        },
+        {
+          "primitive": "AtLocation",
+          "detection_method": "semantic",
+          "confidence": 0.39137253165245056,
+          "source_text": "Children can play here",
+          "language": "en",
+          "semantic_similarity": 0.39137253165245056
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "All cats are on mats",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All cats are on mats",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "Some weather is cold",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Some weather is cold",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Some weather is cold",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Some weather is cold",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Some weather is cold",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Some weather is cold",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Some weather is cold",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        }
+      ],
+      "detection_count": 6,
+      "detection_success": true
+    },
+    {
+      "text": "Many people work here",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Many people work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "Few books contain this",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "matched_word": "this"
+        },
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+          "detection_methods": [
+            "pattern",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "SMALL",
+          "detection_method": "semantic",
+          "confidence": 0.3923937976360321,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "semantic_similarity": 0.3923937976360321
+        },
+        {
+          "primitive": "NOT",
+          "detection_method": "semantic",
+          "confidence": 0.328812837600708,
+          "source_text": "Few books contain this",
+          "language": "en",
+          "semantic_similarity": 0.328812837600708
+        }
+      ],
+      "detection_count": 9,
+      "detection_success": true
+    },
+    {
+      "text": "Most children play here",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most children play here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "I like this weather",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "LIKE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "I like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "I like this weather",
+          "language": "en",
+          "matched_word": "this"
+        },
+        {
+          "primitive": "SimilarTo",
+          "detection_method": "pattern",
+          "confidence": 0.75,
+          "source_text": "I like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(similar|like|same|different|alike|unlike|resemble|match)\\b",
+          "detection_methods": [
+            "pattern",
+            "conceptnet_phrase"
+          ]
+        },
+        {
+          "primitive": "SIMILAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b"
+        },
+        {
+          "primitive": "DIFFERENT",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I like this weather",
+          "language": "en",
+          "pattern_matched": "\\b(like|similar|same|different|alike|unlike|resemble|match)\\b"
+        }
+      ],
+      "detection_count": 5,
+      "detection_success": true
+    },
+    {
+      "text": "She enjoys her work",
+      "language": "en",
+      "detected_primitives": [],
+      "detection_count": 0,
+      "detection_success": false
+    },
+    {
+      "text": "They love this book",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "They love this book",
+          "language": "en",
+          "matched_word": "this"
+        }
+      ],
+      "detection_count": 1,
+      "detection_success": true
+    },
+    {
+      "text": "Children hate homework",
+      "language": "en",
+      "detected_primitives": [],
+      "detection_count": 0,
+      "detection_success": false
+    },
+    {
+      "text": "We prefer this option",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "We prefer this option",
+          "language": "en",
+          "matched_word": "this"
+        },
+        {
+          "primitive": "WANT",
+          "detection_method": "semantic",
+          "confidence": 0.3524724841117859,
+          "source_text": "We prefer this option",
+          "language": "en",
+          "semantic_similarity": 0.3524724841117859
+        },
+        {
+          "primitive": "Desires",
+          "detection_method": "semantic",
+          "confidence": 0.34087175130844116,
+          "source_text": "We prefer this option",
+          "language": "en",
+          "semantic_similarity": 0.34087175130844116
+        }
+      ],
+      "detection_count": 3,
+      "detection_success": true
+    },
+    {
+      "text": "I almost finished the work",
+      "language": "en",
+      "detected_primitives": [],
+      "detection_count": 0,
+      "detection_success": false
+    },
+    {
+      "text": "She just arrived",
+      "language": "en",
+      "detected_primitives": [],
+      "detection_count": 0,
+      "detection_success": false
+    },
+    {
+      "text": "They still work here",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "They still work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "They still work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "They still work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "They still work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "They still work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        },
+        {
+          "primitive": "FAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "They still work here",
+          "language": "en",
+          "pattern_matched": "\\b(here|there|where|above|below|near|far|inside|outside|beside)\\b"
+        }
+      ],
+      "detection_count": 6,
+      "detection_success": true
+    },
+    {
+      "text": "We already ate",
+      "language": "en",
+      "detected_primitives": [],
+      "detection_count": 0,
+      "detection_success": false
+    },
+    {
+      "text": "He has not yet arrived",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "He has not yet arrived",
+          "language": "en",
+          "pattern_matched": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "PartOf",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "He has not yet arrived",
+          "language": "en",
+          "pattern_matched": "\\b(has|contains|includes|consists of|made up of)\\b"
+        },
+        {
+          "primitive": "HasProperty",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "He has not yet arrived",
+          "language": "en",
+          "pattern_matched": "\\b(has|contains|includes|consists of|made up of)\\b"
+        },
+        {
+          "primitive": "IsA",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "He has not yet arrived",
+          "language": "en",
+          "pattern_matched": "\\b(has|contains|includes|consists of|made up of)\\b"
+        }
+      ],
+      "detection_count": 4,
+      "detection_success": true
+    },
+    {
+      "text": "The rain caused the flood",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The rain caused the flood",
+          "language": "en",
+          "pattern_matched": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b"
+        },
+        {
+          "primitive": "Causes",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The rain caused the flood",
+          "language": "en",
+          "pattern_matched": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b"
+        }
+      ],
+      "detection_count": 2,
+      "detection_success": true
+    },
+    {
+      "text": "Eating caused the sickness",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Eating caused the sickness",
+          "language": "en",
+          "pattern_matched": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b"
+        },
+        {
+          "primitive": "Causes",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Eating caused the sickness",
+          "language": "en",
+          "pattern_matched": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b"
+        }
+      ],
+      "detection_count": 2,
+      "detection_success": true
+    },
+    {
+      "text": "The fire caused the damage",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The fire caused the damage",
+          "language": "en",
+          "pattern_matched": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b"
+        },
+        {
+          "primitive": "Causes",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The fire caused the damage",
+          "language": "en",
+          "pattern_matched": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b"
+        }
+      ],
+      "detection_count": 2,
+      "detection_success": true
+    },
+    {
+      "text": "The accident caused the injury",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The accident caused the injury",
+          "language": "en",
+          "pattern_matched": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b"
+        },
+        {
+          "primitive": "Causes",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The accident caused the injury",
+          "language": "en",
+          "pattern_matched": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b",
+          "detection_methods": [
+            "pattern",
+            "semantic"
+          ]
+        }
+      ],
+      "detection_count": 2,
+      "detection_success": true
+    },
+    {
+      "text": "The storm caused the power outage",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The storm caused the power outage",
+          "language": "en",
+          "pattern_matched": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b"
+        },
+        {
+          "primitive": "Causes",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The storm caused the power outage",
+          "language": "en",
+          "pattern_matched": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b"
+        }
+      ],
+      "detection_count": 2,
+      "detection_success": true
+    },
+    {
+      "text": "Could you please help me?",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "Could you please help me?",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        }
+      ],
+      "detection_count": 1,
+      "detection_success": true
+    },
+    {
+      "text": "Would you mind closing the door?",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Would you mind closing the door?",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b"
+        }
+      ],
+      "detection_count": 1,
+      "detection_success": true
+    },
+    {
+      "text": "I'm sorry for the delay",
+      "language": "en",
+      "detected_primitives": [],
+      "detection_count": 0,
+      "detection_success": false
+    },
+    {
+      "text": "Thank you for your help",
+      "language": "en",
+      "detected_primitives": [],
+      "detection_count": 0,
+      "detection_success": false
+    },
+    {
+      "text": "Please take a seat",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "AtLocation",
+          "detection_method": "semantic",
+          "confidence": 0.38236603140830994,
+          "source_text": "Please take a seat",
+          "language": "en",
+          "semantic_similarity": 0.38236603140830994
+        },
+        {
+          "primitive": "BIG",
+          "detection_method": "semantic",
+          "confidence": 0.30018728971481323,
+          "source_text": "Please take a seat",
+          "language": "en",
+          "semantic_similarity": 0.30018728971481323
+        }
+      ],
+      "detection_count": 2,
+      "detection_success": true
+    },
+    {
+      "text": "Yes",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CAN",
+          "detection_method": "semantic",
+          "confidence": 0.38207095861434937,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.38207095861434937
+        },
+        {
+          "primitive": "LIKE",
+          "detection_method": "semantic",
+          "confidence": 0.3633396029472351,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.3633396029472351
+        },
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "semantic",
+          "confidence": 0.33843472599983215,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.33843472599983215
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "semantic",
+          "confidence": 0.33154308795928955,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.33154308795928955
+        },
+        {
+          "primitive": "CapableOf",
+          "detection_method": "semantic",
+          "confidence": 0.3151198923587799,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.3151198923587799
+        },
+        {
+          "primitive": "WANT",
+          "detection_method": "semantic",
+          "confidence": 0.31464993953704834,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.31464993953704834
+        },
+        {
+          "primitive": "BIG",
+          "detection_method": "semantic",
+          "confidence": 0.3107309937477112,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.3107309937477112
+        },
+        {
+          "primitive": "SimilarTo",
+          "detection_method": "semantic",
+          "confidence": 0.30904924869537354,
+          "source_text": "Yes",
+          "language": "en",
+          "semantic_similarity": 0.30904924869537354
+        }
+      ],
+      "detection_count": 8,
+      "detection_success": true
+    },
+    {
+      "text": "No",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "No",
+          "language": "en",
+          "pattern_matched": "\\b(not|no|never|none|nobody|nothing|nowhere|neither|nor)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "semantic",
+          "confidence": 0.37317830324172974,
+          "source_text": "No",
+          "language": "en",
+          "semantic_similarity": 0.37317830324172974
+        },
+        {
+          "primitive": "SMALL",
+          "detection_method": "semantic",
+          "confidence": 0.31903889775276184,
+          "source_text": "No",
+          "language": "en",
+          "semantic_similarity": 0.31903889775276184
+        }
+      ],
+      "detection_count": 3,
+      "detection_success": true
+    },
+    {
+      "text": "Maybe",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "FEW",
+          "detection_method": "semantic",
+          "confidence": 0.36111363768577576,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.36111363768577576
+        },
+        {
+          "primitive": "CAN",
+          "detection_method": "semantic",
+          "confidence": 0.3573136031627655,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.3573136031627655
+        },
+        {
+          "primitive": "LIKE",
+          "detection_method": "semantic",
+          "confidence": 0.33624833822250366,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.33624833822250366
+        },
+        {
+          "primitive": "SMALL",
+          "detection_method": "semantic",
+          "confidence": 0.3142460584640503,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.3142460584640503
+        },
+        {
+          "primitive": "WANT",
+          "detection_method": "semantic",
+          "confidence": 0.30769702792167664,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.30769702792167664
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "semantic",
+          "confidence": 0.3062018156051636,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.3062018156051636
+        },
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "semantic",
+          "confidence": 0.3031904697418213,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.3031904697418213
+        },
+        {
+          "primitive": "CapableOf",
+          "detection_method": "semantic",
+          "confidence": 0.3011317253112793,
+          "source_text": "Maybe",
+          "language": "en",
+          "semantic_similarity": 0.3011317253112793
+        }
+      ],
+      "detection_count": 8,
+      "detection_success": true
+    },
+    {
+      "text": "Stop",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "NOT",
+          "detection_method": "semantic",
+          "confidence": 0.3560425639152527,
+          "source_text": "Stop",
+          "language": "en",
+          "semantic_similarity": 0.3560425639152527
+        }
+      ],
+      "detection_count": 1,
+      "detection_success": true
+    },
+    {
+      "text": "Go",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "DO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Go",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "HAPPEN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Go",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "MOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Go",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        },
+        {
+          "primitive": "TOUCH",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Go",
+          "language": "en",
+          "pattern_matched": "\\b(do|happen|move|touch|go|come|stay|leave|arrive|depart)\\b"
+        }
+      ],
+      "detection_count": 4,
+      "detection_success": true
+    },
+    {
+      "text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "NEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "FAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b"
+        },
+        {
+          "primitive": "AtLocation",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|beside|near|far|inside|outside)\\b"
+        },
+        {
+          "primitive": "Causes",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The complex interaction between multiple factors in the system caused a cascade of unexpected events that ultimately led to the complete failure of the entire infrastructure",
+          "language": "en",
+          "pattern_matched": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b",
+          "detection_methods": [
+            "pattern",
+            "semantic"
+          ]
+        }
+      ],
+      "detection_count": 9,
+      "detection_success": true
+    },
+    {
+      "text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "HERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "WHERE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "ABOVE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        },
+        {
+          "primitive": "BELOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Despite the numerous attempts to resolve the issue through various methodologies and approaches, the problem persisted and continued to manifest in different forms across multiple components",
+          "language": "en",
+          "pattern_matched": "\\b(at|in|on|under|over|behind|in front of|next to)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "The comprehensive analysis of the data revealed significant patterns and correlations that were previously unknown and provided valuable insights into the underlying mechanisms",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "Causes",
+          "detection_method": "semantic",
+          "confidence": 0.3604986071586609,
+          "source_text": "The comprehensive analysis of the data revealed significant patterns and correlations that were previously unknown and provided valuable insights into the underlying mechanisms",
+          "language": "en",
+          "semantic_similarity": 0.3604986071586609
+        },
+        {
+          "primitive": "SimilarTo",
+          "detection_method": "semantic",
+          "confidence": 0.31883901357650757,
+          "source_text": "The comprehensive analysis of the data revealed significant patterns and correlations that were previously unknown and provided valuable insights into the underlying mechanisms",
+          "language": "en",
+          "semantic_similarity": 0.31883901357650757
+        }
+      ],
+      "detection_count": 2,
+      "detection_success": true
+    },
+    {
+      "text": "I can't believe you didn't tell me about this",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "matched_word": "this"
+        },
+        {
+          "primitive": "NOT",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(doesn\\'t|don\\'t|didn\\'t|won\\'t|can\\'t|couldn\\'t|shouldn\\'t|wouldn\\'t)\\b",
+          "detection_methods": [
+            "pattern",
+            "semantic"
+          ]
+        },
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b"
+        },
+        {
+          "primitive": "THINK",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b"
+        },
+        {
+          "primitive": "KNOW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b"
+        },
+        {
+          "primitive": "WANT",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b"
+        },
+        {
+          "primitive": "FEEL",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b"
+        },
+        {
+          "primitive": "SEE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b"
+        },
+        {
+          "primitive": "HEAR",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(think|know|want|feel|see|hear|believe|understand|remember|forget)\\b"
+        },
+        {
+          "primitive": "CapableOf",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "I can't believe you didn't tell me about this",
+          "language": "en",
+          "pattern_matched": "\\b(can|able to|capable of|know how to|skilled at)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "She might have been able to help if we had asked earlier",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CapableOf",
+          "detection_method": "pattern",
+          "confidence": 0.75,
+          "source_text": "She might have been able to help if we had asked earlier",
+          "language": "en",
+          "pattern_matched": "\\b(can|able to|capable of|know how to|skilled at)\\b",
+          "detection_methods": [
+            "pattern",
+            "conceptnet_phrase"
+          ]
+        },
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She might have been able to help if we had asked earlier",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+          "detection_methods": [
+            "pattern",
+            "pattern"
+          ]
+        },
+        {
+          "primitive": "Desires",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "She might have been able to help if we had asked earlier",
+          "language": "en",
+          "pattern_matched": "\\b(can|able to|capable of|know how to|skilled at)\\b"
+        }
+      ],
+      "detection_count": 3,
+      "detection_success": true
+    },
+    {
+      "text": "All of the students should have completed their assignments by now",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "NOW",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(now|then|when|before|after|during|while|since|until|always|never)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b"
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "BEFORE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(now|then|when|before|after|during|while|since|until|always|never)\\b"
+        },
+        {
+          "primitive": "AFTER",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "All of the students should have completed their assignments by now",
+          "language": "en",
+          "pattern_matched": "\\b(now|then|when|before|after|during|while|since|until|always|never)\\b"
+        }
+      ],
+      "detection_count": 10,
+      "detection_success": true
+    },
+    {
+      "text": "Most people would probably enjoy this movie",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "THIS",
+          "detection_method": "nsm_word",
+          "confidence": 0.8,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "matched_word": "this"
+        },
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b"
+        },
+        {
+          "primitive": "ALL",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "SOME",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "MANY",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "FEW",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "ONE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        },
+        {
+          "primitive": "TWO",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "Most people would probably enjoy this movie",
+          "language": "en",
+          "pattern_matched": "\\b(all|some|many|few|most|several|various|numerous|countless)\\b"
+        }
+      ],
+      "detection_count": 8,
+      "detection_success": true
+    },
+    {
+      "text": "The weather could potentially cause problems for the event",
+      "language": "en",
+      "detected_primitives": [
+        {
+          "primitive": "CAN",
+          "detection_method": "pattern",
+          "confidence": 0.8,
+          "source_text": "The weather could potentially cause problems for the event",
+          "language": "en",
+          "pattern_matched": "\\b(can|could|might|may|must|should|will|would|shall)\\b",
+          "detection_methods": [
+            "pattern",
+            "nsm_word"
+          ]
+        },
+        {
+          "primitive": "BECAUSE",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The weather could potentially cause problems for the event",
+          "language": "en",
+          "pattern_matched": "\\b(because|since|as|due to|result in|lead to|cause|caused)\\b"
+        },
+        {
+          "primitive": "Causes",
+          "detection_method": "pattern",
+          "confidence": 0.7,
+          "source_text": "The weather could potentially cause problems for the event",
+          "language": "en",
+          "pattern_matched": "\\b(cause|caused|because|since|as|result|effect|consequence)\\b"
+        }
+      ],
+      "detection_count": 3,
+      "detection_success": true
+    }
+  ],
+  "performance_analysis": {
+    "total_texts": 48,
+    "successful_detections": 41,
+    "detection_rate": 0.8541666666666666,
+    "avg_primitives_per_text": 4.75,
+    "detection_method_distribution": {
+      "pattern": 185,
+      "nsm_word": 8,
+      "semantic": 35
+    },
+    "primitive_type_distribution": {
+      "nsm": 196,
+      "conceptnet": 32
+    },
+    "confidence_analysis": {
+      "avg_confidence": 0.660890623561123,
+      "confidence_distribution": {
+        "medium": 193,
+        "low": 35
+      }
+    }
+  },
+  "comparison_analysis": {
+    "original_detection_rate": 0.347,
+    "unified_detection_rate": 0.8541666666666666,
+    "improvement": 0.5071666666666667,
+    "original_avg_primitives": 1.2,
+    "unified_avg_primitives": 4.75,
+    "primitive_increase": 3.55
+  },
+  "recommendations": [
+    "High detection rate (85.4%) - excellent performance",
+    "Significant improvement over original system (+50.7%)"
+  ]
+}
