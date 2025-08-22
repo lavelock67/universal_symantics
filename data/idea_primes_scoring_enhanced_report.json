@@ -1,0 +1,402 @@
+{
+  "test_configuration": {
+    "num_primes": 5,
+    "timestamp": 1755884716.749773
+  },
+  "scored_primes": [
+    {
+      "prime_id": "prime_001",
+      "prime_value": "agent",
+      "attribute": "semantic_role",
+      "category": "semantic",
+      "mdl_score": {
+        "original_length": 1160.0,
+        "compressed_length": 240.0,
+        "delta_mdl": 920.0,
+        "compression_ratio": 0.20689655172413793,
+        "efficiency_score": 0.7931034482758621,
+        "is_compressive": true
+      },
+      "transfer_score": {
+        "overall_transfer": 0.9484298825263977,
+        "overall_consistency": 0.9817059483726149,
+        "transfer_ratio": 1.0,
+        "pair_scores": {
+          "en_es": 0.9470045566558838,
+          "en_fr": 0.9342873692512512,
+          "es_fr": 0.9639979600906372
+        },
+        "consistency_scores": {
+          "en_es": 0.990909090909091,
+          "en_fr": 0.9814814814814814,
+          "es_fr": 0.9727272727272727
+        },
+        "is_transferable": true,
+        "is_consistent": true
+      },
+      "stability_score": {
+        "stability_score": 0.9372762711972615,
+        "consistency": 0.9972762711972616,
+        "variance": 0.00544745760547685,
+        "frequency": 5,
+        "is_stable": true,
+        "trend": "declining",
+        "usage_patterns": {
+          "contexts": [
+            "Usage 1 of agent",
+            "Usage 2 of agent",
+            "Usage 3 of agent",
+            "Usage 4 of agent",
+            "Usage 5 of agent"
+          ],
+          "languages": [
+            "en",
+            "en",
+            "en",
+            "en",
+            "en"
+          ],
+          "timestamps": [
+            1755884716.749793,
+            1755888316.749793,
+            1755891916.749793,
+            1755895516.749793,
+            1755899116.749793
+          ],
+          "confidence_scores": [
+            0.8881585284358431,
+            0.7421018083727595,
+            0.7626164921231599,
+            0.6576102462014384,
+            0.756567707618495
+          ]
+        }
+      },
+      "nsm_compatibility": 0.3,
+      "overall_score": 0.769915238065136,
+      "quality_level": "good",
+      "is_high_quality": true,
+      "recommendations": [
+        "Declining usage trend - consider if prime is still relevant",
+        "Low NSM compatibility - may not align well with semantic primitives"
+      ]
+    },
+    {
+      "prime_id": "prime_002",
+      "prime_value": "location",
+      "attribute": "spatial",
+      "category": "semantic",
+      "mdl_score": {
+        "original_length": 1040.0,
+        "compressed_length": 384.0,
+        "delta_mdl": 656.0,
+        "compression_ratio": 0.36923076923076925,
+        "efficiency_score": 0.6307692307692307,
+        "is_compressive": true
+      },
+      "transfer_score": {
+        "overall_transfer": 0.8763177990913391,
+        "overall_consistency": 0.9794501133786847,
+        "transfer_ratio": 1.0,
+        "pair_scores": {
+          "en_es": 0.9056858420372009,
+          "en_fr": 0.8069123029708862,
+          "es_fr": 0.9163553714752197
+        },
+        "consistency_scores": {
+          "en_es": 0.9897959183673469,
+          "en_fr": 0.9791666666666667,
+          "es_fr": 0.9693877551020409
+        },
+        "is_transferable": true,
+        "is_consistent": true
+      },
+      "stability_score": {
+        "stability_score": 0.93868304912829,
+        "consistency": 0.9986830491282901,
+        "variance": 0.0026339017434199616,
+        "frequency": 5,
+        "is_stable": true,
+        "trend": "stable",
+        "usage_patterns": {
+          "contexts": [
+            "Usage 1 of location",
+            "Usage 2 of location",
+            "Usage 3 of location",
+            "Usage 4 of location",
+            "Usage 5 of location"
+          ],
+          "languages": [
+            "en",
+            "en",
+            "en",
+            "en",
+            "en"
+          ],
+          "timestamps": [
+            1755884717.183858,
+            1755888317.183858,
+            1755891917.183858,
+            1755895517.183858,
+            1755899117.183858
+          ],
+          "confidence_scores": [
+            0.6932890676830545,
+            0.7603630780654835,
+            0.7577542834615638,
+            0.8512981093559745,
+            0.7404889751165195
+          ]
+        }
+      },
+      "nsm_compatibility": 0.8,
+      "overall_score": 0.7998627253861896,
+      "quality_level": "good",
+      "is_high_quality": true,
+      "recommendations": []
+    },
+    {
+      "prime_id": "prime_003",
+      "prime_value": "past",
+      "attribute": "tense",
+      "category": "temporal",
+      "mdl_score": {
+        "original_length": 800.0,
+        "compressed_length": 192.0,
+        "delta_mdl": 608.0,
+        "compression_ratio": 0.24,
+        "efficiency_score": 0.76,
+        "is_compressive": true
+      },
+      "transfer_score": {
+        "overall_transfer": 0.7749797701835632,
+        "overall_consistency": 0.9727227227227226,
+        "transfer_ratio": 1.0,
+        "pair_scores": {
+          "en_es": 0.8588488101959229,
+          "en_fr": 0.6607767343521118,
+          "es_fr": 0.8053135871887207
+        },
+        "consistency_scores": {
+          "en_es": 0.9864864864864865,
+          "en_fr": 0.9722222222222222,
+          "es_fr": 0.9594594594594594
+        },
+        "is_transferable": true,
+        "is_consistent": true
+      },
+      "stability_score": {
+        "stability_score": 0.9376460816227057,
+        "consistency": 0.9976460816227057,
+        "variance": 0.004707836754588388,
+        "frequency": 5,
+        "is_stable": true,
+        "trend": "improving",
+        "usage_patterns": {
+          "contexts": [
+            "Usage 1 of past",
+            "Usage 2 of past",
+            "Usage 3 of past",
+            "Usage 4 of past",
+            "Usage 5 of past"
+          ],
+          "languages": [
+            "en",
+            "en",
+            "en",
+            "en",
+            "en"
+          ],
+          "timestamps": [
+            1755884717.332801,
+            1755888317.332801,
+            1755891917.332801,
+            1755895517.332801,
+            1755899117.332801
+          ],
+          "confidence_scores": [
+            0.8588323561168889,
+            0.8395606657020587,
+            0.9509502751989747,
+            1.0294407845749995,
+            0.897549311739145
+          ]
+        }
+      },
+      "nsm_compatibility": 0.3,
+      "overall_score": 0.7080231385581226,
+      "quality_level": "good",
+      "is_high_quality": true,
+      "recommendations": [
+        "Low NSM compatibility - may not align well with semantic primitives"
+      ]
+    },
+    {
+      "prime_id": "prime_004",
+      "prime_value": "positive",
+      "attribute": "polarity",
+      "category": "polarity",
+      "mdl_score": {
+        "original_length": 1080.0,
+        "compressed_length": 384.0,
+        "delta_mdl": 696.0,
+        "compression_ratio": 0.35555555555555557,
+        "efficiency_score": 0.6444444444444445,
+        "is_compressive": true
+      },
+      "transfer_score": {
+        "overall_transfer": 0.9715320467948914,
+        "overall_consistency": 0.9802614379084967,
+        "transfer_ratio": 1.0,
+        "pair_scores": {
+          "en_es": 0.9677892327308655,
+          "en_fr": 0.9667344093322754,
+          "es_fr": 0.9800723791122437
+        },
+        "consistency_scores": {
+          "en_es": 0.9901960784313726,
+          "en_fr": 0.98,
+          "es_fr": 0.9705882352941176
+        },
+        "is_transferable": true,
+        "is_consistent": true
+      },
+      "stability_score": {
+        "stability_score": 0.9379438352585665,
+        "consistency": 0.9979438352585664,
+        "variance": 0.00411232948286714,
+        "frequency": 5,
+        "is_stable": true,
+        "trend": "improving",
+        "usage_patterns": {
+          "contexts": [
+            "Usage 1 of positive",
+            "Usage 2 of positive",
+            "Usage 3 of positive",
+            "Usage 4 of positive",
+            "Usage 5 of positive"
+          ],
+          "languages": [
+            "en",
+            "en",
+            "en",
+            "en",
+            "en"
+          ],
+          "timestamps": [
+            1755884717.48248,
+            1755888317.48248,
+            1755891917.48248,
+            1755895517.48248,
+            1755899117.48248
+          ],
+          "confidence_scores": [
+            0.5059731651378379,
+            0.6313354631999963,
+            0.698945728016703,
+            0.6377989516743303,
+            0.6518795852865762
+          ]
+        }
+      },
+      "nsm_compatibility": 0.3,
+      "overall_score": 0.7323817148208784,
+      "quality_level": "good",
+      "is_high_quality": true,
+      "recommendations": [
+        "Low NSM compatibility - may not align well with semantic primitives"
+      ]
+    },
+    {
+      "prime_id": "prime_005",
+      "prime_value": "cause",
+      "attribute": "causality",
+      "category": "causality",
+      "mdl_score": {
+        "original_length": 1000.0,
+        "compressed_length": 240.0,
+        "delta_mdl": 760.0,
+        "compression_ratio": 0.24,
+        "efficiency_score": 0.76,
+        "is_compressive": true
+      },
+      "transfer_score": {
+        "overall_transfer": 0.9700584411621094,
+        "overall_consistency": 0.9785692260252853,
+        "transfer_ratio": 1.0,
+        "pair_scores": {
+          "en_es": 0.9667615294456482,
+          "en_fr": 0.9667137265205383,
+          "es_fr": 0.9767001867294312
+        },
+        "consistency_scores": {
+          "en_es": 0.9893617021276595,
+          "en_fr": 0.9782608695652174,
+          "es_fr": 0.9680851063829787
+        },
+        "is_transferable": true,
+        "is_consistent": true
+      },
+      "stability_score": {
+        "stability_score": 0.9362636291832627,
+        "consistency": 0.9962636291832627,
+        "variance": 0.007472741633474417,
+        "frequency": 5,
+        "is_stable": true,
+        "trend": "declining",
+        "usage_patterns": {
+          "contexts": [
+            "Usage 1 of cause",
+            "Usage 2 of cause",
+            "Usage 3 of cause",
+            "Usage 4 of cause",
+            "Usage 5 of cause"
+          ],
+          "languages": [
+            "en",
+            "en",
+            "en",
+            "en",
+            "en"
+          ],
+          "timestamps": [
+            1755884717.5715368,
+            1755888317.5715368,
+            1755891917.5715368,
+            1755895517.5715368,
+            1755899117.5715368
+          ],
+          "confidence_scores": [
+            0.8302087133655728,
+            0.6987471673433306,
+            0.6096654090758767,
+            0.7933242749635693,
+            0.6336732567292385
+          ]
+        }
+      },
+      "nsm_compatibility": 0.8,
+      "overall_score": 0.8662702434033335,
+      "quality_level": "excellent",
+      "is_high_quality": true,
+      "recommendations": [
+        "Declining usage trend - consider if prime is still relevant"
+      ]
+    }
+  ],
+  "scoring_statistics": {
+    "num_primes": 5,
+    "avg_overall_score": 0.775290612046732,
+    "avg_mdl_score": 0.7176634246979076,
+    "avg_transfer_score": 0.9082635641098022,
+    "avg_stability_score": 0.9375625732780172,
+    "avg_nsm_score": 0.5,
+    "high_quality_count": 5,
+    "quality_ratio": 1.0
+  },
+  "quality_distribution": {
+    "good": 4,
+    "excellent": 1
+  },
+  "recommendations": []
+}
