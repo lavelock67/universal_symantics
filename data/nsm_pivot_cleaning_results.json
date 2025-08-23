@@ -1,0 +1,217 @@
+{
+  "test_configuration": {
+    "num_test_cases": 5,
+    "language": "en",
+    "timestamp": 1755913953.123432
+  },
+  "cleaned_explications": [
+    {
+      "original_text": "The cat is not on the mat",
+      "original_explication": "X SAY: NOT AtLocation",
+      "cleaned_explication": "NOT WHERE",
+      "fixes_applied": [
+        "Removed meta SAY wrapper: 'X SAY: NOT AtLocation' \u2192 'NOT AtLocation'",
+        "Replaced ConceptNet 'AtLocation' with NSM 'WHERE'"
+      ],
+      "confidence": 0.8,
+      "canonical_order": [
+        "scope: NOT",
+        "adjuncts: WHERE"
+      ]
+    },
+    {
+      "original_text": "I do not like this weather",
+      "original_explication": "X SAY: NOT DO SimilarTo",
+      "cleaned_explication": "NOT LIKE",
+      "fixes_applied": [
+        "Removed meta SAY wrapper: 'X SAY: NOT DO SimilarTo' \u2192 'NOT DO SimilarTo'",
+        "Removed auxiliary DO: 'NOT DO SimilarTo' \u2192 'NOT SimilarTo'",
+        "Replaced ConceptNet 'SimilarTo' with NSM 'LIKE'"
+      ],
+      "confidence": 0.7,
+      "canonical_order": [
+        "scope: NOT",
+        "predicate_roles: LIKE"
+      ]
+    },
+    {
+      "original_text": "All children can play here",
+      "original_explication": "X SAY: CAN ALL HERE",
+      "cleaned_explication": "CAN ALL HERE",
+      "fixes_applied": [
+        "Removed meta SAY wrapper: 'X SAY: CAN ALL HERE' \u2192 'CAN ALL HERE'"
+      ],
+      "confidence": 0.9,
+      "canonical_order": [
+        "modality: CAN",
+        "adjuncts: ALL, HERE"
+      ]
+    },
+    {
+      "original_text": "Some people want to help",
+      "original_explication": "X SAY: SOME Desires Desires",
+      "cleaned_explication": "WANT SOME",
+      "fixes_applied": [
+        "Removed meta SAY wrapper: 'X SAY: SOME Desires Desires' \u2192 'SOME Desires Desires'",
+        "Replaced ConceptNet 'Desires' with NSM 'WANT'",
+        "Removed duplicate prime 'WANT'",
+        "Canonicalized order: 'SOME WANT' \u2192 'WANT SOME'"
+      ],
+      "confidence": 0.6,
+      "canonical_order": [
+        "predicate_roles: WANT",
+        "adjuncts: SOME"
+      ]
+    },
+    {
+      "original_text": "The weather is good today",
+      "original_explication": "X SAY: GOOD GOOD",
+      "cleaned_explication": "GOOD",
+      "fixes_applied": [
+        "Removed meta SAY wrapper: 'X SAY: GOOD GOOD' \u2192 'GOOD GOOD'",
+        "Removed duplicate prime 'GOOD'"
+      ],
+      "confidence": 0.8,
+      "canonical_order": [
+        "adjuncts: GOOD"
+      ]
+    }
+  ],
+  "detected_issues": [
+    {
+      "issue_type": "meta_say_wrapper",
+      "description": "Meta SAY wrapper detected without reported speech",
+      "original_text": "The cat is not on the mat",
+      "problematic_explication": "X SAY: NOT AtLocation",
+      "suggested_fix": "Remove SAY wrapper and keep propositional content",
+      "confidence": 0.9,
+      "line_number": 1
+    },
+    {
+      "issue_type": "conceptnet_in_nsm",
+      "description": "ConceptNet relations found in NSM: AtLocation",
+      "original_text": "The cat is not on the mat",
+      "problematic_explication": "X SAY: NOT AtLocation",
+      "suggested_fix": "Replace with NSM equivalents or remove",
+      "confidence": 0.9,
+      "line_number": 1
+    },
+    {
+      "issue_type": "meta_say_wrapper",
+      "description": "Meta SAY wrapper detected without reported speech",
+      "original_text": "I do not like this weather",
+      "problematic_explication": "X SAY: NOT DO SimilarTo",
+      "suggested_fix": "Remove SAY wrapper and keep propositional content",
+      "confidence": 0.9,
+      "line_number": 2
+    },
+    {
+      "issue_type": "aux_do_misuse",
+      "description": "Auxiliary DO incorrectly treated as eventive",
+      "original_text": "I do not like this weather",
+      "problematic_explication": "X SAY: NOT DO SimilarTo",
+      "suggested_fix": "Remove auxiliary DO from explication",
+      "confidence": 0.8,
+      "line_number": 2
+    },
+    {
+      "issue_type": "conceptnet_in_nsm",
+      "description": "ConceptNet relations found in NSM: SimilarTo",
+      "original_text": "I do not like this weather",
+      "problematic_explication": "X SAY: NOT DO SimilarTo",
+      "suggested_fix": "Replace with NSM equivalents or remove",
+      "confidence": 0.9,
+      "line_number": 2
+    },
+    {
+      "issue_type": "meta_say_wrapper",
+      "description": "Meta SAY wrapper detected without reported speech",
+      "original_text": "All children can play here",
+      "problematic_explication": "X SAY: CAN ALL HERE",
+      "suggested_fix": "Remove SAY wrapper and keep propositional content",
+      "confidence": 0.9,
+      "line_number": 3
+    },
+    {
+      "issue_type": "meta_say_wrapper",
+      "description": "Meta SAY wrapper detected without reported speech",
+      "original_text": "Some people want to help",
+      "problematic_explication": "X SAY: SOME Desires Desires",
+      "suggested_fix": "Remove SAY wrapper and keep propositional content",
+      "confidence": 0.9,
+      "line_number": 4
+    },
+    {
+      "issue_type": "conceptnet_in_nsm",
+      "description": "ConceptNet relations found in NSM: Desires",
+      "original_text": "Some people want to help",
+      "problematic_explication": "X SAY: SOME Desires Desires",
+      "suggested_fix": "Replace with NSM equivalents or remove",
+      "confidence": 0.9,
+      "line_number": 4
+    },
+    {
+      "issue_type": "duplicate_primes",
+      "description": "Duplicate primes found: Desires",
+      "original_text": "Some people want to help",
+      "problematic_explication": "X SAY: SOME Desires Desires",
+      "suggested_fix": "Remove duplicate primes",
+      "confidence": 0.8,
+      "line_number": 4
+    },
+    {
+      "issue_type": "meta_say_wrapper",
+      "description": "Meta SAY wrapper detected without reported speech",
+      "original_text": "The weather is good today",
+      "problematic_explication": "X SAY: GOOD GOOD",
+      "suggested_fix": "Remove SAY wrapper and keep propositional content",
+      "confidence": 0.9,
+      "line_number": 5
+    },
+    {
+      "issue_type": "duplicate_primes",
+      "description": "Duplicate primes found: GOOD",
+      "original_text": "The weather is good today",
+      "problematic_explication": "X SAY: GOOD GOOD",
+      "suggested_fix": "Remove duplicate primes",
+      "confidence": 0.8,
+      "line_number": 5
+    }
+  ],
+  "cleaning_analysis": {
+    "total_explications": 5,
+    "total_issues_detected": 11,
+    "issue_distribution": {
+      "meta_say_wrapper": 5,
+      "conceptnet_in_nsm": 3,
+      "aux_do_misuse": 1,
+      "duplicate_primes": 2
+    },
+    "fix_distribution": {
+      "Removed meta SAY wrapper": 5,
+      "Replaced ConceptNet 'AtLocation' with NSM 'WHERE'": 1,
+      "Removed auxiliary DO": 1,
+      "Replaced ConceptNet 'SimilarTo' with NSM 'LIKE'": 1,
+      "Replaced ConceptNet 'Desires' with NSM 'WANT'": 1,
+      "Removed duplicate prime 'WANT'": 1,
+      "Canonicalized order": 1,
+      "Removed duplicate prime 'GOOD'": 1
+    },
+    "confidence_distribution": {
+      "high": 3,
+      "medium": 2,
+      "low": 0
+    },
+    "improvement_metrics": {
+      "total_fixes_applied": 12,
+      "average_confidence": 0.76,
+      "fixes_per_explication": 2.4,
+      "issue_resolution_rate": 1.0
+    }
+  },
+  "recommendations": [
+    "Address 11 detected pivot issues",
+    "Focus on fixing meta_say_wrapper issues (most common)",
+    "Prioritize Removed meta SAY wrapper fixes (most frequently applied)"
+  ]
+}

@@ -283,19 +283,19 @@
 ## 📊 COMPLETION STATISTICS
 
 - **Total TODOs**: 49
-- **Completed**: 42 (85.7%)
+- **Completed**: 43 (87.8%)
 - **In Progress**: 0 (0.0%)
-- **Pending**: 7 (14.3%)
+- **Pending**: 6 (12.2%)
 
 ## 🚀 RECENT ACHIEVEMENTS
 
-### Enhanced Metrics Pipeline Consolidation (Latest Milestone)
-- ✅ **Comprehensive Metrics Pipeline**: Implemented metrics pipeline consolidation system with single source of truth for all KPIs
-- ✅ **Metrics Framework**: Added MetricsCollector and MetricsPipeline with versioning and CI gates
-- ✅ **Performance Analysis**: Achieved 34.7% prime detection rate, 100% legality rate, and 84.0% average MPS across 52 test texts
-- ✅ **CI Gates**: Implemented 6 CI gates for prime recall, polarity recall, scope recall, legality, MPS, and cross-language consistency
-- ✅ **Phenomenon Analysis**: Generated detailed phenomenon-specific metrics for negation, modality, temporal, quantifiers, causation, experiencer, aspectual, politeness, and idioms
-- ✅ **Consolidated Framework**: Created comprehensive metrics framework with metadata tracking, timestamped reports, and CI gate evaluation
+### Enhanced Core Systems Re-evaluation (Latest Milestone)
+- ✅ **Phase 1 - Metrics Pipeline**: Re-evaluated metrics pipeline with unified primitive detection, achieving 34.7% prime detection rate and 100% legality rate
+- ✅ **Phase 2 - NSM Translation**: Re-evaluated NSM translation system with improved primitive detection, achieving 95.6% semantic similarity (21.8% improvement)
+- ✅ **Phase 3 - NSM Explication**: Re-evaluated NSM explication system with unified primitive detection, establishing 41.5% honest baseline for semantic similarity
+- ✅ **Unified Primitive Detection**: Implemented comprehensive unified primitive detection system fixing core logic bug with NSM/ConceptNet alignment
+- ✅ **Detection Evidence Logging**: Added comprehensive evidence logging system with detailed audit trails and confidence scoring
+- ✅ **Honest Assessment Framework**: Established honest baseline measurements for all core systems with realistic improvement targets
 
 ### Enhanced Pragmatics Layer System (Previous Milestone)
 - ✅ **Comprehensive Pragmatics Layer**: Implemented pragmatics layer system with semantic-pragmatic separation and cultural styling

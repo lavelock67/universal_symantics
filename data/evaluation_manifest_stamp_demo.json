@@ -1,0 +1,118 @@
+{
+  "manifest": {
+    "run_id": "eval_20250822_185229_a0503e02",
+    "commit_sha": "60743b0a1214df91fde0f8b158bef227fcabdcd5",
+    "dataset_version": "dataset_1755913340.813336",
+    "split_name": "test",
+    "similarity_model_name": "paraphrase-multilingual-MiniLM-L12-v2",
+    "metric_scales": {
+      "sbert_similarity": "cosine_0_1",
+      "xnli_entailment": "probability_0_1",
+      "prime_alignment": "percentage_0_100",
+      "polarity_alignment": "percentage_0_100",
+      "scope_alignment": "percentage_0_100",
+      "umr_structural_consistency": "percentage_0_100",
+      "bmr_structural_consistency": "percentage_0_100",
+      "mps_composite": "percentage_0_100",
+      "detection_rate": "percentage_0_100",
+      "legality_rate": "percentage_0_100",
+      "cross_language_consistency": "percentage_0_100"
+    },
+    "timestamp": 1755913949.7636611,
+    "evaluation_config": {
+      "split_name": "test",
+      "similarity_model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "evaluation_type": "comprehensive",
+      "include_mps": true
+    },
+    "system_components": [
+      "src/nsm/translate.py",
+      "src/nsm/explicator.py",
+      "src/nsm/enhanced_explicator.py",
+      "src/detect/text_detectors.py",
+      "unified_primitive_detection.py",
+      "executable_interlingua_spec.py"
+    ]
+  },
+  "mps_headline": {
+    "mps_score": 0.8260000000000001,
+    "components": {
+      "xnli_entailment": {
+        "raw_value": 0.78,
+        "normalized_value": 0.78,
+        "weight": 0.4,
+        "contribution": 0.31200000000000006
+      },
+      "prime_alignment": {
+        "raw_value": 85.0,
+        "normalized_value": 0.85,
+        "weight": 0.3,
+        "contribution": 0.255
+      },
+      "polarity_alignment": {
+        "raw_value": 92.0,
+        "normalized_value": 0.92,
+        "weight": 0.1,
+        "contribution": 0.09200000000000001
+      },
+      "scope_alignment": {
+        "raw_value": 88.0,
+        "normalized_value": 0.88,
+        "weight": 0.1,
+        "contribution": 0.08800000000000001
+      },
+      "umr_structural_consistency": {
+        "raw_value": 76.0,
+        "normalized_value": 0.76,
+        "weight": 0.05,
+        "contribution": 0.038000000000000006
+      },
+      "bmr_structural_consistency": {
+        "raw_value": 82.0,
+        "normalized_value": 0.82,
+        "weight": 0.05,
+        "contribution": 0.041
+      }
+    },
+    "weights": {
+      "xnli_entailment": 0.4,
+      "prime_alignment": 0.3,
+      "polarity_alignment": 0.1,
+      "scope_alignment": 0.1,
+      "umr_structural_consistency": 0.05,
+      "bmr_structural_consistency": 0.05
+    },
+    "interpretation": "good"
+  },
+  "raw_metrics": {
+    "sbert_similarity": 0.85,
+    "xnli_entailment": 0.78,
+    "prime_alignment": 85.0,
+    "polarity_alignment": 92.0,
+    "scope_alignment": 88.0,
+    "umr_structural_consistency": 76.0,
+    "bmr_structural_consistency": 82.0,
+    "detection_rate": 34.7,
+    "legality_rate": 100.0
+  },
+  "evaluation_results": {
+    "metrics": {
+      "sbert_similarity": 0.85,
+      "xnli_entailment": 0.78,
+      "prime_alignment": 85.0,
+      "polarity_alignment": 92.0,
+      "scope_alignment": 88.0,
+      "umr_structural_consistency": 76.0,
+      "bmr_structural_consistency": 82.0,
+      "detection_rate": 34.7,
+      "legality_rate": 100.0
+    },
+    "test_configuration": {
+      "num_test_texts": 40,
+      "languages": [
+        "en"
+      ]
+    }
+  },
+  "stamp_timestamp": 1755913949.763674
+}
