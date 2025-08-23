@@ -1,0 +1,2041 @@
+{
+  "test_configuration": {
+    "num_test_texts": 10,
+    "languages": [
+      "en"
+    ],
+    "timestamp": 1755885940.329864
+  },
+  "validation_results": [
+    {
+      "explication": "NEAR HasProperty(The red car is parked near the building)",
+      "primitives": [
+        "NEAR",
+        "HasProperty"
+      ],
+      "rule_validations": [
+        {
+          "rule_name": "simple_explication",
+          "pattern_match": false,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "complex_explication",
+          "pattern_match": false,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "property_explication",
+          "pattern_match": true,
+          "primitive_valid": true,
+          "constraint_valid": true,
+          "validity_score": 1.0,
+          "confidence": 0.9,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "location_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "comparison_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "action_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "containment_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "causality_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.7,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "temporal_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "negation_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        }
+      ],
+      "valid_rules": 1,
+      "total_rules": 10,
+      "overall_validity": 0.1,
+      "avg_validity_score": 0.36999999999999994,
+      "semantic_score": 0.9231225848197937,
+      "legality_score": 0.5912490339279175,
+      "is_legal": false
+    },
+    {
+      "explication": "AtLocation HasProperty(The cat is on the mat)",
+      "primitives": [
+        "AtLocation",
+        "HasProperty"
+      ],
+      "rule_validations": [
+        {
+          "rule_name": "simple_explication",
+          "pattern_match": false,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "complex_explication",
+          "pattern_match": false,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "property_explication",
+          "pattern_match": true,
+          "primitive_valid": true,
+          "constraint_valid": true,
+          "validity_score": 1.0,
+          "confidence": 0.9,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "location_explication",
+          "pattern_match": true,
+          "primitive_valid": true,
+          "constraint_valid": true,
+          "validity_score": 1.0,
+          "confidence": 0.9,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "comparison_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "action_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "containment_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "causality_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.7,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "temporal_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "negation_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        }
+      ],
+      "valid_rules": 2,
+      "total_rules": 10,
+      "overall_validity": 0.2,
+      "avg_validity_score": 0.43999999999999995,
+      "semantic_score": 0.8115072250366211,
+      "legality_score": 0.5886028900146485,
+      "is_legal": false
+    },
+    {
+      "explication": "THIS SimilarTo SIMILAR HasProperty(This is similar to that)",
+      "primitives": [
+        "THIS",
+        "SimilarTo",
+        "SIMILAR",
+        "HasProperty"
+      ],
+      "rule_validations": [
+        {
+          "rule_name": "simple_explication",
+          "pattern_match": false,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "complex_explication",
+          "pattern_match": false,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "property_explication",
+          "pattern_match": true,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.7,
+          "confidence": 0.9,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "location_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "comparison_explication",
+          "pattern_match": true,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.7,
+          "confidence": 0.8,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "action_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "containment_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "causality_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.7,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "temporal_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "negation_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        }
+      ],
+      "valid_rules": 2,
+      "total_rules": 10,
+      "overall_validity": 0.2,
+      "avg_validity_score": 0.25999999999999995,
+      "semantic_score": 0.6953858137130737,
+      "legality_score": 0.4341543254852295,
+      "is_legal": false
+    },
+    {
+      "explication": "HasProperty(The weather is cold today)",
+      "primitives": [
+        "HasProperty"
+      ],
+      "rule_validations": [
+        {
+          "rule_name": "simple_explication",
+          "pattern_match": true,
+          "primitive_valid": true,
+          "constraint_valid": true,
+          "validity_score": 1.0,
+          "confidence": 0.9,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "complex_explication",
+          "pattern_match": false,
+          "primitive_valid": true,
+          "constraint_valid": false,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "property_explication",
+          "pattern_match": true,
+          "primitive_valid": true,
+          "constraint_valid": true,
+          "validity_score": 1.0,
+          "confidence": 0.9,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "location_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "comparison_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "action_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "containment_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "causality_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.7,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "temporal_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "negation_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.8,
+          "overall_valid": false
+        }
+      ],
+      "valid_rules": 2,
+      "total_rules": 10,
+      "overall_validity": 0.2,
+      "avg_validity_score": 0.38,
+      "semantic_score": 0.7837793827056885,
+      "legality_score": 0.5415117530822754,
+      "is_legal": false
+    },
+    {
+      "explication": "LONG VERY(The movie was very long)",
+      "primitives": [
+        "LONG",
+        "VERY"
+      ],
+      "rule_validations": [
+        {
+          "rule_name": "simple_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "complex_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "property_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "location_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "comparison_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "action_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "containment_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "causality_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.7,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "temporal_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "negation_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        }
+      ],
+      "valid_rules": 0,
+      "total_rules": 10,
+      "overall_validity": 0.0,
+      "avg_validity_score": 0.23999999999999994,
+      "semantic_score": 0.8710101842880249,
+      "legality_score": 0.49240407371520994,
+      "is_legal": false
+    },
+    {
+      "explication": "I(I need to buy groceries)",
+      "primitives": [
+        "I"
+      ],
+      "rule_validations": [
+        {
+          "rule_name": "simple_explication",
+          "pattern_match": true,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.7,
+          "confidence": 0.9,
+          "overall_valid": true
+        },
+        {
+          "rule_name": "complex_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "property_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "location_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.9,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "comparison_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "action_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "containment_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "causality_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.7,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "temporal_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": true,
+          "validity_score": 0.3,
+          "confidence": 0.8,
+          "overall_valid": false
+        },
+        {
+          "rule_name": "negation_explication",
+          "pattern_match": false,
+          "primitive_valid": false,
+          "constraint_valid": false,
+          "validity_score": 0.0,
+          "confidence": 0.8,
+          "overall_valid": false
+        }
+      ],
+      "valid_rules": 1,
+      "total_rules": 10,
+      "overall_validity": 0.1,
+      "avg_validity_score": 0.24999999999999994,
+      "semantic_score": 0.8996697068214417,
+      "legality_score": 0.5098678827285766,
+      "is_legal": false
+    }
+  ],
+  "refinement_results": [
+    {
+      "original_explication": "NEAR HasProperty(The red car is parked near the building)",
+      "refined_explication": "NEAR HasProperty(The red car is parked near the building)",
+      "improvement": 0.0,
+      "refinement_applied": false,
+      "refinements_applied": [],
+      "initial_validation": {
+        "explication": "NEAR HasProperty(The red car is parked near the building)",
+        "primitives": [
+          "NEAR",
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 1,
+        "total_rules": 10,
+        "overall_validity": 0.1,
+        "avg_validity_score": 0.36999999999999994,
+        "semantic_score": 0.9231225848197937,
+        "legality_score": 0.5912490339279175,
+        "is_legal": false
+      },
+      "final_validation": {
+        "explication": "NEAR HasProperty(The red car is parked near the building)",
+        "primitives": [
+          "NEAR",
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 1,
+        "total_rules": 10,
+        "overall_validity": 0.1,
+        "avg_validity_score": 0.36999999999999994,
+        "semantic_score": 0.9231225848197937,
+        "legality_score": 0.5912490339279175,
+        "is_legal": false
+      }
+    },
+    {
+      "original_explication": "AtLocation HasProperty(The cat is on the mat)",
+      "refined_explication": "AtLocation HasProperty(The cat is on the mat)",
+      "improvement": 0.0,
+      "refinement_applied": false,
+      "refinements_applied": [],
+      "initial_validation": {
+        "explication": "AtLocation HasProperty(The cat is on the mat)",
+        "primitives": [
+          "AtLocation",
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 2,
+        "total_rules": 10,
+        "overall_validity": 0.2,
+        "avg_validity_score": 0.43999999999999995,
+        "semantic_score": 0.8115072250366211,
+        "legality_score": 0.5886028900146485,
+        "is_legal": false
+      },
+      "final_validation": {
+        "explication": "AtLocation HasProperty(The cat is on the mat)",
+        "primitives": [
+          "AtLocation",
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 2,
+        "total_rules": 10,
+        "overall_validity": 0.2,
+        "avg_validity_score": 0.43999999999999995,
+        "semantic_score": 0.8115072250366211,
+        "legality_score": 0.5886028900146485,
+        "is_legal": false
+      }
+    },
+    {
+      "original_explication": "THIS SimilarTo SIMILAR HasProperty(This is similar to that)",
+      "refined_explication": "THIS SimilarTo SIMILAR HasProperty(This is similar to that)",
+      "improvement": 0.0,
+      "refinement_applied": false,
+      "refinements_applied": [],
+      "initial_validation": {
+        "explication": "THIS SimilarTo SIMILAR HasProperty(This is similar to that)",
+        "primitives": [
+          "THIS",
+          "SimilarTo",
+          "SIMILAR",
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.7,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.7,
+            "confidence": 0.8,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 2,
+        "total_rules": 10,
+        "overall_validity": 0.2,
+        "avg_validity_score": 0.25999999999999995,
+        "semantic_score": 0.6953858137130737,
+        "legality_score": 0.4341543254852295,
+        "is_legal": false
+      },
+      "final_validation": {
+        "explication": "THIS SimilarTo SIMILAR HasProperty(This is similar to that)",
+        "primitives": [
+          "THIS",
+          "SimilarTo",
+          "SIMILAR",
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.7,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.7,
+            "confidence": 0.8,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 2,
+        "total_rules": 10,
+        "overall_validity": 0.2,
+        "avg_validity_score": 0.25999999999999995,
+        "semantic_score": 0.6953858137130737,
+        "legality_score": 0.4341543254852295,
+        "is_legal": false
+      }
+    },
+    {
+      "original_explication": "HasProperty(The weather is cold today)",
+      "refined_explication": "HasProperty(The weather is cold today)",
+      "improvement": 0.0,
+      "refinement_applied": false,
+      "refinements_applied": [],
+      "initial_validation": {
+        "explication": "HasProperty(The weather is cold today)",
+        "primitives": [
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 2,
+        "total_rules": 10,
+        "overall_validity": 0.2,
+        "avg_validity_score": 0.38,
+        "semantic_score": 0.7837793827056885,
+        "legality_score": 0.5415117530822754,
+        "is_legal": false
+      },
+      "final_validation": {
+        "explication": "HasProperty(The weather is cold today)",
+        "primitives": [
+          "HasProperty"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": true,
+            "constraint_valid": false,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": true,
+            "primitive_valid": true,
+            "constraint_valid": true,
+            "validity_score": 1.0,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 2,
+        "total_rules": 10,
+        "overall_validity": 0.2,
+        "avg_validity_score": 0.38,
+        "semantic_score": 0.7837793827056885,
+        "legality_score": 0.5415117530822754,
+        "is_legal": false
+      }
+    },
+    {
+      "original_explication": "LONG VERY(The movie was very long)",
+      "refined_explication": "LONG VERY(The movie was very long)",
+      "improvement": 0.0,
+      "refinement_applied": false,
+      "refinements_applied": [],
+      "initial_validation": {
+        "explication": "LONG VERY(The movie was very long)",
+        "primitives": [
+          "LONG",
+          "VERY"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 0,
+        "total_rules": 10,
+        "overall_validity": 0.0,
+        "avg_validity_score": 0.23999999999999994,
+        "semantic_score": 0.8710101842880249,
+        "legality_score": 0.49240407371520994,
+        "is_legal": false
+      },
+      "final_validation": {
+        "explication": "LONG VERY(The movie was very long)",
+        "primitives": [
+          "LONG",
+          "VERY"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 0,
+        "total_rules": 10,
+        "overall_validity": 0.0,
+        "avg_validity_score": 0.23999999999999994,
+        "semantic_score": 0.8710101842880249,
+        "legality_score": 0.49240407371520994,
+        "is_legal": false
+      }
+    },
+    {
+      "original_explication": "I(I need to buy groceries)",
+      "refined_explication": "I(I need to buy groceries)",
+      "improvement": 0.0,
+      "refinement_applied": false,
+      "refinements_applied": [],
+      "initial_validation": {
+        "explication": "I(I need to buy groceries)",
+        "primitives": [
+          "I"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": true,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.7,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 1,
+        "total_rules": 10,
+        "overall_validity": 0.1,
+        "avg_validity_score": 0.24999999999999994,
+        "semantic_score": 0.8996697068214417,
+        "legality_score": 0.5098678827285766,
+        "is_legal": false
+      },
+      "final_validation": {
+        "explication": "I(I need to buy groceries)",
+        "primitives": [
+          "I"
+        ],
+        "rule_validations": [
+          {
+            "rule_name": "simple_explication",
+            "pattern_match": true,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.7,
+            "confidence": 0.9,
+            "overall_valid": true
+          },
+          {
+            "rule_name": "complex_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "property_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "location_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.9,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "comparison_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "action_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "containment_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "causality_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.7,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "temporal_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": true,
+            "validity_score": 0.3,
+            "confidence": 0.8,
+            "overall_valid": false
+          },
+          {
+            "rule_name": "negation_explication",
+            "pattern_match": false,
+            "primitive_valid": false,
+            "constraint_valid": false,
+            "validity_score": 0.0,
+            "confidence": 0.8,
+            "overall_valid": false
+          }
+        ],
+        "valid_rules": 1,
+        "total_rules": 10,
+        "overall_validity": 0.1,
+        "avg_validity_score": 0.24999999999999994,
+        "semantic_score": 0.8996697068214417,
+        "legality_score": 0.5098678827285766,
+        "is_legal": false
+      }
+    }
+  ],
+  "grammar_analysis": {
+    "total_explications": 6,
+    "legal_explications": 0,
+    "refined_explications": 0,
+    "avg_legality_score": 0.5262983264923097,
+    "avg_improvement": 0.0,
+    "rule_performance": {
+      "simple_explication": {
+        "matches": 6,
+        "valid": 2,
+        "success_rate": 0.3333333333333333
+      },
+      "complex_explication": {
+        "matches": 6,
+        "valid": 0,
+        "success_rate": 0.0
+      },
+      "property_explication": {
+        "matches": 6,
+        "valid": 4,
+        "success_rate": 0.6666666666666666
+      },
+      "location_explication": {
+        "matches": 6,
+        "valid": 1,
+        "success_rate": 0.16666666666666666
+      },
+      "comparison_explication": {
+        "matches": 6,
+        "valid": 1,
+        "success_rate": 0.16666666666666666
+      },
+      "action_explication": {
+        "matches": 6,
+        "valid": 0,
+        "success_rate": 0.0
+      },
+      "containment_explication": {
+        "matches": 6,
+        "valid": 0,
+        "success_rate": 0.0
+      },
+      "causality_explication": {
+        "matches": 6,
+        "valid": 0,
+        "success_rate": 0.0
+      },
+      "temporal_explication": {
+        "matches": 6,
+        "valid": 0,
+        "success_rate": 0.0
+      },
+      "negation_explication": {
+        "matches": 6,
+        "valid": 0,
+        "success_rate": 0.0
+      }
+    },
+    "refinement_effectiveness": {
+      "successful_refinements": 0,
+      "avg_improvement": 0.0,
+      "refinement_types": {}
+    }
+  },
+  "recommendations": [
+    "Low legality rate (0.0%) - improve grammar rules",
+    "Rule 'simple_explication' has low success rate (33.3%) - consider refinement",
+    "Rule 'complex_explication' has low success rate (0.0%) - consider refinement",
+    "Rule 'location_explication' has low success rate (16.7%) - consider refinement",
+    "Rule 'comparison_explication' has low success rate (16.7%) - consider refinement",
+    "Rule 'action_explication' has low success rate (0.0%) - consider refinement",
+    "Rule 'containment_explication' has low success rate (0.0%) - consider refinement",
+    "Rule 'causality_explication' has low success rate (0.0%) - consider refinement",
+    "Rule 'temporal_explication' has low success rate (0.0%) - consider refinement",
+    "Rule 'negation_explication' has low success rate (0.0%) - consider refinement",
+    "Low average improvement - consider enhancing refinement strategies",
+    "Low average legality score - improve grammar validation"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "test_configuration": {
+    "num_test_texts": 10,
+    "languages": [
+      "en"
+    ],
+    "timestamp": 1755886651.946223
+  },
+  "processing_results": [
+    {
+      "original_text": "The cat is not on the mat",
+      "primitives": [
+        "NOT",
+        "Not",
+        "HasProperty"
+      ],
+      "eil_fact": {
+        "predicates": [
+          {
+            "name": "NOT",
+            "predicate_type": {
+              "_value_": "negation",
+              "_name_": "NEGATION",
+              "__objclass__": 
