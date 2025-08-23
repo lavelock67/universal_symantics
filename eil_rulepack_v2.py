@@ -488,11 +488,15 @@ class EILRulepackV2:
             if fact.predicate in ["ALL", "SOME"] and len(fact.arguments) >= 2:
                 quantifier, predicate_expr = fact.arguments[0], fact.arguments[1]
                 
-                # Look for additional predicates to combine
+                # Look for additional predicates to combine (but avoid self-reference)
                 for other_fact in facts:
-                    if other_fact.fact_id != fact.fact_id:
+                    if (other_fact.fact_id != fact.fact_id and 
+                        other_fact.predicate not in ["ALL", "SOME"] and  # Avoid combining with other quantifiers
+                        len(other_fact.arguments) > 0):
+                        
                         # Combine predicates
-                        combined_predicate = f"{predicate_expr} ∧ {other_fact.predicate}({other_fact.arguments[0] if other_fact.arguments else ''})"
+                        other_pred = f"{other_fact.predicate}({other_fact.arguments[0]})"
+                        combined_predicate = f"{predicate_expr} ∧ {other_pred}"
                         
                         new_fact = EILFact(
                             fact_id=f"fact_{self.fact_counter}",
@@ -504,6 +508,10 @@ class EILRulepackV2:
                         )
                         new_facts.append(new_fact)
                         self.fact_counter += 1
+                        
+                        # Limit combinations to prevent explosion
+                        if len(new_facts) >= 5:
+                            break
         
         return new_facts
     
@@ -541,6 +549,9 @@ class EILRulepackV2:
             step_count += 1
             new_facts_in_step = []
             
+            # Track facts before this step to avoid infinite loops
+            facts_before_step = len(all_facts)
+            
             # Apply each rule
             for rule in self.rules:
                 new_facts = self.apply_rule(rule, all_facts)
@@ -560,8 +571,14 @@ class EILRulepackV2:
                     reasoning_steps.append(step)
                     self.step_counter += 1
             
-            # Stop if no new facts generated
-            if not new_facts_in_step:
+            # Stop if no new facts generated in this step
+            if len(all_facts) == facts_before_step:
+                logger.info(f"No new facts generated in step {step_count}, stopping")
+                break
+            
+            # Safety check: stop if too many facts
+            if len(all_facts) > 100:
+                logger.warning(f"Too many facts generated ({len(all_facts)}), stopping to prevent explosion")
                 break
         
         return {

@@ -1,0 +1,39 @@
+{
+  "evaluation_config": {
+    "num_items": 3,
+    "jaccard_threshold": 0.85,
+    "synset_improvement_threshold": 10.0,
+    "timestamp": 1755915281.258719
+  },
+  "summary": {
+    "jaccard_gate": {
+      "passed": 3,
+      "failed": 0,
+      "average_score": 1.0,
+      "score_distribution": {
+        "excellent": 3
+      }
+    },
+    "synset_stability_gate": {
+      "passed": 0,
+      "failed": 3,
+      "average_score": 0.0,
+      "score_distribution": {
+        "poor": 3
+      }
+    },
+    "confusion_matrix_gate": {
+      "passed": 3,
+      "failed": 0,
+      "average_score": 1.0,
+      "score_distribution": {
+        "excellent": 3
+      }
+    }
+  },
+  "recommendations": [
+    "Fix synset drift: 3 items failed stability gate",
+    "Improve synset stability: current average 0.0 below 10.0 threshold",
+    "Overall pass rate 66.7% below 90% target"
+  ]
+}
