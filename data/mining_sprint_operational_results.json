@@ -1,0 +1,1180 @@
+{
+  "sprint_id": "sprint_v1",
+  "candidates": [
+    {
+      "molecule_id": "ongoing_for_1",
+      "molecule_type": "ongoing_for",
+      "nsm_representation": "ONGOING_FOR(x, action, duration)",
+      "surface_patterns": [
+        "has been doing for",
+        "ha estado haciendo por",
+        "fait depuis"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 88,
+      "confidence": 0.8165021863630763,
+      "mining_signals": {
+        "delta_mdl": 0.6,
+        "cross_ling_divergence": 0.16666666666666666,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08165021863630763,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5281008770605949,
+      "timestamp": 1755916583.612298
+    },
+    {
+      "molecule_id": "ongoing_for_2",
+      "molecule_type": "ongoing_for",
+      "nsm_representation": "ONGOING_FOR(x, action, duration)",
+      "surface_patterns": [
+        "has been doing for",
+        "ha estado haciendo por",
+        "fait depuis"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 78,
+      "confidence": 0.7358802182692845,
+      "mining_signals": {
+        "delta_mdl": 0.6,
+        "cross_ling_divergence": 0.16666666666666666,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07358802182692846,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5264884376987191,
+      "timestamp": 1755916583.612303
+    },
+    {
+      "molecule_id": "ongoing_for_0",
+      "molecule_type": "ongoing_for",
+      "nsm_representation": "ONGOING_FOR(x, action, duration)",
+      "surface_patterns": [
+        "has been doing for",
+        "ha estado haciendo por",
+        "fait depuis"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 97,
+      "confidence": 0.7333907695507375,
+      "mining_signals": {
+        "delta_mdl": 0.6,
+        "cross_ling_divergence": 0.16666666666666666,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07333907695507375,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5264386487243481,
+      "timestamp": 1755916583.612293
+    },
+    {
+      "molecule_id": "recent_past_1",
+      "molecule_type": "recent_past",
+      "nsm_representation": "RECENT_PAST(action)",
+      "surface_patterns": [
+        "just did",
+        "acaba de hacer",
+        "vient de faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 94,
+      "confidence": 0.939090942138938,
+      "mining_signals": {
+        "delta_mdl": 0.64,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.0939090942138938,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5092193188427788,
+      "timestamp": 1755916583.612281
+    },
+    {
+      "molecule_id": "recent_past_2",
+      "molecule_type": "recent_past",
+      "nsm_representation": "RECENT_PAST(action)",
+      "surface_patterns": [
+        "just did",
+        "acaba de hacer",
+        "vient de faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 78,
+      "confidence": 0.8763911440495905,
+      "mining_signals": {
+        "delta_mdl": 0.64,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08763911440495906,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5079653228809918,
+      "timestamp": 1755916583.612287
+    },
+    {
+      "molecule_id": "recent_past_0",
+      "molecule_type": "recent_past",
+      "nsm_representation": "RECENT_PAST(action)",
+      "surface_patterns": [
+        "just did",
+        "acaba de hacer",
+        "vient de faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 32,
+      "confidence": 0.8377813219998641,
+      "mining_signals": {
+        "delta_mdl": 0.64,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08377813219998642,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5071931264399974,
+      "timestamp": 1755916583.612275
+    },
+    {
+      "molecule_id": "almost_do_0",
+      "molecule_type": "almost_do",
+      "nsm_representation": "ALMOST_DO(x, action)",
+      "surface_patterns": [
+        "almost did",
+        "casi hizo",
+        "presque fait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 78,
+      "confidence": 0.9362328952364855,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09362328952364855,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5031621579047297,
+      "timestamp": 1755916583.612246
+    },
+    {
+      "molecule_id": "experiencer_like_1",
+      "molecule_type": "experiencer_like",
+      "nsm_representation": "EXPERIENCER_LIKE(exp, stim)",
+      "surface_patterns": [
+        "gustar",
+        "plaire",
+        "like"
+      ],
+      "languages": [
+        "es",
+        "fr",
+        "en"
+      ],
+      "frequency": 45,
+      "confidence": 0.9346122314374152,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09346122314374153,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5031297446287484,
+      "timestamp": 1755916583.612349
+    },
+    {
+      "molecule_id": "almost_do_2",
+      "molecule_type": "almost_do",
+      "nsm_representation": "ALMOST_DO(x, action)",
+      "surface_patterns": [
+        "almost did",
+        "casi hizo",
+        "presque fait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 49,
+      "confidence": 0.9300983807745535,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09300983807745536,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5030394676154911,
+      "timestamp": 1755916583.612268
+    },
+    {
+      "molecule_id": "do_again_1",
+      "molecule_type": "do_again",
+      "nsm_representation": "DO_AGAIN(x, action)",
+      "surface_patterns": [
+        "did again",
+        "hizo de nuevo",
+        "refait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 20,
+      "confidence": 0.9268953552703718,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09268953552703718,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5029754071054074,
+      "timestamp": 1755916583.612331
+    },
+    {
+      "molecule_id": "almost_do_1",
+      "molecule_type": "almost_do",
+      "nsm_representation": "ALMOST_DO(x, action)",
+      "surface_patterns": [
+        "almost did",
+        "casi hizo",
+        "presque fait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 25,
+      "confidence": 0.9217449225006152,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09217449225006152,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5028723984500123,
+      "timestamp": 1755916583.612261
+    },
+    {
+      "molecule_id": "do_again_0",
+      "molecule_type": "do_again",
+      "nsm_representation": "DO_AGAIN(x, action)",
+      "surface_patterns": [
+        "did again",
+        "hizo de nuevo",
+        "refait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 20,
+      "confidence": 0.8984517972488264,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08984517972488265,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5024065359449765,
+      "timestamp": 1755916583.612326
+    },
+    {
+      "molecule_id": "ability_can_1",
+      "molecule_type": "ability_can",
+      "nsm_representation": "ABILITY_CAN(x, action)",
+      "surface_patterns": [
+        "can do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 23,
+      "confidence": 0.9404641626510253,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.09404641626510253,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.5001217832530205,
+      "timestamp": 1755916583.612365
+    },
+    {
+      "molecule_id": "do_again_2",
+      "molecule_type": "do_again",
+      "nsm_representation": "DO_AGAIN(x, action)",
+      "surface_patterns": [
+        "did again",
+        "hizo de nuevo",
+        "refait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 32,
+      "confidence": 0.7822575609841477,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07822575609841477,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.500082651219683,
+      "timestamp": 1755916583.6123378
+    },
+    {
+      "molecule_id": "experiencer_like_2",
+      "molecule_type": "experiencer_like",
+      "nsm_representation": "EXPERIENCER_LIKE(exp, stim)",
+      "surface_patterns": [
+        "gustar",
+        "plaire",
+        "like"
+      ],
+      "languages": [
+        "es",
+        "fr",
+        "en"
+      ],
+      "frequency": 20,
+      "confidence": 0.7423601106073224,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07423601106073224,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.4992847022121465,
+      "timestamp": 1755916583.612355
+    },
+    {
+      "molecule_id": "experiencer_like_0",
+      "molecule_type": "experiencer_like",
+      "nsm_representation": "EXPERIENCER_LIKE(exp, stim)",
+      "surface_patterns": [
+        "gustar",
+        "plaire",
+        "like"
+      ],
+      "languages": [
+        "es",
+        "fr",
+        "en"
+      ],
+      "frequency": 42,
+      "confidence": 0.7300596504264625,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07300596504264625,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.49903869300852927,
+      "timestamp": 1755916583.612344
+    },
+    {
+      "molecule_id": "ability_can_0",
+      "molecule_type": "ability_can",
+      "nsm_representation": "ABILITY_CAN(x, action)",
+      "surface_patterns": [
+        "can do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 14,
+      "confidence": 0.8674860175222218,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.08674860175222218,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49866222035044444,
+      "timestamp": 1755916583.61236
+    },
+    {
+      "molecule_id": "permission_can_2",
+      "molecule_type": "permission_can",
+      "nsm_representation": "PERMISSION_CAN(x, action)",
+      "surface_patterns": [
+        "may do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 19,
+      "confidence": 0.7737916762609242,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.07737916762609243,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49678833352521845,
+      "timestamp": 1755916583.6123872
+    },
+    {
+      "molecule_id": "permission_can_0",
+      "molecule_type": "permission_can",
+      "nsm_representation": "PERMISSION_CAN(x, action)",
+      "surface_patterns": [
+        "may do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 38,
+      "confidence": 0.745342490311411,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.0745342490311411,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49621934980622817,
+      "timestamp": 1755916583.612376
+    },
+    {
+      "molecule_id": "permission_can_1",
+      "molecule_type": "permission_can",
+      "nsm_representation": "PERMISSION_CAN(x, action)",
+      "surface_patterns": [
+        "may do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 40,
+      "confidence": 0.7405918342365284,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.07405918342365285,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49612433668473055,
+      "timestamp": 1755916583.612381
+    },
+    {
+      "molecule_id": "ability_can_2",
+      "molecule_type": "ability_can",
+      "nsm_representation": "ABILITY_CAN(x, action)",
+      "surface_patterns": [
+        "can do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 56,
+      "confidence": 0.7173913484155474,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.07173913484155474,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.4956603269683109,
+      "timestamp": 1755916583.612371
+    },
+    {
+      "molecule_id": "stop_resume_0",
+      "molecule_type": "stop_resume",
+      "nsm_representation": "STOP(x, action) \u2227 LATER RESUME(x, action)",
+      "surface_patterns": [
+        "stopped and resumed",
+        "par\u00f3 y reanud\u00f3",
+        "arr\u00eat\u00e9 et repris"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 27,
+      "confidence": 0.910750438894207,
+      "mining_signals": {
+        "delta_mdl": 0.54,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09107504388942071,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.4786525087778841,
+      "timestamp": 1755916583.612309
+    },
+    {
+      "molecule_id": "stop_resume_1",
+      "molecule_type": "stop_resume",
+      "nsm_representation": "STOP(x, action) \u2227 LATER RESUME(x, action)",
+      "surface_patterns": [
+        "stopped and resumed",
+        "par\u00f3 y reanud\u00f3",
+        "arr\u00eat\u00e9 et repris"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 78,
+      "confidence": 0.8429977776710477,
+      "mining_signals": {
+        "delta_mdl": 0.54,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08429977776710477,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.47729745555342096,
+      "timestamp": 1755916583.6123142
+    },
+    {
+      "molecule_id": "stop_resume_2",
+      "molecule_type": "stop_resume",
+      "nsm_representation": "STOP(x, action) \u2227 LATER RESUME(x, action)",
+      "surface_patterns": [
+        "stopped and resumed",
+        "par\u00f3 y reanud\u00f3",
+        "arr\u00eat\u00e9 et repris"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 98,
+      "confidence": 0.7934646136790828,
+      "mining_signals": {
+        "delta_mdl": 0.54,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.0793464613679083,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.47630679227358164,
+      "timestamp": 1755916583.61232
+    }
+  ],
+  "promoted_molecules": [
+    {
+      "molecule_id": "ongoing_for_1",
+      "molecule_type": "ongoing_for",
+      "nsm_representation": "ONGOING_FOR(x, action, duration)",
+      "surface_patterns": [
+        "has been doing for",
+        "ha estado haciendo por",
+        "fait depuis"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 88,
+      "confidence": 0.8165021863630763,
+      "mining_signals": {
+        "delta_mdl": 0.6,
+        "cross_ling_divergence": 0.16666666666666666,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08165021863630763,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5281008770605949,
+      "timestamp": 1755916583.612298
+    },
+    {
+      "molecule_id": "ongoing_for_2",
+      "molecule_type": "ongoing_for",
+      "nsm_representation": "ONGOING_FOR(x, action, duration)",
+      "surface_patterns": [
+        "has been doing for",
+        "ha estado haciendo por",
+        "fait depuis"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 78,
+      "confidence": 0.7358802182692845,
+      "mining_signals": {
+        "delta_mdl": 0.6,
+        "cross_ling_divergence": 0.16666666666666666,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07358802182692846,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5264884376987191,
+      "timestamp": 1755916583.612303
+    },
+    {
+      "molecule_id": "ongoing_for_0",
+      "molecule_type": "ongoing_for",
+      "nsm_representation": "ONGOING_FOR(x, action, duration)",
+      "surface_patterns": [
+        "has been doing for",
+        "ha estado haciendo por",
+        "fait depuis"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 97,
+      "confidence": 0.7333907695507375,
+      "mining_signals": {
+        "delta_mdl": 0.6,
+        "cross_ling_divergence": 0.16666666666666666,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07333907695507375,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5264386487243481,
+      "timestamp": 1755916583.612293
+    },
+    {
+      "molecule_id": "recent_past_1",
+      "molecule_type": "recent_past",
+      "nsm_representation": "RECENT_PAST(action)",
+      "surface_patterns": [
+        "just did",
+        "acaba de hacer",
+        "vient de faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 94,
+      "confidence": 0.939090942138938,
+      "mining_signals": {
+        "delta_mdl": 0.64,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.0939090942138938,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5092193188427788,
+      "timestamp": 1755916583.612281
+    },
+    {
+      "molecule_id": "recent_past_2",
+      "molecule_type": "recent_past",
+      "nsm_representation": "RECENT_PAST(action)",
+      "surface_patterns": [
+        "just did",
+        "acaba de hacer",
+        "vient de faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 78,
+      "confidence": 0.8763911440495905,
+      "mining_signals": {
+        "delta_mdl": 0.64,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08763911440495906,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5079653228809918,
+      "timestamp": 1755916583.612287
+    },
+    {
+      "molecule_id": "recent_past_0",
+      "molecule_type": "recent_past",
+      "nsm_representation": "RECENT_PAST(action)",
+      "surface_patterns": [
+        "just did",
+        "acaba de hacer",
+        "vient de faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 32,
+      "confidence": 0.8377813219998641,
+      "mining_signals": {
+        "delta_mdl": 0.64,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08377813219998642,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5071931264399974,
+      "timestamp": 1755916583.612275
+    },
+    {
+      "molecule_id": "almost_do_0",
+      "molecule_type": "almost_do",
+      "nsm_representation": "ALMOST_DO(x, action)",
+      "surface_patterns": [
+        "almost did",
+        "casi hizo",
+        "presque fait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 78,
+      "confidence": 0.9362328952364855,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09362328952364855,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5031621579047297,
+      "timestamp": 1755916583.612246
+    },
+    {
+      "molecule_id": "experiencer_like_1",
+      "molecule_type": "experiencer_like",
+      "nsm_representation": "EXPERIENCER_LIKE(exp, stim)",
+      "surface_patterns": [
+        "gustar",
+        "plaire",
+        "like"
+      ],
+      "languages": [
+        "es",
+        "fr",
+        "en"
+      ],
+      "frequency": 45,
+      "confidence": 0.9346122314374152,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09346122314374153,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5031297446287484,
+      "timestamp": 1755916583.612349
+    },
+    {
+      "molecule_id": "almost_do_2",
+      "molecule_type": "almost_do",
+      "nsm_representation": "ALMOST_DO(x, action)",
+      "surface_patterns": [
+        "almost did",
+        "casi hizo",
+        "presque fait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 49,
+      "confidence": 0.9300983807745535,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09300983807745536,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5030394676154911,
+      "timestamp": 1755916583.612268
+    },
+    {
+      "molecule_id": "do_again_1",
+      "molecule_type": "do_again",
+      "nsm_representation": "DO_AGAIN(x, action)",
+      "surface_patterns": [
+        "did again",
+        "hizo de nuevo",
+        "refait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 20,
+      "confidence": 0.9268953552703718,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09268953552703718,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5029754071054074,
+      "timestamp": 1755916583.612331
+    },
+    {
+      "molecule_id": "almost_do_1",
+      "molecule_type": "almost_do",
+      "nsm_representation": "ALMOST_DO(x, action)",
+      "surface_patterns": [
+        "almost did",
+        "casi hizo",
+        "presque fait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 25,
+      "confidence": 0.9217449225006152,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.09217449225006152,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5028723984500123,
+      "timestamp": 1755916583.612261
+    },
+    {
+      "molecule_id": "do_again_0",
+      "molecule_type": "do_again",
+      "nsm_representation": "DO_AGAIN(x, action)",
+      "surface_patterns": [
+        "did again",
+        "hizo de nuevo",
+        "refait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 20,
+      "confidence": 0.8984517972488264,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.08984517972488265,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.5024065359449765,
+      "timestamp": 1755916583.612326
+    },
+    {
+      "molecule_id": "ability_can_1",
+      "molecule_type": "ability_can",
+      "nsm_representation": "ABILITY_CAN(x, action)",
+      "surface_patterns": [
+        "can do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 23,
+      "confidence": 0.9404641626510253,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.09404641626510253,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.5001217832530205,
+      "timestamp": 1755916583.612365
+    },
+    {
+      "molecule_id": "do_again_2",
+      "molecule_type": "do_again",
+      "nsm_representation": "DO_AGAIN(x, action)",
+      "surface_patterns": [
+        "did again",
+        "hizo de nuevo",
+        "refait"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 32,
+      "confidence": 0.7822575609841477,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07822575609841477,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.500082651219683,
+      "timestamp": 1755916583.6123378
+    },
+    {
+      "molecule_id": "experiencer_like_2",
+      "molecule_type": "experiencer_like",
+      "nsm_representation": "EXPERIENCER_LIKE(exp, stim)",
+      "surface_patterns": [
+        "gustar",
+        "plaire",
+        "like"
+      ],
+      "languages": [
+        "es",
+        "fr",
+        "en"
+      ],
+      "frequency": 20,
+      "confidence": 0.7423601106073224,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07423601106073224,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.4992847022121465,
+      "timestamp": 1755916583.612355
+    },
+    {
+      "molecule_id": "experiencer_like_0",
+      "molecule_type": "experiencer_like",
+      "nsm_representation": "EXPERIENCER_LIKE(exp, stim)",
+      "surface_patterns": [
+        "gustar",
+        "plaire",
+        "like"
+      ],
+      "languages": [
+        "es",
+        "fr",
+        "en"
+      ],
+      "frequency": 42,
+      "confidence": 0.7300596504264625,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.99375,
+        "mps_gain": 0.07300596504264625,
+        "legality_regression": 0.996875
+      },
+      "promotion_score": 0.49903869300852927,
+      "timestamp": 1755916583.612344
+    },
+    {
+      "molecule_id": "ability_can_0",
+      "molecule_type": "ability_can",
+      "nsm_representation": "ABILITY_CAN(x, action)",
+      "surface_patterns": [
+        "can do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 14,
+      "confidence": 0.8674860175222218,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.08674860175222218,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49866222035044444,
+      "timestamp": 1755916583.61236
+    },
+    {
+      "molecule_id": "permission_can_2",
+      "molecule_type": "permission_can",
+      "nsm_representation": "PERMISSION_CAN(x, action)",
+      "surface_patterns": [
+        "may do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 19,
+      "confidence": 0.7737916762609242,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.07737916762609243,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49678833352521845,
+      "timestamp": 1755916583.6123872
+    },
+    {
+      "molecule_id": "permission_can_0",
+      "molecule_type": "permission_can",
+      "nsm_representation": "PERMISSION_CAN(x, action)",
+      "surface_patterns": [
+        "may do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 38,
+      "confidence": 0.745342490311411,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.0745342490311411,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49621934980622817,
+      "timestamp": 1755916583.612376
+    },
+    {
+      "molecule_id": "permission_can_1",
+      "molecule_type": "permission_can",
+      "nsm_representation": "PERMISSION_CAN(x, action)",
+      "surface_patterns": [
+        "may do",
+        "puede hacer",
+        "peut faire"
+      ],
+      "languages": [
+        "en",
+        "es",
+        "fr"
+      ],
+      "frequency": 40,
+      "confidence": 0.7405918342365284,
+      "mining_signals": {
+        "delta_mdl": 0.62,
+        "cross_ling_divergence": 0.0,
+        "error_clusters": 0.98125,
+        "mps_gain": 0.07405918342365285,
+        "legality_regression": 0.990625
+      },
+      "promotion_score": 0.49612433668473055,
+      "timestamp": 1755916583.612381
+    }
+  ],
+  "promotion_tests": {
+    "ongoing_for_1": {
+      "mdl_gain": {
+        "test_type": "mdl_gain",
+        "passed": true,
+        "score": 4.5,
+        "details": {
+          "current_mdl": 4.0,
+          "baseline_mdl": 8.5,
+          "mdl_gain": 4.5,
+          "threshold": 0.5
+        },
+        "warnings": []
+      },
+      "mps_gain": {
+        "test_type": "mps_gain",
+        "passed": true,
+        "score": 0.05,
+        "details": {
+          "baseline_mps": 0.82,
+          "projected_mps": 0.87,
+          "mps_gain": 0.05,
+          "languages_supported": 3,
+          "threshold": 0.03
+        },
+        "warnings": []
+      },
+      "cross_lingual_improvement": {
+        "test_type": "cross_lingual_improvement",
+        "passed": 
