@@ -1,0 +1,527 @@
+{
+  "results": [
+    {
+      "original_text": "The cat is not on the mat.",
+      "styled_text": "The feline is not positioned upon the mat.",
+      "style_transformation": {
+        "style_type": "formal",
+        "literalness": 0.8,
+        "transformation_rules": [
+          "style_formal"
+        ],
+        "confidence": 0.9,
+        "timestamp": 1755916346.25329
+      },
+      "preservation_results": {
+        "synset_stability": {
+          "check_type": "synset_stability",
+          "passed": false,
+          "score": 0.7666666666666666,
+          "details": {
+            "original_synsets": {
+              "cat": "cat.n.01",
+              "not": "not.r.01",
+              "mat": "mat.n.01"
+            },
+            "styled_synsets": {
+              "not": "not.r.01",
+              "mat": "mat.n.01"
+            },
+            "raw_stability": 0.7666666666666666,
+            "literalness_adjustment": 0.8,
+            "threshold": 0.9
+          },
+          "warnings": [
+            "Synset stability 0.767 below threshold 0.9"
+          ]
+        },
+        "prime_preservation": {
+          "check_type": "prime_preservation",
+          "passed": false,
+          "score": 0.5,
+          "details": {
+            "original_primes": [
+              "NOT"
+            ],
+            "styled_primes": [
+              "ONE",
+              "NOT"
+            ],
+            "prime_overlap": 0.5,
+            "prime_consistency": 0.5,
+            "missing_primes": [],
+            "added_primes": [
+              "ONE"
+            ],
+            "literalness_adjustment": 0.8
+          },
+          "warnings": [
+            "Prime preservation 0.500 below threshold 0.95",
+            "Added primes: {'ONE'}"
+          ]
+        },
+        "polarity_preservation": {
+          "check_type": "polarity_preservation",
+          "passed": true,
+          "score": 1.0,
+          "details": {
+            "original_polarity": "negative",
+            "styled_polarity": "negative",
+            "original_scope": {
+              "quantifiers": [],
+              "modalities": [],
+              "negation_scope": "local"
+            },
+            "styled_scope": {
+              "quantifiers": [],
+              "modalities": [],
+              "negation_scope": "local"
+            },
+            "polarity_score": 1.0,
+            "scope_score": 1.0,
+            "literalness_adjustment": 0.8
+          },
+          "warnings": []
+        }
+      },
+      "overall_passed": false,
+      "overall_score": 0.7066666666666666,
+      "blocking_issues": [
+        "synset_stability check failed: 0.767",
+        "prime_preservation check failed: 0.500"
+      ],
+      "recommendations": [
+        "Review style transformations to maintain synset stability",
+        "Ensure NSM primes are preserved during styling"
+      ],
+      "timestamp": 1755916346.253408
+    },
+    {
+      "original_text": "I do not like this weather.",
+      "styled_text": "I hate this weather.",
+      "style_transformation": {
+        "style_type": "informal",
+        "literalness": 0.6,
+        "transformation_rules": [
+          "style_informal"
+        ],
+        "confidence": 0.9,
+        "timestamp": 1755916346.253451
+      },
+      "preservation_results": {
+        "synset_stability": {
+          "check_type": "synset_stability",
+          "passed": false,
+          "score": 0.5493333333333333,
+          "details": {
+            "original_synsets": {
+              "not": "not.r.01",
+              "like": "like.v.01",
+              "weather": "weather.n.01"
+            },
+            "styled_synsets": {
+              "weather": "weather.n.01"
+            },
+            "raw_stability": 0.5333333333333333,
+            "literalness_adjustment": 0.6,
+            "threshold": 0.9
+          },
+          "warnings": [
+            "Synset stability 0.549 below threshold 0.9",
+            "Literalness 0.60 below evaluation threshold 0.7"
+          ]
+        },
+        "prime_preservation": {
+          "check_type": "prime_preservation",
+          "passed": false,
+          "score": 0.0,
+          "details": {
+            "original_primes": [
+              "LIKE",
+              "NOT",
+              "DO"
+            ],
+            "styled_primes": [],
+            "prime_overlap": 0.0,
+            "prime_consistency": 0.0,
+            "missing_primes": [
+              "LIKE",
+              "NOT",
+              "DO"
+            ],
+            "added_primes": [],
+            "literalness_adjustment": 0.6
+          },
+          "warnings": [
+            "Prime preservation 0.000 below threshold 0.95",
+            "Missing primes: {'LIKE', 'NOT', 'DO'}"
+          ]
+        },
+        "polarity_preservation": {
+          "check_type": "polarity_preservation",
+          "passed": false,
+          "score": 0.404,
+          "details": {
+            "original_polarity": "negative",
+            "styled_polarity": "positive",
+            "original_scope": {
+              "quantifiers": [],
+              "modalities": [],
+              "negation_scope": "local"
+            },
+            "styled_scope": {
+              "quantifiers": [],
+              "modalities": [],
+              "negation_scope": null
+            },
+            "polarity_score": 0.0,
+            "scope_score": 0.8,
+            "literalness_adjustment": 0.6
+          },
+          "warnings": [
+            "Polarity/scope preservation 0.404 below threshold 0.9",
+            "Polarity changed: negative -> positive",
+            "Scope changed: {'quantifiers': [], 'modalities': [], 'negation_scope': 'local'} -> {'quantifiers': [], 'modalities': [], 'negation_scope': None}"
+          ]
+        }
+      },
+      "overall_passed": false,
+      "overall_score": 0.3005333333333333,
+      "blocking_issues": [
+        "Literalness 0.60 below evaluation threshold 0.7",
+        "synset_stability check failed: 0.549",
+        "prime_preservation check failed: 0.000",
+        "polarity_preservation check failed: 0.404"
+      ],
+      "recommendations": [
+        "Increase literalness to \u22650.7 for evaluation runs",
+        "Review style transformations to maintain synset stability",
+        "Ensure NSM primes are preserved during styling",
+        "Maintain polarity and scope during style changes"
+      ],
+      "timestamp": 1755916346.253525
+    },
+    {
+      "original_text": "All children can play here.",
+      "styled_text": "All children may play here.",
+      "style_transformation": {
+        "style_type": "polite",
+        "literalness": 0.9,
+        "transformation_rules": [
+          "style_polite"
+        ],
+        "confidence": 0.9,
+        "timestamp": 1755916346.253568
+      },
+      "preservation_results": {
+        "synset_stability": {
+          "check_type": "synset_stability",
+          "passed": false,
+          "score": 0.825,
+          "details": {
+            "original_synsets": {
+              "all": "all.a.01",
+              "can": "can.v.01",
+              "play": "play.v.01",
+              "here": "here.r.01"
+            },
+            "styled_synsets": {
+              "all": "all.a.01",
+              "play": "play.v.01",
+              "here": "here.r.01"
+            },
+            "raw_stability": 0.825,
+            "literalness_adjustment": 0.9,
+            "threshold": 0.9
+          },
+          "warnings": [
+            "Synset stability 0.825 below threshold 0.9"
+          ]
+        },
+        "prime_preservation": {
+          "check_type": "prime_preservation",
+          "passed": false,
+          "score": 0.6666666666666667,
+          "details": {
+            "original_primes": [
+              "CAN",
+              "ALL",
+              "HERE"
+            ],
+            "styled_primes": [
+              "ALL",
+              "HERE"
+            ],
+            "prime_overlap": 0.6666666666666666,
+            "prime_consistency": 0.6666666666666667,
+            "missing_primes": [
+              "CAN"
+            ],
+            "added_primes": [],
+            "literalness_adjustment": 0.9
+          },
+          "warnings": [
+            "Prime preservation 0.667 below threshold 0.95",
+            "Missing primes: {'CAN'}"
+          ]
+        },
+        "polarity_preservation": {
+          "check_type": "polarity_preservation",
+          "passed": false,
+          "score": 0.8,
+          "details": {
+            "original_polarity": "positive",
+            "styled_polarity": "positive",
+            "original_scope": {
+              "quantifiers": [
+                "ALL"
+              ],
+              "modalities": [
+                "CAN"
+              ],
+              "negation_scope": null
+            },
+            "styled_scope": {
+              "quantifiers": [
+                "ALL"
+              ],
+              "modalities": [
+                "MAY"
+              ],
+              "negation_scope": null
+            },
+            "polarity_score": 1.0,
+            "scope_score": 0.6000000000000001,
+            "literalness_adjustment": 0.9
+          },
+          "warnings": [
+            "Polarity/scope preservation 0.800 below threshold 0.9",
+            "Scope changed: {'quantifiers': ['ALL'], 'modalities': ['CAN'], 'negation_scope': None} -> {'quantifiers': ['ALL'], 'modalities': ['MAY'], 'negation_scope': None}"
+          ]
+        }
+      },
+      "overall_passed": false,
+      "overall_score": 0.7566666666666667,
+      "blocking_issues": [
+        "synset_stability check failed: 0.825",
+        "prime_preservation check failed: 0.667",
+        "polarity_preservation check failed: 0.800"
+      ],
+      "recommendations": [
+        "Review style transformations to maintain synset stability",
+        "Ensure NSM primes are preserved during styling",
+        "Maintain polarity and scope during style changes"
+      ],
+      "timestamp": 1755916346.2536378
+    },
+    {
+      "original_text": "Some people want to help.",
+      "styled_text": "Nobody wants to help.",
+      "style_transformation": {
+        "style_type": "direct",
+        "literalness": 0.7,
+        "transformation_rules": [
+          "style_direct"
+        ],
+        "confidence": 0.9,
+        "timestamp": 1755916346.253676
+      },
+      "preservation_results": {
+        "synset_stability": {
+          "check_type": "synset_stability",
+          "passed": false,
+          "score": 0.5333333333333333,
+          "details": {
+            "original_synsets": {
+              "some": "some.a.01",
+              "want": "want.v.01",
+              "help": "help.v.01"
+            },
+            "styled_synsets": {
+              "help": "help.v.01"
+            },
+            "raw_stability": 0.5333333333333333,
+            "literalness_adjustment": 0.7,
+            "threshold": 0.9
+          },
+          "warnings": [
+            "Synset stability 0.533 below threshold 0.9"
+          ]
+        },
+        "prime_preservation": {
+          "check_type": "prime_preservation",
+          "passed": false,
+          "score": 0.5,
+          "details": {
+            "original_primes": [
+              "WANT",
+              "SOME"
+            ],
+            "styled_primes": [
+              "WANT"
+            ],
+            "prime_overlap": 0.5,
+            "prime_consistency": 0.5,
+            "missing_primes": [
+              "SOME"
+            ],
+            "added_primes": [],
+            "literalness_adjustment": 0.7
+          },
+          "warnings": [
+            "Prime preservation 0.500 below threshold 0.95",
+            "Missing primes: {'SOME'}"
+          ]
+        },
+        "polarity_preservation": {
+          "check_type": "polarity_preservation",
+          "passed": false,
+          "score": 0.30000000000000004,
+          "details": {
+            "original_polarity": "positive",
+            "styled_polarity": "negative",
+            "original_scope": {
+              "quantifiers": [
+                "SOME"
+              ],
+              "modalities": [],
+              "negation_scope": null
+            },
+            "styled_scope": {
+              "quantifiers": [],
+              "modalities": [],
+              "negation_scope": null
+            },
+            "polarity_score": 0.0,
+            "scope_score": 0.6000000000000001,
+            "literalness_adjustment": 0.7
+          },
+          "warnings": [
+            "Polarity/scope preservation 0.300 below threshold 0.9",
+            "Polarity changed: positive -> negative",
+            "Scope changed: {'quantifiers': ['SOME'], 'modalities': [], 'negation_scope': None} -> {'quantifiers': [], 'modalities': [], 'negation_scope': None}"
+          ]
+        }
+      },
+      "overall_passed": false,
+      "overall_score": 0.47333333333333333,
+      "blocking_issues": [
+        "synset_stability check failed: 0.533",
+        "prime_preservation check failed: 0.500",
+        "polarity_preservation check failed: 0.300"
+      ],
+      "recommendations": [
+        "Review style transformations to maintain synset stability",
+        "Ensure NSM primes are preserved during styling",
+        "Maintain polarity and scope during style changes"
+      ],
+      "timestamp": 1755916346.253738
+    },
+    {
+      "original_text": "The weather is good today.",
+      "styled_text": "The weather is excellent today.",
+      "style_transformation": {
+        "style_type": "emotive",
+        "literalness": 0.5,
+        "transformation_rules": [
+          "style_emotive"
+        ],
+        "confidence": 0.9,
+        "timestamp": 1755916346.2537758
+      },
+      "preservation_results": {
+        "synset_stability": {
+          "check_type": "synset_stability",
+          "passed": false,
+          "score": 0.8126666666666666,
+          "details": {
+            "original_synsets": {
+              "weather": "weather.n.01",
+              "good": "good.a.01",
+              "today": "today.r.01"
+            },
+            "styled_synsets": {
+              "weather": "weather.n.01",
+              "today": "today.r.01"
+            },
+            "raw_stability": 0.7666666666666666,
+            "literalness_adjustment": 0.5,
+            "threshold": 0.9
+          },
+          "warnings": [
+            "Synset stability 0.813 below threshold 0.9",
+            "Literalness 0.50 below evaluation threshold 0.7"
+          ]
+        },
+        "prime_preservation": {
+          "check_type": "prime_preservation",
+          "passed": false,
+          "score": 0.0,
+          "details": {
+            "original_primes": [
+              "GOOD"
+            ],
+            "styled_primes": [],
+            "prime_overlap": 0.0,
+            "prime_consistency": 0.0,
+            "missing_primes": [
+              "GOOD"
+            ],
+            "added_primes": [],
+            "literalness_adjustment": 0.5
+          },
+          "warnings": [
+            "Prime preservation 0.000 below threshold 0.95",
+            "Missing primes: {'GOOD'}"
+          ]
+        },
+        "polarity_preservation": {
+          "check_type": "polarity_preservation",
+          "passed": true,
+          "score": 1.0,
+          "details": {
+            "original_polarity": "positive",
+            "styled_polarity": "positive",
+            "original_scope": {
+              "quantifiers": [],
+              "modalities": [],
+              "negation_scope": null
+            },
+            "styled_scope": {
+              "quantifiers": [],
+              "modalities": [],
+              "negation_scope": null
+            },
+            "polarity_score": 1.0,
+            "scope_score": 1.0,
+            "literalness_adjustment": 0.5
+          },
+          "warnings": []
+        }
+      },
+      "overall_passed": false,
+      "overall_score": 0.5250666666666667,
+      "blocking_issues": [
+        "Literalness 0.50 below evaluation threshold 0.7",
+        "synset_stability check failed: 0.813",
+        "prime_preservation check failed: 0.000"
+      ],
+      "recommendations": [
+        "Increase literalness to \u22650.7 for evaluation runs",
+        "Review style transformations to maintain synset stability",
+        "Ensure NSM primes are preserved during styling"
+      ],
+      "timestamp": 1755916346.253838
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "passed_tests": 0,
+    "success_rate": 0.0,
+    "average_scores": {
+      "synset_stability": 0.6974,
+      "prime_preservation": 0.33333333333333337,
+      "polarity_preservation": 0.7007999999999999
+    }
+  }
+}
