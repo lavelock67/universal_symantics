@@ -1,0 +1,3889 @@
+{
+  "evaluation_timestamp": 1755913192.754178,
+  "total_pairs": 40,
+  "results": [
+    {
+      "pair_id": 1,
+      "source": "The cat is not on the mat",
+      "target": "El gato no está en la alfombra",
+      "expected_primitives": [
+        "AtLocation",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "The cat is not on the mat",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "not",
+            "start": 11,
+            "end": 14
+          },
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "on",
+            "start": 15,
+            "end": 17
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 1,
+        "conceptnet_count": 1,
+        "average_confidence": 0.75
+      },
+      "target_detection": {
+        "text": "El gato no está en la alfombra",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 8,
+            "end": 10
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.8
+      },
+      "semantic_similarity": 0.8346329927444458,
+      "primitive_preservation": 0.5,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.5,
+      "source_primitives": [
+        "AtLocation",
+        "NOT"
+      ],
+      "target_primitives": [
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 2,
+      "source": "I do not like this weather",
+      "target": "No me gusta este tiempo",
+      "expected_primitives": [
+        "LIKE",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "I do not like this weather",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "not",
+            "start": 5,
+            "end": 8
+          },
+          {
+            "primitive": "DO",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "do",
+            "start": 2,
+            "end": 4
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "like",
+            "start": 9,
+            "end": 13
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "like",
+            "start": 9,
+            "end": 13
+          }
+        ],
+        "total_count": 4,
+        "nsm_count": 3,
+        "conceptnet_count": 1,
+        "average_confidence": 0.7750000000000001
+      },
+      "target_detection": {
+        "text": "No me gusta este tiempo",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 0,
+            "end": 2
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.8
+      },
+      "semantic_similarity": 0.9181389808654785,
+      "primitive_preservation": 0.25,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.5,
+      "source_primitives": [
+        "SimilarTo",
+        "DO",
+        "LIKE",
+        "NOT"
+      ],
+      "target_primitives": [
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 3,
+      "source": "All children can play here",
+      "target": "Todos los niños pueden jugar aquí",
+      "expected_primitives": [
+        "ALL",
+        "CAN",
+        "HERE"
+      ],
+      "source_detection": {
+        "text": "All children can play here",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "can",
+            "start": 13,
+            "end": 16
+          },
+          {
+            "primitive": "ALL",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "all",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "primitive": "HERE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "here",
+            "start": 22,
+            "end": 26
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 3,
+        "conceptnet_count": 0,
+        "average_confidence": 0.8000000000000002
+      },
+      "target_detection": {
+        "text": "Todos los niños pueden jugar aquí",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9848966002464294,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "CAN",
+        "HERE",
+        "ALL"
+      ],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 4,
+      "source": "Some people want to help",
+      "target": "Algunas personas quieren ayudar",
+      "expected_primitives": [
+        "WANT",
+        "SOME"
+      ],
+      "source_detection": {
+        "text": "Some people want to help",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "want",
+            "start": 12,
+            "end": 16
+          },
+          {
+            "primitive": "SOME",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "some",
+            "start": 0,
+            "end": 4
+          },
+          {
+            "primitive": "Desires",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "want",
+            "start": 12,
+            "end": 16
+          },
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.3207330107688904,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Desires",
+            "type": "ConceptNet",
+            "confidence": 0.3119543194770813,
+            "method": "semantic",
+            "evidence": "desire relation, want, desire, wish",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 5,
+        "nsm_count": 3,
+        "conceptnet_count": 2,
+        "average_confidence": 0.5865374660491943
+      },
+      "target_detection": {
+        "text": "Algunas personas quieren ayudar",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.3497920632362366,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.30523648858070374,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Desires",
+            "type": "ConceptNet",
+            "confidence": 0.33617526292800903,
+            "method": "semantic",
+            "evidence": "desire relation, want, desire, wish",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 2,
+        "conceptnet_count": 1,
+        "average_confidence": 0.3304012715816498
+      },
+      "semantic_similarity": 0.9861941933631897,
+      "primitive_preservation": 0.6666666666666666,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.5,
+      "source_primitives": [
+        "WANT",
+        "SOME",
+        "Desires"
+      ],
+      "target_primitives": [
+        "FEW",
+        "WANT",
+        "Desires"
+      ]
+    },
+    {
+      "pair_id": 5,
+      "source": "The weather is good today",
+      "target": "El tiempo está bueno hoy",
+      "expected_primitives": [
+        "GOOD"
+      ],
+      "source_detection": {
+        "text": "The weather is good today",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "GOOD",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "good",
+            "start": 15,
+            "end": 19
+          },
+          {
+            "primitive": "GOOD",
+            "type": "NSM",
+            "confidence": 0.3755725920200348,
+            "method": "semantic",
+            "evidence": "positive evaluation, good, nice, excellent",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 2,
+        "conceptnet_count": 0,
+        "average_confidence": 0.5877862960100174
+      },
+      "target_detection": {
+        "text": "El tiempo está bueno hoy",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "GOOD",
+            "type": "NSM",
+            "confidence": 0.37884920835494995,
+            "method": "semantic",
+            "evidence": "positive evaluation, good, nice, excellent",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.37884920835494995
+      },
+      "semantic_similarity": 0.9832669496536255,
+      "primitive_preservation": 1.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 1.0,
+      "source_primitives": [
+        "GOOD"
+      ],
+      "target_primitives": [
+        "GOOD"
+      ]
+    },
+    {
+      "pair_id": 6,
+      "source": "I think you are right about this",
+      "target": "Creo que tienes razón sobre esto",
+      "expected_primitives": [
+        "THINK",
+        "RIGHT"
+      ],
+      "source_detection": {
+        "text": "I think you are right about this",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "think",
+            "start": 2,
+            "end": 7
+          },
+          {
+            "primitive": "RIGHT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "right",
+            "start": 16,
+            "end": 21
+          },
+          {
+            "primitive": "GOOD",
+            "type": "NSM",
+            "confidence": 0.3019285500049591,
+            "method": "semantic",
+            "evidence": "positive evaluation, good, nice, excellent",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 3,
+        "conceptnet_count": 0,
+        "average_confidence": 0.6339761833349864
+      },
+      "target_detection": {
+        "text": "Creo que tienes razón sobre esto",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3183075487613678,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "GOOD",
+            "type": "NSM",
+            "confidence": 0.3059232831001282,
+            "method": "semantic",
+            "evidence": "positive evaluation, good, nice, excellent",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 2,
+        "conceptnet_count": 0,
+        "average_confidence": 0.312115415930748
+      },
+      "semantic_similarity": 0.9594608545303345,
+      "primitive_preservation": 0.3333333333333333,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "THINK",
+        "RIGHT",
+        "GOOD"
+      ],
+      "target_primitives": [
+        "BECAUSE",
+        "GOOD"
+      ]
+    },
+    {
+      "pair_id": 7,
+      "source": "The rain caused the flood",
+      "target": "La lluvia causó la inundación",
+      "expected_primitives": [
+        "BECAUSE",
+        "Causes"
+      ],
+      "source_detection": {
+        "text": "The rain caused the flood",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "caused",
+            "start": 9,
+            "end": 15
+          },
+          {
+            "primitive": "Causes",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "caused",
+            "start": 9,
+            "end": 15
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 1,
+        "conceptnet_count": 1,
+        "average_confidence": 0.75
+      },
+      "target_detection": {
+        "text": "La lluvia causó la inundación",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.976514995098114,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "BECAUSE",
+        "Causes"
+      ],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 8,
+      "source": "This is similar to that",
+      "target": "Esto es similar a eso",
+      "expected_primitives": [
+        "SimilarTo",
+        "LIKE"
+      ],
+      "source_detection": {
+        "text": "This is similar to that",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3535623848438263,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.5953297019004822,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.3684142529964447,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.33090919256210327,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.3217979967594147,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.523869514465332,
+            "method": "semantic",
+            "evidence": "similarity relation, similar, like, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.32557979226112366,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 9,
+        "nsm_count": 6,
+        "conceptnet_count": 3,
+        "average_confidence": 0.4799403150876363
+      },
+      "target_detection": {
+        "text": "Esto es similar a eso",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.35034599900245667,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.6299232244491577,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.3664039373397827,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.3540821075439453,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.33732110261917114,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.5460579991340637,
+            "method": "semantic",
+            "evidence": "similarity relation, similar, like, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.322492778301239,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 9,
+        "nsm_count": 6,
+        "conceptnet_count": 3,
+        "average_confidence": 0.4896252387099796
+      },
+      "semantic_similarity": 0.9697127938270569,
+      "primitive_preservation": 1.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 1.0,
+      "source_primitives": [
+        "SimilarTo",
+        "BIG",
+        "MANY",
+        "BECAUSE",
+        "LIKE",
+        "PartOf",
+        "SMALL"
+      ],
+      "target_primitives": [
+        "SimilarTo",
+        "BIG",
+        "MANY",
+        "BECAUSE",
+        "LIKE",
+        "PartOf",
+        "SMALL"
+      ]
+    },
+    {
+      "pair_id": 9,
+      "source": "Many people understand this",
+      "target": "Mucha gente entiende esto",
+      "expected_primitives": [
+        "MANY",
+        "THINK"
+      ],
+      "source_detection": {
+        "text": "Many people understand this",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "understand",
+            "start": 12,
+            "end": 22
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "many",
+            "start": 0,
+            "end": 4
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.4202133119106293,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.324371874332428,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.33239397406578064,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.39002013206481934,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Causes",
+            "type": "ConceptNet",
+            "confidence": 0.33573204278945923,
+            "method": "semantic",
+            "evidence": "causal relation, cause, because, result",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.3088535666465759,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.3133111894130707,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "UsedFor",
+            "type": "ConceptNet",
+            "confidence": 0.3325110971927643,
+            "method": "semantic",
+            "evidence": "purpose relation, used for, purpose, function",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 10,
+        "nsm_count": 6,
+        "conceptnet_count": 4,
+        "average_confidence": 0.4357407188415527
+      },
+      "target_detection": {
+        "text": "Mucha gente entiende esto",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.39874622225761414,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.3511718213558197,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3063344955444336,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.4234277904033661,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.33486858010292053,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.30003634095191956,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 6,
+        "nsm_count": 5,
+        "conceptnet_count": 1,
+        "average_confidence": 0.35243087510267895
+      },
+      "semantic_similarity": 0.9674359560012817,
+      "primitive_preservation": 0.5555555555555556,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.5,
+      "source_primitives": [
+        "CapableOf",
+        "MANY",
+        "CAN",
+        "BECAUSE",
+        "LIKE",
+        "Causes",
+        "PartOf",
+        "UsedFor",
+        "THINK"
+      ],
+      "target_primitives": [
+        "BIG",
+        "MANY",
+        "CAN",
+        "BECAUSE",
+        "LIKE",
+        "PartOf"
+      ]
+    },
+    {
+      "pair_id": 10,
+      "source": "She cannot believe the story",
+      "target": "Ella no puede creer la historia",
+      "expected_primitives": [
+        "CAN",
+        "THINK",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "She cannot believe the story",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "believe",
+            "start": 11,
+            "end": 18
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.8
+      },
+      "target_detection": {
+        "text": "Ella no puede creer la historia",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 5,
+            "end": 7
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.8
+      },
+      "semantic_similarity": 0.9666121006011963,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 0.3333333333333333,
+      "target_coverage": 0.3333333333333333,
+      "source_primitives": [
+        "THINK"
+      ],
+      "target_primitives": [
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 11,
+      "source": "I cannot do this",
+      "target": "No puedo hacer esto",
+      "expected_primitives": [
+        "CAN",
+        "DO",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "I cannot do this",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "DO",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "do",
+            "start": 9,
+            "end": 11
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.3449189066886902,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3366042673587799,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 3,
+        "conceptnet_count": 0,
+        "average_confidence": 0.4938410580158234
+      },
+      "target_detection": {
+        "text": "No puedo hacer esto",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.3710123598575592,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3311237096786499,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 3,
+        "conceptnet_count": 0,
+        "average_confidence": 0.5007120231787364
+      },
+      "semantic_similarity": 0.9354513883590698,
+      "primitive_preservation": 0.6666666666666666,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.6666666666666666,
+      "source_primitives": [
+        "CAN",
+        "DO",
+        "NOT"
+      ],
+      "target_primitives": [
+        "CAN",
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 12,
+      "source": "She must not go there",
+      "target": "Ella no debe ir allí",
+      "expected_primitives": [
+        "CAN",
+        "WHERE",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "She must not go there",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "not",
+            "start": 9,
+            "end": 12
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "must",
+            "start": 4,
+            "end": 8
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.3599025011062622,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 3,
+        "conceptnet_count": 0,
+        "average_confidence": 0.6533008337020875
+      },
+      "target_detection": {
+        "text": "Ella no debe ir allí",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 5,
+            "end": 7
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.31040337681770325,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 2,
+        "conceptnet_count": 0,
+        "average_confidence": 0.5552016884088516
+      },
+      "semantic_similarity": 0.8976687788963318,
+      "primitive_preservation": 0.5,
+      "expected_coverage": 0.6666666666666666,
+      "target_coverage": 0.3333333333333333,
+      "source_primitives": [
+        "CAN",
+        "NOT"
+      ],
+      "target_primitives": [
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 13,
+      "source": "They should not eat that",
+      "target": "No deberían comer eso",
+      "expected_primitives": [
+        "CAN",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "They should not eat that",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "not",
+            "start": 12,
+            "end": 15
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "should",
+            "start": 5,
+            "end": 11
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.3324034810066223,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 3,
+        "conceptnet_count": 0,
+        "average_confidence": 0.6441344936688741
+      },
+      "target_detection": {
+        "text": "No deberían comer eso",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.3856380581855774,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 2,
+        "conceptnet_count": 0,
+        "average_confidence": 0.5928190290927887
+      },
+      "semantic_similarity": 0.9555264115333557,
+      "primitive_preservation": 0.5,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.5,
+      "source_primitives": [
+        "CAN",
+        "NOT"
+      ],
+      "target_primitives": [
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 14,
+      "source": "We might not understand",
+      "target": "Podríamos no entender",
+      "expected_primitives": [
+        "CAN",
+        "THINK",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "We might not understand",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "not",
+            "start": 9,
+            "end": 12
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "might",
+            "start": 3,
+            "end": 8
+          },
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "understand",
+            "start": 13,
+            "end": 23
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.3654372990131378,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3411577343940735,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3757074773311615,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SOME",
+            "type": "NSM",
+            "confidence": 0.31415900588035583,
+            "method": "semantic",
+            "evidence": "existential quantifier, some, any",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3943188190460205,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.3669075071811676,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.3755969703197479,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Desires",
+            "type": "ConceptNet",
+            "confidence": 0.3050083518028259,
+            "method": "semantic",
+            "evidence": "desire relation, want, desire, wish",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "UsedFor",
+            "type": "ConceptNet",
+            "confidence": 0.3085258901119232,
+            "method": "semantic",
+            "evidence": "purpose relation, used for, purpose, function",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 12,
+        "nsm_count": 9,
+        "conceptnet_count": 3,
+        "average_confidence": 0.4622349212567012
+      },
+      "target_detection": {
+        "text": "Podríamos no entender",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 10,
+            "end": 12
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.38848018646240234,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3215106427669525,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3206577003002167,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SOME",
+            "type": "NSM",
+            "confidence": 0.363974928855896,
+            "method": "semantic",
+            "evidence": "existential quantifier, some, any",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3596167266368866,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.3823305666446686,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.32074278593063354,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 8,
+        "nsm_count": 7,
+        "conceptnet_count": 1,
+        "average_confidence": 0.407164192199707
+      },
+      "semantic_similarity": 0.8912403583526611,
+      "primitive_preservation": 0.7,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.6666666666666666,
+      "source_primitives": [
+        "FEW",
+        "NOT",
+        "CapableOf",
+        "Desires",
+        "CAN",
+        "BECAUSE",
+        "UsedFor",
+        "SOME",
+        "THINK",
+        "SMALL"
+      ],
+      "target_primitives": [
+        "FEW",
+        "NOT",
+        "CapableOf",
+        "CAN",
+        "BECAUSE",
+        "SOME",
+        "SMALL"
+      ]
+    },
+    {
+      "pair_id": 15,
+      "source": "You will not believe this",
+      "target": "No creerás esto",
+      "expected_primitives": [
+        "THINK",
+        "NOT"
+      ],
+      "source_detection": {
+        "text": "You will not believe this",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "not",
+            "start": 9,
+            "end": 12
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "will",
+            "start": 4,
+            "end": 8
+          },
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "believe",
+            "start": 13,
+            "end": 20
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.48455002903938293,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.314153254032135,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3155532777309418,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.3000214993953705,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 7,
+        "nsm_count": 7,
+        "conceptnet_count": 0,
+        "average_confidence": 0.5448968657425473
+      },
+      "target_detection": {
+        "text": "No creerás esto",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "no",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.5324729084968567,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3135644793510437,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 3,
+        "conceptnet_count": 0,
+        "average_confidence": 0.5486791292826335
+      },
+      "semantic_similarity": 0.9130975008010864,
+      "primitive_preservation": 0.4,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.5,
+      "source_primitives": [
+        "BIG",
+        "NOT",
+        "CAN",
+        "BECAUSE",
+        "THINK"
+      ],
+      "target_primitives": [
+        "BECAUSE",
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 16,
+      "source": "Few understand the problem",
+      "target": "Pocos entienden el problema",
+      "expected_primitives": [
+        "FEW",
+        "THINK"
+      ],
+      "source_detection": {
+        "text": "Few understand the problem",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "understand",
+            "start": 4,
+            "end": 14
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "few",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.30429965257644653,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.301710307598114,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.45126327872276306,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BAD",
+            "type": "NSM",
+            "confidence": 0.31133002042770386,
+            "method": "semantic",
+            "evidence": "negative evaluation, bad, terrible, awful",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.30698391795158386,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Causes",
+            "type": "ConceptNet",
+            "confidence": 0.32475146651268005,
+            "method": "semantic",
+            "evidence": "causal relation, cause, because, result",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 8,
+        "nsm_count": 7,
+        "conceptnet_count": 1,
+        "average_confidence": 0.45004233047366143
+      },
+      "target_detection": {
+        "text": "Pocos entienden el problema",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.3531281650066376,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.31171631813049316,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.4525875151157379,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BAD",
+            "type": "NSM",
+            "confidence": 0.33746013045310974,
+            "method": "semantic",
+            "evidence": "negative evaluation, bad, terrible, awful",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.32202550768852234,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Causes",
+            "type": "ConceptNet",
+            "confidence": 0.31556424498558044,
+            "method": "semantic",
+            "evidence": "causal relation, cause, because, result",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 6,
+        "nsm_count": 5,
+        "conceptnet_count": 1,
+        "average_confidence": 0.34874698023001355
+      },
+      "semantic_similarity": 0.9543599486351013,
+      "primitive_preservation": 0.8571428571428571,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.5,
+      "source_primitives": [
+        "FEW",
+        "NOT",
+        "BAD",
+        "BECAUSE",
+        "Causes",
+        "THINK",
+        "SMALL"
+      ],
+      "target_primitives": [
+        "FEW",
+        "NOT",
+        "BAD",
+        "BECAUSE",
+        "Causes",
+        "SMALL"
+      ]
+    },
+    {
+      "pair_id": 17,
+      "source": "Most agree with the decision",
+      "target": "La mayoría está de acuerdo con la decisión",
+      "expected_primitives": [
+        "LIKE",
+        "MOST"
+      ],
+      "source_detection": {
+        "text": "Most agree with the decision",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "GOOD",
+            "type": "NSM",
+            "confidence": 0.41115617752075195,
+            "method": "semantic",
+            "evidence": "positive evaluation, good, nice, excellent",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.41115617752075195
+      },
+      "target_detection": {
+        "text": "La mayoría está de acuerdo con la decisión",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "GOOD",
+            "type": "NSM",
+            "confidence": 0.35732972621917725,
+            "method": "semantic",
+            "evidence": "positive evaluation, good, nice, excellent",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.35732972621917725
+      },
+      "semantic_similarity": 0.9390947818756104,
+      "primitive_preservation": 1.0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "GOOD"
+      ],
+      "target_primitives": [
+        "GOOD"
+      ]
+    },
+    {
+      "pair_id": 18,
+      "source": "Several options exist",
+      "target": "Existen varias opciones",
+      "expected_primitives": [
+        "SOME"
+      ],
+      "source_detection": {
+        "text": "Several options exist",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "SOME",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "several",
+            "start": 0,
+            "end": 7
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3356555700302124,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.30812856554985046,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3520098924636841,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.3203985393047333,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 5,
+        "nsm_count": 4,
+        "conceptnet_count": 1,
+        "average_confidence": 0.423238513469696
+      },
+      "target_detection": {
+        "text": "Existen varias opciones",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.366073340177536,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.3568776845932007,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.3064066469669342,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.35601329803466797,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.31534022092819214,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.3075871169567108,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.34515589475631714,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Desires",
+            "type": "ConceptNet",
+            "confidence": 0.33111464977264404,
+            "method": "semantic",
+            "evidence": "desire relation, want, desire, wish",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 8,
+        "nsm_count": 6,
+        "conceptnet_count": 2,
+        "average_confidence": 0.3355711065232754
+      },
+      "semantic_similarity": 0.9162417650222778,
+      "primitive_preservation": 0.8,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "FEW",
+        "CapableOf",
+        "WANT",
+        "CAN",
+        "SOME"
+      ],
+      "target_primitives": [
+        "FEW",
+        "BIG",
+        "CapableOf",
+        "MANY",
+        "WANT",
+        "Desires",
+        "CAN",
+        "SMALL"
+      ]
+    },
+    {
+      "pair_id": 19,
+      "source": "Various solutions are available",
+      "target": "Varias soluciones están disponibles",
+      "expected_primitives": [
+        "SOME"
+      ],
+      "source_detection": {
+        "text": "Various solutions are available",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "SOME",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "various",
+            "start": 0,
+            "end": 7
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.8
+      },
+      "target_detection": {
+        "text": "Varias soluciones están disponibles",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3010711967945099,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.3010711967945099
+      },
+      "semantic_similarity": 0.954399824142456,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "SOME"
+      ],
+      "target_primitives": [
+        "FEW"
+      ]
+    },
+    {
+      "pair_id": 20,
+      "source": "Numerous attempts were made",
+      "target": "Se hicieron numerosos intentos",
+      "expected_primitives": [
+        "MANY"
+      ],
+      "source_detection": {
+        "text": "Numerous attempts were made",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "SOME",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "numerous",
+            "start": 0,
+            "end": 8
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "numerous",
+            "start": 0,
+            "end": 8
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3689567744731903,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.3380890488624573,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.4347176253795624,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3054327964782715,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.3239113688468933,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 7,
+        "nsm_count": 6,
+        "conceptnet_count": 1,
+        "average_confidence": 0.4815868020057678
+      },
+      "target_detection": {
+        "text": "Se hicieron numerosos intentos",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.4171450436115265,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.4089696407318115,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.48347172141075134,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3777502179145813,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.3554052412509918,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Desires",
+            "type": "ConceptNet",
+            "confidence": 0.3505021631717682,
+            "method": "semantic",
+            "evidence": "desire relation, want, desire, wish",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 6,
+        "nsm_count": 4,
+        "conceptnet_count": 2,
+        "average_confidence": 0.3988740046819051
+      },
+      "semantic_similarity": 0.9583553671836853,
+      "primitive_preservation": 0.8333333333333334,
+      "expected_coverage": 1.0,
+      "target_coverage": 1.0,
+      "source_primitives": [
+        "FEW",
+        "CapableOf",
+        "MANY",
+        "WANT",
+        "CAN",
+        "SOME"
+      ],
+      "target_primitives": [
+        "FEW",
+        "CapableOf",
+        "MANY",
+        "WANT",
+        "Desires",
+        "CAN"
+      ]
+    },
+    {
+      "pair_id": 21,
+      "source": "I know the answer",
+      "target": "Sé la respuesta",
+      "expected_primitives": [
+        "THINK"
+      ],
+      "source_detection": {
+        "text": "I know the answer",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "know",
+            "start": 2,
+            "end": 6
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.30434197187423706,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 2,
+        "conceptnet_count": 0,
+        "average_confidence": 0.5521709859371186
+      },
+      "target_detection": {
+        "text": "Sé la respuesta",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.30290693044662476,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.30773118138313293,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 1,
+        "conceptnet_count": 1,
+        "average_confidence": 0.30531905591487885
+      },
+      "semantic_similarity": 0.977662205696106,
+      "primitive_preservation": 0.5,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "THINK",
+        "BIG"
+      ],
+      "target_primitives": [
+        "BIG",
+        "PartOf"
+      ]
+    },
+    {
+      "pair_id": 22,
+      "source": "She believes the story",
+      "target": "Ella cree la historia",
+      "expected_primitives": [
+        "THINK"
+      ],
+      "source_detection": {
+        "text": "She believes the story",
+        "language": "en",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "target_detection": {
+        "text": "Ella cree la historia",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3069642186164856,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.3069642186164856
+      },
+      "semantic_similarity": 0.971316933631897,
+      "primitive_preservation": 0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [],
+      "target_primitives": [
+        "BECAUSE"
+      ]
+    },
+    {
+      "pair_id": 23,
+      "source": "They understand the concept",
+      "target": "Ellos entienden el concepto",
+      "expected_primitives": [
+        "THINK"
+      ],
+      "source_detection": {
+        "text": "They understand the concept",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "understand",
+            "start": 5,
+            "end": 15
+          },
+          {
+            "primitive": "Causes",
+            "type": "ConceptNet",
+            "confidence": 0.30076438188552856,
+            "method": "semantic",
+            "evidence": "causal relation, cause, because, result",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.3150726854801178,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "HasProperty",
+            "type": "ConceptNet",
+            "confidence": 0.3465340733528137,
+            "method": "semantic",
+            "evidence": "property relation, has, property, characteristic",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "UsedFor",
+            "type": "ConceptNet",
+            "confidence": 0.413450688123703,
+            "method": "semantic",
+            "evidence": "purpose relation, used for, purpose, function",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 5,
+        "nsm_count": 1,
+        "conceptnet_count": 4,
+        "average_confidence": 0.4351643657684326
+      },
+      "target_detection": {
+        "text": "Ellos entienden el concepto",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.30253660678863525,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.30254292488098145,
+            "method": "semantic",
+            "evidence": "similarity relation, similar, like, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.3066052496433258,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.30531084537506104,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "HasProperty",
+            "type": "ConceptNet",
+            "confidence": 0.32311028242111206,
+            "method": "semantic",
+            "evidence": "property relation, has, property, characteristic",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "UsedFor",
+            "type": "ConceptNet",
+            "confidence": 0.4023575186729431,
+            "method": "semantic",
+            "evidence": "purpose relation, used for, purpose, function",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 6,
+        "nsm_count": 1,
+        "conceptnet_count": 5,
+        "average_confidence": 0.32374390463034314
+      },
+      "semantic_similarity": 0.9875789284706116,
+      "primitive_preservation": 0.6,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "CapableOf",
+        "HasProperty",
+        "Causes",
+        "UsedFor",
+        "THINK"
+      ],
+      "target_primitives": [
+        "SimilarTo",
+        "CapableOf",
+        "HasProperty",
+        "LIKE",
+        "UsedFor",
+        "PartOf"
+      ]
+    },
+    {
+      "pair_id": 24,
+      "source": "We remember the event",
+      "target": "Recordamos el evento",
+      "expected_primitives": [
+        "THINK"
+      ],
+      "source_detection": {
+        "text": "We remember the event",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "THINK",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "remember",
+            "start": 3,
+            "end": 11
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.8
+      },
+      "target_detection": {
+        "text": "Recordamos el evento",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.34504780173301697,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.34504780173301697
+      },
+      "semantic_similarity": 0.9864239692687988,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "THINK"
+      ],
+      "target_primitives": [
+        "BECAUSE"
+      ]
+    },
+    {
+      "pair_id": 25,
+      "source": "He forgets the details",
+      "target": "Él olvida los detalles",
+      "expected_primitives": [
+        "THINK"
+      ],
+      "source_detection": {
+        "text": "He forgets the details",
+        "language": "en",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "target_detection": {
+        "text": "Él olvida los detalles",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "NOT",
+            "type": "NSM",
+            "confidence": 0.34426599740982056,
+            "method": "semantic",
+            "evidence": "negation, not, no, never",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SOME",
+            "type": "NSM",
+            "confidence": 0.33154603838920593,
+            "method": "semantic",
+            "evidence": "existential quantifier, some, any",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3687693178653717,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.3596997559070587,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 4,
+        "nsm_count": 4,
+        "conceptnet_count": 0,
+        "average_confidence": 0.3510702773928642
+      },
+      "semantic_similarity": 0.9599087834358215,
+      "primitive_preservation": 0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [],
+      "target_primitives": [
+        "FEW",
+        "SMALL",
+        "SOME",
+        "NOT"
+      ]
+    },
+    {
+      "pair_id": 26,
+      "source": "I do the work",
+      "target": "Hago el trabajo",
+      "expected_primitives": [
+        "DO"
+      ],
+      "source_detection": {
+        "text": "I do the work",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "DO",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "do",
+            "start": 2,
+            "end": 4
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.3423624038696289,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 1,
+        "conceptnet_count": 1,
+        "average_confidence": 0.5711812019348145
+      },
+      "target_detection": {
+        "text": "Hago el trabajo",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.30394846200942993,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.32237082719802856,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.32252487540245056,
+            "method": "semantic",
+            "evidence": "spatial location, at, in, on, place",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.32976987957954407,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 4,
+        "nsm_count": 2,
+        "conceptnet_count": 2,
+        "average_confidence": 0.3196535110473633
+      },
+      "semantic_similarity": 0.9462339282035828,
+      "primitive_preservation": 0.5,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "DO",
+        "PartOf"
+      ],
+      "target_primitives": [
+        "CAN",
+        "AtLocation",
+        "BIG",
+        "PartOf"
+      ]
+    },
+    {
+      "pair_id": 27,
+      "source": "She makes the decision",
+      "target": "Ella toma la decisión",
+      "expected_primitives": [
+        "DO"
+      ],
+      "source_detection": {
+        "text": "She makes the decision",
+        "language": "en",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "target_detection": {
+        "text": "Ella toma la decisión",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.986489474773407,
+      "primitive_preservation": 0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 28,
+      "source": "They take the action",
+      "target": "Ellos toman la acción",
+      "expected_primitives": [
+        "DO"
+      ],
+      "source_detection": {
+        "text": "They take the action",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3371777832508087,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.3371777832508087
+      },
+      "target_detection": {
+        "text": "Ellos toman la acción",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3438436686992645,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.3438436686992645
+      },
+      "semantic_similarity": 0.9725443124771118,
+      "primitive_preservation": 1.0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "BECAUSE"
+      ],
+      "target_primitives": [
+        "BECAUSE"
+      ]
+    },
+    {
+      "pair_id": 29,
+      "source": "We perform the task",
+      "target": "Realizamos la tarea",
+      "expected_primitives": [
+        "DO"
+      ],
+      "source_detection": {
+        "text": "We perform the task",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3145328462123871,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.3976302146911621,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.3586314618587494,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.32272353768348694,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3614491820335388,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.3019469082355499,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.33318665623664856,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.3529927432537079,
+            "method": "semantic",
+            "evidence": "spatial location, at, in, on, place",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.3961065709590912,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.33646538853645325,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "Desires",
+            "type": "ConceptNet",
+            "confidence": 0.30208173394203186,
+            "method": "semantic",
+            "evidence": "desire relation, want, desire, wish",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "UsedFor",
+            "type": "ConceptNet",
+            "confidence": 0.403785765171051,
+            "method": "semantic",
+            "evidence": "purpose relation, used for, purpose, function",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 12,
+        "nsm_count": 7,
+        "conceptnet_count": 5,
+        "average_confidence": 0.3484610840678215
+      },
+      "target_detection": {
+        "text": "Realizamos la tarea",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3500122129917145,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CAN",
+            "type": "NSM",
+            "confidence": 0.37875688076019287,
+            "method": "semantic",
+            "evidence": "ability, can, able to, capable of",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "WANT",
+            "type": "NSM",
+            "confidence": 0.3422401249408722,
+            "method": "semantic",
+            "evidence": "desire, want, wish, desire",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.3453820049762726,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "FEW",
+            "type": "NSM",
+            "confidence": 0.3523499071598053,
+            "method": "semantic",
+            "evidence": "small quantity, few, little, scarce",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.35225796699523926,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.3484099805355072,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.36239755153656006,
+            "method": "semantic",
+            "evidence": "spatial location, at, in, on, place",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.3850182592868805,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "CapableOf",
+            "type": "ConceptNet",
+            "confidence": 0.3076871931552887,
+            "method": "semantic",
+            "evidence": "ability relation, can, able to, capable",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "UsedFor",
+            "type": "ConceptNet",
+            "confidence": 0.34297728538513184,
+            "method": "semantic",
+            "evidence": "purpose relation, used for, purpose, function",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 11,
+        "nsm_count": 7,
+        "conceptnet_count": 4,
+        "average_confidence": 0.351589942520315
+      },
+      "semantic_similarity": 0.9292065501213074,
+      "primitive_preservation": 0.9166666666666666,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "FEW",
+        "BIG",
+        "CapableOf",
+        "MANY",
+        "AtLocation",
+        "WANT",
+        "Desires",
+        "CAN",
+        "BECAUSE",
+        "UsedFor",
+        "PartOf",
+        "SMALL"
+      ],
+      "target_primitives": [
+        "FEW",
+        "BIG",
+        "CapableOf",
+        "MANY",
+        "AtLocation",
+        "WANT",
+        "CAN",
+        "BECAUSE",
+        "UsedFor",
+        "PartOf",
+        "SMALL"
+      ]
+    },
+    {
+      "pair_id": 30,
+      "source": "He executes the plan",
+      "target": "Él ejecuta el plan",
+      "expected_primitives": [
+        "DO"
+      ],
+      "source_detection": {
+        "text": "He executes the plan",
+        "language": "en",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "target_detection": {
+        "text": "Él ejecuta el plan",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9684025645256042,
+      "primitive_preservation": 0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 31,
+      "source": "The book is on the table",
+      "target": "El libro está en la mesa",
+      "expected_primitives": [
+        "AtLocation"
+      ],
+      "source_detection": {
+        "text": "The book is on the table",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "on",
+            "start": 12,
+            "end": 14
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 0,
+        "conceptnet_count": 1,
+        "average_confidence": 0.7
+      },
+      "target_detection": {
+        "text": "El libro está en la mesa",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9972004294395447,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "AtLocation"
+      ],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 32,
+      "source": "The car is in the garage",
+      "target": "El carro está en el garaje",
+      "expected_primitives": [
+        "AtLocation"
+      ],
+      "source_detection": {
+        "text": "The car is in the garage",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "in",
+            "start": 11,
+            "end": 13
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 0,
+        "conceptnet_count": 1,
+        "average_confidence": 0.7
+      },
+      "target_detection": {
+        "text": "El carro está en el garaje",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9783900380134583,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "AtLocation"
+      ],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 33,
+      "source": "The bird is under the tree",
+      "target": "El pájaro está debajo del árbol",
+      "expected_primitives": [
+        "AtLocation"
+      ],
+      "source_detection": {
+        "text": "The bird is under the tree",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "under",
+            "start": 12,
+            "end": 17
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 0,
+        "conceptnet_count": 1,
+        "average_confidence": 0.7
+      },
+      "target_detection": {
+        "text": "El pájaro está debajo del árbol",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9899956583976746,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "AtLocation"
+      ],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 34,
+      "source": "The plane is above the clouds",
+      "target": "El avión está sobre las nubes",
+      "expected_primitives": [
+        "AtLocation"
+      ],
+      "source_detection": {
+        "text": "The plane is above the clouds",
+        "language": "en",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "target_detection": {
+        "text": "El avión está sobre las nubes",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.960317075252533,
+      "primitive_preservation": 0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 35,
+      "source": "The fish is in the water",
+      "target": "El pez está en el agua",
+      "expected_primitives": [
+        "AtLocation"
+      ],
+      "source_detection": {
+        "text": "The fish is in the water",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "AtLocation",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "in",
+            "start": 12,
+            "end": 14
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 0,
+        "conceptnet_count": 1,
+        "average_confidence": 0.7
+      },
+      "target_detection": {
+        "text": "El pez está en el agua",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9635679125785828,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "AtLocation"
+      ],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 36,
+      "source": "The fire destroyed the building",
+      "target": "El fuego destruyó el edificio",
+      "expected_primitives": [
+        "Causes"
+      ],
+      "source_detection": {
+        "text": "The fire destroyed the building",
+        "language": "en",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "target_detection": {
+        "text": "El fuego destruyó el edificio",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9882553219795227,
+      "primitive_preservation": 0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 37,
+      "source": "The medicine cured the disease",
+      "target": "La medicina curó la enfermedad",
+      "expected_primitives": [
+        "Causes"
+      ],
+      "source_detection": {
+        "text": "The medicine cured the disease",
+        "language": "en",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "target_detection": {
+        "text": "La medicina curó la enfermedad",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.30911925435066223,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 1,
+        "nsm_count": 1,
+        "conceptnet_count": 0,
+        "average_confidence": 0.30911925435066223
+      },
+      "semantic_similarity": 0.9591609835624695,
+      "primitive_preservation": 0,
+      "expected_coverage": 0.0,
+      "target_coverage": 0.0,
+      "source_primitives": [],
+      "target_primitives": [
+        "BECAUSE"
+      ]
+    },
+    {
+      "pair_id": 38,
+      "source": "They are different from us",
+      "target": "Ellos son diferentes de nosotros",
+      "expected_primitives": [
+        "SimilarTo",
+        "LIKE"
+      ],
+      "source_detection": {
+        "text": "They are different from us",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "different",
+            "start": 9,
+            "end": 18
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "different",
+            "start": 9,
+            "end": 18
+          }
+        ],
+        "total_count": 2,
+        "nsm_count": 1,
+        "conceptnet_count": 1,
+        "average_confidence": 0.75
+      },
+      "target_detection": {
+        "text": "Ellos son diferentes de nosotros",
+        "language": "es",
+        "detected_primitives": [],
+        "total_count": 0,
+        "nsm_count": 0,
+        "conceptnet_count": 0,
+        "average_confidence": 0.0
+      },
+      "semantic_similarity": 0.9783274531364441,
+      "primitive_preservation": 0.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 0.0,
+      "source_primitives": [
+        "SimilarTo",
+        "LIKE"
+      ],
+      "target_primitives": []
+    },
+    {
+      "pair_id": 39,
+      "source": "The colors match perfectly",
+      "target": "Los colores coinciden perfectamente",
+      "expected_primitives": [
+        "SimilarTo",
+        "LIKE"
+      ],
+      "source_detection": {
+        "text": "The colors match perfectly",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "match",
+            "start": 11,
+            "end": 16
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "match",
+            "start": 11,
+            "end": 16
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.345392644405365,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "ALL",
+            "type": "NSM",
+            "confidence": 0.3592768609523773,
+            "method": "semantic",
+            "evidence": "universal quantifier, all, every, each",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.34314119815826416,
+            "method": "semantic",
+            "evidence": "similarity relation, similar, like, same",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 5,
+        "nsm_count": 3,
+        "conceptnet_count": 2,
+        "average_confidence": 0.5095621407032013
+      },
+      "target_detection": {
+        "text": "Los colores coinciden perfectamente",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.45918887853622437,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "ALL",
+            "type": "NSM",
+            "confidence": 0.34141695499420166,
+            "method": "semantic",
+            "evidence": "universal quantifier, all, every, each",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.4334251284599304,
+            "method": "semantic",
+            "evidence": "similarity relation, similar, like, same",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 3,
+        "nsm_count": 2,
+        "conceptnet_count": 1,
+        "average_confidence": 0.41134365399678546
+      },
+      "semantic_similarity": 0.8991541862487793,
+      "primitive_preservation": 1.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 1.0,
+      "source_primitives": [
+        "SimilarTo",
+        "LIKE",
+        "ALL"
+      ],
+      "target_primitives": [
+        "ALL",
+        "SimilarTo",
+        "LIKE"
+      ]
+    },
+    {
+      "pair_id": 40,
+      "source": "This is similar to that",
+      "target": "Esto es similar a eso",
+      "expected_primitives": [
+        "SimilarTo",
+        "LIKE"
+      ],
+      "source_detection": {
+        "text": "This is similar to that",
+        "language": "en",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.3535623848438263,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.5953297019004822,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.3684142529964447,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.33090919256210327,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.3217979967594147,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.523869514465332,
+            "method": "semantic",
+            "evidence": "similarity relation, similar, like, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.32557979226112366,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 9,
+        "nsm_count": 6,
+        "conceptnet_count": 3,
+        "average_confidence": 0.4799403150876363
+      },
+      "target_detection": {
+        "text": "Esto es similar a eso",
+        "language": "es",
+        "detected_primitives": [
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.8,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.7,
+            "method": "pattern",
+            "evidence": "similar",
+            "start": 8,
+            "end": 15
+          },
+          {
+            "primitive": "BECAUSE",
+            "type": "NSM",
+            "confidence": 0.35034599900245667,
+            "method": "semantic",
+            "evidence": "causation, because, since, as",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "LIKE",
+            "type": "NSM",
+            "confidence": 0.6299232244491577,
+            "method": "semantic",
+            "evidence": "similarity, like, similar, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "MANY",
+            "type": "NSM",
+            "confidence": 0.3664039373397827,
+            "method": "semantic",
+            "evidence": "large quantity, many, much, numerous",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "BIG",
+            "type": "NSM",
+            "confidence": 0.3540821075439453,
+            "method": "semantic",
+            "evidence": "large size, big, large, huge",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SMALL",
+            "type": "NSM",
+            "confidence": 0.33732110261917114,
+            "method": "semantic",
+            "evidence": "small size, small, little, tiny",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "SimilarTo",
+            "type": "ConceptNet",
+            "confidence": 0.5460579991340637,
+            "method": "semantic",
+            "evidence": "similarity relation, similar, like, same",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "primitive": "PartOf",
+            "type": "ConceptNet",
+            "confidence": 0.322492778301239,
+            "method": "semantic",
+            "evidence": "part-whole relation, part of, component",
+            "start": -1,
+            "end": -1
+          }
+        ],
+        "total_count": 9,
+        "nsm_count": 6,
+        "conceptnet_count": 3,
+        "average_confidence": 0.4896252387099796
+      },
+      "semantic_similarity": 0.9697127938270569,
+      "primitive_preservation": 1.0,
+      "expected_coverage": 1.0,
+      "target_coverage": 1.0,
+      "source_primitives": [
+        "SimilarTo",
+        "BIG",
+        "MANY",
+        "BECAUSE",
+        "LIKE",
+        "PartOf",
+        "SMALL"
+      ],
+      "target_primitives": [
+        "SimilarTo",
+        "BIG",
+        "MANY",
+        "BECAUSE",
+        "LIKE",
+        "PartOf",
+        "SMALL"
+      ]
+    }
+  ],
+  "metrics": {
+    "avg_semantic_similarity": 0.9558038011193275,
+    "avg_primitive_preservation": 0.401984126984127,
+    "avg_expected_coverage": 0.725,
+    "avg_target_coverage": 0.2625,
+    "avg_alignment_score": 0.48725348725348727,
+    "quality_distribution": {
+      "high": 40,
+      "medium": 0,
+      "low": 0
+    },
+    "preservation_distribution": {
+      "high": 10,
+      "medium": 10,
+      "low": 20
+    },
+    "source_primitive_counts": {
+      "CAN": 10,
+      "THINK": 9,
+      "BECAUSE": 9,
+      "NOT": 8,
+      "AtLocation": 6,
+      "LIKE": 6,
+      "CapableOf": 6,
+      "SimilarTo": 5,
+      "SOME": 5,
+      "BIG": 5,
+      "MANY": 5,
+      "PartOf": 5,
+      "SMALL": 5,
+      "FEW": 5,
+      "WANT": 4,
+      "Causes": 4,
+      "UsedFor": 4,
+      "DO": 3,
+      "Desires": 3,
+      "GOOD": 3
+    },
+    "target_primitive_counts": {
+      "BECAUSE": 12,
+      "NOT": 10,
+      "FEW": 8,
+      "BIG": 7,
+      "PartOf": 7,
+      "SMALL": 7,
+      "CAN": 7,
+      "MANY": 6,
+      "LIKE": 5,
+      "CapableOf": 5,
+      "WANT": 4,
+      "SimilarTo": 4,
+      "Desires": 3,
+      "GOOD": 3,
+      "SOME": 2,
+      "UsedFor": 2,
+      "AtLocation": 2,
+      "BAD": 1,
+      "Causes": 1,
+      "HasProperty": 1
+    },
+    "previous_metrics": {
+      "semantic_similarity": 0.785,
+      "primitive_preservation": 0.0,
+      "translation_quality": 0.0
+    },
+    "improvement_metrics": {
+      "semantic_similarity_improvement": 0.17080380111932747,
+      "semantic_similarity_improvement_percentage": 21.758446002462097,
+      "primitive_preservation_new": 0.401984126984127,
+      "alignment_score_new": 0.48725348725348727
+    }
+  }
+}
