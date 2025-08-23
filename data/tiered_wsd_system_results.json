@@ -1,0 +1,549 @@
+{
+  "test_configuration": {
+    "num_test_cases": 9,
+    "timestamp": 1755915421.6918
+  },
+  "wsd_results": [
+    {
+      "word": "like",
+      "context": "I like playing football",
+      "selected_sense": {
+        "word": "like",
+        "sense_id": "enjoy",
+        "synset": "like.v.01",
+        "definition": "like as enjoy",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "I like playing football",
+          "sense_name": "enjoy"
+        },
+        "timestamp": 1755915421.6924338
+      },
+      "candidate_senses": [
+        {
+          "word": "like",
+          "sense_id": "enjoy",
+          "synset": "like.v.01",
+          "definition": "like as enjoy",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "I like playing football",
+            "sense_name": "enjoy"
+          },
+          "timestamp": 1755915421.692479
+        },
+        {
+          "word": "like",
+          "sense_id": "like.v.01",
+          "synset": "like.v.01",
+          "definition": "like with semantic similarity 0.963",
+          "confidence": 0.9630868246861536,
+          "tier": "sbert_semantic",
+          "evidence": {
+            "semantic_similarity": 0.9630868246861536,
+            "context": "I like playing football",
+            "candidate_senses": [
+              "like.v.01",
+              "like.v.02",
+              "like.v.03"
+            ]
+          },
+          "timestamp": 1755915421.692554
+        },
+        {
+          "word": "like",
+          "sense_id": "like.v.01",
+          "synset": "like.v.01",
+          "definition": "like (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "en",
+            "total_senses": 3
+          },
+          "timestamp": 1755915421.6925719
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "word": "like",
+      "context": "This looks like a cat",
+      "selected_sense": {
+        "word": "like",
+        "sense_id": "similar",
+        "synset": "like.v.02",
+        "definition": "like as similar",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "This looks like a cat",
+          "sense_name": "similar"
+        },
+        "timestamp": 1755915421.692611
+      },
+      "candidate_senses": [
+        {
+          "word": "like",
+          "sense_id": "similar",
+          "synset": "like.v.02",
+          "definition": "like as similar",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "This looks like a cat",
+            "sense_name": "similar"
+          },
+          "timestamp": 1755915421.692631
+        },
+        {
+          "word": "like",
+          "sense_id": "like.v.01",
+          "synset": "like.v.01",
+          "definition": "like with semantic similarity 0.963",
+          "confidence": 0.9630868246861536,
+          "tier": "sbert_semantic",
+          "evidence": {
+            "semantic_similarity": 0.9630868246861536,
+            "context": "This looks like a cat",
+            "candidate_senses": [
+              "like.v.01",
+              "like.v.02",
+              "like.v.03"
+            ]
+          },
+          "timestamp": 1755915421.692665
+        },
+        {
+          "word": "like",
+          "sense_id": "like.v.01",
+          "synset": "like.v.01",
+          "definition": "like (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "en",
+            "total_senses": 3
+          },
+          "timestamp": 1755915421.692679
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "word": "like",
+      "context": "I would like to go home",
+      "selected_sense": {
+        "word": "like",
+        "sense_id": "enjoy",
+        "synset": "like.v.01",
+        "definition": "like as enjoy",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "I would like to go home",
+          "sense_name": "enjoy"
+        },
+        "timestamp": 1755915421.6927118
+      },
+      "candidate_senses": [
+        {
+          "word": "like",
+          "sense_id": "enjoy",
+          "synset": "like.v.01",
+          "definition": "like as enjoy",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "I would like to go home",
+            "sense_name": "enjoy"
+          },
+          "timestamp": 1755915421.692731
+        },
+        {
+          "word": "like",
+          "sense_id": "like.v.01",
+          "synset": "like.v.01",
+          "definition": "like with semantic similarity 0.963",
+          "confidence": 0.9630868246861536,
+          "tier": "sbert_semantic",
+          "evidence": {
+            "semantic_similarity": 0.9630868246861536,
+            "context": "I would like to go home",
+            "candidate_senses": [
+              "like.v.01",
+              "like.v.02",
+              "like.v.03"
+            ]
+          },
+          "timestamp": 1755915421.69276
+        },
+        {
+          "word": "like",
+          "sense_id": "like.v.01",
+          "synset": "like.v.01",
+          "definition": "like (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "en",
+            "total_senses": 3
+          },
+          "timestamp": 1755915421.692773
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "word": "want",
+      "context": "I want to help you",
+      "selected_sense": {
+        "word": "want",
+        "sense_id": "desire",
+        "synset": "want.v.01",
+        "definition": "want as desire",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "I want to help you",
+          "sense_name": "desire"
+        },
+        "timestamp": 1755915421.693098
+      },
+      "candidate_senses": [
+        {
+          "word": "want",
+          "sense_id": "desire",
+          "synset": "want.v.01",
+          "definition": "want as desire",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "I want to help you",
+            "sense_name": "desire"
+          },
+          "timestamp": 1755915421.6931221
+        },
+        {
+          "word": "want",
+          "sense_id": "want.v.01",
+          "synset": "want.v.01",
+          "definition": "want (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "en",
+            "total_senses": 2
+          },
+          "timestamp": 1755915421.693166
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "word": "want",
+      "context": "You want to be careful",
+      "selected_sense": {
+        "word": "want",
+        "sense_id": "desire",
+        "synset": "want.v.01",
+        "definition": "want as desire",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "You want to be careful",
+          "sense_name": "desire"
+        },
+        "timestamp": 1755915421.6931999
+      },
+      "candidate_senses": [
+        {
+          "word": "want",
+          "sense_id": "desire",
+          "synset": "want.v.01",
+          "definition": "want as desire",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "You want to be careful",
+            "sense_name": "desire"
+          },
+          "timestamp": 1755915421.693216
+        },
+        {
+          "word": "want",
+          "sense_id": "want.v.01",
+          "synset": "want.v.01",
+          "definition": "want (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "en",
+            "total_senses": 2
+          },
+          "timestamp": 1755915421.693253
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "word": "can",
+      "context": "I can swim very well",
+      "selected_sense": {
+        "word": "can",
+        "sense_id": "ability",
+        "synset": "can.v.01",
+        "definition": "can as ability",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "I can swim very well",
+          "sense_name": "ability"
+        },
+        "timestamp": 1755915421.6936479
+      },
+      "candidate_senses": [
+        {
+          "word": "can",
+          "sense_id": "ability",
+          "synset": "can.v.01",
+          "definition": "can as ability",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "I can swim very well",
+            "sense_name": "ability"
+          },
+          "timestamp": 1755915421.6936882
+        },
+        {
+          "word": "can",
+          "sense_id": "can.v.01",
+          "synset": "can.v.01",
+          "definition": "can (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "en",
+            "total_senses": 2
+          },
+          "timestamp": 1755915421.693742
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "word": "can",
+      "context": "You can enter now",
+      "selected_sense": {
+        "word": "can",
+        "sense_id": "ability",
+        "synset": "can.v.01",
+        "definition": "can as ability",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "You can enter now",
+          "sense_name": "ability"
+        },
+        "timestamp": 1755915421.693776
+      },
+      "candidate_senses": [
+        {
+          "word": "can",
+          "sense_id": "ability",
+          "synset": "can.v.01",
+          "definition": "can as ability",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "You can enter now",
+            "sense_name": "ability"
+          },
+          "timestamp": 1755915421.693794
+        },
+        {
+          "word": "can",
+          "sense_id": "can.v.01",
+          "synset": "can.v.01",
+          "definition": "can (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "en",
+            "total_senses": 2
+          },
+          "timestamp": 1755915421.693832
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "word": "gustar",
+      "context": "Me gusta la m\u00fasica",
+      "selected_sense": {
+        "word": "gustar",
+        "sense_id": "like",
+        "synset": "gustar.v.01",
+        "definition": "gustar as like",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "Me gusta la m\u00fasica",
+          "sense_name": "like"
+        },
+        "timestamp": 1755915421.694174
+      },
+      "candidate_senses": [
+        {
+          "word": "gustar",
+          "sense_id": "like",
+          "synset": "gustar.v.01",
+          "definition": "gustar as like",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "Me gusta la m\u00fasica",
+            "sense_name": "like"
+          },
+          "timestamp": 1755915421.69423
+        },
+        {
+          "word": "gustar",
+          "sense_id": "gustar.v.01",
+          "synset": "gustar.v.01",
+          "definition": "gustar (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "es",
+            "total_senses": 2
+          },
+          "timestamp": 1755915421.694303
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "es"
+    },
+    {
+      "word": "aimer",
+      "context": "J'aime le caf\u00e9",
+      "selected_sense": {
+        "word": "aimer",
+        "sense_id": "like",
+        "synset": "aimer.v.01",
+        "definition": "aimer as like",
+        "confidence": 0.9,
+        "tier": "role_heuristics",
+        "evidence": {
+          "pattern_matched": true,
+          "context": "J'aime le caf\u00e9",
+          "sense_name": "like"
+        },
+        "timestamp": 1755915421.694546
+      },
+      "candidate_senses": [
+        {
+          "word": "aimer",
+          "sense_id": "like",
+          "synset": "aimer.v.01",
+          "definition": "aimer as like",
+          "confidence": 0.9,
+          "tier": "role_heuristics",
+          "evidence": {
+            "pattern_matched": true,
+            "context": "J'aime le caf\u00e9",
+            "sense_name": "like"
+          },
+          "timestamp": 1755915421.69457
+        },
+        {
+          "word": "aimer",
+          "sense_id": "aimer.v.01",
+          "synset": "aimer.v.01",
+          "definition": "aimer (most frequent sense)",
+          "confidence": 0.5,
+          "tier": "frequency_only",
+          "evidence": {
+            "frequency_rank": 1,
+            "language": "fr",
+            "total_senses": 2
+          },
+          "timestamp": 1755915421.694605
+        }
+      ],
+      "disambiguation_method": "role_heuristics",
+      "confidence": 0.9,
+      "language": "fr"
+    }
+  ],
+  "tier_analysis": {
+    "tier_distribution": {
+      "role_heuristics": 9
+    },
+    "confidence_by_tier": {
+      "role_heuristics": 0.8999999999999999
+    },
+    "method_distribution": {
+      "role_heuristics": 9
+    },
+    "average_confidence": 0.8999999999999999
+  },
+  "stability_analysis": {
+    "synset_distribution": {
+      "like.v.01": 2,
+      "like.v.02": 1,
+      "want.v.01": 2,
+      "can.v.01": 2,
+      "gustar.v.01": 1,
+      "aimer.v.01": 1
+    },
+    "stability_score": 0.6666666666666666,
+    "ambiguous_cases": 0,
+    "high_confidence_cases": 9
+  },
+  "recommendations": [
+    "Improve synset stability: current score 0.667 above 0.5 threshold"
+  ]
+}
