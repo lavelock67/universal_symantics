@@ -1,0 +1,435 @@
+{
+  "test_cases": [
+    {
+      "input": "Acabo de llegar.",
+      "language": "es",
+      "expected_aspect": "recent_past",
+      "result": {
+        "original_text": "Acabo de llegar.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "pattern": "\\bacab[a\u00e1o]\\s+de\\s+(\\w+r)\\b",
+            "aspect_type": "recent_past",
+            "language": "es",
+            "nsm_template": "RECENT_PAST({verb})",
+            "eil_template": "PAST({verb}) \u2227 close(now, {verb})",
+            "examples": [
+              "acaba de llegar",
+              "acab\u00f3 de terminar",
+              "acaban de salir"
+            ],
+            "confidence_boost": 0.95
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "RECENT_PAST(ARRIVE)",
+        "eil_representation": "PAST(ARRIVE) \u2227 close(now, ARRIVE)",
+        "confidence": 0.95,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Lleva estudiando tres horas.",
+      "language": "es",
+      "expected_aspect": "ongoing_for",
+      "result": {
+        "original_text": "Lleva estudiando tres horas.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "pattern": "\\bllev[a\u00e1o]\\s+(\\w+ndo)\\s+(durante\\s+|por\\s+)?([^\\.]+)?",
+            "aspect_type": "ongoing_for",
+            "language": "es",
+            "nsm_template": "ONGOING_FOR({verb}, {duration})",
+            "eil_template": "DURING({verb}, now-{duration}..now)",
+            "examples": [
+              "lleva estudiando tres horas",
+              "llevaba trabajando desde ayer"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [
+          {
+            "text": "tres horas",
+            "duration_hours": 3.0,
+            "timestamp": null,
+            "language": "es",
+            "confidence": 0.9
+          }
+        ],
+        "nsm_representation": "ONGOING_FOR(ACTION, 3.0h)",
+        "eil_representation": "DURING(ACTION, now-3.0h..now)",
+        "confidence": 1.0,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Por poco se cae.",
+      "language": "es",
+      "expected_aspect": "almost_do",
+      "result": {
+        "original_text": "Por poco se cae.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "pattern": "\\bpor\\s+poco\\s+(se\\s+)?(\\w+[a\u00e1o\u00f3e\u00e9]?)\\b",
+            "aspect_type": "almost_do",
+            "language": "es",
+            "nsm_template": "ALMOST_DO({verb})",
+            "eil_template": "\u00ac{verb} \u2227 near({verb})",
+            "examples": [
+              "por poco se cae",
+              "por poco llueve",
+              "por poco pierden"
+            ],
+            "confidence_boost": 0.95
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "ALMOST_DO(ACTION)",
+        "eil_representation": "\u00acACTION \u2227 near(ACTION)",
+        "confidence": 0.95,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Dej\u00f3 de fumar.",
+      "language": "es",
+      "expected_aspect": "stop",
+      "result": {
+        "original_text": "Dej\u00f3 de fumar.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "pattern": "\\bdej[a\u00e1o\u00f3]\\s+de\\s+(\\w+r)\\b",
+            "aspect_type": "stop",
+            "language": "es",
+            "nsm_template": "STOP({verb})",
+            "eil_template": "BEFORE(DURING({verb}, t1..t2), now) \u2227 \u00acDURING({verb}, now)",
+            "examples": [
+              "dej\u00f3 de fumar",
+              "dejaron de trabajar",
+              "dej\u00e9 de estudiar"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "STOP(SMOKE)",
+        "eil_representation": "BEFORE(DURING(SMOKE, t1..t2), now) \u2227 \u00acDURING(SMOKE, now)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Volvi\u00f3 a intentar.",
+      "language": "es",
+      "expected_aspect": "resume",
+      "result": {
+        "original_text": "Volvi\u00f3 a intentar.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "pattern": "\\bvolv[\u00edi\u00f3oe]+\\s+a\\s+(\\w+r?)\\b",
+            "aspect_type": "resume",
+            "language": "es",
+            "nsm_template": "RESUME({verb})",
+            "eil_template": "BEFORE(DURING({verb}, t1..t2), t3) \u2227 DURING({verb}, now)",
+            "examples": [
+              "volvi\u00f3 a llamar",
+              "volvieron a intentar",
+              "volv\u00ed a estudiar"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "RESUME(TRY)",
+        "eil_representation": "BEFORE(DURING(TRY, t1..t2), t3) \u2227 DURING(TRY, now)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Je viens d'arriver.",
+      "language": "fr",
+      "expected_aspect": "recent_past",
+      "result": {
+        "original_text": "Je viens d'arriver.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "pattern": "\\bvien[st]+\\s+d['']\\s*(\\w+r)\\b",
+            "aspect_type": "recent_past",
+            "language": "fr",
+            "nsm_template": "RECENT_PAST({verb})",
+            "eil_template": "PAST({verb}) \u2227 close(now, {verb})",
+            "examples": [
+              "vient d'arriver",
+              "viens de terminer",
+              "viennent de partir"
+            ],
+            "confidence_boost": 0.95
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "RECENT_PAST(ARRIVE)",
+        "eil_representation": "PAST(ARRIVE) \u2227 close(now, ARRIVE)",
+        "confidence": 0.95,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Il est en train de travailler.",
+      "language": "fr",
+      "expected_aspect": "ongoing_for",
+      "result": {
+        "original_text": "Il est en train de travailler.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "pattern": "\\b(\u00eatre|est|suis|sommes|\u00eates|sont)\\s+en\\s+train\\s+de\\s+(\\w+r)\\b",
+            "aspect_type": "ongoing_for",
+            "language": "fr",
+            "nsm_template": "ONGOING_FOR({verb}, now)",
+            "eil_template": "DURING({verb}, now)",
+            "examples": [
+              "est en train de travailler",
+              "sont en train d'\u00e9tudier"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "ONGOING_FOR(WORK, now)",
+        "eil_representation": "DURING(WORK, now)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Il a failli tomber.",
+      "language": "fr",
+      "expected_aspect": "almost_do",
+      "result": {
+        "original_text": "Il a failli tomber.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "pattern": "\\bfailli[rtls]?\\s+(\\w+r)\\b",
+            "aspect_type": "almost_do",
+            "language": "fr",
+            "nsm_template": "ALMOST_DO({verb})",
+            "eil_template": "\u00ac{verb} \u2227 near({verb})",
+            "examples": [
+              "a failli tomber",
+              "faillit mourir",
+              "avait failli oublier"
+            ],
+            "confidence_boost": 0.95
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "ALMOST_DO(FALL)",
+        "eil_representation": "\u00acFALL \u2227 near(FALL)",
+        "confidence": 0.95,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Elle a cess\u00e9 de fumer.",
+      "language": "fr",
+      "expected_aspect": "stop",
+      "result": {
+        "original_text": "Elle a cess\u00e9 de fumer.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "pattern": "\\bcess[e\u00e9\u00e8a\u00e8r]+\\s+(de\\s+)?(\\w+r)\\b",
+            "aspect_type": "stop",
+            "language": "fr",
+            "nsm_template": "STOP({verb})",
+            "eil_template": "BEFORE(DURING({verb}, t1..t2), now) \u2227 \u00acDURING({verb}, now)",
+            "examples": [
+              "cesse de fumer",
+              "cess\u00e9 de travailler",
+              "cessent d'\u00e9tudier"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "STOP(SMOKE)",
+        "eil_representation": "BEFORE(DURING(SMOKE, t1..t2), now) \u2227 \u00acDURING(SMOKE, now)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Il a recommenc\u00e9 \u00e0 \u00e9tudier.",
+      "language": "fr",
+      "expected_aspect": "resume",
+      "result": {
+        "original_text": "Il a recommenc\u00e9 \u00e0 \u00e9tudier.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "pattern": "\\brecommenc[e\u00e9\u00e8a\u00e8r]+\\s+(\u00e0\\s+)?(\\w+r)\\b",
+            "aspect_type": "resume",
+            "language": "fr",
+            "nsm_template": "RESUME({verb})",
+            "eil_template": "BEFORE(DURING({verb}, t1..t2), t3) \u2227 DURING({verb}, now)",
+            "examples": [
+              "recommence \u00e0 travailler",
+              "recommenc\u00e9 \u00e0 \u00e9tudier"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "RESUME(STUDY)",
+        "eil_representation": "BEFORE(DURING(STUDY, t1..t2), t3) \u2227 DURING(STUDY, now)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    },
+    {
+      "input": "I just arrived.",
+      "language": "en",
+      "expected_aspect": "recent_past",
+      "result": {
+        "original_text": "I just arrived.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "pattern": "\\bjust\\s+(\\w+ed|\\w+)\\b",
+            "aspect_type": "recent_past",
+            "language": "en",
+            "nsm_template": "RECENT_PAST({verb})",
+            "eil_template": "PAST({verb}) \u2227 close(now, {verb})",
+            "examples": [
+              "just arrived",
+              "just finished",
+              "just called"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "RECENT_PAST(ARRIVE)",
+        "eil_representation": "PAST(ARRIVE) \u2227 close(now, ARRIVE)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    },
+    {
+      "input": "She has been working for three hours.",
+      "language": "en",
+      "expected_aspect": "ongoing_for",
+      "result": {
+        "original_text": "She has been working for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "pattern": "\\b(has|have)\\s+been\\s+(\\w+ing)\\s+(for\\s+\\w+)?",
+            "aspect_type": "ongoing_for",
+            "language": "en",
+            "nsm_template": "ONGOING_FOR({verb}, {duration})",
+            "eil_template": "DURING({verb}, now-{duration}..now)",
+            "examples": [
+              "has been working for three hours",
+              "have been studying"
+            ],
+            "confidence_boost": 0.8
+          }
+        ],
+        "temporal_expressions": [
+          {
+            "text": "three hours",
+            "duration_hours": 3.0,
+            "timestamp": null,
+            "language": "en",
+            "confidence": 0.9
+          }
+        ],
+        "nsm_representation": "ONGOING_FOR(WORK, 3.0h)",
+        "eil_representation": "DURING(WORK, now-3.0h..now)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    },
+    {
+      "input": "He almost fell.",
+      "language": "en",
+      "expected_aspect": "almost_do",
+      "result": {
+        "original_text": "He almost fell.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "pattern": "\\balmost\\s+(\\w+ed|\\w+)\\b",
+            "aspect_type": "almost_do",
+            "language": "en",
+            "nsm_template": "ALMOST_DO({verb})",
+            "eil_template": "\u00ac{verb} \u2227 near({verb})",
+            "examples": [
+              "almost fell",
+              "almost finished",
+              "almost called"
+            ],
+            "confidence_boost": 0.9
+          }
+        ],
+        "temporal_expressions": [],
+        "nsm_representation": "ALMOST_DO(ACTION)",
+        "eil_representation": "\u00acACTION \u2227 near(ACTION)",
+        "confidence": 0.9,
+        "warnings": []
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 13,
+    "correct_detections": 13,
+    "accuracy": 1.0,
+    "acceptance_criteria_met": true,
+    "language_stats": {
+      "es": {
+        "total": 5,
+        "detected": 5
+      },
+      "fr": {
+        "total": 5,
+        "detected": 5
+      },
+      "en": {
+        "total": 3,
+        "detected": 3
+      }
+    },
+    "aspect_stats": {
+      "recent_past": {
+        "total": 3,
+        "detected": 3
+      },
+      "ongoing_for": {
+        "total": 3,
+        "detected": 3
+      },
+      "almost_do": {
+        "total": 3,
+        "detected": 3
+      },
+      "stop": {
+        "total": 2,
+        "detected": 2
+      },
+      "resume": {
+        "total": 2,
+        "detected": 2
+      }
+    }
+  }
+}
