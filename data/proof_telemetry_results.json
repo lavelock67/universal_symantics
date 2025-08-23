@@ -1,0 +1,1606 @@
+{
+  "run_telemetries": [
+    {
+      "run_id": "run_1_healthy_reasoning_run",
+      "commit_sha": "abc123",
+      "dataset_version": "v1.0",
+      "split_name": "test",
+      "similarity_model": "sbert",
+      "scale": "cosine",
+      "timestamp": 1755916208.009606,
+      "rule_telemetry": {
+        "Q1_quantifier_scope": {
+          "rule_id": "Q1_quantifier_scope",
+          "rule_name": "Q1 Quantifier Scope",
+          "fires": 10,
+          "depth_mean": 2.7,
+          "depth_std": 1.5524174696260025,
+          "success_rate": 0.9,
+          "failures_by_goal": {
+            "test_goal": 1
+          },
+          "examples": [
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6065226740149692,
+              "execution_time": 0.021090100435952108,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0091012
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.602997082319379,
+              "execution_time": 0.017951483534005146,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009108
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.680233063387751,
+              "execution_time": 0.061901878555649305,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0091121
+            },
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.9969690949480915,
+              "execution_time": 0.021121577375839445,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009116
+            },
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6916884717608375,
+              "execution_time": 0.03110151665291335,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.00912
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.9537186733110594,
+              "execution_time": 0.03249392770223804,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009124
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7010570004601776,
+              "execution_time": 0.07587251882068408,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0091279
+            },
+            {
+              "depth": 1,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9949952566322089,
+              "execution_time": 0.039652933201459205,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0091321
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6136825153690204,
+              "execution_time": 0.05967927256670461,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0091362
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.914062803444662,
+              "execution_time": 0.09471925098057768,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.00914
+            }
+          ],
+          "confidence_distribution": [
+            0.6065226740149692,
+            0.602997082319379,
+            0.680233063387751,
+            0.9969690949480915,
+            0.6916884717608375,
+            0.9537186733110594,
+            0.7010570004601776,
+            0.9949952566322089,
+            0.6136825153690204,
+            0.914062803444662
+          ],
+          "execution_time_mean": 0.0455584459826023,
+          "timestamp": 1755916208.0094101
+        },
+        "T1_temporal_chaining": {
+          "rule_id": "T1_temporal_chaining",
+          "rule_name": "T1 Temporal Chaining",
+          "fires": 15,
+          "depth_mean": 2.4,
+          "depth_std": 1.254325848148452,
+          "success_rate": 0.9333333333333333,
+          "failures_by_goal": {
+            "test_goal": 1
+          },
+          "examples": [
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6274559623164949,
+              "execution_time": 0.08046606930698187,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009145
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7876894980079533,
+              "execution_time": 0.05348283036467792,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009148
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.9502571676292619,
+              "execution_time": 0.07437193322377463,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009152
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7256343619360944,
+              "execution_time": 0.04289169245930294,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009156
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.871930585543456,
+              "execution_time": 0.014819520689537104,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.00916
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6637473031602296,
+              "execution_time": 0.07081033154232681,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009163
+            },
+            {
+              "depth": 3,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.7871006607856237,
+              "execution_time": 0.053881557480503856,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0091672
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.8055215116540706,
+              "execution_time": 0.031016082653502825,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009171
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.8612681993250914,
+              "execution_time": 0.05614099331095005,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009174
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.819206418298067,
+              "execution_time": 0.05417680797534684,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0091782
+            },
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7989049797567408,
+              "execution_time": 0.028392501786789138,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009182
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7305156962270085,
+              "execution_time": 0.036357583887629524,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009185
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6788606257346054,
+              "execution_time": 0.04448752477965703,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009193
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7565375127906059,
+              "execution_time": 0.0782135510174874,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009197
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.675936115893041,
+              "execution_time": 0.08674852832307106,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092008
+            }
+          ],
+          "confidence_distribution": [
+            0.6274559623164949,
+            0.7876894980079533,
+            0.9502571676292619,
+            0.7256343619360944,
+            0.871930585543456,
+            0.6637473031602296,
+            0.7871006607856237,
+            0.8055215116540706,
+            0.8612681993250914,
+            0.819206418298067,
+            0.7989049797567408,
+            0.7305156962270085,
+            0.6788606257346054,
+            0.7565375127906059,
+            0.675936115893041
+          ],
+          "execution_time_mean": 0.05375050058676926,
+          "timestamp": 1755916208.009443
+        },
+        "CF1_counterfactual": {
+          "rule_id": "CF1_counterfactual",
+          "rule_name": "Cf1 Counterfactual",
+          "fires": 8,
+          "depth_mean": 2.75,
+          "depth_std": 1.1989578808281798,
+          "success_rate": 0.5,
+          "failures_by_goal": {
+            "test_goal": 4
+          },
+          "examples": [
+            {
+              "depth": 1,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6158709170301293,
+              "execution_time": 0.061091509928276645,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092092
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6753833251127196,
+              "execution_time": 0.09192612786636518,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009212
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6379086967229765,
+              "execution_time": 0.08620423507939402,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009216
+            },
+            {
+              "depth": 4,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8647238152430431,
+              "execution_time": 0.0649055838343619,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092201
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.74882034609518,
+              "execution_time": 0.06940205355259595,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009223
+            },
+            {
+              "depth": 2,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8790798825253001,
+              "execution_time": 0.032239065396839725,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009227
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.8032458788743615,
+              "execution_time": 0.08255410720313038,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009231
+            },
+            {
+              "depth": 3,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6135549717621679,
+              "execution_time": 0.06378953864425593,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009234
+            }
+          ],
+          "confidence_distribution": [
+            0.6158709170301293,
+            0.6753833251127196,
+            0.6379086967229765,
+            0.8647238152430431,
+            0.74882034609518,
+            0.8790798825253001,
+            0.8032458788743615,
+            0.6135549717621679
+          ],
+          "execution_time_mean": 0.06901402768815246,
+          "timestamp": 1755916208.009463
+        },
+        "P1_pronoun_deixis": {
+          "rule_id": "P1_pronoun_deixis",
+          "rule_name": "P1 Pronoun Deixis",
+          "fires": 12,
+          "depth_mean": 2.9166666666666665,
+          "depth_std": 1.440968038815882,
+          "success_rate": 1.0,
+          "failures_by_goal": {},
+          "examples": [
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6714993582016678,
+              "execution_time": 0.0954511419431903,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009239
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.9000287526467907,
+              "execution_time": 0.016197089931971033,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092428
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.829422277271689,
+              "execution_time": 0.061880625904550096,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092459
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.80919196820704,
+              "execution_time": 0.06517674205223724,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092502
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7336124490422806,
+              "execution_time": 0.05982906756763138,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009254
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.9043128078895152,
+              "execution_time": 0.04674791195962568,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009257
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.8190867646992397,
+              "execution_time": 0.035713742749639794,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092611
+            },
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.762046644461192,
+              "execution_time": 0.07925063187632668,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009265
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.651985714272782,
+              "execution_time": 0.0562576070504013,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009268
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7928175834220575,
+              "execution_time": 0.04737578714001646,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009272
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6913733589553704,
+              "execution_time": 0.09360603116879462,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0092769
+            },
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6381483199425065,
+              "execution_time": 0.07079590489931054,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009281
+            }
+          ],
+          "confidence_distribution": [
+            0.6714993582016678,
+            0.9000287526467907,
+            0.829422277271689,
+            0.80919196820704,
+            0.7336124490422806,
+            0.9043128078895152,
+            0.8190867646992397,
+            0.762046644461192,
+            0.651985714272782,
+            0.7928175834220575,
+            0.6913733589553704,
+            0.6381483199425065
+          ],
+          "execution_time_mean": 0.06069019035364126,
+          "timestamp": 1755916208.009482
+        }
+      },
+      "overall_metrics": {
+        "total_rule_fires": 45,
+        "active_rules": 4,
+        "total_rules": 4,
+        "average_success_rate": 0.8333333333333334,
+        "average_depth": 2.6916666666666664,
+        "mps_score": 0.85
+      },
+      "health_indicators": {
+        "overall_health_score": 0.7693108159887604,
+        "rule_coverage": 1.0,
+        "reasoning_depth": 2.6916666666666664,
+        "success_stability": 0.8333333333333334,
+        "performance_health": 0.9427467088472088,
+        "rule_health_scores": {
+          "Q1_quantifier_scope": {
+            "overall_score": 0.7742633856747317,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 0.9,
+              "depth_stability": 0.22379126518699877,
+              "performance": 0.9544415540173977,
+              "confidence": 0.7755926635648157
+            },
+            "health_status": "healthy"
+          },
+          "T1_temporal_chaining": {
+            "overall_score": 0.8119105060877227,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 0.9333333333333333,
+              "depth_stability": 0.372837075925774,
+              "performance": 0.9462494994132308,
+              "confidence": 0.7693711066038896
+            },
+            "health_status": "healthy"
+          },
+          "CF1_counterfactual": {
+            "overall_score": 0.6792256296395693,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 0.5,
+              "depth_stability": 0.4005210595859101,
+              "performance": 0.9309859723118475,
+              "confidence": 0.7298234791707348
+            },
+            "health_status": "warning"
+          },
+          "P1_pronoun_deixis": {
+            "overall_score": 0.8118437425530173,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 1.0,
+              "depth_stability": 0.27951598059205895,
+              "performance": 0.9393098096463588,
+              "confidence": 0.7669604999176777
+            },
+            "health_status": "healthy"
+          }
+        },
+        "health_warnings": [
+          "Low success rate rules: ['CF1_counterfactual']"
+        ],
+        "health_recommendations": []
+      },
+      "ci_gates": {
+        "sufficient_rule_fires": true,
+        "adequate_rule_coverage": true,
+        "acceptable_success_rate": true,
+        "no_mps_drift": true,
+        "all_gates_passed": false
+      }
+    },
+    {
+      "run_id": "run_2_low_rule_fires_run",
+      "commit_sha": "abc123",
+      "dataset_version": "v1.0",
+      "split_name": "test",
+      "similarity_model": "sbert",
+      "scale": "cosine",
+      "timestamp": 1755916208.009881,
+      "rule_telemetry": {
+        "Q1_quantifier_scope": {
+          "rule_id": "Q1_quantifier_scope",
+          "rule_name": "Q1 Quantifier Scope",
+          "fires": 2,
+          "depth_mean": 3.5,
+          "depth_std": 0.5,
+          "success_rate": 0.5,
+          "failures_by_goal": {
+            "test_goal": 1
+          },
+          "examples": [
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.9543772290565928,
+              "execution_time": 0.07135447138335851,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009644
+            },
+            {
+              "depth": 3,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6263260582191899,
+              "execution_time": 0.052364448192789764,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.00965
+            }
+          ],
+          "confidence_distribution": [
+            0.9543772290565928,
+            0.6263260582191899
+          ],
+          "execution_time_mean": 0.06185945978807414,
+          "timestamp": 1755916208.009718
+        },
+        "T1_temporal_chaining": {
+          "rule_id": "T1_temporal_chaining",
+          "rule_name": "T1 Temporal Chaining",
+          "fires": 1,
+          "depth_mean": 4.0,
+          "depth_std": 0.0,
+          "success_rate": 0.0,
+          "failures_by_goal": {
+            "test_goal": 1
+          },
+          "examples": [
+            {
+              "depth": 4,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.7044543676699971,
+              "execution_time": 0.032103022260844646,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009656
+            }
+          ],
+          "confidence_distribution": [
+            0.7044543676699971
+          ],
+          "execution_time_mean": 0.032103022260844646,
+          "timestamp": 1755916208.009741
+        },
+        "P1_pronoun_deixis": {
+          "rule_id": "P1_pronoun_deixis",
+          "rule_name": "P1 Pronoun Deixis",
+          "fires": 3,
+          "depth_mean": 4.0,
+          "depth_std": 1.4142135623730951,
+          "success_rate": 0.3333333333333333,
+          "failures_by_goal": {
+            "test_goal": 2
+          },
+          "examples": [
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.8986520384709034,
+              "execution_time": 0.09584493946413199,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009662
+            },
+            {
+              "depth": 2,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6318807138565671,
+              "execution_time": 0.07640682663195969,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009668
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9349386573112148,
+              "execution_time": 0.05073003802367424,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009672
+            }
+          ],
+          "confidence_distribution": [
+            0.8986520384709034,
+            0.6318807138565671,
+            0.9349386573112148
+          ],
+          "execution_time_mean": 0.07432726803992197,
+          "timestamp": 1755916208.009763
+        }
+      },
+      "overall_metrics": {
+        "total_rule_fires": 6,
+        "active_rules": 3,
+        "total_rules": 3,
+        "average_success_rate": 0.27777777777777773,
+        "average_depth": 3.8333333333333335,
+        "mps_score": 0.9
+      },
+      "health_indicators": {
+        "overall_health_score": 0.5569432178091606,
+        "rule_coverage": 1.0,
+        "reasoning_depth": 3.8333333333333335,
+        "success_stability": 0.27777777777777773,
+        "performance_health": 0.943903416637053,
+        "rule_health_scores": {
+          "Q1_quantifier_scope": {
+            "overall_score": 0.6392738275774725,
+            "score_components": {
+              "fire_rate": 0.4,
+              "success_rate": 0.5,
+              "depth_stability": 0.75,
+              "performance": 0.9381405402119258,
+              "confidence": 0.7903516436378913
+            },
+            "health_status": "warning"
+          },
+          "T1_temporal_chaining": {
+            "overall_score": 0.49085270181137286,
+            "score_components": {
+              "fire_rate": 0.2,
+              "success_rate": 0.0,
+              "depth_stability": 1.0,
+              "performance": 0.9678969777391554,
+              "confidence": 0.7044543676699971
+            },
+            "health_status": "critical"
+          },
+          "P1_pronoun_deixis": {
+            "overall_score": 0.5407031240386364,
+            "score_components": {
+              "fire_rate": 0.6,
+              "success_rate": 0.3333333333333333,
+              "depth_stability": 0.2928932188134524,
+              "performance": 0.925672731960078,
+              "confidence": 0.8218238032128952
+            },
+            "health_status": "warning"
+          }
+        },
+        "health_warnings": [
+          "Low fire rate rules: ['Q1_quantifier_scope', 'T1_temporal_chaining', 'P1_pronoun_deixis']",
+          "Low success rate rules: ['Q1_quantifier_scope', 'T1_temporal_chaining', 'P1_pronoun_deixis']"
+        ],
+        "health_recommendations": [
+          "Overall reasoning health is below target (0.7). Review rule implementations.",
+          "Success stability is poor. Investigate rule failure patterns."
+        ]
+      },
+      "ci_gates": {
+        "sufficient_rule_fires": false,
+        "adequate_rule_coverage": true,
+        "acceptable_success_rate": false,
+        "no_mps_drift": false,
+        "all_gates_passed": false
+      }
+    },
+    {
+      "run_id": "run_3_poor_success_rate_run",
+      "commit_sha": "abc123",
+      "dataset_version": "v1.0",
+      "split_name": "test",
+      "similarity_model": "sbert",
+      "scale": "cosine",
+      "timestamp": 1755916208.0103061,
+      "rule_telemetry": {
+        "Q1_quantifier_scope": {
+          "rule_id": "Q1_quantifier_scope",
+          "rule_name": "Q1 Quantifier Scope",
+          "fires": 8,
+          "depth_mean": 4.0,
+          "depth_std": 1.5,
+          "success_rate": 0.25,
+          "failures_by_goal": {
+            "test_goal": 6
+          },
+          "examples": [
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6379799543242946,
+              "execution_time": 0.08078972705421582,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0099132
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.7203731131778932,
+              "execution_time": 0.09413520815891,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009918
+            },
+            {
+              "depth": 2,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6477317360681448,
+              "execution_time": 0.0599359159361949,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009923
+            },
+            {
+              "depth": 1,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8797760709631328,
+              "execution_time": 0.05843006573286751,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0099268
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8690876798931315,
+              "execution_time": 0.09029941692386606,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0099351
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.7478968592419725,
+              "execution_time": 0.09797599773834928,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009939
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8661650721894931,
+              "execution_time": 0.09752187069337145,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009944
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6732434948063675,
+              "execution_time": 0.047254302858430984,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009949
+            }
+          ],
+          "confidence_distribution": [
+            0.6379799543242946,
+            0.7203731131778932,
+            0.6477317360681448,
+            0.8797760709631328,
+            0.8690876798931315,
+            0.7478968592419725,
+            0.8661650721894931,
+            0.6732434948063675
+          ],
+          "execution_time_mean": 0.07829281313702575,
+          "timestamp": 1755916208.010138
+        },
+        "T1_temporal_chaining": {
+          "rule_id": "T1_temporal_chaining",
+          "rule_name": "T1 Temporal Chaining",
+          "fires": 12,
+          "depth_mean": 3.25,
+          "depth_std": 1.5877132402714709,
+          "success_rate": 0.25,
+          "failures_by_goal": {
+            "test_goal": 9
+          },
+          "examples": [
+            {
+              "depth": 3,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9606437440178699,
+              "execution_time": 0.09954437026572782,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0099552
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6461331533406752,
+              "execution_time": 0.02415182568564173,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.00996
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6254761307327193,
+              "execution_time": 0.0957133166524437,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009964
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8196728758620365,
+              "execution_time": 0.04496128852581473,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009969
+            },
+            {
+              "depth": 1,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9727198190172743,
+              "execution_time": 0.05515064478356562,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009974
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.8730166619412809,
+              "execution_time": 0.023647535168546275,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009977
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.627891302573977,
+              "execution_time": 0.08367698185348997,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009981
+            },
+            {
+              "depth": 3,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8789997009141097,
+              "execution_time": 0.07936583154473358,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009985
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.7649725751166737,
+              "execution_time": 0.08377820770352945,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009988
+            },
+            {
+              "depth": 2,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8368590798598807,
+              "execution_time": 0.08481625322166438,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009992
+            },
+            {
+              "depth": 2,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6045465996104008,
+              "execution_time": 0.05217823050930315,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009996
+            },
+            {
+              "depth": 1,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.784541885924648,
+              "execution_time": 0.09511635672642235,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.009999
+            }
+          ],
+          "confidence_distribution": [
+            0.9606437440178699,
+            0.6461331533406752,
+            0.6254761307327193,
+            0.8196728758620365,
+            0.9727198190172743,
+            0.8730166619412809,
+            0.627891302573977,
+            0.8789997009141097,
+            0.7649725751166737,
+            0.8368590798598807,
+            0.6045465996104008,
+            0.784541885924648
+          ],
+          "execution_time_mean": 0.06850840355340689,
+          "timestamp": 1755916208.0101619
+        },
+        "CF1_counterfactual": {
+          "rule_id": "CF1_counterfactual",
+          "rule_name": "Cf1 Counterfactual",
+          "fires": 6,
+          "depth_mean": 3.5,
+          "depth_std": 1.6072751268321592,
+          "success_rate": 0.0,
+          "failures_by_goal": {
+            "test_goal": 6
+          },
+          "examples": [
+            {
+              "depth": 1,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.7797198247680304,
+              "execution_time": 0.042817674488791764,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0100029
+            },
+            {
+              "depth": 2,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6792795086441822,
+              "execution_time": 0.0825990378643815,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0100071
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8045742065228231,
+              "execution_time": 0.01256632797567959,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010011
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.6931156271209219,
+              "execution_time": 0.04829254318463763,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010014
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9833933283011062,
+              "execution_time": 0.08941650570663165,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010018
+            },
+            {
+              "depth": 3,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9142307039553658,
+              "execution_time": 0.04237202961860796,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0100212
+            }
+          ],
+          "confidence_distribution": [
+            0.7797198247680304,
+            0.6792795086441822,
+            0.8045742065228231,
+            0.6931156271209219,
+            0.9833933283011062,
+            0.9142307039553658
+          ],
+          "execution_time_mean": 0.05301068647312168,
+          "timestamp": 1755916208.010184
+        },
+        "P1_pronoun_deixis": {
+          "rule_id": "P1_pronoun_deixis",
+          "rule_name": "P1 Pronoun Deixis",
+          "fires": 10,
+          "depth_mean": 3.3,
+          "depth_std": 1.4866068747318506,
+          "success_rate": 0.5,
+          "failures_by_goal": {
+            "test_goal": 5
+          },
+          "examples": [
+            {
+              "depth": 2,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.8671353868025807,
+              "execution_time": 0.01714360436247253,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010027
+            },
+            {
+              "depth": 4,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6282312062200033,
+              "execution_time": 0.030679128852837512,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010031
+            },
+            {
+              "depth": 1,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9391359220111322,
+              "execution_time": 0.03306421619922485,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0100338
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6904599198250442,
+              "execution_time": 0.0915258495227658,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010038
+            },
+            {
+              "depth": 1,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.768213343905228,
+              "execution_time": 0.025359046728492738,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0100422
+            },
+            {
+              "depth": 4,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.739205861668016,
+              "execution_time": 0.02431626073542061,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.01008
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6756671515492884,
+              "execution_time": 0.04767977369897597,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0100842
+            },
+            {
+              "depth": 5,
+              "success": false,
+              "goal": "test_goal",
+              "confidence": 0.9314674355232371,
+              "execution_time": 0.09159094894397254,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010088
+            },
+            {
+              "depth": 3,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.6653120920119954,
+              "execution_time": 0.050983419975464156,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.010091
+            },
+            {
+              "depth": 5,
+              "success": true,
+              "goal": "test_goal",
+              "confidence": 0.7847394434312045,
+              "execution_time": 0.0951348056526505,
+              "example": {
+                "input": "test_input",
+                "output": "test_output"
+              },
+              "timestamp": 1755916208.0100951
+            }
+          ],
+          "confidence_distribution": [
+            0.8671353868025807,
+            0.6282312062200033,
+            0.9391359220111322,
+            0.6904599198250442,
+            0.768213343905228,
+            0.739205861668016,
+            0.6756671515492884,
+            0.9314674355232371,
+            0.6653120920119954,
+            0.7847394434312045
+          ],
+          "execution_time_mean": 0.05074770546722772,
+          "timestamp": 1755916208.010201
+        }
+      },
+      "overall_metrics": {
+        "total_rule_fires": 36,
+        "active_rules": 4,
+        "total_rules": 4,
+        "average_success_rate": 0.25,
+        "average_depth": 3.5125,
+        "mps_score": 0.75
+      },
+      "health_indicators": {
+        "overall_health_score": 0.5779233905494284,
+        "rule_coverage": 1.0,
+        "reasoning_depth": 3.5125,
+        "success_stability": 0.25,
+        "performance_health": 0.9373600978423046,
+        "rule_health_scores": {
+          "Q1_quantifier_scope": {
+            "overall_score": 0.5765483401669041,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 0.25,
+              "depth_stability": 0.25,
+              "performance": 0.9217071868629743,
+              "confidence": 0.7552817475830538
+            },
+            "health_status": "warning"
+          },
+          "T1_temporal_chaining": {
+            "overall_score": 0.5733958345512362,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 0.25,
+              "depth_stability": 0.20614337986426456,
+              "performance": 0.9314915964465931,
+              "confidence": 0.7829561274092955
+            },
+            "health_status": "warning"
+          },
+          "CF1_counterfactual": {
+            "overall_score": 0.5026787143286265,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 0.0,
+              "depth_stability": 0.19636243658392039,
+              "performance": 0.9469893135268783,
+              "confidence": 0.8090521998854049
+            },
+            "health_status": "warning"
+          },
+          "P1_pronoun_deixis": {
+            "overall_score": 0.6590706731509467,
+            "score_components": {
+              "fire_rate": 1.0,
+              "success_rate": 0.5,
+              "depth_stability": 0.2566965626340747,
+              "performance": 0.9492522945327723,
+              "confidence": 0.768956776294773
+            },
+            "health_status": "warning"
+          }
+        },
+        "health_warnings": [
+          "Low success rate rules: ['Q1_quantifier_scope', 'T1_temporal_chaining', 'CF1_counterfactual', 'P1_pronoun_deixis']"
+        ],
+        "health_recommendations": [
+          "Overall reasoning health is below target (0.7). Review rule implementations.",
+          "Success stability is poor. Investigate rule failure patterns."
+        ]
+      },
+      "ci_gates": {
+        "sufficient_rule_fires": true,
+        "adequate_rule_coverage": true,
+        "acceptable_success_rate": false,
+        "no_mps_drift": true,
+        "all_gates_passed": false
+      }
+    }
+  ],
+  "trend_analysis": {
+    "trend_analysis": {
+      "recent_runs": 3,
+      "trends": {
+        "mps_trend": [
+          0.85,
+          0.9,
+          0.75
+        ],
+        "rule_fires_trend": [
+          45,
+          6,
+          36
+        ],
+        "health_score_trend": [
+          0.7693108159887604,
+          0.5569432178091606,
+          0.5779233905494284
+        ],
+        "rule_coverage_trend": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "trend_directions": {
+        "mps_trend": "decreasing",
+        "rule_fires_trend": "decreasing",
+        "health_score_trend": "decreasing",
+        "rule_coverage_trend": "stable"
+      },
+      "recommendations": [
+        "Reasoning health is declining. Review recent rule changes."
+      ]
+    }
+  },
+  "summary": {
+    "total_runs": 3,
+    "average_health_score": 0.6347258081157832,
+    "ci_gates_passed_rate": 0.5333333333333333
+  }
+}
