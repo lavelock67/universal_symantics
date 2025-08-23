@@ -1,0 +1,490 @@
+{
+  "test_cases": [
+    {
+      "input": "All children aren't playing.",
+      "language": "en",
+      "result": {
+        "original_text": "All children aren't playing.",
+        "language": "en",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(all|every|each)\\s+(\\w+)",
+            "quantifier_type": "universal",
+            "language": "en",
+            "scope_indicators": [
+              "all",
+              "every",
+              "each"
+            ],
+            "negation_markers": [
+              "not",
+              "n't",
+              "never",
+              "no"
+            ],
+            "examples": [
+              "All children play",
+              "Every child plays",
+              "Each student studies"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "universal",
+            "variable": "x0",
+            "predicate": "PLAY",
+            "scope_type": "wide_scope",
+            "negation": "N'T",
+            "eil_representation": "AMBIGUOUS_WIDE: ALL[x0] PLAY(x0)",
+            "confidence": 0.8
+          },
+          {
+            "quantifier": "universal",
+            "variable": "x1",
+            "predicate": "PLAY",
+            "scope_type": "narrow_scope",
+            "negation": "N'T",
+            "eil_representation": "AMBIGUOUS_NARROW: NOT EXISTS[x1] PLAY(x1)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": true,
+        "scope_resolution": "ambiguous",
+        "confidence": 0.8,
+        "warnings": [
+          "Scope ambiguity detected - multiple readings generated"
+        ]
+      }
+    },
+    {
+      "input": "No todos los ni\u00f1os juegan.",
+      "language": "es",
+      "result": {
+        "original_text": "No todos los ni\u00f1os juegan.",
+        "language": "es",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(todos|todas)\\s+(los|las)?\\s*(\\w+)",
+            "quantifier_type": "universal",
+            "language": "es",
+            "scope_indicators": [
+              "todos",
+              "todas"
+            ],
+            "negation_markers": [
+              "no",
+              "nunca",
+              "jam\u00e1s"
+            ],
+            "examples": [
+              "Todos los ni\u00f1os juegan",
+              "Todas las ni\u00f1as estudian"
+            ]
+          },
+          {
+            "pattern": "\\bno\\s+(todos|todas)\\s+(los|las)?\\s*(\\w+)",
+            "quantifier_type": "partitive",
+            "language": "es",
+            "scope_indicators": [
+              "no todos",
+              "no todas"
+            ],
+            "negation_markers": [
+              "no"
+            ],
+            "examples": [
+              "No todos los ni\u00f1os juegan",
+              "No todas las ni\u00f1as estudian"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "universal",
+            "variable": "x2",
+            "predicate": "PREDICATE",
+            "scope_type": "narrow_scope",
+            "negation": "NO",
+            "eil_representation": "NOT EXISTS[x2] PREDICATE(x2)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": false,
+        "scope_resolution": "narrow_scope",
+        "confidence": 0.8,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Todos los ni\u00f1os no juegan.",
+      "language": "es",
+      "result": {
+        "original_text": "Todos los ni\u00f1os no juegan.",
+        "language": "es",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(todos|todas)\\s+(los|las)?\\s*(\\w+)",
+            "quantifier_type": "universal",
+            "language": "es",
+            "scope_indicators": [
+              "todos",
+              "todas"
+            ],
+            "negation_markers": [
+              "no",
+              "nunca",
+              "jam\u00e1s"
+            ],
+            "examples": [
+              "Todos los ni\u00f1os juegan",
+              "Todas las ni\u00f1as estudian"
+            ]
+          },
+          {
+            "pattern": "\\b(todos|todas)\\s+(los|las)?\\s*(\\w+)\\s+no\\s+(\\w+)",
+            "quantifier_type": "universal",
+            "language": "es",
+            "scope_indicators": [
+              "todos no",
+              "todas no"
+            ],
+            "negation_markers": [
+              "no"
+            ],
+            "examples": [
+              "Todos los ni\u00f1os no juegan",
+              "Todas las ni\u00f1as no estudian"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "universal",
+            "variable": "x3",
+            "predicate": "PREDICATE",
+            "scope_type": "wide_scope",
+            "negation": "NO",
+            "eil_representation": "ALL[x3] PREDICATE(x3)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": false,
+        "scope_resolution": "wide_scope",
+        "confidence": 0.8,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Tous les enfants ne jouent pas.",
+      "language": "fr",
+      "result": {
+        "original_text": "Tous les enfants ne jouent pas.",
+        "language": "fr",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(tous|toutes)\\s+(les)?\\s*(\\w+)",
+            "quantifier_type": "universal",
+            "language": "fr",
+            "scope_indicators": [
+              "tous",
+              "toutes"
+            ],
+            "negation_markers": [
+              "ne",
+              "pas",
+              "jamais",
+              "plus"
+            ],
+            "examples": [
+              "Tous les enfants jouent",
+              "Toutes les filles \u00e9tudient"
+            ]
+          },
+          {
+            "pattern": "\\b(tous|toutes)\\s+(les)?\\s*(\\w+)\\s+ne\\s+(\\w+)\\s+pas",
+            "quantifier_type": "universal",
+            "language": "fr",
+            "scope_indicators": [
+              "tous ne ... pas",
+              "toutes ne ... pas"
+            ],
+            "negation_markers": [
+              "ne",
+              "pas"
+            ],
+            "examples": [
+              "Tous les enfants ne jouent pas",
+              "Toutes les filles n'\u00e9tudient pas"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "universal",
+            "variable": "x4",
+            "predicate": "PREDICATE",
+            "scope_type": "wide_scope",
+            "negation": "NE",
+            "eil_representation": "ALL[x4] PREDICATE(x4)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": false,
+        "scope_resolution": "wide_scope",
+        "confidence": 0.8,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Pas tous les enfants jouent.",
+      "language": "fr",
+      "result": {
+        "original_text": "Pas tous les enfants jouent.",
+        "language": "fr",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(tous|toutes)\\s+(les)?\\s*(\\w+)",
+            "quantifier_type": "universal",
+            "language": "fr",
+            "scope_indicators": [
+              "tous",
+              "toutes"
+            ],
+            "negation_markers": [
+              "ne",
+              "pas",
+              "jamais",
+              "plus"
+            ],
+            "examples": [
+              "Tous les enfants jouent",
+              "Toutes les filles \u00e9tudient"
+            ]
+          },
+          {
+            "pattern": "\\bpas\\s+(tous|toutes)\\s+(les)?\\s*(\\w+)",
+            "quantifier_type": "partitive",
+            "language": "fr",
+            "scope_indicators": [
+              "pas tous",
+              "pas toutes"
+            ],
+            "negation_markers": [
+              "pas"
+            ],
+            "examples": [
+              "Pas tous les enfants jouent",
+              "Pas toutes les filles \u00e9tudient"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "universal",
+            "variable": "x5",
+            "predicate": "PREDICATE",
+            "scope_type": "narrow_scope",
+            "negation": "PAS",
+            "eil_representation": "NOT EXISTS[x5] PREDICATE(x5)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": false,
+        "scope_resolution": "narrow_scope",
+        "confidence": 0.8,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Not all students study hard.",
+      "language": "en",
+      "result": {
+        "original_text": "Not all students study hard.",
+        "language": "en",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(all|every|each)\\s+(\\w+)",
+            "quantifier_type": "universal",
+            "language": "en",
+            "scope_indicators": [
+              "all",
+              "every",
+              "each"
+            ],
+            "negation_markers": [
+              "not",
+              "n't",
+              "never",
+              "no"
+            ],
+            "examples": [
+              "All children play",
+              "Every child plays",
+              "Each student studies"
+            ]
+          },
+          {
+            "pattern": "\\b(no|none|nothing|nobody|nowhere)\\s*(\\w+)?",
+            "quantifier_type": "negative",
+            "language": "en",
+            "scope_indicators": [
+              "no",
+              "none",
+              "nothing",
+              "nobody",
+              "nowhere"
+            ],
+            "negation_markers": [],
+            "examples": [
+              "No child plays",
+              "None of them",
+              "Nothing works"
+            ]
+          },
+          {
+            "pattern": "\\bnot\\s+(all|every|each)\\s+(\\w+)",
+            "quantifier_type": "partitive",
+            "language": "en",
+            "scope_indicators": [
+              "not all",
+              "not every",
+              "not each"
+            ],
+            "negation_markers": [
+              "not"
+            ],
+            "examples": [
+              "Not all children play",
+              "Not every student studies"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "universal",
+            "variable": "x6",
+            "predicate": "STUDY",
+            "scope_type": "narrow_scope",
+            "negation": "NOT",
+            "eil_representation": "NOT EXISTS[x6] STUDY(x6)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": false,
+        "scope_resolution": "narrow_scope",
+        "confidence": 0.8000000000000002,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Ning\u00fan ni\u00f1o juega aqu\u00ed.",
+      "language": "es",
+      "result": {
+        "original_text": "Ning\u00fan ni\u00f1o juega aqu\u00ed.",
+        "language": "es",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(ning\u00fan|ninguno|ninguna|nada|nadie)\\s*(\\w+)?",
+            "quantifier_type": "negative",
+            "language": "es",
+            "scope_indicators": [
+              "ning\u00fan",
+              "ninguno",
+              "ninguna",
+              "nada",
+              "nadie"
+            ],
+            "negation_markers": [],
+            "examples": [
+              "Ning\u00fan ni\u00f1o juega",
+              "Nadie viene",
+              "Nada funciona"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "negative",
+            "variable": "x7",
+            "predicate": "PREDICATE",
+            "scope_type": "narrow_scope",
+            "negation": null,
+            "eil_representation": "NOT EXISTS[x7] PREDICATE(x7)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": false,
+        "scope_resolution": "narrow_scope",
+        "confidence": 0.8,
+        "warnings": []
+      }
+    },
+    {
+      "input": "Aucun enfant ne joue ici.",
+      "language": "fr",
+      "result": {
+        "original_text": "Aucun enfant ne joue ici.",
+        "language": "fr",
+        "detected_patterns": [
+          {
+            "pattern": "\\b(aucun|aucune|personne|rien)\\s*(\\w+)?",
+            "quantifier_type": "negative",
+            "language": "fr",
+            "scope_indicators": [
+              "aucun",
+              "aucune",
+              "personne",
+              "rien"
+            ],
+            "negation_markers": [],
+            "examples": [
+              "Aucun enfant ne joue",
+              "Personne ne vient",
+              "Rien ne marche"
+            ]
+          }
+        ],
+        "scoped_forms": [
+          {
+            "quantifier": "negative",
+            "variable": "x8",
+            "predicate": "PREDICATE",
+            "scope_type": "narrow_scope",
+            "negation": "NE",
+            "eil_representation": "NOT EXISTS[x8] PREDICATE(x8)",
+            "confidence": 0.8
+          }
+        ],
+        "ambiguity_detected": false,
+        "scope_resolution": "narrow_scope",
+        "confidence": 0.8,
+        "warnings": []
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 8,
+    "correct_predictions": 8,
+    "total_predictions": 8,
+    "accuracy": 1.0,
+    "acceptance_criteria_met": true,
+    "language_stats": {
+      "en": {
+        "total": 2,
+        "detected": 2,
+        "scoped": 2
+      },
+      "es": {
+        "total": 3,
+        "detected": 3,
+        "scoped": 3
+      },
+      "fr": {
+        "total": 3,
+        "detected": 3,
+        "scoped": 3
+      }
+    }
+  }
+}
