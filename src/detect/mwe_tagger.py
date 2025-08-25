@@ -32,13 +32,9 @@ class MWETagger:
     """Multi-word expression tagger for NSM detection."""
     
     def __init__(self):
-        """Initialize the MWE tagger with lexicons."""
-        self.quantifier_mwes = self._load_quantifier_mwes()
-        self.intensifier_mwes = self._load_intensifier_mwes()
-        self.negation_mwes = self._load_negation_mwes()
-        self.modality_mwes = self._load_modality_mwes()
-        
-        # Compile regex patterns for efficiency
+        """Initialize MWE tagger with language-specific lexicons."""
+        self.lexicons = {}
+        self._load_lexicons()
         self._compile_patterns()
     
     def _load_quantifier_mwes(self) -> Dict[str, Dict]:
@@ -183,20 +179,13 @@ class MWETagger:
     
     def _compile_patterns(self):
         """Compile regex patterns for efficient matching."""
-        # Create patterns for each MWE type
-        self.quantifier_patterns = self._create_patterns(self.quantifier_mwes)
-        self.intensifier_patterns = self._create_patterns(self.intensifier_mwes)
-        self.negation_patterns = self._create_patterns(self.negation_mwes)
-        self.modality_patterns = self._create_patterns(self.modality_mwes)
-    
-    def _create_patterns(self, mwe_dict: Dict[str, Dict]) -> List[Tuple[re.Pattern, str, Dict]]:
-        """Create regex patterns for MWE matching."""
-        patterns = []
-        for mwe_text, mwe_info in mwe_dict.items():
-            # Create case-insensitive pattern
-            pattern = re.compile(r'\b' + re.escape(mwe_text) + r'\b', re.IGNORECASE)
-            patterns.append((pattern, mwe_text, mwe_info))
-        return patterns
+        self.patterns = {}
+        for lang, lexicon in self.lexicons.items():
+            self.patterns[lang] = {}
+            for mwe_text, mwe_info in lexicon.items():
+                # Create a case-insensitive pattern
+                pattern = re.compile(r'\b' + re.escape(mwe_text.lower()) + r'\b', re.IGNORECASE)
+                self.patterns[lang][mwe_text] = pattern
     
     def detect_mwes(self, text: str) -> List[MWE]:
         """Detect multi-word expressions in text.
@@ -306,3 +295,125 @@ class MWETagger:
             coverage["total"] += mwe_words / text_length
         
         return coverage
+
+    def _load_lexicons(self):
+        """Load language-specific MWE lexicons."""
+        self.lexicons = {
+            "en": {
+                # Quantifiers
+                "at most": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "at least": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "no more than": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "no less than": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "hardly any": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MANY"]},
+                "a lot of": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                "lots of": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                "plenty of": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                "most of": {"type": MWEType.QUANTIFIER, "primes": ["MOST"]},
+                "some of": {"type": MWEType.QUANTIFIER, "primes": ["SOME"]},
+                "all of": {"type": MWEType.QUANTIFIER, "primes": ["ALL"]},
+                "none of": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "SOME"]},
+                
+                # Intensifiers
+                "very much": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "way more": {"type": MWEType.INTENSIFIER, "primes": ["VERY", "MORE"]},
+                "far too": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "really very": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "extremely": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "incredibly": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                
+                # Negations
+                "not at all": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "by no means": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "in no way": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "under no circumstances": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                
+                # Modalities
+                "have to": {"type": MWEType.MODALITY, "primes": ["CAN"]},
+                "need to": {"type": MWEType.MODALITY, "primes": ["WANT"]},
+                "ought to": {"type": MWEType.MODALITY, "primes": ["CAN"]},
+                "supposed to": {"type": MWEType.MODALITY, "primes": ["CAN"]}
+            },
+            "es": {
+                # Spanish Quantifiers
+                "a lo sumo": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "como máximo": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "al menos": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "por lo menos": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "no más de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "no menos de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "apenas": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MANY"]},
+                "casi": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "ALL"]},
+                "muchos de": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                "pocos de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MANY"]},
+                "la mayoría de": {"type": MWEType.QUANTIFIER, "primes": ["MOST"]},
+                "algunos de": {"type": MWEType.QUANTIFIER, "primes": ["SOME"]},
+                "todos de": {"type": MWEType.QUANTIFIER, "primes": ["ALL"]},
+                "ninguno de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "SOME"]},
+                "un montón de": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                "un montón": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                
+                # Spanish Intensifiers
+                "muy mucho": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "mucho más": {"type": MWEType.INTENSIFIER, "primes": ["VERY", "MORE"]},
+                "demasiado": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "extremadamente": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "increíblemente": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "sumamente": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "extraordinariamente": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                
+                # Spanish Negations
+                "de ninguna manera": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "en absoluto": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "para nada": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "bajo ninguna circunstancia": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "ni siquiera": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                
+                # Spanish Modalities
+                "tener que": {"type": MWEType.MODALITY, "primes": ["CAN"]},
+                "necesitar": {"type": MWEType.MODALITY, "primes": ["WANT"]},
+                "deber": {"type": MWEType.MODALITY, "primes": ["CAN"]},
+                "suponer": {"type": MWEType.MODALITY, "primes": ["THINK"]}
+            },
+            "fr": {
+                # French Quantifiers
+                "au plus": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "tout au plus": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "au moins": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "du moins": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "pas plus de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MORE"]},
+                "pas moins de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "LESS"]},
+                "à peine": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MANY"]},
+                "presque": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "ALL"]},
+                "beaucoup de": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                "peu de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "MANY"]},
+                "la plupart de": {"type": MWEType.QUANTIFIER, "primes": ["MOST"]},
+                "quelques": {"type": MWEType.QUANTIFIER, "primes": ["SOME"]},
+                "tous les": {"type": MWEType.QUANTIFIER, "primes": ["ALL"]},
+                "aucun de": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "SOME"]},
+                "un tas de": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                "une tonne de": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
+                
+                # French Intensifiers
+                "très beaucoup": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "beaucoup plus": {"type": MWEType.INTENSIFIER, "primes": ["VERY", "MORE"]},
+                "trop": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "extrêmement": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "incroyablement": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "exceptionnellement": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                "remarquablement": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
+                
+                # French Negations
+                "en aucune façon": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "absolument pas": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "pas du tout": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "sous aucune circonstance": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                "même pas": {"type": MWEType.NEGATION, "primes": ["NOT"]},
+                
+                # French Modalities
+                "devoir": {"type": MWEType.MODALITY, "primes": ["CAN"]},
+                "avoir besoin de": {"type": MWEType.MODALITY, "primes": ["WANT"]},
+                "falloir": {"type": MWEType.MODALITY, "primes": ["CAN"]},
+                "supposer": {"type": MWEType.MODALITY, "primes": ["THINK"]}
+            }
+        }

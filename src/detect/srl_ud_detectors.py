@@ -6,6 +6,38 @@ If spaCy or the language model is not available, the functions return empty list
 
 from typing import List, Dict, Any
 
+# Define all 65 NSM primes
+ALL_NSM_PRIMES = {
+    # Phase 1: Substantives
+    "I", "YOU", "SOMEONE", "PEOPLE", "SOMETHING", "THING", "BODY",
+    # Phase 2: Relational substantives
+    "KIND", "PART",
+    # Phase 3: Determiners and quantifiers
+    "THIS", "THE_SAME", "OTHER", "ONE", "TWO", "SOME", "ALL", "MUCH", "MANY",
+    # Phase 4: Evaluators and descriptors
+    "GOOD", "BAD", "BIG", "SMALL",
+    # Phase 5: Mental predicates
+    "THINK", "KNOW", "WANT", "FEEL", "SEE", "HEAR",
+    # Phase 6: Speech
+    "SAY", "WORDS", "TRUE", "FALSE",
+    # Phase 7: Actions and events
+    "DO", "HAPPEN", "MOVE", "TOUCH",
+    # Phase 8: Location, existence, possession, specification
+    "BE_SOMEWHERE", "THERE_IS", "HAVE", "BE_SOMEONE",
+    # Phase 9: Life and death
+    "LIVE", "DIE",
+    # Phase 10: Time
+    "WHEN", "NOW", "BEFORE", "AFTER", "A_LONG_TIME", "A_SHORT_TIME", "FOR_SOME_TIME", "MOMENT",
+    # Phase 11: Space
+    "WHERE", "HERE", "ABOVE", "BELOW", "FAR", "NEAR", "SIDE", "INSIDE", "TOUCH",
+    # Logical concepts
+    "NOT", "MAYBE", "CAN", "BECAUSE", "IF",
+    # Intensifier and augmentor
+    "VERY", "MORE",
+    # Similarity
+    "LIKE"
+}
+
 try:
 	from spacy.matcher import DependencyMatcher  # type: ignore
 except Exception:  # pragma: no cover
@@ -2061,7 +2093,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 
 	# === PHASE 11: FINAL PRIMES (NSM Primes) - UD-Based Detection ===
 	
-	# SAY: speech and communication (enhanced detection)
+	# SAY: speech and communication (main verb or complement)
 	for token in doc:
 		if (token.pos_ == "VERB" and 
 			token.lemma_.lower() in {"say", "tell", "speak", "decir", "dire"} and
@@ -2077,7 +2109,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("SAY", [token.text], 0.8)
 			break
 
-	# WORDS: linguistic expression
+	# WORDS: linguistic expression (noun)
 	for token in doc:
 		if (token.pos_ == "NOUN" and 
 			token.lemma_.lower() in {"word", "words", "palabra", "mot"} and
@@ -2085,7 +2117,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("WORDS", [token.text], 0.8)
 			break
 
-	# TRUE: truth and factuality (enhanced detection)
+	# TRUE: truth and factuality (adjective or adverb)
 	for token in doc:
 		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
 			token.lemma_.lower() in {"true", "real", "truth", "verdadero", "vrai", "vérité"} and
@@ -2101,7 +2133,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("TRUE", [token.text], 0.8)
 			break
 
-	# FALSE: falsity and deception (enhanced detection)
+	# FALSE: falsity and deception (adjective or adverb)
 	for token in doc:
 		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
 			token.lemma_.lower() in {"false", "fake", "falsity", "falso", "faux", "fausseté"} and

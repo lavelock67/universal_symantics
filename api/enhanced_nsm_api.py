@@ -1026,6 +1026,78 @@ async def get_stats():
         }
     }
 
+@app.get("/debug/lang_assets")
+async def debug_language_assets():
+    """Debug endpoint to check language asset loading."""
+    try:
+        # Check UD models
+        ud_models = {}
+        try:
+            import spacy
+            for lang in ["en", "es", "fr"]:
+                try:
+                    nlp = spacy.load(f"{lang}_core_web_sm")
+                    ud_models[lang] = "loaded"
+                except:
+                    ud_models[lang] = "not_loaded"
+        except:
+            ud_models = {"error": "spacy not available"}
+        
+        # Check MWE rules
+        mwe_rules = {}
+        try:
+            mwe_rules = {
+                "en": len(mwe_tagger.lexicons.get("en", {})) if hasattr(mwe_tagger, 'lexicons') else 0,
+                "es": len(mwe_tagger.lexicons.get("es", {})) if hasattr(mwe_tagger, 'lexicons') else 0,
+                "fr": len(mwe_tagger.lexicons.get("fr", {})) if hasattr(mwe_tagger, 'lexicons') else 0
+            }
+        except:
+            mwe_rules = {"error": "MWE tagger not available"}
+        
+        # Check exponent entries
+        exponent_entries = {}
+        try:
+            exponent_entries = {
+                "en": len(exponent_lexicon.exponents.get("en", {})) if hasattr(exponent_lexicon, 'exponents') else 0,
+                "es": len(exponent_lexicon.exponents.get("es", {})) if hasattr(exponent_lexicon, 'exponents') else 0,
+                "fr": len(exponent_lexicon.exponents.get("fr", {})) if hasattr(exponent_lexicon, 'exponents') else 0
+            }
+        except:
+            exponent_entries = {"error": "Exponent lexicon not available"}
+        
+        # Check detector registration
+        detector_counts = {}
+        try:
+            from src.detect.srl_ud_detectors import ALL_NSM_PRIMES
+            detector_counts = {
+                "en": len(ALL_NSM_PRIMES),
+                "es": len(ALL_NSM_PRIMES),  # Assuming same for all langs
+                "fr": len(ALL_NSM_PRIMES)
+            }
+        except:
+            detector_counts = {"error": "Detectors not available"}
+        
+        return {
+            "ud_models": ud_models,
+            "mwe_rules": mwe_rules,
+            "exponent_entries": exponent_entries,
+            "detector_counts": detector_counts,
+            "diagnosis": {
+                "es_issues": [
+                    "UD model missing" if ud_models.get("es") != "loaded" else None,
+                    "MWE rules missing" if mwe_rules.get("es", 0) < 10 else None,
+                    "Exponent entries missing" if exponent_entries.get("es", 0) < 50 else None
+                ],
+                "fr_issues": [
+                    "UD model missing" if ud_models.get("fr") != "loaded" else None,
+                    "MWE rules missing" if mwe_rules.get("fr", 0) < 10 else None,
+                    "Exponent entries missing" if exponent_entries.get("fr", 0) < 50 else None
+                ]
+            }
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8001)

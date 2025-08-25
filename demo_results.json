@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Round-trip Translation",
+    "success": false,
+    "processing_time": 0.01214909553527832,
+    "notes": "Failed with status 404",
+    "input_data": {
+      "source_text": "If it rains tomorrow, we will cancel the picnic.",
+      "src_lang": "en",
+      "tgt_lang": "es",
+      "constraint_mode": "hybrid",
+      "realizer": "fluent"
+    },
+    "output_data": {
+      "error": "HTTP 404"
+    }
+  },
+  {
+    "name": "Quantifier MWE Detection",
+    "success": false,
+    "processing_time": 0.002610921859741211,
+    "notes": "Failed with status 404",
+    "input_data": {
+      "text": "At most half of the students read a lot of books",
+      "include_coverage": true
+    },
+    "output_data": {
+      "error": "HTTP 404"
+    }
+  },
+  {
+    "name": "Risk-Coverage Router",
+    "success": false,
+    "processing_time": 0.0016808509826660156,
+    "notes": "Failed with status 404",
+    "input_data": {
+      "text": "It is true that he might not come.",
+      "lang": "en"
+    },
+    "output_data": {
+      "error": "HTTP 404"
+    }
+  },
+  {
+    "name": "Constraint Ablation",
+    "success": false,
+    "processing_time": 0.0012922286987304688,
+    "notes": "Failed with status 404",
+    "input_data": {
+      "text": "I think you know the truth",
+      "lang": "en",
+      "modes": [
+        "off",
+        "hybrid",
+        "hard"
+      ]
+    },
+    "output_data": {
+      "error": "HTTP 404"
+    }
+  },
+  {
+    "name": "Cross-Language Exponents",
+    "success": false,
+    "processing_time": 0.004674196243286133,
+    "notes": "",
+    "input_data": {
+      "test_cases": [
+        {
+          "prime": "THINK",
+          "language": "en",
+          "ud_features": {
+            "VerbForm": "Fin",
+            "Person": "3",
+            "Number": "Sing"
+          }
+        },
+        {
+          "prime": "PEOPLE",
+          "language": "es",
+          "ud_features": {
+            "Number": "Plur"
+          }
+        },
+        {
+          "prime": "GOOD",
+          "language": "fr",
+          "ud_features": {
+            "Degree": "Pos"
+          }
+        }
+      ]
+    },
+    "output_data": {
+      "results": []
+    }
+  },
+  {
+    "name": "Prime Discovery",
+    "success": false,
+    "processing_time": 0.001971006393432617,
+    "notes": "Failed with status 404",
+    "input_data": {
+      "test_corpus": [
+        "I think you know the truth about this",
+        "The people want to feel good about this",
+        "All students read many books",
+        "Most people think this is very good",
+        "Some students feel bad about the test"
+      ],
+      "run_weekly": true
+    },
+    "output_data": {
+      "error": "HTTP 404"
+    }
+  },
+  {
+    "name": "Enhanced Detection",
+    "success": true,
+    "processing_time": 0.41875720024108887,
+    "notes": "en: 0 primes (0.307s) | es: 1 primes (0.053s) | fr: 1 primes (0.044s)",
+    "input_data": {
+      "test_cases": [
+        {
+          "text": "At most half of the students read a lot of books",
+          "language": "en",
+          "description": "English quantifiers with MWE"
+        },
+        {
+          "text": "La gente piensa que esto es muy bueno",
+          "language": "es",
+          "description": "Spanish mental predicates"
+        },
+        {
+          "text": "Les gens pensent que c'est tr\u00e8s bon",
+          "language": "fr",
+          "description": "French evaluators"
+        }
+      ]
+    },
+    "output_data": {
+      "results": [
+        {
+          "language": "en",
+          "description": "English quantifiers with MWE",
+          "detected_primes": [],
+          "processing_time": 0.30730199813842773,
+          "methods": [
+            "spacy",
+            "structured",
+            "multilingual"
+          ]
+        },
+        {
+          "language": "es",
+          "description": "Spanish mental predicates",
+          "detected_primes": [
+            "PEOPLE"
+          ],
+          "processing_time": 0.053340911865234375,
+          "methods": [
+            "spacy",
+            "structured",
+            "multilingual"
+          ]
+        },
+        {
+          "language": "fr",
+          "description": "French evaluators",
+          "detected_primes": [
+            "VERY"
+          ],
+          "processing_time": 0.0435338020324707,
+          "methods": [
+            "spacy",
+            "structured",
+            "multilingual"
+          ]
+        }
+      ]
+    }
+  }
+]

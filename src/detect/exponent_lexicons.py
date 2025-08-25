@@ -38,6 +38,13 @@ class ExponentLexicon:
         
         # Create reverse mappings for lookup
         self._create_reverse_mappings()
+        
+        # Create a unified exponents structure for easy access
+        self.exponents = {
+            "en": self.english_exponents,
+            "es": self.spanish_exponents,
+            "fr": self.french_exponents
+        }
     
     def _load_english_exponents(self) -> Dict[str, List[Exponent]]:
         """Load English exponents for NSM primes."""
