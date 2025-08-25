@@ -1,0 +1,35 @@
+# Core FastAPI and web dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# NLP and ML dependencies
+spacy==3.7.2
+torch==2.1.1
+transformers==4.36.0
+sentence-transformers==2.2.2
+numpy==1.24.3
+scikit-learn==1.3.2
+
+# Monitoring and metrics
+prometheus-client==0.19.0
+psutil==5.9.6
+
+# Data processing
+pandas==2.1.4
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Utilities
+requests==2.31.0
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Additional dependencies for our specific components
+# (These should match what's already installed in your .venv)

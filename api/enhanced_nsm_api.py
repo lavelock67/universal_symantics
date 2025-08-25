@@ -14,13 +14,16 @@ import os
 # Add the project root to the Python path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Response
 from pydantic import BaseModel
 from typing import List, Dict, Optional, Set, Any
 import time
 import logging
 import json
 import numpy as np
+import psutil
+import os
+from prometheus_client import Counter, Histogram, Gauge, generate_latest, CONTENT_TYPE_LATEST
 
 # Import our existing systems
 from src.detect.srl_ud_detectors import (
@@ -79,6 +82,13 @@ class HealthResponse(BaseModel):
 # Global stats and systems
 start_time = time.time()
 total_requests = 0
+
+# Prometheus metrics
+REQUEST_COUNT = Counter('nsm_api_requests_total', 'Total number of API requests', ['endpoint', 'method'])
+REQUEST_DURATION = Histogram('nsm_api_request_duration_seconds', 'Request duration in seconds', ['endpoint'])
+DETECTION_ACCURACY = Gauge('nsm_detection_accuracy', 'NSM detection accuracy', ['method'])
+SYSTEM_MEMORY = Gauge('nsm_system_memory_bytes', 'System memory usage in bytes')
+SYSTEM_CPU = Gauge('nsm_system_cpu_percent', 'System CPU usage percentage')
 
 # Initialize systems
 try:
@@ -254,6 +264,8 @@ async def root():
 @app.get("/health")
 async def health_check() -> HealthResponse:
     """Health check endpoint with system status."""
+    REQUEST_COUNT.labels(endpoint='/health', method='GET').inc()
+    
     global total_requests
     uptime = time.time() - start_time
     
@@ -274,6 +286,18 @@ async def health_check() -> HealthResponse:
         uptime=uptime,
         total_requests=total_requests,
         systems_status=systems_status
+    )
+
+@app.get("/metrics")
+async def metrics():
+    """Prometheus metrics endpoint."""
+    # Update system metrics
+    SYSTEM_MEMORY.set(psutil.virtual_memory().used)
+    SYSTEM_CPU.set(psutil.cpu_percent())
+    
+    return Response(
+        content=generate_latest(),
+        media_type=CONTENT_TYPE_LATEST
     )
 
 @app.get("/primes")
@@ -304,6 +328,8 @@ async def detect_primes_enhanced(request: EnhancedDetectionRequest) -> EnhancedD
     """Enhanced prime detection with DeepNSM, MDL, and temporal reasoning."""
     global total_requests
     total_requests += 1
+    
+    REQUEST_COUNT.labels(endpoint='/detect', method='POST').inc()
     
     start_time = time.time()
     
@@ -388,6 +414,9 @@ async def detect_primes_enhanced(request: EnhancedDetectionRequest) -> EnhancedD
                 logger.warning(f"Typed graph creation failed: {e}")
         
         processing_time = time.time() - start_time
+        
+        # Record metrics
+        REQUEST_DURATION.labels(endpoint='/detect').observe(processing_time)
         
         logger.info(f"Enhanced detection completed in {processing_time:.3f}s")
         
