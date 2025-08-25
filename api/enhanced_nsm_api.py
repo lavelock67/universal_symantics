@@ -40,6 +40,8 @@ from src.generate.nsm_grammar_cfg import NSMTypedCFG, create_grammar_ptb_03
 from src.generate.grammar_logits_processor import GrammarAwareDecoder, GrammarLogitsConfig, ConstraintMode
 from src.generate.risk_coverage_router import RiskCoverageRouter, RiskCoverageConfig, RouterDecision, SelectiveCorrectnessWrapper
 from src.detect.mwe_tagger import MWETagger
+from src.detect.exponent_lexicons import ExponentLexicon, Language
+from src.discovery.mdl_discovery_loop import MDLDiscoveryLoop
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -110,6 +112,10 @@ try:
     
     # Initialize MWE tagger for improved detection
     mwe_tagger = MWETagger()
+    
+    # Initialize Phase D components
+    exponent_lexicon = ExponentLexicon()
+    mdl_discovery_loop = MDLDiscoveryLoop(compression_validator, periodic_table)
     
     logger.info("All systems initialized successfully")
 except Exception as e:
@@ -497,6 +503,16 @@ class MWERequest(BaseModel):
     text: str
     include_coverage: Optional[bool] = True
 
+class ExponentRequest(BaseModel):
+    prime: str
+    language: str = "en"
+    ud_features: Optional[Dict[str, str]] = None
+    register: str = "neutral"
+
+class DiscoveryRequest(BaseModel):
+    test_corpus: List[str]
+    run_weekly: Optional[bool] = True
+
 @app.post("/deepnsm")
 async def generate_deepnsm_explication(request: DeepNSMRequest):
     """Generate DeepNSM explication for text."""
@@ -832,6 +848,116 @@ async def ablation_study(request: AblationRequest):
     except Exception as e:
         logger.error(f"Ablation study failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Ablation study failed: {str(e)}")
+
+@app.post("/discovery")
+async def run_discovery(request: DiscoveryRequest):
+    """Run MDL-Δ discovery loop for prime discovery."""
+    if not mdl_discovery_loop:
+        raise HTTPException(status_code=503, detail="MDL discovery loop not available")
+    
+    try:
+        start_time = time.time()
+        
+        if request.run_weekly:
+            results = mdl_discovery_loop.run_weekly_discovery(request.test_corpus)
+        else:
+            # Just propose candidates without evaluation
+            candidates = mdl_discovery_loop.propose_candidates()
+            results = {
+                "new_candidates": len(candidates),
+                "pending_candidates": 0,
+                "evaluated": 0,
+                "accepted": 0,
+                "rejected": 0,
+                "candidates": [{"name": c.name, "status": "proposed"} for c in candidates],
+                "statistics": mdl_discovery_loop.get_discovery_statistics()
+            }
+        
+        processing_time = time.time() - start_time
+        
+        return {
+            "discovery_results": results,
+            "processing_time": processing_time,
+            "corpus_size": len(request.test_corpus)
+        }
+        
+    except Exception as e:
+        logger.error(f"Discovery failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Discovery failed: {str(e)}")
+
+@app.get("/discovery/stats")
+async def get_discovery_statistics():
+    """Get MDL discovery statistics."""
+    if not mdl_discovery_loop:
+        raise HTTPException(status_code=503, detail="MDL discovery loop not available")
+    
+    try:
+        stats = mdl_discovery_loop.get_discovery_statistics()
+        pending = mdl_discovery_loop.get_pending_candidates()
+        
+        return {
+            "statistics": stats,
+            "pending_candidates": len(pending),
+            "pending_details": [
+                {
+                    "name": c.name,
+                    "category": c.category,
+                    "proposed_primes": c.proposed_primes,
+                    "confidence": c.confidence
+                }
+                for c in pending
+            ]
+        }
+        
+    except Exception as e:
+        logger.error(f"Discovery statistics failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Discovery statistics failed: {str(e)}")
+
+@app.post("/exponents")
+async def get_exponents(request: ExponentRequest):
+    """Get language-specific exponents for NSM primes."""
+    if not exponent_lexicon:
+        raise HTTPException(status_code=503, detail="Exponent lexicon not available")
+    
+    try:
+        # Convert language string to enum
+        lang_enum = Language(request.language)
+        
+        # Get all exponents for the prime
+        all_exponents = exponent_lexicon.get_exponents_for_prime(request.prime, lang_enum)
+        
+        # Get best exponent if UD features provided
+        best_exponent = None
+        if request.ud_features:
+            best_exponent = exponent_lexicon.get_best_exponent(
+                request.prime, lang_enum, request.ud_features, request.register
+            )
+        
+        return {
+            "prime": request.prime,
+            "language": request.language,
+            "all_exponents": [
+                {
+                    "surface_form": exp.surface_form,
+                    "confidence": exp.confidence,
+                    "ud_features": exp.ud_features,
+                    "morphological_form": exp.morphological_form,
+                    "register": exp.register
+                }
+                for exp in all_exponents
+            ],
+            "best_exponent": {
+                "surface_form": best_exponent.surface_form,
+                "confidence": best_exponent.confidence,
+                "ud_features": best_exponent.ud_features,
+                "morphological_form": best_exponent.morphological_form,
+                "register": best_exponent.register
+            } if best_exponent else None
+        }
+        
+    except Exception as e:
+        logger.error(f"Exponent lookup failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Exponent lookup failed: {str(e)}")
 
 @app.post("/mwe")
 async def detect_mwes(request: MWERequest):

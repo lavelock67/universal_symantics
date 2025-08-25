@@ -1,0 +1,68 @@
+{
+  "discoveries": [
+    {
+      "name": "EVIDENTIALITY_SOURCE",
+      "description": "Evidentiality markers for information source",
+      "category": "evidentiality",
+      "proposed_primes": [
+        "HEARSAY",
+        "WITNESS",
+        "INFER"
+      ],
+      "proposed_molecules": [
+        "HEARSAY(AGENT, CLAUSE)",
+        "WITNESS(AGENT, EVENT)",
+        "INFER(AGENT, CONCLUSION)"
+      ],
+      "rationale": "Cross-linguistic evidentiality systems require source marking",
+      "expected_mdl_reduction": 0.08,
+      "expected_drift_reduction": 0.03,
+      "confidence": 0.7,
+      "status": "DiscoveryStatus.ACCEPTED",
+      "created_at": 1756136008.599653,
+      "evaluated_at": 1756136011.508747,
+      "mdl_delta": -0.5599999999999996,
+      "drift_delta": -0.03,
+      "acceptance_reason": "MDL reduced by 0.560, drift reduced by 0.030",
+      "rejection_reason": null
+    },
+    {
+      "name": "EVIDENTIALITY_CERTAINTY",
+      "description": "Evidentiality markers for certainty level",
+      "category": "evidentiality",
+      "proposed_primes": [
+        "CERTAIN",
+        "PROBABLE",
+        "POSSIBLE"
+      ],
+      "proposed_molecules": [
+        "CERTAIN(CLAUSE)",
+        "PROBABLE(CLAUSE)",
+        "POSSIBLE(CLAUSE)"
+      ],
+      "rationale": "Certainty marking is universal and reduces ambiguity",
+      "expected_mdl_reduction": 0.06,
+      "expected_drift_reduction": 0.02,
+      "confidence": 0.8,
+      "status": "DiscoveryStatus.REJECTED",
+      "created_at": 1756136008.599701,
+      "evaluated_at": 1756136011.509291,
+      "mdl_delta": -0.41999999999999993,
+      "drift_delta": -0.02,
+      "acceptance_reason": null,
+      "rejection_reason": "Insufficient drift reduction: -0.020"
+    }
+  ],
+  "statistics": {
+    "total_proposed": 2,
+    "total_accepted": 1,
+    "total_rejected": 1,
+    "mdl_reductions": [
+      -0.5599999999999996
+    ],
+    "drift_reductions": [
+      -0.03
+    ]
+  },
+  "last_updated": 1756136008.5523021
+}
