@@ -30,6 +30,10 @@ class GrammarLogitsConfig:
     illegality_penalty: float = 1.0
     molecule_ratio_penalty: float = 0.5
     scope_violation_penalty: float = 0.8
+    repetition_penalty: float = 0.1
+    duplication_penalty: float = 0.2
+    triviality_penalty: float = 0.3
+    decoding_profile: str = "hybrid"
     beam_k: int = 4
     max_depth: int = 6
     molecule_ratio_max: float = 0.25
@@ -122,6 +126,62 @@ class GrammarState:
             Penalty score (higher = more penalty)
         """
         penalty = 0.0
+        
+        # Calculate repetition penalty (3-gram repetition)
+        repetition_penalty = self._calculate_repetition_penalty(config.repetition_penalty)
+        
+        # Calculate duplication penalty (duplicate content)
+        duplication_penalty = self._calculate_duplication_penalty(config.duplication_penalty)
+        
+        # Calculate triviality penalty (no new nodes)
+        triviality_penalty = self._calculate_triviality_penalty(config.triviality_penalty)
+        
+        penalty = repetition_penalty + duplication_penalty + triviality_penalty
+        return penalty
+    
+    def _calculate_repetition_penalty(self, lambda_rep: float) -> float:
+        """Calculate repetition penalty based on 3-gram repetition."""
+        if len(self.stack) < 3:
+            return 0.0
+        
+        # Count 3-gram repetitions
+        trigrams = []
+        for i in range(len(self.stack) - 2):
+            trigram = tuple(self.stack[i:i+3])
+            trigrams.append(trigram)
+        
+        unique_trigrams = set(trigrams)
+        repetition_ratio = 1.0 - (len(unique_trigrams) / len(trigrams)) if trigrams else 0.0
+        
+        return lambda_rep * repetition_ratio
+    
+    def _calculate_duplication_penalty(self, lambda_dup: float) -> float:
+        """Calculate duplication penalty for duplicate content."""
+        if len(self.stack) < 2:
+            return 0.0
+        
+        # Count consecutive duplicates
+        consecutive_duplicates = 0
+        for i in range(1, len(self.stack)):
+            if self.stack[i] == self.stack[i-1]:
+                consecutive_duplicates += 1
+        
+        duplication_ratio = consecutive_duplicates / (len(self.stack) - 1) if len(self.stack) > 1 else 0.0
+        return lambda_dup * duplication_ratio
+    
+    def _calculate_triviality_penalty(self, lambda_triv: float) -> float:
+        """Calculate triviality penalty for no new nodes."""
+        if len(self.stack) < 2:
+            return 0.0
+        
+        # Check if the graph is identical to input (trivial transformation)
+        # This is a simplified check - in practice, you'd compare EIL graphs
+        unique_tokens = set(self.stack)
+        token_diversity = len(unique_tokens) / len(self.stack) if self.stack else 0.0
+        
+        # Low diversity suggests trivial content
+        triviality_score = 1.0 - token_diversity
+        return lambda_triv * triviality_score
         
         # Illegality penalty
         violations = self.get_violations()
