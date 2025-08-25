@@ -1,0 +1,192 @@
+{"text": "She had just worked.", "language": "en", "label": 1, "group_id": "apos-en-0", "type": "recent"}
+{"text": "She had just worked!", "language": "en", "label": 1, "group_id": "apos-en-0", "type": "paraphrase"}
+{"text": "She had never worked.", "language": "en", "label": 0, "group_id": "apos-en-0", "type": "counterfactual"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-1", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-1", "type": "paraphrase"}
+{"text": "I almost eat.", "language": "en", "label": 1, "group_id": "apos-en-2", "type": "almost"}
+{"text": "I almost eat!", "language": "en", "label": 1, "group_id": "apos-en-2", "type": "paraphrase"}
+{"text": "I have just falled.", "language": "en", "label": 1, "group_id": "apos-en-3", "type": "recent"}
+{"text": "I have just falled!", "language": "en", "label": 1, "group_id": "apos-en-3", "type": "paraphrase"}
+{"text": "I have never falled.", "language": "en", "label": 0, "group_id": "apos-en-3", "type": "counterfactual"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-4", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-4", "type": "paraphrase"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-5", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-5", "type": "paraphrase"}
+{"text": "I have just runed.", "language": "en", "label": 1, "group_id": "apos-en-6", "type": "recent"}
+{"text": "I have just runed!", "language": "en", "label": 1, "group_id": "apos-en-6", "type": "paraphrase"}
+{"text": "I have never runed.", "language": "en", "label": 0, "group_id": "apos-en-6", "type": "counterfactual"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-7", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-7", "type": "paraphrase"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-8", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-8", "type": "paraphrase"}
+{"text": "I almost work.", "language": "en", "label": 1, "group_id": "apos-en-9", "type": "almost"}
+{"text": "I almost work!", "language": "en", "label": 1, "group_id": "apos-en-9", "type": "paraphrase"}
+{"text": "I stopped finishing.", "language": "en", "label": 1, "group_id": "apos-en-10", "type": "stop"}
+{"text": "I stopped finishing!", "language": "en", "label": 1, "group_id": "apos-en-10", "type": "paraphrase"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-11", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-11", "type": "paraphrase"}
+{"text": "I am working.", "language": "en", "label": 1, "group_id": "apos-en-12", "type": "ongoing"}
+{"text": "I am working!", "language": "en", "label": 1, "group_id": "apos-en-12", "type": "paraphrase"}
+{"text": "I have just worked.", "language": "en", "label": 1, "group_id": "apos-en-13", "type": "recent"}
+{"text": "I have just worked!", "language": "en", "label": 1, "group_id": "apos-en-13", "type": "paraphrase"}
+{"text": "I have never worked.", "language": "en", "label": 0, "group_id": "apos-en-13", "type": "counterfactual"}
+{"text": "I am working.", "language": "en", "label": 1, "group_id": "apos-en-14", "type": "ongoing"}
+{"text": "I am working!", "language": "en", "label": 1, "group_id": "apos-en-14", "type": "paraphrase"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-15", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-15", "type": "paraphrase"}
+{"text": "I am eating.", "language": "en", "label": 1, "group_id": "apos-en-16", "type": "ongoing"}
+{"text": "I am eating!", "language": "en", "label": 1, "group_id": "apos-en-16", "type": "paraphrase"}
+{"text": "She had just runed.", "language": "en", "label": 1, "group_id": "apos-en-17", "type": "recent"}
+{"text": "She had just runed!", "language": "en", "label": 1, "group_id": "apos-en-17", "type": "paraphrase"}
+{"text": "She had never runed.", "language": "en", "label": 0, "group_id": "apos-en-17", "type": "counterfactual"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-18", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-18", "type": "paraphrase"}
+{"text": "I am runing.", "language": "en", "label": 1, "group_id": "apos-en-19", "type": "ongoing"}
+{"text": "I am runing!", "language": "en", "label": 1, "group_id": "apos-en-19", "type": "paraphrase"}
+{"text": "I stopped eating.", "language": "en", "label": 1, "group_id": "apos-en-20", "type": "stop"}
+{"text": "I stopped eating!", "language": "en", "label": 1, "group_id": "apos-en-20", "type": "paraphrase"}
+{"text": "I almost run.", "language": "en", "label": 1, "group_id": "apos-en-21", "type": "almost"}
+{"text": "I almost run!", "language": "en", "label": 1, "group_id": "apos-en-21", "type": "paraphrase"}
+{"text": "I stopped finishing.", "language": "en", "label": 1, "group_id": "apos-en-22", "type": "stop"}
+{"text": "I stopped finishing!", "language": "en", "label": 1, "group_id": "apos-en-22", "type": "paraphrase"}
+{"text": "I almost finish.", "language": "en", "label": 1, "group_id": "apos-en-23", "type": "almost"}
+{"text": "I almost finish!", "language": "en", "label": 1, "group_id": "apos-en-23", "type": "paraphrase"}
+{"text": "I stopped falling.", "language": "en", "label": 1, "group_id": "apos-en-24", "type": "stop"}
+{"text": "I stopped falling!", "language": "en", "label": 1, "group_id": "apos-en-24", "type": "paraphrase"}
+{"text": "I have just falled.", "language": "en", "label": 1, "group_id": "apos-en-25", "type": "recent"}
+{"text": "I have just falled!", "language": "en", "label": 1, "group_id": "apos-en-25", "type": "paraphrase"}
+{"text": "I have never falled.", "language": "en", "label": 0, "group_id": "apos-en-25", "type": "counterfactual"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-26", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-26", "type": "paraphrase"}
+{"text": "I stopped eating.", "language": "en", "label": 1, "group_id": "apos-en-27", "type": "stop"}
+{"text": "I stopped eating!", "language": "en", "label": 1, "group_id": "apos-en-27", "type": "paraphrase"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-28", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-28", "type": "paraphrase"}
+{"text": "I stopped falling.", "language": "en", "label": 1, "group_id": "apos-en-29", "type": "stop"}
+{"text": "I stopped falling!", "language": "en", "label": 1, "group_id": "apos-en-29", "type": "paraphrase"}
+{"text": "I have been finishing for three hours.", "language": "en", "label": 1, "group_id": "apos-en-30", "type": "ongoing_for"}
+{"text": "I have been finishing for three hours!", "language": "en", "label": 1, "group_id": "apos-en-30", "type": "paraphrase"}
+{"text": "I stopped runing.", "language": "en", "label": 1, "group_id": "apos-en-31", "type": "stop"}
+{"text": "I stopped runing!", "language": "en", "label": 1, "group_id": "apos-en-31", "type": "paraphrase"}
+{"text": "I am runing.", "language": "en", "label": 1, "group_id": "apos-en-32", "type": "ongoing"}
+{"text": "I am runing!", "language": "en", "label": 1, "group_id": "apos-en-32", "type": "paraphrase"}
+{"text": "I stopped working.", "language": "en", "label": 1, "group_id": "apos-en-33", "type": "stop"}
+{"text": "I stopped working!", "language": "en", "label": 1, "group_id": "apos-en-33", "type": "paraphrase"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-34", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-34", "type": "paraphrase"}
+{"text": "She had just runed.", "language": "en", "label": 1, "group_id": "apos-en-35", "type": "recent"}
+{"text": "She had just runed!", "language": "en", "label": 1, "group_id": "apos-en-35", "type": "paraphrase"}
+{"text": "She had never runed.", "language": "en", "label": 0, "group_id": "apos-en-35", "type": "counterfactual"}
+{"text": "I almost fall.", "language": "en", "label": 1, "group_id": "apos-en-36", "type": "almost"}
+{"text": "I almost fall!", "language": "en", "label": 1, "group_id": "apos-en-36", "type": "paraphrase"}
+{"text": "I am falling.", "language": "en", "label": 1, "group_id": "apos-en-37", "type": "ongoing"}
+{"text": "I am falling!", "language": "en", "label": 1, "group_id": "apos-en-37", "type": "paraphrase"}
+{"text": "I have been finishing for three hours.", "language": "en", "label": 1, "group_id": "apos-en-38", "type": "ongoing_for"}
+{"text": "I have been finishing for three hours!", "language": "en", "label": 1, "group_id": "apos-en-38", "type": "paraphrase"}
+{"text": "I almost fall.", "language": "en", "label": 1, "group_id": "apos-en-39", "type": "almost"}
+{"text": "I almost fall!", "language": "en", "label": 1, "group_id": "apos-en-39", "type": "paraphrase"}
+{"text": "I am runing.", "language": "en", "label": 1, "group_id": "apos-en-40", "type": "ongoing"}
+{"text": "I am runing!", "language": "en", "label": 1, "group_id": "apos-en-40", "type": "paraphrase"}
+{"text": "I stopped runing.", "language": "en", "label": 1, "group_id": "apos-en-41", "type": "stop"}
+{"text": "I stopped runing!", "language": "en", "label": 1, "group_id": "apos-en-41", "type": "paraphrase"}
+{"text": "I almost finish.", "language": "en", "label": 1, "group_id": "apos-en-42", "type": "almost"}
+{"text": "I almost finish!", "language": "en", "label": 1, "group_id": "apos-en-42", "type": "paraphrase"}
+{"text": "I am finishing.", "language": "en", "label": 1, "group_id": "apos-en-43", "type": "ongoing"}
+{"text": "I am finishing!", "language": "en", "label": 1, "group_id": "apos-en-43", "type": "paraphrase"}
+{"text": "I am falling.", "language": "en", "label": 1, "group_id": "apos-en-44", "type": "ongoing"}
+{"text": "I am falling!", "language": "en", "label": 1, "group_id": "apos-en-44", "type": "paraphrase"}
+{"text": "I almost finish.", "language": "en", "label": 1, "group_id": "apos-en-45", "type": "almost"}
+{"text": "I almost finish!", "language": "en", "label": 1, "group_id": "apos-en-45", "type": "paraphrase"}
+{"text": "She had just eated.", "language": "en", "label": 1, "group_id": "apos-en-46", "type": "recent"}
+{"text": "She had just eated!", "language": "en", "label": 1, "group_id": "apos-en-46", "type": "paraphrase"}
+{"text": "She had never eated.", "language": "en", "label": 0, "group_id": "apos-en-46", "type": "counterfactual"}
+{"text": "I have just runed.", "language": "en", "label": 1, "group_id": "apos-en-47", "type": "recent"}
+{"text": "I have just runed!", "language": "en", "label": 1, "group_id": "apos-en-47", "type": "paraphrase"}
+{"text": "I have never runed.", "language": "en", "label": 0, "group_id": "apos-en-47", "type": "counterfactual"}
+{"text": "I am eating.", "language": "en", "label": 1, "group_id": "apos-en-48", "type": "ongoing"}
+{"text": "I am eating!", "language": "en", "label": 1, "group_id": "apos-en-48", "type": "paraphrase"}
+{"text": "I almost eat.", "language": "en", "label": 1, "group_id": "apos-en-49", "type": "almost"}
+{"text": "I almost eat!", "language": "en", "label": 1, "group_id": "apos-en-49", "type": "paraphrase"}
+{"text": "I have just runed.", "language": "en", "label": 1, "group_id": "apos-en-50", "type": "recent"}
+{"text": "I have just runed!", "language": "en", "label": 1, "group_id": "apos-en-50", "type": "paraphrase"}
+{"text": "I have never runed.", "language": "en", "label": 0, "group_id": "apos-en-50", "type": "counterfactual"}
+{"text": "I stopped falling.", "language": "en", "label": 1, "group_id": "apos-en-51", "type": "stop"}
+{"text": "I stopped falling!", "language": "en", "label": 1, "group_id": "apos-en-51", "type": "paraphrase"}
+{"text": "I am working.", "language": "en", "label": 1, "group_id": "apos-en-52", "type": "ongoing"}
+{"text": "I am working!", "language": "en", "label": 1, "group_id": "apos-en-52", "type": "paraphrase"}
+{"text": "I started again.", "language": "en", "label": 1, "group_id": "apos-en-53", "type": "resume"}
+{"text": "I started again!", "language": "en", "label": 1, "group_id": "apos-en-53", "type": "paraphrase"}
+{"text": "I have just runed.", "language": "en", "label": 1, "group_id": "apos-en-54", "type": "recent"}
+{"text": "I have just runed!", "language": "en", "label": 1, "group_id": "apos-en-54", "type": "paraphrase"}
+{"text": "I have never runed.", "language": "en", "label": 0, "group_id": "apos-en-54", "type": "counterfactual"}
+{"text": "I have been eating for three hours.", "language": "en", "label": 1, "group_id": "apos-en-55", "type": "ongoing_for"}
+{"text": "I have been eating for three hours!", "language": "en", "label": 1, "group_id": "apos-en-55", "type": "paraphrase"}
+{"text": "I am working.", "language": "en", "label": 1, "group_id": "apos-en-56", "type": "ongoing"}
+{"text": "I am working!", "language": "en", "label": 1, "group_id": "apos-en-56", "type": "paraphrase"}
+{"text": "She had just eated.", "language": "en", "label": 1, "group_id": "apos-en-57", "type": "recent"}
+{"text": "She had just eated!", "language": "en", "label": 1, "group_id": "apos-en-57", "type": "paraphrase"}
+{"text": "She had never eated.", "language": "en", "label": 0, "group_id": "apos-en-57", "type": "counterfactual"}
+{"text": "I have been finishing for three hours.", "language": "en", "label": 1, "group_id": "apos-en-58", "type": "ongoing_for"}
+{"text": "I have been finishing for three hours!", "language": "en", "label": 1, "group_id": "apos-en-58", "type": "paraphrase"}
+{"text": "I almost finish.", "language": "en", "label": 1, "group_id": "apos-en-59", "type": "almost"}
+{"text": "I almost finish!", "language": "en", "label": 1, "group_id": "apos-en-59", "type": "paraphrase"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-60", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-61", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-62", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-63", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-64", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-65", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-66", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-67", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-68", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-69", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-70", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-71", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-72", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-73", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-74", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-75", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-76", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-77", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-78", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-79", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-80", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-81", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-82", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-83", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-84", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-85", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-86", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-87", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-88", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-89", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-90", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-91", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-92", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-93", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-94", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-95", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-96", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-97", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-98", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-99", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-100", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-101", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-102", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-103", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-104", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-105", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-106", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-107", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-108", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-109", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-110", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-111", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-112", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-113", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-114", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-115", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-116", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-117", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-118", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-119", "type": "negative"}

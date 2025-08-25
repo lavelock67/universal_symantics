@@ -1,0 +1,87 @@
+{"text": "I do the thing", "primes": ["I", "DO", "THING"], "paraphrase": "I perform the object", "counterfactual": "I do not do the thing"}
+{"text": "Something happens", "primes": ["SOMETHING", "HAPPEN"], "paraphrase": "An event occurs", "counterfactual": "Nothing happens"}
+{"text": "The person moves", "primes": ["BODY", "MOVE"], "paraphrase": "The individual goes", "counterfactual": "The person does not move"}
+{"text": "You touch the thing", "primes": ["YOU", "TOUCH", "THING"], "paraphrase": "You contact the object", "counterfactual": "You do not touch the thing"}
+{"text": "People live here", "primes": ["PEOPLE", "LIVE"], "paraphrase": "Individuals exist here", "counterfactual": "People do not live here"}
+{"text": "Someone dies", "primes": ["SOMEONE", "DIE"], "paraphrase": "A person ends", "counterfactual": "No one dies"}
+{"text": "I think I do it", "primes": ["I", "THINK", "DO"], "paraphrase": "I believe I perform it", "counterfactual": "I think I do not do it"}
+{"text": "You know it happens", "primes": ["YOU", "KNOW", "HAPPEN"], "paraphrase": "You understand it occurs", "counterfactual": "You know it does not happen"}
+{"text": "Someone wants to move", "primes": ["SOMEONE", "WANT", "MOVE"], "paraphrase": "A person desires to go", "counterfactual": "Someone does not want to move"}
+{"text": "People feel they touch", "primes": ["PEOPLE", "FEEL", "TOUCH"], "paraphrase": "Individuals sense they contact", "counterfactual": "People feel they do not touch"}
+{"text": "I see you live", "primes": ["I", "SEE", "YOU", "LIVE"], "paraphrase": "I observe you exist", "counterfactual": "I see you do not live"}
+{"text": "You hear someone dies", "primes": ["YOU", "HEAR", "SOMEONE", "DIE"], "paraphrase": "You listen to someone ends", "counterfactual": "You hear no one dies"}
+{"text": "All people do things", "primes": ["ALL", "PEOPLE", "DO", "THING"], "paraphrase": "Every individual performs objects", "counterfactual": "All people do not do things"}
+{"text": "Many things happen", "primes": ["MANY", "THING", "HAPPEN"], "paraphrase": "Numerous objects occur", "counterfactual": "Few things happen"}
+{"text": "Some people move", "primes": ["SOME", "PEOPLE", "MOVE"], "paraphrase": "Several individuals go", "counterfactual": "No people move"}
+{"text": "Few things touch", "primes": ["FEW", "THING", "TOUCH"], "paraphrase": "Little number of objects contact", "counterfactual": "Many things touch"}
+{"text": "Much happens here", "primes": ["MUCH", "HAPPEN"], "paraphrase": "A lot occurs here", "counterfactual": "Little happens here"}
+{"text": "Little dies here", "primes": ["LITTLE", "DIE"], "paraphrase": "Small amount ends here", "counterfactual": "Much dies here"}
+{"text": "I do the good thing", "primes": ["I", "DO", "GOOD", "THING"], "paraphrase": "I perform the excellent object", "counterfactual": "I do the bad thing"}
+{"text": "You do the bad thing", "primes": ["YOU", "DO", "BAD", "THING"], "paraphrase": "You perform the terrible object", "counterfactual": "You do the good thing"}
+{"text": "Someone does the big thing", "primes": ["SOMEONE", "DO", "BIG", "THING"], "paraphrase": "A person performs the large object", "counterfactual": "Someone does the small thing"}
+{"text": "People do the small thing", "primes": ["PEOPLE", "DO", "SMALL", "THING"], "paraphrase": "Individuals perform the tiny object", "counterfactual": "People do the big thing"}
+{"text": "I do the right thing", "primes": ["I", "DO", "RIGHT", "THING"], "paraphrase": "I perform the correct object", "counterfactual": "I do the wrong thing"}
+{"text": "You do the wrong thing", "primes": ["YOU", "DO", "WRONG", "THING"], "paraphrase": "You perform the incorrect object", "counterfactual": "You do the right thing"}
+{"text": "Good things happen", "primes": ["GOOD", "THING", "HAPPEN"], "paraphrase": "Excellent objects occur", "counterfactual": "Bad things happen"}
+{"text": "Bad things happen", "primes": ["BAD", "THING", "HAPPEN"], "paraphrase": "Terrible objects occur", "counterfactual": "Good things happen"}
+{"text": "Big things move", "primes": ["BIG", "THING", "MOVE"], "paraphrase": "Large objects go", "counterfactual": "Small things move"}
+{"text": "Small things touch", "primes": ["SMALL", "THING", "TOUCH"], "paraphrase": "Tiny objects contact", "counterfactual": "Big things touch"}
+{"text": "Right people live", "primes": ["RIGHT", "PEOPLE", "LIVE"], "paraphrase": "Correct individuals exist", "counterfactual": "Wrong people live"}
+{"text": "Wrong people die", "primes": ["WRONG", "PEOPLE", "DIE"], "paraphrase": "Incorrect individuals end", "counterfactual": "Right people die"}
+{"text": "I do it because I know", "primes": ["I", "DO", "BECAUSE", "KNOW"], "paraphrase": "I perform it due to my understanding", "counterfactual": "I do it because I do not know"}
+{"text": "You do it if you want", "primes": ["YOU", "DO", "IF", "WANT"], "paraphrase": "You perform it conditional on your desire", "counterfactual": "You do it if you do not want"}
+{"text": "Someone does it when they think", "primes": ["SOMEONE", "DO", "WHEN", "THINK"], "paraphrase": "A person performs it while they believe", "counterfactual": "Someone does it when they do not think"}
+{"text": "People do it before they see", "primes": ["PEOPLE", "DO", "BEFORE", "SEE"], "paraphrase": "Individuals perform it prior to their observation", "counterfactual": "People do it after they see"}
+{"text": "I do it after I hear", "primes": ["I", "DO", "AFTER", "HEAR"], "paraphrase": "I perform it later than my listening", "counterfactual": "I do it before I hear"}
+{"text": "You do it in the place", "primes": ["YOU", "DO", "IN"], "paraphrase": "You perform it within the location", "counterfactual": "You do it outside the place"}
+{"text": "Someone does it on the thing", "primes": ["SOMEONE", "DO", "ON", "THING"], "paraphrase": "A person performs it upon the object", "counterfactual": "Someone does it under the thing"}
+{"text": "People do it under the bed", "primes": ["PEOPLE", "DO", "UNDER"], "paraphrase": "Individuals perform it beneath the furniture", "counterfactual": "People do it on the bed"}
+{"text": "I do it near the door", "primes": ["I", "DO", "NEAR"], "paraphrase": "I perform it close to the entrance", "counterfactual": "I do it far from the door"}
+{"text": "You do it far away", "primes": ["YOU", "DO", "FAR"], "paraphrase": "You perform it distant", "counterfactual": "You do it near here"}
+{"text": "Someone does it inside the box", "primes": ["SOMEONE", "DO", "INSIDE"], "paraphrase": "A person performs it within the container", "counterfactual": "Someone does it outside the box"}
+{"text": "All good people do things", "primes": ["ALL", "GOOD", "PEOPLE", "DO", "THING"], "paraphrase": "Every excellent individual performs objects", "counterfactual": "All bad people do things"}
+{"text": "Many bad things happen", "primes": ["MANY", "BAD", "THING", "HAPPEN"], "paraphrase": "Numerous terrible objects occur", "counterfactual": "Few good things happen"}
+{"text": "Some big people move", "primes": ["SOME", "BIG", "PEOPLE", "MOVE"], "paraphrase": "Several large individuals go", "counterfactual": "No small people move"}
+{"text": "Few small things touch", "primes": ["FEW", "SMALL", "THING", "TOUCH"], "paraphrase": "Little number of tiny objects contact", "counterfactual": "Many big things touch"}
+{"text": "Much right work happens", "primes": ["MUCH", "RIGHT", "HAPPEN"], "paraphrase": "A lot of correct work occurs", "counterfactual": "Little wrong work happens"}
+{"text": "Little wrong effort dies", "primes": ["LITTLE", "WRONG", "DIE"], "paraphrase": "Small amount of incorrect effort ends", "counterfactual": "Much right effort lives"}
+{"text": "I make the good thing happen", "primes": ["I", "MAKE", "GOOD", "THING", "HAPPEN"], "paraphrase": "I create the excellent object to occur", "counterfactual": "I make the bad thing happen"}
+{"text": "You cause the bad thing to move", "primes": ["YOU", "CAUSE", "BAD", "THING", "MOVE"], "paraphrase": "You lead the terrible object to go", "counterfactual": "You cause the good thing to move"}
+{"text": "Someone lets the big thing touch", "primes": ["SOMEONE", "LET", "BIG", "THING", "TOUCH"], "paraphrase": "A person allows the large object to contact", "counterfactual": "Someone lets the small thing touch"}
+{"text": "People make the small thing live", "primes": ["PEOPLE", "MAKE", "SMALL", "THING", "LIVE"], "paraphrase": "Individuals create the tiny object to exist", "counterfactual": "People make the big thing die"}
+{"text": "I cause the right thing to die", "primes": ["I", "CAUSE", "RIGHT", "THING", "DIE"], "paraphrase": "I lead the correct object to end", "counterfactual": "I cause the wrong thing to live"}
+{"text": "You let the wrong thing happen", "primes": ["YOU", "LET", "WRONG", "THING", "HAPPEN"], "paraphrase": "You allow the incorrect object to occur", "counterfactual": "You let the right thing happen"}
+{"text": "All the good things do the right thing", "primes": ["ALL", "GOOD", "THING", "DO", "RIGHT", "THING"], "paraphrase": "Every excellent object performs the correct object", "counterfactual": "All the bad things do the wrong thing"}
+{"text": "Many bad people make things happen", "primes": ["MANY", "BAD", "PEOPLE", "MAKE", "THING", "HAPPEN"], "paraphrase": "Numerous terrible individuals create objects to occur", "counterfactual": "Few good people make things happen"}
+{"text": "Some big things cause people to move", "primes": ["SOME", "BIG", "THING", "CAUSE", "PEOPLE", "MOVE"], "paraphrase": "Several large objects lead individuals to go", "counterfactual": "No small things cause people to move"}
+{"text": "Few small people let things touch", "primes": ["FEW", "SMALL", "PEOPLE", "LET", "THING", "TOUCH"], "paraphrase": "Little number of tiny individuals allow objects to contact", "counterfactual": "Many big people let things touch"}
+{"text": "Much right work makes things live", "primes": ["MUCH", "RIGHT", "MAKE", "THING", "LIVE"], "paraphrase": "A lot of correct work creates objects to exist", "counterfactual": "Little wrong work makes things die"}
+{"text": "Little wrong effort causes things to die", "primes": ["LITTLE", "WRONG", "CAUSE", "THING", "DIE"], "paraphrase": "Small amount of incorrect effort leads objects to end", "counterfactual": "Much right effort causes things to live"}
+{"text": "I think I do the good thing", "primes": ["I", "THINK", "DO", "GOOD", "THING"], "paraphrase": "I believe I perform the excellent object", "counterfactual": "I think I do the bad thing"}
+{"text": "You know you do the bad thing", "primes": ["YOU", "KNOW", "DO", "BAD", "THING"], "paraphrase": "You understand you perform the terrible object", "counterfactual": "You know you do the good thing"}
+{"text": "Someone wants to do the big thing", "primes": ["SOMEONE", "WANT", "DO", "BIG", "THING"], "paraphrase": "A person desires to perform the large object", "counterfactual": "Someone wants to do the small thing"}
+{"text": "People feel they do the small thing", "primes": ["PEOPLE", "FEEL", "DO", "SMALL", "THING"], "paraphrase": "Individuals sense they perform the tiny object", "counterfactual": "People feel they do the big thing"}
+{"text": "I see you do the right thing", "primes": ["I", "SEE", "YOU", "DO", "RIGHT", "THING"], "paraphrase": "I observe you perform the correct object", "counterfactual": "I see you do the wrong thing"}
+{"text": "You hear someone do the wrong thing", "primes": ["YOU", "HEAR", "SOMEONE", "DO", "WRONG", "THING"], "paraphrase": "You listen to someone perform the incorrect object", "counterfactual": "You hear someone do the right thing"}
+{"text": "All good things happen because I know", "primes": ["ALL", "GOOD", "THING", "HAPPEN", "BECAUSE", "I", "KNOW"], "paraphrase": "Every excellent object occurs due to my understanding", "counterfactual": "All bad things happen because I do not know"}
+{"text": "Many bad things happen if you want", "primes": ["MANY", "BAD", "THING", "HAPPEN", "IF", "YOU", "WANT"], "paraphrase": "Numerous terrible objects occur conditional on your desire", "counterfactual": "Few good things happen if you do not want"}
+{"text": "Some big things move when they think", "primes": ["SOME", "BIG", "THING", "MOVE", "WHEN", "THINK"], "paraphrase": "Several large objects go while they believe", "counterfactual": "No small things move when they do not think"}
+{"text": "Few small things touch before they see", "primes": ["FEW", "SMALL", "THING", "TOUCH", "BEFORE", "SEE"], "paraphrase": "Little number of tiny objects contact prior to their observation", "counterfactual": "Many big things touch after they see"}
+{"text": "Much right work happens after I hear", "primes": ["MUCH", "RIGHT", "HAPPEN", "AFTER", "I", "HEAR"], "paraphrase": "A lot of correct work occurs later than my listening", "counterfactual": "Little wrong work happens before I hear"}
+{"text": "Little wrong effort dies in the place", "primes": ["LITTLE", "WRONG", "DIE", "IN"], "paraphrase": "Small amount of incorrect effort ends within the location", "counterfactual": "Much right effort lives outside the place"}
+{"text": "I do the good thing on the big thing", "primes": ["I", "DO", "GOOD", "THING", "ON", "BIG", "THING"], "paraphrase": "I perform the excellent object upon the large object", "counterfactual": "I do the bad thing under the small thing"}
+{"text": "You do the bad thing under the small bed", "primes": ["YOU", "DO", "BAD", "THING", "UNDER", "SMALL"], "paraphrase": "You perform the terrible object beneath the tiny furniture", "counterfactual": "You do the good thing on the big bed"}
+{"text": "Someone does the big thing near the right door", "primes": ["SOMEONE", "DO", "BIG", "THING", "NEAR", "RIGHT"], "paraphrase": "A person performs the large object close to the correct entrance", "counterfactual": "Someone does the small thing far from the wrong door"}
+{"text": "People do the small thing far from the wrong place", "primes": ["PEOPLE", "DO", "SMALL", "THING", "FAR", "WRONG"], "paraphrase": "Individuals perform the tiny object distant from the incorrect location", "counterfactual": "People do the big thing near the right place"}
+{"text": "I do the right thing inside the good box", "primes": ["I", "DO", "RIGHT", "THING", "INSIDE", "GOOD"], "paraphrase": "I perform the correct object within the excellent container", "counterfactual": "I do the wrong thing outside the bad box"}
+{"text": "You do the wrong thing because it is bad", "primes": ["YOU", "DO", "WRONG", "THING", "BECAUSE", "BAD"], "paraphrase": "You perform the incorrect object due to it being terrible", "counterfactual": "You do the right thing because it is good"}
+{"text": "Someone does the big thing if it is good", "primes": ["SOMEONE", "DO", "BIG", "THING", "IF", "GOOD"], "paraphrase": "A person performs the large object conditional on it being excellent", "counterfactual": "Someone does the small thing if it is bad"}
+{"text": "People do the small thing when it is right", "primes": ["PEOPLE", "DO", "SMALL", "THING", "WHEN", "RIGHT"], "paraphrase": "Individuals perform the tiny object while it is correct", "counterfactual": "People do the big thing when it is wrong"}
+{"text": "I do the good thing before it is big", "primes": ["I", "DO", "GOOD", "THING", "BEFORE", "BIG"], "paraphrase": "I perform the excellent object prior to it being large", "counterfactual": "I do the bad thing after it is small"}
+{"text": "You do the bad thing after it is wrong", "primes": ["YOU", "DO", "BAD", "THING", "AFTER", "WRONG"], "paraphrase": "You perform the terrible object later than it being incorrect", "counterfactual": "You do the good thing before it is right"}
+{"text": "All the good things do the right thing in the big place", "primes": ["ALL", "GOOD", "THING", "DO", "RIGHT", "THING", "IN", "BIG"], "paraphrase": "Every excellent object performs the correct object within the large location", "counterfactual": "All the bad things do the wrong thing in the small place"}
+{"text": "Many bad people make things happen on the wrong table", "primes": ["MANY", "BAD", "PEOPLE", "MAKE", "THING", "HAPPEN", "ON", "WRONG"], "paraphrase": "Numerous terrible individuals create objects to occur upon the incorrect surface", "counterfactual": "Few good people make things happen on the right table"}
+{"text": "Some big things cause people to move under the good bed", "primes": ["SOME", "BIG", "THING", "CAUSE", "PEOPLE", "MOVE", "UNDER", "GOOD"], "paraphrase": "Several large objects lead individuals to go beneath the excellent furniture", "counterfactual": "No small things cause people to move under the bad bed"}
+{"text": "Few small people let things touch near the right door", "primes": ["FEW", "SMALL", "PEOPLE", "LET", "THING", "TOUCH", "NEAR", "RIGHT"], "paraphrase": "Little number of tiny individuals allow objects to contact close to the correct entrance", "counterfactual": "Many big people let things touch near the wrong door"}
+{"text": "Much right work makes things live far from the bad place", "primes": ["MUCH", "RIGHT", "MAKE", "THING", "LIVE", "FAR", "BAD"], "paraphrase": "A lot of correct work creates objects to exist distant from the terrible location", "counterfactual": "Little wrong work makes things die near the good place"}
+{"text": "Little wrong effort causes things to die inside the small box", "primes": ["LITTLE", "WRONG", "CAUSE", "THING", "DIE", "INSIDE", "SMALL"], "paraphrase": "Small amount of incorrect effort leads objects to end within the tiny container", "counterfactual": "Much right effort causes things to live inside the big box"}

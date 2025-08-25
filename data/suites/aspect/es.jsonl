@@ -1,0 +1,180 @@
+{"text": "Volvió a caer.", "language": "es", "label": 1, "group_id": "apos-es-0", "type": "resume"}
+{"text": "Volvió a caer!", "language": "es", "label": 1, "group_id": "apos-es-0", "type": "paraphrase"}
+{"text": "Casi estudiar.", "language": "es", "label": 1, "group_id": "apos-es-1", "type": "almost"}
+{"text": "Casi estudiar!", "language": "es", "label": 1, "group_id": "apos-es-1", "type": "paraphrase"}
+{"text": "Lleva tres horas salirando.", "language": "es", "label": 1, "group_id": "apos-es-2", "type": "ongoing_for"}
+{"text": "Lleva tres horas salirando!", "language": "es", "label": 1, "group_id": "apos-es-2", "type": "paraphrase"}
+{"text": "Dejó de leer.", "language": "es", "label": 1, "group_id": "apos-es-3", "type": "stop"}
+{"text": "Dejó de leer!", "language": "es", "label": 1, "group_id": "apos-es-3", "type": "paraphrase"}
+{"text": "Acabo de trabajar.", "language": "es", "label": 1, "group_id": "apos-es-4", "type": "recent"}
+{"text": "Acabo de trabajar!", "language": "es", "label": 1, "group_id": "apos-es-4", "type": "paraphrase"}
+{"text": "Acabo de caer.", "language": "es", "label": 1, "group_id": "apos-es-5", "type": "recent"}
+{"text": "Acabo de caer!", "language": "es", "label": 1, "group_id": "apos-es-5", "type": "paraphrase"}
+{"text": "Casi leer.", "language": "es", "label": 1, "group_id": "apos-es-6", "type": "almost"}
+{"text": "Casi leer!", "language": "es", "label": 1, "group_id": "apos-es-6", "type": "paraphrase"}
+{"text": "Volvió a salir.", "language": "es", "label": 1, "group_id": "apos-es-7", "type": "resume"}
+{"text": "Volvió a salir!", "language": "es", "label": 1, "group_id": "apos-es-7", "type": "paraphrase"}
+{"text": "Casi estudiar.", "language": "es", "label": 1, "group_id": "apos-es-8", "type": "almost"}
+{"text": "Casi estudiar!", "language": "es", "label": 1, "group_id": "apos-es-8", "type": "paraphrase"}
+{"text": "Acabo de estudiar.", "language": "es", "label": 1, "group_id": "apos-es-9", "type": "recent"}
+{"text": "Acabo de estudiar!", "language": "es", "label": 1, "group_id": "apos-es-9", "type": "paraphrase"}
+{"text": "Estoy caerando.", "language": "es", "label": 1, "group_id": "apos-es-10", "type": "ongoing"}
+{"text": "Estoy caerando!", "language": "es", "label": 1, "group_id": "apos-es-10", "type": "paraphrase"}
+{"text": "Dejó de trabajar.", "language": "es", "label": 1, "group_id": "apos-es-11", "type": "stop"}
+{"text": "Dejó de trabajar!", "language": "es", "label": 1, "group_id": "apos-es-11", "type": "paraphrase"}
+{"text": "Volvió a caer.", "language": "es", "label": 1, "group_id": "apos-es-12", "type": "resume"}
+{"text": "Volvió a caer!", "language": "es", "label": 1, "group_id": "apos-es-12", "type": "paraphrase"}
+{"text": "Estoy salirando.", "language": "es", "label": 1, "group_id": "apos-es-13", "type": "ongoing"}
+{"text": "Estoy salirando!", "language": "es", "label": 1, "group_id": "apos-es-13", "type": "paraphrase"}
+{"text": "Casi leer.", "language": "es", "label": 1, "group_id": "apos-es-14", "type": "almost"}
+{"text": "Casi leer!", "language": "es", "label": 1, "group_id": "apos-es-14", "type": "paraphrase"}
+{"text": "Volvió a trabajar.", "language": "es", "label": 1, "group_id": "apos-es-15", "type": "resume"}
+{"text": "Volvió a trabajar!", "language": "es", "label": 1, "group_id": "apos-es-15", "type": "paraphrase"}
+{"text": "Dejó de caer.", "language": "es", "label": 1, "group_id": "apos-es-16", "type": "stop"}
+{"text": "Dejó de caer!", "language": "es", "label": 1, "group_id": "apos-es-16", "type": "paraphrase"}
+{"text": "Dejó de salir.", "language": "es", "label": 1, "group_id": "apos-es-17", "type": "stop"}
+{"text": "Dejó de salir!", "language": "es", "label": 1, "group_id": "apos-es-17", "type": "paraphrase"}
+{"text": "Lleva tres horas salirando.", "language": "es", "label": 1, "group_id": "apos-es-18", "type": "ongoing_for"}
+{"text": "Lleva tres horas salirando!", "language": "es", "label": 1, "group_id": "apos-es-18", "type": "paraphrase"}
+{"text": "Lleva tres horas trabajarando.", "language": "es", "label": 1, "group_id": "apos-es-19", "type": "ongoing_for"}
+{"text": "Lleva tres horas trabajarando!", "language": "es", "label": 1, "group_id": "apos-es-19", "type": "paraphrase"}
+{"text": "Casi salir.", "language": "es", "label": 1, "group_id": "apos-es-20", "type": "almost"}
+{"text": "Casi salir!", "language": "es", "label": 1, "group_id": "apos-es-20", "type": "paraphrase"}
+{"text": "Volvió a salir.", "language": "es", "label": 1, "group_id": "apos-es-21", "type": "resume"}
+{"text": "Volvió a salir!", "language": "es", "label": 1, "group_id": "apos-es-21", "type": "paraphrase"}
+{"text": "Casi salir.", "language": "es", "label": 1, "group_id": "apos-es-22", "type": "almost"}
+{"text": "Casi salir!", "language": "es", "label": 1, "group_id": "apos-es-22", "type": "paraphrase"}
+{"text": "Volvió a estudiar.", "language": "es", "label": 1, "group_id": "apos-es-23", "type": "resume"}
+{"text": "Volvió a estudiar!", "language": "es", "label": 1, "group_id": "apos-es-23", "type": "paraphrase"}
+{"text": "Acabo de trabajar.", "language": "es", "label": 1, "group_id": "apos-es-24", "type": "recent"}
+{"text": "Acabo de trabajar!", "language": "es", "label": 1, "group_id": "apos-es-24", "type": "paraphrase"}
+{"text": "Estoy salirando.", "language": "es", "label": 1, "group_id": "apos-es-25", "type": "ongoing"}
+{"text": "Estoy salirando!", "language": "es", "label": 1, "group_id": "apos-es-25", "type": "paraphrase"}
+{"text": "Estoy salirando.", "language": "es", "label": 1, "group_id": "apos-es-26", "type": "ongoing"}
+{"text": "Estoy salirando!", "language": "es", "label": 1, "group_id": "apos-es-26", "type": "paraphrase"}
+{"text": "Estoy trabajarando.", "language": "es", "label": 1, "group_id": "apos-es-27", "type": "ongoing"}
+{"text": "Estoy trabajarando!", "language": "es", "label": 1, "group_id": "apos-es-27", "type": "paraphrase"}
+{"text": "Lleva tres horas caerando.", "language": "es", "label": 1, "group_id": "apos-es-28", "type": "ongoing_for"}
+{"text": "Lleva tres horas caerando!", "language": "es", "label": 1, "group_id": "apos-es-28", "type": "paraphrase"}
+{"text": "Dejó de estudiar.", "language": "es", "label": 1, "group_id": "apos-es-29", "type": "stop"}
+{"text": "Dejó de estudiar!", "language": "es", "label": 1, "group_id": "apos-es-29", "type": "paraphrase"}
+{"text": "Dejó de caer.", "language": "es", "label": 1, "group_id": "apos-es-30", "type": "stop"}
+{"text": "Dejó de caer!", "language": "es", "label": 1, "group_id": "apos-es-30", "type": "paraphrase"}
+{"text": "Lleva tres horas estudiarando.", "language": "es", "label": 1, "group_id": "apos-es-31", "type": "ongoing_for"}
+{"text": "Lleva tres horas estudiarando!", "language": "es", "label": 1, "group_id": "apos-es-31", "type": "paraphrase"}
+{"text": "Acabo de estudiar.", "language": "es", "label": 1, "group_id": "apos-es-32", "type": "recent"}
+{"text": "Acabo de estudiar!", "language": "es", "label": 1, "group_id": "apos-es-32", "type": "paraphrase"}
+{"text": "Casi leer.", "language": "es", "label": 1, "group_id": "apos-es-33", "type": "almost"}
+{"text": "Casi leer!", "language": "es", "label": 1, "group_id": "apos-es-33", "type": "paraphrase"}
+{"text": "Volvió a leer.", "language": "es", "label": 1, "group_id": "apos-es-34", "type": "resume"}
+{"text": "Volvió a leer!", "language": "es", "label": 1, "group_id": "apos-es-34", "type": "paraphrase"}
+{"text": "Casi estudiar.", "language": "es", "label": 1, "group_id": "apos-es-35", "type": "almost"}
+{"text": "Casi estudiar!", "language": "es", "label": 1, "group_id": "apos-es-35", "type": "paraphrase"}
+{"text": "Lleva tres horas leerando.", "language": "es", "label": 1, "group_id": "apos-es-36", "type": "ongoing_for"}
+{"text": "Lleva tres horas leerando!", "language": "es", "label": 1, "group_id": "apos-es-36", "type": "paraphrase"}
+{"text": "Casi estudiar.", "language": "es", "label": 1, "group_id": "apos-es-37", "type": "almost"}
+{"text": "Casi estudiar!", "language": "es", "label": 1, "group_id": "apos-es-37", "type": "paraphrase"}
+{"text": "Casi trabajar.", "language": "es", "label": 1, "group_id": "apos-es-38", "type": "almost"}
+{"text": "Casi trabajar!", "language": "es", "label": 1, "group_id": "apos-es-38", "type": "paraphrase"}
+{"text": "Volvió a trabajar.", "language": "es", "label": 1, "group_id": "apos-es-39", "type": "resume"}
+{"text": "Volvió a trabajar!", "language": "es", "label": 1, "group_id": "apos-es-39", "type": "paraphrase"}
+{"text": "Casi salir.", "language": "es", "label": 1, "group_id": "apos-es-40", "type": "almost"}
+{"text": "Casi salir!", "language": "es", "label": 1, "group_id": "apos-es-40", "type": "paraphrase"}
+{"text": "Volvió a trabajar.", "language": "es", "label": 1, "group_id": "apos-es-41", "type": "resume"}
+{"text": "Volvió a trabajar!", "language": "es", "label": 1, "group_id": "apos-es-41", "type": "paraphrase"}
+{"text": "Lleva tres horas leerando.", "language": "es", "label": 1, "group_id": "apos-es-42", "type": "ongoing_for"}
+{"text": "Lleva tres horas leerando!", "language": "es", "label": 1, "group_id": "apos-es-42", "type": "paraphrase"}
+{"text": "Casi salir.", "language": "es", "label": 1, "group_id": "apos-es-43", "type": "almost"}
+{"text": "Casi salir!", "language": "es", "label": 1, "group_id": "apos-es-43", "type": "paraphrase"}
+{"text": "Dejó de trabajar.", "language": "es", "label": 1, "group_id": "apos-es-44", "type": "stop"}
+{"text": "Dejó de trabajar!", "language": "es", "label": 1, "group_id": "apos-es-44", "type": "paraphrase"}
+{"text": "Volvió a trabajar.", "language": "es", "label": 1, "group_id": "apos-es-45", "type": "resume"}
+{"text": "Volvió a trabajar!", "language": "es", "label": 1, "group_id": "apos-es-45", "type": "paraphrase"}
+{"text": "Volvió a caer.", "language": "es", "label": 1, "group_id": "apos-es-46", "type": "resume"}
+{"text": "Volvió a caer!", "language": "es", "label": 1, "group_id": "apos-es-46", "type": "paraphrase"}
+{"text": "Casi trabajar.", "language": "es", "label": 1, "group_id": "apos-es-47", "type": "almost"}
+{"text": "Casi trabajar!", "language": "es", "label": 1, "group_id": "apos-es-47", "type": "paraphrase"}
+{"text": "Lleva tres horas trabajarando.", "language": "es", "label": 1, "group_id": "apos-es-48", "type": "ongoing_for"}
+{"text": "Lleva tres horas trabajarando!", "language": "es", "label": 1, "group_id": "apos-es-48", "type": "paraphrase"}
+{"text": "Casi caer.", "language": "es", "label": 1, "group_id": "apos-es-49", "type": "almost"}
+{"text": "Casi caer!", "language": "es", "label": 1, "group_id": "apos-es-49", "type": "paraphrase"}
+{"text": "Lleva tres horas salirando.", "language": "es", "label": 1, "group_id": "apos-es-50", "type": "ongoing_for"}
+{"text": "Lleva tres horas salirando!", "language": "es", "label": 1, "group_id": "apos-es-50", "type": "paraphrase"}
+{"text": "Dejó de caer.", "language": "es", "label": 1, "group_id": "apos-es-51", "type": "stop"}
+{"text": "Dejó de caer!", "language": "es", "label": 1, "group_id": "apos-es-51", "type": "paraphrase"}
+{"text": "Dejó de trabajar.", "language": "es", "label": 1, "group_id": "apos-es-52", "type": "stop"}
+{"text": "Dejó de trabajar!", "language": "es", "label": 1, "group_id": "apos-es-52", "type": "paraphrase"}
+{"text": "Volvió a trabajar.", "language": "es", "label": 1, "group_id": "apos-es-53", "type": "resume"}
+{"text": "Volvió a trabajar!", "language": "es", "label": 1, "group_id": "apos-es-53", "type": "paraphrase"}
+{"text": "Acabo de trabajar.", "language": "es", "label": 1, "group_id": "apos-es-54", "type": "recent"}
+{"text": "Acabo de trabajar!", "language": "es", "label": 1, "group_id": "apos-es-54", "type": "paraphrase"}
+{"text": "Estoy caerando.", "language": "es", "label": 1, "group_id": "apos-es-55", "type": "ongoing"}
+{"text": "Estoy caerando!", "language": "es", "label": 1, "group_id": "apos-es-55", "type": "paraphrase"}
+{"text": "Dejó de salir.", "language": "es", "label": 1, "group_id": "apos-es-56", "type": "stop"}
+{"text": "Dejó de salir!", "language": "es", "label": 1, "group_id": "apos-es-56", "type": "paraphrase"}
+{"text": "Dejó de salir.", "language": "es", "label": 1, "group_id": "apos-es-57", "type": "stop"}
+{"text": "Dejó de salir!", "language": "es", "label": 1, "group_id": "apos-es-57", "type": "paraphrase"}
+{"text": "Estoy caerando.", "language": "es", "label": 1, "group_id": "apos-es-58", "type": "ongoing"}
+{"text": "Estoy caerando!", "language": "es", "label": 1, "group_id": "apos-es-58", "type": "paraphrase"}
+{"text": "Dejó de estudiar.", "language": "es", "label": 1, "group_id": "apos-es-59", "type": "stop"}
+{"text": "Dejó de estudiar!", "language": "es", "label": 1, "group_id": "apos-es-59", "type": "paraphrase"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-60", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-61", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-62", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-63", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-64", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-65", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-66", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-67", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-68", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-69", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-70", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-71", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-72", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-73", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-74", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-75", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-76", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-77", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-78", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-79", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-80", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-81", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-82", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-83", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-84", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-85", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-86", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-87", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-88", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-89", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-90", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-91", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-92", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-93", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-94", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-95", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-96", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-97", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-98", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-99", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-100", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-101", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-102", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-103", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-104", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-105", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-106", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-107", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-108", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-109", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-110", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-111", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-112", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-113", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-114", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-115", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-116", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-117", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-118", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-119", "type": "negative"}

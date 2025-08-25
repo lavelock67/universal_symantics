@@ -1,0 +1,1872 @@
+{
+  "test_cases": [
+    {
+      "text": "I have just finished the work.",
+      "goal": "RECENT_PAST(FINISH)",
+      "is_hard_goal": false,
+      "description": "Raw fact matching (theater code risk)"
+    },
+    {
+      "text": "I have just finished the work.",
+      "goal": "PAST(finish)",
+      "is_hard_goal": true,
+      "description": "Recent past aspect reasoning (derivation required)"
+    },
+    {
+      "text": "I have been working for three hours.",
+      "goal": "DURING(work, [now\u2212PT3H, now])",
+      "is_hard_goal": true,
+      "description": "Ongoing aspect reasoning (derivation required)"
+    },
+    {
+      "text": "Not all students study.",
+      "goal": "NOT EXISTS[x] study(x)",
+      "is_hard_goal": true,
+      "description": "Narrow quantifier scope reasoning (derivation required)"
+    },
+    {
+      "text": "No todos los ni\u00f1os juegan.",
+      "goal": "NOT EXISTS[x] jugar(x)",
+      "is_hard_goal": true,
+      "description": "ES narrow quantifier"
+    },
+    {
+      "text": "Tous les enfants ne jouent pas.",
+      "goal": "ALL[x] NOT jouer(x)",
+      "is_hard_goal": true,
+      "description": "FR wide quantifier"
+    },
+    {
+      "text": "No student arrived.",
+      "goal": "NOT EXISTS[x] arrive(x)",
+      "is_hard_goal": true,
+      "description": "EN none exists"
+    },
+    {
+      "text": "Acabo de salir.",
+      "goal": "PAST(salir) \u2227 close(now, salir)",
+      "is_hard_goal": true,
+      "description": "ES recent past"
+    },
+    {
+      "text": "Il est en train de travailler.",
+      "goal": "ONGOING(travailler)",
+      "is_hard_goal": true,
+      "description": "FR ongoing"
+    },
+    {
+      "text": "Lleva tres horas estudiando.",
+      "goal": "DURING(estudiar, [now\u2212PT3H, now])",
+      "is_hard_goal": true,
+      "description": "ES ongoing_for"
+    },
+    {
+      "text": "He almost fell.",
+      "goal": "\u00acfall \u2227 near(fall)",
+      "is_hard_goal": true,
+      "description": "EN almost_do"
+    },
+    {
+      "text": "Elle a cess\u00e9 de venir.",
+      "goal": "terminated(venir)",
+      "is_hard_goal": true,
+      "description": "FR stop"
+    },
+    {
+      "text": "Volvi\u00f3 a intentarlo.",
+      "goal": "restarted(intentar)",
+      "is_hard_goal": true,
+      "description": "ES resume/do again"
+    },
+    {
+      "text": "I stopped working.",
+      "goal": "terminated(work)",
+      "is_hard_goal": true,
+      "description": "EN stop"
+    },
+    {
+      "text": "Elle a recommenc\u00e9 \u00e0 travailler.",
+      "goal": "restarted(travailler)",
+      "is_hard_goal": true,
+      "description": "FR resume/do again"
+    },
+    {
+      "text": "All students do not arrive.",
+      "goal": "ALL[x] NOT arrive(x)",
+      "is_hard_goal": true,
+      "description": "EN wide quantifier"
+    },
+    {
+      "text": "Todos los estudiantes no estudian.",
+      "goal": "ALL[x] NOT estudiar(x)",
+      "is_hard_goal": true,
+      "description": "ES wide quantifier"
+    },
+    {
+      "text": "Estoy trabajando.",
+      "goal": "ONGOING(trabajar)",
+      "is_hard_goal": true,
+      "description": "ES ongoing"
+    },
+    {
+      "text": "Dej\u00f3 de comer.",
+      "goal": "terminated(comer)",
+      "is_hard_goal": true,
+      "description": "ES stop"
+    },
+    {
+      "text": "J'ai failli tomber.",
+      "goal": "\u00actomber \u2227 near(tomber)",
+      "is_hard_goal": true,
+      "description": "FR almost_do"
+    },
+    {
+      "text": "Elle travaille depuis trois heures.",
+      "goal": "DURING(travailler, [now\u2212PT3H, now])",
+      "is_hard_goal": true,
+      "description": "FR ongoing_for"
+    },
+    {
+      "text": "I have been to Paris.",
+      "goal": "ONGOING(travel)",
+      "is_hard_goal": true,
+      "description": "Guarded stative should fail"
+    }
+  ],
+  "results": [
+    {
+      "goal": "RECENT_PAST(FINISH)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_RECENT_PAST_TO_PAST_CLOSE",
+          "premises": [
+            "RECENT_PAST(finish)"
+          ],
+          "conclusion": "PAST(finish) \u2227 close(now,e)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": false,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "PAST(finish)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_RECENT_PAST_TO_PAST_CLOSE",
+          "premises": [
+            "RECENT_PAST(finish)"
+          ],
+          "conclusion": "PAST(finish) \u2227 close(now,e)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "DURING({lemma:\"work\",lang:\"en\"}, [\"now-PT3H\",\"now\"])",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_ONGOING_FOR_TO_DURING",
+          "premises": [
+            "ONGOING_FOR(work, PT3H)"
+          ],
+          "conclusion": "DURING({lemma:\"work\",lang:\"en\"}, [\"now-PT3H\",\"now\"])",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "NOT EXISTS[x] study(x)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "Q1_NARROW_TO_NOT_EXISTS",
+          "premises": [
+            "NARROW(\u00ac\u2200)"
+          ],
+          "conclusion": "NOT EXISTS[x] study(x)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "NOT EXISTS[x] jugar(x)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "Q1_NARROW_TO_NOT_EXISTS",
+          "premises": [
+            "NARROW(\u00ac\u2200)"
+          ],
+          "conclusion": "NOT EXISTS[x] jugar(x)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "ALL[x] NOT jouer(x)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "Q1_WIDE_TO_ALL_NOT",
+          "premises": [
+            "WIDE(\u2200\u00ac)"
+          ],
+          "conclusion": "ALL[x] NOT jouer(x)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "NOT EXISTS[x] arrive(x)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "Q1_NARROW_TO_NOT_EXISTS",
+          "premises": [
+            "NARROW(\u00ac\u2200)"
+          ],
+          "conclusion": "NOT EXISTS[x] arrive(x)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "PAST(salir) \u2227 close(now, salir)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_RECENT_PAST_TO_PAST_CLOSE",
+          "premises": [
+            "RECENT_PAST(salir)"
+          ],
+          "conclusion": "PAST(salir) \u2227 close(now,e)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "ONGOING(travailler)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_ONGOING_TO_DURING_OPEN",
+          "premises": [
+            "ONGOING(travailler)"
+          ],
+          "conclusion": "DURING({lemma:\"travailler\",lang:\"fr\"}, [\"now-UNK\",\"now\"])",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": false,
+      "confidence": 0.9,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_ONGOING_TO_DURING_OPEN"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": null,
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "DURING({lemma:\"estudiar\",lang:\"es\"}, [\"now-PT3H\",\"now\"])",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_ONGOING_FOR_TO_DURING",
+          "premises": [
+            "ONGOING_FOR(estudiar, PT3H)"
+          ],
+          "conclusion": "DURING({lemma:\"estudiar\",lang:\"es\"}, [\"now-PT3H\",\"now\"])",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "\u00acfall \u2227 near(fall)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_ALMOST_DO_TO_NEAR",
+          "premises": [
+            "ALMOST_DO(fall)"
+          ],
+          "conclusion": "\u00acfall \u2227 near(fall)",
+          "confidence": 0.8,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.8,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ALMOST_DO_TO_NEAR"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "terminated(venir)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_STOP_TO_TERMINATED",
+          "premises": [
+            "STOP(venir)"
+          ],
+          "conclusion": "terminated(venir)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "restarted(intentar)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_RESUME_TO_RESTARTED",
+          "premises": [
+            "RESUME(intentar)"
+          ],
+          "conclusion": "restarted(intentar)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RESUME_TO_RESTARTED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "terminated(work)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_STOP_TO_TERMINATED",
+          "premises": [
+            "STOP(work)"
+          ],
+          "conclusion": "terminated(work)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        }
+      }
+    },
+    {
+      "goal": "restarted(travailler)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_RESUME_TO_RESTARTED",
+          "premises": [
+            "RESUME(travailler)"
+          ],
+          "conclusion": "restarted(travailler)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RESUME_TO_RESTARTED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "ALL[x] NOT arrive(x)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "Q1_WIDE_TO_ALL_NOT",
+          "premises": [
+            "WIDE(\u2200\u00ac)"
+          ],
+          "conclusion": "ALL[x] NOT arrive(x)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "ALL[x] NOT estudiar(x)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "Q1_WIDE_TO_ALL_NOT",
+          "premises": [
+            "WIDE(\u2200\u00ac)"
+          ],
+          "conclusion": "ALL[x] NOT estudiar(x)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "ONGOING(trabajar)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_ONGOING_TO_DURING_OPEN",
+          "premises": [
+            "ONGOING(work)"
+          ],
+          "conclusion": "DURING({lemma:\"work\",lang:\"es\"}, [\"now-UNK\",\"now\"])",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": false,
+      "confidence": 0.9,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_TO_DURING_OPEN"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": null,
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "terminated(comer)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_STOP_TO_TERMINATED",
+          "premises": [
+            "STOP(comer)"
+          ],
+          "conclusion": "terminated(comer)",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 1,
+          "successes": 1,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.5
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "\u00actomber \u2227 near(tomber)",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_ALMOST_DO_TO_NEAR",
+          "premises": [
+            "ALMOST_DO(tomber)"
+          ],
+          "conclusion": "\u00actomber \u2227 near(tomber)",
+          "confidence": 0.8,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.8,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ALMOST_DO_TO_NEAR"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "DURING({lemma:\"travailler\",lang:\"fr\"}, [\"now-PT3H\",\"now\"])",
+      "proof_steps": [
+        {
+          "step_id": "step_0",
+          "rule_id": "A1_ONGOING_FOR_TO_DURING",
+          "premises": [
+            "ONGOING_FOR(travailler, PT3H)"
+          ],
+          "conclusion": "DURING({lemma:\"travailler\",lang:\"fr\"}, [\"now-PT3H\",\"now\"])",
+          "confidence": 0.9,
+          "depth": 1
+        }
+      ],
+      "success": true,
+      "confidence": 0.9,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    },
+    {
+      "goal": "ONGOING(travel)",
+      "proof_steps": [],
+      "success": false,
+      "confidence": 0.0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true,
+      "telemetry": {
+        "A1_RECENT_PAST_TO_PAST_CLOSE": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_FOR_TO_DURING": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_NARROW_TO_NOT_EXISTS": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "Q1_WIDE_TO_ALL_NOT": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_ONGOING_TO_DURING_OPEN": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_ALMOST_DO_TO_NEAR": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        },
+        "A1_STOP_TO_TERMINATED": {
+          "fires": 3,
+          "successes": 3,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.875
+        },
+        "A1_RESUME_TO_RESTARTED": {
+          "fires": 2,
+          "successes": 2,
+          "success_rate": 1.0,
+          "avg_depth_contrib": 0.75
+        }
+      }
+    }
+  ],
+  "proof_analyses": [
+    {
+      "proof_id": "proof_1",
+      "success": true,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": false
+    },
+    {
+      "proof_id": "proof_2",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_3",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_4",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_5",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_6",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_7",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_8",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_9",
+      "success": false,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_ONGOING_TO_DURING_OPEN"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": null,
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_10",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_11",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ALMOST_DO_TO_NEAR"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_12",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_13",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RESUME_TO_RESTARTED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_14",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_15",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RESUME_TO_RESTARTED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_16",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_17",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_18",
+      "success": false,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_TO_DURING_OPEN"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": null,
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_19",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_20",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ALMOST_DO_TO_NEAR"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_21",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_22",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true
+    }
+  ],
+  "health_metrics": {
+    "total_proofs": 22,
+    "successful_proofs": 19,
+    "derived_proof_rate": 0.9444444444444444,
+    "depth_gt_zero_rate": 1.0,
+    "hard_goal_success_rate": 0.8571428571428571,
+    "family_coverage": {
+      "aspect": 0.6842105263157895,
+      "quantifier": 0.3157894736842105
+    },
+    "required_family_compliance": 1.0,
+    "passes_dpr_gate": true,
+    "passes_depth_gate": true,
+    "passes_family_gates": true,
+    "passes_hard_goal_gate": true,
+    "passes_required_family_gate": true,
+    "overall_health": "HEALTHY"
+  },
+  "ci_check": {
+    "passes_all_gates": true,
+    "failures": [],
+    "overall_health": "HEALTHY",
+    "recommendation": "GOOD: All reasoning health gates pass. System demonstrates genuine inference."
+  },
+  "summary": {
+    "total_tests": 22,
+    "total_success": 19,
+    "success_rate": 0.8636363636363636,
+    "avg_depth": 0.9473684210526315,
+    "legacy_criteria_met": true,
+    "anti_theater_gates_passed": true,
+    "overall_health": "HEALTHY"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "total": 11,
+  "killed": 11,
+  "score": 1.0,
+  "details": [
+    {
+      "domain": "aspect",
+      "orig": "I have just finished.",
+      "mutant": "I have finished.",
+      "killed": true
+    },
+    {
+      "domain": "aspect",
+      "orig": "I have been working for three hours.",
+      "mutant": "I have working for three hours.",
+      "killed": true
+    },
+    {
+      "domain": "aspect",
+      "orig": "He almost fell.",
+      "mutant": "He fell.",
+      "killed": true
+    },
+    {
+      "domain": "aspect",
+      "orig": "Lleva tres horas estudiando.",
+      "mutant": "tres horas estudiando.",
+      "killed": true
+    },
+    {
+      "domain": "aspect",
+      "orig": "Casi me caigo.",
+      "mutant": "me caigo.",
+      "killed": true
+    },
+    {
+      "domain": "aspect",
+      "orig": "Il est en train de travailler.",
+      "mutant": "Il est travailler.",
+      "killed": true
+    },
+    {
+      "domain": "aspect",
+      "orig": "Je viens d'arriver.",
+      "mutant": "Je viens arriver.",
+      "killed": true
+    },
+    {
+      "domain": "aspect",
+      "orig": "J'ai failli tomber.",
+      "mutant": "J'ai tomber.",
+      "killed": true
+    },
+    {
+      "domain": "quantifiers",
+      "orig": "Not all students study.",
+      "mutant": "Only some students study.",
+      "killed": true
+    },
+    {
+      "domain": "quantifiers",
+      "orig": "No todos los ni\u00f1os juegan.",
+      "mutant": "Solo algunos los ni\u00f1os juegan.",
+      "killed": true
+    },
+    {
+      "domain": "quantifiers",
+      "orig": "Tous les enfants ne jouent pas.",
+      "mutant": "Seulement quelques les enfants ne jouent pas.",
+      "killed": true
+    }
+  ]
+}

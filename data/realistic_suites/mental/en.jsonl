@@ -1,0 +1,41 @@
+{"text": "I believe you understand", "primes": ["I", "YOU", "THINK", "KNOW"], "paraphrase": "I think you know", "counterfactual": "I do not believe you understand"}
+{"text": "She desires to help", "primes": ["SOMEONE", "WANT"], "paraphrase": "She wants to help", "counterfactual": "She does not desire to help"}
+{"text": "They sense the problem", "primes": ["PEOPLE", "FEEL"], "paraphrase": "They feel the problem", "counterfactual": "They do not sense the problem"}
+{"text": "He observed the event", "primes": ["SOMEONE", "SEE"], "paraphrase": "He saw the event", "counterfactual": "He did not observe the event"}
+{"text": "We listened to the sound", "primes": ["PEOPLE", "HEAR"], "paraphrase": "We heard the sound", "counterfactual": "We did not listen to the sound"}
+{"text": "I consider this important", "primes": ["I", "THINK"], "paraphrase": "I think this is important", "counterfactual": "I do not consider this important"}
+{"text": "You realize the truth", "primes": ["YOU", "KNOW"], "paraphrase": "You know the truth", "counterfactual": "You do not realize the truth"}
+{"text": "Someone wishes to leave", "primes": ["SOMEONE", "WANT"], "paraphrase": "Someone wants to leave", "counterfactual": "No one wishes to leave"}
+{"text": "The person feels tired", "primes": ["BODY", "FEEL"], "paraphrase": "The body feels tired", "counterfactual": "The person does not feel tired"}
+{"text": "Individuals watched the show", "primes": ["PEOPLE", "SEE"], "paraphrase": "People saw the show", "counterfactual": "Individuals did not watch the show"}
+{"text": "A person heard the news", "primes": ["SOMEONE", "HEAR"], "paraphrase": "Someone heard the news", "counterfactual": "No person heard the news"}
+{"text": "I think you know something", "primes": ["I", "YOU", "THINK", "KNOW", "SOMETHING"], "paraphrase": "I believe you understand something", "counterfactual": "I do not think you know something"}
+{"text": "You want me to help", "primes": ["YOU", "I", "WANT"], "paraphrase": "You desire me to help", "counterfactual": "You do not want me to help"}
+{"text": "Someone feels the pain", "primes": ["SOMEONE", "FEEL"], "paraphrase": "A person senses the pain", "counterfactual": "No one feels the pain"}
+{"text": "People saw the accident", "primes": ["PEOPLE", "SEE"], "paraphrase": "Individuals observed the accident", "counterfactual": "People did not see the accident"}
+{"text": "The body heard the noise", "primes": ["BODY", "HEAR"], "paraphrase": "The person heard the noise", "counterfactual": "The body did not hear the noise"}
+{"text": "I believe that you think", "primes": ["I", "YOU", "THINK"], "paraphrase": "I know that you believe", "counterfactual": "I do not believe that you think"}
+{"text": "You understand what I want", "primes": ["YOU", "KNOW", "I", "WANT"], "paraphrase": "You know what I desire", "counterfactual": "You do not understand what I want"}
+{"text": "Someone sensed the danger", "primes": ["SOMEONE", "FEEL"], "paraphrase": "A person felt the danger", "counterfactual": "No one sensed the danger"}
+{"text": "Individuals looked at the thing", "primes": ["PEOPLE", "SEE", "THING"], "paraphrase": "People saw the object", "counterfactual": "Individuals did not look at the thing"}
+{"text": "The person listened to the music", "primes": ["BODY", "HEAR"], "paraphrase": "The body heard the music", "counterfactual": "The person did not listen to the music"}
+{"text": "I know you think about it", "primes": ["I", "YOU", "KNOW", "THINK"], "paraphrase": "I understand you consider it", "counterfactual": "I do not know you think about it"}
+{"text": "You want someone to help", "primes": ["YOU", "SOMEONE", "WANT"], "paraphrase": "You desire a person to help", "counterfactual": "You do not want someone to help"}
+{"text": "People feel the emotion", "primes": ["PEOPLE", "FEEL"], "paraphrase": "Individuals sense the emotion", "counterfactual": "People do not feel the emotion"}
+{"text": "Someone saw the event", "primes": ["SOMEONE", "SEE"], "paraphrase": "A person observed the event", "counterfactual": "No one saw the event"}
+{"text": "The body heard the voice", "primes": ["BODY", "HEAR"], "paraphrase": "The person heard the voice", "counterfactual": "The body did not hear the voice"}
+{"text": "I think that you know the truth", "primes": ["I", "YOU", "THINK", "KNOW"], "paraphrase": "I believe that you understand the truth", "counterfactual": "I do not think that you know the truth"}
+{"text": "You want people to understand", "primes": ["YOU", "PEOPLE", "WANT", "KNOW"], "paraphrase": "You desire individuals to know", "counterfactual": "You do not want people to understand"}
+{"text": "Someone feels that people think", "primes": ["SOMEONE", "PEOPLE", "FEEL", "THINK"], "paraphrase": "A person senses that individuals believe", "counterfactual": "No one feels that people think"}
+{"text": "Individuals saw that someone heard", "primes": ["PEOPLE", "SOMEONE", "SEE", "HEAR"], "paraphrase": "People observed that a person listened", "counterfactual": "Individuals did not see that someone heard"}
+{"text": "The person knows what the body feels", "primes": ["BODY", "KNOW", "FEEL"], "paraphrase": "The body understands what the person senses", "counterfactual": "The person does not know what the body feels"}
+{"text": "I believe you want to see", "primes": ["I", "YOU", "THINK", "WANT", "SEE"], "paraphrase": "I think you desire to observe", "counterfactual": "I do not believe you want to see"}
+{"text": "You know that someone feels", "primes": ["YOU", "SOMEONE", "KNOW", "FEEL"], "paraphrase": "You understand that a person senses", "counterfactual": "You do not know that someone feels"}
+{"text": "People think the person heard", "primes": ["PEOPLE", "SOMEONE", "THINK", "HEAR"], "paraphrase": "Individuals believe the body listened", "counterfactual": "People do not think the person heard"}
+{"text": "Someone wants to know what I think", "primes": ["SOMEONE", "I", "WANT", "KNOW", "THINK"], "paraphrase": "A person desires to understand what I believe", "counterfactual": "No one wants to know what I think"}
+{"text": "The body feels that people see", "primes": ["BODY", "PEOPLE", "FEEL", "SEE"], "paraphrase": "The person senses that individuals observe", "counterfactual": "The body does not feel that people see"}
+{"text": "I understand you want to hear", "primes": ["I", "YOU", "KNOW", "WANT", "HEAR"], "paraphrase": "I know you desire to listen", "counterfactual": "I do not understand you want to hear"}
+{"text": "You think someone knows the thing", "primes": ["YOU", "SOMEONE", "THINK", "KNOW", "THING"], "paraphrase": "You believe a person understands the object", "counterfactual": "You do not think someone knows the thing"}
+{"text": "People feel that the body wants", "primes": ["PEOPLE", "BODY", "FEEL", "WANT"], "paraphrase": "Individuals sense that the person desires", "counterfactual": "People do not feel that the body wants"}
+{"text": "Someone saw what people heard", "primes": ["SOMEONE", "PEOPLE", "SEE", "HEAR"], "paraphrase": "A person observed what individuals listened to", "counterfactual": "No one saw what people heard"}
+{"text": "The person knows that I think", "primes": ["BODY", "I", "KNOW", "THINK"], "paraphrase": "The body understands that I believe", "counterfactual": "The person does not know that I think"}

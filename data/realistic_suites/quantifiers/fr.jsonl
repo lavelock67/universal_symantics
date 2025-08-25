@@ -1,0 +1,84 @@
+{"text": "Pas tous les étudiants étudient.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-0", "type": "base"}
+{"text": "Pas tous les étudiants lisent.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-0", "type": "paraphrase"}
+{"text": "Tous les étudiants étudient.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-0", "type": "counterfactual"}
+{"text": "Aucun étudiant n'est arrivé.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-1", "type": "base"}
+{"text": "Personne n'est arrivé.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-1", "type": "paraphrase"}
+{"text": "Quelques étudiants sont arrivés.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-1", "type": "counterfactual"}
+{"text": "Tous les enfants ne jouent pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-2", "type": "base"}
+{"text": "Chaque enfant ne joue pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-2", "type": "paraphrase"}
+{"text": "Tous les enfants jouent.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-2", "type": "counterfactual"}
+{"text": "Peu d'étudiants lisent.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-3", "type": "base"}
+{"text": "À peine quelques étudiants lisent.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-3", "type": "paraphrase"}
+{"text": "Beaucoup d'étudiants lisent.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-3", "type": "counterfactual"}
+{"text": "La plupart des étudiants ne courent pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-4", "type": "base"}
+{"text": "La majorité des étudiants ne courent pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-4", "type": "paraphrase"}
+{"text": "La plupart des étudiants courent.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-4", "type": "counterfactual"}
+{"text": "Seulement quelques médecins travaillent.", "language": "fr", "label": 1, "predicate": "travailler", "group_id": "qpos-fr-5", "type": "base"}
+{"text": "Uniquement quelques médecins travaillent.", "language": "fr", "label": 1, "predicate": "travailler", "group_id": "qpos-fr-5", "type": "paraphrase"}
+{"text": "Tous les médecins travaillent.", "language": "fr", "label": 0, "predicate": "travailler", "group_id": "qpos-fr-5", "type": "counterfactual"}
+{"text": "Au plus la moitié des étudiants étudient.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-6", "type": "base"}
+{"text": "Pas plus de la moitié des étudiants étudient.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-6", "type": "paraphrase"}
+{"text": "Tous les étudiants étudient.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-6", "type": "counterfactual"}
+{"text": "Moins de la moitié des enfants jouent.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-7", "type": "base"}
+{"text": "Moins de la moitié des enfants courent.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-7", "type": "paraphrase"}
+{"text": "La plupart des enfants jouent.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-7", "type": "counterfactual"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "predicate": "aller", "group_id": "qneg-fr-0", "type": "base"}
+{"text": "Je suis allé à Paris.", "language": "fr", "label": 0, "predicate": "aller", "group_id": "qneg-fr-0", "type": "paraphrase"}
+{"text": "Je n'ai pas été à Paris.", "language": "fr", "label": 0, "predicate": "aller", "group_id": "qneg-fr-0", "type": "counterfactual"}
+{"text": "Le chat est sur le tapis.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-1", "type": "base"}
+{"text": "Le chat s'assoit sur le tapis.", "language": "fr", "label": 0, "predicate": "asseoir", "group_id": "qneg-fr-1", "type": "paraphrase"}
+{"text": "Le chat n'est pas sur le tapis.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-1", "type": "counterfactual"}
+{"text": "C'est presque parfait.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-2", "type": "base"}
+{"text": "C'est presque idéal.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-2", "type": "paraphrase"}
+{"text": "C'est parfait.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-2", "type": "counterfactual"}
+{"text": "Arrête la voiture!", "language": "fr", "label": 0, "predicate": "arrêter", "group_id": "qneg-fr-3", "type": "base"}
+{"text": "Halte la voiture!", "language": "fr", "label": 0, "predicate": "halter", "group_id": "qneg-fr-3", "type": "paraphrase"}
+{"text": "N'arrête pas la voiture!", "language": "fr", "label": 0, "predicate": "arrêter", "group_id": "qneg-fr-3", "type": "counterfactual"}
+{"text": "Elle peut nager vite.", "language": "fr", "label": 0, "predicate": "nager", "group_id": "qneg-fr-4", "type": "base"}
+{"text": "Elle est capable de nager vite.", "language": "fr", "label": 0, "predicate": "nager", "group_id": "qneg-fr-4", "type": "paraphrase"}
+{"text": "Elle ne peut pas nager vite.", "language": "fr", "label": 0, "predicate": "nager", "group_id": "qneg-fr-4", "type": "counterfactual"}
+{"text": "La pluie a causé l'inondation.", "language": "fr", "label": 0, "predicate": "causer", "group_id": "qneg-fr-5", "type": "base"}
+{"text": "La pluie a mené à l'inondation.", "language": "fr", "label": 0, "predicate": "mener", "group_id": "qneg-fr-5", "type": "paraphrase"}
+{"text": "La pluie n'a pas causé l'inondation.", "language": "fr", "label": 0, "predicate": "causer", "group_id": "qneg-fr-5", "type": "counterfactual"}
+{"text": "Je suis arrivé avant toi.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-6", "type": "base"}
+{"text": "Je suis arrivé avant vous.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-6", "type": "paraphrase"}
+{"text": "Je suis arrivé après toi.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-6", "type": "counterfactual"}
+{"text": "C'est plus cher.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-7", "type": "base"}
+{"text": "Ça coûte plus.", "language": "fr", "label": 0, "predicate": "coûter", "group_id": "qneg-fr-7", "type": "paraphrase"}
+{"text": "C'est moins cher.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-7", "type": "counterfactual"}
+{"text": "Je n'aime pas ça.", "language": "fr", "label": 0, "predicate": "aimer", "group_id": "qneg-fr-8", "type": "base"}
+{"text": "Je déteste ça.", "language": "fr", "label": 0, "predicate": "détester", "group_id": "qneg-fr-8", "type": "paraphrase"}
+{"text": "J'aime ça.", "language": "fr", "label": 0, "predicate": "aimer", "group_id": "qneg-fr-8", "type": "counterfactual"}
+{"text": "Elle doit partir maintenant.", "language": "fr", "label": 0, "predicate": "partir", "group_id": "qneg-fr-9", "type": "base"}
+{"text": "Elle doit s'en aller maintenant.", "language": "fr", "label": 0, "predicate": "partir", "group_id": "qneg-fr-9", "type": "paraphrase"}
+{"text": "Elle n'a pas besoin de partir maintenant.", "language": "fr", "label": 0, "predicate": "partir", "group_id": "qneg-fr-9", "type": "counterfactual"}
+{"text": "Puis-je entrer?", "language": "fr", "label": 0, "predicate": "entrer", "group_id": "qneg-fr-10", "type": "base"}
+{"text": "Puis-je venir?", "language": "fr", "label": 0, "predicate": "venir", "group_id": "qneg-fr-10", "type": "paraphrase"}
+{"text": "Je ne peux pas entrer.", "language": "fr", "label": 0, "predicate": "entrer", "group_id": "qneg-fr-10", "type": "counterfactual"}
+{"text": "Le livre est sur la table.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-11", "type": "base"}
+{"text": "Le livre repose sur la table.", "language": "fr", "label": 0, "predicate": "reposer", "group_id": "qneg-fr-11", "type": "paraphrase"}
+{"text": "Le livre n'est pas sur la table.", "language": "fr", "label": 0, "predicate": "être", "group_id": "qneg-fr-11", "type": "counterfactual"}
+{"text": "Il a failli tomber.", "language": "fr", "label": 0, "predicate": "tomber", "group_id": "qneg-fr-12", "type": "base"}
+{"text": "Il a presque tombé.", "language": "fr", "label": 0, "predicate": "tomber", "group_id": "qneg-fr-12", "type": "paraphrase"}
+{"text": "Il est tombé.", "language": "fr", "label": 0, "predicate": "tomber", "group_id": "qneg-fr-12", "type": "counterfactual"}
+{"text": "Elle a commencé à travailler.", "language": "fr", "label": 0, "predicate": "commencer", "group_id": "qneg-fr-13", "type": "base"}
+{"text": "Elle a débuté à travailler.", "language": "fr", "label": 0, "predicate": "débuter", "group_id": "qneg-fr-13", "type": "paraphrase"}
+{"text": "Elle a arrêté de travailler.", "language": "fr", "label": 0, "predicate": "arrêter", "group_id": "qneg-fr-13", "type": "counterfactual"}
+{"text": "Ils ont fini de manger.", "language": "fr", "label": 0, "predicate": "finir", "group_id": "qneg-fr-14", "type": "base"}
+{"text": "Ils ont terminé de manger.", "language": "fr", "label": 0, "predicate": "terminer", "group_id": "qneg-fr-14", "type": "paraphrase"}
+{"text": "Ils ont commencé à manger.", "language": "fr", "label": 0, "predicate": "commencer", "group_id": "qneg-fr-14", "type": "counterfactual"}
+{"text": "Il a continué à courir.", "language": "fr", "label": 0, "predicate": "continuer", "group_id": "qneg-fr-15", "type": "base"}
+{"text": "Il a poursuivi à courir.", "language": "fr", "label": 0, "predicate": "poursuivre", "group_id": "qneg-fr-15", "type": "paraphrase"}
+{"text": "Il a arrêté de courir.", "language": "fr", "label": 0, "predicate": "arrêter", "group_id": "qneg-fr-15", "type": "counterfactual"}
+{"text": "Elle a repris le travail.", "language": "fr", "label": 0, "predicate": "reprendre", "group_id": "qneg-fr-16", "type": "base"}
+{"text": "Elle a recommencé le travail.", "language": "fr", "label": 0, "predicate": "recommencer", "group_id": "qneg-fr-16", "type": "paraphrase"}
+{"text": "Elle a arrêté le travail.", "language": "fr", "label": 0, "predicate": "arrêter", "group_id": "qneg-fr-16", "type": "counterfactual"}
+{"text": "Il l'a fait de nouveau.", "language": "fr", "label": 0, "predicate": "faire", "group_id": "qneg-fr-17", "type": "base"}
+{"text": "Il l'a répété.", "language": "fr", "label": 0, "predicate": "répéter", "group_id": "qneg-fr-17", "type": "paraphrase"}
+{"text": "Il l'a fait une fois.", "language": "fr", "label": 0, "predicate": "faire", "group_id": "qneg-fr-17", "type": "counterfactual"}
+{"text": "Elle n'est toujours pas arrivée.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-18", "type": "base"}
+{"text": "Elle n'est pas encore arrivée.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-18", "type": "paraphrase"}
+{"text": "Elle est arrivée.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-18", "type": "counterfactual"}
+{"text": "Il n'a pas encore fini.", "language": "fr", "label": 0, "predicate": "finir", "group_id": "qneg-fr-19", "type": "base"}
+{"text": "Il n'a pas encore terminé.", "language": "fr", "label": 0, "predicate": "terminer", "group_id": "qneg-fr-19", "type": "paraphrase"}
+{"text": "Il a fini.", "language": "fr", "label": 0, "predicate": "finir", "group_id": "qneg-fr-19", "type": "counterfactual"}

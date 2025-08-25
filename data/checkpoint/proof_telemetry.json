@@ -1,0 +1,233 @@
+{
+  "proofs": [
+    {
+      "proof_id": "proof_1",
+      "success": true,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": false
+    },
+    {
+      "proof_id": "proof_2",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_3",
+      "success": false,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_4",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_5",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_6",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_7",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_8",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_9",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_10",
+      "success": false,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_11",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ALMOST_DO_TO_NEAR"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_12",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_13",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RESUME_TO_RESTARTED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_14",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true
+    }
+  ],
+  "summary": {
+    "total_tests": 14,
+    "total_success": 10,
+    "success_rate": 0.7142857142857143,
+    "avg_depth": 0.9,
+    "legacy_criteria_met": true,
+    "anti_theater_gates_passed": true,
+    "overall_health": "HEALTHY"
+  },
+  "health_metrics": {
+    "total_proofs": 14,
+    "successful_proofs": 10,
+    "derived_proof_rate": 0.8888888888888888,
+    "depth_gt_zero_rate": 1.0,
+    "hard_goal_success_rate": 0.6923076923076923,
+    "family_coverage": {
+      "aspect": 0.6,
+      "quantifier": 0.4
+    },
+    "required_family_compliance": 1.0,
+    "passes_dpr_gate": true,
+    "passes_depth_gate": true,
+    "passes_family_gates": true,
+    "passes_hard_goal_gate": true,
+    "passes_required_family_gate": true,
+    "overall_health": "HEALTHY"
+  }
+}

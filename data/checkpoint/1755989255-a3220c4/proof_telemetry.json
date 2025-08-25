@@ -1,0 +1,480 @@
+{
+  "test_cases": [
+    {
+      "text": "I have just finished the work.",
+      "goal": "RECENT_PAST(FINISH)",
+      "is_hard_goal": false,
+      "description": "Raw fact matching (theater code risk)"
+    },
+    {
+      "text": "I have just finished the work.",
+      "goal": "PAST(finish)",
+      "is_hard_goal": true,
+      "description": "Recent past aspect reasoning (derivation required)"
+    },
+    {
+      "text": "I have been working for three hours.",
+      "goal": "DURING(work, [now\u2212PT3H, now])",
+      "is_hard_goal": true,
+      "description": "Ongoing aspect reasoning (derivation required)"
+    },
+    {
+      "text": "Not all students study.",
+      "goal": "NOT EXISTS[x] study(x)",
+      "is_hard_goal": true,
+      "description": "Narrow quantifier scope reasoning (derivation required)"
+    },
+    {
+      "text": "No todos los ni\u00f1os juegan.",
+      "goal": "NOT EXISTS[x] jugar(x)",
+      "is_hard_goal": true,
+      "description": "ES narrow quantifier"
+    },
+    {
+      "text": "Tous les enfants ne jouent pas.",
+      "goal": "ALL[x] NOT jouer(x)",
+      "is_hard_goal": true,
+      "description": "FR wide quantifier"
+    },
+    {
+      "text": "No student arrived.",
+      "goal": "NOT EXISTS[x] arrive(x)",
+      "is_hard_goal": true,
+      "description": "EN none exists"
+    },
+    {
+      "text": "Acabo de salir.",
+      "goal": "PAST(salir) \u2227 close(now, salir)",
+      "is_hard_goal": true,
+      "description": "ES recent past"
+    },
+    {
+      "text": "Il est en train de travailler.",
+      "goal": "ONGOING(travailler)",
+      "is_hard_goal": true,
+      "description": "FR ongoing"
+    },
+    {
+      "text": "Lleva tres horas estudiando.",
+      "goal": "DURING(estudiar, [now\u2212PT3H, now])",
+      "is_hard_goal": true,
+      "description": "ES ongoing_for"
+    },
+    {
+      "text": "He almost fell.",
+      "goal": "\u00acfall \u2227 near(fall)",
+      "is_hard_goal": true,
+      "description": "EN almost_do"
+    },
+    {
+      "text": "Elle a cess\u00e9 de venir.",
+      "goal": "terminated(venir)",
+      "is_hard_goal": true,
+      "description": "FR stop"
+    },
+    {
+      "text": "Volvi\u00f3 a intentarlo.",
+      "goal": "restarted(intentar)",
+      "is_hard_goal": true,
+      "description": "ES resume/do again"
+    },
+    {
+      "text": "I stopped working.",
+      "goal": "terminated(work)",
+      "is_hard_goal": true,
+      "description": "EN stop"
+    },
+    {
+      "text": "Elle a recommenc\u00e9 \u00e0 travailler.",
+      "goal": "restarted(travailler)",
+      "is_hard_goal": true,
+      "description": "FR resume/do again"
+    },
+    {
+      "text": "All students do not arrive.",
+      "goal": "ALL[x] NOT arrive(x)",
+      "is_hard_goal": true,
+      "description": "EN wide quantifier"
+    },
+    {
+      "text": "Todos los estudiantes no estudian.",
+      "goal": "ALL[x] NOT estudiar(x)",
+      "is_hard_goal": true,
+      "description": "ES wide quantifier"
+    },
+    {
+      "text": "Estoy trabajando.",
+      "goal": "ONGOING(trabajar)",
+      "is_hard_goal": true,
+      "description": "ES ongoing"
+    },
+    {
+      "text": "Dej\u00f3 de comer.",
+      "goal": "terminated(comer)",
+      "is_hard_goal": true,
+      "description": "ES stop"
+    },
+    {
+      "text": "J'ai failli tomber.",
+      "goal": "\u00actomber \u2227 near(tomber)",
+      "is_hard_goal": true,
+      "description": "FR almost_do"
+    },
+    {
+      "text": "Elle travaille depuis trois heures.",
+      "goal": "DURING(travailler, [now\u2212PT3H, now])",
+      "is_hard_goal": true,
+      "description": "FR ongoing_for"
+    },
+    {
+      "text": "I have been to Paris.",
+      "goal": "ONGOING(travel)",
+      "is_hard_goal": true,
+      "description": "Guarded stative should fail"
+    }
+  ],
+  "proof_analyses": [
+    {
+      "proof_id": "proof_1",
+      "success": true,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": false
+    },
+    {
+      "proof_id": "proof_2",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": true,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_3",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_4",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_5",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_6",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_WIDE_TO_ALL_NOT"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_7",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "Q1_NARROW_TO_NOT_EXISTS"
+      ],
+      "families_used": [
+        "quantifier"
+      ],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_8",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_9",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_10",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ONGOING_FOR_TO_DURING"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_11",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ALMOST_DO_TO_NEAR"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_12",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_13",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RESUME_TO_RESTARTED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_14",
+      "success": true,
+      "steps": 1,
+      "depth": 1,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_15",
+      "success": false,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RESUME_TO_RESTARTED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_16",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_17",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": "quantifier",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_18",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_19",
+      "success": false,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_STOP_TO_TERMINATED"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_20",
+      "success": false,
+      "steps": 1,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_ALMOST_DO_TO_NEAR"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_21",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true
+    },
+    {
+      "proof_id": "proof_22",
+      "success": false,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": false,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": null,
+      "is_hard_goal": true
+    }
+  ],
+  "health_metrics": {
+    "total_proofs": 22,
+    "successful_proofs": 13,
+    "derived_proof_rate": 0.9166666666666666,
+    "depth_gt_zero_rate": 1.0,
+    "hard_goal_success_rate": 0.5714285714285714,
+    "family_coverage": {
+      "aspect": 0.6923076923076923,
+      "quantifier": 0.3076923076923077
+    },
+    "required_family_compliance": 1.0,
+    "passes_dpr_gate": true,
+    "passes_depth_gate": true,
+    "passes_family_gates": true,
+    "passes_hard_goal_gate": false,
+    "passes_required_family_gate": true,
+    "overall_health": "CONCERN"
+  },
+  "ci_check": {
+    "passes_all_gates": false,
+    "failures": [
+      "Hard goal success too low: 57.1% < 65.0%"
+    ],
+    "overall_health": "CONCERN",
+    "recommendation": "WARNING: Some reasoning quality issues detected. Review failing gates and improve rule coverage."
+  },
+  "summary": {
+    "total_tests": 22,
+    "total_success": 13,
+    "success_rate": 0.5909090909090909,
+    "avg_depth": 0.9230769230769231,
+    "legacy_criteria_met": false,
+    "anti_theater_gates_passed": false,
+    "overall_health": "CONCERN"
+  },
+  "run_id": "1755989255-a3220c4"
+}

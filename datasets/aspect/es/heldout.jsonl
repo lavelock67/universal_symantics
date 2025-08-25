@@ -1,0 +1,175 @@
+{"text": "Acabo de estudiar.", "language": "es", "label": 1, "group_id": "es-heldout-0", "type": "recent"}
+{"text": "Acabo de estudiar!", "language": "es", "label": 1, "group_id": "es-heldout-1", "type": "paraphrase"}
+{"text": "Acabo de trabajar.", "language": "es", "label": 1, "group_id": "es-heldout-2", "type": "recent"}
+{"text": "Acabo de trabajar!", "language": "es", "label": 1, "group_id": "es-heldout-3", "type": "paraphrase"}
+{"text": "Acabo de caer.", "language": "es", "label": 1, "group_id": "es-heldout-4", "type": "recent"}
+{"text": "Acabo de caer!", "language": "es", "label": 1, "group_id": "es-heldout-5", "type": "paraphrase"}
+{"text": "Acabo de leer.", "language": "es", "label": 1, "group_id": "es-heldout-6", "type": "recent"}
+{"text": "Acabo de leer!", "language": "es", "label": 1, "group_id": "es-heldout-7", "type": "paraphrase"}
+{"text": "Acabo de llegar.", "language": "es", "label": 1, "group_id": "es-heldout-8", "type": "recent"}
+{"text": "Acabo de llegar!", "language": "es", "label": 1, "group_id": "es-heldout-9", "type": "paraphrase"}
+{"text": "Acabo de intentar.", "language": "es", "label": 1, "group_id": "es-heldout-10", "type": "recent"}
+{"text": "Acabo de intentar!", "language": "es", "label": 1, "group_id": "es-heldout-11", "type": "paraphrase"}
+{"text": "Acabo de intentarlo.", "language": "es", "label": 1, "group_id": "es-heldout-12", "type": "recent"}
+{"text": "Lleva trabajando tres horas.", "language": "es", "label": 1, "group_id": "es-heldout-13", "type": "ongoing_for"}
+{"text": "Lleva tres horas trabajando.", "language": "es", "label": 1, "group_id": "es-heldout-14", "type": "paraphrase"}
+{"text": "Lleva leyendo dos semanas.", "language": "es", "label": 1, "group_id": "es-heldout-15", "type": "ongoing_for"}
+{"text": "Lleva dos semanas leyendo.", "language": "es", "label": 1, "group_id": "es-heldout-16", "type": "paraphrase"}
+{"text": "Lleva corriendo cinco minutos.", "language": "es", "label": 1, "group_id": "es-heldout-17", "type": "ongoing_for"}
+{"text": "Lleva cinco minutos corriendo.", "language": "es", "label": 1, "group_id": "es-heldout-18", "type": "paraphrase"}
+{"text": "Estoy haciendo.", "language": "es", "label": 1, "group_id": "es-heldout-19", "type": "ongoing"}
+{"text": "Estás estudiando.", "language": "es", "label": 1, "group_id": "es-heldout-20", "type": "ongoing"}
+{"text": "Está trabajando.", "language": "es", "label": 1, "group_id": "es-heldout-21", "type": "ongoing"}
+{"text": "Estamos leyendo.", "language": "es", "label": 1, "group_id": "es-heldout-22", "type": "ongoing"}
+{"text": "Casi me caigo.", "language": "es", "label": 1, "group_id": "es-heldout-23", "type": "almost"}
+{"text": "Por poco se cae.", "language": "es", "label": 1, "group_id": "es-heldout-24", "type": "almost"}
+{"text": "Dejó de fumar.", "language": "es", "label": 1, "group_id": "es-heldout-25", "type": "stop"}
+{"text": "Volvió a intentarlo.", "language": "es", "label": 1, "group_id": "es-heldout-26", "type": "resume"}
+{"text": "Lo hizo otra vez.", "language": "es", "label": 1, "group_id": "es-heldout-27", "type": "resume"}
+{"text": "Acabo de estudiar.", "language": "es", "label": 1, "group_id": "es-heldout-28", "type": "recent"}
+{"text": "Acabo de estudiar!", "language": "es", "label": 1, "group_id": "es-heldout-29", "type": "paraphrase"}
+{"text": "Acabo de trabajar.", "language": "es", "label": 1, "group_id": "es-heldout-30", "type": "recent"}
+{"text": "Acabo de trabajar!", "language": "es", "label": 1, "group_id": "es-heldout-31", "type": "paraphrase"}
+{"text": "Acabo de caer.", "language": "es", "label": 1, "group_id": "es-heldout-32", "type": "recent"}
+{"text": "Acabo de caer!", "language": "es", "label": 1, "group_id": "es-heldout-33", "type": "paraphrase"}
+{"text": "Acabo de leer.", "language": "es", "label": 1, "group_id": "es-heldout-34", "type": "recent"}
+{"text": "Acabo de leer!", "language": "es", "label": 1, "group_id": "es-heldout-35", "type": "paraphrase"}
+{"text": "Acabo de llegar.", "language": "es", "label": 1, "group_id": "es-heldout-36", "type": "recent"}
+{"text": "Acabo de llegar!", "language": "es", "label": 1, "group_id": "es-heldout-37", "type": "paraphrase"}
+{"text": "Acabo de intentar.", "language": "es", "label": 1, "group_id": "es-heldout-38", "type": "recent"}
+{"text": "Acabo de intentar!", "language": "es", "label": 1, "group_id": "es-heldout-39", "type": "paraphrase"}
+{"text": "Acabo de intentarlo.", "language": "es", "label": 1, "group_id": "es-heldout-40", "type": "recent"}
+{"text": "Lleva trabajando tres horas.", "language": "es", "label": 1, "group_id": "es-heldout-41", "type": "ongoing_for"}
+{"text": "Lleva tres horas trabajando.", "language": "es", "label": 1, "group_id": "es-heldout-42", "type": "paraphrase"}
+{"text": "Lleva leyendo dos semanas.", "language": "es", "label": 1, "group_id": "es-heldout-43", "type": "ongoing_for"}
+{"text": "Lleva dos semanas leyendo.", "language": "es", "label": 1, "group_id": "es-heldout-44", "type": "paraphrase"}
+{"text": "Lleva corriendo cinco minutos.", "language": "es", "label": 1, "group_id": "es-heldout-45", "type": "ongoing_for"}
+{"text": "Lleva cinco minutos corriendo.", "language": "es", "label": 1, "group_id": "es-heldout-46", "type": "paraphrase"}
+{"text": "Estoy haciendo.", "language": "es", "label": 1, "group_id": "es-heldout-47", "type": "ongoing"}
+{"text": "Estás estudiando.", "language": "es", "label": 1, "group_id": "es-heldout-48", "type": "ongoing"}
+{"text": "Está trabajando.", "language": "es", "label": 1, "group_id": "es-heldout-49", "type": "ongoing"}
+{"text": "Estamos leyendo.", "language": "es", "label": 1, "group_id": "es-heldout-50", "type": "ongoing"}
+{"text": "Casi me caigo.", "language": "es", "label": 1, "group_id": "es-heldout-51", "type": "almost"}
+{"text": "Por poco se cae.", "language": "es", "label": 1, "group_id": "es-heldout-52", "type": "almost"}
+{"text": "Dejó de fumar.", "language": "es", "label": 1, "group_id": "es-heldout-53", "type": "stop"}
+{"text": "Volvió a intentarlo.", "language": "es", "label": 1, "group_id": "es-heldout-54", "type": "resume"}
+{"text": "Lo hizo otra vez.", "language": "es", "label": 1, "group_id": "es-heldout-55", "type": "resume"}
+{"text": "Acabo de estudiar.", "language": "es", "label": 1, "group_id": "es-heldout-56", "type": "recent"}
+{"text": "Acabo de estudiar!", "language": "es", "label": 1, "group_id": "es-heldout-57", "type": "paraphrase"}
+{"text": "Acabo de trabajar.", "language": "es", "label": 1, "group_id": "es-heldout-58", "type": "recent"}
+{"text": "Acabo de trabajar!", "language": "es", "label": 1, "group_id": "es-heldout-59", "type": "paraphrase"}
+{"text": "Acabo de caer.", "language": "es", "label": 1, "group_id": "es-heldout-60", "type": "recent"}
+{"text": "Acabo de caer!", "language": "es", "label": 1, "group_id": "es-heldout-61", "type": "paraphrase"}
+{"text": "Acabo de leer.", "language": "es", "label": 1, "group_id": "es-heldout-62", "type": "recent"}
+{"text": "Acabo de leer!", "language": "es", "label": 1, "group_id": "es-heldout-63", "type": "paraphrase"}
+{"text": "Acabo de llegar.", "language": "es", "label": 1, "group_id": "es-heldout-64", "type": "recent"}
+{"text": "Acabo de llegar!", "language": "es", "label": 1, "group_id": "es-heldout-65", "type": "paraphrase"}
+{"text": "Acabo de intentar.", "language": "es", "label": 1, "group_id": "es-heldout-66", "type": "recent"}
+{"text": "Acabo de intentar!", "language": "es", "label": 1, "group_id": "es-heldout-67", "type": "paraphrase"}
+{"text": "Acabo de intentarlo.", "language": "es", "label": 1, "group_id": "es-heldout-68", "type": "recent"}
+{"text": "Lleva trabajando tres horas.", "language": "es", "label": 1, "group_id": "es-heldout-69", "type": "ongoing_for"}
+{"text": "Lleva tres horas trabajando.", "language": "es", "label": 1, "group_id": "es-heldout-70", "type": "paraphrase"}
+{"text": "Lleva leyendo dos semanas.", "language": "es", "label": 1, "group_id": "es-heldout-71", "type": "ongoing_for"}
+{"text": "Lleva dos semanas leyendo.", "language": "es", "label": 1, "group_id": "es-heldout-72", "type": "paraphrase"}
+{"text": "Lleva corriendo cinco minutos.", "language": "es", "label": 1, "group_id": "es-heldout-73", "type": "ongoing_for"}
+{"text": "Lleva cinco minutos corriendo.", "language": "es", "label": 1, "group_id": "es-heldout-74", "type": "paraphrase"}
+{"text": "Estoy haciendo.", "language": "es", "label": 1, "group_id": "es-heldout-75", "type": "ongoing"}
+{"text": "Estás estudiando.", "language": "es", "label": 1, "group_id": "es-heldout-76", "type": "ongoing"}
+{"text": "Está trabajando.", "language": "es", "label": 1, "group_id": "es-heldout-77", "type": "ongoing"}
+{"text": "Estamos leyendo.", "language": "es", "label": 1, "group_id": "es-heldout-78", "type": "ongoing"}
+{"text": "Casi me caigo.", "language": "es", "label": 1, "group_id": "es-heldout-79", "type": "almost"}
+{"text": "Por poco se cae.", "language": "es", "label": 1, "group_id": "es-heldout-80", "type": "almost"}
+{"text": "Dejó de fumar.", "language": "es", "label": 1, "group_id": "es-heldout-81", "type": "stop"}
+{"text": "Volvió a intentarlo.", "language": "es", "label": 1, "group_id": "es-heldout-82", "type": "resume"}
+{"text": "Lo hizo otra vez.", "language": "es", "label": 1, "group_id": "es-heldout-83", "type": "resume"}
+{"text": "Acabo de estudiar.", "language": "es", "label": 1, "group_id": "es-heldout-84", "type": "recent"}
+{"text": "Acabo de estudiar!", "language": "es", "label": 1, "group_id": "es-heldout-85", "type": "paraphrase"}
+{"text": "Acabo de trabajar.", "language": "es", "label": 1, "group_id": "es-heldout-86", "type": "recent"}
+{"text": "Acabo de trabajar!", "language": "es", "label": 1, "group_id": "es-heldout-87", "type": "paraphrase"}
+{"text": "Acabo de caer.", "language": "es", "label": 1, "group_id": "es-heldout-88", "type": "recent"}
+{"text": "Acabo de caer!", "language": "es", "label": 1, "group_id": "es-heldout-89", "type": "paraphrase"}
+{"text": "Acabo de leer.", "language": "es", "label": 1, "group_id": "es-heldout-90", "type": "recent"}
+{"text": "Acabo de leer!", "language": "es", "label": 1, "group_id": "es-heldout-91", "type": "paraphrase"}
+{"text": "Acabo de llegar.", "language": "es", "label": 1, "group_id": "es-heldout-92", "type": "recent"}
+{"text": "Acabo de llegar!", "language": "es", "label": 1, "group_id": "es-heldout-93", "type": "paraphrase"}
+{"text": "Acabo de intentar.", "language": "es", "label": 1, "group_id": "es-heldout-94", "type": "recent"}
+{"text": "Acabo de intentar!", "language": "es", "label": 1, "group_id": "es-heldout-95", "type": "paraphrase"}
+{"text": "Acabo de intentarlo.", "language": "es", "label": 1, "group_id": "es-heldout-96", "type": "recent"}
+{"text": "Lleva trabajando tres horas.", "language": "es", "label": 1, "group_id": "es-heldout-97", "type": "ongoing_for"}
+{"text": "Lleva tres horas trabajando.", "language": "es", "label": 1, "group_id": "es-heldout-98", "type": "paraphrase"}
+{"text": "Lleva leyendo dos semanas.", "language": "es", "label": 1, "group_id": "es-heldout-99", "type": "ongoing_for"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-100", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-101", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-102", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-103", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-104", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-105", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-106", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-107", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-108", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-109", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-110", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-111", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-112", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-113", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-114", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-115", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-116", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-117", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-118", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-119", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-120", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-121", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-122", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-123", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-124", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-125", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-126", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-127", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-128", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-129", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-130", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-131", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-132", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-133", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-134", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-135", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-136", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-137", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-138", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-139", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-140", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-141", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-142", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-143", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-144", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-145", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-146", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-147", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-148", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-149", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-150", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-151", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-152", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-153", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-154", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-155", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-156", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-157", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-158", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-159", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-160", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-161", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-162", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-163", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-164", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-165", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-166", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-167", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-168", "type": "negative"}
+{"text": "Estar en Madrid.", "language": "es", "label": 0, "group_id": "es-heldout-169", "type": "negative"}
+{"text": "Volver a casa.", "language": "es", "label": 0, "group_id": "es-heldout-170", "type": "negative"}
+{"text": "Voy en el tren.", "language": "es", "label": 0, "group_id": "es-heldout-171", "type": "negative"}
+{"text": "Llevar un libro.", "language": "es", "label": 0, "group_id": "es-heldout-172", "type": "negative"}
+{"text": "Casi perfecto.", "language": "es", "label": 0, "group_id": "es-heldout-173", "type": "negative"}
+{"text": "Dejar el coche.", "language": "es", "label": 0, "group_id": "es-heldout-174", "type": "negative"}

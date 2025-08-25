@@ -1,0 +1,135 @@
+{"text": "He estado estudiando durante horas.", "language": "es", "label": 1, "group_id": "apos-es-0", "type": "base"}
+{"text": "He estado trabajando durante horas.", "language": "es", "label": 1, "group_id": "apos-es-0", "type": "paraphrase"}
+{"text": "Estudié durante horas.", "language": "es", "label": 0, "group_id": "apos-es-0", "type": "counterfactual"}
+{"text": "Estoy estudiando ahora.", "language": "es", "label": 1, "group_id": "apos-es-1", "type": "base"}
+{"text": "Estoy trabajando ahora.", "language": "es", "label": 1, "group_id": "apos-es-1", "type": "paraphrase"}
+{"text": "Estudié ayer.", "language": "es", "label": 0, "group_id": "apos-es-1", "type": "counterfactual"}
+{"text": "Acabo de terminar.", "language": "es", "label": 1, "group_id": "apos-es-2", "type": "base"}
+{"text": "Acabo de completar.", "language": "es", "label": 1, "group_id": "apos-es-2", "type": "paraphrase"}
+{"text": "Terminaré pronto.", "language": "es", "label": 0, "group_id": "apos-es-2", "type": "counterfactual"}
+{"text": "Casi me caí.", "language": "es", "label": 1, "group_id": "apos-es-3", "type": "base"}
+{"text": "Casi me caí.", "language": "es", "label": 1, "group_id": "apos-es-3", "type": "paraphrase"}
+{"text": "Me caí.", "language": "es", "label": 0, "group_id": "apos-es-3", "type": "counterfactual"}
+{"text": "Dejé de fumar.", "language": "es", "label": 1, "group_id": "apos-es-4", "type": "base"}
+{"text": "Dejé de fumar.", "language": "es", "label": 1, "group_id": "apos-es-4", "type": "paraphrase"}
+{"text": "Empecé a fumar.", "language": "es", "label": 0, "group_id": "apos-es-4", "type": "counterfactual"}
+{"text": "Reanudé el trabajo.", "language": "es", "label": 1, "group_id": "apos-es-5", "type": "base"}
+{"text": "Reinicié el trabajo.", "language": "es", "label": 1, "group_id": "apos-es-5", "type": "paraphrase"}
+{"text": "Dejé de trabajar.", "language": "es", "label": 0, "group_id": "apos-es-5", "type": "counterfactual"}
+{"text": "Lo hice de nuevo.", "language": "es", "label": 1, "group_id": "apos-es-6", "type": "base"}
+{"text": "Lo repetí.", "language": "es", "label": 1, "group_id": "apos-es-6", "type": "paraphrase"}
+{"text": "Lo hice una vez.", "language": "es", "label": 0, "group_id": "apos-es-6", "type": "counterfactual"}
+{"text": "Aún no he llegado.", "language": "es", "label": 1, "group_id": "apos-es-7", "type": "base"}
+{"text": "No he llegado todavía.", "language": "es", "label": 1, "group_id": "apos-es-7", "type": "paraphrase"}
+{"text": "He llegado.", "language": "es", "label": 0, "group_id": "apos-es-7", "type": "counterfactual"}
+{"text": "Empecé a trabajar.", "language": "es", "label": 1, "group_id": "apos-es-8", "type": "base"}
+{"text": "Comencé a trabajar.", "language": "es", "label": 1, "group_id": "apos-es-8", "type": "paraphrase"}
+{"text": "Terminé de trabajar.", "language": "es", "label": 0, "group_id": "apos-es-8", "type": "counterfactual"}
+{"text": "Puedo nadar.", "language": "es", "label": 1, "group_id": "apos-es-9", "type": "base"}
+{"text": "Soy capaz de nadar.", "language": "es", "label": 1, "group_id": "apos-es-9", "type": "paraphrase"}
+{"text": "No puedo nadar.", "language": "es", "label": 0, "group_id": "apos-es-9", "type": "counterfactual"}
+{"text": "¿Puedo entrar?", "language": "es", "label": 1, "group_id": "apos-es-10", "type": "base"}
+{"text": "¿Me permite entrar?", "language": "es", "label": 1, "group_id": "apos-es-10", "type": "paraphrase"}
+{"text": "No puedo entrar.", "language": "es", "label": 0, "group_id": "apos-es-10", "type": "counterfactual"}
+{"text": "Debo irme ahora.", "language": "es", "label": 1, "group_id": "apos-es-11", "type": "base"}
+{"text": "Tengo que irme ahora.", "language": "es", "label": 1, "group_id": "apos-es-11", "type": "paraphrase"}
+{"text": "No tengo que irme ahora.", "language": "es", "label": 0, "group_id": "apos-es-11", "type": "counterfactual"}
+{"text": "La lluvia causó la inundación.", "language": "es", "label": 1, "group_id": "apos-es-12", "type": "base"}
+{"text": "La lluvia llevó a la inundación.", "language": "es", "label": 1, "group_id": "apos-es-12", "type": "paraphrase"}
+{"text": "La lluvia no causó la inundación.", "language": "es", "label": 0, "group_id": "apos-es-12", "type": "counterfactual"}
+{"text": "Llegué antes que tú.", "language": "es", "label": 1, "group_id": "apos-es-13", "type": "base"}
+{"text": "Llegué antes que tú.", "language": "es", "label": 1, "group_id": "apos-es-13", "type": "paraphrase"}
+{"text": "Llegué después que tú.", "language": "es", "label": 0, "group_id": "apos-es-13", "type": "counterfactual"}
+{"text": "Esto es más caro.", "language": "es", "label": 1, "group_id": "apos-es-14", "type": "base"}
+{"text": "Esto cuesta más.", "language": "es", "label": 1, "group_id": "apos-es-14", "type": "paraphrase"}
+{"text": "Esto es menos caro.", "language": "es", "label": 0, "group_id": "apos-es-14", "type": "counterfactual"}
+{"text": "El gato está en la alfombra.", "language": "es", "label": 0, "group_id": "aneg-es-0", "type": "base"}
+{"text": "El gato se sienta en la alfombra.", "language": "es", "label": 0, "group_id": "aneg-es-0", "type": "paraphrase"}
+{"text": "El gato no está en la alfombra.", "language": "es", "label": 0, "group_id": "aneg-es-0", "type": "counterfactual"}
+{"text": "Esto es casi perfecto.", "language": "es", "label": 0, "group_id": "aneg-es-1", "type": "base"}
+{"text": "Esto es casi ideal.", "language": "es", "label": 0, "group_id": "aneg-es-1", "type": "paraphrase"}
+{"text": "Esto es perfecto.", "language": "es", "label": 0, "group_id": "aneg-es-1", "type": "counterfactual"}
+{"text": "¡Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-2", "type": "base"}
+{"text": "¡Detén el coche!", "language": "es", "label": 0, "group_id": "aneg-es-2", "type": "paraphrase"}
+{"text": "¡No pares el coche!", "language": "es", "label": 0, "group_id": "aneg-es-2", "type": "counterfactual"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-3", "type": "base"}
+{"text": "Fui a París.", "language": "es", "label": 0, "group_id": "aneg-es-3", "type": "paraphrase"}
+{"text": "No he estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-3", "type": "counterfactual"}
+{"text": "No me gusta esto.", "language": "es", "label": 0, "group_id": "aneg-es-4", "type": "base"}
+{"text": "Me disgusta esto.", "language": "es", "label": 0, "group_id": "aneg-es-4", "type": "paraphrase"}
+{"text": "Me gusta esto.", "language": "es", "label": 0, "group_id": "aneg-es-4", "type": "counterfactual"}
+{"text": "El libro está en la mesa.", "language": "es", "label": 0, "group_id": "aneg-es-5", "type": "base"}
+{"text": "El libro yace en la mesa.", "language": "es", "label": 0, "group_id": "aneg-es-5", "type": "paraphrase"}
+{"text": "El libro no está en la mesa.", "language": "es", "label": 0, "group_id": "aneg-es-5", "type": "counterfactual"}
+{"text": "Él casi se cayó.", "language": "es", "label": 0, "group_id": "aneg-es-6", "type": "base"}
+{"text": "Él casi se cayó.", "language": "es", "label": 0, "group_id": "aneg-es-6", "type": "paraphrase"}
+{"text": "Él se cayó.", "language": "es", "label": 0, "group_id": "aneg-es-6", "type": "counterfactual"}
+{"text": "Ella empezó a trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-7", "type": "base"}
+{"text": "Ella comenzó a trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-7", "type": "paraphrase"}
+{"text": "Ella dejó de trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-7", "type": "counterfactual"}
+{"text": "Terminaron de comer.", "language": "es", "label": 0, "group_id": "aneg-es-8", "type": "base"}
+{"text": "Completaron de comer.", "language": "es", "label": 0, "group_id": "aneg-es-8", "type": "paraphrase"}
+{"text": "Empezaron a comer.", "language": "es", "label": 0, "group_id": "aneg-es-8", "type": "counterfactual"}
+{"text": "Él siguió corriendo.", "language": "es", "label": 0, "group_id": "aneg-es-9", "type": "base"}
+{"text": "Él continuó corriendo.", "language": "es", "label": 0, "group_id": "aneg-es-9", "type": "paraphrase"}
+{"text": "Él dejó de correr.", "language": "es", "label": 0, "group_id": "aneg-es-9", "type": "counterfactual"}
+{"text": "Ella reanudó el trabajo.", "language": "es", "label": 0, "group_id": "aneg-es-10", "type": "base"}
+{"text": "Ella reinició el trabajo.", "language": "es", "label": 0, "group_id": "aneg-es-10", "type": "paraphrase"}
+{"text": "Ella dejó de trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-10", "type": "counterfactual"}
+{"text": "Él lo hizo de nuevo.", "language": "es", "label": 0, "group_id": "aneg-es-11", "type": "base"}
+{"text": "Él lo repitió.", "language": "es", "label": 0, "group_id": "aneg-es-11", "type": "paraphrase"}
+{"text": "Él lo hizo una vez.", "language": "es", "label": 0, "group_id": "aneg-es-11", "type": "counterfactual"}
+{"text": "Ella aún no ha llegado.", "language": "es", "label": 0, "group_id": "aneg-es-12", "type": "base"}
+{"text": "Ella no ha llegado todavía.", "language": "es", "label": 0, "group_id": "aneg-es-12", "type": "paraphrase"}
+{"text": "Ella ha llegado.", "language": "es", "label": 0, "group_id": "aneg-es-12", "type": "counterfactual"}
+{"text": "Él no ha terminado todavía.", "language": "es", "label": 0, "group_id": "aneg-es-13", "type": "base"}
+{"text": "Él no ha completado todavía.", "language": "es", "label": 0, "group_id": "aneg-es-13", "type": "paraphrase"}
+{"text": "Él ha terminado.", "language": "es", "label": 0, "group_id": "aneg-es-13", "type": "counterfactual"}
+{"text": "Ella puede nadar rápido.", "language": "es", "label": 0, "group_id": "aneg-es-14", "type": "base"}
+{"text": "Ella es capaz de nadar rápido.", "language": "es", "label": 0, "group_id": "aneg-es-14", "type": "paraphrase"}
+{"text": "Ella no puede nadar rápido.", "language": "es", "label": 0, "group_id": "aneg-es-14", "type": "counterfactual"}
+{"text": "La lluvia causó la inundación.", "language": "es", "label": 0, "group_id": "aneg-es-15", "type": "base"}
+{"text": "La lluvia llevó a la inundación.", "language": "es", "label": 0, "group_id": "aneg-es-15", "type": "paraphrase"}
+{"text": "La lluvia no causó la inundación.", "language": "es", "label": 0, "group_id": "aneg-es-15", "type": "counterfactual"}
+{"text": "Llegué antes que tú.", "language": "es", "label": 0, "group_id": "aneg-es-16", "type": "base"}
+{"text": "Llegué antes que tú.", "language": "es", "label": 0, "group_id": "aneg-es-16", "type": "paraphrase"}
+{"text": "Llegué después que tú.", "language": "es", "label": 0, "group_id": "aneg-es-16", "type": "counterfactual"}
+{"text": "Esto es más caro.", "language": "es", "label": 0, "group_id": "aneg-es-17", "type": "base"}
+{"text": "Esto cuesta más.", "language": "es", "label": 0, "group_id": "aneg-es-17", "type": "paraphrase"}
+{"text": "Esto es menos caro.", "language": "es", "label": 0, "group_id": "aneg-es-17", "type": "counterfactual"}
+{"text": "No me gusta esto.", "language": "es", "label": 0, "group_id": "aneg-es-18", "type": "base"}
+{"text": "Me disgusta esto.", "language": "es", "label": 0, "group_id": "aneg-es-18", "type": "paraphrase"}
+{"text": "Me gusta esto.", "language": "es", "label": 0, "group_id": "aneg-es-18", "type": "counterfactual"}
+{"text": "Ella debe irse ahora.", "language": "es", "label": 0, "group_id": "aneg-es-19", "type": "base"}
+{"text": "Ella tiene que irse ahora.", "language": "es", "label": 0, "group_id": "aneg-es-19", "type": "paraphrase"}
+{"text": "Ella no tiene que irse ahora.", "language": "es", "label": 0, "group_id": "aneg-es-19", "type": "counterfactual"}
+{"text": "¿Puedo entrar?", "language": "es", "label": 0, "group_id": "aneg-es-20", "type": "base"}
+{"text": "¿Me permite entrar?", "language": "es", "label": 0, "group_id": "aneg-es-20", "type": "paraphrase"}
+{"text": "No puedo entrar.", "language": "es", "label": 0, "group_id": "aneg-es-20", "type": "counterfactual"}
+{"text": "El libro está en la mesa.", "language": "es", "label": 0, "group_id": "aneg-es-21", "type": "base"}
+{"text": "El libro yace en la mesa.", "language": "es", "label": 0, "group_id": "aneg-es-21", "type": "paraphrase"}
+{"text": "El libro no está en la mesa.", "language": "es", "label": 0, "group_id": "aneg-es-21", "type": "counterfactual"}
+{"text": "Él casi se cayó.", "language": "es", "label": 0, "group_id": "aneg-es-22", "type": "base"}
+{"text": "Él casi se cayó.", "language": "es", "label": 0, "group_id": "aneg-es-22", "type": "paraphrase"}
+{"text": "Él se cayó.", "language": "es", "label": 0, "group_id": "aneg-es-22", "type": "counterfactual"}
+{"text": "Ella empezó a trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-23", "type": "base"}
+{"text": "Ella comenzó a trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-23", "type": "paraphrase"}
+{"text": "Ella dejó de trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-23", "type": "counterfactual"}
+{"text": "Terminaron de comer.", "language": "es", "label": 0, "group_id": "aneg-es-24", "type": "base"}
+{"text": "Completaron de comer.", "language": "es", "label": 0, "group_id": "aneg-es-24", "type": "paraphrase"}
+{"text": "Empezaron a comer.", "language": "es", "label": 0, "group_id": "aneg-es-24", "type": "counterfactual"}
+{"text": "Él siguió corriendo.", "language": "es", "label": 0, "group_id": "aneg-es-25", "type": "base"}
+{"text": "Él continuó corriendo.", "language": "es", "label": 0, "group_id": "aneg-es-25", "type": "paraphrase"}
+{"text": "Él dejó de correr.", "language": "es", "label": 0, "group_id": "aneg-es-25", "type": "counterfactual"}
+{"text": "Ella reanudó el trabajo.", "language": "es", "label": 0, "group_id": "aneg-es-26", "type": "base"}
+{"text": "Ella reinició el trabajo.", "language": "es", "label": 0, "group_id": "aneg-es-26", "type": "paraphrase"}
+{"text": "Ella dejó de trabajar.", "language": "es", "label": 0, "group_id": "aneg-es-26", "type": "counterfactual"}
+{"text": "Él lo hizo de nuevo.", "language": "es", "label": 0, "group_id": "aneg-es-27", "type": "base"}
+{"text": "Él lo repitió.", "language": "es", "label": 0, "group_id": "aneg-es-27", "type": "paraphrase"}
+{"text": "Él lo hizo una vez.", "language": "es", "label": 0, "group_id": "aneg-es-27", "type": "counterfactual"}
+{"text": "Ella aún no ha llegado.", "language": "es", "label": 0, "group_id": "aneg-es-28", "type": "base"}
+{"text": "Ella no ha llegado todavía.", "language": "es", "label": 0, "group_id": "aneg-es-28", "type": "paraphrase"}
+{"text": "Ella ha llegado.", "language": "es", "label": 0, "group_id": "aneg-es-28", "type": "counterfactual"}
+{"text": "Él no ha terminado todavía.", "language": "es", "label": 0, "group_id": "aneg-es-29", "type": "base"}
+{"text": "Él no ha completado todavía.", "language": "es", "label": 0, "group_id": "aneg-es-29", "type": "paraphrase"}
+{"text": "Él ha terminado.", "language": "es", "label": 0, "group_id": "aneg-es-29", "type": "counterfactual"}

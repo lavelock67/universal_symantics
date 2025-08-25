@@ -1,0 +1,206 @@
+{
+  "languages": {
+    "en": {
+      "items": 1500,
+      "successes": 715,
+      "success_rate": 0.4766666666666667,
+      "median_depth": 1,
+      "family_coverage_A1": 0.6674445740956826,
+      "derived_proof_rate": 0.8,
+      "depth_gt_zero_rate": 0.8,
+      "hard_goal_success_rate": 0.6674445740956826,
+      "derived_proof_rate_hard": 1.0,
+      "depth_gt_zero_rate_hard": 1.0
+    },
+    "es": {
+      "items": 1500,
+      "successes": 666,
+      "success_rate": 0.444,
+      "median_depth": 1.0,
+      "family_coverage_A1": 0.7995198079231692,
+      "derived_proof_rate": 1.0,
+      "depth_gt_zero_rate": 1.0,
+      "hard_goal_success_rate": 0.7995198079231692,
+      "derived_proof_rate_hard": 1.0,
+      "depth_gt_zero_rate_hard": 1.0
+    },
+    "fr": {
+      "items": 1500,
+      "successes": 833,
+      "success_rate": 0.5553333333333333,
+      "median_depth": 1,
+      "family_coverage_A1": 0.7995198079231692,
+      "derived_proof_rate": 0.7995198079231692,
+      "depth_gt_zero_rate": 0.7995198079231692,
+      "hard_goal_success_rate": 0.7995198079231692,
+      "derived_proof_rate_hard": 1.0,
+      "depth_gt_zero_rate_hard": 1.0
+    }
+  },
+  "overall": {
+    "top_error_clusters": [
+      {
+        "cluster": "fail:ongoing:es:A1_ONGOING_TO_DURING_OPEN",
+        "count": 167
+      },
+      {
+        "cluster": "fail:almost_do:es:A1_ALMOST_DO_TO_NEAR",
+        "count": 167
+      },
+      {
+        "cluster": "fail:recent_past:fr:A1_RECENT_PAST_TO_PAST_CLOSE",
+        "count": 167
+      },
+      {
+        "cluster": "fail:recent_past:en:A1_RECENT_PAST_TO_PAST_CLOSE",
+        "count": 143
+      },
+      {
+        "cluster": "fail:resume:en:A1_RESUME_TO_RESTARTED",
+        "count": 142
+      }
+    ],
+    "example_traces": [
+      {
+        "lang": "en",
+        "type": "recent_past",
+        "text": "She had just arrived.",
+        "goal": "PAST(arriv)",
+        "rules_used": [
+          "A1_RECENT_PAST_TO_PAST_CLOSE"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "resume",
+        "text": "She resumed running.",
+        "goal": "restarted(run)",
+        "rules_used": [
+          "A1_RESUME_TO_RESTARTED"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "recent_past",
+        "text": "She had just arrived.",
+        "goal": "PAST(arriv)",
+        "rules_used": [
+          "A1_RECENT_PAST_TO_PAST_CLOSE"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "resume",
+        "text": "She resumed running.",
+        "goal": "restarted(run)",
+        "rules_used": [
+          "A1_RESUME_TO_RESTARTED"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "recent_past",
+        "text": "She had just arrived.",
+        "goal": "PAST(arriv)",
+        "rules_used": [
+          "A1_RECENT_PAST_TO_PAST_CLOSE"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "resume",
+        "text": "She resumed running.",
+        "goal": "restarted(run)",
+        "rules_used": [
+          "A1_RESUME_TO_RESTARTED"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "recent_past",
+        "text": "She had just arrived.",
+        "goal": "PAST(arriv)",
+        "rules_used": [
+          "A1_RECENT_PAST_TO_PAST_CLOSE"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "resume",
+        "text": "She resumed running.",
+        "goal": "restarted(run)",
+        "rules_used": [
+          "A1_RESUME_TO_RESTARTED"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "recent_past",
+        "text": "She had just arrived.",
+        "goal": "PAST(arriv)",
+        "rules_used": [
+          "A1_RECENT_PAST_TO_PAST_CLOSE"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      },
+      {
+        "lang": "en",
+        "type": "resume",
+        "text": "She resumed running.",
+        "goal": "restarted(run)",
+        "rules_used": [
+          "A1_RESUME_TO_RESTARTED"
+        ],
+        "families": [
+          "aspect"
+        ],
+        "depth": 0,
+        "from_facts_only": false
+      }
+    ]
+  }
+}

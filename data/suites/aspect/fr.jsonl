@@ -1,0 +1,180 @@
+{"text": "Il a recommencé à tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-0", "type": "resume"}
+{"text": "Il a recommencé à tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-0", "type": "paraphrase"}
+{"text": "Elle a cessé de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-1", "type": "stop"}
+{"text": "Elle a cessé de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-1", "type": "paraphrase"}
+{"text": "Il a recommencé à lire.", "language": "fr", "label": 1, "group_id": "apos-fr-2", "type": "resume"}
+{"text": "Il a recommencé à lire!", "language": "fr", "label": 1, "group_id": "apos-fr-2", "type": "paraphrase"}
+{"text": "Je viens de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-3", "type": "recent"}
+{"text": "Je viens de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-3", "type": "paraphrase"}
+{"text": "J'ai failli venir.", "language": "fr", "label": 1, "group_id": "apos-fr-4", "type": "almost"}
+{"text": "J'ai failli venir!", "language": "fr", "label": 1, "group_id": "apos-fr-4", "type": "paraphrase"}
+{"text": "Elle a cessé de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-5", "type": "stop"}
+{"text": "Elle a cessé de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-5", "type": "paraphrase"}
+{"text": "Il est en train de arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-6", "type": "ongoing"}
+{"text": "Il est en train de arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-6", "type": "paraphrase"}
+{"text": "Il est en train de arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-7", "type": "ongoing_for"}
+{"text": "Il est en train de arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-7", "type": "paraphrase"}
+{"text": "Il a recommencé à travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-8", "type": "resume"}
+{"text": "Il a recommencé à travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-8", "type": "paraphrase"}
+{"text": "Il a recommencé à lire.", "language": "fr", "label": 1, "group_id": "apos-fr-9", "type": "resume"}
+{"text": "Il a recommencé à lire!", "language": "fr", "label": 1, "group_id": "apos-fr-9", "type": "paraphrase"}
+{"text": "Il a recommencé à tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-10", "type": "resume"}
+{"text": "Il a recommencé à tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-10", "type": "paraphrase"}
+{"text": "Je viens de lire.", "language": "fr", "label": 1, "group_id": "apos-fr-11", "type": "recent"}
+{"text": "Je viens de lire!", "language": "fr", "label": 1, "group_id": "apos-fr-11", "type": "paraphrase"}
+{"text": "Je viens de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-12", "type": "recent"}
+{"text": "Je viens de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-12", "type": "paraphrase"}
+{"text": "Il est en train de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-13", "type": "ongoing"}
+{"text": "Il est en train de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-13", "type": "paraphrase"}
+{"text": "Je viens de lire.", "language": "fr", "label": 1, "group_id": "apos-fr-14", "type": "recent"}
+{"text": "Je viens de lire!", "language": "fr", "label": 1, "group_id": "apos-fr-14", "type": "paraphrase"}
+{"text": "Il est en train de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-15", "type": "ongoing_for"}
+{"text": "Il est en train de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-15", "type": "paraphrase"}
+{"text": "Il est en train de arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-16", "type": "ongoing_for"}
+{"text": "Il est en train de arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-16", "type": "paraphrase"}
+{"text": "J'ai failli lire.", "language": "fr", "label": 1, "group_id": "apos-fr-17", "type": "almost"}
+{"text": "J'ai failli lire!", "language": "fr", "label": 1, "group_id": "apos-fr-17", "type": "paraphrase"}
+{"text": "Il a recommencé à tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-18", "type": "resume"}
+{"text": "Il a recommencé à tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-18", "type": "paraphrase"}
+{"text": "J'ai failli arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-19", "type": "almost"}
+{"text": "J'ai failli arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-19", "type": "paraphrase"}
+{"text": "Il a recommencé à arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-20", "type": "resume"}
+{"text": "Il a recommencé à arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-20", "type": "paraphrase"}
+{"text": "J'ai failli venir.", "language": "fr", "label": 1, "group_id": "apos-fr-21", "type": "almost"}
+{"text": "J'ai failli venir!", "language": "fr", "label": 1, "group_id": "apos-fr-21", "type": "paraphrase"}
+{"text": "J'ai failli travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-22", "type": "almost"}
+{"text": "J'ai failli travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-22", "type": "paraphrase"}
+{"text": "J'ai failli arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-23", "type": "almost"}
+{"text": "J'ai failli arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-23", "type": "paraphrase"}
+{"text": "Je viens de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-24", "type": "recent"}
+{"text": "Je viens de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-24", "type": "paraphrase"}
+{"text": "Il est en train de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-25", "type": "ongoing_for"}
+{"text": "Il est en train de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-25", "type": "paraphrase"}
+{"text": "J'ai failli lire.", "language": "fr", "label": 1, "group_id": "apos-fr-26", "type": "almost"}
+{"text": "J'ai failli lire!", "language": "fr", "label": 1, "group_id": "apos-fr-26", "type": "paraphrase"}
+{"text": "Il est en train de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-27", "type": "ongoing"}
+{"text": "Il est en train de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-27", "type": "paraphrase"}
+{"text": "Il a recommencé à travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-28", "type": "resume"}
+{"text": "Il a recommencé à travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-28", "type": "paraphrase"}
+{"text": "Elle a cessé de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-29", "type": "stop"}
+{"text": "Elle a cessé de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-29", "type": "paraphrase"}
+{"text": "Je viens de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-30", "type": "recent"}
+{"text": "Je viens de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-30", "type": "paraphrase"}
+{"text": "Il est en train de lire.", "language": "fr", "label": 1, "group_id": "apos-fr-31", "type": "ongoing"}
+{"text": "Il est en train de lire!", "language": "fr", "label": 1, "group_id": "apos-fr-31", "type": "paraphrase"}
+{"text": "Je viens de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-32", "type": "recent"}
+{"text": "Je viens de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-32", "type": "paraphrase"}
+{"text": "Je viens de lire.", "language": "fr", "label": 1, "group_id": "apos-fr-33", "type": "recent"}
+{"text": "Je viens de lire!", "language": "fr", "label": 1, "group_id": "apos-fr-33", "type": "paraphrase"}
+{"text": "Il a recommencé à venir.", "language": "fr", "label": 1, "group_id": "apos-fr-34", "type": "resume"}
+{"text": "Il a recommencé à venir!", "language": "fr", "label": 1, "group_id": "apos-fr-34", "type": "paraphrase"}
+{"text": "Je viens de arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-35", "type": "recent"}
+{"text": "Je viens de arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-35", "type": "paraphrase"}
+{"text": "Il est en train de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-36", "type": "ongoing"}
+{"text": "Il est en train de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-36", "type": "paraphrase"}
+{"text": "Il est en train de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-37", "type": "ongoing_for"}
+{"text": "Il est en train de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-37", "type": "paraphrase"}
+{"text": "Il est en train de arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-38", "type": "ongoing_for"}
+{"text": "Il est en train de arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-38", "type": "paraphrase"}
+{"text": "Elle a cessé de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-39", "type": "stop"}
+{"text": "Elle a cessé de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-39", "type": "paraphrase"}
+{"text": "Elle a cessé de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-40", "type": "stop"}
+{"text": "Elle a cessé de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-40", "type": "paraphrase"}
+{"text": "Il est en train de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-41", "type": "ongoing_for"}
+{"text": "Il est en train de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-41", "type": "paraphrase"}
+{"text": "Il est en train de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-42", "type": "ongoing_for"}
+{"text": "Il est en train de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-42", "type": "paraphrase"}
+{"text": "Je viens de arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-43", "type": "recent"}
+{"text": "Je viens de arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-43", "type": "paraphrase"}
+{"text": "Il est en train de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-44", "type": "ongoing_for"}
+{"text": "Il est en train de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-44", "type": "paraphrase"}
+{"text": "Elle a cessé de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-45", "type": "stop"}
+{"text": "Elle a cessé de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-45", "type": "paraphrase"}
+{"text": "Il est en train de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-46", "type": "ongoing_for"}
+{"text": "Il est en train de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-46", "type": "paraphrase"}
+{"text": "Il a recommencé à travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-47", "type": "resume"}
+{"text": "Il a recommencé à travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-47", "type": "paraphrase"}
+{"text": "Il est en train de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-48", "type": "ongoing_for"}
+{"text": "Il est en train de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-48", "type": "paraphrase"}
+{"text": "Il est en train de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-49", "type": "ongoing"}
+{"text": "Il est en train de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-49", "type": "paraphrase"}
+{"text": "Elle a cessé de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-50", "type": "stop"}
+{"text": "Elle a cessé de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-50", "type": "paraphrase"}
+{"text": "Je viens de tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-51", "type": "recent"}
+{"text": "Je viens de tomber!", "language": "fr", "label": 1, "group_id": "apos-fr-51", "type": "paraphrase"}
+{"text": "Il est en train de venir.", "language": "fr", "label": 1, "group_id": "apos-fr-52", "type": "ongoing"}
+{"text": "Il est en train de venir!", "language": "fr", "label": 1, "group_id": "apos-fr-52", "type": "paraphrase"}
+{"text": "Il est en train de travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-53", "type": "ongoing_for"}
+{"text": "Il est en train de travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-53", "type": "paraphrase"}
+{"text": "Elle a cessé de lire.", "language": "fr", "label": 1, "group_id": "apos-fr-54", "type": "stop"}
+{"text": "Elle a cessé de lire!", "language": "fr", "label": 1, "group_id": "apos-fr-54", "type": "paraphrase"}
+{"text": "Il a recommencé à travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-55", "type": "resume"}
+{"text": "Il a recommencé à travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-55", "type": "paraphrase"}
+{"text": "J'ai failli travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-56", "type": "almost"}
+{"text": "J'ai failli travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-56", "type": "paraphrase"}
+{"text": "Il est en train de lire.", "language": "fr", "label": 1, "group_id": "apos-fr-57", "type": "ongoing"}
+{"text": "Il est en train de lire!", "language": "fr", "label": 1, "group_id": "apos-fr-57", "type": "paraphrase"}
+{"text": "Elle a cessé de arriver.", "language": "fr", "label": 1, "group_id": "apos-fr-58", "type": "stop"}
+{"text": "Elle a cessé de arriver!", "language": "fr", "label": 1, "group_id": "apos-fr-58", "type": "paraphrase"}
+{"text": "J'ai failli travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-59", "type": "almost"}
+{"text": "J'ai failli travailler!", "language": "fr", "label": 1, "group_id": "apos-fr-59", "type": "paraphrase"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-60", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-61", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-62", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-63", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-64", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-65", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-66", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-67", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-68", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-69", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-70", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-71", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-72", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-73", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-74", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-75", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-76", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-77", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-78", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-79", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-80", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-81", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-82", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-83", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-84", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-85", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-86", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-87", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-88", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-89", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-90", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-91", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-92", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-93", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-94", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-95", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-96", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-97", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-98", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-99", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-100", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-101", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-102", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-103", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-104", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-105", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-106", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-107", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-108", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-109", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-110", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-111", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-112", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-113", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-114", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-115", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-116", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-117", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-118", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-119", "type": "negative"}

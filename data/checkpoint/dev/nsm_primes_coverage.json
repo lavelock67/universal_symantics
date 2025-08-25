@@ -1,0 +1,134 @@
+{
+  "registry": [
+    {
+      "name": "NOT",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "ALL",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "NO",
+      "wired": false,
+      "detector_wired": false,
+      "rules_wired": false
+    },
+    {
+      "name": "RECENT_PAST",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "ONGOING",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "ONGOING_FOR",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "DURING",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "PAST",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "NEAR",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "STOP",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "RESUME",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "DO_AGAIN",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "STILL",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "NOT_YET",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "EXPECT",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "CONTINUES",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "BEGUN",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "FINISHED",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "CAN",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "MAY",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    },
+    {
+      "name": "MUST",
+      "wired": true,
+      "detector_wired": true,
+      "rules_wired": true
+    }
+  ],
+  "covered_count": 20,
+  "target_total": 65,
+  "missing_count": 45,
+  "note": "Scaffold registry; expand to full 65 with exponents and suites."
+}

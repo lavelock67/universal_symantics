@@ -1,0 +1,204 @@
+[
+  {
+    "type": "false_negative",
+    "case": {
+      "input": "I am having just finished.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I am having just finished.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    "evidence": {
+      "triggers": [],
+      "ud_paths": [],
+      "rule_ids": [],
+      "confidence": 0.1,
+      "alt_readings": [],
+      "guards": [
+        "ABSTENTION"
+      ],
+      "notes": "Abstention: Negative guard triggered"
+    }
+  },
+  {
+    "type": "false_negative",
+    "case": {
+      "input": "She is having just arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She is having just arrived.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    "evidence": {
+      "triggers": [],
+      "ud_paths": [],
+      "rule_ids": [],
+      "confidence": 0.1,
+      "alt_readings": [],
+      "guards": [
+        "ABSTENTION"
+      ],
+      "notes": "Abstention: Negative guard triggered"
+    }
+  },
+  {
+    "type": "false_negative",
+    "case": {
+      "input": "They are having just left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They are having just left.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    "evidence": {
+      "triggers": [],
+      "ud_paths": [],
+      "rule_ids": [],
+      "confidence": 0.1,
+      "alt_readings": [],
+      "guards": [
+        "ABSTENTION"
+      ],
+      "notes": "Abstention: Negative guard triggered"
+    }
+  },
+  {
+    "type": "abstention",
+    "case": {
+      "input": "I am having just finished.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I am having just finished.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    "evidence": {
+      "triggers": [],
+      "ud_paths": [],
+      "rule_ids": [],
+      "confidence": 0.1,
+      "alt_readings": [],
+      "guards": [
+        "ABSTENTION"
+      ],
+      "notes": "Abstention: Negative guard triggered"
+    }
+  },
+  {
+    "type": "abstention",
+    "case": {
+      "input": "She is having just arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She is having just arrived.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    "evidence": {
+      "triggers": [],
+      "ud_paths": [],
+      "rule_ids": [],
+      "confidence": 0.1,
+      "alt_readings": [],
+      "guards": [
+        "ABSTENTION"
+      ],
+      "notes": "Abstention: Negative guard triggered"
+    }
+  },
+  {
+    "type": "ambiguous_quantifier",
+    "case": {
+      "input": "All children aren't playing.",
+      "language": "en"
+    },
+    "evidence": {
+      "predicate_lemma": "play",
+      "note": "AMBIG WIDE/NARROW"
+    }
+  },
+  {
+    "type": "ambiguous_quantifier",
+    "case": {
+      "input": "Each child doesn't like vegetables.",
+      "language": "en"
+    },
+    "evidence": {
+      "predicate_lemma": "like",
+      "note": "AMBIG WIDE/NARROW"
+    }
+  }
+]

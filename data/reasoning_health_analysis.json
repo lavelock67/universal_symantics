@@ -1,0 +1,124 @@
+{
+  "metrics": {
+    "total_proofs": 3,
+    "successful_proofs": 3,
+    "derived_proof_rate": 1.0,
+    "depth_gt_zero_rate": 1.0,
+    "hard_goal_success_rate": 1.0,
+    "family_coverage": {
+      "aspect": 0.3333333333333333,
+      "quantifier": 0.0
+    },
+    "required_family_compliance": 0.3333333333333333,
+    "passes_dpr_gate": true,
+    "passes_depth_gate": true,
+    "passes_family_gates": false,
+    "passes_hard_goal_gate": true,
+    "passes_required_family_gate": false,
+    "overall_health": "CONCERN"
+  },
+  "ci_check": {
+    "passes_all_gates": false,
+    "failures": [
+      "quantifier coverage too low: 0.0% < 30.0%",
+      "Required family compliance too low: 33.3% < 80.0%"
+    ],
+    "overall_health": "CONCERN",
+    "recommendation": "WARNING: Some reasoning quality issues detected. Review failing gates and improve rule coverage."
+  },
+  "hard_goals": [
+    {
+      "goal": "PAST(finish) \u2227 close(now,finish)",
+      "requires_family": "aspect",
+      "description": "Must derive from RECENT_PAST(finish) via A1 rule",
+      "setup_facts": [
+        "RECENT_PAST(finish)"
+      ],
+      "is_hard_goal": true
+    },
+    {
+      "goal": "DURING(work, now\u22123h..now)",
+      "requires_family": "aspect",
+      "description": "Must derive from ONGOING_FOR(work, 3h) via A1 rule",
+      "setup_facts": [
+        "ONGOING_FOR(work, 3h)"
+      ],
+      "is_hard_goal": true
+    },
+    {
+      "goal": "\u00acfinish \u2227 near(finish)",
+      "requires_family": "aspect",
+      "description": "Must derive from ALMOST_DO(finish) via A1 rule",
+      "setup_facts": [
+        "ALMOST_DO(finish)"
+      ],
+      "is_hard_goal": true
+    },
+    {
+      "goal": "NOT EXISTS[x] study(x)",
+      "requires_family": "quantifier",
+      "description": "Must derive from NARROW(\u00ac\u2200) via Q1 rule",
+      "setup_facts": [
+        "NARROW(\u00ac\u2200)"
+      ],
+      "is_hard_goal": true
+    },
+    {
+      "goal": "ALL[x] NOT study(x)",
+      "requires_family": "quantifier",
+      "description": "Must derive from WIDE(\u2200\u00ac) via Q1 rule",
+      "setup_facts": [
+        "WIDE(\u2200\u00ac)"
+      ],
+      "is_hard_goal": true
+    },
+    {
+      "goal": "RECENT_PAST(finish)",
+      "requires_family": null,
+      "description": "Raw fact match - should succeed immediately",
+      "setup_facts": [
+        "RECENT_PAST(finish)"
+      ],
+      "is_hard_goal": false
+    }
+  ],
+  "proof_analyses": [
+    {
+      "proof_id": "proof_1",
+      "success": true,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": "aspect",
+      "is_hard_goal": false
+    },
+    {
+      "proof_id": "proof_2",
+      "success": true,
+      "steps": 0,
+      "depth": 0,
+      "from_facts_only": true,
+      "rules_used": [],
+      "families_used": [],
+      "requires_family": "quantifier",
+      "is_hard_goal": false
+    },
+    {
+      "proof_id": "proof_3",
+      "success": true,
+      "steps": 2,
+      "depth": 2,
+      "from_facts_only": false,
+      "rules_used": [
+        "A1_RECENT_PAST_TO_PAST_CLOSE"
+      ],
+      "families_used": [
+        "aspect"
+      ],
+      "requires_family": "aspect",
+      "is_hard_goal": true
+    }
+  ]
+}

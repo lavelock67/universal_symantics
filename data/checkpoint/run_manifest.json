@@ -1,0 +1,60 @@
+{
+  "run_id": "1755987855-a3220c4",
+  "commit_sha": "a3220c43dc60a51ad086d3ec49b51ba71e22618a",
+  "branch": "main",
+  "datasets": {
+    "quantifiers": {
+      "en": {
+        "items_total": 240
+      },
+      "es": {
+        "items_total": 240
+      },
+      "fr": {
+        "items_total": 240
+      }
+    },
+    "aspect": {
+      "en": {
+        "items_total": 192
+      },
+      "es": {
+        "items_total": 175
+      },
+      "fr": {
+        "items_total": 175
+      }
+    }
+  },
+  "models_tools": {
+    "parser": "none (heuristic UD cues)",
+    "wsd": "none",
+    "nli": "none",
+    "sbert": "none"
+  },
+  "scales_thresholds": {
+    "calibration_tau": true,
+    "abstain_policy": "prob<tau",
+    "gates": {
+      "ece_overall": 0.05,
+      "ece_per_class": 0.08,
+      "fp_negatives": 0.01
+    }
+  },
+  "ci_image_ids": {
+    "evaluator_image": "heuristic_only",
+    "dataset_versions": {
+      "quantifiers": {
+        "en": "6eecd16927bd7fcb003179ebc16a0f57f3d874e8430cb2be0b4b1f1783be7dc7",
+        "es": "7751ccc8f05510a63324a24d294fadf0d476c015794ea337e50b649fd45704ce",
+        "fr": "c983f473558f6806b90f1ca0d168949907a5f04f7783ae461f34c26b95b80c7a"
+      },
+      "aspect": {
+        "en": "0db04f1037dfeb735d5f2f8ec442426cc89dc754ac74b1c59ef6a09e677e6902",
+        "es": "a4cfb843ede915c5b06585d3366979954be7eee2c543d1c7f1d005698f75d67c",
+        "fr": "81144b786d6921cfc73ed4d6913631f3791f8339999ce84179deacabb071feca"
+      },
+      "negatives": "a7b43e05d4919eea2a73bc281bd598f802c2575d829939c549669374ae41f601"
+    }
+  }
+}

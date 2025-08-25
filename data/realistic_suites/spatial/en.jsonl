@@ -1,0 +1,66 @@
+{"text": "The thing is in the place", "primes": ["THING", "IN"], "paraphrase": "The object is within the location", "counterfactual": "The thing is not in the place"}
+{"text": "I put the object on the table", "primes": ["I", "ON"], "paraphrase": "I placed the item upon the surface", "counterfactual": "I did not put the object on the table"}
+{"text": "Someone hid under the bed", "primes": ["SOMEONE", "UNDER"], "paraphrase": "A person concealed beneath the furniture", "counterfactual": "No one hid under the bed"}
+{"text": "People stood near the door", "primes": ["PEOPLE", "NEAR"], "paraphrase": "Individuals positioned close to the entrance", "counterfactual": "People did not stand near the door"}
+{"text": "The person went far away", "primes": ["BODY", "FAR"], "paraphrase": "The body traveled to a distant location", "counterfactual": "The person did not go far away"}
+{"text": "I found it inside the box", "primes": ["I", "INSIDE"], "paraphrase": "I located it within the container", "counterfactual": "I did not find it inside the box"}
+{"text": "You left the thing in the room", "primes": ["YOU", "THING", "IN"], "paraphrase": "You abandoned the object within the space", "counterfactual": "You did not leave the thing in the room"}
+{"text": "Someone placed the object on the shelf", "primes": ["SOMEONE", "ON"], "paraphrase": "A person positioned the item upon the surface", "counterfactual": "No one placed the object on the shelf"}
+{"text": "The body crawled under the table", "primes": ["BODY", "UNDER"], "paraphrase": "The person moved beneath the furniture", "counterfactual": "The body did not crawl under the table"}
+{"text": "People gathered near the building", "primes": ["PEOPLE", "NEAR"], "paraphrase": "Individuals assembled close to the structure", "counterfactual": "People did not gather near the building"}
+{"text": "I sent the thing far away", "primes": ["I", "THING", "FAR"], "paraphrase": "I dispatched the object to a distant location", "counterfactual": "I did not send the thing far away"}
+{"text": "You stored it inside the container", "primes": ["YOU", "INSIDE"], "paraphrase": "You kept it within the receptacle", "counterfactual": "You did not store it inside the container"}
+{"text": "Someone found the object in the drawer", "primes": ["SOMEONE", "IN"], "paraphrase": "A person located the item within the compartment", "counterfactual": "No one found the object in the drawer"}
+{"text": "The person put the thing on the floor", "primes": ["BODY", "THING", "ON"], "paraphrase": "The body placed the object upon the surface", "counterfactual": "The person did not put the thing on the floor"}
+{"text": "People hid under the bridge", "primes": ["PEOPLE", "UNDER"], "paraphrase": "Individuals concealed beneath the structure", "counterfactual": "People did not hide under the bridge"}
+{"text": "I stood near the window", "primes": ["I", "NEAR"], "paraphrase": "I positioned close to the opening", "counterfactual": "I did not stand near the window"}
+{"text": "You threw the thing far away", "primes": ["YOU", "THING", "FAR"], "paraphrase": "You propelled the object to a distant location", "counterfactual": "You did not throw the thing far away"}
+{"text": "Someone kept it inside the safe", "primes": ["SOMEONE", "INSIDE"], "paraphrase": "A person stored it within the secure container", "counterfactual": "No one kept it inside the safe"}
+{"text": "The body found the object in the pocket", "primes": ["BODY", "IN"], "paraphrase": "The person located the item within the compartment", "counterfactual": "The body did not find the object in the pocket"}
+{"text": "People placed the thing on the chair", "primes": ["PEOPLE", "THING", "ON"], "paraphrase": "Individuals positioned the object upon the furniture", "counterfactual": "People did not place the thing on the chair"}
+{"text": "I crawled under the fence", "primes": ["I", "UNDER"], "paraphrase": "I moved beneath the barrier", "counterfactual": "I did not crawl under the fence"}
+{"text": "You stood near the tree", "primes": ["YOU", "NEAR"], "paraphrase": "You positioned close to the plant", "counterfactual": "You did not stand near the tree"}
+{"text": "Someone sent the thing far away", "primes": ["SOMEONE", "THING", "FAR"], "paraphrase": "A person dispatched the object to a distant location", "counterfactual": "No one sent the thing far away"}
+{"text": "The person stored it inside the closet", "primes": ["BODY", "INSIDE"], "paraphrase": "The body kept it within the storage space", "counterfactual": "The person did not store it inside the closet"}
+{"text": "I found the object in the bag", "primes": ["I", "IN"], "paraphrase": "I located the item within the container", "counterfactual": "I did not find the object in the bag"}
+{"text": "People put the thing on the desk", "primes": ["PEOPLE", "THING", "ON"], "paraphrase": "Individuals placed the object upon the surface", "counterfactual": "People did not put the thing on the desk"}
+{"text": "You hid under the car", "primes": ["YOU", "UNDER"], "paraphrase": "You concealed beneath the vehicle", "counterfactual": "You did not hide under the car"}
+{"text": "Someone stood near the entrance", "primes": ["SOMEONE", "NEAR"], "paraphrase": "A person positioned close to the doorway", "counterfactual": "No one stood near the entrance"}
+{"text": "The body threw the thing far away", "primes": ["BODY", "THING", "FAR"], "paraphrase": "The person propelled the object to a distant location", "counterfactual": "The body did not throw the thing far away"}
+{"text": "I kept it inside the box", "primes": ["I", "INSIDE"], "paraphrase": "I stored it within the container", "counterfactual": "I did not keep it inside the box"}
+{"text": "You found the object in the room", "primes": ["YOU", "IN"], "paraphrase": "You located the item within the space", "counterfactual": "You did not find the object in the room"}
+{"text": "Someone placed the thing on the table", "primes": ["SOMEONE", "THING", "ON"], "paraphrase": "A person positioned the object upon the surface", "counterfactual": "No one placed the thing on the table"}
+{"text": "People crawled under the table", "primes": ["PEOPLE", "UNDER"], "paraphrase": "Individuals moved beneath the furniture", "counterfactual": "People did not crawl under the table"}
+{"text": "I stood near the door", "primes": ["I", "NEAR"], "paraphrase": "I positioned close to the entrance", "counterfactual": "I did not stand near the door"}
+{"text": "You sent the thing far away", "primes": ["YOU", "THING", "FAR"], "paraphrase": "You dispatched the object to a distant location", "counterfactual": "You did not send the thing far away"}
+{"text": "Someone stored it inside the drawer", "primes": ["SOMEONE", "INSIDE"], "paraphrase": "A person kept it within the compartment", "counterfactual": "No one stored it inside the drawer"}
+{"text": "The body found the object in the pocket", "primes": ["BODY", "IN"], "paraphrase": "The person located the item within the compartment", "counterfactual": "The body did not find the object in the pocket"}
+{"text": "I put the thing on the shelf", "primes": ["I", "THING", "ON"], "paraphrase": "I placed the object upon the surface", "counterfactual": "I did not put the thing on the shelf"}
+{"text": "You hid under the bed", "primes": ["YOU", "UNDER"], "paraphrase": "You concealed beneath the furniture", "counterfactual": "You did not hide under the bed"}
+{"text": "People stood near the window", "primes": ["PEOPLE", "NEAR"], "paraphrase": "Individuals positioned close to the opening", "counterfactual": "People did not stand near the window"}
+{"text": "Someone threw the thing far away", "primes": ["SOMEONE", "THING", "FAR"], "paraphrase": "A person propelled the object to a distant location", "counterfactual": "No one threw the thing far away"}
+{"text": "The person kept it inside the safe", "primes": ["BODY", "INSIDE"], "paraphrase": "The body stored it within the secure container", "counterfactual": "The person did not keep it inside the safe"}
+{"text": "I found the object in the bag", "primes": ["I", "IN"], "paraphrase": "I located the item within the container", "counterfactual": "I did not find the object in the bag"}
+{"text": "You placed the thing on the chair", "primes": ["YOU", "THING", "ON"], "paraphrase": "You positioned the object upon the furniture", "counterfactual": "You did not place the thing on the chair"}
+{"text": "Someone crawled under the fence", "primes": ["SOMEONE", "UNDER"], "paraphrase": "A person moved beneath the barrier", "counterfactual": "No one crawled under the fence"}
+{"text": "The body stood near the tree", "primes": ["BODY", "NEAR"], "paraphrase": "The person positioned close to the plant", "counterfactual": "The body did not stand near the tree"}
+{"text": "I sent the thing far away", "primes": ["I", "THING", "FAR"], "paraphrase": "I dispatched the object to a distant location", "counterfactual": "I did not send the thing far away"}
+{"text": "You stored it inside the closet", "primes": ["YOU", "INSIDE"], "paraphrase": "You kept it within the storage space", "counterfactual": "You did not store it inside the closet"}
+{"text": "Someone found the object in the room", "primes": ["SOMEONE", "IN"], "paraphrase": "A person located the item within the space", "counterfactual": "No one found the object in the room"}
+{"text": "People put the thing on the desk", "primes": ["PEOPLE", "THING", "ON"], "paraphrase": "Individuals placed the object upon the surface", "counterfactual": "People did not put the thing on the desk"}
+{"text": "I hid under the car", "primes": ["I", "UNDER"], "paraphrase": "I concealed beneath the vehicle", "counterfactual": "I did not hide under the car"}
+{"text": "You stood near the entrance", "primes": ["YOU", "NEAR"], "paraphrase": "You positioned close to the doorway", "counterfactual": "You did not stand near the entrance"}
+{"text": "The body threw the thing far away", "primes": ["BODY", "THING", "FAR"], "paraphrase": "The person propelled the object to a distant location", "counterfactual": "The body did not throw the thing far away"}
+{"text": "Someone kept it inside the box", "primes": ["SOMEONE", "INSIDE"], "paraphrase": "A person stored it within the container", "counterfactual": "No one kept it inside the box"}
+{"text": "I found the object in the pocket", "primes": ["I", "IN"], "paraphrase": "I located the item within the compartment", "counterfactual": "I did not find the object in the pocket"}
+{"text": "You placed the thing on the shelf", "primes": ["YOU", "THING", "ON"], "paraphrase": "You positioned the object upon the surface", "counterfactual": "You did not place the thing on the shelf"}
+{"text": "People crawled under the table", "primes": ["PEOPLE", "UNDER"], "paraphrase": "Individuals moved beneath the furniture", "counterfactual": "People did not crawl under the table"}
+{"text": "Someone stood near the door", "primes": ["SOMEONE", "NEAR"], "paraphrase": "A person positioned close to the entrance", "counterfactual": "No one stood near the door"}
+{"text": "The body sent the thing far away", "primes": ["BODY", "THING", "FAR"], "paraphrase": "The person dispatched the object to a distant location", "counterfactual": "The body did not send the thing far away"}
+{"text": "I stored it inside the drawer", "primes": ["I", "INSIDE"], "paraphrase": "I kept it within the compartment", "counterfactual": "I did not store it inside the drawer"}
+{"text": "You found the object in the bag", "primes": ["YOU", "IN"], "paraphrase": "You located the item within the container", "counterfactual": "You did not find the object in the bag"}
+{"text": "Someone put the thing on the chair", "primes": ["SOMEONE", "THING", "ON"], "paraphrase": "A person positioned the object upon the furniture", "counterfactual": "No one put the thing on the chair"}
+{"text": "People hid under the bed", "primes": ["PEOPLE", "UNDER"], "paraphrase": "Individuals concealed beneath the furniture", "counterfactual": "People did not hide under the bed"}
+{"text": "I stood near the window", "primes": ["I", "NEAR"], "paraphrase": "I positioned close to the opening", "counterfactual": "I did not stand near the window"}
+{"text": "You threw the thing far away", "primes": ["YOU", "THING", "FAR"], "paraphrase": "You propelled the object to a distant location", "counterfactual": "You did not throw the thing far away"}
+{"text": "The person stored it inside the safe", "primes": ["BODY", "INSIDE"], "paraphrase": "The body kept it within the secure container", "counterfactual": "The person did not store it inside the safe"}

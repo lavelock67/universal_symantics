@@ -1,0 +1,135 @@
+{"text": "J'ai été en train d'étudier pendant des heures.", "language": "fr", "label": 1, "group_id": "apos-fr-0", "type": "base"}
+{"text": "J'ai été en train de travailler pendant des heures.", "language": "fr", "label": 1, "group_id": "apos-fr-0", "type": "paraphrase"}
+{"text": "J'ai étudié pendant des heures.", "language": "fr", "label": 0, "group_id": "apos-fr-0", "type": "counterfactual"}
+{"text": "Je suis en train d'étudier maintenant.", "language": "fr", "label": 1, "group_id": "apos-fr-1", "type": "base"}
+{"text": "Je suis en train de travailler maintenant.", "language": "fr", "label": 1, "group_id": "apos-fr-1", "type": "paraphrase"}
+{"text": "J'ai étudié hier.", "language": "fr", "label": 0, "group_id": "apos-fr-1", "type": "counterfactual"}
+{"text": "Je viens de terminer.", "language": "fr", "label": 1, "group_id": "apos-fr-2", "type": "base"}
+{"text": "Je viens de compléter.", "language": "fr", "label": 1, "group_id": "apos-fr-2", "type": "paraphrase"}
+{"text": "Je terminerai bientôt.", "language": "fr", "label": 0, "group_id": "apos-fr-2", "type": "counterfactual"}
+{"text": "J'ai failli tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-3", "type": "base"}
+{"text": "J'ai failli tomber.", "language": "fr", "label": 1, "group_id": "apos-fr-3", "type": "paraphrase"}
+{"text": "Je suis tombé.", "language": "fr", "label": 0, "group_id": "apos-fr-3", "type": "counterfactual"}
+{"text": "J'ai arrêté de fumer.", "language": "fr", "label": 1, "group_id": "apos-fr-4", "type": "base"}
+{"text": "J'ai cessé de fumer.", "language": "fr", "label": 1, "group_id": "apos-fr-4", "type": "paraphrase"}
+{"text": "J'ai commencé à fumer.", "language": "fr", "label": 0, "group_id": "apos-fr-4", "type": "counterfactual"}
+{"text": "J'ai repris le travail.", "language": "fr", "label": 1, "group_id": "apos-fr-5", "type": "base"}
+{"text": "J'ai recommencé le travail.", "language": "fr", "label": 1, "group_id": "apos-fr-5", "type": "paraphrase"}
+{"text": "J'ai arrêté le travail.", "language": "fr", "label": 0, "group_id": "apos-fr-5", "type": "counterfactual"}
+{"text": "Je l'ai fait de nouveau.", "language": "fr", "label": 1, "group_id": "apos-fr-6", "type": "base"}
+{"text": "Je l'ai répété.", "language": "fr", "label": 1, "group_id": "apos-fr-6", "type": "paraphrase"}
+{"text": "Je l'ai fait une fois.", "language": "fr", "label": 0, "group_id": "apos-fr-6", "type": "counterfactual"}
+{"text": "Je ne suis toujours pas arrivé.", "language": "fr", "label": 1, "group_id": "apos-fr-7", "type": "base"}
+{"text": "Je ne suis pas encore arrivé.", "language": "fr", "label": 1, "group_id": "apos-fr-7", "type": "paraphrase"}
+{"text": "Je suis arrivé.", "language": "fr", "label": 0, "group_id": "apos-fr-7", "type": "counterfactual"}
+{"text": "J'ai commencé à travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-8", "type": "base"}
+{"text": "J'ai débuté à travailler.", "language": "fr", "label": 1, "group_id": "apos-fr-8", "type": "paraphrase"}
+{"text": "J'ai fini de travailler.", "language": "fr", "label": 0, "group_id": "apos-fr-8", "type": "counterfactual"}
+{"text": "Je peux nager.", "language": "fr", "label": 1, "group_id": "apos-fr-9", "type": "base"}
+{"text": "Je suis capable de nager.", "language": "fr", "label": 1, "group_id": "apos-fr-9", "type": "paraphrase"}
+{"text": "Je ne peux pas nager.", "language": "fr", "label": 0, "group_id": "apos-fr-9", "type": "counterfactual"}
+{"text": "Puis-je entrer?", "language": "fr", "label": 1, "group_id": "apos-fr-10", "type": "base"}
+{"text": "Puis-je venir?", "language": "fr", "label": 1, "group_id": "apos-fr-10", "type": "paraphrase"}
+{"text": "Je ne peux pas entrer.", "language": "fr", "label": 0, "group_id": "apos-fr-10", "type": "counterfactual"}
+{"text": "Je dois partir maintenant.", "language": "fr", "label": 1, "group_id": "apos-fr-11", "type": "base"}
+{"text": "Je dois m'en aller maintenant.", "language": "fr", "label": 1, "group_id": "apos-fr-11", "type": "paraphrase"}
+{"text": "Je n'ai pas besoin de partir maintenant.", "language": "fr", "label": 0, "group_id": "apos-fr-11", "type": "counterfactual"}
+{"text": "La pluie a causé l'inondation.", "language": "fr", "label": 1, "group_id": "apos-fr-12", "type": "base"}
+{"text": "La pluie a mené à l'inondation.", "language": "fr", "label": 1, "group_id": "apos-fr-12", "type": "paraphrase"}
+{"text": "La pluie n'a pas causé l'inondation.", "language": "fr", "label": 0, "group_id": "apos-fr-12", "type": "counterfactual"}
+{"text": "Je suis arrivé avant toi.", "language": "fr", "label": 1, "group_id": "apos-fr-13", "type": "base"}
+{"text": "Je suis arrivé avant vous.", "language": "fr", "label": 1, "group_id": "apos-fr-13", "type": "paraphrase"}
+{"text": "Je suis arrivé après toi.", "language": "fr", "label": 0, "group_id": "apos-fr-13", "type": "counterfactual"}
+{"text": "C'est plus cher.", "language": "fr", "label": 1, "group_id": "apos-fr-14", "type": "base"}
+{"text": "Ça coûte plus.", "language": "fr", "label": 1, "group_id": "apos-fr-14", "type": "paraphrase"}
+{"text": "C'est moins cher.", "language": "fr", "label": 0, "group_id": "apos-fr-14", "type": "counterfactual"}
+{"text": "Le chat est sur le tapis.", "language": "fr", "label": 0, "group_id": "aneg-fr-0", "type": "base"}
+{"text": "Le chat s'assoit sur le tapis.", "language": "fr", "label": 0, "group_id": "aneg-fr-0", "type": "paraphrase"}
+{"text": "Le chat n'est pas sur le tapis.", "language": "fr", "label": 0, "group_id": "aneg-fr-0", "type": "counterfactual"}
+{"text": "C'est presque parfait.", "language": "fr", "label": 0, "group_id": "aneg-fr-1", "type": "base"}
+{"text": "C'est presque idéal.", "language": "fr", "label": 0, "group_id": "aneg-fr-1", "type": "paraphrase"}
+{"text": "C'est parfait.", "language": "fr", "label": 0, "group_id": "aneg-fr-1", "type": "counterfactual"}
+{"text": "Arrête la voiture!", "language": "fr", "label": 0, "group_id": "aneg-fr-2", "type": "base"}
+{"text": "Halte la voiture!", "language": "fr", "label": 0, "group_id": "aneg-fr-2", "type": "paraphrase"}
+{"text": "N'arrête pas la voiture!", "language": "fr", "label": 0, "group_id": "aneg-fr-2", "type": "counterfactual"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-3", "type": "base"}
+{"text": "Je suis allé à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-3", "type": "paraphrase"}
+{"text": "Je n'ai pas été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-3", "type": "counterfactual"}
+{"text": "Je n'aime pas ça.", "language": "fr", "label": 0, "group_id": "aneg-fr-4", "type": "base"}
+{"text": "Je déteste ça.", "language": "fr", "label": 0, "group_id": "aneg-fr-4", "type": "paraphrase"}
+{"text": "J'aime ça.", "language": "fr", "label": 0, "group_id": "aneg-fr-4", "type": "counterfactual"}
+{"text": "Le livre est sur la table.", "language": "fr", "label": 0, "group_id": "aneg-fr-5", "type": "base"}
+{"text": "Le livre repose sur la table.", "language": "fr", "label": 0, "group_id": "aneg-fr-5", "type": "paraphrase"}
+{"text": "Le livre n'est pas sur la table.", "language": "fr", "label": 0, "group_id": "aneg-fr-5", "type": "counterfactual"}
+{"text": "Il a failli tomber.", "language": "fr", "label": 0, "group_id": "aneg-fr-6", "type": "base"}
+{"text": "Il a presque tombé.", "language": "fr", "label": 0, "group_id": "aneg-fr-6", "type": "paraphrase"}
+{"text": "Il est tombé.", "language": "fr", "label": 0, "group_id": "aneg-fr-6", "type": "counterfactual"}
+{"text": "Elle a commencé à travailler.", "language": "fr", "label": 0, "group_id": "aneg-fr-7", "type": "base"}
+{"text": "Elle a débuté à travailler.", "language": "fr", "label": 0, "group_id": "aneg-fr-7", "type": "paraphrase"}
+{"text": "Elle a arrêté de travailler.", "language": "fr", "label": 0, "group_id": "aneg-fr-7", "type": "counterfactual"}
+{"text": "Ils ont fini de manger.", "language": "fr", "label": 0, "group_id": "aneg-fr-8", "type": "base"}
+{"text": "Ils ont terminé de manger.", "language": "fr", "label": 0, "group_id": "aneg-fr-8", "type": "paraphrase"}
+{"text": "Ils ont commencé à manger.", "language": "fr", "label": 0, "group_id": "aneg-fr-8", "type": "counterfactual"}
+{"text": "Il a continué à courir.", "language": "fr", "label": 0, "group_id": "aneg-fr-9", "type": "base"}
+{"text": "Il a poursuivi à courir.", "language": "fr", "label": 0, "group_id": "aneg-fr-9", "type": "paraphrase"}
+{"text": "Il a arrêté de courir.", "language": "fr", "label": 0, "group_id": "aneg-fr-9", "type": "counterfactual"}
+{"text": "Elle a repris le travail.", "language": "fr", "label": 0, "group_id": "aneg-fr-10", "type": "base"}
+{"text": "Elle a recommencé le travail.", "language": "fr", "label": 0, "group_id": "aneg-fr-10", "type": "paraphrase"}
+{"text": "Elle a arrêté le travail.", "language": "fr", "label": 0, "group_id": "aneg-fr-10", "type": "counterfactual"}
+{"text": "Il l'a fait de nouveau.", "language": "fr", "label": 0, "group_id": "aneg-fr-11", "type": "base"}
+{"text": "Il l'a répété.", "language": "fr", "label": 0, "group_id": "aneg-fr-11", "type": "paraphrase"}
+{"text": "Il l'a fait une fois.", "language": "fr", "label": 0, "group_id": "aneg-fr-11", "type": "counterfactual"}
+{"text": "Elle n'est toujours pas arrivée.", "language": "fr", "label": 0, "group_id": "aneg-fr-12", "type": "base"}
+{"text": "Elle n'est pas encore arrivée.", "language": "fr", "label": 0, "group_id": "aneg-fr-12", "type": "paraphrase"}
+{"text": "Elle est arrivée.", "language": "fr", "label": 0, "group_id": "aneg-fr-12", "type": "counterfactual"}
+{"text": "Il n'a pas encore fini.", "language": "fr", "label": 0, "group_id": "aneg-fr-13", "type": "base"}
+{"text": "Il n'a pas encore terminé.", "language": "fr", "label": 0, "group_id": "aneg-fr-13", "type": "paraphrase"}
+{"text": "Il a fini.", "language": "fr", "label": 0, "group_id": "aneg-fr-13", "type": "counterfactual"}
+{"text": "Elle peut nager vite.", "language": "fr", "label": 0, "group_id": "aneg-fr-14", "type": "base"}
+{"text": "Elle est capable de nager vite.", "language": "fr", "label": 0, "group_id": "aneg-fr-14", "type": "paraphrase"}
+{"text": "Elle ne peut pas nager vite.", "language": "fr", "label": 0, "group_id": "aneg-fr-14", "type": "counterfactual"}
+{"text": "La pluie a causé l'inondation.", "language": "fr", "label": 0, "group_id": "aneg-fr-15", "type": "base"}
+{"text": "La pluie a mené à l'inondation.", "language": "fr", "label": 0, "group_id": "aneg-fr-15", "type": "paraphrase"}
+{"text": "La pluie n'a pas causé l'inondation.", "language": "fr", "label": 0, "group_id": "aneg-fr-15", "type": "counterfactual"}
+{"text": "Je suis arrivé avant toi.", "language": "fr", "label": 0, "group_id": "aneg-fr-16", "type": "base"}
+{"text": "Je suis arrivé avant vous.", "language": "fr", "label": 0, "group_id": "aneg-fr-16", "type": "paraphrase"}
+{"text": "Je suis arrivé après toi.", "language": "fr", "label": 0, "group_id": "aneg-fr-16", "type": "counterfactual"}
+{"text": "C'est plus cher.", "language": "fr", "label": 0, "group_id": "aneg-fr-17", "type": "base"}
+{"text": "Ça coûte plus.", "language": "fr", "label": 0, "group_id": "aneg-fr-17", "type": "paraphrase"}
+{"text": "C'est moins cher.", "language": "fr", "label": 0, "group_id": "aneg-fr-17", "type": "counterfactual"}
+{"text": "Je n'aime pas ça.", "language": "fr", "label": 0, "group_id": "aneg-fr-18", "type": "base"}
+{"text": "Je déteste ça.", "language": "fr", "label": 0, "group_id": "aneg-fr-18", "type": "paraphrase"}
+{"text": "J'aime ça.", "language": "fr", "label": 0, "group_id": "aneg-fr-18", "type": "counterfactual"}
+{"text": "Elle doit partir maintenant.", "language": "fr", "label": 0, "group_id": "aneg-fr-19", "type": "base"}
+{"text": "Elle doit s'en aller maintenant.", "language": "fr", "label": 0, "group_id": "aneg-fr-19", "type": "paraphrase"}
+{"text": "Elle n'a pas besoin de partir maintenant.", "language": "fr", "label": 0, "group_id": "aneg-fr-19", "type": "counterfactual"}
+{"text": "Puis-je entrer?", "language": "fr", "label": 0, "group_id": "aneg-fr-20", "type": "base"}
+{"text": "Puis-je venir?", "language": "fr", "label": 0, "group_id": "aneg-fr-20", "type": "paraphrase"}
+{"text": "Je ne peux pas entrer.", "language": "fr", "label": 0, "group_id": "aneg-fr-20", "type": "counterfactual"}
+{"text": "Le livre est sur la table.", "language": "fr", "label": 0, "group_id": "aneg-fr-21", "type": "base"}
+{"text": "Le livre repose sur la table.", "language": "fr", "label": 0, "group_id": "aneg-fr-21", "type": "paraphrase"}
+{"text": "Le livre n'est pas sur la table.", "language": "fr", "label": 0, "group_id": "aneg-fr-21", "type": "counterfactual"}
+{"text": "Il a failli tomber.", "language": "fr", "label": 0, "group_id": "aneg-fr-22", "type": "base"}
+{"text": "Il a presque tombé.", "language": "fr", "label": 0, "group_id": "aneg-fr-22", "type": "paraphrase"}
+{"text": "Il est tombé.", "language": "fr", "label": 0, "group_id": "aneg-fr-22", "type": "counterfactual"}
+{"text": "Elle a commencé à travailler.", "language": "fr", "label": 0, "group_id": "aneg-fr-23", "type": "base"}
+{"text": "Elle a débuté à travailler.", "language": "fr", "label": 0, "group_id": "aneg-fr-23", "type": "paraphrase"}
+{"text": "Elle a arrêté de travailler.", "language": "fr", "label": 0, "group_id": "aneg-fr-23", "type": "counterfactual"}
+{"text": "Ils ont fini de manger.", "language": "fr", "label": 0, "group_id": "aneg-fr-24", "type": "base"}
+{"text": "Ils ont terminé de manger.", "language": "fr", "label": 0, "group_id": "aneg-fr-24", "type": "paraphrase"}
+{"text": "Ils ont commencé à manger.", "language": "fr", "label": 0, "group_id": "aneg-fr-24", "type": "counterfactual"}
+{"text": "Il a continué à courir.", "language": "fr", "label": 0, "group_id": "aneg-fr-25", "type": "base"}
+{"text": "Il a poursuivi à courir.", "language": "fr", "label": 0, "group_id": "aneg-fr-25", "type": "paraphrase"}
+{"text": "Il a arrêté de courir.", "language": "fr", "label": 0, "group_id": "aneg-fr-25", "type": "counterfactual"}
+{"text": "Elle a repris le travail.", "language": "fr", "label": 0, "group_id": "aneg-fr-26", "type": "base"}
+{"text": "Elle a recommencé le travail.", "language": "fr", "label": 0, "group_id": "aneg-fr-26", "type": "paraphrase"}
+{"text": "Elle a arrêté le travail.", "language": "fr", "label": 0, "group_id": "aneg-fr-26", "type": "counterfactual"}
+{"text": "Il l'a fait de nouveau.", "language": "fr", "label": 0, "group_id": "aneg-fr-27", "type": "base"}
+{"text": "Il l'a répété.", "language": "fr", "label": 0, "group_id": "aneg-fr-27", "type": "paraphrase"}
+{"text": "Il l'a fait une fois.", "language": "fr", "label": 0, "group_id": "aneg-fr-27", "type": "counterfactual"}
+{"text": "Elle n'est toujours pas arrivée.", "language": "fr", "label": 0, "group_id": "aneg-fr-28", "type": "base"}
+{"text": "Elle n'est pas encore arrivée.", "language": "fr", "label": 0, "group_id": "aneg-fr-28", "type": "paraphrase"}
+{"text": "Elle est arrivée.", "language": "fr", "label": 0, "group_id": "aneg-fr-28", "type": "counterfactual"}
+{"text": "Il n'a pas encore fini.", "language": "fr", "label": 0, "group_id": "aneg-fr-29", "type": "base"}
+{"text": "Il n'a pas encore terminé.", "language": "fr", "label": 0, "group_id": "aneg-fr-29", "type": "paraphrase"}
+{"text": "Il a fini.", "language": "fr", "label": 0, "group_id": "aneg-fr-29", "type": "counterfactual"}

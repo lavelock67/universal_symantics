@@ -1,0 +1,84 @@
+{"text": "Not all students study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-0", "type": "base"}
+{"text": "Not every student studies.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-0", "type": "paraphrase"}
+{"text": "All students study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-0", "type": "counterfactual"}
+{"text": "No student arrived.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-1", "type": "base"}
+{"text": "None of the students arrived.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-1", "type": "paraphrase"}
+{"text": "Some students arrived.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-1", "type": "counterfactual"}
+{"text": "All children aren't playing.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-2", "type": "base"}
+{"text": "Every child isn't playing.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-2", "type": "paraphrase"}
+{"text": "All children are playing.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-2", "type": "counterfactual"}
+{"text": "Few students read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-3", "type": "base"}
+{"text": "Hardly any students read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-3", "type": "paraphrase"}
+{"text": "Many students read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-3", "type": "counterfactual"}
+{"text": "Most students don't run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-4", "type": "base"}
+{"text": "The majority of students don't run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-4", "type": "paraphrase"}
+{"text": "Most students run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qpos-en-4", "type": "counterfactual"}
+{"text": "Only some doctors work.", "language": "en", "label": 1, "predicate": "work", "group_id": "qpos-en-5", "type": "base"}
+{"text": "Merely some doctors work.", "language": "en", "label": 1, "predicate": "work", "group_id": "qpos-en-5", "type": "paraphrase"}
+{"text": "All doctors work.", "language": "en", "label": 0, "predicate": "work", "group_id": "qpos-en-5", "type": "counterfactual"}
+{"text": "At most half the students study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-6", "type": "base"}
+{"text": "No more than half the students study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-6", "type": "paraphrase"}
+{"text": "All students study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-6", "type": "counterfactual"}
+{"text": "Less than half the children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-7", "type": "base"}
+{"text": "Fewer than half the children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-7", "type": "paraphrase"}
+{"text": "Most children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-7", "type": "counterfactual"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "predicate": "go", "group_id": "qneg-en-0", "type": "base"}
+{"text": "I went to Paris.", "language": "en", "label": 0, "predicate": "go", "group_id": "qneg-en-0", "type": "paraphrase"}
+{"text": "I haven't been to Paris.", "language": "en", "label": 0, "predicate": "go", "group_id": "qneg-en-0", "type": "counterfactual"}
+{"text": "The cat is on the mat.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-1", "type": "base"}
+{"text": "The cat sits on the mat.", "language": "en", "label": 0, "predicate": "sit", "group_id": "qneg-en-1", "type": "paraphrase"}
+{"text": "The cat isn't on the mat.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-1", "type": "counterfactual"}
+{"text": "This is almost perfect.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-2", "type": "base"}
+{"text": "This is nearly perfect.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-2", "type": "paraphrase"}
+{"text": "This is perfect.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-2", "type": "counterfactual"}
+{"text": "Stop the car!", "language": "en", "label": 0, "predicate": "stop", "group_id": "qneg-en-3", "type": "base"}
+{"text": "Halt the car!", "language": "en", "label": 0, "predicate": "halt", "group_id": "qneg-en-3", "type": "paraphrase"}
+{"text": "Don't stop the car!", "language": "en", "label": 0, "predicate": "stop", "group_id": "qneg-en-3", "type": "counterfactual"}
+{"text": "She can swim fast.", "language": "en", "label": 0, "predicate": "swim", "group_id": "qneg-en-4", "type": "base"}
+{"text": "She is able to swim fast.", "language": "en", "label": 0, "predicate": "swim", "group_id": "qneg-en-4", "type": "paraphrase"}
+{"text": "She can't swim fast.", "language": "en", "label": 0, "predicate": "swim", "group_id": "qneg-en-4", "type": "counterfactual"}
+{"text": "The rain caused the flood.", "language": "en", "label": 0, "predicate": "cause", "group_id": "qneg-en-5", "type": "base"}
+{"text": "The rain led to the flood.", "language": "en", "label": 0, "predicate": "lead", "group_id": "qneg-en-5", "type": "paraphrase"}
+{"text": "The rain didn't cause the flood.", "language": "en", "label": 0, "predicate": "cause", "group_id": "qneg-en-5", "type": "counterfactual"}
+{"text": "I arrived before you.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-6", "type": "base"}
+{"text": "I got here before you.", "language": "en", "label": 0, "predicate": "get", "group_id": "qneg-en-6", "type": "paraphrase"}
+{"text": "I arrived after you.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-6", "type": "counterfactual"}
+{"text": "This is more expensive.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-7", "type": "base"}
+{"text": "This costs more.", "language": "en", "label": 0, "predicate": "cost", "group_id": "qneg-en-7", "type": "paraphrase"}
+{"text": "This is less expensive.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-7", "type": "counterfactual"}
+{"text": "I don't like this.", "language": "en", "label": 0, "predicate": "like", "group_id": "qneg-en-8", "type": "base"}
+{"text": "I dislike this.", "language": "en", "label": 0, "predicate": "dislike", "group_id": "qneg-en-8", "type": "paraphrase"}
+{"text": "I like this.", "language": "en", "label": 0, "predicate": "like", "group_id": "qneg-en-8", "type": "counterfactual"}
+{"text": "She must leave now.", "language": "en", "label": 0, "predicate": "leave", "group_id": "qneg-en-9", "type": "base"}
+{"text": "She has to leave now.", "language": "en", "label": 0, "predicate": "leave", "group_id": "qneg-en-9", "type": "paraphrase"}
+{"text": "She doesn't have to leave now.", "language": "en", "label": 0, "predicate": "leave", "group_id": "qneg-en-9", "type": "counterfactual"}
+{"text": "May I come in?", "language": "en", "label": 0, "predicate": "come", "group_id": "qneg-en-10", "type": "base"}
+{"text": "Can I come in?", "language": "en", "label": 0, "predicate": "come", "group_id": "qneg-en-10", "type": "paraphrase"}
+{"text": "I can't come in.", "language": "en", "label": 0, "predicate": "come", "group_id": "qneg-en-10", "type": "counterfactual"}
+{"text": "The book is on the table.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-11", "type": "base"}
+{"text": "The book lies on the table.", "language": "en", "label": 0, "predicate": "lie", "group_id": "qneg-en-11", "type": "paraphrase"}
+{"text": "The book isn't on the table.", "language": "en", "label": 0, "predicate": "be", "group_id": "qneg-en-11", "type": "counterfactual"}
+{"text": "He almost fell.", "language": "en", "label": 0, "predicate": "fall", "group_id": "qneg-en-12", "type": "base"}
+{"text": "He nearly fell.", "language": "en", "label": 0, "predicate": "fall", "group_id": "qneg-en-12", "type": "paraphrase"}
+{"text": "He fell.", "language": "en", "label": 0, "predicate": "fall", "group_id": "qneg-en-12", "type": "counterfactual"}
+{"text": "She started working.", "language": "en", "label": 0, "predicate": "start", "group_id": "qneg-en-13", "type": "base"}
+{"text": "She began working.", "language": "en", "label": 0, "predicate": "begin", "group_id": "qneg-en-13", "type": "paraphrase"}
+{"text": "She stopped working.", "language": "en", "label": 0, "predicate": "stop", "group_id": "qneg-en-13", "type": "counterfactual"}
+{"text": "They finished eating.", "language": "en", "label": 0, "predicate": "finish", "group_id": "qneg-en-14", "type": "base"}
+{"text": "They completed eating.", "language": "en", "label": 0, "predicate": "complete", "group_id": "qneg-en-14", "type": "paraphrase"}
+{"text": "They started eating.", "language": "en", "label": 0, "predicate": "start", "group_id": "qneg-en-14", "type": "counterfactual"}
+{"text": "He kept running.", "language": "en", "label": 0, "predicate": "keep", "group_id": "qneg-en-15", "type": "base"}
+{"text": "He continued running.", "language": "en", "label": 0, "predicate": "continue", "group_id": "qneg-en-15", "type": "paraphrase"}
+{"text": "He stopped running.", "language": "en", "label": 0, "predicate": "stop", "group_id": "qneg-en-15", "type": "counterfactual"}
+{"text": "She resumed working.", "language": "en", "label": 0, "predicate": "resume", "group_id": "qneg-en-16", "type": "base"}
+{"text": "She restarted working.", "language": "en", "label": 0, "predicate": "restart", "group_id": "qneg-en-16", "type": "paraphrase"}
+{"text": "She stopped working.", "language": "en", "label": 0, "predicate": "stop", "group_id": "qneg-en-16", "type": "counterfactual"}
+{"text": "He did it again.", "language": "en", "label": 0, "predicate": "do", "group_id": "qneg-en-17", "type": "base"}
+{"text": "He repeated it.", "language": "en", "label": 0, "predicate": "repeat", "group_id": "qneg-en-17", "type": "paraphrase"}
+{"text": "He did it once.", "language": "en", "label": 0, "predicate": "do", "group_id": "qneg-en-17", "type": "counterfactual"}
+{"text": "She still hasn't arrived.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-18", "type": "base"}
+{"text": "She hasn't arrived yet.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-18", "type": "paraphrase"}
+{"text": "She has arrived.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-18", "type": "counterfactual"}
+{"text": "He hasn't finished yet.", "language": "en", "label": 0, "predicate": "finish", "group_id": "qneg-en-19", "type": "base"}
+{"text": "He hasn't completed yet.", "language": "en", "label": 0, "predicate": "complete", "group_id": "qneg-en-19", "type": "paraphrase"}
+{"text": "He has finished.", "language": "en", "label": 0, "predicate": "finish", "group_id": "qneg-en-19", "type": "counterfactual"}

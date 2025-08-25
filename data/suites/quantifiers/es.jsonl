@@ -1,0 +1,240 @@
+{"text": "No todos los conductores jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-0", "type": "base"}
+{"text": "No todos jugaran los conductores.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-0", "type": "paraphrase"}
+{"text": "Todos los conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-0", "type": "counterfactual"}
+{"text": "No todos los estudiantes llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-1", "type": "base"}
+{"text": "No todos llegaran los estudiantes.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-1", "type": "paraphrase"}
+{"text": "Todos los estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-1", "type": "counterfactual"}
+{"text": "No todos los estudiantes estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-2", "type": "base"}
+{"text": "No todos estudiaran los estudiantes.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-2", "type": "paraphrase"}
+{"text": "Todos los estudiantes estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-2", "type": "counterfactual"}
+{"text": "No todos los artistas leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-3", "type": "base"}
+{"text": "No todos leeran los artistas.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-3", "type": "paraphrase"}
+{"text": "Todos los artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-3", "type": "counterfactual"}
+{"text": "No todos los niños llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-4", "type": "base"}
+{"text": "No todos llegaran los niños.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-4", "type": "paraphrase"}
+{"text": "Todos los niños llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-4", "type": "counterfactual"}
+{"text": "No todos los niños estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-5", "type": "base"}
+{"text": "No todos estudiaran los niños.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-5", "type": "paraphrase"}
+{"text": "Todos los niños estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-5", "type": "counterfactual"}
+{"text": "No todos los artistas correran.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-6", "type": "base"}
+{"text": "No todos correran los artistas.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-6", "type": "paraphrase"}
+{"text": "Todos los artistas correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qpos-es-6", "type": "counterfactual"}
+{"text": "No todos los artistas leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-7", "type": "base"}
+{"text": "No todos leeran los artistas.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-7", "type": "paraphrase"}
+{"text": "Todos los artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-7", "type": "counterfactual"}
+{"text": "No todos los estudiantes estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-8", "type": "base"}
+{"text": "No todos estudiaran los estudiantes.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-8", "type": "paraphrase"}
+{"text": "Todos los estudiantes estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-8", "type": "counterfactual"}
+{"text": "No todos los artistas estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-9", "type": "base"}
+{"text": "No todos estudiaran los artistas.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-9", "type": "paraphrase"}
+{"text": "Todos los artistas estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-9", "type": "counterfactual"}
+{"text": "No todos los estudiantes estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-10", "type": "base"}
+{"text": "No todos estudiaran los estudiantes.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-10", "type": "paraphrase"}
+{"text": "Todos los estudiantes estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-10", "type": "counterfactual"}
+{"text": "No todos los artistas estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-11", "type": "base"}
+{"text": "No todos estudiaran los artistas.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-11", "type": "paraphrase"}
+{"text": "Todos los artistas estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-11", "type": "counterfactual"}
+{"text": "No todos los estudiantes correran.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-12", "type": "base"}
+{"text": "No todos correran los estudiantes.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-12", "type": "paraphrase"}
+{"text": "Todos los estudiantes correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qpos-es-12", "type": "counterfactual"}
+{"text": "No todos los niños leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-13", "type": "base"}
+{"text": "No todos leeran los niños.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-13", "type": "paraphrase"}
+{"text": "Todos los niños leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-13", "type": "counterfactual"}
+{"text": "No todos los estudiantes leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-14", "type": "base"}
+{"text": "No todos leeran los estudiantes.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-14", "type": "paraphrase"}
+{"text": "Todos los estudiantes leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-14", "type": "counterfactual"}
+{"text": "No todos los artistas estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-15", "type": "base"}
+{"text": "No todos estudiaran los artistas.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-15", "type": "paraphrase"}
+{"text": "Todos los artistas estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-15", "type": "counterfactual"}
+{"text": "No todos los artistas estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-16", "type": "base"}
+{"text": "No todos estudiaran los artistas.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-16", "type": "paraphrase"}
+{"text": "Todos los artistas estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-16", "type": "counterfactual"}
+{"text": "No todos los conductores leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-17", "type": "base"}
+{"text": "No todos leeran los conductores.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-17", "type": "paraphrase"}
+{"text": "Todos los conductores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-17", "type": "counterfactual"}
+{"text": "No todos los artistas leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-18", "type": "base"}
+{"text": "No todos leeran los artistas.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-18", "type": "paraphrase"}
+{"text": "Todos los artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-18", "type": "counterfactual"}
+{"text": "No todos los doctores llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-19", "type": "base"}
+{"text": "No todos llegaran los doctores.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-19", "type": "paraphrase"}
+{"text": "Todos los doctores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-19", "type": "counterfactual"}
+{"text": "No todos los estudiantes llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-20", "type": "base"}
+{"text": "No todos llegaran los estudiantes.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-20", "type": "paraphrase"}
+{"text": "Todos los estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-20", "type": "counterfactual"}
+{"text": "No todos los estudiantes llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-21", "type": "base"}
+{"text": "No todos llegaran los estudiantes.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-21", "type": "paraphrase"}
+{"text": "Todos los estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-21", "type": "counterfactual"}
+{"text": "No todos los conductores jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-22", "type": "base"}
+{"text": "No todos jugaran los conductores.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-22", "type": "paraphrase"}
+{"text": "Todos los conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-22", "type": "counterfactual"}
+{"text": "No todos los doctores correran.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-23", "type": "base"}
+{"text": "No todos correran los doctores.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-23", "type": "paraphrase"}
+{"text": "Todos los doctores correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qpos-es-23", "type": "counterfactual"}
+{"text": "No todos los doctores estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-24", "type": "base"}
+{"text": "No todos estudiaran los doctores.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-24", "type": "paraphrase"}
+{"text": "Todos los doctores estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-24", "type": "counterfactual"}
+{"text": "No todos los niños correran.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-25", "type": "base"}
+{"text": "No todos correran los niños.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-25", "type": "paraphrase"}
+{"text": "Todos los niños correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qpos-es-25", "type": "counterfactual"}
+{"text": "No todos los artistas leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-26", "type": "base"}
+{"text": "No todos leeran los artistas.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-26", "type": "paraphrase"}
+{"text": "Todos los artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-26", "type": "counterfactual"}
+{"text": "No todos los niños estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-27", "type": "base"}
+{"text": "No todos estudiaran los niños.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-27", "type": "paraphrase"}
+{"text": "Todos los niños estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-27", "type": "counterfactual"}
+{"text": "No todos los artistas jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-28", "type": "base"}
+{"text": "No todos jugaran los artistas.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-28", "type": "paraphrase"}
+{"text": "Todos los artistas jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-28", "type": "counterfactual"}
+{"text": "No todos los artistas llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-29", "type": "base"}
+{"text": "No todos llegaran los artistas.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-29", "type": "paraphrase"}
+{"text": "Todos los artistas llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-29", "type": "counterfactual"}
+{"text": "No todos los estudiantes llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-30", "type": "base"}
+{"text": "No todos llegaran los estudiantes.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-30", "type": "paraphrase"}
+{"text": "Todos los estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-30", "type": "counterfactual"}
+{"text": "No todos los niños jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-31", "type": "base"}
+{"text": "No todos jugaran los niños.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-31", "type": "paraphrase"}
+{"text": "Todos los niños jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-31", "type": "counterfactual"}
+{"text": "No todos los doctores llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-32", "type": "base"}
+{"text": "No todos llegaran los doctores.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-32", "type": "paraphrase"}
+{"text": "Todos los doctores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-32", "type": "counterfactual"}
+{"text": "No todos los estudiantes correran.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-33", "type": "base"}
+{"text": "No todos correran los estudiantes.", "language": "es", "label": 1, "predicate": "correr", "group_id": "qpos-es-33", "type": "paraphrase"}
+{"text": "Todos los estudiantes correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qpos-es-33", "type": "counterfactual"}
+{"text": "No todos los artistas llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-34", "type": "base"}
+{"text": "No todos llegaran los artistas.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-34", "type": "paraphrase"}
+{"text": "Todos los artistas llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-34", "type": "counterfactual"}
+{"text": "No todos los artistas leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-35", "type": "base"}
+{"text": "No todos leeran los artistas.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-35", "type": "paraphrase"}
+{"text": "Todos los artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-35", "type": "counterfactual"}
+{"text": "No todos los niños leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-36", "type": "base"}
+{"text": "No todos leeran los niños.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-36", "type": "paraphrase"}
+{"text": "Todos los niños leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-36", "type": "counterfactual"}
+{"text": "No todos los doctores estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-37", "type": "base"}
+{"text": "No todos estudiaran los doctores.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-37", "type": "paraphrase"}
+{"text": "Todos los doctores estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-37", "type": "counterfactual"}
+{"text": "No todos los estudiantes llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-38", "type": "base"}
+{"text": "No todos llegaran los estudiantes.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-38", "type": "paraphrase"}
+{"text": "Todos los estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-38", "type": "counterfactual"}
+{"text": "No todos los niños estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-39", "type": "base"}
+{"text": "No todos estudiaran los niños.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-39", "type": "paraphrase"}
+{"text": "Todos los niños estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-39", "type": "counterfactual"}
+{"text": "No todos los artistas jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-40", "type": "base"}
+{"text": "No todos jugaran los artistas.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-40", "type": "paraphrase"}
+{"text": "Todos los artistas jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-40", "type": "counterfactual"}
+{"text": "No todos los doctores llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-41", "type": "base"}
+{"text": "No todos llegaran los doctores.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-41", "type": "paraphrase"}
+{"text": "Todos los doctores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-41", "type": "counterfactual"}
+{"text": "No todos los artistas jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-42", "type": "base"}
+{"text": "No todos jugaran los artistas.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-42", "type": "paraphrase"}
+{"text": "Todos los artistas jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-42", "type": "counterfactual"}
+{"text": "No todos los doctores jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-43", "type": "base"}
+{"text": "No todos jugaran los doctores.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-43", "type": "paraphrase"}
+{"text": "Todos los doctores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-43", "type": "counterfactual"}
+{"text": "No todos los doctores leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-44", "type": "base"}
+{"text": "No todos leeran los doctores.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-44", "type": "paraphrase"}
+{"text": "Todos los doctores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-44", "type": "counterfactual"}
+{"text": "No todos los conductores llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-45", "type": "base"}
+{"text": "No todos llegaran los conductores.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-45", "type": "paraphrase"}
+{"text": "Todos los conductores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-45", "type": "counterfactual"}
+{"text": "No todos los niños estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-46", "type": "base"}
+{"text": "No todos estudiaran los niños.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-46", "type": "paraphrase"}
+{"text": "Todos los niños estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-46", "type": "counterfactual"}
+{"text": "No todos los conductores llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-47", "type": "base"}
+{"text": "No todos llegaran los conductores.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-47", "type": "paraphrase"}
+{"text": "Todos los conductores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-47", "type": "counterfactual"}
+{"text": "No todos los niños estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-48", "type": "base"}
+{"text": "No todos estudiaran los niños.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-48", "type": "paraphrase"}
+{"text": "Todos los niños estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-48", "type": "counterfactual"}
+{"text": "No todos los doctores jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-49", "type": "base"}
+{"text": "No todos jugaran los doctores.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-49", "type": "paraphrase"}
+{"text": "Todos los doctores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-49", "type": "counterfactual"}
+{"text": "No todos los doctores jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-50", "type": "base"}
+{"text": "No todos jugaran los doctores.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-50", "type": "paraphrase"}
+{"text": "Todos los doctores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-50", "type": "counterfactual"}
+{"text": "No todos los conductores leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-51", "type": "base"}
+{"text": "No todos leeran los conductores.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-51", "type": "paraphrase"}
+{"text": "Todos los conductores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-51", "type": "counterfactual"}
+{"text": "No todos los conductores leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-52", "type": "base"}
+{"text": "No todos leeran los conductores.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-52", "type": "paraphrase"}
+{"text": "Todos los conductores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-52", "type": "counterfactual"}
+{"text": "No todos los niños estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-53", "type": "base"}
+{"text": "No todos estudiaran los niños.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-53", "type": "paraphrase"}
+{"text": "Todos los niños estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-53", "type": "counterfactual"}
+{"text": "No todos los niños jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-54", "type": "base"}
+{"text": "No todos jugaran los niños.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-54", "type": "paraphrase"}
+{"text": "Todos los niños jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-54", "type": "counterfactual"}
+{"text": "No todos los artistas estudiaran.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-55", "type": "base"}
+{"text": "No todos estudiaran los artistas.", "language": "es", "label": 1, "predicate": "estudiar", "group_id": "qpos-es-55", "type": "paraphrase"}
+{"text": "Todos los artistas estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qpos-es-55", "type": "counterfactual"}
+{"text": "No todos los doctores leeran.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-56", "type": "base"}
+{"text": "No todos leeran los doctores.", "language": "es", "label": 1, "predicate": "leer", "group_id": "qpos-es-56", "type": "paraphrase"}
+{"text": "Todos los doctores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qpos-es-56", "type": "counterfactual"}
+{"text": "No todos los artistas jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-57", "type": "base"}
+{"text": "No todos jugaran los artistas.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-57", "type": "paraphrase"}
+{"text": "Todos los artistas jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-57", "type": "counterfactual"}
+{"text": "No todos los conductores jugaran.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-58", "type": "base"}
+{"text": "No todos jugaran los conductores.", "language": "es", "label": 1, "predicate": "jugar", "group_id": "qpos-es-58", "type": "paraphrase"}
+{"text": "Todos los conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qpos-es-58", "type": "counterfactual"}
+{"text": "No todos los niños llegaran.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-59", "type": "base"}
+{"text": "No todos llegaran los niños.", "language": "es", "label": 1, "predicate": "llegar", "group_id": "qpos-es-59", "type": "paraphrase"}
+{"text": "Todos los niños llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qpos-es-59", "type": "counterfactual"}
+{"text": "Solamente algunos doctores estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-60", "type": "negative"}
+{"text": "Meramente algunos estudiantes jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-61", "type": "negative"}
+{"text": "Meramente algunos niños llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-62", "type": "negative"}
+{"text": "Meramente algunos conductores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-63", "type": "negative"}
+{"text": "Solo algunos estudiantes jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-64", "type": "negative"}
+{"text": "Solo algunos estudiantes correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-65", "type": "negative"}
+{"text": "Solamente algunos estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-66", "type": "negative"}
+{"text": "Solo algunos estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-67", "type": "negative"}
+{"text": "Solo algunos niños correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-68", "type": "negative"}
+{"text": "Solo algunos conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-69", "type": "negative"}
+{"text": "Solamente algunos conductores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-70", "type": "negative"}
+{"text": "Solo algunos estudiantes jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-71", "type": "negative"}
+{"text": "Solamente algunos estudiantes correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-72", "type": "negative"}
+{"text": "Solamente algunos doctores estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-73", "type": "negative"}
+{"text": "Solamente algunos doctores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-74", "type": "negative"}
+{"text": "Solo algunos artistas llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-75", "type": "negative"}
+{"text": "Solo algunos niños llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-76", "type": "negative"}
+{"text": "Solo algunos artistas llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-77", "type": "negative"}
+{"text": "Solamente algunos niños leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-78", "type": "negative"}
+{"text": "Solamente algunos doctores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-79", "type": "negative"}
+{"text": "Solo algunos artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-80", "type": "negative"}
+{"text": "Solo algunos conductores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-81", "type": "negative"}
+{"text": "Meramente algunos doctores estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-82", "type": "negative"}
+{"text": "Meramente algunos conductores estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-83", "type": "negative"}
+{"text": "Solamente algunos artistas jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-84", "type": "negative"}
+{"text": "Meramente algunos conductores estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-85", "type": "negative"}
+{"text": "Solamente algunos doctores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-86", "type": "negative"}
+{"text": "Meramente algunos niños llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-87", "type": "negative"}
+{"text": "Solamente algunos doctores correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-88", "type": "negative"}
+{"text": "Meramente algunos conductores llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-89", "type": "negative"}
+{"text": "Solamente algunos estudiantes jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-90", "type": "negative"}
+{"text": "Meramente algunos conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-91", "type": "negative"}
+{"text": "Solamente algunos artistas llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-92", "type": "negative"}
+{"text": "Solamente algunos artistas estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-93", "type": "negative"}
+{"text": "Solamente algunos doctores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-94", "type": "negative"}
+{"text": "Meramente algunos artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-95", "type": "negative"}
+{"text": "Solamente algunos doctores correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-96", "type": "negative"}
+{"text": "Meramente algunos conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-97", "type": "negative"}
+{"text": "Meramente algunos conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-98", "type": "negative"}
+{"text": "Meramente algunos niños llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-99", "type": "negative"}
+{"text": "Solo algunos artistas llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-100", "type": "negative"}
+{"text": "Solo algunos estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-101", "type": "negative"}
+{"text": "Solo algunos estudiantes jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-102", "type": "negative"}
+{"text": "Solamente algunos niños jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-103", "type": "negative"}
+{"text": "Solamente algunos artistas estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-104", "type": "negative"}
+{"text": "Solo algunos conductores leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-105", "type": "negative"}
+{"text": "Solamente algunos conductores correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-106", "type": "negative"}
+{"text": "Meramente algunos estudiantes jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-107", "type": "negative"}
+{"text": "Solamente algunos niños estudiaran.", "language": "es", "label": 0, "predicate": "estudiar", "group_id": "qneg-es-108", "type": "negative"}
+{"text": "Meramente algunos estudiantes jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-109", "type": "negative"}
+{"text": "Solo algunos artistas correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-110", "type": "negative"}
+{"text": "Solo algunos artistas jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-111", "type": "negative"}
+{"text": "Solamente algunos conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-112", "type": "negative"}
+{"text": "Meramente algunos artistas leeran.", "language": "es", "label": 0, "predicate": "leer", "group_id": "qneg-es-113", "type": "negative"}
+{"text": "Meramente algunos doctores correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-114", "type": "negative"}
+{"text": "Meramente algunos artistas correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-115", "type": "negative"}
+{"text": "Meramente algunos conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-116", "type": "negative"}
+{"text": "Solamente algunos conductores correran.", "language": "es", "label": 0, "predicate": "correr", "group_id": "qneg-es-117", "type": "negative"}
+{"text": "Meramente algunos estudiantes llegaran.", "language": "es", "label": 0, "predicate": "llegar", "group_id": "qneg-es-118", "type": "negative"}
+{"text": "Solamente algunos conductores jugaran.", "language": "es", "label": 0, "predicate": "jugar", "group_id": "qneg-es-119", "type": "negative"}

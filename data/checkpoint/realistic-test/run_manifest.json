@@ -1,0 +1,72 @@
+{
+  "run_id": "realistic-test",
+  "commit_sha": "a3220c43dc60a51ad086d3ec49b51ba71e22618a",
+  "branch": "main",
+  "datasets": {
+    "quantifiers": {
+      "en": {
+        "items_total": 84,
+        "sha256": "95023c591b86d2fdb73a48f1585154d9de39c6e2c90d2d3e81436a01f03a0edc"
+      },
+      "es": {
+        "items_total": 84,
+        "sha256": "6469cf393d728b0aeaecafd7d15f86e085effffba51ea6d687a091e38f07f207"
+      },
+      "fr": {
+        "items_total": 84,
+        "sha256": "bb7c49b9f84438d79d192bb6e1b60ea7a9075c09b74b0111c5bedd25cc4d7482"
+      }
+    },
+    "aspect": {
+      "en": {
+        "items_total": 135,
+        "sha256": "b326e64680dd71ffb0edbc97e445ba8da1366af9ecf37160be06fe2058544c8b"
+      },
+      "es": {
+        "items_total": 135,
+        "sha256": "241083d6404e38a474a299d98fb27594b998e694cd88f894e5fba3ff9b464fbb"
+      },
+      "fr": {
+        "items_total": 135,
+        "sha256": "fe0c7dad0775c069898910a52ac9e3f487ebbbacfff10d5cedd4e6393c9d1e66"
+      }
+    }
+  },
+  "models_tools": {
+    "parser": "none (heuristic UD cues)",
+    "wsd": "none",
+    "nli": "none",
+    "sbert": "none"
+  },
+  "tool_versions": {
+    "python": "Python 3.9.6",
+    "generator": "tools/generate_checkpoint_bundle.py",
+    "evaluator": "tools/evaluate_suites.py",
+    "calibration": "tools/compute_calibration.py"
+  },
+  "scales_thresholds": {
+    "calibration_tau": true,
+    "abstain_policy": "prob<tau",
+    "gates": {
+      "ece_overall": 0.05,
+      "ece_per_class": 0.08,
+      "fp_negatives": 0.01
+    }
+  },
+  "ci_image_ids": {
+    "evaluator_image": "heuristic_only",
+    "dataset_versions": {
+      "quantifiers": {
+        "en": "95023c591b86d2fdb73a48f1585154d9de39c6e2c90d2d3e81436a01f03a0edc",
+        "es": "7751ccc8f05510a63324a24d294fadf0d476c015794ea337e50b649fd45704ce",
+        "fr": "c983f473558f6806b90f1ca0d168949907a5f04f7783ae461f34c26b95b80c7a"
+      },
+      "aspect": {
+        "en": "b326e64680dd71ffb0edbc97e445ba8da1366af9ecf37160be06fe2058544c8b",
+        "es": "a4cfb843ede915c5b06585d3366979954be7eee2c543d1c7f1d005698f75d67c",
+        "fr": "81144b786d6921cfc73ed4d6913631f3791f8339999ce84179deacabb071feca"
+      },
+      "negatives": "a7b43e05d4919eea2a73bc281bd598f802c2575d829939c549669374ae41f601"
+    }
+  }
+}

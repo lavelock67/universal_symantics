@@ -1,0 +1,60 @@
+{"text": "I will help before you leave", "primes": ["I", "YOU", "BEFORE"], "paraphrase": "I will assist prior to your departure", "counterfactual": "I will not help before you leave"}
+{"text": "After the event, people knew", "primes": ["AFTER", "PEOPLE", "KNOW"], "paraphrase": "Later than the event, individuals understood", "counterfactual": "After the event, people did not know"}
+{"text": "When I think, I know", "primes": ["WHEN", "I", "THINK", "KNOW"], "paraphrase": "While I believe, I understand", "counterfactual": "When I think, I do not know"}
+{"text": "Someone caused the problem", "primes": ["SOMEONE", "CAUSE"], "paraphrase": "A person led to the problem", "counterfactual": "No one caused the problem"}
+{"text": "I made the thing", "primes": ["I", "MAKE", "THING"], "paraphrase": "I created the object", "counterfactual": "I did not make the thing"}
+{"text": "You let me help", "primes": ["YOU", "I", "LET"], "paraphrase": "You allowed me to assist", "counterfactual": "You did not let me help"}
+{"text": "Before the time, I will see", "primes": ["BEFORE", "I", "SEE"], "paraphrase": "Prior to the time, I will observe", "counterfactual": "Before the time, I will not see"}
+{"text": "After someone thinks, they will know", "primes": ["AFTER", "SOMEONE", "THINK", "KNOW"], "paraphrase": "Later than a person believes, they will understand", "counterfactual": "After someone thinks, they will not know"}
+{"text": "When people feel, they will hear", "primes": ["WHEN", "PEOPLE", "FEEL", "HEAR"], "paraphrase": "While individuals sense, they will listen", "counterfactual": "When people feel, they will not hear"}
+{"text": "The person caused the event", "primes": ["BODY", "CAUSE"], "paraphrase": "The body led to the event", "counterfactual": "The person did not cause the event"}
+{"text": "You made the thing", "primes": ["YOU", "MAKE", "THING"], "paraphrase": "You created the object", "counterfactual": "You did not make the thing"}
+{"text": "Someone let me know", "primes": ["SOMEONE", "I", "LET", "KNOW"], "paraphrase": "A person allowed me to understand", "counterfactual": "No one let me know"}
+{"text": "Before I want, I will think", "primes": ["BEFORE", "I", "WANT", "THINK"], "paraphrase": "Prior to my desire, I will believe", "counterfactual": "Before I want, I will not think"}
+{"text": "After the body feels, it will see", "primes": ["AFTER", "BODY", "FEEL", "SEE"], "paraphrase": "Later than the person senses, it will observe", "counterfactual": "After the body feels, it will not see"}
+{"text": "When someone knows, they will want", "primes": ["WHEN", "SOMEONE", "KNOW", "WANT"], "paraphrase": "While a person understands, they will desire", "counterfactual": "When someone knows, they will not want"}
+{"text": "I caused the thing to be", "primes": ["I", "CAUSE", "THING"], "paraphrase": "I led the object to exist", "counterfactual": "I did not cause the thing to be"}
+{"text": "People made the event happen", "primes": ["PEOPLE", "MAKE"], "paraphrase": "Individuals created the event to occur", "counterfactual": "People did not make the event happen"}
+{"text": "The person let someone help", "primes": ["BODY", "SOMEONE", "LET"], "paraphrase": "The body allowed a person to assist", "counterfactual": "The person did not let someone help"}
+{"text": "Before you think, you will feel", "primes": ["BEFORE", "YOU", "THINK", "FEEL"], "paraphrase": "Prior to your belief, you will sense", "counterfactual": "Before you think, you will not feel"}
+{"text": "After I see the thing, I will know", "primes": ["AFTER", "I", "SEE", "THING", "KNOW"], "paraphrase": "Later than I observe the object, I will understand", "counterfactual": "After I see the thing, I will not know"}
+{"text": "When people hear, they will think", "primes": ["WHEN", "PEOPLE", "HEAR", "THINK"], "paraphrase": "While individuals listen, they will believe", "counterfactual": "When people hear, they will not think"}
+{"text": "Someone caused me to know", "primes": ["SOMEONE", "I", "CAUSE", "KNOW"], "paraphrase": "A person led me to understand", "counterfactual": "No one caused me to know"}
+{"text": "I made someone feel", "primes": ["I", "SOMEONE", "MAKE", "FEEL"], "paraphrase": "I created a person to sense", "counterfactual": "I did not make someone feel"}
+{"text": "You let people see", "primes": ["YOU", "PEOPLE", "LET", "SEE"], "paraphrase": "You allowed individuals to observe", "counterfactual": "You did not let people see"}
+{"text": "Before the person wants, they will think", "primes": ["BEFORE", "BODY", "WANT", "THINK"], "paraphrase": "Prior to the body's desire, they will believe", "counterfactual": "Before the person wants, they will not think"}
+{"text": "After someone sees, they will hear", "primes": ["AFTER", "SOMEONE", "SEE", "HEAR"], "paraphrase": "Later than a person observes, they will listen", "counterfactual": "After someone sees, they will not hear"}
+{"text": "When I know the thing, I will want", "primes": ["WHEN", "I", "KNOW", "THING", "WANT"], "paraphrase": "While I understand the object, I will desire", "counterfactual": "When I know the thing, I will not want"}
+{"text": "The body caused people to think", "primes": ["BODY", "PEOPLE", "CAUSE", "THINK"], "paraphrase": "The person led individuals to believe", "counterfactual": "The body did not cause people to think"}
+{"text": "Someone made me see", "primes": ["SOMEONE", "I", "MAKE", "SEE"], "paraphrase": "A person created me to observe", "counterfactual": "No one made me see"}
+{"text": "People let the person know", "primes": ["PEOPLE", "BODY", "LET", "KNOW"], "paraphrase": "Individuals allowed the body to understand", "counterfactual": "People did not let the person know"}
+{"text": "Before you feel, you will hear", "primes": ["BEFORE", "YOU", "FEEL", "HEAR"], "paraphrase": "Prior to your sensing, you will listen", "counterfactual": "Before you feel, you will not hear"}
+{"text": "After I think about the thing, I will see", "primes": ["AFTER", "I", "THINK", "THING", "SEE"], "paraphrase": "Later than I believe about the object, I will observe", "counterfactual": "After I think about the thing, I will not see"}
+{"text": "When someone wants, they will feel", "primes": ["WHEN", "SOMEONE", "WANT", "FEEL"], "paraphrase": "While a person desires, they will sense", "counterfactual": "When someone wants, they will not feel"}
+{"text": "I caused people to know", "primes": ["I", "PEOPLE", "CAUSE", "KNOW"], "paraphrase": "I led individuals to understand", "counterfactual": "I did not cause people to know"}
+{"text": "You made the body think", "primes": ["YOU", "BODY", "MAKE", "THINK"], "paraphrase": "You created the person to believe", "counterfactual": "You did not make the body think"}
+{"text": "Someone let me see the thing", "primes": ["SOMEONE", "I", "LET", "SEE", "THING"], "paraphrase": "A person allowed me to observe the object", "counterfactual": "No one let me see the thing"}
+{"text": "Before people know, they will think", "primes": ["BEFORE", "PEOPLE", "KNOW", "THINK"], "paraphrase": "Prior to individuals' understanding, they will believe", "counterfactual": "Before people know, they will not think"}
+{"text": "After the person sees, they will want", "primes": ["AFTER", "BODY", "SEE", "WANT"], "paraphrase": "Later than the body observes, they will desire", "counterfactual": "After the person sees, they will not want"}
+{"text": "When I hear, I will know", "primes": ["WHEN", "I", "HEAR", "KNOW"], "paraphrase": "While I listen, I will understand", "counterfactual": "When I hear, I will not know"}
+{"text": "The thing caused someone to feel", "primes": ["THING", "SOMEONE", "CAUSE", "FEEL"], "paraphrase": "The object led a person to sense", "counterfactual": "The thing did not cause someone to feel"}
+{"text": "People made you hear", "primes": ["PEOPLE", "YOU", "MAKE", "HEAR"], "paraphrase": "Individuals created you to listen", "counterfactual": "People did not make you hear"}
+{"text": "I let someone think", "primes": ["I", "SOMEONE", "LET", "THINK"], "paraphrase": "I allowed a person to believe", "counterfactual": "I did not let someone think"}
+{"text": "Before the body knows, it will feel", "primes": ["BEFORE", "BODY", "KNOW", "FEEL"], "paraphrase": "Prior to the person's understanding, it will sense", "counterfactual": "Before the body knows, it will not feel"}
+{"text": "After you think about the thing, you will know", "primes": ["AFTER", "YOU", "THINK", "THING", "KNOW"], "paraphrase": "Later than you believe about the object, you will understand", "counterfactual": "After you think about the thing, you will not know"}
+{"text": "When people see, they will hear", "primes": ["WHEN", "PEOPLE", "SEE", "HEAR"], "paraphrase": "While individuals observe, they will listen", "counterfactual": "When people see, they will not hear"}
+{"text": "Someone caused the body to want", "primes": ["SOMEONE", "BODY", "CAUSE", "WANT"], "paraphrase": "A person led the body to desire", "counterfactual": "No one caused the body to want"}
+{"text": "I made people see", "primes": ["I", "PEOPLE", "MAKE", "SEE"], "paraphrase": "I created individuals to observe", "counterfactual": "I did not make people see"}
+{"text": "You let the person feel", "primes": ["YOU", "BODY", "LET", "FEEL"], "paraphrase": "You allowed the person to sense", "counterfactual": "You did not let the person feel"}
+{"text": "Before someone hears, they will think", "primes": ["BEFORE", "SOMEONE", "HEAR", "THINK"], "paraphrase": "Prior to a person's listening, they will believe", "counterfactual": "Before someone hears, they will not think"}
+{"text": "After the thing is, people will know", "primes": ["AFTER", "THING", "PEOPLE", "KNOW"], "paraphrase": "Later than the object exists, individuals will understand", "counterfactual": "After the thing is, people will not know"}
+{"text": "When I want the thing, I will make it", "primes": ["WHEN", "I", "WANT", "THING", "MAKE"], "paraphrase": "While I desire the object, I will create it", "counterfactual": "When I want the thing, I will not make it"}
+{"text": "The person caused you to see", "primes": ["BODY", "YOU", "CAUSE", "SEE"], "paraphrase": "The person led you to observe", "counterfactual": "The person did not cause you to see"}
+{"text": "Someone made the body hear", "primes": ["SOMEONE", "BODY", "MAKE", "HEAR"], "paraphrase": "A person created the body to listen", "counterfactual": "No one made the body hear"}
+{"text": "People let me think", "primes": ["PEOPLE", "I", "LET", "THINK"], "paraphrase": "Individuals allowed me to believe", "counterfactual": "People did not let me think"}
+{"text": "Before you know the thing, you will see it", "primes": ["BEFORE", "YOU", "KNOW", "THING", "SEE"], "paraphrase": "Prior to your understanding the object, you will observe it", "counterfactual": "Before you know the thing, you will not see it"}
+{"text": "After someone feels, they will want", "primes": ["AFTER", "SOMEONE", "FEEL", "WANT"], "paraphrase": "Later than a person senses, they will desire", "counterfactual": "After someone feels, they will not want"}
+{"text": "When the body thinks, it will know", "primes": ["WHEN", "BODY", "THINK", "KNOW"], "paraphrase": "While the person believes, it will understand", "counterfactual": "When the body thinks, it will not know"}
+{"text": "I caused the thing to be seen", "primes": ["I", "CAUSE", "THING", "SEE"], "paraphrase": "I led the object to be observed", "counterfactual": "I did not cause the thing to be seen"}
+{"text": "You made someone hear", "primes": ["YOU", "SOMEONE", "MAKE", "HEAR"], "paraphrase": "You created a person to listen", "counterfactual": "You did not make someone hear"}
+{"text": "The thing let people know", "primes": ["THING", "PEOPLE", "LET", "KNOW"], "paraphrase": "The object allowed individuals to understand", "counterfactual": "The thing did not let people know"}

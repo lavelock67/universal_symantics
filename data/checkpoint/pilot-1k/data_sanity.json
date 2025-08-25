@@ -1,0 +1,39 @@
+{
+  "run_id": "pilot-1k",
+  "domains": {
+    "quantifiers": {
+      "en": {
+        "total": 1000,
+        "fails": 0,
+        "fail_rate": 0.0
+      },
+      "es": {
+        "total": 1000,
+        "fails": 0,
+        "fail_rate": 0.0
+      },
+      "fr": {
+        "total": 1000,
+        "fails": 0,
+        "fail_rate": 0.0
+      }
+    },
+    "aspect": {
+      "en": {
+        "total": 1000,
+        "fails": 0,
+        "fail_rate": 0.0
+      },
+      "es": {
+        "total": 1000,
+        "fails": 0,
+        "fail_rate": 0.0
+      },
+      "fr": {
+        "total": 1000,
+        "fails": 0,
+        "fail_rate": 0.0
+      }
+    }
+  }
+}

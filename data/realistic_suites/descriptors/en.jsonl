@@ -1,0 +1,82 @@
+{"text": "This thing is good", "primes": ["THIS", "THING", "GOOD"], "paraphrase": "This object is excellent", "counterfactual": "That thing is bad"}
+{"text": "The same person moves", "primes": ["THE SAME", "BODY", "MOVE"], "paraphrase": "The identical individual goes", "counterfactual": "A different person moves"}
+{"text": "Other people think", "primes": ["OTHER", "PEOPLE", "THINK"], "paraphrase": "Different individuals believe", "counterfactual": "These people think"}
+{"text": "One thing happens", "primes": ["ONE", "THING", "HAPPEN"], "paraphrase": "A single object occurs", "counterfactual": "Many things happen"}
+{"text": "Two people touch", "primes": ["TWO", "PEOPLE", "TOUCH"], "paraphrase": "A pair of individuals contact", "counterfactual": "One person touches"}
+{"text": "Some things live", "primes": ["SOME", "THING", "LIVE"], "paraphrase": "Several objects exist", "counterfactual": "All things die"}
+{"text": "I know this thing", "primes": ["I", "KNOW", "THIS", "THING"], "paraphrase": "I understand this object", "counterfactual": "I do not know this thing"}
+{"text": "You want the same thing", "primes": ["YOU", "WANT", "THE SAME", "THING"], "paraphrase": "You desire the identical object", "counterfactual": "You want a different thing"}
+{"text": "Someone feels other things", "primes": ["SOMEONE", "FEEL", "OTHER", "THING"], "paraphrase": "A person senses different objects", "counterfactual": "Someone feels these things"}
+{"text": "People see one thing", "primes": ["PEOPLE", "SEE", "ONE", "THING"], "paraphrase": "Individuals observe a single object", "counterfactual": "People see many things"}
+{"text": "I hear two things", "primes": ["I", "HEAR", "TWO", "THING"], "paraphrase": "I listen to a pair of objects", "counterfactual": "I hear one thing"}
+{"text": "You do some things", "primes": ["YOU", "DO", "SOME", "THING"], "paraphrase": "You perform several objects", "counterfactual": "You do all things"}
+{"text": "This good thing happens", "primes": ["THIS", "GOOD", "THING", "HAPPEN"], "paraphrase": "This excellent object occurs", "counterfactual": "That bad thing happens"}
+{"text": "The same bad person moves", "primes": ["THE SAME", "BAD", "BODY", "MOVE"], "paraphrase": "The identical terrible individual goes", "counterfactual": "A different good person moves"}
+{"text": "Other big things touch", "primes": ["OTHER", "BIG", "THING", "TOUCH"], "paraphrase": "Different large objects contact", "counterfactual": "These small things touch"}
+{"text": "One small person lives", "primes": ["ONE", "SMALL", "BODY", "LIVE"], "paraphrase": "A single tiny individual exists", "counterfactual": "Many big people live"}
+{"text": "Two right things die", "primes": ["TWO", "RIGHT", "THING", "DIE"], "paraphrase": "A pair of correct objects end", "counterfactual": "One wrong thing dies"}
+{"text": "Some wrong people do things", "primes": ["SOME", "WRONG", "PEOPLE", "DO", "THING"], "paraphrase": "Several incorrect individuals perform objects", "counterfactual": "All right people do things"}
+{"text": "I think this is good", "primes": ["I", "THINK", "THIS", "GOOD"], "paraphrase": "I believe this is excellent", "counterfactual": "I think this is bad"}
+{"text": "You know the same is bad", "primes": ["YOU", "KNOW", "THE SAME", "BAD"], "paraphrase": "You understand the identical is terrible", "counterfactual": "You know the different is good"}
+{"text": "Someone wants other things", "primes": ["SOMEONE", "WANT", "OTHER", "THING"], "paraphrase": "A person desires different objects", "counterfactual": "Someone wants these things"}
+{"text": "People feel one thing", "primes": ["PEOPLE", "FEEL", "ONE", "THING"], "paraphrase": "Individuals sense a single object", "counterfactual": "People feel many things"}
+{"text": "I see two things", "primes": ["I", "SEE", "TWO", "THING"], "paraphrase": "I observe a pair of objects", "counterfactual": "I see one thing"}
+{"text": "You hear some things", "primes": ["YOU", "HEAR", "SOME", "THING"], "paraphrase": "You listen to several objects", "counterfactual": "You hear all things"}
+{"text": "All this happens", "primes": ["ALL", "THIS", "HAPPEN"], "paraphrase": "Everything this occurs", "counterfactual": "None of this happens"}
+{"text": "Many the same move", "primes": ["MANY", "THE SAME", "MOVE"], "paraphrase": "Numerous identical go", "counterfactual": "Few different move"}
+{"text": "Some other touch", "primes": ["SOME", "OTHER", "TOUCH"], "paraphrase": "Several different contact", "counterfactual": "All these touch"}
+{"text": "Few one live", "primes": ["FEW", "ONE", "LIVE"], "paraphrase": "Little number of single exist", "counterfactual": "Many many live"}
+{"text": "Much two die", "primes": ["MUCH", "TWO", "DIE"], "paraphrase": "A lot of pair end", "counterfactual": "Little one dies"}
+{"text": "Little some do", "primes": ["LITTLE", "SOME", "DO"], "paraphrase": "Small amount of several perform", "counterfactual": "Much all do"}
+{"text": "This happens because I know", "primes": ["THIS", "HAPPEN", "BECAUSE", "I", "KNOW"], "paraphrase": "This occurs due to my understanding", "counterfactual": "This happens because I do not know"}
+{"text": "The same moves if you want", "primes": ["THE SAME", "MOVE", "IF", "YOU", "WANT"], "paraphrase": "The identical goes conditional on your desire", "counterfactual": "The same moves if you do not want"}
+{"text": "Other touches when they think", "primes": ["OTHER", "TOUCH", "WHEN", "THINK"], "paraphrase": "Different contact while they believe", "counterfactual": "Other touches when they do not think"}
+{"text": "One lives before they see", "primes": ["ONE", "LIVE", "BEFORE", "SEE"], "paraphrase": "Single exists prior to their observation", "counterfactual": "One lives after they see"}
+{"text": "Two die after I hear", "primes": ["TWO", "DIE", "AFTER", "I", "HEAR"], "paraphrase": "Pair ends later than my listening", "counterfactual": "Two die before I hear"}
+{"text": "Some do in the place", "primes": ["SOME", "DO", "IN"], "paraphrase": "Several perform within the location", "counterfactual": "Some do outside the place"}
+{"text": "This happens on the thing", "primes": ["THIS", "HAPPEN", "ON", "THING"], "paraphrase": "This occurs upon the object", "counterfactual": "This happens under the thing"}
+{"text": "The same moves under the bed", "primes": ["THE SAME", "MOVE", "UNDER"], "paraphrase": "The identical goes beneath the furniture", "counterfactual": "The same moves on the bed"}
+{"text": "Other touches near the door", "primes": ["OTHER", "TOUCH", "NEAR"], "paraphrase": "Different contact close to the entrance", "counterfactual": "Other touches far from the door"}
+{"text": "One lives far away", "primes": ["ONE", "LIVE", "FAR"], "paraphrase": "Single exists distant", "counterfactual": "One lives near here"}
+{"text": "Two die inside the box", "primes": ["TWO", "DIE", "INSIDE"], "paraphrase": "Pair ends within the container", "counterfactual": "Two die outside the box"}
+{"text": "All this good happens", "primes": ["ALL", "THIS", "GOOD", "HAPPEN"], "paraphrase": "Everything this excellent occurs", "counterfactual": "All this bad happens"}
+{"text": "Many the same bad move", "primes": ["MANY", "THE SAME", "BAD", "MOVE"], "paraphrase": "Numerous identical terrible go", "counterfactual": "Few the same good move"}
+{"text": "Some other big touch", "primes": ["SOME", "OTHER", "BIG", "TOUCH"], "paraphrase": "Several different large contact", "counterfactual": "All other small touch"}
+{"text": "Few one small live", "primes": ["FEW", "ONE", "SMALL", "LIVE"], "paraphrase": "Little number of single tiny exist", "counterfactual": "Many one big live"}
+{"text": "Much two right die", "primes": ["MUCH", "TWO", "RIGHT", "DIE"], "paraphrase": "A lot of pair correct end", "counterfactual": "Little two wrong die"}
+{"text": "Little some wrong do", "primes": ["LITTLE", "SOME", "WRONG", "DO"], "paraphrase": "Small amount of several incorrect perform", "counterfactual": "Much some right do"}
+{"text": "I make this good thing happen", "primes": ["I", "MAKE", "THIS", "GOOD", "THING", "HAPPEN"], "paraphrase": "I create this excellent object to occur", "counterfactual": "I make this bad thing happen"}
+{"text": "You cause the same bad thing to move", "primes": ["YOU", "CAUSE", "THE SAME", "BAD", "THING", "MOVE"], "paraphrase": "You lead the identical terrible object to go", "counterfactual": "You cause the same good thing to move"}
+{"text": "Someone lets other big things touch", "primes": ["SOMEONE", "LET", "OTHER", "BIG", "THING", "TOUCH"], "paraphrase": "A person allows different large objects to contact", "counterfactual": "Someone lets other small things touch"}
+{"text": "People make one small thing live", "primes": ["PEOPLE", "MAKE", "ONE", "SMALL", "THING", "LIVE"], "paraphrase": "Individuals create a single tiny object to exist", "counterfactual": "People make one big thing die"}
+{"text": "I cause two right things to die", "primes": ["I", "CAUSE", "TWO", "RIGHT", "THING", "DIE"], "paraphrase": "I lead a pair of correct objects to end", "counterfactual": "I cause two wrong things to live"}
+{"text": "You let some wrong things happen", "primes": ["YOU", "LET", "SOME", "WRONG", "THING", "HAPPEN"], "paraphrase": "You allow several incorrect objects to occur", "counterfactual": "You let some right things happen"}
+{"text": "All the same good things do the right thing", "primes": ["ALL", "THE SAME", "GOOD", "THING", "DO", "RIGHT", "THING"], "paraphrase": "Everything identical excellent objects perform the correct object", "counterfactual": "All the same bad things do the wrong thing"}
+{"text": "Many other bad people make things happen", "primes": ["MANY", "OTHER", "BAD", "PEOPLE", "MAKE", "THING", "HAPPEN"], "paraphrase": "Numerous different terrible individuals create objects to occur", "counterfactual": "Few other good people make things happen"}
+{"text": "Some one big thing causes people to move", "primes": ["SOME", "ONE", "BIG", "THING", "CAUSE", "PEOPLE", "MOVE"], "paraphrase": "Several single large objects lead individuals to go", "counterfactual": "Some one small thing causes people to move"}
+{"text": "Few two small people let things touch", "primes": ["FEW", "TWO", "SMALL", "PEOPLE", "LET", "THING", "TOUCH"], "paraphrase": "Little number of pair tiny individuals allow objects to contact", "counterfactual": "Many two big people let things touch"}
+{"text": "Much some right work makes things live", "primes": ["MUCH", "SOME", "RIGHT", "MAKE", "THING", "LIVE"], "paraphrase": "A lot of several correct work creates objects to exist", "counterfactual": "Little some wrong work makes things die"}
+{"text": "Little this wrong effort causes things to die", "primes": ["LITTLE", "THIS", "WRONG", "CAUSE", "THING", "DIE"], "paraphrase": "Small amount of this incorrect effort leads objects to end", "counterfactual": "Much this right effort causes things to live"}
+{"text": "I think this is the same good thing", "primes": ["I", "THINK", "THIS", "THE SAME", "GOOD", "THING"], "paraphrase": "I believe this is the identical excellent object", "counterfactual": "I think this is a different bad thing"}
+{"text": "You know the same is other bad thing", "primes": ["YOU", "KNOW", "THE SAME", "OTHER", "BAD", "THING"], "paraphrase": "You understand the identical is different terrible object", "counterfactual": "You know the same is this good thing"}
+{"text": "Someone wants one big thing", "primes": ["SOMEONE", "WANT", "ONE", "BIG", "THING"], "paraphrase": "A person desires a single large object", "counterfactual": "Someone wants many small things"}
+{"text": "People feel two small things", "primes": ["PEOPLE", "FEEL", "TWO", "SMALL", "THING"], "paraphrase": "Individuals sense a pair of tiny objects", "counterfactual": "People feel one big thing"}
+{"text": "I see some right things", "primes": ["I", "SEE", "SOME", "RIGHT", "THING"], "paraphrase": "I observe several correct objects", "counterfactual": "I see all wrong things"}
+{"text": "You hear this wrong thing", "primes": ["YOU", "HEAR", "THIS", "WRONG", "THING"], "paraphrase": "You listen to this incorrect object", "counterfactual": "You hear that right thing"}
+{"text": "All this good happens because I know the same", "primes": ["ALL", "THIS", "GOOD", "HAPPEN", "BECAUSE", "I", "KNOW", "THE SAME"], "paraphrase": "Everything this excellent occurs due to my understanding the identical", "counterfactual": "All this bad happens because I do not know the different"}
+{"text": "Many the same bad move if you want other", "primes": ["MANY", "THE SAME", "BAD", "MOVE", "IF", "YOU", "WANT", "OTHER"], "paraphrase": "Numerous identical terrible go conditional on your desire for different", "counterfactual": "Few the same good move if you do not want this"}
+{"text": "Some other big touch when they think one", "primes": ["SOME", "OTHER", "BIG", "TOUCH", "WHEN", "THINK", "ONE"], "paraphrase": "Several different large contact while they believe single", "counterfactual": "All other small touch when they do not think many"}
+{"text": "Few one small live before they see two", "primes": ["FEW", "ONE", "SMALL", "LIVE", "BEFORE", "SEE", "TWO"], "paraphrase": "Little number of single tiny exist prior to their observation of pair", "counterfactual": "Many one big live after they see one"}
+{"text": "Much two right die after I hear some", "primes": ["MUCH", "TWO", "RIGHT", "DIE", "AFTER", "I", "HEAR", "SOME"], "paraphrase": "A lot of pair correct end later than my listening to several", "counterfactual": "Little two wrong die before I hear all"}
+{"text": "Little some wrong do in this place", "primes": ["LITTLE", "SOME", "WRONG", "DO", "IN", "THIS"], "paraphrase": "Small amount of several incorrect perform within this location", "counterfactual": "Much some right do outside that place"}
+{"text": "This happens on the same thing", "primes": ["THIS", "HAPPEN", "ON", "THE SAME", "THING"], "paraphrase": "This occurs upon the identical object", "counterfactual": "This happens on the other thing"}
+{"text": "The same moves under other bed", "primes": ["THE SAME", "MOVE", "UNDER", "OTHER"], "paraphrase": "The identical goes beneath different furniture", "counterfactual": "The same moves under this bed"}
+{"text": "Other touches near one door", "primes": ["OTHER", "TOUCH", "NEAR", "ONE"], "paraphrase": "Different contact close to single entrance", "counterfactual": "Other touches near many doors"}
+{"text": "One lives far from two places", "primes": ["ONE", "LIVE", "FAR", "TWO"], "paraphrase": "Single exists distant from pair of locations", "counterfactual": "One lives near some places"}
+{"text": "Two die inside some box", "primes": ["TWO", "DIE", "INSIDE", "SOME"], "paraphrase": "Pair ends within several containers", "counterfactual": "Two die inside this box"}
+{"text": "All this good thing does the same right thing", "primes": ["ALL", "THIS", "GOOD", "THING", "DO", "THE SAME", "RIGHT", "THING"], "paraphrase": "Everything this excellent object performs the identical correct object", "counterfactual": "All this bad thing does the other wrong thing"}
+{"text": "Many the same bad people make other things happen", "primes": ["MANY", "THE SAME", "BAD", "PEOPLE", "MAKE", "OTHER", "THING", "HAPPEN"], "paraphrase": "Numerous identical terrible individuals create different objects to occur", "counterfactual": "Few the same good people make this thing happen"}
+{"text": "Some one big thing causes two people to move", "primes": ["SOME", "ONE", "BIG", "THING", "CAUSE", "TWO", "PEOPLE", "MOVE"], "paraphrase": "Several single large objects lead pair of individuals to go", "counterfactual": "Some one small thing causes one person to move"}
+{"text": "Few two small people let some things touch", "primes": ["FEW", "TWO", "SMALL", "PEOPLE", "LET", "SOME", "THING", "TOUCH"], "paraphrase": "Little number of pair tiny individuals allow several objects to contact", "counterfactual": "Many two big people let this thing touch"}
+{"text": "Much some right work makes this thing live", "primes": ["MUCH", "SOME", "RIGHT", "MAKE", "THIS", "THING", "LIVE"], "paraphrase": "A lot of several correct work creates this object to exist", "counterfactual": "Little some wrong work makes that thing die"}
+{"text": "Little this wrong effort causes the same thing to die", "primes": ["LITTLE", "THIS", "WRONG", "CAUSE", "THE SAME", "THING", "DIE"], "paraphrase": "Small amount of this incorrect effort leads the identical object to end", "counterfactual": "Much this right effort causes the other thing to live"}

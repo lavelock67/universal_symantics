@@ -1,0 +1,476 @@
+{
+  "version": "ptb-0.3",
+  "terminals": [
+    "I",
+    "YOU",
+    "SOMEONE",
+    "PEOPLE",
+    "SOMETHING",
+    "THING",
+    "BODY",
+    "THINK",
+    "KNOW",
+    "WANT",
+    "FEEL",
+    "SEE",
+    "HEAR",
+    "BECAUSE",
+    "IF",
+    "NOT",
+    "SAME",
+    "DIFFERENT",
+    "MAYBE",
+    "BEFORE",
+    "AFTER",
+    "WHEN",
+    "CAUSE",
+    "MAKE",
+    "LET",
+    "IN",
+    "ON",
+    "UNDER",
+    "NEAR",
+    "FAR",
+    "INSIDE",
+    "ALL",
+    "MANY",
+    "SOME",
+    "FEW",
+    "MUCH",
+    "LITTLE",
+    "GOOD",
+    "BAD",
+    "BIG",
+    "SMALL",
+    "RIGHT",
+    "WRONG",
+    "DO",
+    "HAPPEN",
+    "MOVE",
+    "TOUCH",
+    "LIVE",
+    "DIE",
+    "THIS",
+    "THE SAME",
+    "OTHER",
+    "ONE",
+    "TWO",
+    "SOME",
+    "VERY",
+    "MORE",
+    "LIKE",
+    "KIND OF",
+    "SAY",
+    "WORDS",
+    "TRUE",
+    "FALSE",
+    "WHERE",
+    "WHEN"
+  ],
+  "types": {
+    "I": "PERSON",
+    "YOU": "PERSON",
+    "SOMEONE": "PERSON",
+    "PEOPLE": "PERSON",
+    "SOMETHING": "THING",
+    "THING": "THING",
+    "BODY": "THING",
+    "THINK": "EVENT",
+    "KNOW": "STATE",
+    "WANT": "EVENT",
+    "FEEL": "EVENT",
+    "SEE": "EVENT",
+    "HEAR": "EVENT",
+    "SAY": "EVENT",
+    "BECAUSE": "BECAUSE",
+    "IF": "IF",
+    "NOT": "NOT",
+    "WHEN": "WHEN",
+    "BEFORE": "BEFORE",
+    "AFTER": "AFTER",
+    "TRUE": "TRUE",
+    "FALSE": "FALSE",
+    "DO": "EVENT",
+    "HAPPEN": "EVENT",
+    "MOVE": "EVENT",
+    "GOOD": "GOOD",
+    "BAD": "BAD",
+    "BIG": "QUANT",
+    "SMALL": "QUANT",
+    "VERY": "VERY",
+    "MORE": "MORE",
+    "LIKE": "LIKE",
+    "ALL": "QUANT",
+    "MANY": "QUANT",
+    "SOME": "QUANT",
+    "FEW": "QUANT",
+    "IN": "PLACE",
+    "ON": "PLACE",
+    "UNDER": "PLACE",
+    "NEAR": "PLACE",
+    "THIS": "THING",
+    "THAT": "THING",
+    "WHERE": "PLACE"
+  },
+  "productions": {
+    "CLAUSE": [
+      [
+        "EVENT"
+      ],
+      [
+        "STATE"
+      ],
+      [
+        "CLAUSE",
+        "CAUSECOND"
+      ],
+      [
+        "POLARITY",
+        "CLAUSE"
+      ]
+    ],
+    "EVENT": [
+      [
+        "DO",
+        "(",
+        "AGENT",
+        ",",
+        "ACTION",
+        ")"
+      ],
+      [
+        "SAY",
+        "(",
+        "AGENT",
+        ",",
+        "CLAUSE",
+        ")"
+      ],
+      [
+        "THINK",
+        "(",
+        "AGENT",
+        ",",
+        "CLAUSE",
+        ")"
+      ],
+      [
+        "WANT",
+        "(",
+        "AGENT",
+        ",",
+        "CLAUSE",
+        ")"
+      ],
+      [
+        "SEE",
+        "(",
+        "AGENT",
+        ",",
+        "THING",
+        ")"
+      ],
+      [
+        "HEAR",
+        "(",
+        "AGENT",
+        ",",
+        "THING",
+        ")"
+      ],
+      [
+        "FEEL",
+        "(",
+        "AGENT",
+        ",",
+        "STATE",
+        ")"
+      ],
+      [
+        "MOVE",
+        "(",
+        "AGENT",
+        ",",
+        "PLACE",
+        ")"
+      ],
+      [
+        "HAPPEN",
+        "(",
+        "EVENT",
+        ")"
+      ]
+    ],
+    "STATE": [
+      [
+        "BE",
+        "(",
+        "SUBJ",
+        ",",
+        "PRED",
+        ")"
+      ],
+      [
+        "TRUE",
+        "(",
+        "PROPOSITION",
+        ")"
+      ],
+      [
+        "FALSE",
+        "(",
+        "PROPOSITION",
+        ")"
+      ],
+      [
+        "KNOW",
+        "(",
+        "AGENT",
+        ",",
+        "CLAUSE",
+        ")"
+      ],
+      [
+        "GOOD",
+        "(",
+        "THING",
+        ")"
+      ],
+      [
+        "BAD",
+        "(",
+        "THING",
+        ")"
+      ],
+      [
+        "BIG",
+        "(",
+        "THING",
+        ")"
+      ],
+      [
+        "SMALL",
+        "(",
+        "THING",
+        ")"
+      ],
+      [
+        "SAME",
+        "(",
+        "THING1",
+        ",",
+        "THING2",
+        ")"
+      ],
+      [
+        "DIFFERENT",
+        "(",
+        "THING1",
+        ",",
+        "THING2",
+        ")"
+      ]
+    ],
+    "CAUSECOND": [
+      [
+        "BECAUSE",
+        "CLAUSE"
+      ],
+      [
+        "IF",
+        "CLAUSE"
+      ],
+      [
+        "WHEN",
+        "CLAUSE"
+      ],
+      [
+        "BEFORE",
+        "CLAUSE"
+      ],
+      [
+        "AFTER",
+        "CLAUSE"
+      ]
+    ],
+    "POLARITY": [
+      [
+        "NOT"
+      ],
+      [
+        "MAYBE"
+      ]
+    ],
+    "AGENT": [
+      [
+        "I"
+      ],
+      [
+        "YOU"
+      ],
+      [
+        "SOMEONE"
+      ],
+      [
+        "PEOPLE"
+      ]
+    ],
+    "ACTION": [
+      [
+        "DO"
+      ],
+      [
+        "SAY"
+      ],
+      [
+        "THINK"
+      ],
+      [
+        "WANT"
+      ],
+      [
+        "SEE"
+      ],
+      [
+        "HEAR"
+      ],
+      [
+        "FEEL"
+      ],
+      [
+        "MOVE"
+      ]
+    ],
+    "SUBJ": [
+      [
+        "I"
+      ],
+      [
+        "YOU"
+      ],
+      [
+        "SOMEONE"
+      ],
+      [
+        "PEOPLE"
+      ],
+      [
+        "SOMETHING"
+      ],
+      [
+        "THING"
+      ]
+    ],
+    "PRED": [
+      [
+        "GOOD"
+      ],
+      [
+        "BAD"
+      ],
+      [
+        "BIG"
+      ],
+      [
+        "SMALL"
+      ],
+      [
+        "SAME"
+      ],
+      [
+        "DIFFERENT"
+      ]
+    ],
+    "THING": [
+      [
+        "THIS"
+      ],
+      [
+        "THAT"
+      ],
+      [
+        "SOMETHING"
+      ],
+      [
+        "THING"
+      ],
+      [
+        "BODY"
+      ]
+    ],
+    "PLACE": [
+      [
+        "IN"
+      ],
+      [
+        "ON"
+      ],
+      [
+        "UNDER"
+      ],
+      [
+        "NEAR"
+      ],
+      [
+        "FAR"
+      ],
+      [
+        "INSIDE"
+      ],
+      [
+        "WHERE"
+      ]
+    ],
+    "TIME": [
+      [
+        "WHEN"
+      ],
+      [
+        "BEFORE"
+      ],
+      [
+        "AFTER"
+      ],
+      [
+        "NOW"
+      ]
+    ],
+    "QUANT": [
+      [
+        "ALL"
+      ],
+      [
+        "MANY"
+      ],
+      [
+        "SOME"
+      ],
+      [
+        "FEW"
+      ],
+      [
+        "MUCH"
+      ],
+      [
+        "LITTLE"
+      ],
+      [
+        "ONE"
+      ],
+      [
+        "TWO"
+      ]
+    ],
+    "PROPOSITION": [
+      [
+        "CLAUSE"
+      ]
+    ]
+  },
+  "constraints": {
+    "max_depth": 6,
+    "molecule_ratio_max": 0.25,
+    "max_scope_depth": 3,
+    "max_clause_length": 20
+  }
+}

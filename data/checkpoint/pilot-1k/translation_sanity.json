@@ -1,0 +1,108 @@
+{
+  "proof_success_rate": 0.625,
+  "prime_preservation_rate": 1.0,
+  "wsd_stability_rate": 1.0,
+  "abstention_rate": 0.0,
+  "traces": [
+    {
+      "text": "I have just finished.",
+      "lang": "en",
+      "goal": "PAST(finish)",
+      "success": true,
+      "depth": 1,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "Acabo de terminar.",
+      "lang": "es",
+      "goal": "PAST(terminar)",
+      "success": true,
+      "depth": 1,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "I have been working for three hours.",
+      "lang": "en",
+      "goal": "DURING(work, [now\u2212PT3H, now])",
+      "success": true,
+      "depth": 1,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "Llevo tres horas trabajando.",
+      "lang": "es",
+      "goal": "DURING(trabajar, [now\u2212PT3H, now])",
+      "success": true,
+      "depth": 1,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "He almost fell.",
+      "lang": "en",
+      "goal": "\u00acfall \u2227 near(fall)",
+      "success": true,
+      "depth": 1,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "Casi me caigo.",
+      "lang": "es",
+      "goal": "\u00accaer \u2227 near(caer)",
+      "success": false,
+      "depth": 0,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "Il est en train de travailler.",
+      "lang": "fr",
+      "goal": "ONGOING(travailler)",
+      "success": false,
+      "depth": 0,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "He is working.",
+      "lang": "en",
+      "goal": "ONGOING(work)",
+      "success": false,
+      "depth": 0,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "I have just finished.",
+      "lang": "en",
+      "goal": "PAST(finish)",
+      "success": true,
+      "depth": 1,
+      "families": [
+        "aspect"
+      ]
+    },
+    {
+      "text": "Acabo de terminar.",
+      "lang": "es",
+      "goal": "PAST(terminar)",
+      "success": true,
+      "depth": 1,
+      "families": [
+        "aspect"
+      ]
+    }
+  ]
+}

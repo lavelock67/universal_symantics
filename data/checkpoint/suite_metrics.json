@@ -1,0 +1,79 @@
+{
+  "quantifiers": {
+    "en": {
+      "tp": 12,
+      "fp": 2,
+      "fn": 4,
+      "tn": 66,
+      "precision": 0.8571428571428571,
+      "recall": 0.75,
+      "accuracy": 0.6666666666666666,
+      "fp_rate_negatives": 0.029411764705882353,
+      "family_coverage_Q1": 0.75
+    },
+    "es": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 3,
+      "tn": 66,
+      "precision": 0.8666666666666667,
+      "recall": 0.8125,
+      "accuracy": 0.7222222222222222,
+      "fp_rate_negatives": 0.029411764705882353,
+      "family_coverage_Q1": 0.8125
+    },
+    "fr": {
+      "tp": 11,
+      "fp": 3,
+      "fn": 5,
+      "tn": 65,
+      "precision": 0.7857142857142857,
+      "recall": 0.6875,
+      "accuracy": 0.5789473684210527,
+      "fp_rate_negatives": 0.04411764705882353,
+      "family_coverage_Q1": 0.6875
+    }
+  },
+  "aspect": {
+    "en": {
+      "tp": 25,
+      "fp": 42,
+      "fn": 5,
+      "tn": 63,
+      "precision": 0.373134328358209,
+      "recall": 0.8333333333333334,
+      "accuracy": 0.3472222222222222,
+      "fp_rate_negatives": 0.4,
+      "family_coverage_A1": 0.8333333333333334,
+      "paraphrase_consistency": 0.7555555555555555,
+      "counterfactual_flip_rate": 0.5111111111111111
+    },
+    "es": {
+      "tp": 10,
+      "fp": 12,
+      "fn": 20,
+      "tn": 93,
+      "precision": 0.45454545454545453,
+      "recall": 0.3333333333333333,
+      "accuracy": 0.23809523809523808,
+      "fp_rate_negatives": 0.11428571428571428,
+      "family_coverage_A1": 0.3333333333333333,
+      "paraphrase_consistency": 0.8222222222222222,
+      "counterfactual_flip_rate": 0.13333333333333333
+    },
+    "fr": {
+      "tp": 16,
+      "fp": 22,
+      "fn": 14,
+      "tn": 83,
+      "precision": 0.42105263157894735,
+      "recall": 0.5333333333333333,
+      "accuracy": 0.3076923076923077,
+      "fp_rate_negatives": 0.20952380952380953,
+      "family_coverage_A1": 0.5333333333333333,
+      "paraphrase_consistency": 0.8222222222222222,
+      "counterfactual_flip_rate": 0.15555555555555556
+    }
+  },
+  "overall": {}
+}

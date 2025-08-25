@@ -1,0 +1,72 @@
+{"text": "All people know the thing", "primes": ["ALL", "PEOPLE", "KNOW", "THING"], "paraphrase": "Every individual understands the object", "counterfactual": "Not all people know the thing"}
+{"text": "Many people think about it", "primes": ["MANY", "PEOPLE", "THINK"], "paraphrase": "Numerous individuals believe about it", "counterfactual": "Few people think about it"}
+{"text": "Some people want to help", "primes": ["SOME", "PEOPLE", "WANT"], "paraphrase": "Several individuals desire to assist", "counterfactual": "No people want to help"}
+{"text": "Few people see the thing", "primes": ["FEW", "PEOPLE", "SEE", "THING"], "paraphrase": "Little number of individuals observe the object", "counterfactual": "Many people see the thing"}
+{"text": "Much time passed", "primes": ["MUCH"], "paraphrase": "A lot of time elapsed", "counterfactual": "Little time passed"}
+{"text": "Little water remained", "primes": ["LITTLE"], "paraphrase": "Small amount of water stayed", "counterfactual": "Much water remained"}
+{"text": "All things are the same", "primes": ["ALL", "THING", "SAME"], "paraphrase": "Every object is identical", "counterfactual": "Not all things are the same"}
+{"text": "Many things happened", "primes": ["MANY", "THING"], "paraphrase": "Numerous events occurred", "counterfactual": "Few things happened"}
+{"text": "Some things are different", "primes": ["SOME", "THING", "DIFFERENT"], "paraphrase": "Several objects are distinct", "counterfactual": "No things are different"}
+{"text": "Few things matter", "primes": ["FEW", "THING"], "paraphrase": "Little number of objects are important", "counterfactual": "Many things matter"}
+{"text": "Much work was done", "primes": ["MUCH"], "paraphrase": "A lot of work was completed", "counterfactual": "Little work was done"}
+{"text": "Little effort was made", "primes": ["LITTLE"], "paraphrase": "Small amount of effort was exerted", "counterfactual": "Much effort was made"}
+{"text": "All someone knows", "primes": ["ALL", "SOMEONE", "KNOW"], "paraphrase": "Everything a person understands", "counterfactual": "Not all someone knows"}
+{"text": "Many someone thinks", "primes": ["MANY", "SOMEONE", "THINK"], "paraphrase": "Numerous thoughts a person has", "counterfactual": "Few someone thinks"}
+{"text": "Some someone wants", "primes": ["SOME", "SOMEONE", "WANT"], "paraphrase": "Several desires a person has", "counterfactual": "No someone wants"}
+{"text": "Few someone sees", "primes": ["FEW", "SOMEONE", "SEE"], "paraphrase": "Little number of things a person observes", "counterfactual": "Many someone sees"}
+{"text": "Much someone feels", "primes": ["MUCH", "SOMEONE", "FEEL"], "paraphrase": "A lot of emotions a person experiences", "counterfactual": "Little someone feels"}
+{"text": "Little someone hears", "primes": ["LITTLE", "SOMEONE", "HEAR"], "paraphrase": "Small amount of sounds a person listens to", "counterfactual": "Much someone hears"}
+{"text": "All the body knows", "primes": ["ALL", "BODY", "KNOW"], "paraphrase": "Everything the person understands", "counterfactual": "Not all the body knows"}
+{"text": "Many the body thinks", "primes": ["MANY", "BODY", "THINK"], "paraphrase": "Numerous thoughts the person has", "counterfactual": "Few the body thinks"}
+{"text": "Some the body wants", "primes": ["SOME", "BODY", "WANT"], "paraphrase": "Several desires the person has", "counterfactual": "No the body wants"}
+{"text": "Few the body sees", "primes": ["FEW", "BODY", "SEE"], "paraphrase": "Little number of things the person observes", "counterfactual": "Many the body sees"}
+{"text": "Much the body feels", "primes": ["MUCH", "BODY", "FEEL"], "paraphrase": "A lot of emotions the person experiences", "counterfactual": "Little the body feels"}
+{"text": "Little the body hears", "primes": ["LITTLE", "BODY", "HEAR"], "paraphrase": "Small amount of sounds the person listens to", "counterfactual": "Much the body hears"}
+{"text": "All I know", "primes": ["ALL", "I", "KNOW"], "paraphrase": "Everything I understand", "counterfactual": "Not all I know"}
+{"text": "Many I think", "primes": ["MANY", "I", "THINK"], "paraphrase": "Numerous thoughts I have", "counterfactual": "Few I think"}
+{"text": "Some I want", "primes": ["SOME", "I", "WANT"], "paraphrase": "Several things I desire", "counterfactual": "No I want"}
+{"text": "Few I see", "primes": ["FEW", "I", "SEE"], "paraphrase": "Little number of things I observe", "counterfactual": "Many I see"}
+{"text": "Much I feel", "primes": ["MUCH", "I", "FEEL"], "paraphrase": "A lot of emotions I experience", "counterfactual": "Little I feel"}
+{"text": "Little I hear", "primes": ["LITTLE", "I", "HEAR"], "paraphrase": "Small amount of sounds I listen to", "counterfactual": "Much I hear"}
+{"text": "All you know", "primes": ["ALL", "YOU", "KNOW"], "paraphrase": "Everything you understand", "counterfactual": "Not all you know"}
+{"text": "Many you think", "primes": ["MANY", "YOU", "THINK"], "paraphrase": "Numerous thoughts you have", "counterfactual": "Few you think"}
+{"text": "Some you want", "primes": ["SOME", "YOU", "WANT"], "paraphrase": "Several things you desire", "counterfactual": "No you want"}
+{"text": "Few you see", "primes": ["FEW", "YOU", "SEE"], "paraphrase": "Little number of things you observe", "counterfactual": "Many you see"}
+{"text": "Much you feel", "primes": ["MUCH", "YOU", "FEEL"], "paraphrase": "A lot of emotions you experience", "counterfactual": "Little you feel"}
+{"text": "Little you hear", "primes": ["LITTLE", "YOU", "HEAR"], "paraphrase": "Small amount of sounds you listen to", "counterfactual": "Much you hear"}
+{"text": "All things in the place", "primes": ["ALL", "THING", "IN"], "paraphrase": "Every object within the location", "counterfactual": "Not all things in the place"}
+{"text": "Many things on the table", "primes": ["MANY", "THING", "ON"], "paraphrase": "Numerous objects upon the surface", "counterfactual": "Few things on the table"}
+{"text": "Some things under the bed", "primes": ["SOME", "THING", "UNDER"], "paraphrase": "Several objects beneath the furniture", "counterfactual": "No things under the bed"}
+{"text": "Few things near the door", "primes": ["FEW", "THING", "NEAR"], "paraphrase": "Little number of objects close to the entrance", "counterfactual": "Many things near the door"}
+{"text": "Much water in the glass", "primes": ["MUCH", "IN"], "paraphrase": "A lot of water within the container", "counterfactual": "Little water in the glass"}
+{"text": "Little food on the plate", "primes": ["LITTLE", "ON"], "paraphrase": "Small amount of food upon the dish", "counterfactual": "Much food on the plate"}
+{"text": "All people in the room", "primes": ["ALL", "PEOPLE", "IN"], "paraphrase": "Every individual within the space", "counterfactual": "Not all people in the room"}
+{"text": "Many people on the street", "primes": ["MANY", "PEOPLE", "ON"], "paraphrase": "Numerous individuals upon the road", "counterfactual": "Few people on the street"}
+{"text": "Some people under the tree", "primes": ["SOME", "PEOPLE", "UNDER"], "paraphrase": "Several individuals beneath the plant", "counterfactual": "No people under the tree"}
+{"text": "Few people near the window", "primes": ["FEW", "PEOPLE", "NEAR"], "paraphrase": "Little number of individuals close to the opening", "counterfactual": "Many people near the window"}
+{"text": "Much time before the event", "primes": ["MUCH", "BEFORE"], "paraphrase": "A lot of time prior to the event", "counterfactual": "Little time before the event"}
+{"text": "Little time after the event", "primes": ["LITTLE", "AFTER"], "paraphrase": "Small amount of time later than the event", "counterfactual": "Much time after the event"}
+{"text": "All things because of you", "primes": ["ALL", "THING", "BECAUSE", "YOU"], "paraphrase": "Every object due to you", "counterfactual": "Not all things because of you"}
+{"text": "Many things if you want", "primes": ["MANY", "THING", "IF", "YOU", "WANT"], "paraphrase": "Numerous objects conditional on your desire", "counterfactual": "Few things if you want"}
+{"text": "Some things when I think", "primes": ["SOME", "THING", "WHEN", "I", "THINK"], "paraphrase": "Several objects while I believe", "counterfactual": "No things when I think"}
+{"text": "Few things not the same", "primes": ["FEW", "THING", "NOT", "SAME"], "paraphrase": "Little number of objects that are not identical", "counterfactual": "Many things not the same"}
+{"text": "Much work because I know", "primes": ["MUCH", "BECAUSE", "I", "KNOW"], "paraphrase": "A lot of work due to my understanding", "counterfactual": "Little work because I know"}
+{"text": "Little help if you feel", "primes": ["LITTLE", "IF", "YOU", "FEEL"], "paraphrase": "Small amount of assistance conditional on your sensing", "counterfactual": "Much help if you feel"}
+{"text": "All people make things", "primes": ["ALL", "PEOPLE", "MAKE", "THING"], "paraphrase": "Every individual creates objects", "counterfactual": "Not all people make things"}
+{"text": "Many people cause problems", "primes": ["MANY", "PEOPLE", "CAUSE"], "paraphrase": "Numerous individuals lead to problems", "counterfactual": "Few people cause problems"}
+{"text": "Some people let others help", "primes": ["SOME", "PEOPLE", "LET"], "paraphrase": "Several individuals allow others to assist", "counterfactual": "No people let others help"}
+{"text": "Few people see the truth", "primes": ["FEW", "PEOPLE", "SEE"], "paraphrase": "Little number of individuals observe the truth", "counterfactual": "Many people see the truth"}
+{"text": "Much knowledge in the book", "primes": ["MUCH", "IN"], "paraphrase": "A lot of knowledge within the book", "counterfactual": "Little knowledge in the book"}
+{"text": "Little wisdom in the words", "primes": ["LITTLE", "IN"], "paraphrase": "Small amount of wisdom within the words", "counterfactual": "Much wisdom in the words"}
+{"text": "All things happen for a reason", "primes": ["ALL", "THING"], "paraphrase": "Every object occurs for a purpose", "counterfactual": "Not all things happen for a reason"}
+{"text": "Many things change over time", "primes": ["MANY", "THING"], "paraphrase": "Numerous objects transform over time", "counterfactual": "Few things change over time"}
+{"text": "Some things remain the same", "primes": ["SOME", "THING", "SAME"], "paraphrase": "Several objects stay identical", "counterfactual": "No things remain the same"}
+{"text": "Few things last forever", "primes": ["FEW", "THING"], "paraphrase": "Little number of objects endure forever", "counterfactual": "Many things last forever"}
+{"text": "Much effort goes into this", "primes": ["MUCH"], "paraphrase": "A lot of effort is invested in this", "counterfactual": "Little effort goes into this"}
+{"text": "Little progress has been made", "primes": ["LITTLE"], "paraphrase": "Small amount of progress has been achieved", "counterfactual": "Much progress has been made"}
+{"text": "All the world knows", "primes": ["ALL"], "paraphrase": "Everything the world understands", "counterfactual": "Not all the world knows"}
+{"text": "Many the world thinks", "primes": ["MANY"], "paraphrase": "Numerous thoughts the world has", "counterfactual": "Few the world thinks"}
+{"text": "Some the world wants", "primes": ["SOME"], "paraphrase": "Several things the world desires", "counterfactual": "No the world wants"}
+{"text": "Few the world sees", "primes": ["FEW"], "paraphrase": "Little number of things the world observes", "counterfactual": "Many the world sees"}
+{"text": "Much the world feels", "primes": ["MUCH"], "paraphrase": "A lot of emotions the world experiences", "counterfactual": "Little the world feels"}
+{"text": "Little the world hears", "primes": ["LITTLE"], "paraphrase": "Small amount of sounds the world listens to", "counterfactual": "Much the world hears"}

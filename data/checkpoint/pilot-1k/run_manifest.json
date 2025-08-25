@@ -1,0 +1,84 @@
+{
+  "run_id": "pilot-1k",
+  "commit_sha": "a3220c43dc60a51ad086d3ec49b51ba71e22618a",
+  "branch": "main",
+  "datasets": {
+    "quantifiers": {
+      "en": {
+        "items_total": 1000,
+        "negatives": 120,
+        "paraphrase_variants": 60,
+        "counterfactual_pairs": 60
+      },
+      "es": {
+        "items_total": 1000,
+        "negatives": 120,
+        "paraphrase_variants": 60,
+        "counterfactual_pairs": 60
+      },
+      "fr": {
+        "items_total": 1000,
+        "negatives": 120,
+        "paraphrase_variants": 60,
+        "counterfactual_pairs": 60
+      }
+    },
+    "aspect": {
+      "en": {
+        "items_total": 1000,
+        "negatives": 72,
+        "paraphrase_variants": 60,
+        "counterfactual_pairs": 12
+      },
+      "es": {
+        "items_total": 1000,
+        "negatives": 60,
+        "paraphrase_variants": 60,
+        "counterfactual_pairs": 0
+      },
+      "fr": {
+        "items_total": 1000,
+        "negatives": 60,
+        "paraphrase_variants": 60,
+        "counterfactual_pairs": 0
+      }
+    }
+  },
+  "models_tools": {
+    "parser": "none (heuristic UD cues)",
+    "wsd": "none",
+    "nli": "none",
+    "sbert": "none"
+  },
+  "tool_versions": {
+    "python": "Python 3.9.6",
+    "generator": "tools/generate_checkpoint_bundle.py",
+    "evaluator": "tools/evaluate_suites.py",
+    "calibration": "tools/compute_calibration.py"
+  },
+  "scales_thresholds": {
+    "calibration_tau": true,
+    "abstain_policy": "prob<tau",
+    "gates": {
+      "ece_overall": 0.05,
+      "ece_per_class": 0.08,
+      "fp_negatives": 0.01
+    }
+  },
+  "ci_image_ids": {
+    "evaluator_image": "heuristic_only",
+    "dataset_versions": {
+      "quantifiers": {
+        "en": "ff7e9f956330633898653b9b7ba2516ff108d7034743986c7d285449acb88e8f",
+        "es": "c9175e60a8697c7ed076daba07cbda3fc006151da315f5ddfea2ade990bdfa31",
+        "fr": "2a82ab5f8c85bb4574fd38275cfa12890a2bb7b44d260d7e88ad393529308a50"
+      },
+      "aspect": {
+        "en": "589e74dc77ae8d1de978e2cd6c208a07537246b253734766817f21ba9357a195",
+        "es": "3dc966b2b4c92de15272968c9f96ed82d96dc848a0817358f9ab987f8dfb4dbc",
+        "fr": "f9c463b1e2adb674a388def5f45ade2198dceeb758fd7f44fdc4c8321518cb63"
+      },
+      "negatives": "a7b43e05d4919eea2a73bc281bd598f802c2575d829939c549669374ae41f601"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{"text": "I have never runed.", "language": "en", "label": 0, "group_id": "apos-en-4", "type": "counterfactual"}
+{"text": "She had never finished.", "language": "en", "label": 0, "group_id": "apos-en-5", "type": "counterfactual"}
+{"text": "She had never eated.", "language": "en", "label": 0, "group_id": "apos-en-8", "type": "counterfactual"}
+{"text": "I have never falled.", "language": "en", "label": 0, "group_id": "apos-en-14", "type": "counterfactual"}
+{"text": "She had never eated.", "language": "en", "label": 0, "group_id": "apos-en-23", "type": "counterfactual"}
+{"text": "I have never falled.", "language": "en", "label": 0, "group_id": "apos-en-27", "type": "counterfactual"}
+{"text": "I have never runed.", "language": "en", "label": 0, "group_id": "apos-en-29", "type": "counterfactual"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-30", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-31", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-32", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-33", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-34", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-35", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-36", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-37", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-38", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-39", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-40", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-41", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-42", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-43", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-44", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-45", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-46", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-47", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-48", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-49", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-50", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-51", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-52", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-53", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-54", "type": "negative"}
+{"text": "I have been to Paris.", "language": "en", "label": 0, "group_id": "aneg-en-55", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-56", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-57", "type": "negative"}
+{"text": "Stop the car!", "language": "en", "label": 0, "group_id": "aneg-en-58", "type": "negative"}
+{"text": "I just want to go.", "language": "en", "label": 0, "group_id": "aneg-en-59", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-30", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-31", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-32", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-33", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-34", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-35", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-36", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-37", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-38", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-39", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-40", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-41", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-42", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-43", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-44", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-45", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-46", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-47", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-48", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-49", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-50", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-51", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-52", "type": "negative"}
+{"text": "Solo quiero ir.", "language": "es", "label": 0, "group_id": "aneg-es-53", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-54", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-55", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-56", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-57", "type": "negative"}
+{"text": "He estado en París.", "language": "es", "label": 0, "group_id": "aneg-es-58", "type": "negative"}
+{"text": "Para el coche!", "language": "es", "label": 0, "group_id": "aneg-es-59", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-30", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-31", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-32", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-33", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-34", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-35", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-36", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-37", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-38", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-39", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-40", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-41", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-42", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-43", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-44", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-45", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-46", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-47", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-48", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-49", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-50", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-51", "type": "negative"}
+{"text": "Arrête la voiture !", "language": "fr", "label": 0, "group_id": "aneg-fr-52", "type": "negative"}
+{"text": "J'ai été à Paris.", "language": "fr", "label": 0, "group_id": "aneg-fr-53", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-54", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-55", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-56", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-57", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-58", "type": "negative"}
+{"text": "Je veux juste partir.", "language": "fr", "label": 0, "group_id": "aneg-fr-59", "type": "negative"}

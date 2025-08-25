@@ -1,0 +1,6492 @@
+{
+  "reliability_dev": [
+    {
+      "bin": 0,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.05
+    },
+    {
+      "bin": 1,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.15
+    },
+    {
+      "bin": 2,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.25
+    },
+    {
+      "bin": 3,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.35
+    },
+    {
+      "bin": 4,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.45
+    },
+    {
+      "bin": 5,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.55
+    },
+    {
+      "bin": 6,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.65
+    },
+    {
+      "bin": 7,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.75
+    },
+    {
+      "bin": 8,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.85
+    },
+    {
+      "bin": 9,
+      "count": 95,
+      "avg_acc": 1.0,
+      "avg_conf": 1.0
+    }
+  ],
+  "reliability_eval": [
+    {
+      "bin": 0,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.05
+    },
+    {
+      "bin": 1,
+      "count": 8,
+      "avg_acc": 0.0,
+      "avg_conf": 0.09999999999999999
+    },
+    {
+      "bin": 2,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.25
+    },
+    {
+      "bin": 3,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.35
+    },
+    {
+      "bin": 4,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.45
+    },
+    {
+      "bin": 5,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.55
+    },
+    {
+      "bin": 6,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.65
+    },
+    {
+      "bin": 7,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.75
+    },
+    {
+      "bin": 8,
+      "count": 0,
+      "avg_acc": 0.0,
+      "avg_conf": 0.85
+    },
+    {
+      "bin": 9,
+      "count": 34,
+      "avg_acc": 1.0,
+      "avg_conf": 0.9800000000000002
+    }
+  ],
+  "ece_dev": 0.0,
+  "ece_eval": 0.03523809523809507,
+  "brier_eval": 0.0022285714285714305,
+  "aspect_metrics": {
+    "resume:en": {
+      "ece": 0.019999999999999796,
+      "brier": 0.00040000000000000067,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 7,
+          "avg_acc": 1.0,
+          "avg_conf": 0.9800000000000002
+        }
+      ]
+    },
+    "do_again:en": {
+      "ece": 0.019999999999999685,
+      "brier": 0.0004000000000000008,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 12,
+          "avg_acc": 1.0,
+          "avg_conf": 0.9800000000000003
+        }
+      ]
+    },
+    "ongoing:fr": {
+      "ece": 0.020000000000000018,
+      "brier": 0.0004000000000000007,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 1,
+          "avg_acc": 1.0,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "almost_do:en": {
+      "ece": 0.48,
+      "brier": 0.48039999999999994,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 4,
+          "avg_acc": 0.5,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "almost_do:es": {
+      "ece": 0.020000000000000018,
+      "brier": 0.0004000000000000007,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 2,
+          "avg_acc": 1.0,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "almost_do:fr": {
+      "ece": 0.020000000000000018,
+      "brier": 0.0004000000000000007,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 1,
+          "avg_acc": 1.0,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "stop:en": {
+      "ece": 0.48,
+      "brier": 0.48039999999999994,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 2,
+          "avg_acc": 0.5,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "stop:es": {
+      "ece": 0.020000000000000018,
+      "brier": 0.0004000000000000007,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 1,
+          "avg_acc": 1.0,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "resume:es": {
+      "ece": 0.020000000000000018,
+      "brier": 0.0004000000000000007,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 1,
+          "avg_acc": 1.0,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "stop:fr": {
+      "ece": 0.020000000000000018,
+      "brier": 0.0004000000000000007,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 1,
+          "avg_acc": 1.0,
+          "avg_conf": 0.98
+        }
+      ]
+    },
+    "resume:fr": {
+      "ece": 0.020000000000000018,
+      "brier": 0.0004000000000000007,
+      "reliability": [
+        {
+          "bin": 0,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.05
+        },
+        {
+          "bin": 1,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.15
+        },
+        {
+          "bin": 2,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.25
+        },
+        {
+          "bin": 3,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.35
+        },
+        {
+          "bin": 4,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.45
+        },
+        {
+          "bin": 5,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.55
+        },
+        {
+          "bin": 6,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.65
+        },
+        {
+          "bin": 7,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.75
+        },
+        {
+          "bin": 8,
+          "count": 0,
+          "avg_acc": 0.0,
+          "avg_conf": 0.85
+        },
+        {
+          "bin": 9,
+          "count": 1,
+          "avg_acc": 1.0,
+          "avg_conf": 0.98
+        }
+      ]
+    }
+  },
+  "risk_coverage": [
+    {
+      "tau": 0.0,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.01,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.02,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.03,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.04,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.05,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.06,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.07,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.08,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.09,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.1,
+      "coverage": 1.0,
+      "risk": 0.19047619047619047,
+      "fpr": 1.0
+    },
+    {
+      "tau": 0.11,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.12,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.13,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.14,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.15,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.16,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.17,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.18,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.19,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.2,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.21,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.22,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.23,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.24,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.25,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.26,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.27,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.28,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.29,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.3,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.31,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.32,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.33,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.34,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.35,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.36,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.37,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.38,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.39,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.4,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.41,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.42,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.43,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.44,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.45,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.46,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.47,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.48,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.49,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.5,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.51,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.52,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.53,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.54,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.55,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.56,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.57,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.58,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.59,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.6,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.61,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.62,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.63,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.64,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.65,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.66,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.67,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.68,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.69,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.7,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.71,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.72,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.73,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.74,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.75,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.76,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.77,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.78,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.79,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.8,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.81,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.82,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.83,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.84,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.85,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.86,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.87,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.88,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.89,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.9,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.91,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.92,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.93,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.94,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.95,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.96,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.97,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.98,
+      "coverage": 0.8095238095238095,
+      "risk": 0.0,
+      "fpr": 0.0
+    },
+    {
+      "tau": 0.99,
+      "coverage": 0.0,
+      "risk": 0.0,
+      "fpr": 0.0
+    }
+  ],
+  "chosen_tau_fp_lt_1pct": 0.11,
+  "test_cases": [
+    {
+      "input": "I have just finished the work.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I have just finished the work.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "FINISH"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She has just arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She has just arrived.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They have just left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They have just left.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "LEAVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He has just completed the task.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He has just completed the task.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "COME"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We have just begun.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We have just begun.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "have just",
+            "confidence": 0.35,
+            "rule_id": "A-EN-RECENT-HAVE-JUST",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.35,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "have just",
+              "rule_id": "A-EN-RECENT-HAVE-JUST"
+            }
+          ],
+          "ud_paths": [
+            "pattern_match(have just)"
+          ],
+          "rule_ids": [
+            "A-EN-RECENT-HAVE-JUST"
+          ],
+          "confidence": 0.35,
+          "alt_readings": [],
+          "guards": [
+            "HOTFIX_ACTIVE"
+          ],
+          "notes": "Hotfix version - requires multi-word patterns and syntactic evidence"
+        }
+      }
+    },
+    {
+      "input": "You have just eaten.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You have just eaten.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I had just finished.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I had just finished.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "FINISH"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She had just left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She had just left.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "LEAVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They had just arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They had just arrived.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We had just started.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We had just started.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He had just finished.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He had just finished.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "FINISH"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You had just completed.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You had just completed.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I will have just finished.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I will have just finished.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "FINISH"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She will have just arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She will have just arrived.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They will have just left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They will have just left.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "LEAVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We will have just begun.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We will have just begun.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "have just",
+            "confidence": 0.35,
+            "rule_id": "A-EN-RECENT-HAVE-JUST",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.35,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "have just",
+              "rule_id": "A-EN-RECENT-HAVE-JUST"
+            }
+          ],
+          "ud_paths": [
+            "pattern_match(have just)"
+          ],
+          "rule_ids": [
+            "A-EN-RECENT-HAVE-JUST"
+          ],
+          "confidence": 0.35,
+          "alt_readings": [],
+          "guards": [
+            "HOTFIX_ACTIVE"
+          ],
+          "notes": "Hotfix version - requires multi-word patterns and syntactic evidence"
+        }
+      }
+    },
+    {
+      "input": "He will have just eaten.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He will have just eaten.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You will have just started.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You will have just started.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RECENT_PAST",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RECENT_PAST"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RECENT_PAST"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I am having just finished.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I am having just finished.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "She is having just arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She is having just arrived.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "They are having just left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They are having just left.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "We are having just begun.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We are having just begun.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "He is having just eaten.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He is having just eaten.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "You are having just started.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You are having just started.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "I was having just finished.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I was having just finished.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "She was having just arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She was having just arrived.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "They were having just left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They were having just left.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "We were having just begun.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We were having just begun.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "He was having just eaten.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He was having just eaten.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "You were having just started.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You were having just started.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "I have been working for three hours.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I have been working for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "WORK",
+            "duration_iso8601": "PT3H"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She has been studying for two weeks.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She has been studying for two weeks.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "STUDY",
+            "duration_iso8601": "P2W"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They have been playing for an hour.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They have been playing for an hour.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He has been running for 30 minutes.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He has been running for 30 minutes.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "PT30M"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We have been waiting for five years.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We have been waiting for five years.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "P5Y"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You have been living for ten months.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You have been living for ten months.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "P10M"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I had been working for three hours.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I had been working for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "WORK",
+            "duration_iso8601": "PT3H"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She had been studying for two weeks.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She had been studying for two weeks.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "STUDY",
+            "duration_iso8601": "P2W"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They had been playing for an hour.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They had been playing for an hour.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He had been running for 30 minutes.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He had been running for 30 minutes.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "PT30M"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We had been waiting for five years.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We had been waiting for five years.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "P5Y"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You had been living for ten months.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You had been living for ten months.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "P10M"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I will have been working for three hours.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I will have been working for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "WORK",
+            "duration_iso8601": "PT3H"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She will have been studying for two weeks.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She will have been studying for two weeks.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "STUDY",
+            "duration_iso8601": "P2W"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They will have been playing for an hour.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They will have been playing for an hour.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He will have been running for 30 minutes.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He will have been running for 30 minutes.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "PT30M"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We will have been waiting for five years.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We will have been waiting for five years.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "P5Y"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You will have been living for ten months.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You will have been living for ten months.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "ACTION",
+            "duration_iso8601": "P10M"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I am working for three hours.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I am working for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "WORK"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She is studying for two weeks.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She is studying for two weeks.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "STUDY"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They are playing for an hour.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They are playing for an hour.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He is running for 30 minutes.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He is running for 30 minutes.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We are waiting for five years.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We are waiting for five years.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You are living for ten months.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You are living for ten months.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I was working for three hours.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I was working for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "WORK"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She was studying for two weeks.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She was studying for two weeks.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "STUDY"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They were playing for an hour.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They were playing for an hour.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He was running for 30 minutes.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He was running for 30 minutes.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We were waiting for five years.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We were waiting for five years.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You were living for ten months.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You were living for ten months.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I almost finished the work.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I almost finished the work.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "WORK"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She almost arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She almost arrived.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They almost left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They almost left.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "LEAVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He almost completed the task.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He almost completed the task.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "COME"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We almost begun.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We almost begun.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You almost eaten.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You almost eaten.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I almost fall.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I almost fall.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She almost arrives.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She almost arrives.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They almost leave.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They almost leave.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "LEAVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He almost completes the task.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He almost completes the task.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We almost begin.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We almost begin.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You almost eat.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You almost eat.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I almost fell.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I almost fell.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She almost arrived.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She almost arrived.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They almost left.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They almost left.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "LEAVE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He almost completed.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He almost completed.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We almost began.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We almost began.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You almost ate.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You almost ate.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I stopped smoking.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I stopped smoking.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "SMOKE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She stopped studying.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She stopped studying.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "STUDY"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They stopped playing.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They stopped playing.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He stopped running.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He stopped running.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We stopped waiting.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We stopped waiting.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You stopped living.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You stopped living.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I have stopped smoking.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I have stopped smoking.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "SMOKE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She has stopped studying.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She has stopped studying.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "STUDY"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They have stopped playing.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They have stopped playing.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He has stopped running.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He has stopped running.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We have stopped waiting.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We have stopped waiting.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You have stopped living.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You have stopped living.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I started again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I started again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She resumed working.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She resumed working.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "WORK"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They started again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They started again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He resumed running.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He resumed running.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We started again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We started again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You resumed waiting.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You resumed waiting.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I have started again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I have started again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She has resumed working.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She has resumed working.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "WORK"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They have started again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They have started again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He has resumed running.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He has resumed running.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We have started again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We have started again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You have resumed waiting.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You have resumed waiting.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I did it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I did it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She did it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She did it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They did it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They did it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He did it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He did it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We did it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We did it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You did it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You did it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I have done it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I have done it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "She has done it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "She has done it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "They have done it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "They have done it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He has done it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He has done it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "We have done it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "We have done it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "You have done it again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "You have done it again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "do_again",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-DO_AGAIN",
+            "verb": "DO"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-DO_AGAIN"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-DO_AGAIN"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I have been working for three hours.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I have been working for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ONGOING_FOR",
+            "verb": "WORK",
+            "duration_iso8601": "PT3H"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Lleva estudiando tres horas.",
+      "language": "es",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Lleva estudiando tres horas.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-ES-ONGOING_FOR",
+            "verb": "STUDY",
+            "duration_iso8601": "PT3H"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-ES-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-ES-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Lleva tres horas estudiando.",
+      "language": "es",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Lleva tres horas estudiando.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-ES-ONGOING_FOR",
+            "verb": "STUDY",
+            "duration_iso8601": "PT3H"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-ES-ONGOING_FOR"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-ES-ONGOING_FOR"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Il est en train de travailler.",
+      "language": "fr",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Il est en train de travailler.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-FR-ONGOING",
+            "verb": "WORK"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-FR-ONGOING"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-FR-ONGOING"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I almost fell.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I almost fell.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "He almost fell.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "He almost fell.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-ALMOST_DO",
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Casi me caigo.",
+      "language": "es",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Casi me caigo.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-ES-ALMOST_DO",
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-ES-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-ES-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Por poco se cae.",
+      "language": "es",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Por poco se cae.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-ES-ALMOST_DO",
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-ES-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-ES-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Il a failli tomber.",
+      "language": "fr",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Il a failli tomber.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-FR-ALMOST_DO",
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-FR-ALMOST_DO"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-FR-ALMOST_DO"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I stopped smoking.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I stopped smoking.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-STOP",
+            "verb": "SMOKE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I started trying again.",
+      "language": "en",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "I started trying again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-EN-RESUME",
+            "verb": "TRY"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-EN-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-EN-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Dej\u00f3 de fumar.",
+      "language": "es",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Dej\u00f3 de fumar.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-ES-STOP",
+            "verb": "SMOKE"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-ES-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-ES-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Volvi\u00f3 a intentarlo.",
+      "language": "es",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Volvi\u00f3 a intentarlo.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-ES-RESUME",
+            "verb": "TRY"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-ES-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-ES-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Elle a cess\u00e9 de venir.",
+      "language": "fr",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Elle a cess\u00e9 de venir.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-FR-STOP",
+            "verb": "COME"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-FR-STOP"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-FR-STOP"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "Il a recommenc\u00e9 \u00e0 venir.",
+      "language": "fr",
+      "expected_aspects": 1,
+      "result": {
+        "original_text": "Il a recommenc\u00e9 \u00e0 venir.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "pattern": "UD_STRICT",
+            "confidence": 0.7,
+            "rule_id": "UD-FR-RESUME",
+            "verb": "COME"
+          }
+        ],
+        "confidence": 0.7,
+        "evidence": {
+          "triggers": [
+            {
+              "pattern": "UD_STRICT",
+              "rule_id": "UD-FR-RESUME"
+            }
+          ],
+          "ud_paths": [
+            "ud_match"
+          ],
+          "rule_ids": [
+            "UD-FR-RESUME"
+          ],
+          "confidence": 0.7,
+          "alt_readings": [],
+          "guards": [
+            "UD_DETECTOR"
+          ],
+          "notes": "Detected via UD-like cue patterns (heuristic)"
+        }
+      }
+    },
+    {
+      "input": "I just want to go home.",
+      "language": "en",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "I just want to go home.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "This is almost perfect.",
+      "language": "en",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "This is almost perfect.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "Stop the car!",
+      "language": "en",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "Stop the car!",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "I have been to Paris.",
+      "language": "en",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "I have been to Paris.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "El libro est\u00e1 en la mesa.",
+      "language": "es",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "El libro est\u00e1 en la mesa.",
+        "language": "es",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "Le livre est sur la table.",
+      "language": "fr",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "Le livre est sur la table.",
+        "language": "fr",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "I think almost everyone agrees.",
+      "language": "en",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "I think almost everyone agrees.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: Negative guard triggered"
+        }
+      }
+    },
+    {
+      "input": "I have been in London.",
+      "language": "en",
+      "expected_aspects": 0,
+      "result": {
+        "original_text": "I have been in London.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.1,
+        "evidence": {
+          "triggers": [],
+          "ud_paths": [],
+          "rule_ids": [],
+          "confidence": 0.1,
+          "alt_readings": [],
+          "guards": [
+            "ABSTENTION"
+          ],
+          "notes": "Abstention: No strong syntactic evidence"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 137,
+    "correct_detections": 125,
+    "accuracy": 0.9124087591240876,
+    "acceptance_criteria_met": true,
+    "ece_eval": 0.03523809523809507,
+    "brier_eval": 0.0022285714285714305,
+    "ece_gate_passed": true
+  }
+}

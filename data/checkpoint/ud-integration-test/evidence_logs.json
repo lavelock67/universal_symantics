@@ -1,0 +1,302 @@
+{
+  "run_id": "ud-integration-test",
+  "logs": [
+    {
+      "type": "false_negative",
+      "case": {
+        "input": "I am having just finished.",
+        "language": "en",
+        "expected_aspects": 1,
+        "result": {
+          "original_text": "I am having just finished.",
+          "language": "en",
+          "detected_aspects": [],
+          "confidence": 0.1,
+          "evidence": {
+            "triggers": [],
+            "ud_paths": [],
+            "rule_ids": [],
+            "confidence": 0.1,
+            "alt_readings": [],
+            "guards": [
+              "ABSTENTION"
+            ],
+            "notes": "Abstention: Negative guard triggered"
+          }
+        }
+      },
+      "evidence": {
+        "triggers": [],
+        "ud_paths": [],
+        "rule_ids": [],
+        "confidence": 0.1,
+        "alt_readings": [],
+        "guards": [
+          "ABSTENTION"
+        ],
+        "notes": "Abstention: Negative guard triggered"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "false_negative",
+      "case": {
+        "input": "She is having just arrived.",
+        "language": "en",
+        "expected_aspects": 1,
+        "result": {
+          "original_text": "She is having just arrived.",
+          "language": "en",
+          "detected_aspects": [],
+          "confidence": 0.1,
+          "evidence": {
+            "triggers": [],
+            "ud_paths": [],
+            "rule_ids": [],
+            "confidence": 0.1,
+            "alt_readings": [],
+            "guards": [
+              "ABSTENTION"
+            ],
+            "notes": "Abstention: Negative guard triggered"
+          }
+        }
+      },
+      "evidence": {
+        "triggers": [],
+        "ud_paths": [],
+        "rule_ids": [],
+        "confidence": 0.1,
+        "alt_readings": [],
+        "guards": [
+          "ABSTENTION"
+        ],
+        "notes": "Abstention: Negative guard triggered"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "false_negative",
+      "case": {
+        "input": "They are having just left.",
+        "language": "en",
+        "expected_aspects": 1,
+        "result": {
+          "original_text": "They are having just left.",
+          "language": "en",
+          "detected_aspects": [],
+          "confidence": 0.1,
+          "evidence": {
+            "triggers": [],
+            "ud_paths": [],
+            "rule_ids": [],
+            "confidence": 0.1,
+            "alt_readings": [],
+            "guards": [
+              "ABSTENTION"
+            ],
+            "notes": "Abstention: Negative guard triggered"
+          }
+        }
+      },
+      "evidence": {
+        "triggers": [],
+        "ud_paths": [],
+        "rule_ids": [],
+        "confidence": 0.1,
+        "alt_readings": [],
+        "guards": [
+          "ABSTENTION"
+        ],
+        "notes": "Abstention: Negative guard triggered"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "abstention",
+      "case": {
+        "input": "I am having just finished.",
+        "language": "en",
+        "expected_aspects": 1,
+        "result": {
+          "original_text": "I am having just finished.",
+          "language": "en",
+          "detected_aspects": [],
+          "confidence": 0.1,
+          "evidence": {
+            "triggers": [],
+            "ud_paths": [],
+            "rule_ids": [],
+            "confidence": 0.1,
+            "alt_readings": [],
+            "guards": [
+              "ABSTENTION"
+            ],
+            "notes": "Abstention: Negative guard triggered"
+          }
+        }
+      },
+      "evidence": {
+        "triggers": [],
+        "ud_paths": [],
+        "rule_ids": [],
+        "confidence": 0.1,
+        "alt_readings": [],
+        "guards": [
+          "ABSTENTION"
+        ],
+        "notes": "Abstention: Negative guard triggered"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "abstention",
+      "case": {
+        "input": "She is having just arrived.",
+        "language": "en",
+        "expected_aspects": 1,
+        "result": {
+          "original_text": "She is having just arrived.",
+          "language": "en",
+          "detected_aspects": [],
+          "confidence": 0.1,
+          "evidence": {
+            "triggers": [],
+            "ud_paths": [],
+            "rule_ids": [],
+            "confidence": 0.1,
+            "alt_readings": [],
+            "guards": [
+              "ABSTENTION"
+            ],
+            "notes": "Abstention: Negative guard triggered"
+          }
+        }
+      },
+      "evidence": {
+        "triggers": [],
+        "ud_paths": [],
+        "rule_ids": [],
+        "confidence": 0.1,
+        "alt_readings": [],
+        "guards": [
+          "ABSTENTION"
+        ],
+        "notes": "Abstention: Negative guard triggered"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "ambiguous_quantifier",
+      "case": {
+        "input": "All children aren't playing.",
+        "language": "en"
+      },
+      "evidence": {
+        "predicate_lemma": "play",
+        "note": "AMBIG WIDE/NARROW"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "ambiguous_quantifier",
+      "case": {
+        "input": "Each child doesn't like vegetables.",
+        "language": "en"
+      },
+      "evidence": {
+        "predicate_lemma": "like",
+        "note": "AMBIG WIDE/NARROW"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "signature_parity_histogram",
+      "histogram": {
+        "lemma_mismatch": 0,
+        "lang_mismatch": 0,
+        "interval_format": 0,
+        "interval_value": 0,
+        "unicode_minus": 0,
+        "clitic_not_stripped": 0,
+        "non_xcomp_lemma": 0,
+        "lemma::work": 1,
+        "lemma::estudiar": 1,
+        "lemma::travailler": 1
+      },
+      "note": "Fieldwise mismatch counts among A1 hard-goal failures",
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "case_study",
+      "language": "en",
+      "input": "I had just finished.",
+      "evidence": {
+        "aspect": "RECENT_PAST",
+        "note": "grammatical had just VERB"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "case_study",
+      "language": "en",
+      "input": "She had just left.",
+      "evidence": {
+        "aspect": "RECENT_PAST",
+        "note": "grammatical had just VERB"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "case_study",
+      "language": "en",
+      "input": "They had just arrived.",
+      "evidence": {
+        "aspect": "RECENT_PAST",
+        "note": "grammatical had just VERB"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "case_study",
+      "language": "fr",
+      "input": "Elle travaille depuis trois heures.",
+      "evidence": {
+        "aspect": "ONGOING_FOR",
+        "note": "depuis + DURATION \u2192 DURING({lemma:'travailler',lang:'fr'},[now-PT3H,now])"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "case_study",
+      "language": "fr",
+      "input": "Il est en train de travailler.",
+      "evidence": {
+        "aspect": "ONGOING",
+        "note": "\u00eatre en train de + INF \u2192 ONGOING({lemma:'travailler',lang:'fr'}) then DURING via A1"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "case_study",
+      "language": "es",
+      "input": "Estoy trabajando.",
+      "evidence": {
+        "aspect": "ONGOING",
+        "note": "estar + GERUNDIO \u2192 ONGOING({lemma:'trabajar',lang:'es'})"
+      },
+      "run_id": "ud-integration-test"
+    },
+    {
+      "type": "quantifier_case",
+      "language": "fr",
+      "input": "Tous les enfants ne jouent pas.",
+      "evidence": {
+        "scope": "WIDE(\u2200\u00ac)",
+        "predicate_lemma": "jouer",
+        "note": "Q1_WIDE_TO_ALL_NOT with bound P"
+      },
+      "run_id": "ud-integration-test"
+    }
+  ]
+}

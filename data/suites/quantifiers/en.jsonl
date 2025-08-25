@@ -1,0 +1,240 @@
+{"text": "Not all runners study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-0", "type": "base"}
+{"text": "Not every runners study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-0", "type": "paraphrase"}
+{"text": "All runners study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-0", "type": "counterfactual"}
+{"text": "Not all students arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-1", "type": "base"}
+{"text": "Not every students arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-1", "type": "paraphrase"}
+{"text": "All students arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-1", "type": "counterfactual"}
+{"text": "Not all children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-2", "type": "base"}
+{"text": "Not every children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-2", "type": "paraphrase"}
+{"text": "All children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-2", "type": "counterfactual"}
+{"text": "Not all children study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-3", "type": "base"}
+{"text": "Not every children study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-3", "type": "paraphrase"}
+{"text": "All children study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-3", "type": "counterfactual"}
+{"text": "Not all runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-4", "type": "base"}
+{"text": "Not every runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-4", "type": "paraphrase"}
+{"text": "All runners read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-4", "type": "counterfactual"}
+{"text": "Not all students read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-5", "type": "base"}
+{"text": "Not every students read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-5", "type": "paraphrase"}
+{"text": "All students read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-5", "type": "counterfactual"}
+{"text": "Not all drivers study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-6", "type": "base"}
+{"text": "Not every drivers study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-6", "type": "paraphrase"}
+{"text": "All drivers study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-6", "type": "counterfactual"}
+{"text": "Not all students study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-7", "type": "base"}
+{"text": "Not every students study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-7", "type": "paraphrase"}
+{"text": "All students study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-7", "type": "counterfactual"}
+{"text": "Not all children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-8", "type": "base"}
+{"text": "Not every children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-8", "type": "paraphrase"}
+{"text": "All children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-8", "type": "counterfactual"}
+{"text": "Not all artists read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-9", "type": "base"}
+{"text": "Not every artists read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-9", "type": "paraphrase"}
+{"text": "All artists read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-9", "type": "counterfactual"}
+{"text": "Not all students read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-10", "type": "base"}
+{"text": "Not every students read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-10", "type": "paraphrase"}
+{"text": "All students read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-10", "type": "counterfactual"}
+{"text": "Not all children read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-11", "type": "base"}
+{"text": "Not every children read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-11", "type": "paraphrase"}
+{"text": "All children read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-11", "type": "counterfactual"}
+{"text": "Not all drivers play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-12", "type": "base"}
+{"text": "Not every drivers play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-12", "type": "paraphrase"}
+{"text": "All drivers play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-12", "type": "counterfactual"}
+{"text": "Not all drivers read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-13", "type": "base"}
+{"text": "Not every drivers read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-13", "type": "paraphrase"}
+{"text": "All drivers read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-13", "type": "counterfactual"}
+{"text": "Not all doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-14", "type": "base"}
+{"text": "Not every doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-14", "type": "paraphrase"}
+{"text": "All doctors study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-14", "type": "counterfactual"}
+{"text": "Not all children run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-15", "type": "base"}
+{"text": "Not every children run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-15", "type": "paraphrase"}
+{"text": "All children run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qpos-en-15", "type": "counterfactual"}
+{"text": "Not all doctors arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-16", "type": "base"}
+{"text": "Not every doctors arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-16", "type": "paraphrase"}
+{"text": "All doctors arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-16", "type": "counterfactual"}
+{"text": "Not all children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-17", "type": "base"}
+{"text": "Not every children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-17", "type": "paraphrase"}
+{"text": "All children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-17", "type": "counterfactual"}
+{"text": "Not all doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-18", "type": "base"}
+{"text": "Not every doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-18", "type": "paraphrase"}
+{"text": "All doctors study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-18", "type": "counterfactual"}
+{"text": "Not all students run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-19", "type": "base"}
+{"text": "Not every students run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-19", "type": "paraphrase"}
+{"text": "All students run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qpos-en-19", "type": "counterfactual"}
+{"text": "Not all students arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-20", "type": "base"}
+{"text": "Not every students arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-20", "type": "paraphrase"}
+{"text": "All students arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-20", "type": "counterfactual"}
+{"text": "Not all doctors read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-21", "type": "base"}
+{"text": "Not every doctors read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-21", "type": "paraphrase"}
+{"text": "All doctors read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-21", "type": "counterfactual"}
+{"text": "Not all doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-22", "type": "base"}
+{"text": "Not every doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-22", "type": "paraphrase"}
+{"text": "All doctors study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-22", "type": "counterfactual"}
+{"text": "Not all runners run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-23", "type": "base"}
+{"text": "Not every runners run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-23", "type": "paraphrase"}
+{"text": "All runners run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qpos-en-23", "type": "counterfactual"}
+{"text": "Not all artists study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-24", "type": "base"}
+{"text": "Not every artists study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-24", "type": "paraphrase"}
+{"text": "All artists study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-24", "type": "counterfactual"}
+{"text": "Not all drivers study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-25", "type": "base"}
+{"text": "Not every drivers study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-25", "type": "paraphrase"}
+{"text": "All drivers study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-25", "type": "counterfactual"}
+{"text": "Not all artists arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-26", "type": "base"}
+{"text": "Not every artists arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-26", "type": "paraphrase"}
+{"text": "All artists arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-26", "type": "counterfactual"}
+{"text": "Not all runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-27", "type": "base"}
+{"text": "Not every runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-27", "type": "paraphrase"}
+{"text": "All runners read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-27", "type": "counterfactual"}
+{"text": "Not all doctors read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-28", "type": "base"}
+{"text": "Not every doctors read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-28", "type": "paraphrase"}
+{"text": "All doctors read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-28", "type": "counterfactual"}
+{"text": "Not all children study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-29", "type": "base"}
+{"text": "Not every children study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-29", "type": "paraphrase"}
+{"text": "All children study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-29", "type": "counterfactual"}
+{"text": "Not all students play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-30", "type": "base"}
+{"text": "Not every students play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-30", "type": "paraphrase"}
+{"text": "All students play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-30", "type": "counterfactual"}
+{"text": "Not all doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-31", "type": "base"}
+{"text": "Not every doctors study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-31", "type": "paraphrase"}
+{"text": "All doctors study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-31", "type": "counterfactual"}
+{"text": "Not all children study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-32", "type": "base"}
+{"text": "Not every children study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-32", "type": "paraphrase"}
+{"text": "All children study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-32", "type": "counterfactual"}
+{"text": "Not all drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-33", "type": "base"}
+{"text": "Not every drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-33", "type": "paraphrase"}
+{"text": "All drivers arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-33", "type": "counterfactual"}
+{"text": "Not all drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-34", "type": "base"}
+{"text": "Not every drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-34", "type": "paraphrase"}
+{"text": "All drivers arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-34", "type": "counterfactual"}
+{"text": "Not all children arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-35", "type": "base"}
+{"text": "Not every children arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-35", "type": "paraphrase"}
+{"text": "All children arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-35", "type": "counterfactual"}
+{"text": "Not all doctors play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-36", "type": "base"}
+{"text": "Not every doctors play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-36", "type": "paraphrase"}
+{"text": "All doctors play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-36", "type": "counterfactual"}
+{"text": "Not all runners arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-37", "type": "base"}
+{"text": "Not every runners arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-37", "type": "paraphrase"}
+{"text": "All runners arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-37", "type": "counterfactual"}
+{"text": "Not all runners study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-38", "type": "base"}
+{"text": "Not every runners study.", "language": "en", "label": 1, "predicate": "study", "group_id": "qpos-en-38", "type": "paraphrase"}
+{"text": "All runners study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qpos-en-38", "type": "counterfactual"}
+{"text": "Not all artists play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-39", "type": "base"}
+{"text": "Not every artists play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-39", "type": "paraphrase"}
+{"text": "All artists play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-39", "type": "counterfactual"}
+{"text": "Not all artists play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-40", "type": "base"}
+{"text": "Not every artists play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-40", "type": "paraphrase"}
+{"text": "All artists play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-40", "type": "counterfactual"}
+{"text": "Not all children run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-41", "type": "base"}
+{"text": "Not every children run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-41", "type": "paraphrase"}
+{"text": "All children run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qpos-en-41", "type": "counterfactual"}
+{"text": "Not all drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-42", "type": "base"}
+{"text": "Not every drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-42", "type": "paraphrase"}
+{"text": "All drivers arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-42", "type": "counterfactual"}
+{"text": "Not all runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-43", "type": "base"}
+{"text": "Not every runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-43", "type": "paraphrase"}
+{"text": "All runners read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-43", "type": "counterfactual"}
+{"text": "Not all children arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-44", "type": "base"}
+{"text": "Not every children arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-44", "type": "paraphrase"}
+{"text": "All children arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-44", "type": "counterfactual"}
+{"text": "Not all students play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-45", "type": "base"}
+{"text": "Not every students play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-45", "type": "paraphrase"}
+{"text": "All students play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-45", "type": "counterfactual"}
+{"text": "Not all students arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-46", "type": "base"}
+{"text": "Not every students arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-46", "type": "paraphrase"}
+{"text": "All students arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-46", "type": "counterfactual"}
+{"text": "Not all drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-47", "type": "base"}
+{"text": "Not every drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-47", "type": "paraphrase"}
+{"text": "All drivers arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-47", "type": "counterfactual"}
+{"text": "Not all students play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-48", "type": "base"}
+{"text": "Not every students play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-48", "type": "paraphrase"}
+{"text": "All students play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-48", "type": "counterfactual"}
+{"text": "Not all artists arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-49", "type": "base"}
+{"text": "Not every artists arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-49", "type": "paraphrase"}
+{"text": "All artists arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-49", "type": "counterfactual"}
+{"text": "Not all children run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-50", "type": "base"}
+{"text": "Not every children run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-50", "type": "paraphrase"}
+{"text": "All children run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qpos-en-50", "type": "counterfactual"}
+{"text": "Not all drivers run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-51", "type": "base"}
+{"text": "Not every drivers run.", "language": "en", "label": 1, "predicate": "run", "group_id": "qpos-en-51", "type": "paraphrase"}
+{"text": "All drivers run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qpos-en-51", "type": "counterfactual"}
+{"text": "Not all children arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-52", "type": "base"}
+{"text": "Not every children arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-52", "type": "paraphrase"}
+{"text": "All children arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-52", "type": "counterfactual"}
+{"text": "Not all children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-53", "type": "base"}
+{"text": "Not every children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-53", "type": "paraphrase"}
+{"text": "All children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-53", "type": "counterfactual"}
+{"text": "Not all runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-54", "type": "base"}
+{"text": "Not every runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-54", "type": "paraphrase"}
+{"text": "All runners read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-54", "type": "counterfactual"}
+{"text": "Not all artists arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-55", "type": "base"}
+{"text": "Not every artists arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-55", "type": "paraphrase"}
+{"text": "All artists arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-55", "type": "counterfactual"}
+{"text": "Not all runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-56", "type": "base"}
+{"text": "Not every runners read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-56", "type": "paraphrase"}
+{"text": "All runners read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-56", "type": "counterfactual"}
+{"text": "Not all drivers read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-57", "type": "base"}
+{"text": "Not every drivers read.", "language": "en", "label": 1, "predicate": "read", "group_id": "qpos-en-57", "type": "paraphrase"}
+{"text": "All drivers read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qpos-en-57", "type": "counterfactual"}
+{"text": "Not all drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-58", "type": "base"}
+{"text": "Not every drivers arrive.", "language": "en", "label": 1, "predicate": "arrive", "group_id": "qpos-en-58", "type": "paraphrase"}
+{"text": "All drivers arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qpos-en-58", "type": "counterfactual"}
+{"text": "Not all children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-59", "type": "base"}
+{"text": "Not every children play.", "language": "en", "label": 1, "predicate": "play", "group_id": "qpos-en-59", "type": "paraphrase"}
+{"text": "All children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qpos-en-59", "type": "counterfactual"}
+{"text": "Only some artists run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-60", "type": "negative"}
+{"text": "Only some students study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-61", "type": "negative"}
+{"text": "Merely some runners play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-62", "type": "negative"}
+{"text": "Only some drivers read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-63", "type": "negative"}
+{"text": "Merely some drivers run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-64", "type": "negative"}
+{"text": "Just some drivers read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-65", "type": "negative"}
+{"text": "Merely some artists study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-66", "type": "negative"}
+{"text": "Merely some runners study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-67", "type": "negative"}
+{"text": "Merely some artists arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-68", "type": "negative"}
+{"text": "Just some doctors study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-69", "type": "negative"}
+{"text": "Just some drivers play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-70", "type": "negative"}
+{"text": "Merely some students arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-71", "type": "negative"}
+{"text": "Only some children read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-72", "type": "negative"}
+{"text": "Merely some runners arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-73", "type": "negative"}
+{"text": "Only some artists read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-74", "type": "negative"}
+{"text": "Only some children arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-75", "type": "negative"}
+{"text": "Only some artists read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-76", "type": "negative"}
+{"text": "Just some artists arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-77", "type": "negative"}
+{"text": "Just some students study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-78", "type": "negative"}
+{"text": "Only some doctors play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-79", "type": "negative"}
+{"text": "Only some children read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-80", "type": "negative"}
+{"text": "Only some students run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-81", "type": "negative"}
+{"text": "Only some artists play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-82", "type": "negative"}
+{"text": "Merely some runners run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-83", "type": "negative"}
+{"text": "Merely some children arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-84", "type": "negative"}
+{"text": "Only some artists run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-85", "type": "negative"}
+{"text": "Merely some artists play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-86", "type": "negative"}
+{"text": "Merely some doctors run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-87", "type": "negative"}
+{"text": "Just some runners arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-88", "type": "negative"}
+{"text": "Only some artists run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-89", "type": "negative"}
+{"text": "Only some children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-90", "type": "negative"}
+{"text": "Merely some doctors study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-91", "type": "negative"}
+{"text": "Merely some artists play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-92", "type": "negative"}
+{"text": "Only some children study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-93", "type": "negative"}
+{"text": "Only some runners study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-94", "type": "negative"}
+{"text": "Just some students study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-95", "type": "negative"}
+{"text": "Only some students read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-96", "type": "negative"}
+{"text": "Only some doctors run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-97", "type": "negative"}
+{"text": "Merely some artists play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-98", "type": "negative"}
+{"text": "Just some artists read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-99", "type": "negative"}
+{"text": "Just some children run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-100", "type": "negative"}
+{"text": "Only some children study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-101", "type": "negative"}
+{"text": "Just some runners run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-102", "type": "negative"}
+{"text": "Just some drivers run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-103", "type": "negative"}
+{"text": "Merely some runners study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-104", "type": "negative"}
+{"text": "Only some runners study.", "language": "en", "label": 0, "predicate": "study", "group_id": "qneg-en-105", "type": "negative"}
+{"text": "Only some drivers arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-106", "type": "negative"}
+{"text": "Only some children play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-107", "type": "negative"}
+{"text": "Only some artists run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-108", "type": "negative"}
+{"text": "Just some drivers play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-109", "type": "negative"}
+{"text": "Only some drivers play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-110", "type": "negative"}
+{"text": "Only some drivers read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-111", "type": "negative"}
+{"text": "Only some students read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-112", "type": "negative"}
+{"text": "Only some students play.", "language": "en", "label": 0, "predicate": "play", "group_id": "qneg-en-113", "type": "negative"}
+{"text": "Just some drivers run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-114", "type": "negative"}
+{"text": "Only some children run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-115", "type": "negative"}
+{"text": "Only some children run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-116", "type": "negative"}
+{"text": "Just some drivers arrive.", "language": "en", "label": 0, "predicate": "arrive", "group_id": "qneg-en-117", "type": "negative"}
+{"text": "Merely some doctors run.", "language": "en", "label": 0, "predicate": "run", "group_id": "qneg-en-118", "type": "negative"}
+{"text": "Merely some runners read.", "language": "en", "label": 0, "predicate": "read", "group_id": "qneg-en-119", "type": "negative"}

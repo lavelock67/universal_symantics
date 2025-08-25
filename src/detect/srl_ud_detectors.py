@@ -39,20 +39,27 @@ def _pick_lang(text: str) -> str:
 	- Default EN
 	"""
 	lower = text.lower()
+	
+	# French-specific patterns (check first to avoid confusion with Spanish)
+	french_patterns = ("d'", "l'", "qu'", "n'", "s'", "c'", "j'", "m'", "t'")
+	if any(pattern in lower for pattern in french_patterns):
+		return "fr"
+	
 	# Accented characters
 	spanish_accents = set("áéíóúñü")
 	french_accents = set("àâçéèêëîïôùûüÿœ")
-	if any(c in spanish_accents for c in lower):
-		return "es"
 	if any(c in french_accents for c in lower):
 		return "fr"
-	# Stopword cues
-	es_sw = (" el ", " la ", " los ", " las ", " de ", " que ", " para ")
-	fr_sw = (" le ", " la ", " les ", " des ", " que ", " pour ", " pas ")
-	if any(w in f" {lower} " for w in es_sw):
+	if any(c in spanish_accents for c in lower):
 		return "es"
+	
+	# Stopword cues
+	es_sw = (" el ", " la ", " los ", " las ", " de ", " que ", " para ", " puede ", " puedo ", " debes ", " ¿puedo ", " ¿puede ", " pocos ", " mayoría ", " todos ", " algunos ")
+	fr_sw = (" le ", " la ", " les ", " des ", " que ", " pour ", " pas ", " peut ", " puis ", " devez ", " puis-je ", " peu ", " plupart ", " tous ", " quelques ", " étudiants ", " étudiants ")
 	if any(w in f" {lower} " for w in fr_sw):
 		return "fr"
+	if any(w in f" {lower} " for w in es_sw):
+		return "es"
 	return "en"
 
 
@@ -190,23 +197,100 @@ def detect_primitives_spacy(text: str) -> List[str]:
 			detected.append("Because")
 			break
 
-	# Dependency-based quantifier patterns: det(head)=all/some/many/few/most/no
+	# Comprehensive quantifier patterns
+	quantifier_patterns = {
+		"en": {
+			"All": ["all", "every", "each"],
+			"Some": ["some", "several", "a few"],
+			"Many": ["many", "numerous", "lots of"],
+			"Few": ["few", "hardly any", "scarcely any"],
+			"Most": ["most", "majority", "the majority of"],
+			"None": ["no", "none", "nobody", "nothing"],
+			"Only": ["only", "merely", "just"],
+			"AtMost": ["at most", "no more than", "maximum"],
+			"LessThan": ["less than", "fewer than", "under"]
+		},
+		"es": {
+			"All": ["todos", "todas", "cada", "todo"],
+			"Some": ["algunos", "algunas", "varios", "varias"],
+			"Many": ["muchos", "muchas", "numerosos", "numerosas"],
+			"Few": ["pocos", "pocas", "poco", "poca", "apenas", "escasos"],
+			"Most": ["mayoría", "mayor", "mayor parte"],
+			"None": ["ningún", "ninguna", "nadie", "nada"],
+			"Only": ["solo", "únicamente", "solamente"],
+			"AtMost": ["a lo sumo", "no más de", "máximo"],
+			"LessThan": ["menos de", "menos que", "bajo"]
+		},
+		"fr": {
+			"All": ["tous", "toutes", "chaque", "tout"],
+			"Some": ["quelques", "plusieurs", "certains", "certaines"],
+			"Many": ["beaucoup", "nombreux", "nombreuses"],
+			"Few": ["peu", "quelques", "à peine"],
+			"Most": ["plupart", "majorité", "la plupart de"],
+			"None": ["aucun", "aucune", "personne", "rien"],
+			"Only": ["seulement", "uniquement", "juste"],
+			"AtMost": ["au plus", "pas plus de", "maximum"],
+			"LessThan": ["moins de", "moins que", "sous"]
+		}
+	}
+	
+	patterns = quantifier_patterns.get(lang, quantifier_patterns["en"])
+	
+	# Check for quantifier patterns
+	text_lower = text.lower()
+	
+	# Multi-word patterns first (e.g., "at most", "no more than")
+	for quant_type, words in patterns.items():
+		for word in words:
+			if " " in word and word in text_lower:
+				if quant_type not in detected:
+					detected.append(quant_type)
+	
+	# Single-word patterns
 	for token in doc:
-		if token.dep_ == "det" and token.lemma_.lower() in {"all", "some", "many", "few", "most", "no"}:
-			lemma = token.lemma_.lower()
-			if lemma == "all":
-				detected.append("All")
-			elif lemma == "some":
-				detected.append("Some")
-			elif lemma == "many":
-				detected.append("Many")
-			elif lemma == "few":
-				detected.append("Few")
-			elif lemma == "most":
-				detected.append("Most")
-			elif lemma == "no":
-				detected.append("None")
-			break
+		lemma = token.lemma_.lower()
+		
+		# Direct determiner patterns
+		if token.dep_ == "det":
+			for quant_type, words in patterns.items():
+				if lemma in words:
+					if quant_type not in detected:
+						detected.append(quant_type)
+					break
+		
+		# Adjective modifier patterns (e.g., "Few students")
+		if token.dep_ == "amod" and token.pos_ == "ADJ":
+			for quant_type, words in patterns.items():
+				if lemma in words:
+					if quant_type not in detected:
+						detected.append(quant_type)
+					break
+		
+		# Noun modifier patterns (e.g., "mayoría", "plupart")
+		if token.dep_ in {"nmod", "nsubj"} and token.pos_ in {"NOUN", "ADV"}:
+			for quant_type, words in patterns.items():
+				if lemma in words:
+					if quant_type not in detected:
+						detected.append(quant_type)
+					break
+		
+		# Root adverb patterns (e.g., "Peu")
+		if token.dep_ == "ROOT" and token.pos_ == "ADV":
+			for quant_type, words in patterns.items():
+				if lemma in words:
+					if quant_type not in detected:
+						detected.append(quant_type)
+					break
+		
+		# Check for "not all" patterns (wide scope negation)
+		if lemma == "not" and any(c.lemma_.lower() in patterns["All"] for c in token.head.children):
+			if "NotAll" not in detected:
+				detected.append("NotAll")
+		
+		# Check for "all ... not" patterns (ambiguous scope)
+		if lemma in patterns["All"] and any(c.lemma_.lower() == "not" for c in token.head.children):
+			if "AllNot" not in detected:
+				detected.append("AllNot")
 
 	# Comparatives: advmod(head)=more/less + than
 	for token in doc:
@@ -221,6 +305,742 @@ def detect_primitives_spacy(text: str) -> List[str]:
 		if token.lemma_ == "be" and any(ch.dep_ == "expl" and ch.lower_ == "there" for ch in token.children):
 			if "Exist" not in detected:
 				detected.append("Exist")
+			break
+
+	# STILL: continuation of state/action
+	still_tokens = {"en": ["still"], "es": ["todavía", "aún"], "fr": ["encore", "toujours"]}.get(lang, ["still"])
+	for token in doc:
+		if token.lemma_.lower() in still_tokens and token.pos_ in {"ADV", "ADJ"}:
+			if "Still" not in detected:
+				detected.append("Still")
+			break
+
+	# NOT_YET: anticipated completion (negative + temporal)
+	not_yet_tokens = {"en": ["yet"], "es": ["todavía", "aún"], "fr": ["encore"]}.get(lang, ["yet"])
+	for token in doc:
+		if token.lemma_.lower() in not_yet_tokens and token.pos_ in {"ADV"}:
+			# Check for negation context
+			has_negation = any(t.lemma_.lower() in {"not", "no", "n't", "no", "ne"} for t in doc)
+			if has_negation and "NotYet" not in detected:
+				detected.append("NotYet")
+			break
+
+	# START: beginning of action/state
+	start_tokens = {"en": ["start", "begin"], "es": ["empezar", "comenzar"], "fr": ["commencer", "débuter"]}.get(lang, ["start"])
+	for token in doc:
+		if token.lemma_.lower() in start_tokens and token.pos_ == "VERB":
+			if "Start" not in detected:
+				detected.append("Start")
+			break
+
+	# FINISH: completion of action/state
+	finish_tokens = {"en": ["finish", "complete", "end"], "es": ["terminar", "acabar", "finalizar"], "fr": ["finir", "terminer", "achever"]}.get(lang, ["finish"])
+	for token in doc:
+		if token.lemma_.lower() in finish_tokens and token.pos_ == "VERB":
+			if "Finish" not in detected:
+				detected.append("Finish")
+			break
+
+	# AGAIN: repetition of action
+	again_tokens = {"en": ["again"], "es": ["otra vez", "de nuevo"], "fr": ["encore", "de nouveau"]}.get(lang, ["again"])
+	for token in doc:
+		if token.lemma_.lower() in again_tokens and token.pos_ in {"ADV"}:
+			if "Again" not in detected:
+				detected.append("Again")
+			break
+
+	# KEEP: continuation/maintenance of action
+	keep_tokens = {"en": ["keep", "continue"], "es": ["seguir", "continuar"], "fr": ["continuer", "garder"]}.get(lang, ["keep"])
+	for token in doc:
+		if token.lemma_.lower() in keep_tokens and token.pos_ == "VERB":
+			if "Keep" not in detected:
+				detected.append("Keep")
+			break
+
+	# === PHASE 1: CORE SUBSTANTIVES (NSM Primes) - UD-Based Detection ===
+	
+	# I: first person singular pronoun (nsubj, nsubjpass, or direct object)
+	for token in doc:
+		if (token.pos_ == "PRON" and 
+			token.lemma_.lower() in {"i", "me", "my", "myself", "yo", "je"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "iobj"}):
+			if "I" not in detected:
+				detected.append("I")
+			break
+
+	# YOU: second person pronoun (nsubj, nsubjpass, or direct object)
+	for token in doc:
+		if (token.pos_ == "PRON" and 
+			token.lemma_.lower() in {"you", "your", "yourself", "tú", "tu", "vous"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "iobj"}):
+			if "YOU" not in detected:
+				detected.append("YOU")
+			break
+
+	# SOMEONE: indefinite person (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ in {"PRON", "NOUN"} and 
+			token.lemma_.lower() in {"someone", "somebody", "anyone", "anybody", "alguien", "quelqu'un", "person"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			if "SOMEONE" not in detected:
+				detected.append("SOMEONE")
+			break
+	
+	# Also detect "a person" as SOMEONE
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"person", "persona", "personne"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			# Check for indefinite determiner
+			det = next((c for c in token.children if c.dep_ == "det" and c.lemma_.lower() in {"a", "an", "un", "una", "un", "une"}), None)
+			if det:
+				if "SOMEONE" not in detected:
+					detected.append("SOMEONE")
+				break
+
+	# PEOPLE: plural persons (subject, object, or collective noun)
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"people", "persons", "humans", "individuals", "gente", "personnes", "individus"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			if "PEOPLE" not in detected:
+				detected.append("PEOPLE")
+			break
+
+	# SOMETHING: indefinite thing (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ in {"PRON", "NOUN"} and 
+			token.lemma_.lower() in {"something", "anything", "whatever", "algo", "quelque chose", "event", "evento", "événement"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			if "SOMETHING" not in detected:
+				detected.append("SOMETHING")
+			break
+	
+	# Also detect "an event" as SOMETHING
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"event", "evento", "événement", "thing", "cosa", "chose"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			# Check for indefinite determiner
+			det = next((c for c in token.children if c.dep_ == "det" and c.lemma_.lower() in {"a", "an", "un", "una", "un", "une"}), None)
+			if det:
+				if "SOMETHING" not in detected:
+					detected.append("SOMETHING")
+				break
+
+	# THING: generic object (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"thing", "object", "item", "cosa", "objet", "article"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			if "THING" not in detected:
+				detected.append("THING")
+			break
+	
+	# Also detect "the object" as THING
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"object", "objeto", "objet"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			if "THING" not in detected:
+				detected.append("THING")
+			break
+
+	# BODY: physical entity (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"body", "person", "human", "cuerpo", "personne", "humain"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			if "BODY" not in detected:
+				detected.append("BODY")
+			break
+	
+	# Also detect "the person" as BODY
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"person", "persona", "personne"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			# Check for definite determiner
+			det = next((c for c in token.children if c.dep_ == "det" and c.lemma_.lower() in {"the", "el", "la", "le", "les"}), None)
+			if det:
+				if "BODY" not in detected:
+					detected.append("BODY")
+				break
+
+	# === PHASE 2: MENTAL PREDICATES (NSM Primes) - UD-Based Detection ===
+	
+	# THINK: mental cognition and reasoning
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"think", "believe", "consider", "pensar", "creer", "penser", "croire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "THINK" not in detected:
+				detected.append("THINK")
+			break
+
+	# KNOW: mental knowledge and understanding
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"know", "understand", "realize", "saber", "conocer", "savoir", "connaître"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "KNOW" not in detected:
+				detected.append("KNOW")
+			break
+
+	# WANT: mental desire and intention
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"want", "desire", "wish", "querer", "desear", "vouloir", "souhaiter"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "WANT" not in detected:
+				detected.append("WANT")
+			break
+
+	# FEEL: mental emotion and sensation
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"feel", "sense", "sentir", "sentir", "ressentir"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "FEEL" not in detected:
+				detected.append("FEEL")
+			break
+
+	# SEE: sensory visual perception
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"see", "look", "watch", "ver", "mirar", "voir", "regarder"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "SEE" not in detected:
+				detected.append("SEE")
+			break
+
+	# HEAR: sensory auditory perception
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"hear", "listen", "escuchar", "oir", "entendre", "écouter"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "HEAR" not in detected:
+				detected.append("HEAR")
+			break
+
+	# === PHASE 3: LOGICAL OPERATORS (NSM Primes) - UD-Based Detection ===
+	
+	# BECAUSE: logical causation and reasoning
+	for token in doc:
+		if (token.pos_ in {"SCONJ", "ADV"} and 
+			token.lemma_.lower() in {"because", "since", "as", "porque", "ya", "puisque", "car"} and
+			token.dep_ in {"mark", "advmod"}):
+			if "BECAUSE" not in detected:
+				detected.append("BECAUSE")
+			break
+
+	# IF: logical condition and implication
+	for token in doc:
+		if (token.pos_ == "SCONJ" and 
+			token.lemma_.lower() in {"if", "si", "si"} and
+			token.dep_ == "mark"):
+			if "IF" not in detected:
+				detected.append("IF")
+			break
+
+	# NOT: logical negation
+	for token in doc:
+		if (token.pos_ in {"PART", "ADV"} and 
+			token.lemma_.lower() in {"not", "no", "ne", "pas"} and
+			token.dep_ in {"neg", "advmod"}):
+			if "NOT" not in detected:
+				detected.append("NOT")
+			break
+
+	# SAME: logical identity and equivalence
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"same", "identical", "igual", "même", "pareil"} and
+			token.dep_ in {"amod", "advmod", "attr"}):
+			if "SAME" not in detected:
+				detected.append("SAME")
+			break
+
+	# DIFFERENT: logical difference and distinction
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"different", "distinct", "diferente", "différent", "autre"} and
+			token.dep_ in {"amod", "advmod", "attr"}):
+			if "DIFFERENT" not in detected:
+				detected.append("DIFFERENT")
+			break
+
+	# MAYBE: logical possibility and uncertainty
+	for token in doc:
+		if (token.pos_ in {"ADV", "PART"} and 
+			token.lemma_.lower() in {"maybe", "perhaps", "possibly", "tal", "vez", "peut-être"} and
+			token.dep_ in {"advmod", "discourse"}):
+			if "MAYBE" not in detected:
+				detected.append("MAYBE")
+			break
+
+	# === PHASE 4: TEMPORAL & CAUSAL (NSM Primes) - UD-Based Detection ===
+	
+	# BEFORE: temporal precedence and ordering
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV", "SCONJ"} and 
+			token.lemma_.lower() in {"before", "prior", "antes", "avant"} and
+			token.dep_ in {"prep", "advmod", "mark"}):
+			if "BEFORE" not in detected:
+				detected.append("BEFORE")
+			break
+
+	# AFTER: temporal succession and sequence
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV", "SCONJ"} and 
+			token.lemma_.lower() in {"after", "later", "después", "après"} and
+			token.dep_ in {"prep", "advmod", "mark"}):
+			if "AFTER" not in detected:
+				detected.append("AFTER")
+			break
+
+	# WHEN: temporal simultaneity and coincidence
+	for token in doc:
+		if (token.pos_ in {"ADV", "SCONJ"} and 
+			token.lemma_.lower() in {"when", "while", "cuando", "quand"} and
+			token.dep_ in {"advmod", "mark"}):
+			if "WHEN" not in detected:
+				detected.append("WHEN")
+			break
+
+	# CAUSE: causal agency and responsibility
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"cause", "lead", "causar", "causer"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "CAUSE" not in detected:
+				detected.append("CAUSE")
+			break
+
+	# MAKE: causal creation and production
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"make", "create", "hacer", "faire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "MAKE" not in detected:
+				detected.append("MAKE")
+			break
+
+	# LET: causal permission and allowance
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"let", "allow", "permitir", "permettre"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "LET" not in detected:
+				detected.append("LET")
+			break
+
+	# === PHASE 5: SPATIAL & PHYSICAL (NSM Primes) - UD-Based Detection ===
+	
+	# IN: spatial containment and inclusion
+	for token in doc:
+		if (token.pos_ == "ADP" and 
+			token.lemma_.lower() in {"in", "within", "dentro", "dans"} and
+			token.dep_ == "prep"):
+			if "IN" not in detected:
+				detected.append("IN")
+			break
+
+	# ON: spatial support and contact
+	for token in doc:
+		if (token.pos_ == "ADP" and 
+			token.lemma_.lower() in {"on", "upon", "sobre", "sur"} and
+			token.dep_ == "prep"):
+			if "ON" not in detected:
+				detected.append("ON")
+			break
+
+	# UNDER: spatial subordination and coverage
+	for token in doc:
+		if (token.pos_ == "ADP" and 
+			token.lemma_.lower() in {"under", "beneath", "bajo", "sous"} and
+			token.dep_ == "prep"):
+			if "UNDER" not in detected:
+				detected.append("UNDER")
+			break
+
+	# NEAR: spatial proximity and closeness
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"near", "close", "cerca", "près"} and
+			token.dep_ in {"prep", "amod", "advmod"}):
+			if "NEAR" not in detected:
+				detected.append("NEAR")
+			break
+
+	# FAR: spatial distance and separation
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"far", "away", "lejos", "loin"} and
+			token.dep_ in {"prep", "amod", "advmod"}):
+			if "FAR" not in detected:
+				detected.append("FAR")
+			break
+
+	# INSIDE: spatial interiority and enclosure
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV"} and 
+			token.lemma_.lower() in {"inside", "within", "dentro", "dedans"} and
+			token.dep_ in {"prep", "advmod"}):
+			if "INSIDE" not in detected:
+				detected.append("INSIDE")
+			break
+
+	# === PHASE 6: QUANTIFIERS (NSM Primes) - UD-Based Detection ===
+	
+	# ALL: universal quantification and totality
+	for token in doc:
+		if (token.pos_ in {"DET", "PRON", "ADJ"} and 
+			token.lemma_.lower() in {"all", "every", "each", "todo", "tous"} and
+			token.dep_ in {"det", "amod", "nsubj", "dobj"}):
+			if "ALL" not in detected:
+				detected.append("ALL")
+			break
+
+	# MANY: large quantity and plurality
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"many", "numerous", "muchos", "nombreux"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			if "MANY" not in detected:
+				detected.append("MANY")
+			break
+
+	# SOME: partial quantity and existence
+	for token in doc:
+		if (token.pos_ in {"DET", "PRON", "ADJ"} and 
+			token.lemma_.lower() in {"some", "several", "algunos", "quelques"} and
+			token.dep_ in {"det", "amod", "nsubj", "dobj"}):
+			if "SOME" not in detected:
+				detected.append("SOME")
+			break
+
+	# FEW: small quantity and scarcity
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"few", "little", "pocos", "peu"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			if "FEW" not in detected:
+				detected.append("FEW")
+			break
+
+	# MUCH: large amount and abundance
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"much", "a lot", "mucho", "beaucoup"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			if "MUCH" not in detected:
+				detected.append("MUCH")
+			break
+
+	# LITTLE: small amount and paucity
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"little", "small", "poco", "peu"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			if "LITTLE" not in detected:
+				detected.append("LITTLE")
+			break
+
+	# === PHASE 7: EVALUATORS (NSM Primes) - UD-Based Detection ===
+	
+	# GOOD: positive evaluation and desirability
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"good", "great", "excellent", "bueno", "bon"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			if "GOOD" not in detected:
+				detected.append("GOOD")
+			break
+
+	# BAD: negative evaluation and undesirability
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"bad", "terrible", "awful", "malo", "mauvais"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			if "BAD" not in detected:
+				detected.append("BAD")
+			break
+
+	# BIG: large size and magnitude
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"big", "large", "huge", "grande", "grand"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			if "BIG" not in detected:
+				detected.append("BIG")
+			break
+
+	# SMALL: small size and magnitude
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"small", "tiny", "little", "pequeño", "petit"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			if "SMALL" not in detected:
+				detected.append("SMALL")
+			break
+
+	# RIGHT: correctness and appropriateness
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"right", "correct", "proper", "correcto", "juste"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod"}):
+			if "RIGHT" not in detected:
+				detected.append("RIGHT")
+			break
+
+	# WRONG: incorrectness and inappropriateness (avoid conflict with FALSE)
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"wrong", "incorrect", "incorrecto"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod"} and
+			token.lemma_.lower() not in {"false", "fake", "falso"}):  # Avoid conflict with FALSE
+			if "WRONG" not in detected:
+				detected.append("WRONG")
+			break
+
+	# === PHASE 8: ACTIONS (NSM Primes) - UD-Based Detection ===
+	
+	# DO: action performance and execution
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"do", "make", "perform", "hacer", "faire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "DO" not in detected:
+				detected.append("DO")
+			break
+
+	# HAPPEN: event occurrence and happening
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"happen", "occur", "take", "pasar", "arriver"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "HAPPEN" not in detected:
+				detected.append("HAPPEN")
+			break
+
+	# MOVE: physical movement and motion
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"move", "go", "walk", "mover", "bouger"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "MOVE" not in detected:
+				detected.append("MOVE")
+			break
+
+	# TOUCH: physical contact and interaction
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"touch", "contact", "reach", "tocar", "toucher"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "TOUCH" not in detected:
+				detected.append("TOUCH")
+			break
+
+	# LIVE: existence and being alive
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"live", "exist", "be", "vivir", "vivre"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "LIVE" not in detected:
+				detected.append("LIVE")
+			break
+
+	# DIE: death and cessation of life
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"die", "death", "end", "morir", "mourir"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			if "DIE" not in detected:
+				detected.append("DIE")
+			break
+
+	# === PHASE 9: DESCRIPTORS (NSM Primes) - UD-Based Detection ===
+	
+	# THIS: proximate reference and identification
+	for token in doc:
+		if (token.pos_ == "DET" and 
+			token.lemma_.lower() in {"this", "ese", "ce"} and
+			token.dep_ in {"det", "attr"}):
+			if "THIS" not in detected:
+				detected.append("THIS")
+			break
+
+	# THE SAME: identity and sameness
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ"} and 
+			token.lemma_.lower() in {"same", "mismo", "même"} and
+			token.dep_ in {"det", "amod", "attr"}):
+			if "THE SAME" not in detected:
+				detected.append("THE SAME")
+			break
+
+	# OTHER: distinction and difference
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "PRON"} and 
+			token.lemma_.lower() in {"other", "otro", "autre"} and
+			token.dep_ in {"det", "amod", "attr", "nsubj", "dobj"}):
+			if "OTHER" not in detected:
+				detected.append("OTHER")
+			break
+
+	# ONE: singularity and unity
+	for token in doc:
+		if (token.pos_ in {"NUM", "DET"} and 
+			token.lemma_.lower() in {"one", "uno", "un"} and
+			token.dep_ in {"nummod", "det"}):
+			if "ONE" not in detected:
+				detected.append("ONE")
+			break
+
+	# TWO: duality and pairing
+	for token in doc:
+		if (token.pos_ == "NUM" and 
+			token.lemma_.lower() in {"two", "dos", "deux"} and
+			token.dep_ in {"nummod"}):
+			if "TWO" not in detected:
+				detected.append("TWO")
+			break
+
+	# SOME: indefinite quantity and selection
+	for token in doc:
+		if (token.pos_ in {"DET", "PRON"} and 
+			token.lemma_.lower() in {"some", "algunos", "quelques"} and
+			token.dep_ in {"det", "nsubj", "dobj"}):
+			if "SOME" not in detected:
+				detected.append("SOME")
+			break
+
+	# === PHASE 10: INTENSIFIERS (NSM Primes) - UD-Based Detection ===
+	
+	# VERY: high degree and intensity
+	for token in doc:
+		if (token.pos_ == "ADV" and 
+			token.lemma_.lower() in {"very", "muy", "très"} and
+			token.dep_ in {"advmod", "amod"}):
+			if "VERY" not in detected:
+				detected.append("VERY")
+			break
+
+	# MORE: comparative degree and increase
+	for token in doc:
+		if (token.pos_ in {"ADV", "ADJ"} and 
+			token.lemma_.lower() in {"more", "más", "plus"} and
+			token.dep_ in {"advmod", "amod", "attr"}):
+			if "MORE" not in detected:
+				detected.append("MORE")
+			break
+
+	# LIKE: similarity and resemblance
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV", "ADJ"} and 
+			token.lemma_.lower() in {"like", "como", "comme"} and
+			token.dep_ in {"prep", "advmod", "amod"}):
+			if "LIKE" not in detected:
+				detected.append("LIKE")
+			break
+
+	# KIND OF: partial degree and approximation
+	for token in doc:
+		if (token.pos_ in {"ADV", "ADJ"} and 
+			token.lemma_.lower() in {"kind", "tipo", "genre"} and
+			token.dep_ in {"advmod", "amod"}):
+			if "KIND OF" not in detected:
+				detected.append("KIND OF")
+			break
+
+	# === PHASE 11: FINAL PRIMES (NSM Primes) - UD-Based Detection ===
+	
+	# SAY: speech and communication (enhanced detection)
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"say", "tell", "speak", "decir", "dire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp", "acl", "advcl"}):
+			if "SAY" not in detected:
+				detected.append("SAY")
+			break
+	
+	# Check for SAY in relative clauses and complex constructions
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"say", "tell", "speak", "decir", "dire"} and
+			token.dep_ in {"relcl", "acl:relcl", "advcl"}):
+			if "SAY" not in detected:
+				detected.append("SAY")
+			break
+
+	# WORDS: linguistic expression
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"word", "words", "palabra", "mot"} and
+			token.dep_ in {"nsubj", "dobj", "pobj"}):
+			if "WORDS" not in detected:
+				detected.append("WORDS")
+			break
+
+	# TRUE: truth and factuality (enhanced detection)
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
+			token.lemma_.lower() in {"true", "real", "truth", "verdadero", "vrai", "vérité"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod", "nsubj", "dobj", "pobj"}):
+			if "TRUE" not in detected:
+				detected.append("TRUE")
+			break
+	
+	# Check for copula constructions with TRUE
+	for token in doc:
+		if (token.lemma_.lower() in {"true", "real", "truth", "verdadero", "vrai", "vérité"} and
+			(token.dep_ in {"attr", "pred"} or 
+			 (token.dep_ == "acomp" and token.head.pos_ == "AUX")) and
+			(token.head.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} or
+			 any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children) or
+			 token.head.pos_ == "AUX")):
+			if "TRUE" not in detected:
+				detected.append("TRUE")
+			break
+
+	# FALSE: falsity and deception (enhanced detection)
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
+			token.lemma_.lower() in {"false", "fake", "falsity", "falso", "faux", "fausseté"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod", "nsubj", "dobj", "pobj"}):
+			if "FALSE" not in detected:
+				detected.append("FALSE")
+			break
+	
+	# Check for copula constructions with FALSE
+	for token in doc:
+		if (token.lemma_.lower() in {"false", "fake", "falsity", "falso", "faux", "fausseté"} and
+			(token.dep_ in {"attr", "pred"} or 
+			 (token.dep_ == "acomp" and token.head.pos_ == "AUX")) and
+			(token.head.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} or
+			 any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children) or
+			 token.head.pos_ == "AUX")):
+			if "FALSE" not in detected:
+				detected.append("FALSE")
+			break
+
+	# WHERE: location specification (enhanced detection)
+	for token in doc:
+		if (token.pos_ in {"ADV", "PRON", "SCONJ"} and 
+			token.lemma_.lower() in {"where", "dónde", "où", "donde"} and
+			token.dep_ in {"advmod", "pobj", "nsubj", "mark", "advcl"}):
+			if "WHERE" not in detected:
+				detected.append("WHERE")
+			break
+
+	# WHEN: time specification (enhanced)
+	for token in doc:
+		if (token.pos_ in {"ADV", "PRON", "SCONJ"} and 
+			token.lemma_.lower() in {"when", "cuándo", "quand"} and
+			token.dep_ in {"advmod", "pobj", "mark"}):
+			if "WHEN" not in detected:
+				detected.append("WHEN")
 			break
 
 	return detected
@@ -378,11 +1198,78 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("InOrderTo", [doc[i+1].lemma_], 0.5)
 			break
 
-	# Quantifiers
+	# Comprehensive quantifiers
+	quantifier_patterns = {
+		"en": {
+			"All": ["all", "every", "each"],
+			"Some": ["some", "several", "a few"],
+			"Many": ["many", "numerous", "lots of"],
+			"Few": ["few", "hardly any", "scarcely any"],
+			"Most": ["most", "majority", "the majority of"],
+			"None": ["no", "none", "nobody", "nothing"],
+			"Only": ["only", "merely", "just"],
+			"AtMost": ["at most", "no more than", "maximum"],
+			"LessThan": ["less than", "fewer than", "under"]
+		},
+		"es": {
+			"All": ["todos", "todas", "cada", "todo"],
+			"Some": ["algunos", "algunas", "varios", "varias"],
+			"Many": ["muchos", "muchas", "numerosos", "numerosas"],
+			"Few": ["pocos", "pocas", "apenas", "escasos"],
+			"Most": ["mayoría", "la mayoría de", "mayor parte"],
+			"None": ["ningún", "ninguna", "nadie", "nada"],
+			"Only": ["solo", "únicamente", "solamente"],
+			"AtMost": ["a lo sumo", "no más de", "máximo"],
+			"LessThan": ["menos de", "menos que", "bajo"]
+		},
+		"fr": {
+			"All": ["tous", "toutes", "chaque", "tout"],
+			"Some": ["quelques", "plusieurs", "certains", "certaines"],
+			"Many": ["beaucoup", "nombreux", "nombreuses"],
+			"Few": ["peu", "quelques", "à peine"],
+			"Most": ["plupart", "majorité", "la plupart de"],
+			"None": ["aucun", "aucune", "personne", "rien"],
+			"Only": ["seulement", "uniquement", "juste"],
+			"AtMost": ["au plus", "pas plus de", "maximum"],
+			"LessThan": ["moins de", "moins que", "sous"]
+		}
+	}
+	
+	patterns = quantifier_patterns.get(lang, quantifier_patterns["en"])
+	
+	# Check for quantifier patterns
 	for token in doc:
-		if token.dep_ == "det" and token.lemma_.lower() in {"all", "some", "many", "few", "most", "no"}:
-			add(token.lemma_.capitalize() if token.lemma_ != "no" else "None", [token.head.text], 0.6)
-			break
+		lemma = token.lemma_.lower()
+		
+		# Direct determiner patterns
+		if token.dep_ == "det":
+			for quant_type, words in patterns.items():
+				if lemma in words:
+					add(quant_type, [token.head.text], 0.6)
+					break
+		
+		# Multi-word patterns
+		if token.pos_ in {"ADV", "ADJ", "DET"}:
+			text_lower = text.lower()
+			for quant_type, words in patterns.items():
+				for word in words:
+					if " " in word and word in text_lower:
+						# Extract the noun phrase that follows
+						noun_phrase = ""
+						for t in doc:
+							if t.pos_ in {"NOUN", "PROPN"} and t.text.lower() not in word:
+								noun_phrase = t.text
+								break
+						add(quant_type, [noun_phrase], 0.6)
+						break
+		
+		# Check for "not all" patterns
+		if lemma == "not" and any(c.lemma_.lower() in patterns["All"] for c in token.head.children):
+			add("NotAll", [token.head.text], 0.6)
+		
+		# Check for "all ... not" patterns
+		if lemma in patterns["All"] and any(c.lemma_.lower() == "not" for c in token.head.children):
+			add("AllNot", [token.head.text], 0.6)
 
 	# Comparatives: more/less than
 	for token in doc:
@@ -565,6 +1452,687 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 		if " il y a " in f" {lower} " or " existe" in lower:
 			add("Exist", [], 0.6)
 
+	# STILL: continuation of state/action
+	still_tokens = {"en": ["still"], "es": ["todavía", "aún"], "fr": ["encore", "toujours"]}.get(lang, ["still"])
+	for token in doc:
+		if token.lemma_.lower() in still_tokens and token.pos_ in {"ADV", "ADJ"}:
+			# Find the verb or state being continued
+			verb = token.head if token.head.pos_ == "VERB" else next((t for t in doc if t.pos_ == "VERB"), None)
+			add("Still", [verb.lemma_ if verb else ""], 0.6)
+			break
+
+	# NOT_YET: anticipated completion (negative + temporal)
+	not_yet_tokens = {"en": ["yet"], "es": ["todavía", "aún"], "fr": ["encore"]}.get(lang, ["yet"])
+	for token in doc:
+		if token.lemma_.lower() in not_yet_tokens and token.pos_ in {"ADV"}:
+			# Check for negation context
+			has_negation = any(t.lemma_.lower() in {"not", "no", "n't", "no", "ne"} for t in doc)
+			if has_negation:
+				verb = token.head if token.head.pos_ == "VERB" else next((t for t in doc if t.pos_ == "VERB"), None)
+				add("NotYet", [verb.lemma_ if verb else ""], 0.6)
+			break
+	# Also check for "haven't/hasn't" + "yet" pattern
+	if lang == "en":
+		for i, token in enumerate(doc):
+			if token.lemma_.lower() in {"have", "has"} and i+2 < len(doc):
+				if doc[i+1].text.lower() in {"n't", "not"} and doc[i+2].lemma_.lower() == "yet":
+					verb = next((t for t in doc if t.pos_ == "VERB" and t.lemma_ not in {"have", "has", "be"}), None)
+					add("NotYet", [verb.lemma_ if verb else ""], 0.6)
+					break
+	# Also check for "yet" as adverb with negation context
+	for token in doc:
+		if token.lemma_.lower() == "yet" and token.pos_ == "ADV":
+			# Check for negation context
+			has_negation = any(t.lemma_.lower() in {"not", "no", "n't"} for t in doc)
+			if has_negation:
+				verb = next((t for t in doc if t.pos_ == "VERB" and t.lemma_ not in {"have", "has", "be"}), None)
+				add("NotYet", [verb.lemma_ if verb else ""], 0.6)
+				break
+
+	# START: beginning of action/state
+	start_tokens = {"en": ["start", "begin"], "es": ["empezar", "comenzar"], "fr": ["commencer", "débuter"]}.get(lang, ["start"])
+	for token in doc:
+		if token.lemma_.lower() in start_tokens and token.pos_ == "VERB":
+			# Find the object or infinitive being started
+			obj = next((c for c in token.children if c.dep_ in {"dobj", "obj", "xcomp"}), None)
+			add("Start", [obj.lemma_ if obj else ""], 0.6)
+			break
+
+	# FINISH: completion of action/state
+	finish_tokens = {"en": ["finish", "complete", "end"], "es": ["terminar", "acabar", "finalizar"], "fr": ["finir", "terminer", "achever"]}.get(lang, ["finish"])
+	for token in doc:
+		if token.lemma_.lower() in finish_tokens and token.pos_ == "VERB":
+			# Find the object or infinitive being finished
+			obj = next((c for c in token.children if c.dep_ in {"dobj", "obj", "xcomp"}), None)
+			add("Finish", [obj.lemma_ if obj else ""], 0.6)
+			break
+
+	# AGAIN: repetition of action
+	again_tokens = {"en": ["again"], "es": ["otra", "vez", "nuevo"], "fr": ["encore", "nouveau"]}.get(lang, ["again"])
+	for token in doc:
+		if token.lemma_.lower() in again_tokens and token.pos_ in {"ADV", "ADJ"}:
+			# Find the verb being repeated
+			verb = token.head if token.head.pos_ == "VERB" else next((t for t in doc if t.pos_ == "VERB"), None)
+			add("Again", [verb.lemma_ if verb else ""], 0.6)
+			break
+
+	# KEEP: continuation/maintenance of action
+	keep_tokens = {"en": ["keep", "continue"], "es": ["seguir", "continuar"], "fr": ["continuer", "garder"]}.get(lang, ["keep"])
+	for token in doc:
+		if token.lemma_.lower() in keep_tokens and token.pos_ == "VERB":
+			# Find the object or infinitive being continued
+			obj = next((c for c in token.children if c.dep_ in {"dobj", "obj", "xcomp"}), None)
+			add("Keep", [obj.lemma_ if obj else ""], 0.6)
+			break
+
+	# === PHASE 1: CORE SUBSTANTIVES (NSM Primes) - UD-Based Detection ===
+	
+	# I: first person singular pronoun (nsubj, nsubjpass, or direct object)
+	for token in doc:
+		if (token.pos_ == "PRON" and 
+			token.lemma_.lower() in {"i", "me", "my", "myself", "yo", "je"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "iobj"}):
+			add("I", [token.text], 0.8)
+			break
+
+	# YOU: second person pronoun (nsubj, nsubjpass, or direct object)
+	for token in doc:
+		if (token.pos_ == "PRON" and 
+			token.lemma_.lower() in {"you", "your", "yourself", "tú", "tu", "vous"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "iobj"}):
+			add("YOU", [token.text], 0.8)
+			break
+
+	# SOMEONE: indefinite person (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ in {"PRON", "NOUN"} and 
+			token.lemma_.lower() in {"someone", "somebody", "anyone", "anybody", "alguien", "quelqu'un", "person"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			add("SOMEONE", [token.text], 0.7)
+			break
+	
+	# Also detect "a person" as SOMEONE
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"person", "persona", "personne"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			# Check for indefinite determiner
+			det = next((c for c in token.children if c.dep_ == "det" and c.lemma_.lower() in {"a", "an", "un", "una", "un", "une"}), None)
+			if det:
+				add("SOMEONE", [token.text], 0.7)
+				break
+
+	# PEOPLE: plural persons (subject, object, or collective noun)
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"people", "persons", "humans", "individuals", "gente", "personnes", "individus"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			add("PEOPLE", [token.text], 0.7)
+			break
+
+	# SOMETHING: indefinite thing (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ in {"PRON", "NOUN"} and 
+			token.lemma_.lower() in {"something", "anything", "whatever", "algo", "quelque chose", "event", "evento", "événement"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			add("SOMETHING", [token.text], 0.7)
+			break
+	
+	# Also detect "an event" as SOMETHING
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"event", "evento", "événement", "thing", "cosa", "chose"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			# Check for indefinite determiner
+			det = next((c for c in token.children if c.dep_ == "det" and c.lemma_.lower() in {"a", "an", "un", "una", "un", "une"}), None)
+			if det:
+				add("SOMETHING", [token.text], 0.7)
+				break
+
+	# THING: generic object (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"thing", "object", "item", "cosa", "objet", "article"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			add("THING", [token.text], 0.7)
+			break
+	
+	# Also detect "the object" as THING
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"object", "objeto", "objet"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			add("THING", [token.text], 0.7)
+			break
+
+	# BODY: physical entity (subject, object, or with determiner)
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"body", "person", "human", "cuerpo", "personne", "humain"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			add("BODY", [token.text], 0.7)
+			break
+	
+	# Also detect "the person" as BODY
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"person", "persona", "personne"} and
+			token.dep_ in {"nsubj", "nsubjpass", "dobj", "obj", "pobj"}):
+			# Check for definite determiner
+			det = next((c for c in token.children if c.dep_ == "det" and c.lemma_.lower() in {"the", "el", "la", "le", "les"}), None)
+			if det:
+				add("BODY", [token.text], 0.7)
+				break
+
+	# === PHASE 2: MENTAL PREDICATES (NSM Primes) - UD-Based Detection ===
+	
+	# THINK: mental cognition and reasoning
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"think", "believe", "consider", "pensar", "creer", "penser", "croire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("THINK", [token.text], 0.8)
+			break
+
+	# KNOW: mental knowledge and understanding
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"know", "understand", "realize", "saber", "conocer", "savoir", "connaître"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("KNOW", [token.text], 0.8)
+			break
+
+	# WANT: mental desire and intention
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"want", "desire", "wish", "querer", "desear", "vouloir", "souhaiter"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("WANT", [token.text], 0.8)
+			break
+
+	# FEEL: mental emotion and sensation
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"feel", "sense", "sentir", "sentir", "ressentir"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("FEEL", [token.text], 0.8)
+			break
+
+	# SEE: sensory visual perception
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"see", "look", "watch", "ver", "mirar", "voir", "regarder"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("SEE", [token.text], 0.8)
+			break
+
+	# HEAR: sensory auditory perception
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"hear", "listen", "escuchar", "oir", "entendre", "écouter"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("HEAR", [token.text], 0.8)
+			break
+
+	# === PHASE 3: LOGICAL OPERATORS (NSM Primes) - UD-Based Detection ===
+	
+	# BECAUSE: logical causation and reasoning
+	for token in doc:
+		if (token.pos_ in {"SCONJ", "ADV"} and 
+			token.lemma_.lower() in {"because", "since", "as", "porque", "ya", "puisque", "car"} and
+			token.dep_ in {"mark", "advmod"}):
+			add("BECAUSE", [token.text], 0.8)
+			break
+
+	# IF: logical condition and implication
+	for token in doc:
+		if (token.pos_ == "SCONJ" and 
+			token.lemma_.lower() in {"if", "si", "si"} and
+			token.dep_ == "mark"):
+			add("IF", [token.text], 0.8)
+			break
+
+	# NOT: logical negation
+	for token in doc:
+		if (token.pos_ in {"PART", "ADV"} and 
+			token.lemma_.lower() in {"not", "no", "ne", "pas"} and
+			token.dep_ in {"neg", "advmod"}):
+			add("NOT", [token.text], 0.8)
+			break
+
+	# SAME: logical identity and equivalence
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"same", "identical", "igual", "même", "pareil"} and
+			token.dep_ in {"amod", "advmod", "attr"}):
+			add("SAME", [token.text], 0.8)
+			break
+
+	# DIFFERENT: logical difference and distinction
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"different", "distinct", "diferente", "différent", "autre"} and
+			token.dep_ in {"amod", "advmod", "attr"}):
+			add("DIFFERENT", [token.text], 0.8)
+			break
+
+	# MAYBE: logical possibility and uncertainty
+	for token in doc:
+		if (token.pos_ in {"ADV", "PART"} and 
+			token.lemma_.lower() in {"maybe", "perhaps", "possibly", "tal", "vez", "peut-être"} and
+			token.dep_ in {"advmod", "discourse"}):
+			add("MAYBE", [token.text], 0.8)
+			break
+
+	# === PHASE 4: TEMPORAL & CAUSAL (NSM Primes) - UD-Based Detection ===
+	
+	# BEFORE: temporal precedence and ordering
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV", "SCONJ"} and 
+			token.lemma_.lower() in {"before", "prior", "antes", "avant"} and
+			token.dep_ in {"prep", "advmod", "mark"}):
+			add("BEFORE", [token.text], 0.8)
+			break
+
+	# AFTER: temporal succession and sequence
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV", "SCONJ"} and 
+			token.lemma_.lower() in {"after", "later", "después", "après"} and
+			token.dep_ in {"prep", "advmod", "mark"}):
+			add("AFTER", [token.text], 0.8)
+			break
+
+	# WHEN: temporal simultaneity and coincidence
+	for token in doc:
+		if (token.pos_ in {"ADV", "SCONJ"} and 
+			token.lemma_.lower() in {"when", "while", "cuando", "quand"} and
+			token.dep_ in {"advmod", "mark"}):
+			add("WHEN", [token.text], 0.8)
+			break
+
+	# CAUSE: causal agency and responsibility
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"cause", "lead", "causar", "causer"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("CAUSE", [token.text], 0.8)
+			break
+
+	# MAKE: causal creation and production
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"make", "create", "hacer", "faire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("MAKE", [token.text], 0.8)
+			break
+
+	# LET: causal permission and allowance
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"let", "allow", "permitir", "permettre"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("LET", [token.text], 0.8)
+			break
+
+	# === PHASE 5: SPATIAL & PHYSICAL (NSM Primes) - UD-Based Detection ===
+	
+	# IN: spatial containment and inclusion
+	for token in doc:
+		if (token.pos_ == "ADP" and 
+			token.lemma_.lower() in {"in", "within", "dentro", "dans"} and
+			token.dep_ == "prep"):
+			add("IN", [token.text], 0.8)
+			break
+
+	# ON: spatial support and contact
+	for token in doc:
+		if (token.pos_ == "ADP" and 
+			token.lemma_.lower() in {"on", "upon", "sobre", "sur"} and
+			token.dep_ == "prep"):
+			add("ON", [token.text], 0.8)
+			break
+
+	# UNDER: spatial subordination and coverage
+	for token in doc:
+		if (token.pos_ == "ADP" and 
+			token.lemma_.lower() in {"under", "beneath", "bajo", "sous"} and
+			token.dep_ == "prep"):
+			add("UNDER", [token.text], 0.8)
+			break
+
+	# NEAR: spatial proximity and closeness
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"near", "close", "cerca", "près"} and
+			token.dep_ in {"prep", "amod", "advmod"}):
+			add("NEAR", [token.text], 0.8)
+			break
+
+	# FAR: spatial distance and separation
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"far", "away", "lejos", "loin"} and
+			token.dep_ in {"prep", "amod", "advmod"}):
+			add("FAR", [token.text], 0.8)
+			break
+
+	# INSIDE: spatial interiority and enclosure
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV"} and 
+			token.lemma_.lower() in {"inside", "within", "dentro", "dedans"} and
+			token.dep_ in {"prep", "advmod"}):
+			add("INSIDE", [token.text], 0.8)
+			break
+
+	# === PHASE 6: QUANTIFIERS (NSM Primes) - UD-Based Detection ===
+	
+	# ALL: universal quantification and totality
+	for token in doc:
+		if (token.pos_ in {"DET", "PRON", "ADJ"} and 
+			token.lemma_.lower() in {"all", "every", "each", "todo", "tous"} and
+			token.dep_ in {"det", "amod", "nsubj", "dobj"}):
+			add("ALL", [token.text], 0.8)
+			break
+
+	# MANY: large quantity and plurality
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"many", "numerous", "muchos", "nombreux"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			add("MANY", [token.text], 0.8)
+			break
+
+	# SOME: partial quantity and existence
+	for token in doc:
+		if (token.pos_ in {"DET", "PRON", "ADJ"} and 
+			token.lemma_.lower() in {"some", "several", "algunos", "quelques"} and
+			token.dep_ in {"det", "amod", "nsubj", "dobj"}):
+			add("SOME", [token.text], 0.8)
+			break
+
+	# FEW: small quantity and scarcity
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"few", "little", "pocos", "peu"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			add("FEW", [token.text], 0.8)
+			break
+
+	# MUCH: large amount and abundance
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"much", "a lot", "mucho", "beaucoup"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			add("MUCH", [token.text], 0.8)
+			break
+
+	# LITTLE: small amount and paucity
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "ADV"} and 
+			token.lemma_.lower() in {"little", "small", "poco", "peu"} and
+			token.dep_ in {"det", "amod", "advmod"}):
+			add("LITTLE", [token.text], 0.8)
+			break
+
+	# === PHASE 7: EVALUATORS (NSM Primes) - UD-Based Detection ===
+	
+	# GOOD: positive evaluation and desirability
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"good", "great", "excellent", "bueno", "bon"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			add("GOOD", [token.text], 0.8)
+			break
+
+	# BAD: negative evaluation and undesirability
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"bad", "terrible", "awful", "malo", "mauvais"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			add("BAD", [token.text], 0.8)
+			break
+
+	# BIG: large size and magnitude
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"big", "large", "huge", "grande", "grand"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			add("BIG", [token.text], 0.8)
+			break
+
+	# SMALL: small size and magnitude
+	for token in doc:
+		if (token.pos_ == "ADJ" and 
+			token.lemma_.lower() in {"small", "tiny", "little", "pequeño", "petit"} and
+			token.dep_ in {"amod", "attr", "pred"}):
+			add("SMALL", [token.text], 0.8)
+			break
+
+	# RIGHT: correctness and appropriateness
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"right", "correct", "proper", "correcto", "juste"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod"}):
+			add("RIGHT", [token.text], 0.8)
+			break
+
+	# WRONG: incorrectness and inappropriateness (avoid conflict with FALSE)
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV"} and 
+			token.lemma_.lower() in {"wrong", "incorrect", "incorrecto"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod"} and
+			token.lemma_.lower() not in {"false", "fake", "falso"}):  # Avoid conflict with FALSE
+			add("WRONG", [token.text], 0.8)
+			break
+
+	# === PHASE 8: ACTIONS (NSM Primes) - UD-Based Detection ===
+	
+	# DO: action performance and execution
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"do", "make", "perform", "hacer", "faire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("DO", [token.text], 0.8)
+			break
+
+	# HAPPEN: event occurrence and happening
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"happen", "occur", "take", "pasar", "arriver"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("HAPPEN", [token.text], 0.8)
+			break
+
+	# MOVE: physical movement and motion
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"move", "go", "walk", "mover", "bouger"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("MOVE", [token.text], 0.8)
+			break
+
+	# TOUCH: physical contact and interaction
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"touch", "contact", "reach", "tocar", "toucher"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("TOUCH", [token.text], 0.8)
+			break
+
+	# LIVE: existence and being alive
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"live", "exist", "be", "vivir", "vivre"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("LIVE", [token.text], 0.8)
+			break
+
+	# DIE: death and cessation of life
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"die", "death", "end", "morir", "mourir"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp"}):
+			add("DIE", [token.text], 0.8)
+			break
+
+	# === PHASE 9: DESCRIPTORS (NSM Primes) - UD-Based Detection ===
+	
+	# THIS: proximate reference and identification
+	for token in doc:
+		if (token.pos_ == "DET" and 
+			token.lemma_.lower() in {"this", "ese", "ce"} and
+			token.dep_ in {"det", "attr"}):
+			add("THIS", [token.text], 0.8)
+			break
+
+	# THE SAME: identity and sameness
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ"} and 
+			token.lemma_.lower() in {"same", "mismo", "même"} and
+			token.dep_ in {"det", "amod", "attr"}):
+			add("THE SAME", [token.text], 0.8)
+			break
+
+	# OTHER: distinction and difference
+	for token in doc:
+		if (token.pos_ in {"DET", "ADJ", "PRON"} and 
+			token.lemma_.lower() in {"other", "otro", "autre"} and
+			token.dep_ in {"det", "amod", "attr", "nsubj", "dobj"}):
+			add("OTHER", [token.text], 0.8)
+			break
+
+	# ONE: singularity and unity
+	for token in doc:
+		if (token.pos_ in {"NUM", "DET"} and 
+			token.lemma_.lower() in {"one", "uno", "un"} and
+			token.dep_ in {"nummod", "det"}):
+			add("ONE", [token.text], 0.8)
+			break
+
+	# TWO: duality and pairing
+	for token in doc:
+		if (token.pos_ == "NUM" and 
+			token.lemma_.lower() in {"two", "dos", "deux"} and
+			token.dep_ in {"nummod"}):
+			add("TWO", [token.text], 0.8)
+			break
+
+	# SOME: indefinite quantity and selection
+	for token in doc:
+		if (token.pos_ in {"DET", "PRON"} and 
+			token.lemma_.lower() in {"some", "algunos", "quelques"} and
+			token.dep_ in {"det", "nsubj", "dobj"}):
+			add("SOME", [token.text], 0.8)
+			break
+
+	# === PHASE 10: INTENSIFIERS (NSM Primes) - UD-Based Detection ===
+	
+	# VERY: high degree and intensity
+	for token in doc:
+		if (token.pos_ == "ADV" and 
+			token.lemma_.lower() in {"very", "muy", "très"} and
+			token.dep_ in {"advmod", "amod"}):
+			add("VERY", [token.text], 0.8)
+			break
+
+	# MORE: comparative degree and increase
+	for token in doc:
+		if (token.pos_ in {"ADV", "ADJ"} and 
+			token.lemma_.lower() in {"more", "más", "plus"} and
+			token.dep_ in {"advmod", "amod", "attr"}):
+			add("MORE", [token.text], 0.8)
+			break
+
+	# LIKE: similarity and resemblance
+	for token in doc:
+		if (token.pos_ in {"ADP", "ADV", "ADJ"} and 
+			token.lemma_.lower() in {"like", "como", "comme"} and
+			token.dep_ in {"prep", "advmod", "amod"}):
+			add("LIKE", [token.text], 0.8)
+			break
+
+	# KIND OF: partial degree and approximation
+	for token in doc:
+		if (token.pos_ in {"ADV", "ADJ"} and 
+			token.lemma_.lower() in {"kind", "tipo", "genre"} and
+			token.dep_ in {"advmod", "amod"}):
+			add("KIND OF", [token.text], 0.8)
+			break
+
+	# === PHASE 11: FINAL PRIMES (NSM Primes) - UD-Based Detection ===
+	
+	# SAY: speech and communication (enhanced detection)
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"say", "tell", "speak", "decir", "dire"} and
+			token.dep_ in {"ROOT", "ccomp", "xcomp", "acl", "advcl"}):
+			add("SAY", [token.text], 0.8)
+			break
+	
+	# Check for SAY in relative clauses and complex constructions
+	for token in doc:
+		if (token.pos_ == "VERB" and 
+			token.lemma_.lower() in {"say", "tell", "speak", "decir", "dire"} and
+			token.dep_ in {"relcl", "acl:relcl", "advcl"}):
+			add("SAY", [token.text], 0.8)
+			break
+
+	# WORDS: linguistic expression
+	for token in doc:
+		if (token.pos_ == "NOUN" and 
+			token.lemma_.lower() in {"word", "words", "palabra", "mot"} and
+			token.dep_ in {"nsubj", "dobj", "pobj"}):
+			add("WORDS", [token.text], 0.8)
+			break
+
+	# TRUE: truth and factuality (enhanced detection)
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
+			token.lemma_.lower() in {"true", "real", "truth", "verdadero", "vrai", "vérité"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod", "nsubj", "dobj", "pobj"}):
+			add("TRUE", [token.text], 0.8)
+			break
+	
+	# Check for copula constructions with TRUE
+	for token in doc:
+		if (token.lemma_.lower() in {"true", "real", "truth", "verdadero", "vrai", "vérité"} and
+			token.dep_ in {"attr", "pred"} and
+			any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children)):
+			add("TRUE", [token.text], 0.8)
+			break
+
+	# FALSE: falsity and deception (enhanced detection)
+	for token in doc:
+		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
+			token.lemma_.lower() in {"false", "fake", "falsity", "falso", "faux", "fausseté"} and
+			token.dep_ in {"amod", "attr", "pred", "advmod", "nsubj", "dobj", "pobj"}):
+			add("FALSE", [token.text], 0.8)
+			break
+	
+	# Check for copula constructions with FALSE
+	for token in doc:
+		if (token.lemma_.lower() in {"false", "fake", "falsity", "falso", "faux", "fausseté"} and
+			token.dep_ in {"attr", "pred"} and
+			any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children)):
+			add("FALSE", [token.text], 0.8)
+			break
+
+	# WHERE: location specification
+	for token in doc:
+		if (token.pos_ in {"ADV", "PRON"} and 
+			token.lemma_.lower() in {"where", "dónde", "où"} and
+			token.dep_ in {"advmod", "pobj", "nsubj"}):
+			add("WHERE", [token.text], 0.8)
+			break
+
+	# WHEN: time specification (enhanced)
+	for token in doc:
+		if (token.pos_ in {"ADV", "PRON", "SCONJ"} and 
+			token.lemma_.lower() in {"when", "cuándo", "quand"} and
+			token.dep_ in {"advmod", "pobj", "mark"}):
+			add("WHEN", [token.text], 0.8)
+			break
+
 	return detections
 
 
@@ -622,6 +2190,377 @@ def detect_primitives_dep(text: str) -> List[str]:
 		have_lemmas = ["avoir"]
 		part_of_tokens = ("partie", "de")
 
+	# === PHASE 1: CORE SUBSTANTIVES (NSM Primes) - UD-Based Patterns ===
+	
+	# I: first person singular pronoun (subject or object)
+	patterns["I"] = [[
+		{"RIGHT_ID": "i", "RIGHT_ATTRS": {"LOWER": {"IN": ["i", "me", "my", "myself", "yo", "je"]}, "POS": "PRON", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "iobj"]}}}
+	]]
+	
+	# YOU: second person pronoun (subject or object)
+	patterns["YOU"] = [[
+		{"RIGHT_ID": "you", "RIGHT_ATTRS": {"LOWER": {"IN": ["you", "your", "yourself", "tú", "tu", "vous"]}, "POS": "PRON", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "iobj"]}}}
+	]]
+	
+	# SOMEONE: indefinite person (subject, object, or with indefinite determiner)
+	patterns["SOMEONE"] = [[
+		{"RIGHT_ID": "someone", "RIGHT_ATTRS": {"LOWER": {"IN": ["someone", "somebody", "anyone", "anybody", "alguien", "quelqu'un", "person"]}, "POS": {"IN": ["PRON", "NOUN"]}, "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# SOMEONE: "a person" pattern
+	patterns["SOMEONE_A_PERSON"] = [[
+		{"RIGHT_ID": "det", "RIGHT_ATTRS": {"LOWER": {"IN": ["a", "an", "un", "una", "un", "une"]}, "POS": "DET", "DEP": "det"}},
+		{"LEFT_ID": "det", "REL_OP": ">", "RIGHT_ID": "person", "RIGHT_ATTRS": {"LOWER": {"IN": ["person", "persona", "personne"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# PEOPLE: plural persons (subject, object, or collective noun)
+	patterns["PEOPLE"] = [[
+		{"RIGHT_ID": "people", "RIGHT_ATTRS": {"LOWER": {"IN": ["people", "persons", "humans", "individuals", "gente", "personnes", "individus"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# SOMETHING: indefinite thing (subject, object, or with indefinite determiner)
+	patterns["SOMETHING"] = [[
+		{"RIGHT_ID": "something", "RIGHT_ATTRS": {"LOWER": {"IN": ["something", "anything", "whatever", "algo", "quelque chose", "event", "evento", "événement"]}, "POS": {"IN": ["PRON", "NOUN"]}, "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# SOMETHING: "an event" pattern
+	patterns["SOMETHING_AN_EVENT"] = [[
+		{"RIGHT_ID": "det", "RIGHT_ATTRS": {"LOWER": {"IN": ["a", "an", "un", "una", "un", "une"]}, "POS": "DET", "DEP": "det"}},
+		{"LEFT_ID": "det", "REL_OP": ">", "RIGHT_ID": "event", "RIGHT_ATTRS": {"LOWER": {"IN": ["event", "evento", "événement", "thing", "cosa", "chose"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# THING: generic object (subject, object, or with determiner)
+	patterns["THING"] = [[
+		{"RIGHT_ID": "thing", "RIGHT_ATTRS": {"LOWER": {"IN": ["thing", "object", "item", "cosa", "objet", "article"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# THING: "the object" pattern
+	patterns["THING_THE_OBJECT"] = [[
+		{"RIGHT_ID": "det", "RIGHT_ATTRS": {"LOWER": {"IN": ["the", "el", "la", "le", "les"]}, "POS": "DET", "DEP": "det"}},
+		{"LEFT_ID": "det", "REL_OP": ">", "RIGHT_ID": "object", "RIGHT_ATTRS": {"LOWER": {"IN": ["object", "objeto", "objet"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# BODY: physical entity (subject, object, or with determiner)
+	patterns["BODY"] = [[
+		{"RIGHT_ID": "body", "RIGHT_ATTRS": {"LOWER": {"IN": ["body", "person", "human", "cuerpo", "personne", "humain"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# BODY: "the person" pattern
+	patterns["BODY_THE_PERSON"] = [[
+		{"RIGHT_ID": "det", "RIGHT_ATTRS": {"LOWER": {"IN": ["the", "el", "la", "le", "les"]}, "POS": "DET", "DEP": "det"}},
+		{"LEFT_ID": "det", "REL_OP": ">", "RIGHT_ID": "person", "RIGHT_ATTRS": {"LOWER": {"IN": ["person", "persona", "personne"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "nsubjpass", "dobj", "obj", "pobj"]}}}
+	]]
+	
+	# === PHASE 2: MENTAL PREDICATES (NSM Primes) - UD-Based Patterns ===
+	
+	# THINK: mental cognition and reasoning (main verb or complement)
+	patterns["THINK"] = [[
+		{"RIGHT_ID": "think", "RIGHT_ATTRS": {"LOWER": {"IN": ["think", "believe", "consider", "pensar", "creer", "penser", "croire"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# KNOW: mental knowledge and understanding (main verb or complement)
+	patterns["KNOW"] = [[
+		{"RIGHT_ID": "know", "RIGHT_ATTRS": {"LOWER": {"IN": ["know", "understand", "realize", "saber", "conocer", "savoir", "connaître"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# WANT: mental desire and intention (main verb or complement)
+	patterns["WANT"] = [[
+		{"RIGHT_ID": "want", "RIGHT_ATTRS": {"LOWER": {"IN": ["want", "desire", "wish", "querer", "desear", "vouloir", "souhaiter"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# FEEL: mental emotion and sensation (main verb or complement)
+	patterns["FEEL"] = [[
+		{"RIGHT_ID": "feel", "RIGHT_ATTRS": {"LOWER": {"IN": ["feel", "sense", "sentir", "ressentir"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# SEE: sensory visual perception (main verb or complement)
+	patterns["SEE"] = [[
+		{"RIGHT_ID": "see", "RIGHT_ATTRS": {"LOWER": {"IN": ["see", "look", "watch", "ver", "mirar", "voir", "regarder"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# HEAR: sensory auditory perception (main verb or complement)
+	patterns["HEAR"] = [[
+		{"RIGHT_ID": "hear", "RIGHT_ATTRS": {"LOWER": {"IN": ["hear", "listen", "escuchar", "oir", "entendre", "écouter"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# === PHASE 3: LOGICAL OPERATORS (NSM Primes) - UD-Based Patterns ===
+	
+	# BECAUSE: logical causation and reasoning (subordinating conjunction or adverb)
+	patterns["BECAUSE"] = [[
+		{"RIGHT_ID": "because", "RIGHT_ATTRS": {"LOWER": {"IN": ["because", "since", "as", "porque", "ya", "puisque", "car"]}, "POS": {"IN": ["SCONJ", "ADV"]}, "DEP": {"IN": ["mark", "advmod"]}}}
+	]]
+	
+	# IF: logical condition and implication (subordinating conjunction)
+	patterns["IF"] = [[
+		{"RIGHT_ID": "if", "RIGHT_ATTRS": {"LOWER": {"IN": ["if", "si", "si"]}, "POS": "SCONJ", "DEP": "mark"}}
+	]]
+	
+	# NOT: logical negation (particle or adverb)
+	patterns["NOT"] = [[
+		{"RIGHT_ID": "not", "RIGHT_ATTRS": {"LOWER": {"IN": ["not", "no", "ne", "pas"]}, "POS": {"IN": ["PART", "ADV"]}, "DEP": {"IN": ["neg", "advmod"]}}}
+	]]
+	
+	# SAME: logical identity and equivalence (adjective or adverb)
+	patterns["SAME"] = [[
+		{"RIGHT_ID": "same", "RIGHT_ATTRS": {"LOWER": {"IN": ["same", "identical", "igual", "même", "pareil"]}, "POS": {"IN": ["ADJ", "ADV"]}, "DEP": {"IN": ["amod", "advmod", "attr"]}}}
+	]]
+	
+	# DIFFERENT: logical difference and distinction (adjective or adverb)
+	patterns["DIFFERENT"] = [[
+		{"RIGHT_ID": "different", "RIGHT_ATTRS": {"LOWER": {"IN": ["different", "distinct", "diferente", "différent", "autre"]}, "POS": {"IN": ["ADJ", "ADV"]}, "DEP": {"IN": ["amod", "advmod", "attr"]}}}
+	]]
+	
+	# MAYBE: logical possibility and uncertainty (adverb or particle)
+	patterns["MAYBE"] = [[
+		{"RIGHT_ID": "maybe", "RIGHT_ATTRS": {"LOWER": {"IN": ["maybe", "perhaps", "possibly", "tal", "vez", "peut-être"]}, "POS": {"IN": ["ADV", "PART"]}, "DEP": {"IN": ["advmod", "discourse"]}}}
+	]]
+	
+	# === PHASE 4: TEMPORAL & CAUSAL (NSM Primes) - UD-Based Patterns ===
+	
+	# BEFORE: temporal precedence and ordering (preposition, adverb, or subordinating conjunction)
+	patterns["BEFORE"] = [[
+		{"RIGHT_ID": "before", "RIGHT_ATTRS": {"LOWER": {"IN": ["before", "prior", "antes", "avant"]}, "POS": {"IN": ["ADP", "ADV", "SCONJ"]}, "DEP": {"IN": ["prep", "advmod", "mark"]}}}
+	]]
+	
+	# AFTER: temporal succession and sequence (preposition, adverb, or subordinating conjunction)
+	patterns["AFTER"] = [[
+		{"RIGHT_ID": "after", "RIGHT_ATTRS": {"LOWER": {"IN": ["after", "later", "después", "après"]}, "POS": {"IN": ["ADP", "ADV", "SCONJ"]}, "DEP": {"IN": ["prep", "advmod", "mark"]}}}
+	]]
+	
+	# WHEN: temporal simultaneity and coincidence (adverb or subordinating conjunction)
+	patterns["WHEN"] = [[
+		{"RIGHT_ID": "when", "RIGHT_ATTRS": {"LOWER": {"IN": ["when", "while", "cuando", "quand"]}, "POS": {"IN": ["ADV", "SCONJ"]}, "DEP": {"IN": ["advmod", "mark"]}}}
+	]]
+	
+	# CAUSE: causal agency and responsibility (main verb or complement)
+	patterns["CAUSE"] = [[
+		{"RIGHT_ID": "cause", "RIGHT_ATTRS": {"LOWER": {"IN": ["cause", "lead", "causar", "causer"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# MAKE: causal creation and production (main verb or complement)
+	patterns["MAKE"] = [[
+		{"RIGHT_ID": "make", "RIGHT_ATTRS": {"LOWER": {"IN": ["make", "create", "hacer", "faire"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# LET: causal permission and allowance (main verb or complement)
+	patterns["LET"] = [[
+		{"RIGHT_ID": "let", "RIGHT_ATTRS": {"LOWER": {"IN": ["let", "allow", "permitir", "permettre"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# === PHASE 5: SPATIAL & PHYSICAL (NSM Primes) - UD-Based Patterns ===
+	
+	# IN: spatial containment and inclusion (preposition)
+	patterns["IN"] = [[
+		{"RIGHT_ID": "in", "RIGHT_ATTRS": {"LOWER": {"IN": ["in", "within", "dentro", "dans"]}, "POS": "ADP", "DEP": "prep"}}
+	]]
+	
+	# ON: spatial support and contact (preposition)
+	patterns["ON"] = [[
+		{"RIGHT_ID": "on", "RIGHT_ATTRS": {"LOWER": {"IN": ["on", "upon", "sobre", "sur"]}, "POS": "ADP", "DEP": "prep"}}
+	]]
+	
+	# UNDER: spatial subordination and coverage (preposition)
+	patterns["UNDER"] = [[
+		{"RIGHT_ID": "under", "RIGHT_ATTRS": {"LOWER": {"IN": ["under", "beneath", "bajo", "sous"]}, "POS": "ADP", "DEP": "prep"}}
+	]]
+	
+	# NEAR: spatial proximity and closeness (preposition, adjective, or adverb)
+	patterns["NEAR"] = [[
+		{"RIGHT_ID": "near", "RIGHT_ATTRS": {"LOWER": {"IN": ["near", "close", "cerca", "près"]}, "POS": {"IN": ["ADP", "ADJ", "ADV"]}, "DEP": {"IN": ["prep", "amod", "advmod"]}}}
+	]]
+	
+	# FAR: spatial distance and separation (preposition, adjective, or adverb)
+	patterns["FAR"] = [[
+		{"RIGHT_ID": "far", "RIGHT_ATTRS": {"LOWER": {"IN": ["far", "away", "lejos", "loin"]}, "POS": {"IN": ["ADP", "ADJ", "ADV"]}, "DEP": {"IN": ["prep", "amod", "advmod"]}}}
+	]]
+	
+	# INSIDE: spatial interiority and enclosure (preposition or adverb)
+	patterns["INSIDE"] = [[
+		{"RIGHT_ID": "inside", "RIGHT_ATTRS": {"LOWER": {"IN": ["inside", "within", "dentro", "dedans"]}, "POS": {"IN": ["ADP", "ADV"]}, "DEP": {"IN": ["prep", "advmod"]}}}
+	]]
+	
+	# === PHASE 6: QUANTIFIERS (NSM Primes) - UD-Based Patterns ===
+	
+	# ALL: universal quantification and totality (determiner, pronoun, or adjective)
+	patterns["ALL"] = [[
+		{"RIGHT_ID": "all", "RIGHT_ATTRS": {"LOWER": {"IN": ["all", "every", "each", "todo", "tous"]}, "POS": {"IN": ["DET", "PRON", "ADJ"]}, "DEP": {"IN": ["det", "amod", "nsubj", "dobj"]}}}
+	]]
+	
+	# MANY: large quantity and plurality (determiner, adjective, or adverb)
+	patterns["MANY"] = [[
+		{"RIGHT_ID": "many", "RIGHT_ATTRS": {"LOWER": {"IN": ["many", "numerous", "muchos", "nombreux"]}, "POS": {"IN": ["DET", "ADJ", "ADV"]}, "DEP": {"IN": ["det", "amod", "advmod"]}}}
+	]]
+	
+	# SOME: partial quantity and existence (determiner, pronoun, or adjective)
+	patterns["SOME"] = [[
+		{"RIGHT_ID": "some", "RIGHT_ATTRS": {"LOWER": {"IN": ["some", "several", "algunos", "quelques"]}, "POS": {"IN": ["DET", "PRON", "ADJ"]}, "DEP": {"IN": ["det", "amod", "nsubj", "dobj"]}}}
+	]]
+	
+	# FEW: small quantity and scarcity (determiner, adjective, or adverb)
+	patterns["FEW"] = [[
+		{"RIGHT_ID": "few", "RIGHT_ATTRS": {"LOWER": {"IN": ["few", "little", "pocos", "peu"]}, "POS": {"IN": ["DET", "ADJ", "ADV"]}, "DEP": {"IN": ["det", "amod", "advmod"]}}}
+	]]
+	
+	# MUCH: large amount and abundance (determiner, adjective, or adverb)
+	patterns["MUCH"] = [[
+		{"RIGHT_ID": "much", "RIGHT_ATTRS": {"LOWER": {"IN": ["much", "a lot", "mucho", "beaucoup"]}, "POS": {"IN": ["DET", "ADJ", "ADV"]}, "DEP": {"IN": ["det", "amod", "advmod"]}}}
+	]]
+	
+	# LITTLE: small amount and paucity (determiner, adjective, or adverb)
+	patterns["LITTLE"] = [[
+		{"RIGHT_ID": "little", "RIGHT_ATTRS": {"LOWER": {"IN": ["little", "small", "poco", "peu"]}, "POS": {"IN": ["DET", "ADJ", "ADV"]}, "DEP": {"IN": ["det", "amod", "advmod"]}}}
+	]]
+	
+	# === PHASE 7: EVALUATORS (NSM Primes) - UD-Based Patterns ===
+	
+	# GOOD: positive evaluation and desirability (adjective)
+	patterns["GOOD"] = [[
+		{"RIGHT_ID": "good", "RIGHT_ATTRS": {"LOWER": {"IN": ["good", "great", "excellent", "bueno", "bon"]}, "POS": "ADJ", "DEP": {"IN": ["amod", "attr", "pred"]}}}
+	]]
+	
+	# BAD: negative evaluation and undesirability (adjective)
+	patterns["BAD"] = [[
+		{"RIGHT_ID": "bad", "RIGHT_ATTRS": {"LOWER": {"IN": ["bad", "terrible", "awful", "malo", "mauvais"]}, "POS": "ADJ", "DEP": {"IN": ["amod", "attr", "pred"]}}}
+	]]
+	
+	# BIG: large size and magnitude (adjective)
+	patterns["BIG"] = [[
+		{"RIGHT_ID": "big", "RIGHT_ATTRS": {"LOWER": {"IN": ["big", "large", "huge", "grande", "grand"]}, "POS": "ADJ", "DEP": {"IN": ["amod", "attr", "pred"]}}}
+	]]
+	
+	# SMALL: small size and magnitude (adjective)
+	patterns["SMALL"] = [[
+		{"RIGHT_ID": "small", "RIGHT_ATTRS": {"LOWER": {"IN": ["small", "tiny", "little", "pequeño", "petit"]}, "POS": "ADJ", "DEP": {"IN": ["amod", "attr", "pred"]}}}
+	]]
+	
+	# RIGHT: correctness and appropriateness (adjective or adverb)
+	patterns["RIGHT"] = [[
+		{"RIGHT_ID": "right", "RIGHT_ATTRS": {"LOWER": {"IN": ["right", "correct", "proper", "correcto", "juste"]}, "POS": {"IN": ["ADJ", "ADV"]}, "DEP": {"IN": ["amod", "attr", "pred", "advmod"]}}}
+	]]
+	
+	# WRONG: incorrectness and inappropriateness (adjective or adverb) - avoid conflict with FALSE
+	patterns["WRONG"] = [[
+		{"RIGHT_ID": "wrong", "RIGHT_ATTRS": {"LOWER": {"IN": ["wrong", "incorrect", "incorrecto"]}, "POS": {"IN": ["ADJ", "ADV"]}, "DEP": {"IN": ["amod", "attr", "pred", "advmod"]}}}
+	]]
+	
+	# === PHASE 8: ACTIONS (NSM Primes) - UD-Based Patterns ===
+	
+	# DO: action performance and execution (main verb or complement)
+	patterns["DO"] = [[
+		{"RIGHT_ID": "do", "RIGHT_ATTRS": {"LOWER": {"IN": ["do", "make", "perform", "hacer", "faire"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# HAPPEN: event occurrence and happening (main verb or complement)
+	patterns["HAPPEN"] = [[
+		{"RIGHT_ID": "happen", "RIGHT_ATTRS": {"LOWER": {"IN": ["happen", "occur", "take", "pasar", "arriver"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# MOVE: physical movement and motion (main verb or complement)
+	patterns["MOVE"] = [[
+		{"RIGHT_ID": "move", "RIGHT_ATTRS": {"LOWER": {"IN": ["move", "go", "walk", "mover", "bouger"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# TOUCH: physical contact and interaction (main verb or complement)
+	patterns["TOUCH"] = [[
+		{"RIGHT_ID": "touch", "RIGHT_ATTRS": {"LOWER": {"IN": ["touch", "contact", "reach", "tocar", "toucher"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# LIVE: existence and being alive (main verb or complement)
+	patterns["LIVE"] = [[
+		{"RIGHT_ID": "live", "RIGHT_ATTRS": {"LOWER": {"IN": ["live", "exist", "be", "vivir", "vivre"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# DIE: death and cessation of life (main verb or complement)
+	patterns["DIE"] = [[
+		{"RIGHT_ID": "die", "RIGHT_ATTRS": {"LOWER": {"IN": ["die", "death", "end", "morir", "mourir"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# === PHASE 9: DESCRIPTORS (NSM Primes) - UD-Based Patterns ===
+	
+	# THIS: proximate reference and identification (determiner)
+	patterns["THIS"] = [[
+		{"RIGHT_ID": "this", "RIGHT_ATTRS": {"LOWER": {"IN": ["this", "ese", "ce"]}, "POS": "DET", "DEP": {"IN": ["det", "attr"]}}}
+	]]
+	
+	# THE SAME: identity and sameness (determiner or adjective)
+	patterns["THE SAME"] = [[
+		{"RIGHT_ID": "same", "RIGHT_ATTRS": {"LOWER": {"IN": ["same", "mismo", "même"]}, "POS": {"IN": ["DET", "ADJ"]}, "DEP": {"IN": ["det", "amod", "attr"]}}}
+	]]
+	
+	# OTHER: distinction and difference (determiner, adjective, or pronoun)
+	patterns["OTHER"] = [[
+		{"RIGHT_ID": "other", "RIGHT_ATTRS": {"LOWER": {"IN": ["other", "otro", "autre"]}, "POS": {"IN": ["DET", "ADJ", "PRON"]}, "DEP": {"IN": ["det", "amod", "attr", "nsubj", "dobj"]}}}
+	]]
+	
+	# ONE: singularity and unity (number or determiner)
+	patterns["ONE"] = [[
+		{"RIGHT_ID": "one", "RIGHT_ATTRS": {"LOWER": {"IN": ["one", "uno", "un"]}, "POS": {"IN": ["NUM", "DET"]}, "DEP": {"IN": ["nummod", "det"]}}}
+	]]
+	
+	# TWO: duality and pairing (number)
+	patterns["TWO"] = [[
+		{"RIGHT_ID": "two", "RIGHT_ATTRS": {"LOWER": {"IN": ["two", "dos", "deux"]}, "POS": "NUM", "DEP": "nummod"}}
+	]]
+	
+	# SOME: indefinite quantity and selection (determiner or pronoun)
+	patterns["SOME"] = [[
+		{"RIGHT_ID": "some", "RIGHT_ATTRS": {"LOWER": {"IN": ["some", "algunos", "quelques"]}, "POS": {"IN": ["DET", "PRON"]}, "DEP": {"IN": ["det", "nsubj", "dobj"]}}}
+	]]
+	
+	# === PHASE 10: INTENSIFIERS (NSM Primes) - UD-Based Patterns ===
+	
+	# VERY: high degree and intensity (adverb)
+	patterns["VERY"] = [[
+		{"RIGHT_ID": "very", "RIGHT_ATTRS": {"LOWER": {"IN": ["very", "muy", "très"]}, "POS": "ADV", "DEP": {"IN": ["advmod", "amod"]}}}
+	]]
+	
+	# MORE: comparative degree and increase (adverb or adjective)
+	patterns["MORE"] = [[
+		{"RIGHT_ID": "more", "RIGHT_ATTRS": {"LOWER": {"IN": ["more", "más", "plus"]}, "POS": {"IN": ["ADV", "ADJ"]}, "DEP": {"IN": ["advmod", "amod", "attr"]}}}
+	]]
+	
+	# LIKE: similarity and resemblance (preposition, adverb, or adjective)
+	patterns["LIKE"] = [[
+		{"RIGHT_ID": "like", "RIGHT_ATTRS": {"LOWER": {"IN": ["like", "como", "comme"]}, "POS": {"IN": ["ADP", "ADV", "ADJ"]}, "DEP": {"IN": ["prep", "advmod", "amod"]}}}
+	]]
+	
+	# KIND OF: partial degree and approximation (adverb or adjective)
+	patterns["KIND OF"] = [[
+		{"RIGHT_ID": "kind", "RIGHT_ATTRS": {"LOWER": {"IN": ["kind", "tipo", "genre"]}, "POS": {"IN": ["ADV", "ADJ"]}, "DEP": {"IN": ["advmod", "amod"]}}}
+	]]
+	
+	# === PHASE 11: FINAL PRIMES (NSM Primes) - UD-Based Patterns ===
+	
+	# SAY: speech and communication (main verb or complement)
+	patterns["SAY"] = [[
+		{"RIGHT_ID": "say", "RIGHT_ATTRS": {"LOWER": {"IN": ["say", "tell", "speak", "decir", "dire"]}, "POS": "VERB", "DEP": {"IN": ["ROOT", "ccomp", "xcomp"]}}}
+	]]
+	
+	# WORDS: linguistic expression (noun)
+	patterns["WORDS"] = [[
+		{"RIGHT_ID": "words", "RIGHT_ATTRS": {"LOWER": {"IN": ["word", "words", "palabra", "mot"]}, "POS": "NOUN", "DEP": {"IN": ["nsubj", "dobj", "pobj"]}}}
+	]]
+	
+	# TRUE: truth and factuality (adjective or adverb)
+	patterns["TRUE"] = [[
+		{"RIGHT_ID": "true", "RIGHT_ATTRS": {"LOWER": {"IN": ["true", "real", "verdadero", "vrai"]}, "POS": {"IN": ["ADJ", "ADV"]}, "DEP": {"IN": ["amod", "attr", "pred", "advmod"]}}}
+	]]
+	
+	# FALSE: falsity and deception (adjective or adverb)
+	patterns["FALSE"] = [[
+		{"RIGHT_ID": "false", "RIGHT_ATTRS": {"LOWER": {"IN": ["false", "fake", "falso", "faux"]}, "POS": {"IN": ["ADJ", "ADV"]}, "DEP": {"IN": ["amod", "attr", "pred", "advmod"]}}}
+	]]
+	
+	# WHERE: location specification (adverb or pronoun)
+	patterns["WHERE"] = [[
+		{"RIGHT_ID": "where", "RIGHT_ATTRS": {"LOWER": {"IN": ["where", "dónde", "où"]}, "POS": {"IN": ["ADV", "PRON"]}, "DEP": {"IN": ["advmod", "pobj", "nsubj"]}}}
+	]]
+	
+	# WHEN: time specification (adverb, pronoun, or subordinating conjunction)
+	patterns["WHEN"] = [[
+		{"RIGHT_ID": "when", "RIGHT_ATTRS": {"LOWER": {"IN": ["when", "cuándo", "quand"]}, "POS": {"IN": ["ADV", "PRON", "SCONJ"]}, "DEP": {"IN": ["advmod", "pobj", "mark"]}}}
+	]]
+
 	# IsA: subj and attr under copula
 	patterns["IsA"] = [[
 		{"SPEC": {"NODE_NAME": "be"}, "PATTERN": {"LEMMA": {"IN": be_lemmas}}},
@@ -658,9 +2597,184 @@ def detect_primitives_dep(text: str) -> List[str]:
 		]]
 	# Not: any verb with neg child
 	patterns["Not"] = [[
-		{"SPEC": {"NODE_NAME": "verb"}, "PATTERN": {"POS": "VERB"}},
-		{"SPEC": {"NODE_NAME": "neg", "NBOR_RELOP": ">"}, "PATTERN": {"DEP": "neg"}, "REL_OP": ">"},
+		{
+			"RIGHT_ID": "verb",
+			"RIGHT_ATTRS": {"POS": "VERB"}
+		},
+		{
+			"LEFT_ID": "verb",
+			"REL_OP": ">",
+			"RIGHT_ID": "neg", 
+			"RIGHT_ATTRS": {"DEP": "neg"}
+		}
 	]]
+	
+	# CAUSE: cause/causar/causer + VERB
+	patterns["Cause"] = [[
+		{
+			"RIGHT_ID": "cause",
+			"RIGHT_ATTRS": {"LEMMA": {"IN": ["cause", "causar", "causer"]}, "POS": "VERB"}
+		},
+		{
+			"LEFT_ID": "cause",
+			"REL_OP": ">",
+			"RIGHT_ID": "effect", 
+			"RIGHT_ATTRS": {"DEP": {"IN": ["dobj", "obj", "xcomp"]}}
+		}
+	]]
+	
+	# BEFORE/AFTER: temporal markers
+	patterns["Before"] = [[
+		{
+			"RIGHT_ID": "before",
+			"RIGHT_ATTRS": {"LEMMA": {"IN": ["before", "antes", "avant"]}, "POS": {"IN": ["ADP", "SCONJ", "ADV"]}}
+		}
+	]]
+	
+	patterns["After"] = [[
+		{
+			"RIGHT_ID": "after",
+			"RIGHT_ATTRS": {"LEMMA": {"IN": ["after", "después", "après"]}, "POS": {"IN": ["ADP", "SCONJ", "ADV"]}}
+		}
+	]]
+	
+	# MORE/LESS: comparative constructions
+	patterns["More"] = [[
+		{
+			"RIGHT_ID": "more",
+			"RIGHT_ATTRS": {"LEMMA": {"IN": ["more", "más", "plus"]}, "POS": "ADV"}
+		}
+	]]
+	
+	patterns["Less"] = [[
+		{
+			"RIGHT_ID": "less",
+			"RIGHT_ATTRS": {"LEMMA": {"IN": ["less", "menos", "moins"]}, "POS": "ADV"}
+		}
+	]]
+	
+	# Modality patterns
+	if lang == "en":
+		# ABILITY: can/could + VERB (modal aux + main verb)
+		patterns["Ability"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": {"IN": ["can", "could"]}, "POS": "AUX"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": "<",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"POS": "VERB"}
+			}
+		]]
+		# PERMISSION: may + VERB (or can + I/we)
+		patterns["Permission"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": "may", "POS": "AUX"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": "<",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"POS": "VERB"}
+			}
+		]]
+		# OBLIGATION: must/should + VERB or have to + VERB
+		patterns["Obligation"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": {"IN": ["must", "should"]}, "POS": "AUX"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": "<",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"POS": "VERB"}
+			}
+		]]
+	elif lang == "es":
+		# ABILITY: poder + VERB (Spanish modal aux + main verb)
+		patterns["Ability"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": "poder", "POS": "AUX"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": "<",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"POS": "VERB"}
+			}
+		]]
+		# PERMISSION: poder + VERB (context dependent)
+		patterns["Permission"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": "poder", "POS": "AUX"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": "<",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"POS": "VERB"}
+			}
+		]]
+		# OBLIGATION: deber + VERB or tener que + VERB
+		patterns["Obligation"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": "deber", "POS": "AUX"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": "<",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"POS": "VERB"}
+			}
+		]]
+	else:  # fr
+		# ABILITY: pouvoir + VERB (French modal verb + xcomp)
+		patterns["Ability"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": "pouvoir", "POS": "VERB"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": ">",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"DEP": "xcomp", "POS": "VERB"}
+			}
+		]]
+		# PERMISSION: pouvoir + VERB (context dependent)
+		patterns["Permission"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": "pouvoir", "POS": "VERB"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": ">",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"DEP": "xcomp", "POS": "VERB"}
+			}
+		]]
+		# OBLIGATION: devoir + VERB
+		patterns["Obligation"] = [[
+			{
+				"RIGHT_ID": "modal",
+				"RIGHT_ATTRS": {"LEMMA": "devoir", "POS": "VERB"}
+			},
+			{
+				"LEFT_ID": "modal",
+				"REL_OP": ">",
+				"RIGHT_ID": "verb", 
+				"RIGHT_ATTRS": {"DEP": "xcomp", "POS": "VERB"}
+			}
+		]]
+	
 	# PartOf: 'part of' + NOUN
 	if lang == "en":
 		patterns["PartOf"] = [[
@@ -729,6 +2843,37 @@ def detect_primitives_dep(text: str) -> List[str]:
 		{"SPEC": {"NODE_NAME": "for", "NBOR_RELOP": ">"}, "PATTERN": {"LOWER": {"IN": used_for_prep}}, "REL_OP": ">"},
 		{"SPEC": {"NODE_NAME": "pobj", "NBOR_RELOP": ">"}, "PATTERN": {"DEP": {"IN": ["pobj", "obj"]}}, "REL_OP": ">"},
 	]]
+	
+	# STILL: continuation of state/action
+	patterns["Still"] = [[
+		{"RIGHT_ID": "still", "RIGHT_ATTRS": {"LOWER": {"IN": ["still", "todavía", "aún", "encore", "toujours"]}, "POS": {"IN": ["ADV", "ADJ"]}}}
+	]]
+	
+	# NOT_YET: anticipated completion (negative + temporal)
+	patterns["NotYet"] = [[
+		{"RIGHT_ID": "yet", "RIGHT_ATTRS": {"LOWER": {"IN": ["yet", "todavía", "aún", "encore"]}, "POS": "ADV"}}
+	]]
+	
+	# START: beginning of action/state
+	patterns["Start"] = [[
+		{"RIGHT_ID": "start", "RIGHT_ATTRS": {"LEMMA": {"IN": ["start", "begin", "empezar", "comenzar", "commencer", "débuter"]}, "POS": "VERB"}}
+	]]
+	
+	# FINISH: completion of action/state
+	patterns["Finish"] = [[
+		{"RIGHT_ID": "finish", "RIGHT_ATTRS": {"LEMMA": {"IN": ["finish", "complete", "end", "terminar", "acabar", "finir", "terminer"]}, "POS": "VERB"}}
+	]]
+	
+	# AGAIN: repetition of action
+	patterns["Again"] = [[
+		{"RIGHT_ID": "again", "RIGHT_ATTRS": {"LOWER": {"IN": ["again", "otra", "vez", "nuevo", "encore", "nouveau"]}, "POS": {"IN": ["ADV", "ADJ"]}}}
+	]]
+	
+	# KEEP: continuation/maintenance of action
+	patterns["Keep"] = [[
+		{"RIGHT_ID": "keep", "RIGHT_ATTRS": {"LEMMA": {"IN": ["keep", "continue", "seguir", "continuar", "continuer"]}, "POS": "VERB"}}
+	]]
+	
 	added = 0
 	for name, pat in patterns.items():
 		try:
@@ -742,13 +2887,21 @@ def detect_primitives_dep(text: str) -> List[str]:
 	out: List[str] = []
 	for match_id, _ in matches:
 		out.append(nlp.vocab.strings[match_id])
-	# Post-process: unify InOrderTo variants and similar patterns
+	# Post-process: unify pattern variants
 	final: List[str] = []
 	for n in out:
 		if n == "InOrderTo_to":
 			final.append("InOrderTo")
 		elif n == "Like":
 			final.append("SimilarTo")
+		elif n in ["SOMEONE_A_PERSON"]:
+			final.append("SOMEONE")
+		elif n in ["SOMETHING_AN_EVENT"]:
+			final.append("SOMETHING")
+		elif n in ["THING_THE_OBJECT"]:
+			final.append("THING")
+		elif n in ["BODY_THE_PERSON"]:
+			final.append("BODY")
 		else:
 			final.append(n)
 	return final
@@ -793,6 +2946,60 @@ def detect_primitives_lexical(text: str) -> List[str]:
 	# Exist
 	if any(p in lower for p in [" there is ", " there are ", " existe ", " il y a "]):
 		out.append("Exist")
+
+	# STILL: continuation
+	if any(p in lower for p in [" still ", " todavía ", " aún ", " encore ", " toujours "]):
+		out.append("Still")
+
+	# NOT_YET: anticipated completion
+	if any(p in lower for p in [" not yet ", " not yet ", " aún no ", " todavía no ", " pas encore "]):
+		out.append("NotYet")
+
+	# START: beginning
+	if any(p in lower for p in [" start ", " begin ", " empezar ", " comenzar ", " commencer ", " débuter "]):
+		out.append("Start")
+
+	# FINISH: completion
+	if any(p in lower for p in [" finish ", " complete ", " end ", " terminar ", " acabar ", " finir ", " terminer "]):
+		out.append("Finish")
+
+	# AGAIN: repetition
+	if any(p in lower for p in [" again ", " otra vez ", " de nuevo ", " encore ", " de nouveau "]):
+		out.append("Again")
+
+	# KEEP: continuation
+	if any(p in lower for p in [" keep ", " continue ", " seguir ", " continuar ", " continuer "]):
+		out.append("Keep")
+
+	# === PHASE 1: CORE SUBSTANTIVES (NSM Primes) ===
+	
+	# I: first person singular pronoun
+	if any(p in lower for p in [" i ", " me ", " my ", " myself ", " yo ", " je "]):
+		out.append("I")
+	
+	# YOU: second person pronoun
+	if any(p in lower for p in [" you ", " your ", " yourself ", " tú ", " tu ", " vous "]):
+		out.append("YOU")
+	
+	# SOMEONE: indefinite person
+	if any(p in lower for p in [" someone ", " somebody ", " anyone ", " anybody ", " alguien ", " quelqu'un "]):
+		out.append("SOMEONE")
+	
+	# PEOPLE: plural persons
+	if any(p in lower for p in [" people ", " persons ", " humans ", " gente ", " personnes "]):
+		out.append("PEOPLE")
+	
+	# SOMETHING: indefinite thing
+	if any(p in lower for p in [" something ", " anything ", " whatever ", " algo ", " quelque chose "]):
+		out.append("SOMETHING")
+	
+	# THING: generic object
+	if any(p in lower for p in [" thing ", " object ", " item ", " cosa ", " objet "]):
+		out.append("THING")
+	
+	# BODY: physical entity
+	if any(p in lower for p in [" body ", " person ", " human ", " cuerpo ", " personne "]):
+		out.append("BODY")
 
 	return out
 

@@ -1,14 +1,14 @@
 {
   "per_lang": {
     "en": {
-      "avg_delta_ratio": 0.10010946010356664,
+      "avg_delta_ratio": 0.09752732002142656,
       "entries": [
         {
           "idx": 0,
-          "primitive": "Entity",
+          "primitive": "AtLocation",
           "text_gzip": 42,
-          "exp_gzip": 40,
-          "delta_ratio": 0.047619047619047616
+          "exp_gzip": 43,
+          "delta_ratio": -0.023809523809523808
         },
         {
           "idx": 1,
@@ -26,17 +26,17 @@
         },
         {
           "idx": 3,
-          "primitive": "Entity",
+          "primitive": "HasProperty",
           "text_gzip": 42,
-          "exp_gzip": 40,
-          "delta_ratio": 0.047619047619047616
+          "exp_gzip": 39,
+          "delta_ratio": 0.07142857142857142
         },
         {
           "idx": 4,
-          "primitive": "Entity",
+          "primitive": "DifferentFrom",
           "text_gzip": 44,
-          "exp_gzip": 40,
-          "delta_ratio": 0.09090909090909091
+          "exp_gzip": 49,
+          "delta_ratio": -0.11363636363636363
         },
         {
           "idx": 5,
@@ -54,24 +54,24 @@
         },
         {
           "idx": 7,
-          "primitive": "this",
+          "primitive": "want",
           "text_gzip": 42,
           "exp_gzip": 40,
           "delta_ratio": 0.047619047619047616
         },
         {
           "idx": 8,
-          "primitive": "Action",
+          "primitive": "Property",
           "text_gzip": 42,
           "exp_gzip": 40,
           "delta_ratio": 0.047619047619047616
         },
         {
           "idx": 9,
-          "primitive": "Entity",
+          "primitive": "AtLocation",
           "text_gzip": 52,
-          "exp_gzip": 40,
-          "delta_ratio": 0.23076923076923078
+          "exp_gzip": 43,
+          "delta_ratio": 0.17307692307692307
         },
         {
           "idx": 10,
@@ -846,14 +846,14 @@
       ]
     },
     "es": {
-      "avg_delta_ratio": 0.2159257545877845,
+      "avg_delta_ratio": 0.20956618668654992,
       "entries": [
         {
           "idx": 0,
-          "primitive": "Entity",
+          "primitive": "AtLocation",
           "text_gzip": 45,
-          "exp_gzip": 32,
-          "delta_ratio": 0.28888888888888886
+          "exp_gzip": 42,
+          "delta_ratio": 0.06666666666666667
         },
         {
           "idx": 1,
@@ -871,17 +871,17 @@
         },
         {
           "idx": 3,
-          "primitive": "Entity",
+          "primitive": "HasProperty",
           "text_gzip": 54,
-          "exp_gzip": 32,
-          "delta_ratio": 0.4074074074074074
+          "exp_gzip": 37,
+          "delta_ratio": 0.3148148148148148
         },
         {
           "idx": 4,
-          "primitive": "Entity",
+          "primitive": "DifferentFrom",
           "text_gzip": 50,
-          "exp_gzip": 32,
-          "delta_ratio": 0.36
+          "exp_gzip": 44,
+          "delta_ratio": 0.12
         },
         {
           "idx": 5,
@@ -899,24 +899,24 @@
         },
         {
           "idx": 7,
-          "primitive": "this",
+          "primitive": "want",
           "text_gzip": 47,
           "exp_gzip": 32,
           "delta_ratio": 0.3191489361702128
         },
         {
           "idx": 8,
-          "primitive": "Action",
+          "primitive": "Property",
           "text_gzip": 47,
           "exp_gzip": 32,
           "delta_ratio": 0.3191489361702128
         },
         {
           "idx": 9,
-          "primitive": "Entity",
+          "primitive": "AtLocation",
           "text_gzip": 48,
-          "exp_gzip": 32,
-          "delta_ratio": 0.3333333333333333
+          "exp_gzip": 42,
+          "delta_ratio": 0.125
         },
         {
           "idx": 10,
@@ -1691,14 +1691,14 @@
       ]
     },
     "fr": {
-      "avg_delta_ratio": 0.0718661571957295,
+      "avg_delta_ratio": 0.0686823238333247,
       "entries": [
         {
           "idx": 0,
-          "primitive": "Entity",
+          "primitive": "AtLocation",
           "text_gzip": 45,
-          "exp_gzip": 46,
-          "delta_ratio": -0.022222222222222223
+          "exp_gzip": 50,
+          "delta_ratio": -0.1111111111111111
         },
         {
           "idx": 1,
@@ -1716,17 +1716,17 @@
         },
         {
           "idx": 3,
-          "primitive": "Entity",
+          "primitive": "HasProperty",
           "text_gzip": 52,
-          "exp_gzip": 46,
-          "delta_ratio": 0.11538461538461539
+          "exp_gzip": 44,
+          "delta_ratio": 0.15384615384615385
         },
         {
           "idx": 4,
-          "primitive": "Entity",
+          "primitive": "DifferentFrom",
           "text_gzip": 48,
-          "exp_gzip": 46,
-          "delta_ratio": 0.041666666666666664
+          "exp_gzip": 58,
+          "delta_ratio": -0.20833333333333334
         },
         {
           "idx": 5,
@@ -1744,24 +1744,24 @@
         },
         {
           "idx": 7,
-          "primitive": "this",
+          "primitive": "want",
           "text_gzip": 45,
           "exp_gzip": 46,
           "delta_ratio": -0.022222222222222223
         },
         {
           "idx": 8,
-          "primitive": "Action",
+          "primitive": "Property",
           "text_gzip": 41,
           "exp_gzip": 46,
           "delta_ratio": -0.12195121951219512
         },
         {
           "idx": 9,
-          "primitive": "Entity",
+          "primitive": "AtLocation",
           "text_gzip": 49,
-          "exp_gzip": 46,
-          "delta_ratio": 0.061224489795918366
+          "exp_gzip": 50,
+          "delta_ratio": -0.02040816326530612
         },
         {
           "idx": 10,
@@ -2537,6 +2537,6 @@
     }
   },
   "overall": {
-    "avg_delta_ratio": 0.12930045729569353
+    "avg_delta_ratio": 0.1252586101804337
   }
 }

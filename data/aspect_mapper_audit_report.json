@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "audit_type": "Robust Aspect Mapper Theater Code Audit",
+    "timestamp": "2025-08-22",
+    "target_file": "robust_aspect_mapper.py"
+  },
+  "summary": {
+    "total_issues": 7,
+    "critical_issues": 0,
+    "high_issues": 0,
+    "medium_issues": 6,
+    "overall_status": "CAUTION - Potential issues found"
+  },
+  "issues": [],
+  "suspicious_patterns": [
+    {
+      "issue": "Overly simple pattern",
+      "severity": "medium",
+      "description": "Single-word pattern 'just' might be too broad",
+      "suggestion": "Consider multi-word patterns for better specificity"
+    },
+    {
+      "issue": "Overly simple pattern",
+      "severity": "medium",
+      "description": "Single-word pattern 'almost' might be too broad",
+      "suggestion": "Consider multi-word patterns for better specificity"
+    },
+    {
+      "issue": "Overly simple pattern",
+      "severity": "medium",
+      "description": "Single-word pattern 'again' might be too broad",
+      "suggestion": "Consider multi-word patterns for better specificity"
+    },
+    {
+      "issue": "Overly simple pattern",
+      "severity": "medium",
+      "description": "Single-word pattern 'stop' might be too broad",
+      "suggestion": "Consider multi-word patterns for better specificity"
+    },
+    {
+      "issue": "Overly simple pattern",
+      "severity": "medium",
+      "description": "Single-word pattern 'been' might be too broad",
+      "suggestion": "Consider multi-word patterns for better specificity"
+    }
+  ],
+  "test_rigging": [
+    {
+      "issue": "Insufficient test diversity",
+      "severity": "medium",
+      "description": "Only 0 test cases for fr",
+      "suggestion": "Add more diverse test cases"
+    },
+    {
+      "issue": "Insufficient negative controls",
+      "severity": "high",
+      "description": "Only 0 negative control test cases",
+      "suggestion": "Add more negative controls to prevent false positives"
+    }
+  ],
+  "recommendations": [
+    "Review and improve pattern specificity",
+    "Implement dynamic confidence calculation",
+    "Add more diverse test cases",
+    "Increase negative control coverage"
+  ]
+}

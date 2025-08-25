@@ -1,0 +1,72 @@
+{"text": "I think this is good", "primes": ["I", "THINK", "THIS", "GOOD"], "paraphrase": "I believe this is excellent", "counterfactual": "I do not think this is good"}
+{"text": "You know the truth", "primes": ["YOU", "KNOW", "TRUE"], "paraphrase": "You understand the reality", "counterfactual": "You do not know the truth"}
+{"text": "Someone wants to help", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to assist", "counterfactual": "Someone does not want to help"}
+{"text": "People feel happy", "primes": ["PEOPLE", "FEEL", "GOOD"], "paraphrase": "Individuals sense joy", "counterfactual": "People feel sad"}
+{"text": "I see the problem", "primes": ["I", "SEE", "THING"], "paraphrase": "I observe the issue", "counterfactual": "I do not see the problem"}
+{"text": "You hear the music", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the sound", "counterfactual": "You do not hear the music"}
+{"text": "I think you are right", "primes": ["I", "THINK", "YOU", "RIGHT"], "paraphrase": "I believe you are correct", "counterfactual": "I think you are wrong"}
+{"text": "You know what I mean", "primes": ["YOU", "KNOW", "I"], "paraphrase": "You understand my meaning", "counterfactual": "You do not know what I mean"}
+{"text": "Someone wants to learn", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to study", "counterfactual": "Someone does not want to learn"}
+{"text": "People feel scared", "primes": ["PEOPLE", "FEEL", "BAD"], "paraphrase": "Individuals sense fear", "counterfactual": "People feel brave"}
+{"text": "I see the light", "primes": ["I", "SEE"], "paraphrase": "I observe the brightness", "counterfactual": "I do not see the light"}
+{"text": "You hear the noise", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the sound", "counterfactual": "You do not hear the noise"}
+{"text": "I think this is wrong", "primes": ["I", "THINK", "THIS", "WRONG"], "paraphrase": "I believe this is incorrect", "counterfactual": "I think this is right"}
+{"text": "You know the answer", "primes": ["YOU", "KNOW"], "paraphrase": "You understand the solution", "counterfactual": "You do not know the answer"}
+{"text": "Someone wants to leave", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to depart", "counterfactual": "Someone wants to stay"}
+{"text": "People feel tired", "primes": ["PEOPLE", "FEEL", "BAD"], "paraphrase": "Individuals sense exhaustion", "counterfactual": "People feel energetic"}
+{"text": "I see the stars", "primes": ["I", "SEE"], "paraphrase": "I observe the celestial bodies", "counterfactual": "I do not see the stars"}
+{"text": "You hear the voice", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the speech", "counterfactual": "You do not hear the voice"}
+{"text": "I think you are wrong", "primes": ["I", "THINK", "YOU", "WRONG"], "paraphrase": "I believe you are incorrect", "counterfactual": "I think you are right"}
+{"text": "You know the way", "primes": ["YOU", "KNOW"], "paraphrase": "You understand the path", "counterfactual": "You do not know the way"}
+{"text": "Someone wants to eat", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to consume", "counterfactual": "Someone does not want to eat"}
+{"text": "People feel angry", "primes": ["PEOPLE", "FEEL", "BAD"], "paraphrase": "Individuals sense rage", "counterfactual": "People feel calm"}
+{"text": "I see the future", "primes": ["I", "SEE"], "paraphrase": "I observe what comes next", "counterfactual": "I do not see the future"}
+{"text": "You hear the truth", "primes": ["YOU", "HEAR", "TRUE"], "paraphrase": "You listen to the reality", "counterfactual": "You hear the lies"}
+{"text": "I think this is big", "primes": ["I", "THINK", "THIS", "BIG"], "paraphrase": "I believe this is large", "counterfactual": "I think this is small"}
+{"text": "You know the time", "primes": ["YOU", "KNOW"], "paraphrase": "You understand the moment", "counterfactual": "You do not know the time"}
+{"text": "Someone wants to sleep", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to rest", "counterfactual": "Someone does not want to sleep"}
+{"text": "People feel excited", "primes": ["PEOPLE", "FEEL", "GOOD"], "paraphrase": "Individuals sense enthusiasm", "counterfactual": "People feel bored"}
+{"text": "I see the danger", "primes": ["I", "SEE", "BAD"], "paraphrase": "I observe the risk", "counterfactual": "I do not see the danger"}
+{"text": "You hear the story", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the tale", "counterfactual": "You do not hear the story"}
+{"text": "I think you are good", "primes": ["I", "THINK", "YOU", "GOOD"], "paraphrase": "I believe you are excellent", "counterfactual": "I think you are bad"}
+{"text": "You know the secret", "primes": ["YOU", "KNOW"], "paraphrase": "You understand the hidden truth", "counterfactual": "You do not know the secret"}
+{"text": "Someone wants to work", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to labor", "counterfactual": "Someone does not want to work"}
+{"text": "People feel safe", "primes": ["PEOPLE", "FEEL", "GOOD"], "paraphrase": "Individuals sense security", "counterfactual": "People feel unsafe"}
+{"text": "I see the beauty", "primes": ["I", "SEE", "GOOD"], "paraphrase": "I observe the loveliness", "counterfactual": "I do not see the beauty"}
+{"text": "You hear the news", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the information", "counterfactual": "You do not hear the news"}
+{"text": "I think this is small", "primes": ["I", "THINK", "THIS", "SMALL"], "paraphrase": "I believe this is tiny", "counterfactual": "I think this is big"}
+{"text": "You know the rules", "primes": ["YOU", "KNOW"], "paraphrase": "You understand the guidelines", "counterfactual": "You do not know the rules"}
+{"text": "Someone wants to play", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to have fun", "counterfactual": "Someone does not want to play"}
+{"text": "People feel confused", "primes": ["PEOPLE", "FEEL", "BAD"], "paraphrase": "Individuals sense bewilderment", "counterfactual": "People feel clear"}
+{"text": "I see the hope", "primes": ["I", "SEE", "GOOD"], "paraphrase": "I observe the optimism", "counterfactual": "I do not see the hope"}
+{"text": "You hear the call", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the summons", "counterfactual": "You do not hear the call"}
+{"text": "I think you are smart", "primes": ["I", "THINK", "YOU", "GOOD"], "paraphrase": "I believe you are intelligent", "counterfactual": "I think you are stupid"}
+{"text": "You know the price", "primes": ["YOU", "KNOW"], "paraphrase": "You understand the cost", "counterfactual": "You do not know the price"}
+{"text": "Someone wants to read", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to peruse", "counterfactual": "Someone does not want to read"}
+{"text": "People feel proud", "primes": ["PEOPLE", "FEEL", "GOOD"], "paraphrase": "Individuals sense satisfaction", "counterfactual": "People feel ashamed"}
+{"text": "I see the love", "primes": ["I", "SEE", "GOOD"], "paraphrase": "I observe the affection", "counterfactual": "I do not see the love"}
+{"text": "You hear the song", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the melody", "counterfactual": "You do not hear the song"}
+{"text": "I think this is bad", "primes": ["I", "THINK", "THIS", "BAD"], "paraphrase": "I believe this is terrible", "counterfactual": "I think this is good"}
+{"text": "You know the plan", "primes": ["YOU", "KNOW"], "paraphrase": "You understand the strategy", "counterfactual": "You do not know the plan"}
+{"text": "Someone wants to dance", "primes": ["SOMEONE", "WANT"], "paraphrase": "A person desires to move rhythmically", "counterfactual": "Someone does not want to dance"}
+{"text": "People feel grateful", "primes": ["PEOPLE", "FEEL", "GOOD"], "paraphrase": "Individuals sense thankfulness", "counterfactual": "People feel ungrateful"}
+{"text": "I see the wisdom", "primes": ["I", "SEE", "GOOD"], "paraphrase": "I observe the knowledge", "counterfactual": "I do not see the wisdom"}
+{"text": "You hear the laughter", "primes": ["YOU", "HEAR"], "paraphrase": "You listen to the mirth", "counterfactual": "You do not hear the laughter"}
+{"text": "I think you are kind", "primes": ["I", "THINK", "YOU", "GOOD"], "paraphrase": "I believe you are compassionate", "counterfactual": "I think you are cruel"}
+{"text": "You know the truth about this", "primes": ["YOU", "KNOW", "TRUE", "THIS"], "paraphrase": "You understand the reality concerning this", "counterfactual": "You do not know the truth about this"}
+{"text": "Someone wants to help people", "primes": ["SOMEONE", "WANT", "PEOPLE"], "paraphrase": "A person desires to assist individuals", "counterfactual": "Someone does not want to help people"}
+{"text": "People feel good about this", "primes": ["PEOPLE", "FEEL", "GOOD", "THIS"], "paraphrase": "Individuals sense positivity concerning this", "counterfactual": "People feel bad about this"}
+{"text": "I see the good in you", "primes": ["I", "SEE", "GOOD", "YOU"], "paraphrase": "I observe the excellence within you", "counterfactual": "I see the bad in you"}
+{"text": "You hear the truth from me", "primes": ["YOU", "HEAR", "TRUE", "I"], "paraphrase": "You listen to the reality from me", "counterfactual": "You hear the lies from me"}
+{"text": "I think you know the answer", "primes": ["I", "THINK", "YOU", "KNOW"], "paraphrase": "I believe you understand the solution", "counterfactual": "I think you do not know the answer"}
+{"text": "You know I want to help", "primes": ["YOU", "KNOW", "I", "WANT"], "paraphrase": "You understand I desire to assist", "counterfactual": "You do not know I want to help"}
+{"text": "Someone wants people to feel good", "primes": ["SOMEONE", "WANT", "PEOPLE", "FEEL", "GOOD"], "paraphrase": "A person desires individuals to sense positivity", "counterfactual": "Someone wants people to feel bad"}
+{"text": "People feel you are right", "primes": ["PEOPLE", "FEEL", "YOU", "RIGHT"], "paraphrase": "Individuals sense you are correct", "counterfactual": "People feel you are wrong"}
+{"text": "I see you want to learn", "primes": ["I", "SEE", "YOU", "WANT"], "paraphrase": "I observe you desire to study", "counterfactual": "I see you do not want to learn"}
+{"text": "You hear I think this is good", "primes": ["YOU", "HEAR", "I", "THINK", "THIS", "GOOD"], "paraphrase": "You listen to my belief that this is excellent", "counterfactual": "You hear I think this is bad"}
+{"text": "I think you know the truth", "primes": ["I", "THINK", "YOU", "KNOW", "TRUE"], "paraphrase": "I believe you understand the reality", "counterfactual": "I think you do not know the truth"}
+{"text": "You know someone wants to help", "primes": ["YOU", "KNOW", "SOMEONE", "WANT"], "paraphrase": "You understand a person desires to assist", "counterfactual": "You do not know someone wants to help"}
+{"text": "Someone wants people to know the truth", "primes": ["SOMEONE", "WANT", "PEOPLE", "KNOW", "TRUE"], "paraphrase": "A person desires individuals to understand the reality", "counterfactual": "Someone wants people to know the lies"}
+{"text": "People feel I think this is right", "primes": ["PEOPLE", "FEEL", "I", "THINK", "THIS", "RIGHT"], "paraphrase": "Individuals sense my belief that this is correct", "counterfactual": "People feel I think this is wrong"}
+{"text": "I see you know the way", "primes": ["I", "SEE", "YOU", "KNOW"], "paraphrase": "I observe you understand the path", "counterfactual": "I see you do not know the way"}
+{"text": "You hear someone wants to help people", "primes": ["YOU", "HEAR", "SOMEONE", "WANT", "PEOPLE"], "paraphrase": "You listen to a person's desire to assist individuals", "counterfactual": "You hear someone does not want to help people"}

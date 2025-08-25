@@ -168,7 +168,7 @@ class EmbeddingFactorizer:
         
         return examples
     
-    def factorize_text(self, text: str, top_k: int = 5, similarity_threshold: float | None = None) -> List[Tuple[str, float]]:
+    def factorize_text(self, text: str, top_k: int = 5, similarity_threshold: Optional[float] = None) -> List[Tuple[str, float]]:
         """Factorize text into primitive directions based on semantic similarity.
 
         Args:

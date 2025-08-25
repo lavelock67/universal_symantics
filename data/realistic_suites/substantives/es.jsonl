@@ -1,0 +1,29 @@
+{"text": "Yo estoy aquí", "primes": ["I"], "paraphrase": "Yo estoy presente", "counterfactual": "Yo no estoy aquí"}
+{"text": "Tú eres bienvenido", "primes": ["YOU"], "paraphrase": "Tú estás invitado", "counterfactual": "Tú no eres bienvenido"}
+{"text": "Alguien llamó", "primes": ["SOMEONE"], "paraphrase": "Una persona llamó", "counterfactual": "Nadie llamó"}
+{"text": "La gente está hablando", "primes": ["PEOPLE"], "paraphrase": "Las personas están conversando", "counterfactual": "La gente no está hablando"}
+{"text": "Algo pasó", "primes": ["SOMETHING"], "paraphrase": "Un evento ocurrió", "counterfactual": "Nada pasó"}
+{"text": "Esta cosa está rota", "primes": ["THING"], "paraphrase": "Este objeto está dañado", "counterfactual": "Esta cosa no está rota"}
+{"text": "El cuerpo necesita descanso", "primes": ["BODY"], "paraphrase": "La persona necesita dormir", "counterfactual": "El cuerpo no necesita descanso"}
+{"text": "Yo te ayudaré", "primes": ["I", "YOU"], "paraphrase": "Yo te asistiré", "counterfactual": "Yo no te ayudaré"}
+{"text": "Alguien le dijo a la gente", "primes": ["SOMEONE", "PEOPLE"], "paraphrase": "Una persona informó a las personas", "counterfactual": "Nadie le dijo a la gente"}
+{"text": "Algo le pasó a la cosa", "primes": ["SOMETHING", "THING"], "paraphrase": "Un evento afectó al objeto", "counterfactual": "Nada le pasó a la cosa"}
+{"text": "Mi cuerpo se siente cansado", "primes": ["I", "BODY"], "paraphrase": "Yo me siento exhausto", "counterfactual": "Mi cuerpo no se siente cansado"}
+{"text": "Tú deberías preguntarle a alguien", "primes": ["YOU", "SOMEONE"], "paraphrase": "Tú deberías consultar a una persona", "counterfactual": "Tú no deberías preguntarle a alguien"}
+{"text": "La gente necesita algo", "primes": ["PEOPLE", "SOMETHING"], "paraphrase": "Las personas requieren un artículo", "counterfactual": "La gente no necesita algo"}
+{"text": "Yo encontré la cosa", "primes": ["I", "THING"], "paraphrase": "Yo localicé el objeto", "counterfactual": "Yo no encontré la cosa"}
+{"text": "Tu cuerpo está sano", "primes": ["YOU", "BODY"], "paraphrase": "Tú estás en buena salud", "counterfactual": "Tu cuerpo no está sano"}
+{"text": "Alguien ayudó a la gente", "primes": ["SOMEONE", "PEOPLE"], "paraphrase": "Una persona asistió a las personas", "counterfactual": "Nadie ayudó a la gente"}
+{"text": "Algo rompió la cosa", "primes": ["SOMETHING", "THING"], "paraphrase": "Un evento dañó el objeto", "counterfactual": "Nada rompió la cosa"}
+{"text": "Yo conozco a alguien", "primes": ["I", "SOMEONE"], "paraphrase": "Yo estoy familiarizado con una persona", "counterfactual": "Yo no conozco a alguien"}
+{"text": "Tú le dijiste algo a la gente", "primes": ["YOU", "PEOPLE", "SOMETHING"], "paraphrase": "Tú informaste a las personas de un evento", "counterfactual": "Tú no le dijiste algo a la gente"}
+{"text": "El cuerpo necesita algo", "primes": ["BODY", "SOMETHING"], "paraphrase": "La persona requiere un artículo", "counterfactual": "El cuerpo no necesita algo"}
+{"text": "Alguien me dio la cosa", "primes": ["SOMEONE", "I", "THING"], "paraphrase": "Una persona me proporcionó el objeto", "counterfactual": "Nadie me dio la cosa"}
+{"text": "La gente vio algo", "primes": ["PEOPLE", "SOMETHING"], "paraphrase": "Las personas observaron un evento", "counterfactual": "La gente no vio algo"}
+{"text": "Yo quiero que tú ayudes", "primes": ["I", "YOU"], "paraphrase": "Yo deseo tu asistencia", "counterfactual": "Yo no quiero que tú ayudes"}
+{"text": "Algo le pasó a alguien", "primes": ["SOMETHING", "SOMEONE"], "paraphrase": "Un evento afectó a una persona", "counterfactual": "Nada le pasó a alguien"}
+{"text": "La cosa pertenece a la gente", "primes": ["THING", "PEOPLE"], "paraphrase": "El objeto es propiedad de las personas", "counterfactual": "La cosa no pertenece a la gente"}
+{"text": "Mi cuerpo me dijo algo", "primes": ["I", "BODY", "SOMETHING"], "paraphrase": "Yo sentí una indicación", "counterfactual": "Mi cuerpo no me dijo algo"}
+{"text": "Tú conoces a alguien", "primes": ["YOU", "SOMEONE"], "paraphrase": "Tú estás familiarizado con una persona", "counterfactual": "Tú no conoces a alguien"}
+{"text": "La gente necesita la cosa", "primes": ["PEOPLE", "THING"], "paraphrase": "Las personas requieren el objeto", "counterfactual": "La gente no necesita la cosa"}
+{"text": "Algo está mal con el cuerpo", "primes": ["SOMETHING", "BODY"], "paraphrase": "Hay un problema con la persona", "counterfactual": "Nada está mal con el cuerpo"}

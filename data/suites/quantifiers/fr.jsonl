@@ -1,0 +1,240 @@
+{"text": "Tous les conducteurs ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-0", "type": "base"}
+{"text": "Pas tous les conducteurs étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-0", "type": "paraphrase"}
+{"text": "Tous les conducteurs étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-0", "type": "counterfactual"}
+{"text": "Tous les médecins ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-1", "type": "base"}
+{"text": "Pas tous les médecins jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-1", "type": "paraphrase"}
+{"text": "Tous les médecins jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-1", "type": "counterfactual"}
+{"text": "Tous les médecins ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-2", "type": "base"}
+{"text": "Pas tous les médecins arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-2", "type": "paraphrase"}
+{"text": "Tous les médecins arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-2", "type": "counterfactual"}
+{"text": "Tous les médecins ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-3", "type": "base"}
+{"text": "Pas tous les médecins lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-3", "type": "paraphrase"}
+{"text": "Tous les médecins lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-3", "type": "counterfactual"}
+{"text": "Tous les enfants ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-4", "type": "base"}
+{"text": "Pas tous les enfants jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-4", "type": "paraphrase"}
+{"text": "Tous les enfants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-4", "type": "counterfactual"}
+{"text": "Tous les étudiants ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-5", "type": "base"}
+{"text": "Pas tous les étudiants jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-5", "type": "paraphrase"}
+{"text": "Tous les étudiants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-5", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-6", "type": "base"}
+{"text": "Pas tous les conducteurs jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-6", "type": "paraphrase"}
+{"text": "Tous les conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-6", "type": "counterfactual"}
+{"text": "Tous les étudiants ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-7", "type": "base"}
+{"text": "Pas tous les étudiants étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-7", "type": "paraphrase"}
+{"text": "Tous les étudiants étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-7", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-8", "type": "base"}
+{"text": "Pas tous les conducteurs courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-8", "type": "paraphrase"}
+{"text": "Tous les conducteurs courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-8", "type": "counterfactual"}
+{"text": "Tous les médecins ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-9", "type": "base"}
+{"text": "Pas tous les médecins lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-9", "type": "paraphrase"}
+{"text": "Tous les médecins lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-9", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-10", "type": "base"}
+{"text": "Pas tous les conducteurs courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-10", "type": "paraphrase"}
+{"text": "Tous les conducteurs courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-10", "type": "counterfactual"}
+{"text": "Tous les enfants ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-11", "type": "base"}
+{"text": "Pas tous les enfants jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-11", "type": "paraphrase"}
+{"text": "Tous les enfants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-11", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-12", "type": "base"}
+{"text": "Pas tous les conducteurs courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-12", "type": "paraphrase"}
+{"text": "Tous les conducteurs courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-12", "type": "counterfactual"}
+{"text": "Tous les artistes ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-13", "type": "base"}
+{"text": "Pas tous les artistes étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-13", "type": "paraphrase"}
+{"text": "Tous les artistes étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-13", "type": "counterfactual"}
+{"text": "Tous les artistes ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-14", "type": "base"}
+{"text": "Pas tous les artistes courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-14", "type": "paraphrase"}
+{"text": "Tous les artistes courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-14", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-15", "type": "base"}
+{"text": "Pas tous les conducteurs étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-15", "type": "paraphrase"}
+{"text": "Tous les conducteurs étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-15", "type": "counterfactual"}
+{"text": "Tous les médecins ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-16", "type": "base"}
+{"text": "Pas tous les médecins arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-16", "type": "paraphrase"}
+{"text": "Tous les médecins arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-16", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-17", "type": "base"}
+{"text": "Pas tous les conducteurs courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-17", "type": "paraphrase"}
+{"text": "Tous les conducteurs courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-17", "type": "counterfactual"}
+{"text": "Tous les artistes ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-18", "type": "base"}
+{"text": "Pas tous les artistes lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-18", "type": "paraphrase"}
+{"text": "Tous les artistes lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-18", "type": "counterfactual"}
+{"text": "Tous les artistes ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-19", "type": "base"}
+{"text": "Pas tous les artistes jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-19", "type": "paraphrase"}
+{"text": "Tous les artistes jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-19", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-20", "type": "base"}
+{"text": "Pas tous les conducteurs jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-20", "type": "paraphrase"}
+{"text": "Tous les conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-20", "type": "counterfactual"}
+{"text": "Tous les médecins ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-21", "type": "base"}
+{"text": "Pas tous les médecins courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-21", "type": "paraphrase"}
+{"text": "Tous les médecins courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-21", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-22", "type": "base"}
+{"text": "Pas tous les conducteurs étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-22", "type": "paraphrase"}
+{"text": "Tous les conducteurs étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-22", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-23", "type": "base"}
+{"text": "Pas tous les conducteurs arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-23", "type": "paraphrase"}
+{"text": "Tous les conducteurs arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-23", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-24", "type": "base"}
+{"text": "Pas tous les conducteurs jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-24", "type": "paraphrase"}
+{"text": "Tous les conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-24", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-25", "type": "base"}
+{"text": "Pas tous les conducteurs jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-25", "type": "paraphrase"}
+{"text": "Tous les conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-25", "type": "counterfactual"}
+{"text": "Tous les artistes ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-26", "type": "base"}
+{"text": "Pas tous les artistes lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-26", "type": "paraphrase"}
+{"text": "Tous les artistes lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-26", "type": "counterfactual"}
+{"text": "Tous les enfants ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-27", "type": "base"}
+{"text": "Pas tous les enfants courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-27", "type": "paraphrase"}
+{"text": "Tous les enfants courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-27", "type": "counterfactual"}
+{"text": "Tous les artistes ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-28", "type": "base"}
+{"text": "Pas tous les artistes lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-28", "type": "paraphrase"}
+{"text": "Tous les artistes lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-28", "type": "counterfactual"}
+{"text": "Tous les enfants ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-29", "type": "base"}
+{"text": "Pas tous les enfants étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-29", "type": "paraphrase"}
+{"text": "Tous les enfants étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-29", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-30", "type": "base"}
+{"text": "Pas tous les conducteurs jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-30", "type": "paraphrase"}
+{"text": "Tous les conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-30", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-31", "type": "base"}
+{"text": "Pas tous les conducteurs jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-31", "type": "paraphrase"}
+{"text": "Tous les conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-31", "type": "counterfactual"}
+{"text": "Tous les enfants ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-32", "type": "base"}
+{"text": "Pas tous les enfants arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-32", "type": "paraphrase"}
+{"text": "Tous les enfants arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-32", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-33", "type": "base"}
+{"text": "Pas tous les conducteurs arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-33", "type": "paraphrase"}
+{"text": "Tous les conducteurs arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-33", "type": "counterfactual"}
+{"text": "Tous les étudiants ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-34", "type": "base"}
+{"text": "Pas tous les étudiants courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-34", "type": "paraphrase"}
+{"text": "Tous les étudiants courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-34", "type": "counterfactual"}
+{"text": "Tous les médecins ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-35", "type": "base"}
+{"text": "Pas tous les médecins arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-35", "type": "paraphrase"}
+{"text": "Tous les médecins arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-35", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-36", "type": "base"}
+{"text": "Pas tous les conducteurs arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-36", "type": "paraphrase"}
+{"text": "Tous les conducteurs arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-36", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-37", "type": "base"}
+{"text": "Pas tous les conducteurs arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-37", "type": "paraphrase"}
+{"text": "Tous les conducteurs arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-37", "type": "counterfactual"}
+{"text": "Tous les enfants ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-38", "type": "base"}
+{"text": "Pas tous les enfants courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-38", "type": "paraphrase"}
+{"text": "Tous les enfants courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-38", "type": "counterfactual"}
+{"text": "Tous les enfants ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-39", "type": "base"}
+{"text": "Pas tous les enfants lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-39", "type": "paraphrase"}
+{"text": "Tous les enfants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-39", "type": "counterfactual"}
+{"text": "Tous les enfants ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-40", "type": "base"}
+{"text": "Pas tous les enfants arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-40", "type": "paraphrase"}
+{"text": "Tous les enfants arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-40", "type": "counterfactual"}
+{"text": "Tous les étudiants ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-41", "type": "base"}
+{"text": "Pas tous les étudiants étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-41", "type": "paraphrase"}
+{"text": "Tous les étudiants étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-41", "type": "counterfactual"}
+{"text": "Tous les enfants ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-42", "type": "base"}
+{"text": "Pas tous les enfants étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-42", "type": "paraphrase"}
+{"text": "Tous les enfants étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-42", "type": "counterfactual"}
+{"text": "Tous les étudiants ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-43", "type": "base"}
+{"text": "Pas tous les étudiants jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-43", "type": "paraphrase"}
+{"text": "Tous les étudiants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-43", "type": "counterfactual"}
+{"text": "Tous les enfants ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-44", "type": "base"}
+{"text": "Pas tous les enfants lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-44", "type": "paraphrase"}
+{"text": "Tous les enfants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-44", "type": "counterfactual"}
+{"text": "Tous les étudiants ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-45", "type": "base"}
+{"text": "Pas tous les étudiants jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-45", "type": "paraphrase"}
+{"text": "Tous les étudiants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-45", "type": "counterfactual"}
+{"text": "Tous les étudiants ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-46", "type": "base"}
+{"text": "Pas tous les étudiants courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-46", "type": "paraphrase"}
+{"text": "Tous les étudiants courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-46", "type": "counterfactual"}
+{"text": "Tous les enfants ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-47", "type": "base"}
+{"text": "Pas tous les enfants lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-47", "type": "paraphrase"}
+{"text": "Tous les enfants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-47", "type": "counterfactual"}
+{"text": "Tous les étudiants ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-48", "type": "base"}
+{"text": "Pas tous les étudiants courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-48", "type": "paraphrase"}
+{"text": "Tous les étudiants courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-48", "type": "counterfactual"}
+{"text": "Tous les médecins ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-49", "type": "base"}
+{"text": "Pas tous les médecins arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-49", "type": "paraphrase"}
+{"text": "Tous les médecins arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-49", "type": "counterfactual"}
+{"text": "Tous les étudiants ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-50", "type": "base"}
+{"text": "Pas tous les étudiants lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-50", "type": "paraphrase"}
+{"text": "Tous les étudiants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-50", "type": "counterfactual"}
+{"text": "Tous les artistes ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-51", "type": "base"}
+{"text": "Pas tous les artistes étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-51", "type": "paraphrase"}
+{"text": "Tous les artistes étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-51", "type": "counterfactual"}
+{"text": "Tous les étudiants ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-52", "type": "base"}
+{"text": "Pas tous les étudiants arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-52", "type": "paraphrase"}
+{"text": "Tous les étudiants arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-52", "type": "counterfactual"}
+{"text": "Tous les enfants ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-53", "type": "base"}
+{"text": "Pas tous les enfants lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-53", "type": "paraphrase"}
+{"text": "Tous les enfants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-53", "type": "counterfactual"}
+{"text": "Tous les enfants ne arriver pas.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-54", "type": "base"}
+{"text": "Pas tous les enfants arriver.", "language": "fr", "label": 1, "predicate": "arriver", "group_id": "qpos-fr-54", "type": "paraphrase"}
+{"text": "Tous les enfants arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qpos-fr-54", "type": "counterfactual"}
+{"text": "Tous les artistes ne courir pas.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-55", "type": "base"}
+{"text": "Pas tous les artistes courir.", "language": "fr", "label": 1, "predicate": "courir", "group_id": "qpos-fr-55", "type": "paraphrase"}
+{"text": "Tous les artistes courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qpos-fr-55", "type": "counterfactual"}
+{"text": "Tous les conducteurs ne jouer pas.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-56", "type": "base"}
+{"text": "Pas tous les conducteurs jouer.", "language": "fr", "label": 1, "predicate": "jouer", "group_id": "qpos-fr-56", "type": "paraphrase"}
+{"text": "Tous les conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qpos-fr-56", "type": "counterfactual"}
+{"text": "Tous les enfants ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-57", "type": "base"}
+{"text": "Pas tous les enfants lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-57", "type": "paraphrase"}
+{"text": "Tous les enfants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-57", "type": "counterfactual"}
+{"text": "Tous les étudiants ne étudier pas.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-58", "type": "base"}
+{"text": "Pas tous les étudiants étudier.", "language": "fr", "label": 1, "predicate": "étudier", "group_id": "qpos-fr-58", "type": "paraphrase"}
+{"text": "Tous les étudiants étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qpos-fr-58", "type": "counterfactual"}
+{"text": "Tous les médecins ne lire pas.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-59", "type": "base"}
+{"text": "Pas tous les médecins lire.", "language": "fr", "label": 1, "predicate": "lire", "group_id": "qpos-fr-59", "type": "paraphrase"}
+{"text": "Tous les médecins lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qpos-fr-59", "type": "counterfactual"}
+{"text": "Seulement quelques enfants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-60", "type": "negative"}
+{"text": "Uniquement quelques médecins lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-61", "type": "negative"}
+{"text": "Médecins ne étudier que parfois.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-62", "type": "negative"}
+{"text": "Uniquement quelques médecins étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-63", "type": "negative"}
+{"text": "Uniquement quelques conducteurs étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-64", "type": "negative"}
+{"text": "Médecins ne courir que parfois.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-65", "type": "negative"}
+{"text": "Seulement quelques étudiants courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-66", "type": "negative"}
+{"text": "Artistes ne arriver que parfois.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-67", "type": "negative"}
+{"text": "Uniquement quelques artistes courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-68", "type": "negative"}
+{"text": "Uniquement quelques conducteurs lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-69", "type": "negative"}
+{"text": "Seulement quelques médecins jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-70", "type": "negative"}
+{"text": "Seulement quelques médecins courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-71", "type": "negative"}
+{"text": "Conducteurs ne lire que parfois.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-72", "type": "negative"}
+{"text": "Seulement quelques conducteurs arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-73", "type": "negative"}
+{"text": "Seulement quelques conducteurs arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-74", "type": "negative"}
+{"text": "Uniquement quelques conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-75", "type": "negative"}
+{"text": "Uniquement quelques médecins arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-76", "type": "negative"}
+{"text": "Artistes ne arriver que parfois.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-77", "type": "negative"}
+{"text": "Seulement quelques enfants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-78", "type": "negative"}
+{"text": "Enfants ne jouer que parfois.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-79", "type": "negative"}
+{"text": "Conducteurs ne courir que parfois.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-80", "type": "negative"}
+{"text": "Étudiants ne courir que parfois.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-81", "type": "negative"}
+{"text": "Seulement quelques conducteurs courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-82", "type": "negative"}
+{"text": "Seulement quelques enfants arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-83", "type": "negative"}
+{"text": "Uniquement quelques conducteurs jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-84", "type": "negative"}
+{"text": "Uniquement quelques artistes arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-85", "type": "negative"}
+{"text": "Uniquement quelques artistes lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-86", "type": "negative"}
+{"text": "Uniquement quelques conducteurs lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-87", "type": "negative"}
+{"text": "Uniquement quelques médecins courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-88", "type": "negative"}
+{"text": "Seulement quelques médecins arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-89", "type": "negative"}
+{"text": "Uniquement quelques enfants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-90", "type": "negative"}
+{"text": "Enfants ne lire que parfois.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-91", "type": "negative"}
+{"text": "Seulement quelques étudiants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-92", "type": "negative"}
+{"text": "Conducteurs ne arriver que parfois.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-93", "type": "negative"}
+{"text": "Artistes ne lire que parfois.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-94", "type": "negative"}
+{"text": "Seulement quelques médecins étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-95", "type": "negative"}
+{"text": "Uniquement quelques médecins jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-96", "type": "negative"}
+{"text": "Seulement quelques étudiants arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-97", "type": "negative"}
+{"text": "Uniquement quelques artistes jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-98", "type": "negative"}
+{"text": "Enfants ne étudier que parfois.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-99", "type": "negative"}
+{"text": "Médecins ne jouer que parfois.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-100", "type": "negative"}
+{"text": "Seulement quelques conducteurs étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-101", "type": "negative"}
+{"text": "Uniquement quelques artistes arriver.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-102", "type": "negative"}
+{"text": "Uniquement quelques conducteurs courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-103", "type": "negative"}
+{"text": "Uniquement quelques étudiants étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-104", "type": "negative"}
+{"text": "Seulement quelques conducteurs étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-105", "type": "negative"}
+{"text": "Seulement quelques conducteurs courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-106", "type": "negative"}
+{"text": "Seulement quelques artistes étudier.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-107", "type": "negative"}
+{"text": "Uniquement quelques étudiants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-108", "type": "negative"}
+{"text": "Seulement quelques enfants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-109", "type": "negative"}
+{"text": "Artistes ne courir que parfois.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-110", "type": "negative"}
+{"text": "Seulement quelques artistes lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-111", "type": "negative"}
+{"text": "Uniquement quelques artistes courir.", "language": "fr", "label": 0, "predicate": "courir", "group_id": "qneg-fr-112", "type": "negative"}
+{"text": "Conducteurs ne arriver que parfois.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-113", "type": "negative"}
+{"text": "Conducteurs ne arriver que parfois.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-114", "type": "negative"}
+{"text": "Artistes ne étudier que parfois.", "language": "fr", "label": 0, "predicate": "étudier", "group_id": "qneg-fr-115", "type": "negative"}
+{"text": "Enfants ne jouer que parfois.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-116", "type": "negative"}
+{"text": "Étudiants ne arriver que parfois.", "language": "fr", "label": 0, "predicate": "arriver", "group_id": "qneg-fr-117", "type": "negative"}
+{"text": "Seulement quelques enfants jouer.", "language": "fr", "label": 0, "predicate": "jouer", "group_id": "qneg-fr-118", "type": "negative"}
+{"text": "Seulement quelques étudiants lire.", "language": "fr", "label": 0, "predicate": "lire", "group_id": "qneg-fr-119", "type": "negative"}

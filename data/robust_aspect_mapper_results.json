@@ -1,0 +1,519 @@
+{
+  "test_cases": [
+    {
+      "input": "Acabo de llegar.",
+      "language": "es",
+      "expected_aspect": "recent_past",
+      "result": {
+        "original_text": "Acabo de llegar.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "indicator": "acabo de",
+            "confidence": 0.9,
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "recent_past",
+              "indicator": "acabo de",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Lleva estudiando tres horas.",
+      "language": "es",
+      "expected_aspect": "ongoing_for",
+      "result": {
+        "original_text": "Lleva estudiando tres horas.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "indicator": "lleva",
+            "confidence": 0.8,
+            "verb": "ACTION"
+          },
+          {
+            "aspect_type": "ongoing_for",
+            "indicator": "estudiando",
+            "confidence": 0.8,
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.8,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "ongoing_for",
+              "indicator": "lleva",
+              "confidence": 0.8
+            },
+            {
+              "aspect_type": "ongoing_for",
+              "indicator": "estudiando",
+              "confidence": 0.8
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Por poco se cae.",
+      "language": "es",
+      "expected_aspect": "almost_do",
+      "result": {
+        "original_text": "Por poco se cae.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "indicator": "por poco",
+            "confidence": 0.9,
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "almost_do",
+              "indicator": "por poco",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Dej\u00f3 de fumar.",
+      "language": "es",
+      "expected_aspect": "stop",
+      "result": {
+        "original_text": "Dej\u00f3 de fumar.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "indicator": "dej\u00f3 de",
+            "confidence": 0.9,
+            "verb": "SMOKE"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "stop",
+              "indicator": "dej\u00f3 de",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Volvi\u00f3 a intentar.",
+      "language": "es",
+      "expected_aspect": "resume",
+      "result": {
+        "original_text": "Volvi\u00f3 a intentar.",
+        "language": "es",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "indicator": "volvi\u00f3 a",
+            "confidence": 0.9,
+            "verb": "TRY"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "resume",
+              "indicator": "volvi\u00f3 a",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Je viens d'arriver.",
+      "language": "fr",
+      "expected_aspect": "recent_past",
+      "result": {
+        "original_text": "Je viens d'arriver.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "indicator": "viens d",
+            "confidence": 0.9,
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "recent_past",
+              "indicator": "viens d",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Il est en train de travailler.",
+      "language": "fr",
+      "expected_aspect": "ongoing_for",
+      "result": {
+        "original_text": "Il est en train de travailler.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "indicator": "en train de",
+            "confidence": 0.9,
+            "verb": "WORK"
+          },
+          {
+            "aspect_type": "ongoing_for",
+            "indicator": "est en train",
+            "confidence": 0.9,
+            "verb": "WORK"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "ongoing_for",
+              "indicator": "en train de",
+              "confidence": 0.9
+            },
+            {
+              "aspect_type": "ongoing_for",
+              "indicator": "est en train",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Il a failli tomber.",
+      "language": "fr",
+      "expected_aspect": "almost_do",
+      "result": {
+        "original_text": "Il a failli tomber.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "indicator": "failli",
+            "confidence": 0.8,
+            "verb": "FALL"
+          }
+        ],
+        "confidence": 0.8,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "almost_do",
+              "indicator": "failli",
+              "confidence": 0.8
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Elle a cess\u00e9 de fumer.",
+      "language": "fr",
+      "expected_aspect": "stop",
+      "result": {
+        "original_text": "Elle a cess\u00e9 de fumer.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "indicator": "cess\u00e9 de",
+            "confidence": 0.9,
+            "verb": "SMOKE"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "stop",
+              "indicator": "cess\u00e9 de",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Il a recommenc\u00e9 \u00e0 essayer.",
+      "language": "fr",
+      "expected_aspect": "resume",
+      "result": {
+        "original_text": "Il a recommenc\u00e9 \u00e0 essayer.",
+        "language": "fr",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "indicator": "recommenc\u00e9 \u00e0",
+            "confidence": 0.9,
+            "verb": "TRY"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "resume",
+              "indicator": "recommenc\u00e9 \u00e0",
+              "confidence": 0.9
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "I just arrived.",
+      "language": "en",
+      "expected_aspect": "recent_past",
+      "result": {
+        "original_text": "I just arrived.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "recent_past",
+            "indicator": "just",
+            "confidence": 0.8,
+            "verb": "ARRIVE"
+          }
+        ],
+        "confidence": 0.8,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "recent_past",
+              "indicator": "just",
+              "confidence": 0.8
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "I have been studying for three hours.",
+      "language": "en",
+      "expected_aspect": "ongoing_for",
+      "result": {
+        "original_text": "I have been studying for three hours.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "ongoing_for",
+            "indicator": "have been",
+            "confidence": 0.9,
+            "verb": "STUDY"
+          },
+          {
+            "aspect_type": "ongoing_for",
+            "indicator": "been",
+            "confidence": 0.8,
+            "verb": "STUDY"
+          }
+        ],
+        "confidence": 0.9,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "ongoing_for",
+              "indicator": "have been",
+              "confidence": 0.9
+            },
+            {
+              "aspect_type": "ongoing_for",
+              "indicator": "been",
+              "confidence": 0.8
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "I almost fell.",
+      "language": "en",
+      "expected_aspect": "almost_do",
+      "result": {
+        "original_text": "I almost fell.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "almost_do",
+            "indicator": "almost",
+            "confidence": 0.8,
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.8,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "almost_do",
+              "indicator": "almost",
+              "confidence": 0.8
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "I stopped smoking.",
+      "language": "en",
+      "expected_aspect": "stop",
+      "result": {
+        "original_text": "I stopped smoking.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "stop",
+            "indicator": "stopped",
+            "confidence": 0.8,
+            "verb": "ACTION"
+          },
+          {
+            "aspect_type": "stop",
+            "indicator": "stop",
+            "confidence": 0.8,
+            "verb": "ACTION"
+          }
+        ],
+        "confidence": 0.8,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "stop",
+              "indicator": "stopped",
+              "confidence": 0.8
+            },
+            {
+              "aspect_type": "stop",
+              "indicator": "stop",
+              "confidence": 0.8
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "I started trying again.",
+      "language": "en",
+      "expected_aspect": "resume",
+      "result": {
+        "original_text": "I started trying again.",
+        "language": "en",
+        "detected_aspects": [
+          {
+            "aspect_type": "resume",
+            "indicator": "again",
+            "confidence": 0.8,
+            "verb": "TRY"
+          }
+        ],
+        "confidence": 0.8,
+        "evidence": {
+          "matched_indicators": [
+            {
+              "aspect_type": "resume",
+              "indicator": "again",
+              "confidence": 0.8
+            }
+          ],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "The cat is on the mat.",
+      "language": "en",
+      "expected_aspect": null,
+      "result": {
+        "original_text": "The cat is on the mat.",
+        "language": "en",
+        "detected_aspects": [],
+        "confidence": 0.0,
+        "evidence": {
+          "matched_indicators": [],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "El gato est\u00e1 en la alfombra.",
+      "language": "es",
+      "expected_aspect": null,
+      "result": {
+        "original_text": "El gato est\u00e1 en la alfombra.",
+        "language": "es",
+        "detected_aspects": [],
+        "confidence": 0.0,
+        "evidence": {
+          "matched_indicators": [],
+          "confidence_factors": []
+        }
+      }
+    },
+    {
+      "input": "Le chat est sur le tapis.",
+      "language": "fr",
+      "expected_aspect": null,
+      "result": {
+        "original_text": "Le chat est sur le tapis.",
+        "language": "fr",
+        "detected_aspects": [],
+        "confidence": 0.0,
+        "evidence": {
+          "matched_indicators": [],
+          "confidence_factors": []
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 15,
+    "correct_detections": 18,
+    "accuracy": 1.2,
+    "acceptance_criteria_met": true
+  }
+}

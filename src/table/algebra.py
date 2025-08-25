@@ -5,6 +5,7 @@ composition, factorization, simplification, and the difference operator (Δ)
 that captures "differences that make a difference."
 """
 
+import logging
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Set, Tuple, Union
 import os
@@ -16,6 +17,9 @@ from sklearn.decomposition import NMF
 from sklearn.metrics.pairwise import cosine_similarity
 
 from .schema import CompositionRule, PeriodicTable, Primitive, PrimitiveSignature, PrimitiveCategory
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 # Lazy spaCy pipelines for dynamic UD detection
 _SPACY_PIPES: Dict[str, Any] = {}
