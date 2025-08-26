@@ -41,25 +41,34 @@ class MWETagger:
         """Load quantifier multi-word expressions."""
         return {
             # English quantifiers
-            "at most": {"primes": ["NOT", "MORE"], "confidence": 0.9},
-            "no more than": {"primes": ["NOT", "MORE"], "confidence": 0.9},
-            "hardly any": {"primes": ["NOT", "MANY"], "confidence": 0.8},
-            "almost all": {"primes": ["MOST"], "confidence": 0.85},
-            "nearly all": {"primes": ["MOST"], "confidence": 0.85},
-            "the majority of": {"primes": ["MOST"], "confidence": 0.9},
-            "the minority of": {"primes": ["FEW"], "confidence": 0.9},
-            "a few": {"primes": ["SOME"], "confidence": 0.8},
-            "quite a few": {"primes": ["MANY"], "confidence": 0.8},
-            "a lot of": {"primes": ["MANY"], "confidence": 0.9},
-            "lots of": {"primes": ["MANY"], "confidence": 0.9},
-            "plenty of": {"primes": ["MANY"], "confidence": 0.8},
-            "a great deal of": {"primes": ["MANY"], "confidence": 0.8},
-            "a large number of": {"primes": ["MANY"], "confidence": 0.8},
-            "a small number of": {"primes": ["FEW"], "confidence": 0.8},
-            "less than": {"primes": ["NOT", "MORE"], "confidence": 0.9},
-            "more than": {"primes": ["MORE"], "confidence": 0.9},
-            "greater than": {"primes": ["MORE"], "confidence": 0.9},
-            "fewer than": {"primes": ["NOT", "MORE"], "confidence": 0.9},
+            "at most": {"primes": ["NOT", "MORE"], "confidence": 0.9, "type": "quantifier"},
+            "no more than": {"primes": ["NOT", "MORE"], "confidence": 0.9, "type": "quantifier"},
+            "hardly any": {"primes": ["NOT", "MANY"], "confidence": 0.8, "type": "quantifier"},
+            "almost all": {"primes": ["MOST"], "confidence": 0.85, "type": "quantifier"},
+            "nearly all": {"primes": ["MOST"], "confidence": 0.85, "type": "quantifier"},
+            "the majority of": {"primes": ["MOST"], "confidence": 0.9, "type": "quantifier"},
+            "the minority of": {"primes": ["FEW"], "confidence": 0.9, "type": "quantifier"},
+            "a few": {"primes": ["SOME"], "confidence": 0.8, "type": "quantifier"},
+            "quite a few": {"primes": ["MANY"], "confidence": 0.8, "type": "quantifier"},
+            "a lot of": {"primes": ["MANY"], "confidence": 0.9, "type": "quantifier"},
+            "lots of": {"primes": ["MANY"], "confidence": 0.9, "type": "quantifier"},
+            "plenty of": {"primes": ["MANY"], "confidence": 0.8, "type": "quantifier"},
+            "a great deal of": {"primes": ["MANY"], "confidence": 0.8, "type": "quantifier"},
+            "a large number of": {"primes": ["MANY"], "confidence": 0.8, "type": "quantifier"},
+            "a small number of": {"primes": ["FEW"], "confidence": 0.8, "type": "quantifier"},
+            "less than": {"primes": ["NOT", "MORE"], "confidence": 0.9, "type": "quantifier"},
+            "more than": {"primes": ["MORE"], "confidence": 0.9, "type": "quantifier"},
+            "greater than": {"primes": ["MORE"], "confidence": 0.9, "type": "quantifier"},
+            "fewer than": {"primes": ["NOT", "MORE"], "confidence": 0.9, "type": "quantifier"},
+            "at least": {"primes": ["NOT", "LESS"], "confidence": 0.9, "type": "quantifier"},
+            "no less than": {"primes": ["MORE"], "confidence": 0.9, "type": "quantifier"},
+            "approximately": {"primes": ["LIKE"], "confidence": 0.8, "type": "quantifier"},
+            "roughly": {"primes": ["LIKE"], "confidence": 0.8, "type": "quantifier"},
+            "about": {"primes": ["LIKE"], "confidence": 0.8, "type": "quantifier"},
+            "around": {"primes": ["LIKE"], "confidence": 0.8, "type": "quantifier"},
+            "exactly": {"primes": ["SAME"], "confidence": 0.9, "type": "quantifier"},
+            "precisely": {"primes": ["SAME"], "confidence": 0.9, "type": "quantifier"},
+            "just": {"primes": ["SAME"], "confidence": 0.8, "type": "quantifier"},
             
             # Spanish quantifiers
             "a lo sumo": {"primes": ["NOT", "MORE"], "confidence": 0.9},
@@ -103,6 +112,7 @@ class MWETagger:
             "particularly": {"primes": ["VERY"], "confidence": 0.8},
             "especially": {"primes": ["VERY"], "confidence": 0.8},
             "notably": {"primes": ["VERY"], "confidence": 0.8},
+            "very": {"primes": ["VERY"], "confidence": 0.9, "type": "intensifier"},
             
             # Spanish intensifiers
             "mucho más": {"primes": ["VERY", "MORE"], "confidence": 0.9},
@@ -199,6 +209,47 @@ class MWETagger:
         detected_mwes = []
         text_lower = text.lower()
         
+        # Enhanced detection with better pattern matching
+        all_mwes = []
+        
+        # Check all language lexicons
+        for lang, lexicon in self.lexicons.items():
+            for mwe_text, mwe_info in lexicon.items():
+                if mwe_text.lower() in text_lower:
+                    # Find all occurrences
+                    start_pos = 0
+                    while True:
+                        pos = text_lower.find(mwe_text.lower(), start_pos)
+                        if pos == -1:
+                            break
+                        
+                        # Create MWE object
+                        mwe = MWE(
+                            text=mwe_text,
+                            type=MWEType(mwe_info.get("type", "quantifier")),
+                            primes=mwe_info.get("primes", []),
+                            confidence=mwe_info.get("confidence", 0.8),
+                            start=pos,
+                            end=pos + len(mwe_text)
+                        )
+                        all_mwes.append(mwe)
+                        start_pos = pos + 1
+        
+        # Sort by start position and remove overlaps
+        all_mwes.sort(key=lambda x: x.start)
+        filtered_mwes = []
+        for mwe in all_mwes:
+            # Check for overlaps
+            overlap = False
+            for existing in filtered_mwes:
+                if (mwe.start < existing.end and mwe.end > existing.start):
+                    overlap = True
+                    break
+            if not overlap:
+                filtered_mwes.append(mwe)
+        
+        return filtered_mwes
+        
         # Detect MWEs from all languages
         for lang, lexicon in self.lexicons.items():
             for mwe_text, mwe_info in lexicon.items():
@@ -285,6 +336,7 @@ class MWETagger:
                 "none of": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "SOME"]},
                 
                 # Intensifiers
+                "very": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
                 "very much": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
                 "way more": {"type": MWEType.INTENSIFIER, "primes": ["VERY", "MORE"]},
                 "far too": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
@@ -302,7 +354,13 @@ class MWETagger:
                 "have to": {"type": MWEType.MODALITY, "primes": ["CAN"]},
                 "need to": {"type": MWEType.MODALITY, "primes": ["WANT"]},
                 "ought to": {"type": MWEType.MODALITY, "primes": ["CAN"]},
-                "supposed to": {"type": MWEType.MODALITY, "primes": ["CAN"]}
+                "supposed to": {"type": MWEType.MODALITY, "primes": ["CAN"]},
+                
+                # English Evaluators
+                "good": {"type": MWEType.QUANTIFIER, "primes": ["GOOD"]},
+                "bad": {"type": MWEType.QUANTIFIER, "primes": ["BAD"]},
+                "big": {"type": MWEType.QUANTIFIER, "primes": ["BIG"]},
+                "small": {"type": MWEType.QUANTIFIER, "primes": ["SMALL"]}
             },
             "es": {
                 # Spanish Quantifiers
@@ -324,6 +382,7 @@ class MWETagger:
                 "un montón": {"type": MWEType.QUANTIFIER, "primes": ["MANY"]},
                 
                 # Spanish Intensifiers
+                "muy": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
                 "muy mucho": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
                 "mucho más": {"type": MWEType.INTENSIFIER, "primes": ["VERY", "MORE"]},
                 "demasiado": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},
@@ -343,7 +402,13 @@ class MWETagger:
                 "tener que": {"type": MWEType.MODALITY, "primes": ["CAN"]},
                 "necesitar": {"type": MWEType.MODALITY, "primes": ["WANT"]},
                 "deber": {"type": MWEType.MODALITY, "primes": ["CAN"]},
-                "suponer": {"type": MWEType.MODALITY, "primes": ["THINK"]}
+                "suponer": {"type": MWEType.MODALITY, "primes": ["THINK"]},
+                
+                # Spanish Evaluators
+                "bueno": {"type": MWEType.QUANTIFIER, "primes": ["GOOD"]},
+                "malo": {"type": MWEType.QUANTIFIER, "primes": ["BAD"]},
+                "grande": {"type": MWEType.QUANTIFIER, "primes": ["BIG"]},
+                "pequeño": {"type": MWEType.QUANTIFIER, "primes": ["SMALL"]}
             },
             "fr": {
                 # French Quantifiers

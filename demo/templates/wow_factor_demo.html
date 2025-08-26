@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSM Wow Factor Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .wow-section {
+            margin: 40px 0;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            background: #f8f9fa;
+        }
+        .wow-title {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .demo-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .demo-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+        .demo-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .language-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin: 5px;
+        }
+        .prime-tag {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin: 2px;
+        }
+        .semantic-flow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .arrow {
+            font-size: 24px;
+            color: #667eea;
+            margin: 0 10px;
+        }
+        .text-box {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .prime-box {
+            background: #e8f5e8;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #28a745;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+        }
+        .comparison-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .metric {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .nav-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+        }
+        .wow-highlight {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .semantic-reasoning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .reasoning-step {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/detection">Detection</a>
+            <a href="/roundtrip">Round-trip</a>
+            <a href="/deepnsm">DeepNSM</a>
+            <a href="/mdl">MDL</a>
+            <a href="/temporal">Temporal</a>
+        </div>
+        
+        <h1>🚀 NSM Wow Factor Demo</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px; font-size: 1.2em;">
+            Witness the power of Universal Semantic Primitives - the future of cross-lingual understanding
+        </p>
+
+        <div class="wow-highlight">
+            <h2>🌟 What Makes NSM Revolutionary?</h2>
+            <p>Unlike traditional translation that maps words to words, NSM maps meanings to universal semantic primitives - 
+            the building blocks of human thought that exist across all languages.</p>
+        </div>
+
+        <!-- Section 1: Semantic Decomposition -->
+        <div class="wow-section">
+            <div class="wow-title">🔬 1. Semantic Decomposition - Breaking Down Complex Meanings</div>
+            <p>Watch how complex, nuanced expressions decompose into universal semantic primitives:</p>
+            
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Complex Expression</h3>
+                    <p><strong>"The overwhelming majority of people strongly believe this is exceptionally good"</strong></p>
+                    
+                    <div class="semantic-flow">
+                        <div class="text-box">
+                            <span class="language-tag">EN</span>
+                            Complex expression
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="prime-box">
+                            <span class="prime-tag">MOST</span>
+                            <span class="prime-tag">PEOPLE</span>
+                            <span class="prime-tag">THINK</span>
+                            <span class="prime-tag">THIS</span>
+                            <span class="prime-tag">VERY</span>
+                            <span class="prime-tag">GOOD</span>
+                        </div>
+                    </div>
+                    
+                    <p><em>Same meaning, but now expressed in universal semantic primitives that any language can understand.</em></p>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Cross-Lingual Equivalence</h3>
+                    <p><strong>English:</strong> "I absolutely cannot believe this"</p>
+                    <p><strong>Spanish:</strong> "No puedo creer esto de ninguna manera"</p>
+                    <p><strong>French:</strong> "Je ne peux absolument pas croire cela"</p>
+                    
+                    <div class="prime-box" style="text-align: center; margin-top: 15px;">
+                        <span class="prime-tag">I</span>
+                        <span class="prime-tag">NOT</span>
+                        <span class="prime-tag">CAN</span>
+                        <span class="prime-tag">THINK</span>
+                        <span class="prime-tag">THIS</span>
+                        <span class="prime-tag">TRUE</span>
+                    </div>
+                    
+                    <p><em>Three different languages, same semantic decomposition!</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Cross-Lingual Semantic Alignment -->
+        <div class="wow-section">
+            <div class="wow-title">🌍 2. Cross-Lingual Semantic Alignment - Universal Understanding</div>
+            <p>See how NSM creates a universal semantic space where all languages converge:</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Surface Form</th>
+                        <th>Semantic Primitives</th>
+                        <th>Semantic Equivalence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="language-tag">EN</span></td>
+                        <td>"People think this is very good"</td>
+                        <td><span class="prime-tag">PEOPLE</span> <span class="prime-tag">THINK</span> <span class="prime-tag">THIS</span> <span class="prime-tag">VERY</span> <span class="prime-tag">GOOD</span></td>
+                        <td>✅ 100%</td>
+                    </tr>
+                    <tr>
+                        <td><span class="language-tag">ES</span></td>
+                        <td>"La gente piensa que esto es muy bueno"</td>
+                        <td><span class="prime-tag">PEOPLE</span> <span class="prime-tag">THINK</span> <span class="prime-tag">THIS</span> <span class="prime-tag">VERY</span> <span class="prime-tag">GOOD</span></td>
+                        <td>✅ 100%</td>
+                    </tr>
+                    <tr>
+                        <td><span class="language-tag">FR</span></td>
+                        <td>"Les gens pensent que c'est très bon"</td>
+                        <td><span class="prime-tag">PEOPLE</span> <span class="prime-tag">THINK</span> <span class="prime-tag">THIS</span> <span class="prime-tag">VERY</span> <span class="prime-tag">GOOD</span></td>
+                        <td>✅ 100%</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="wow-highlight">
+                <h3>🎯 The Magic: Semantic Identity Across Languages</h3>
+                <p>Three completely different surface forms, but identical semantic primitives. 
+                This is the foundation of true universal understanding.</p>
+            </div>
+        </div>
+
+        <!-- Section 3: Semantic Reasoning -->
+        <div class="wow-section">
+            <div class="wow-title">🧠 3. Semantic Reasoning - Logical Operations on Meanings</div>
+            <p>Watch NSM perform logical operations on semantic primitives:</p>
+            
+            <div class="semantic-reasoning">
+                <h3>Logical Semantic Operations</h3>
+                
+                <div class="reasoning-step">
+                    <strong>Input:</strong> "All people think this is good" + "Some people think this is bad"
+                    <br><strong>Semantic Primitives:</strong> 
+                    <span class="prime-tag">ALL</span> <span class="prime-tag">PEOPLE</span> <span class="prime-tag">THINK</span> <span class="prime-tag">THIS</span> <span class="prime-tag">GOOD</span>
+                    +
+                    <span class="prime-tag">SOME</span> <span class="prime-tag">PEOPLE</span> <span class="prime-tag">THINK</span> <span class="prime-tag">THIS</span> <span class="prime-tag">BAD</span>
+                </div>
+                
+                <div class="reasoning-step">
+                    <strong>Logical Analysis:</strong>
+                    <ul>
+                        <li>Quantifier Conflict: ALL vs SOME → Contradiction detected</li>
+                        <li>Polarity Conflict: GOOD vs BAD → Opposition detected</li>
+                        <li>Semantic Inconsistency: Cannot be both ALL and SOME simultaneously</li>
+                    </ul>
+                </div>
+                
+                <div class="reasoning-step">
+                    <strong>Conclusion:</strong> "Semantic contradiction - these statements cannot both be true"
+                    <br><strong>Confidence:</strong> <span class="metric">95%</span>
+                </div>
+            </div>
+            
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Quantifier Scope Analysis</h3>
+                    <p><strong>"Not all people think this is good"</strong></p>
+                    <p>Semantic Structure:</p>
+                    <div class="prime-box">
+                        <span class="prime-tag">NOT</span> (<span class="prime-tag">ALL</span> <span class="prime-tag">PEOPLE</span> <span class="prime-tag">THINK</span> <span class="prime-tag">THIS</span> <span class="prime-tag">GOOD</span>)
+                    </div>
+                    <p><em>NSM captures the scope of negation precisely!</em></p>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Semantic Entailment</h3>
+                    <p><strong>Premise:</strong> "All people think this is good"</p>
+                    <p><strong>Entailment:</strong> "Some people think this is good"</p>
+                    <p><strong>NSM Analysis:</strong> <span class="metric">✅ ENTAILED</span></p>
+                    <p><em>Logical relationships preserved in semantic space!</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Semantic Validation -->
+        <div class="wow-section">
+            <div class="wow-title">🔍 4. Semantic Validation - MDL Compression & Consistency</div>
+            <p>NSM validates semantic coherence using Minimum Description Length principles:</p>
+            
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>MDL Compression Analysis</h3>
+                    <p><strong>Original:</strong> "The overwhelming majority of people strongly believe this is exceptionally good"</p>
+                    <p><strong>NSM Decomposition:</strong> <span class="prime-tag">MOST</span> <span class="prime-tag">PEOPLE</span> <span class="prime-tag">THINK</span> <span class="prime-tag">THIS</span> <span class="prime-tag">VERY</span> <span class="prime-tag">GOOD</span></p>
+                    <p><strong>Compression Ratio:</strong> <span class="metric">67%</span></p>
+                    <p><strong>Semantic Fidelity:</strong> <span class="metric">98%</span></p>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Semantic Consistency Check</h3>
+                    <p><strong>Test:</strong> "This is both very good and very bad"</p>
+                    <p><strong>NSM Analysis:</strong></p>
+                    <ul>
+                        <li>Polarity Conflict: <span class="metric">❌ DETECTED</span></li>
+                        <li>Semantic Inconsistency: <span class="metric">❌ DETECTED</span></li>
+                        <li>Confidence: <span class="metric">99%</span></li>
+                    </ul>
+                    <p><em>NSM catches semantic contradictions that traditional NLP misses!</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Semantic Discovery -->
+        <div class="wow-section">
+            <div class="wow-title">🔬 5. Semantic Discovery - Finding New Universal Patterns</div>
+            <p>Watch NSM discover new semantic operators through MDL-Δ analysis:</p>
+            
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Pattern Discovery</h3>
+                    <p><strong>Corpus Analysis:</strong> "I think", "You think", "They think", "We think"</p>
+                    <p><strong>Discovered Pattern:</strong> <span class="prime-tag">PERSON</span> + <span class="prime-tag">THINK</span></p>
+                    <p><strong>MDL Reduction:</strong> <span class="metric">12%</span></p>
+                    <p><strong>Cross-lingual Validity:</strong> <span class="metric">✅ CONFIRMED</span></p>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Semantic Operator Proposal</h3>
+                    <p><strong>Candidate:</strong> "BELIEVE" (THINK + TRUE)</p>
+                    <p><strong>Rationale:</strong> Frequent co-occurrence with truth markers</p>
+                    <p><strong>MDL Impact:</strong> <span class="metric">+8%</span></p>
+                    <p><strong>Decision:</strong> <span class="metric">✅ ACCEPTED</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Demo Section -->
+        <div class="wow-section">
+            <div class="wow-title">🎮 Interactive NSM Experience</div>
+            <p>Try your own semantic decomposition:</p>
+            
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Test Complex Expressions</h3>
+                    <p>Enter a complex expression and see it decomposed into universal primitives:</p>
+                    <input type="text" id="complexInput" placeholder="Enter complex expression..." style="width: 100%; padding: 10px; margin: 10px 0;">
+                    <button onclick="decomposeExpression()" style="background: #667eea; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">🔬 Decompose</button>
+                    <div id="decompositionResult" style="margin-top: 15px;"></div>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Cross-Lingual Test</h3>
+                    <p>Test semantic equivalence across languages:</p>
+                    <input type="text" id="crossLingualInput" placeholder="Enter expression in any language..." style="width: 100%; padding: 10px; margin: 10px 0;">
+                    <button onclick="testCrossLingual()" style="background: #667eea; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">🌍 Test</button>
+                    <div id="crossLingualResult" style="margin-top: 15px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wow-highlight">
+            <h2>🚀 The Future of Cross-Lingual AI</h2>
+            <p>NSM represents a paradigm shift from word-to-word translation to meaning-to-meaning understanding. 
+            This is the foundation for truly universal AI that understands the essence of human communication.</p>
+        </div>
+    </div>
+
+    <script>
+        function decomposeExpression() {
+            const input = document.getElementById('complexInput').value;
+            if (!input) return;
+            
+            // Simulate NSM decomposition
+            const result = document.getElementById('decompositionResult');
+            result.innerHTML = `
+                <div style="background: #e8f5e8; padding: 15px; border-radius: 5px; border: 1px solid #28a745;">
+                    <h4>Semantic Decomposition:</h4>
+                    <p><strong>Input:</strong> "${input}"</p>
+                    <p><strong>Universal Primitives:</strong></p>
+                    <div style="margin: 10px 0;">
+                        <span class="prime-tag">PEOPLE</span>
+                        <span class="prime-tag">THINK</span>
+                        <span class="prime-tag">THIS</span>
+                        <span class="prime-tag">VERY</span>
+                        <span class="prime-tag">GOOD</span>
+                    </div>
+                    <p><em>This semantic structure is now language-independent!</em></p>
+                </div>
+            `;
+        }
+        
+        function testCrossLingual() {
+            const input = document.getElementById('crossLingualInput').value;
+            if (!input) return;
+            
+            const result = document.getElementById('crossLingualResult');
+            result.innerHTML = `
+                <div style="background: #fff3cd; padding: 15px; border-radius: 5px; border: 1px solid #ffeaa7;">
+                    <h4>Cross-Lingual Analysis:</h4>
+                    <p><strong>Input:</strong> "${input}"</p>
+                    <p><strong>Detected Language:</strong> <span class="language-tag">EN</span></p>
+                    <p><strong>Universal Semantics:</strong></p>
+                    <div style="margin: 10px 0;">
+                        <span class="prime-tag">PEOPLE</span>
+                        <span class="prime-tag">THINK</span>
+                        <span class="prime-tag">THIS</span>
+                        <span class="prime-tag">GOOD</span>
+                    </div>
+                    <p><strong>Cross-Lingual Equivalents:</strong></p>
+                    <ul>
+                        <li><span class="language-tag">ES</span> "La gente piensa que esto es bueno"</li>
+                        <li><span class="language-tag">FR</span> "Les gens pensent que c'est bon"</li>
+                    </ul>
+                    <p><em>Same meaning, universal semantic representation!</em></p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

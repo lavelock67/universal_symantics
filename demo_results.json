@@ -2,7 +2,7 @@
   {
     "name": "Round-trip Translation",
     "success": false,
-    "processing_time": 0.01214909553527832,
+    "processing_time": 0.0055389404296875,
     "notes": "Failed with status 404",
     "input_data": {
       "source_text": "If it rains tomorrow, we will cancel the picnic.",
@@ -18,7 +18,7 @@
   {
     "name": "Quantifier MWE Detection",
     "success": false,
-    "processing_time": 0.002610921859741211,
+    "processing_time": 0.0011899471282958984,
     "notes": "Failed with status 404",
     "input_data": {
       "text": "At most half of the students read a lot of books",
@@ -31,7 +31,7 @@
   {
     "name": "Risk-Coverage Router",
     "success": false,
-    "processing_time": 0.0016808509826660156,
+    "processing_time": 0.0010309219360351562,
     "notes": "Failed with status 404",
     "input_data": {
       "text": "It is true that he might not come.",
@@ -44,7 +44,7 @@
   {
     "name": "Constraint Ablation",
     "success": false,
-    "processing_time": 0.0012922286987304688,
+    "processing_time": 0.0009140968322753906,
     "notes": "Failed with status 404",
     "input_data": {
       "text": "I think you know the truth",
@@ -62,7 +62,7 @@
   {
     "name": "Cross-Language Exponents",
     "success": false,
-    "processing_time": 0.004674196243286133,
+    "processing_time": 0.0028951168060302734,
     "notes": "",
     "input_data": {
       "test_cases": [
@@ -98,7 +98,7 @@
   {
     "name": "Prime Discovery",
     "success": false,
-    "processing_time": 0.001971006393432617,
+    "processing_time": 0.001068115234375,
     "notes": "Failed with status 404",
     "input_data": {
       "test_corpus": [
@@ -117,8 +117,8 @@
   {
     "name": "Enhanced Detection",
     "success": true,
-    "processing_time": 0.41875720024108887,
-    "notes": "en: 0 primes (0.307s) | es: 1 primes (0.053s) | fr: 1 primes (0.044s)",
+    "processing_time": 0.2484588623046875,
+    "notes": "en: 0 primes (0.175s) | es: 1 primes (0.033s) | fr: 1 primes (0.031s)",
     "input_data": {
       "test_cases": [
         {
@@ -144,7 +144,7 @@
           "language": "en",
           "description": "English quantifiers with MWE",
           "detected_primes": [],
-          "processing_time": 0.30730199813842773,
+          "processing_time": 0.17489886283874512,
           "methods": [
             "spacy",
             "structured",
@@ -157,7 +157,7 @@
           "detected_primes": [
             "PEOPLE"
           ],
-          "processing_time": 0.053340911865234375,
+          "processing_time": 0.03269195556640625,
           "methods": [
             "spacy",
             "structured",
@@ -170,7 +170,7 @@
           "detected_primes": [
             "VERY"
           ],
-          "processing_time": 0.0435338020324707,
+          "processing_time": 0.03147411346435547,
           "methods": [
             "spacy",
             "structured",

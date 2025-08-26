@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk-Coverage Router Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        .error {
+            background: #ffe6e6;
+            border-left-color: #dc3545;
+            color: #721c24;
+        }
+        .success {
+            background: #e6ffe6;
+            border-left-color: #28a745;
+            color: #155724;
+        }
+        .loading {
+            text-align: center;
+            color: #666;
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: #f0f0f0;
+        }
+        .decision-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: white;
+            margin: 5px;
+        }
+        .decision-translate {
+            background: #28a745;
+        }
+        .decision-clarify {
+            background: #ffc107;
+            color: #333;
+        }
+        .decision-abstain {
+            background: #dc3545;
+        }
+        .metric {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/detection">Detection</a>
+            <a href="/roundtrip">Round-trip</a>
+            <a href="/deepnsm">DeepNSM</a>
+            <a href="/mdl">MDL</a>
+            <a href="/temporal">Temporal</a>
+        </div>
+        
+        <h1>🎯 Risk-Coverage Router Demo</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            Test selective correctness with risk-aware routing decisions
+        </p>
+
+        <form id="routerForm">
+            <div class="form-group">
+                <label for="inputText">Input Text:</label>
+                <textarea id="inputText" rows="4" placeholder="Enter text to route...">All people think that this is not very good</textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+            
+            <button type="submit">🎯 Route Text</button>
+        </form>
+
+        <div id="result" class="result" style="display: none;">
+            <h3>Results:</h3>
+            <div id="resultContent"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('routerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const inputText = document.getElementById('inputText').value;
+            const language = document.getElementById('language').value;
+            
+            const resultDiv = document.getElementById('result');
+            const resultContent = document.getElementById('resultContent');
+            
+            resultDiv.style.display = 'block';
+            resultContent.innerHTML = '<div class="loading">🎯 Routing text...</div>';
+            
+            try {
+                const response = await fetch('/api/router', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: inputText,
+                        language: language,
+                        include_analysis: true
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`Router failed: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                
+                // Determine decision badge class
+                const decisionClass = `decision-${result.decision.toLowerCase()}`;
+                
+                resultContent.innerHTML = `
+                    <div class="success">
+                        <h4>✅ Routing Decision Complete</h4>
+                        <p><strong>Input:</strong> ${inputText}</p>
+                        <p><strong>Language:</strong> ${language.toUpperCase()}</p>
+                        
+                        <h5>🎯 Decision:</h5>
+                        <p><span class="decision-badge ${decisionClass}">${result.decision.toUpperCase()}</span></p>
+                        
+                        <h5>📊 Risk Analysis:</h5>
+                        <p><span class="metric">Risk Score: ${(result.risk_score * 100).toFixed(1)}%</span></p>
+                        <p><span class="metric">Coverage Score: ${(result.coverage_score * 100).toFixed(1)}%</span></p>
+                        <p><strong>Processing Time:</strong> ${result.processing_time?.toFixed(3)}s</p>
+                        
+                        <h5>🔍 Decision Reasons:</h5>
+                        <ul>
+                            ${result.reasons && result.reasons.length > 0 
+                                ? result.reasons.map(reason => `<li>${reason}</li>`).join('')
+                                : '<li>No specific reasons provided</li>'
+                            }
+                        </ul>
+                        
+                        <h5>🎯 Decision Types:</h5>
+                        <ul>
+                            <li><strong>TRANSLATE:</strong> High confidence, proceed with translation</li>
+                            <li><strong>CLARIFY:</strong> Medium confidence, request clarification</li>
+                            <li><strong>ABSTAIN:</strong> Low confidence, avoid translation</li>
+                        </ul>
+                        
+                        <h5>🔧 Risk Factors:</h5>
+                        <p>The router considers:</p>
+                        <ul>
+                            <li><strong>Semantic complexity:</strong> Ambiguous or complex meanings</li>
+                            <li><strong>Cross-lingual coverage:</strong> Available translation resources</li>
+                            <li><strong>Safety-critical features:</strong> Negation, quantifiers, scope</li>
+                            <li><strong>Confidence scores:</strong> Detection and explication confidence</li>
+                        </ul>
+                    </div>
+                `;
+                
+            } catch (error) {
+                resultContent.innerHTML = `
+                    <div class="error">
+                        <h4>❌ Error</h4>
+                        <p>${error.message}</p>
+                        <p>Please check that the API server is running and try again.</p>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
