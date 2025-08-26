@@ -67,3 +67,32 @@ compression_report*.txt
 keep_union.txt
 keep_union.json
 filtered_primitives.json
+
+# Environment and secrets
+.env
+.env.local
+.env.production
+.env.staging
+*.key
+*.pem
+secrets/
+config/secrets/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Model files (large)
+*.pkl
+*.pickle
+models/
+*.bin
+*.safetensors
+
+# Cache
+.cache/
+cache/
+__pycache__/
+*.pyc

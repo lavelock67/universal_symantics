@@ -1,0 +1,46 @@
+{"text": "La gente piensa que esto es muy bueno", "lang": "es", "expected_primes": ["PEOPLE", "THINK", "THIS", "VERY", "GOOD"], "expected_router": "translate", "category": "everyday", "description": "Spanish: People think this is very good"}
+{"text": "Les gens pensent que c'est très bon", "lang": "fr", "expected_primes": ["PEOPLE", "THINK", "THIS", "VERY", "GOOD"], "expected_router": "translate", "category": "everyday", "description": "French: People think this is very good"}
+{"text": "Es falso que el medicamento no funcione", "lang": "es", "expected_primes": ["FALSE", "NOT", "DO/HAPPEN"], "expected_router": "clarify", "category": "negation_scope", "description": "Spanish: It is false that the medicine doesn't work"}
+{"text": "Au plus la moitié des élèves lisent beaucoup", "lang": "fr", "expected_primes": ["NOT/MORE", "HALF", "PEOPLE", "READ", "MANY"], "expected_router": "clarify", "category": "quantifier_scope", "description": "French: At most half of the students read a lot"}
+{"text": "Personne ne vient", "lang": "fr", "expected_primes": [], "expected_router": "abstain", "category": "negation", "description": "French: Nobody comes (negative polarity)"}
+{"text": "Les personnes sont venues", "lang": "fr", "expected_primes": ["PEOPLE"], "expected_router": "translate", "category": "people", "description": "French: The people came (plural)"}
+{"text": "Esto es muy bueno", "lang": "es", "expected_primes": ["THIS", "VERY", "GOOD"], "expected_router": "translate", "category": "evaluation", "description": "Spanish: This is very good (pronominal)"}
+{"text": "Este libro es bueno", "lang": "es", "expected_primes": ["GOOD"], "expected_router": "translate", "category": "evaluation", "description": "Spanish: This book is good (determiner)"}
+{"text": "No es falso que esto funciona", "lang": "es", "expected_primes": ["TRUE"], "expected_router": "clarify", "category": "negation_flip", "description": "Spanish: It is not false that this works"}
+{"text": "Ce n'est pas faux", "lang": "fr", "expected_primes": ["TRUE"], "expected_router": "clarify", "category": "negation_flip", "description": "French: It is not false"}
+{"text": "C'est très bon", "lang": "fr", "expected_primes": ["THIS", "VERY", "GOOD"], "expected_router": "translate", "category": "evaluation", "description": "French: This is very good (contraction)"}
+{"text": "Ce livre est bon", "lang": "fr", "expected_primes": ["GOOD"], "expected_router": "translate", "category": "evaluation", "description": "French: This book is good (determiner)"}
+{"text": "Hay muchos libros", "lang": "es", "expected_primes": ["MANY"], "expected_router": "translate", "category": "quantifier", "description": "Spanish: There are many books"}
+{"text": "Il y a beaucoup de livres", "lang": "fr", "expected_primes": ["MANY"], "expected_router": "translate", "category": "quantifier", "description": "French: There are many books"}
+{"text": "El mal está aquí", "lang": "es", "expected_primes": [], "expected_router": "abstain", "category": "false_positive", "description": "Spanish: The evil is here (mal as noun)"}
+{"text": "Le bon est arrivé", "lang": "fr", "expected_primes": [], "expected_router": "abstain", "category": "false_positive", "description": "French: The good has arrived (bon as noun)"}
+{"text": "I think you know the truth", "lang": "en", "expected_primes": ["I", "THINK", "YOU", "KNOW", "TRUE"], "expected_router": "translate", "category": "everyday", "description": "English: I think you know the truth"}
+{"text": "This is very good", "lang": "en", "expected_primes": ["THIS", "VERY", "GOOD"], "expected_router": "translate", "category": "evaluation", "description": "English: This is very good"}
+{"text": "At most half of the students read a lot", "lang": "en", "expected_primes": ["NOT/MORE", "HALF", "PEOPLE", "READ", "MANY"], "expected_router": "clarify", "category": "quantifier_scope", "description": "English: At most half of the students read a lot"}
+{"text": "It is not false that this works", "lang": "en", "expected_primes": ["TRUE"], "expected_router": "clarify", "category": "negation_flip", "description": "English: It is not false that this works"}
+{"text": "Por favor envíame el reporte", "lang": "es", "expected_primes": ["PLEASE"], "expected_router": "translate", "category": "pragmatics", "description": "Spanish: Please send me the report"}
+{"text": "S'il vous plaît envoyez-moi le rapport", "lang": "fr", "expected_primes": ["PLEASE"], "expected_router": "translate", "category": "pragmatics", "description": "French: Please send me the report"}
+{"text": "Gracias por tu ayuda", "lang": "es", "expected_primes": ["THANK"], "expected_router": "translate", "category": "pragmatics", "description": "Spanish: Thank you for your help"}
+{"text": "Merci pour votre aide", "lang": "fr", "expected_primes": ["THANK"], "expected_router": "translate", "category": "pragmatics", "description": "French: Thank you for your help"}
+{"text": "Deberías considerar esta opción", "lang": "es", "expected_primes": ["SHOULD"], "expected_router": "translate", "category": "modality", "description": "Spanish: You should consider this option"}
+{"text": "Vous devriez considérer cette option", "lang": "fr", "expected_primes": ["SHOULD"], "expected_router": "translate", "category": "modality", "description": "French: You should consider this option"}
+{"text": "Puede hacer esto", "lang": "es", "expected_primes": ["CAN"], "expected_router": "translate", "category": "modality", "description": "Spanish: He can do this"}
+{"text": "Il peut faire cela", "lang": "fr", "expected_primes": ["CAN"], "expected_router": "translate", "category": "modality", "description": "French: He can do this"}
+{"text": "A lo sumo la mitad", "lang": "es", "expected_primes": ["NOT/MORE", "HALF"], "expected_router": "clarify", "category": "quantifier_scope", "description": "Spanish: At most half"}
+{"text": "Au plus la moitié", "lang": "fr", "expected_primes": ["NOT/MORE", "HALF"], "expected_router": "clarify", "category": "quantifier_scope", "description": "French: At most half"}
+{"text": "Al menos algunos", "lang": "es", "expected_primes": ["MORE", "SOME"], "expected_router": "translate", "category": "quantifier", "description": "Spanish: At least some"}
+{"text": "Au moins quelques", "lang": "fr", "expected_primes": ["MORE", "SOME"], "expected_router": "translate", "category": "quantifier", "description": "French: At least some"}
+{"text": "Nunca haré eso", "lang": "es", "expected_primes": ["NOT"], "expected_router": "translate", "category": "negation", "description": "Spanish: I will never do that"}
+{"text": "Je ne ferai jamais cela", "lang": "fr", "expected_primes": ["NOT"], "expected_router": "translate", "category": "negation", "description": "French: I will never do that"}
+{"text": "Es verdadero que funciona", "lang": "es", "expected_primes": ["TRUE"], "expected_router": "translate", "category": "truth", "description": "Spanish: It is true that it works"}
+{"text": "C'est vrai que ça marche", "lang": "fr", "expected_primes": ["TRUE"], "expected_router": "translate", "category": "truth", "description": "French: It is true that it works"}
+{"text": "Es extremadamente difícil", "lang": "es", "expected_primes": ["VERY"], "expected_router": "translate", "category": "intensifier", "description": "Spanish: It is extremely difficult"}
+{"text": "C'est extrêmement difficile", "lang": "fr", "expected_primes": ["VERY"], "expected_router": "translate", "category": "intensifier", "description": "French: It is extremely difficult"}
+{"text": "Todos los estudiantes", "lang": "es", "expected_primes": ["ALL"], "expected_router": "translate", "category": "quantifier", "description": "Spanish: All the students"}
+{"text": "Tous les étudiants", "lang": "fr", "expected_primes": ["ALL"], "expected_router": "translate", "category": "quantifier", "description": "French: All the students"}
+{"text": "Algunos libros", "lang": "es", "expected_primes": ["SOME"], "expected_router": "translate", "category": "quantifier", "description": "Spanish: Some books"}
+{"text": "Quelques livres", "lang": "fr", "expected_primes": ["SOME"], "expected_router": "translate", "category": "quantifier", "description": "French: Some books"}
+{"text": "Lo siento por eso", "lang": "es", "expected_primes": ["SORRY"], "expected_router": "translate", "category": "pragmatics", "description": "Spanish: I'm sorry for that"}
+{"text": "Je suis désolé pour cela", "lang": "fr", "expected_primes": ["SORRY"], "expected_router": "translate", "category": "pragmatics", "description": "French: I'm sorry for that"}
+{"text": "Bienvenido a casa", "lang": "es", "expected_primes": ["WELCOME"], "expected_router": "translate", "category": "pragmatics", "description": "Spanish: Welcome home"}
+{"text": "Bienvenue à la maison", "lang": "fr", "expected_primes": ["WELCOME"], "expected_router": "translate", "category": "pragmatics", "description": "French: Welcome home"}
