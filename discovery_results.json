@@ -1,0 +1,17 @@
+{
+  "accepted_candidates": [],
+  "rejected_candidates": [],
+  "statistics": {
+    "total_candidates": 0,
+    "accepted_candidates": 0,
+    "rejected_candidates": 0,
+    "acceptance_rate": 0.0,
+    "avg_compression_gain": 0.0,
+    "avg_drift_reduction": 0.0,
+    "avg_processing_time": 0.00019097328186035156,
+    "existing_primes": 66,
+    "accepted_primes": 0,
+    "rejected_primes": 0
+  },
+  "timestamp": 1756180409.77031
+}
