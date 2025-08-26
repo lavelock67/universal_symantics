@@ -24,6 +24,7 @@ class ModelSettings(BaseSettings):
     # Transformer model configurations
     sbert_model: str = Field(default="sentence-transformers/all-mpnet-base-v2", description="SBERT model for semantic similarity")
     generation_model: str = Field(default="t5-base", description="Text generation model")
+    semantic_threshold: float = Field(default=0.85, description="Semantic validation threshold")
     
     # Model loading settings
     model_cache_dir: str = Field(default="./models", description="Directory for caching models")
