@@ -988,7 +988,7 @@ def detect_primitives_spacy(text: str) -> List[str]:
 
 	# === PHASE 11: FINAL PRIMES (NSM Primes) - UD-Based Detection ===
 	
-	# SAY: speech and communication (enhanced detection)
+	# SAY: speech and communication (main verb or complement)
 	for token in doc:
 		if (token.pos_ == "VERB" and 
 			token.lemma_.lower() in {"say", "tell", "speak", "decir", "dire"} and
@@ -1006,7 +1006,7 @@ def detect_primitives_spacy(text: str) -> List[str]:
 				detected.append("SAY")
 			break
 
-	# WORDS: linguistic expression
+	# WORDS: linguistic expression (noun)
 	for token in doc:
 		if (token.pos_ == "NOUN" and 
 			token.lemma_.lower() in {"word", "words", "palabra", "mot"} and
@@ -1015,7 +1015,7 @@ def detect_primitives_spacy(text: str) -> List[str]:
 				detected.append("WORDS")
 			break
 
-	# TRUE: truth and factuality (enhanced detection)
+	# TRUE: truth and factuality (adjective or adverb)
 	for token in doc:
 		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
 			token.lemma_.lower() in {"true", "real", "truth", "verdadero", "vrai", "vérité"} and
@@ -1027,16 +1027,12 @@ def detect_primitives_spacy(text: str) -> List[str]:
 	# Check for copula constructions with TRUE
 	for token in doc:
 		if (token.lemma_.lower() in {"true", "real", "truth", "verdadero", "vrai", "vérité"} and
-			(token.dep_ in {"attr", "pred"} or 
-			 (token.dep_ == "acomp" and token.head.pos_ == "AUX")) and
-			(token.head.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} or
-			 any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children) or
-			 token.head.pos_ == "AUX")):
-			if "TRUE" not in detected:
-				detected.append("TRUE")
+			token.dep_ in {"attr", "pred"} and
+			any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children)):
+			add("TRUE", [token.text], 0.8)
 			break
 
-	# FALSE: falsity and deception (enhanced detection)
+	# FALSE: falsity and deception (adjective or adverb)
 	for token in doc:
 		if (token.pos_ in {"ADJ", "ADV", "NOUN"} and 
 			token.lemma_.lower() in {"false", "fake", "falsity", "falso", "faux", "fausseté"} and
@@ -1048,35 +1044,28 @@ def detect_primitives_spacy(text: str) -> List[str]:
 	# Check for copula constructions with FALSE
 	for token in doc:
 		if (token.lemma_.lower() in {"false", "fake", "falsity", "falso", "faux", "fausseté"} and
-			(token.dep_ in {"attr", "pred"} or 
-			 (token.dep_ == "acomp" and token.head.pos_ == "AUX")) and
-			(token.head.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} or
-			 any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children) or
-			 token.head.pos_ == "AUX")):
-			if "FALSE" not in detected:
-				detected.append("FALSE")
+			token.dep_ in {"attr", "pred"} and
+			any(child.lemma_.lower() in {"be", "is", "are", "was", "were", "ser", "estar", "être"} for child in token.head.children)):
+			add("FALSE", [token.text], 0.8)
 			break
 
-	# WHERE: location specification (enhanced detection)
+	# WHERE: location specification (adverb or pronoun)
 	for token in doc:
-		if (token.pos_ in {"ADV", "PRON", "SCONJ"} and 
-			token.lemma_.lower() in {"where", "dónde", "où", "donde"} and
-			token.dep_ in {"advmod", "pobj", "nsubj", "mark", "advcl"}):
-			if "WHERE" not in detected:
-				detected.append("WHERE")
+		if (token.pos_ in {"ADV", "PRON"} and 
+			token.lemma_.lower() in {"where", "dónde", "où"} and
+			token.dep_ in {"advmod", "pobj", "nsubj"}):
+			add("WHERE", [token.text], 0.8)
 			break
 
-	# WHEN: time specification (enhanced)
+	# WHEN: time specification (adverb, pronoun, or subordinating conjunction)
 	for token in doc:
 		if (token.pos_ in {"ADV", "PRON", "SCONJ"} and 
 			token.lemma_.lower() in {"when", "cuándo", "quand"} and
 			token.dep_ in {"advmod", "pobj", "mark"}):
-			if "WHEN" not in detected:
-				detected.append("WHEN")
+			add("WHEN", [token.text], 0.8)
 			break
 
 	return detected
-
 
 
 def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
@@ -1308,7 +1297,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 		if token.lemma_.lower() in {"more", "less"} and token.dep_ == "advmod":
 			head = token.head
 			if any(child.lemma_.lower() == "than" for child in head.children):
-				add("MoreThan" if token.lemma_.lower() == "more" else "LessThan", [head.text], 0.6)
+				detected.append("MoreThan" if token.lemma_.lower() == "more" else "LessThan")
 				break
 
 	# Negation
@@ -3033,13 +3022,344 @@ def detect_primitives_lexical(text: str) -> List[str]:
 	if any(p in lower for p in [" body ", " person ", " human ", " cuerpo ", " personne "]):
 		out.append("BODY")
 
+	# === PHASE 5: MENTAL PREDICATES (NSM Primes) ===
+	
+	# THINK: mental activity
+	if any(p in lower for p in [" think ", " thinks ", " thought ", " thinking ", " piensa ", " piensan ", " pensar ", " pense ", " pensent ", " penser "]):
+		out.append("THINK")
+	
+	# KNOW: knowledge
+	if any(p in lower for p in [" know ", " knows ", " knew ", " known ", " sabe ", " saben ", " saber ", " sait ", " savent ", " savoir "]):
+		out.append("KNOW")
+	
+	# WANT: desire
+	if any(p in lower for p in [" want ", " wants ", " wanted ", " wanting ", " quiere ", " quieren ", " querer ", " veut ", " veulent ", " vouloir "]):
+		out.append("WANT")
+	
+	# FEEL: emotion
+	if any(p in lower for p in [" feel ", " feels ", " felt ", " feeling ", " siente ", " sienten ", " sentir ", " sent ", " sentent ", " sentir "]):
+		out.append("FEEL")
+	
+	# SEE: visual perception
+	if any(p in lower for p in [" see ", " sees ", " saw ", " seen ", " seeing ", " ve ", " ven ", " ver ", " voit ", " voient ", " voir "]):
+		out.append("SEE")
+	
+	# HEAR: auditory perception
+	if any(p in lower for p in [" hear ", " hears ", " heard ", " hearing ", " oye ", " oyen ", " oir ", " entend ", " entendent ", " entendre "]):
+		out.append("HEAR")
+	
+	# === PHASE 4: EVALUATORS AND DESCRIPTORS (NSM Primes) ===
+	
+	# GOOD: positive evaluation
+	if any(p in lower for p in [" good ", " better ", " best ", " bueno ", " buena ", " buenos ", " buenas ", " bon ", " bonne ", " bons ", " bonnes "]):
+		out.append("GOOD")
+	
+	# BAD: negative evaluation
+	if any(p in lower for p in [" bad ", " worse ", " worst ", " malo ", " mala ", " malos ", " malas ", " mauvais ", " mauvaise ", " mauvais ", " mauvaises "]):
+		out.append("BAD")
+	
+	# VERY: intensifier
+	if any(p in lower for p in [" very ", " really ", " extremely ", " muy ", " muy ", " très ", " très "]):
+		out.append("VERY")
+	
+	# === PHASE 3: DETERMINERS AND QUANTIFIERS (NSM Primes) ===
+	
+	# THIS: demonstrative
+	if any(p in lower for p in [" this ", " these ", " esto ", " esta ", " estos ", " estas ", " ceci ", " cela ", " ce ", " cette ", " ces "]):
+		out.append("THIS")
+	
+	# ALL: universal quantifier
+	if any(p in lower for p in [" all ", " every ", " each ", " todos ", " todas ", " todo ", " toda ", " tous ", " toutes ", " tout ", " toute "]):
+		out.append("ALL")
+	
+	# MANY: large quantity
+	if any(p in lower for p in [" many ", " much ", " lots ", " muchos ", " muchas ", " mucho ", " mucha ", " beaucoup ", " beaucoup "]):
+		out.append("MANY")
+	
+	# SOME: indefinite quantity
+	if any(p in lower for p in [" some ", " several ", " few ", " algunos ", " algunas ", " quelques ", " quelques "]):
+		out.append("SOME")
+	
+	# NOT: negation
+	if any(p in lower for p in [" not ", " no ", " never ", " no ", " ne ", " pas "]):
+		out.append("NOT")
+	
+	# MORE: comparative
+	if any(p in lower for p in [" more ", " most ", " más ", " plus ", " plus "]):
+		out.append("MORE")
+	
+	# === PHASE 6: SPEECH (NSM Primes) ===
+	
+	# SAY: speech
+	if any(p in lower for p in [" say ", " says ", " said ", " saying ", " dice ", " dicen ", " decir ", " dit ", " disent ", " dire "]):
+		out.append("SAY")
+	
+	# TRUE: truth
+	if any(p in lower for p in [" true ", " truth ", " verdadero ", " verdadera ", " vrai ", " vraie "]):
+		out.append("TRUE")
+	
+	# FALSE: falsity
+	if any(p in lower for p in [" false ", " lie ", " falso ", " falsa ", " faux ", " fausse "]):
+		out.append("FALSE")
+	
+	# === PHASE 7: ACTIONS AND EVENTS (NSM Primes) ===
+	
+	# DO: action
+	if any(p in lower for p in [" do ", " does ", " did ", " doing ", " hace ", " hacen ", " hacer ", " fait ", " font ", " faire "]):
+		out.append("DO")
+	
+	# HAPPEN: event
+	if any(p in lower for p in [" happen ", " happens ", " happened ", " pasa ", " pasan ", " pasar ", " passe ", " passent ", " passer "]):
+		out.append("HAPPEN")
+	
+	# MOVE: motion
+	if any(p in lower for p in [" move ", " moves ", " moved ", " moving ", " mueve ", " mueven ", " mover ", " bouge ", " bougent ", " bouger "]):
+		out.append("MOVE")
+	
+	# === PHASE 8: LOCATION, EXISTENCE, POSSESSION (NSM Primes) ===
+	
+	# THERE_IS: existence
+	if any(p in lower for p in [" there is ", " there are ", " hay ", " il y a "]):
+		out.append("THERE_IS")
+	
+	# HAVE: possession
+	if any(p in lower for p in [" have ", " has ", " had ", " having ", " tiene ", " tienen ", " tener ", " a ", " ont ", " avoir "]):
+		out.append("HAVE")
+	
+	# === PHASE 10: TIME (NSM Primes) ===
+	
+	# NOW: present time
+	if any(p in lower for p in [" now ", " currently ", " ahora ", " maintenant "]):
+		out.append("NOW")
+	
+	# WHEN: temporal question
+	if any(p in lower for p in [" when ", " cuándo ", " quand "]):
+		out.append("WHEN")
+	
+	# BEFORE: temporal relation
+	if any(p in lower for p in [" before ", " earlier ", " antes ", " avant "]):
+		out.append("BEFORE")
+	
+	# AFTER: temporal relation
+	if any(p in lower for p in [" after ", " later ", " después ", " après "]):
+		out.append("AFTER")
+	
+	# === PHASE 11: SPACE (NSM Primes) ===
+	
+	# WHERE: spatial question
+	if any(p in lower for p in [" where ", " dónde ", " où "]):
+		out.append("WHERE")
+	
+	# HERE: spatial location
+	if any(p in lower for p in [" here ", " aquí ", " ici "]):
+		out.append("HERE")
+	
+	# ABOVE: spatial relation
+	if any(p in lower for p in [" above ", " over ", " arriba ", " au-dessus "]):
+		out.append("ABOVE")
+	
+	# BELOW: spatial relation
+	if any(p in lower for p in [" below ", " under ", " abajo ", " en-dessous "]):
+		out.append("BELOW")
+	
+	# FAR: spatial distance
+	if any(p in lower for p in [" far ", " distant ", " lejos ", " loin "]):
+		out.append("FAR")
+	
+	# NEAR: spatial proximity
+	if any(p in lower for p in [" near ", " close ", " cerca ", " près "]):
+		out.append("NEAR")
+	
+	# INSIDE: spatial containment
+	if any(p in lower for p in [" inside ", " within ", " dentro ", " dedans "]):
+		out.append("INSIDE")
+	
+	# === LOGICAL CONCEPTS (NSM Primes) ===
+	
+	# CAN: possibility
+	if any(p in lower for p in [" can ", " could ", " able ", " puede ", " pueden ", " pouvoir ", " peuvent "]):
+		out.append("CAN")
+	
+	# BECAUSE: causation
+	if any(p in lower for p in [" because ", " since ", " porque ", " car "]):
+		out.append("BECAUSE")
+	
+	# IF: condition
+	if any(p in lower for p in [" if ", " whether ", " si ", " si "]):
+		out.append("IF")
+	
+	# MAYBE: possibility
+	if any(p in lower for p in [" maybe ", " perhaps ", " tal vez ", " peut-être "]):
+		out.append("MAYBE")
+	
+	# === SIMILARITY (NSM Primes) ===
+	
+	# LIKE: similarity
+	if any(p in lower for p in [" like ", " similar ", " parecido ", " pareil "]):
+		out.append("LIKE")
+
+	# MORE: comparative
+	if any(p in lower for p in [" more ", " most ", " más ", " plus ", " plus "]):
+		out.append("MORE")
+	
+	# HALF: quantity
+	if any(p in lower for p in [" half ", " mitad ", " moitié "]):
+		out.append("HALF")
+	
+	# LITTLE: small quantity
+	if any(p in lower for p in [" little ", " few ", " poco ", " peu "]):
+		out.append("LITTLE")
+	
+	# BIG: size
+	if any(p in lower for p in [" big ", " large ", " grande ", " grand "]):
+		out.append("BIG")
+	
+	# SMALL: size
+	if any(p in lower for p in [" small ", " tiny ", " pequeño ", " petit "]):
+		out.append("SMALL")
+	
+	# LONG: dimension
+	if any(p in lower for p in [" long ", " largo ", " long "]):
+		out.append("LONG")
+	
+	# SHORT: dimension
+	if any(p in lower for p in [" short ", " corto ", " court "]):
+		out.append("SHORT")
+	
+	# WIDE: dimension
+	if any(p in lower for p in [" wide ", " broad ", " ancho ", " large "]):
+		out.append("WIDE")
+	
+	# NARROW: dimension
+	if any(p in lower for p in [" narrow ", " thin ", " estrecho ", " étroit "]):
+		out.append("NARROW")
+	
+	# THICK: dimension
+	if any(p in lower for p in [" thick ", " gordo ", " épais "]):
+		out.append("THICK")
+	
+	# THIN: dimension
+	if any(p in lower for p in [" thin ", " delgado ", " mince "]):
+		out.append("THIN")
+	
+	# HEAVY: weight
+	if any(p in lower for p in [" heavy ", " pesado ", " lourd "]):
+		out.append("HEAVY")
+	
+	# LIGHT: weight
+	if any(p in lower for p in [" light ", " ligero ", " léger "]):
+		out.append("LIGHT")
+	
+	# HARD: texture
+	if any(p in lower for p in [" hard ", " duro ", " dur "]):
+		out.append("HARD")
+	
+	# SOFT: texture
+	if any(p in lower for p in [" soft ", " suave ", " doux "]):
+		out.append("SOFT")
+	
+	# ROUGH: texture
+	if any(p in lower for p in [" rough ", " áspero ", " rugueux "]):
+		out.append("ROUGH")
+	
+	# SMOOTH: texture
+	if any(p in lower for p in [" smooth ", " liso ", " lisse "]):
+		out.append("SMOOTH")
+	
+	# SHARP: shape
+	if any(p in lower for p in [" sharp ", " afilado ", " tranchant "]):
+		out.append("SHARP")
+	
+	# DULL: shape
+	if any(p in lower for p in [" dull ", " sin filo ", " émoussé "]):
+		out.append("DULL")
+	
+	# CLEAN: state
+	if any(p in lower for p in [" clean ", " limpio ", " propre "]):
+		out.append("CLEAN")
+	
+	# DIRTY: state
+	if any(p in lower for p in [" dirty ", " sucio ", " sale "]):
+		out.append("DIRTY")
+	
+	# HOT: temperature
+	if any(p in lower for p in [" hot ", " caliente ", " chaud "]):
+		out.append("HOT")
+	
+	# COLD: temperature
+	if any(p in lower for p in [" cold ", " frío ", " froid "]):
+		out.append("COLD")
+	
+	# WARM: temperature
+	if any(p in lower for p in [" warm ", " tibio ", " tiède "]):
+		out.append("WARM")
+	
+	# NEW: time
+	if any(p in lower for p in [" new ", " nuevo ", " nouveau "]):
+		out.append("NEW")
+	
+	# OLD: time
+	if any(p in lower for p in [" old ", " viejo ", " vieux "]):
+		out.append("OLD")
+	
+	# YOUNG: age
+	if any(p in lower for p in [" young ", " joven ", " jeune "]):
+		out.append("YOUNG")
+	
+	# RIGHT: correctness
+	if any(p in lower for p in [" right ", " correcto ", " correct "]):
+		out.append("RIGHT")
+	
+	# WRONG: incorrectness
+	if any(p in lower for p in [" wrong ", " incorrecto ", " incorrect "]):
+		out.append("WRONG")
+	
+	# SAME: identity
+	if any(p in lower for p in [" same ", " mismo ", " même "]):
+		out.append("SAME")
+	
+	# OTHER: difference
+	if any(p in lower for p in [" other ", " otro ", " autre "]):
+		out.append("OTHER")
+	
+	# ONE: number
+	if any(p in lower for p in [" one ", " uno ", " une "]):
+		out.append("ONE")
+	
+	# TWO: number
+	if any(p in lower for p in [" two ", " dos ", " deux "]):
+		out.append("TWO")
+	
+	# SOME: indefinite quantity
+	if any(p in lower for p in [" some ", " several ", " few ", " algunos ", " algunas ", " quelques ", " quelques "]):
+		out.append("SOME")
+
 	return out
 
 
 def detect_primitives_multilingual(text: str) -> List[str]:
 	"""Run dependency-based detection if available; otherwise lexical fallback."""
+	# Get base detection results
 	res = detect_primitives_dep(text)
-	if res:
-		return res
-	return detect_primitives_lexical(text)
+	
+	# If dependency detection returns too few results, use lexical detection
+	if len(res) < 3:
+		lexical_res = detect_primitives_lexical(text)
+		if len(lexical_res) > len(res):
+			res = lexical_res
+	
+	# Add MWE detection results
+	try:
+		from src.detect.mwe_tagger import MWETagger
+		mwe_tagger = MWETagger()
+		mwes = mwe_tagger.detect_mwes(text)
+		mwe_primes = mwe_tagger.get_primes_from_mwes(mwes)
+		if mwe_primes:
+			res.extend(mwe_primes)
+	except Exception as e:
+		# If MWE detection fails, continue with base detection
+		pass
+	
+	# Remove duplicates and return
+	return list(set(res))
 

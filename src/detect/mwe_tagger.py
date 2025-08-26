@@ -199,53 +199,23 @@ class MWETagger:
         detected_mwes = []
         text_lower = text.lower()
         
-        # Detect quantifiers
-        for pattern, mwe_text, mwe_info in self.quantifier_patterns:
-            for match in pattern.finditer(text):
-                detected_mwes.append(MWE(
-                    text=mwe_text,
-                    type=MWEType.QUANTIFIER,
-                    primes=mwe_info["primes"],
-                    confidence=mwe_info["confidence"],
-                    start=match.start(),
-                    end=match.end()
-                ))
-        
-        # Detect intensifiers
-        for pattern, mwe_text, mwe_info in self.intensifier_patterns:
-            for match in pattern.finditer(text):
-                detected_mwes.append(MWE(
-                    text=mwe_text,
-                    type=MWEType.INTENSIFIER,
-                    primes=mwe_info["primes"],
-                    confidence=mwe_info["confidence"],
-                    start=match.start(),
-                    end=match.end()
-                ))
-        
-        # Detect negations
-        for pattern, mwe_text, mwe_info in self.negation_patterns:
-            for match in pattern.finditer(text):
-                detected_mwes.append(MWE(
-                    text=mwe_text,
-                    type=MWEType.NEGATION,
-                    primes=mwe_info["primes"],
-                    confidence=mwe_info["confidence"],
-                    start=match.start(),
-                    end=match.end()
-                ))
-        
-        # Detect modality
-        for pattern, mwe_text, mwe_info in self.modality_patterns:
-            for match in pattern.finditer(text):
-                detected_mwes.append(MWE(
-                    text=mwe_text,
-                    type=MWEType.MODALITY,
-                    primes=mwe_info["primes"],
-                    confidence=mwe_info["confidence"],
-                    start=match.start(),
-                    end=match.end()
-                ))
+        # Detect MWEs from all languages
+        for lang, lexicon in self.lexicons.items():
+            for mwe_text, mwe_info in lexicon.items():
+                # Check if MWE is in text (case-insensitive)
+                if mwe_text.lower() in text_lower:
+                    # Find the actual position in the original text
+                    start_pos = text_lower.find(mwe_text.lower())
+                    end_pos = start_pos + len(mwe_text)
+                    
+                    detected_mwes.append(MWE(
+                        text=mwe_text,
+                        type=mwe_info["type"],
+                        primes=mwe_info["primes"],
+                        confidence=mwe_info.get("confidence", 0.8),
+                        start=start_pos,
+                        end=end_pos
+                    ))
         
         # Sort by start position
         detected_mwes.sort(key=lambda x: x.start)
