@@ -24,32 +24,42 @@ from ...shared.exceptions.exceptions import ModelLoadingError, MemoryError, crea
 
 
 class ModelCache:
-    """LRU cache for model instances."""
+    """Advanced LRU cache for model instances with TTL and memory management."""
     
-    def __init__(self, max_size: int = 10):
+    def __init__(self, max_size: int = 10, ttl_seconds: int = 3600):
         """Initialize model cache."""
         self.max_size = max_size
+        self.ttl_seconds = ttl_seconds
         self._cache: Dict[str, Any] = {}
         self._lock = threading.Lock()
         self._access_times: Dict[str, float] = {}
-    
+        self._creation_times: Dict[str, float] = {}
+        self._memory_usage: Dict[str, float] = {}
+        
     def get(self, key: str) -> Optional[Any]:
-        """Get model from cache."""
+        """Get model from cache with TTL check."""
         with self._lock:
             if key in self._cache:
+                # Check TTL
+                if time.time() - self._creation_times[key] > self.ttl_seconds:
+                    self._remove(key)
+                    return None
+                
                 self._access_times[key] = time.time()
                 return self._cache[key]
             return None
     
-    def put(self, key: str, model: Any) -> None:
-        """Put model in cache."""
+    def put(self, key: str, model: Any, memory_usage_mb: float = 0.0) -> None:
+        """Put model in cache with memory tracking."""
         with self._lock:
             # Remove least recently used if cache is full
-            if len(self._cache) >= self.max_size:
+            while len(self._cache) >= self.max_size:
                 self._evict_lru()
             
             self._cache[key] = model
             self._access_times[key] = time.time()
+            self._creation_times[key] = time.time()
+            self._memory_usage[key] = memory_usage_mb
     
     def _evict_lru(self) -> None:
         """Evict least recently used model."""
@@ -57,29 +67,63 @@ class ModelCache:
             return
         
         lru_key = min(self._access_times.keys(), key=lambda k: self._access_times[k])
-        del self._cache[lru_key]
-        del self._access_times[lru_key]
+        self._remove(lru_key)
+    
+    def _remove(self, key: str) -> None:
+        """Remove a specific key from cache."""
+        if key in self._cache:
+            del self._cache[key]
+        if key in self._access_times:
+            del self._access_times[key]
+        if key in self._creation_times:
+            del self._creation_times[key]
+        if key in self._memory_usage:
+            del self._memory_usage[key]
     
     def clear(self) -> None:
         """Clear all cached models."""
         with self._lock:
             self._cache.clear()
             self._access_times.clear()
+            self._creation_times.clear()
+            self._memory_usage.clear()
     
     def size(self) -> int:
         """Get current cache size."""
         with self._lock:
             return len(self._cache)
+    
+    def get_memory_usage(self) -> float:
+        """Get total memory usage of cached models in MB."""
+        with self._lock:
+            return sum(self._memory_usage.values())
+    
+    def get_cache_stats(self) -> Dict[str, Any]:
+        """Get cache statistics."""
+        with self._lock:
+            return {
+                "size": len(self._cache),
+                "max_size": self.max_size,
+                "memory_usage_mb": sum(self._memory_usage.values()),
+                "ttl_seconds": self.ttl_seconds,
+                "keys": list(self._cache.keys())
+            }
 
 
 class ModelManager:
-    """Sophisticated model manager with caching and monitoring."""
+    """Advanced model manager with caching, monitoring, and performance optimization."""
     
     def __init__(self):
         """Initialize model manager."""
         self.settings = get_settings()
         self.logger = get_logger("model_manager")
-        self.cache = ModelCache(max_size=self.settings.performance.cache_max_size)
+        
+        # Initialize cache with TTL
+        self.cache = ModelCache(
+            max_size=self.settings.performance.cache_max_size,
+            ttl_seconds=self.settings.performance.cache_ttl_seconds
+        )
+        
         self._models: Dict[str, Any] = {}
         self._loading_locks: Dict[str, threading.Lock] = {}
         self._model_metadata: Dict[str, Dict[str, Any]] = {}
@@ -87,9 +131,56 @@ class ModelManager:
         # Performance monitoring
         self._load_times: Dict[str, float] = {}
         self._memory_usage: Dict[str, float] = {}
+        self._access_counts: Dict[str, int] = {}
+        
+        # Resource monitoring
+        self._last_memory_check = time.time()
+        self._memory_check_interval = 300  # 5 minutes
         
         # Initialize cache directory
         self._init_cache_directory()
+        
+        # Start resource monitoring if enabled
+        if self.settings.performance.enable_resource_monitoring:
+            self._start_resource_monitoring()
+    
+    def _start_resource_monitoring(self) -> None:
+        """Start background resource monitoring."""
+        def monitor_resources():
+            while True:
+                try:
+                    self._check_memory_usage()
+                    time.sleep(self.settings.performance.metrics_interval_seconds)
+                except Exception as e:
+                    self.logger.error(f"Resource monitoring error: {str(e)}")
+        
+        monitor_thread = threading.Thread(target=monitor_resources, daemon=True)
+        monitor_thread.start()
+        self.logger.info("Resource monitoring started")
+    
+    def _check_memory_usage(self) -> None:
+        """Check memory usage and trigger cleanup if needed."""
+        process = psutil.Process()
+        memory_mb = process.memory_info().rss / 1024 / 1024
+        
+        if memory_mb > self.settings.performance.max_memory_usage_mb:
+            self.logger.warning(f"Memory usage high: {memory_mb:.1f}MB, triggering cleanup")
+            self._cleanup_memory()
+    
+    def _cleanup_memory(self) -> None:
+        """Clean up memory by clearing cache and triggering garbage collection."""
+        import gc
+        
+        # Clear cache if memory usage is high
+        cache_memory = self.cache.get_memory_usage()
+        if cache_memory > self.settings.performance.max_memory_usage_mb * 0.5:
+            self.logger.info(f"Clearing cache to free {cache_memory:.1f}MB")
+            self.cache.clear()
+        
+        # Force garbage collection
+        gc.collect()
+        
+        self.logger.info("Memory cleanup completed")
     
     def _init_cache_directory(self) -> None:
         """Initialize model cache directory."""
@@ -144,10 +235,12 @@ class ModelManager:
                     "loaded_at": time.time()
                 }
                 
-                self.logger.model_loading(model_name, time.time())
+                self.logger.info(f"Model Loaded - {model_name}")
                 return model
                 
             except Exception as e:
+                # Handle the case where model_name might not be defined
+                model_name = getattr(self.settings.model, f"spacy_model_{language}", f"spacy_model_{language}")
                 raise ModelLoadingError(
                     model_name=model_name,
                     error_details=str(e),
@@ -267,10 +360,10 @@ class ModelManager:
             estimated_memory_mb = model_memory_estimates.get(model_type, 500)
             total_required_mb = current_memory_mb + estimated_memory_mb
             
-            if total_required_mb > self.settings.performance.max_memory_usage:
+            if total_required_mb > self.settings.performance.max_memory_usage_mb:
                 raise MemoryError(
                     current_memory_mb=current_memory_mb,
-                    limit_mb=self.settings.performance.max_memory_usage,
+                    limit_mb=self.settings.performance.max_memory_usage_mb,
                     context=create_error_context("check_memory", model_type=model_type, model_name=model_name)
                 )
             
@@ -342,11 +435,43 @@ class ModelManager:
             
             return {
                 "total_memory_mb": total_memory_mb,
+                "cache_memory_mb": self.cache.get_memory_usage(),
                 "cache_size": self.cache.size(),
-                "available_memory_mb": self.settings.performance.max_memory_usage - total_memory_mb
+                "available_memory_mb": self.settings.performance.max_memory_usage_mb - total_memory_mb,
+                "memory_limit_mb": self.settings.performance.max_memory_usage_mb
             }
         except Exception as e:
             self.logger.warning(f"Failed to get memory usage: {str(e)}")
+            return {"error": str(e)}
+    
+    def get_performance_stats(self) -> Dict[str, Any]:
+        """Get comprehensive performance statistics."""
+        try:
+            process = psutil.Process()
+            
+            return {
+                "memory": self.get_memory_usage(),
+                "cache": self.cache.get_cache_stats(),
+                "cpu_percent": process.cpu_percent(),
+                "load_times": self._load_times.copy(),
+                "access_counts": self._access_counts.copy(),
+                "model_metadata": self._model_metadata.copy()
+            }
+        except Exception as e:
+            self.logger.warning(f"Failed to get performance stats: {str(e)}")
+            return {"error": str(e)}
+    
+    def get_resource_usage(self) -> Dict[str, Any]:
+        """Get system resource usage."""
+        try:
+            return {
+                "cpu_percent": psutil.cpu_percent(interval=1),
+                "memory_percent": psutil.virtual_memory().percent,
+                "disk_percent": psutil.disk_usage('/').percent,
+                "process_memory_mb": psutil.Process().memory_info().rss / 1024 / 1024
+            }
+        except Exception as e:
+            self.logger.warning(f"Failed to get resource usage: {str(e)}")
             return {"error": str(e)}
     
     def cleanup(self) -> None:

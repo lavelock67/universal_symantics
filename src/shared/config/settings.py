@@ -41,15 +41,30 @@ class PerformanceSettings(BaseSettings):
     max_corpus_words: int = Field(default=200000, description="Maximum corpus size in words")
     
     # Caching settings
-    cache_ttl: int = Field(default=3600, description="Cache TTL in seconds")
+    cache_ttl_seconds: int = Field(default=3600, description="Cache TTL in seconds")
     cache_max_size: int = Field(default=1000, description="Maximum cache entries")
+    enable_model_caching: bool = Field(default=True, description="Enable model caching")
+    enable_result_caching: bool = Field(default=True, description="Enable result caching")
     
     # Processing settings
     batch_size: int = Field(default=100, description="Batch size for processing")
+    max_concurrent_processes: int = Field(default=4, description="Maximum concurrent processes")
     max_workers: int = Field(default=4, description="Maximum worker threads")
     
     # Memory management
-    max_memory_usage: int = Field(default=8192, description="Maximum memory usage in MB")
+    max_memory_usage_mb: int = Field(default=8192, description="Maximum memory usage in MB")
+    enable_memory_monitoring: bool = Field(default=True, description="Enable memory monitoring")
+    gc_threshold: int = Field(default=100, description="Garbage collection threshold")
+    
+    # Performance monitoring
+    enable_performance_metrics: bool = Field(default=True, description="Enable performance metrics")
+    metrics_interval_seconds: int = Field(default=60, description="Metrics collection interval")
+    enable_resource_monitoring: bool = Field(default=True, description="Enable resource monitoring")
+    
+    # Scalability settings
+    auto_scale_workers: bool = Field(default=True, description="Auto-scale worker processes")
+    min_workers: int = Field(default=2, description="Minimum worker processes")
+    max_workers_scale: int = Field(default=16, description="Maximum worker processes for scaling")
     
     class Config:
         env_prefix = "PERF_"
