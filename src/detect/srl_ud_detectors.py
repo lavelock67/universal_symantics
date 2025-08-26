@@ -1998,7 +1998,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 
 	# === PHASE 9: DESCRIPTORS (NSM Primes) - UD-Based Detection ===
 	
-	# THIS: proximate reference and identification
+	# THIS: proximate reference and identification (determiner)
 	for token in doc:
 		if (token.pos_ == "DET" and 
 			token.lemma_.lower() in {"this", "ese", "ce"} and
@@ -2006,7 +2006,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("THIS", [token.text], 0.8)
 			break
 
-	# THE SAME: identity and sameness
+	# THE SAME: identity and sameness (determiner or adjective)
 	for token in doc:
 		if (token.pos_ in {"DET", "ADJ"} and 
 			token.lemma_.lower() in {"same", "mismo", "même"} and
@@ -2014,7 +2014,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("THE SAME", [token.text], 0.8)
 			break
 
-	# OTHER: distinction and difference
+	# OTHER: distinction and difference (determiner, adjective, or pronoun)
 	for token in doc:
 		if (token.pos_ in {"DET", "ADJ", "PRON"} and 
 			token.lemma_.lower() in {"other", "otro", "autre"} and
@@ -2022,7 +2022,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("OTHER", [token.text], 0.8)
 			break
 
-	# ONE: singularity and unity
+	# ONE: singularity and unity (number or determiner)
 	for token in doc:
 		if (token.pos_ in {"NUM", "DET"} and 
 			token.lemma_.lower() in {"one", "uno", "un"} and
@@ -2030,7 +2030,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("ONE", [token.text], 0.8)
 			break
 
-	# TWO: duality and pairing
+	# TWO: duality and pairing (number)
 	for token in doc:
 		if (token.pos_ == "NUM" and 
 			token.lemma_.lower() in {"two", "dos", "deux"} and
@@ -2038,7 +2038,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("TWO", [token.text], 0.8)
 			break
 
-	# SOME: indefinite quantity and selection
+	# SOME: indefinite quantity and selection (determiner or pronoun)
 	for token in doc:
 		if (token.pos_ in {"DET", "PRON"} and 
 			token.lemma_.lower() in {"some", "algunos", "quelques"} and
@@ -2048,7 +2048,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 
 	# === PHASE 10: INTENSIFIERS (NSM Primes) - UD-Based Detection ===
 	
-	# VERY: high degree and intensity
+	# VERY: high degree and intensity (adverb)
 	for token in doc:
 		if (token.pos_ == "ADV" and 
 			token.lemma_.lower() in {"very", "muy", "très"} and
@@ -2056,7 +2056,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("VERY", [token.text], 0.8)
 			break
 
-	# MORE: comparative degree and increase
+	# MORE: comparative degree and increase (adverb or adjective)
 	for token in doc:
 		if (token.pos_ in {"ADV", "ADJ"} and 
 			token.lemma_.lower() in {"more", "más", "plus"} and
@@ -2064,7 +2064,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("MORE", [token.text], 0.8)
 			break
 
-	# LIKE: similarity and resemblance
+	# LIKE: similarity and resemblance (preposition, adverb, or adjective)
 	for token in doc:
 		if (token.pos_ in {"ADP", "ADV", "ADJ"} and 
 			token.lemma_.lower() in {"like", "como", "comme"} and
@@ -2072,7 +2072,7 @@ def detect_primitives_structured(text: str) -> List[Dict[str, Any]]:
 			add("LIKE", [token.text], 0.8)
 			break
 
-	# KIND OF: partial degree and approximation
+	# KIND OF: partial degree and approximation (adverb or adjective)
 	for token in doc:
 		if (token.pos_ in {"ADV", "ADJ"} and 
 			token.lemma_.lower() in {"kind", "tipo", "genre"} and
@@ -3333,6 +3333,64 @@ def detect_primitives_lexical(text: str) -> List[str]:
 	# SOME: indefinite quantity
 	if any(p in lower for p in [" some ", " several ", " few ", " algunos ", " algunas ", " quelques ", " quelques "]):
 		out.append("SOME")
+
+	# === PRAGMATICS: POLITENESS AND MODALITY ===
+	
+	# PLEASE: politeness marker
+	if any(p in lower for p in [" please ", " por favor ", " s'il vous plaît "]):
+		out.append("PLEASE")
+	
+	# MUST: obligation
+	if any(p in lower for p in [" must ", " have to ", " need to ", " debe ", " debe ", " devoir "]):
+		out.append("MUST")
+	
+	# SHOULD: recommendation
+	if any(p in lower for p in [" should ", " ought to ", " debería ", " devrait "]):
+		out.append("SHOULD")
+	
+	# CAN: ability/permission
+	if any(p in lower for p in [" can ", " could ", " able to ", " puede ", " pouvoir "]):
+		out.append("CAN")
+	
+	# MAY: permission
+	if any(p in lower for p in [" may ", " might ", " podría ", " pourrait "]):
+		out.append("MAY")
+	
+	# WILL: future intention
+	if any(p in lower for p in [" will ", " would ", " va a ", " va "]):
+		out.append("WILL")
+	
+	# MIGHT: possibility
+	if any(p in lower for p in [" might ", " maybe ", " podría ", " pourrait "]):
+		out.append("MIGHT")
+	
+	# SORRY: apology
+	if any(p in lower for p in [" sorry ", " apologize ", " lo siento ", " désolé "]):
+		out.append("SORRY")
+	
+	# THANK: gratitude
+	if any(p in lower for p in [" thank ", " thanks ", " gracias ", " merci "]):
+		out.append("THANK")
+	
+	# WELCOME: greeting
+	if any(p in lower for p in [" welcome ", " bienvenido ", " bienvenue "]):
+		out.append("WELCOME")
+	
+	# GOODBYE: farewell
+	if any(p in lower for p in [" goodbye ", " adiós ", " au revoir "]):
+		out.append("GOODBYE")
+	
+	# HELLO: greeting
+	if any(p in lower for p in [" hello ", " hi ", " hola ", " bonjour "]):
+		out.append("HELLO")
+	
+	# YES: affirmation
+	if any(p in lower for p in [" yes ", " yeah ", " sí ", " oui "]):
+		out.append("YES")
+	
+	# NO: negation
+	if any(p in lower for p in [" no ", " nope ", " no ", " non "]):
+		out.append("NO")
 
 	return out
 
