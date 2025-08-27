@@ -224,6 +224,9 @@ class ModelManager:
                 # Load model
                 model = spacy.load(model_name)
                 
+                # Note: Dependency matcher is not available in standard SpaCy models
+                # We'll use lexical patterns instead
+                
                 # Cache the model
                 self.cache.put(model_key, model)
                 

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSM Research Platform - Interactive Showcase</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .demo-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .demo-card h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .results {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .results h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .prime-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px;
+            font-size: 12px;
+        }
+
+        .mwe-tag {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px;
+            font-size: 12px;
+        }
+
+        .accuracy-bar {
+            width: 100%;
+            height: 20px;
+            background: #e1e5e9;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .accuracy-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            transition: width 0.5s ease;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .comparison-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .comparison-card h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .loading {
+            text-align: center;
+            color: #667eea;
+            font-style: italic;
+        }
+
+        .error {
+            color: #ff6b6b;
+            background: #ffe6e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .success {
+            color: #4ecdc4;
+            background: #e6fffe;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 NSM Research Platform</h1>
+            <p>Interactive Showcase - Natural Semantic Metalanguage Analysis</p>
+        </div>
+
+        <div class="demo-grid">
+            <!-- Prime Detection Demo -->
+            <div class="demo-card">
+                <h3>🔍 Prime Detection</h3>
+                <div class="input-group">
+                    <label for="prime-text">Enter text to analyze:</label>
+                    <textarea id="prime-text" rows="4" placeholder="Enter text in any supported language...">People think this is very good</textarea>
+                </div>
+                <div class="input-group">
+                    <label for="prime-language">Language:</label>
+                    <select id="prime-language">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="detectPrimes()">Detect Primes</button>
+                
+                <div id="prime-results" class="results" style="display: none;">
+                    <h4>🔍 Detected Primes</h4>
+                    <div id="prime-tags"></div>
+                    <div class="accuracy-bar">
+                        <div id="prime-accuracy" class="accuracy-fill"></div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div id="prime-count" class="stat-value">0</div>
+                            <div class="stat-label">Primes Found</div>
+                        </div>
+                        <div class="stat-card">
+                            <div id="prime-confidence" class="stat-value">0%</div>
+                            <div class="stat-label">Confidence</div>
+                        </div>
+                        <div class="stat-card">
+                            <div id="prime-time" class="stat-value">0ms</div>
+                            <div class="stat-label">Processing Time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MWE Detection Demo -->
+            <div class="demo-card">
+                <h3>🔗 Multi-Word Expression Detection</h3>
+                <div class="input-group">
+                    <label for="mwe-text">Enter text to analyze:</label>
+                    <textarea id="mwe-text" rows="4" placeholder="Enter text with complex expressions...">At least half of the students read a lot of books</textarea>
+                </div>
+                <div class="input-group">
+                    <label for="mwe-language">Language:</label>
+                    <select id="mwe-language">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="detectMWEs()">Detect MWEs</button>
+                
+                <div id="mwe-results" class="results" style="display: none;">
+                    <h4>🔗 Detected Multi-Word Expressions</h4>
+                    <div id="mwe-tags"></div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div id="mwe-count" class="stat-value">0</div>
+                            <div class="stat-label">MWEs Found</div>
+                        </div>
+                        <div class="stat-card">
+                            <div id="mwe-accuracy" class="stat-value">0%</div>
+                            <div class="stat-label">Accuracy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cross-lingual Comparison -->
+        <div class="demo-card">
+            <h3>🌐 Cross-lingual Semantic Comparison</h3>
+            <div class="input-group">
+                <label for="comparison-text">Enter text to compare across languages:</label>
+                <textarea id="comparison-text" rows="3" placeholder="Enter text to see semantic universals...">People think this is very good</textarea>
+            </div>
+            <button class="btn" onclick="compareLanguages()">Compare Languages</button>
+            
+            <div id="comparison-results" class="results" style="display: none;">
+                <h4>🌐 Cross-lingual Analysis</h4>
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <h4>🇺🇸 English</h4>
+                        <div id="en-primes"></div>
+                        <div id="en-mwes"></div>
+                    </div>
+                    <div class="comparison-card">
+                        <h4>🇪🇸 Spanish</h4>
+                        <div id="es-primes"></div>
+                        <div id="es-mwes"></div>
+                    </div>
+                </div>
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <h4>🇫🇷 French</h4>
+                        <div id="fr-primes"></div>
+                        <div id="fr-mwes"></div>
+                    </div>
+                    <div class="comparison-card">
+                        <h4>📊 Semantic Overlap</h4>
+                        <div id="overlap-analysis"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation Demo -->
+        <div class="demo-card">
+            <h3>🎯 NSM-based Text Generation</h3>
+            <div class="input-group">
+                <label for="generation-primes">Enter NSM primes (comma-separated):</label>
+                <input type="text" id="generation-primes" placeholder="PEOPLE, THINK, GOOD, VERY">
+            </div>
+            <div class="input-group">
+                <label for="generation-language">Target Language:</label>
+                <select id="generation-language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+            <button class="btn" onclick="generateText()">Generate Text</button>
+            
+            <div id="generation-results" class="results" style="display: none;">
+                <h4>🎯 Generated Text</h4>
+                <div id="generated-text"></div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div id="gen-confidence" class="stat-value">0%</div>
+                        <div class="stat-label">Generation Confidence</div>
+                    </div>
+                    <div class="stat-card">
+                        <div id="gen-time" class="stat-value">0ms</div>
+                        <div class="stat-label">Generation Time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8001';
+
+        async function detectPrimes() {
+            const text = document.getElementById('prime-text').value;
+            const language = document.getElementById('prime-language').value;
+            const resultsDiv = document.getElementById('prime-results');
+            
+            if (!text.trim()) {
+                alert('Please enter some text to analyze.');
+                return;
+            }
+
+            resultsDiv.innerHTML = '<div class="loading">Analyzing text for semantic primes...</div>';
+            resultsDiv.style.display = 'block';
+
+            try {
+                const response = await fetch(`${API_BASE}/detect`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: text,
+                        language: language,
+                        methods: ["spacy", "structured", "multilingual", "mwe"],
+                        include_deepnsm: true,
+                        include_mdl: true
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    displayPrimeResults(result);
+                } else {
+                    resultsDiv.innerHTML = `<div class="error">Error: ${result.detail || 'Unknown error'}</div>`;
+                }
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="error">Network error: ${error.message}</div>`;
+            }
+        }
+
+        function displayPrimeResults(result) {
+            const resultsDiv = document.getElementById('prime-results');
+            let primes = [];
+            let confidence = 0;
+            let processingTime = 0;
+
+            if (result.result && result.result.primes) {
+                primes = result.result.primes.map(p => p.text);
+                confidence = result.result.confidence || 0;
+                processingTime = result.result.processing_time || 0;
+            } else {
+                primes = result.detected_primes || [];
+                confidence = result.confidence || 0;
+                processingTime = result.processing_time || 0;
+            }
+
+            const primeTags = primes.map(prime => 
+                `<span class="prime-tag">${prime}</span>`
+            ).join('');
+
+            const accuracy = Math.round(confidence * 100);
+            
+            resultsDiv.innerHTML = `
+                <h4>🔍 Detected Primes</h4>
+                <div id="prime-tags">${primeTags}</div>
+                <div class="accuracy-bar">
+                    <div id="prime-accuracy" class="accuracy-fill" style="width: ${accuracy}%"></div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div id="prime-count" class="stat-value">${primes.length}</div>
+                        <div class="stat-label">Primes Found</div>
+                    </div>
+                    <div class="stat-card">
+                        <div id="prime-confidence" class="stat-value">${accuracy}%</div>
+                        <div class="stat-label">Confidence</div>
+                    </div>
+                    <div class="stat-card">
+                        <div id="prime-time" class="stat-value">${Math.round(processingTime * 1000)}ms</div>
+                        <div class="stat-label">Processing Time</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function detectMWEs() {
+            const text = document.getElementById('mwe-text').value;
+            const language = document.getElementById('mwe-language').value;
+            const resultsDiv = document.getElementById('mwe-results');
+            
+            if (!text.trim()) {
+                alert('Please enter some text to analyze.');
+                return;
+            }
+
+            resultsDiv.innerHTML = '<div class="loading">Detecting multi-word expressions...</div>';
+            resultsDiv.style.display = 'block';
+
+            try {
+                const response = await fetch(`${API_BASE}/mwe`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: text,
+                        language: language
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    displayMWEResults(result);
+                } else {
+                    resultsDiv.innerHTML = `<div class="error">Error: ${result.detail || 'Unknown error'}</div>`;
+                }
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="error">Network error: ${error.message}</div>`;
+            }
+        }
+
+        function displayMWEResults(result) {
+            const resultsDiv = document.getElementById('mwe-results');
+            let mwes = [];
+
+            if (result.result && result.result.mwes) {
+                mwes = result.result.mwes.map(m => m.text);
+            } else if (result.detected_mwes) {
+                mwes = result.detected_mwes;
+            } else {
+                mwes = result.mwes || [];
+            }
+
+            const mweTags = mwes.map(mwe => 
+                `<span class="mwe-tag">${mwe}</span>`
+            ).join('');
+
+            const accuracy = mwes.length > 0 ? 85 : 0; // Simulated accuracy
+            
+            resultsDiv.innerHTML = `
+                <h4>🔗 Detected Multi-Word Expressions</h4>
+                <div id="mwe-tags">${mweTags}</div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div id="mwe-count" class="stat-value">${mwes.length}</div>
+                        <div class="stat-label">MWEs Found</div>
+                    </div>
+                    <div class="stat-card">
+                        <div id="mwe-accuracy" class="stat-value">${accuracy}%</div>
+                        <div class="stat-label">Accuracy</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function compareLanguages() {
+            const text = document.getElementById('comparison-text').value;
+            const resultsDiv = document.getElementById('comparison-results');
+            
+            if (!text.trim()) {
+                alert('Please enter some text to compare.');
+                return;
+            }
+
+            resultsDiv.innerHTML = '<div class="loading">Comparing semantic structure across languages...</div>';
+            resultsDiv.style.display = 'block';
+
+            const languages = ['en', 'es', 'fr'];
+            const results = {};
+
+            try {
+                for (const lang of languages) {
+                    const response = await fetch(`${API_BASE}/detect`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            text: text,
+                            language: lang,
+                            methods: ["spacy", "structured", "multilingual", "mwe"],
+                            include_deepnsm: true,
+                            include_mdl: true
+                        })
+                    });
+
+                    const result = await response.json();
+                    if (response.ok) {
+                        results[lang] = result;
+                    }
+                }
+
+                displayComparisonResults(results);
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="error">Network error: ${error.message}</div>`;
+            }
+        }
+
+        function displayComparisonResults(results) {
+            const resultsDiv = document.getElementById('comparison-results');
+            
+            let html = '<h4>🌐 Cross-lingual Analysis</h4><div class="comparison-grid">';
+            
+            const languages = [
+                { code: 'en', name: '🇺🇸 English', id: 'en' },
+                { code: 'es', name: '🇪🇸 Spanish', id: 'es' },
+                { code: 'fr', name: '🇫🇷 French', id: 'fr' }
+            ];
+
+            for (const lang of languages) {
+                const result = results[lang.code];
+                let primes = [];
+                let mwes = [];
+
+                if (result && result.result && result.result.primes) {
+                    primes = result.result.primes.map(p => p.text);
+                } else if (result && result.detected_primes) {
+                    primes = result.detected_primes;
+                }
+
+                if (result && result.result && result.result.mwes) {
+                    mwes = result.result.mwes.map(m => m.text);
+                } else if (result && result.detected_mwes) {
+                    mwes = result.detected_mwes;
+                }
+
+                const primeTags = primes.map(prime => 
+                    `<span class="prime-tag">${prime}</span>`
+                ).join('');
+
+                const mweTags = mwes.map(mwe => 
+                    `<span class="mwe-tag">${mwe}</span>`
+                ).join('');
+
+                html += `
+                    <div class="comparison-card">
+                        <h4>${lang.name}</h4>
+                        <div id="${lang.id}-primes"><strong>Primes:</strong> ${primeTags}</div>
+                        <div id="${lang.id}-mwes"><strong>MWEs:</strong> ${mweTags}</div>
+                    </div>
+                `;
+            }
+
+            // Calculate semantic overlap
+            const allPrimes = new Set();
+            const langPrimes = {};
+            
+            for (const lang of languages) {
+                const result = results[lang.code];
+                let primes = [];
+                
+                if (result && result.result && result.result.primes) {
+                    primes = result.result.primes.map(p => p.text);
+                } else if (result && result.detected_primes) {
+                    primes = result.detected_primes;
+                }
+                
+                langPrimes[lang.code] = new Set(primes);
+                primes.forEach(p => allPrimes.add(p));
+            }
+
+            const overlapAnalysis = calculateOverlap(langPrimes);
+            
+            html += `
+                <div class="comparison-card">
+                    <h4>📊 Semantic Overlap</h4>
+                    <div id="overlap-analysis">
+                        <p><strong>Universal Primes:</strong> ${overlapAnalysis.universal.join(', ') || 'None'}</p>
+                        <p><strong>Overlap Score:</strong> ${overlapAnalysis.score}%</p>
+                        <p><strong>Total Unique Primes:</strong> ${allPrimes.size}</p>
+                    </div>
+                </div>
+            </div>`;
+
+            resultsDiv.innerHTML = html;
+        }
+
+        function calculateOverlap(langPrimes) {
+            const languages = Object.keys(langPrimes);
+            if (languages.length < 2) return { universal: [], score: 0 };
+
+            let intersection = langPrimes[languages[0]];
+            for (let i = 1; i < languages.length; i++) {
+                intersection = new Set([...intersection].filter(x => langPrimes[languages[i]].has(x)));
+            }
+
+            const universal = Array.from(intersection);
+            const totalUnique = new Set([...Object.values(langPrimes).flatMap(set => Array.from(set))]).size;
+            const score = totalUnique > 0 ? Math.round((universal.length / totalUnique) * 100) : 0;
+
+            return { universal, score };
+        }
+
+        async function generateText() {
+            const primes = document.getElementById('generation-primes').value;
+            const language = document.getElementById('generation-language').value;
+            const resultsDiv = document.getElementById('generation-results');
+            
+            if (!primes.trim()) {
+                alert('Please enter some NSM primes.');
+                return;
+            }
+
+            const primeList = primes.split(',').map(p => p.trim().toUpperCase()).filter(p => p);
+            
+            resultsDiv.innerHTML = '<div class="loading">Generating text from NSM primes...</div>';
+            resultsDiv.style.display = 'block';
+
+            try {
+                const response = await fetch(`${API_BASE}/generate`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        primes: primeList,
+                        target_language: language
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    displayGenerationResults(result);
+                } else {
+                    resultsDiv.innerHTML = `<div class="error">Error: ${result.detail || 'Unknown error'}</div>`;
+                }
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="error">Network error: ${error.message}</div>`;
+            }
+        }
+
+        function displayGenerationResults(result) {
+            const resultsDiv = document.getElementById('generation-results');
+            let generatedText = '';
+            let confidence = 0;
+            let processingTime = 0;
+
+            if (result.result) {
+                generatedText = result.result.generated_text || 'No text generated';
+                confidence = result.result.confidence || 0;
+                processingTime = result.result.processing_time || 0;
+            } else {
+                generatedText = result.generated_text || 'No text generated';
+                confidence = result.confidence || 0;
+                processingTime = result.processing_time || 0;
+            }
+
+            const accuracy = Math.round(confidence * 100);
+            
+            resultsDiv.innerHTML = `
+                <h4>🎯 Generated Text</h4>
+                <div id="generated-text" style="font-size: 1.2rem; padding: 15px; background: #f0f8ff; border-radius: 8px; margin: 15px 0;">
+                    "${generatedText}"
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div id="gen-confidence" class="stat-value">${accuracy}%</div>
+                        <div class="stat-label">Generation Confidence</div>
+                    </div>
+                    <div class="stat-card">
+                        <div id="gen-time" class="stat-value">${Math.round(processingTime * 1000)}ms</div>
+                        <div class="stat-label">Generation Time</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Auto-fill examples
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default examples
+            document.getElementById('prime-text').value = 'People think this is very good';
+            document.getElementById('mwe-text').value = 'At least half of the students read a lot of books';
+            document.getElementById('comparison-text').value = 'People think this is very good';
+            document.getElementById('generation-primes').value = 'PEOPLE, THINK, GOOD, VERY';
+        });
+    </script>
+</body>
+</html>

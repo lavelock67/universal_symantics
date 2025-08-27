@@ -28,6 +28,16 @@ async def demo_home(request: Request):
     """Demo home page."""
     return templates.TemplateResponse("demo_home.html", {"request": request})
 
+@app.get("/enhanced", response_class=HTMLResponse)
+async def enhanced_demo(request: Request):
+    """Enhanced demo page."""
+    return templates.TemplateResponse("enhanced_demo.html", {"request": request})
+
+@app.get("/showcase", response_class=HTMLResponse)
+async def showcase_demo(request: Request):
+    """Interactive showcase demo page."""
+    return templates.TemplateResponse("showcase_demo.html", {"request": request})
+
 @app.get("/detection", response_class=HTMLResponse)
 async def detection_demo(request: Request):
     """Detection demo page."""
@@ -82,6 +92,11 @@ async def discovery_demo(request: Request):
 async def wow_factor_demo(request: Request):
     """NSM Wow Factor demo."""
     return templates.TemplateResponse("wow_factor_demo.html", {"request": request})
+
+@app.get("/research", response_class=HTMLResponse)
+async def research_showcase(request: Request):
+    """Advanced research showcase demo."""
+    return templates.TemplateResponse("research_showcase.html", {"request": request})
 
 # API proxy endpoints
 @app.post("/api/detect")

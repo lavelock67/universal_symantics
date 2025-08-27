@@ -96,6 +96,7 @@ class NSMDetectionService(DetectionService):
     
     def detect_primes(self, text: str, language: Language) -> DetectionResult:
         """Detect NSM primes in the given text."""
+        start_time = time.time()
         with PerformanceContext("detect_primes", self.logger):
             try:
                 # Validate input
@@ -133,11 +134,14 @@ class NSMDetectionService(DetectionService):
                 # Calculate overall confidence
                 confidence = self._calculate_confidence(unique_primes, mwes)
                 
+                # Calculate processing time
+                processing_time = time.time() - start_time
+                
                 return DetectionResult(
                     primes=unique_primes,
                     mwes=mwes,
                     confidence=confidence,
-                    processing_time=time.time(),
+                    processing_time=processing_time,
                     language=language
                 )
                 
@@ -160,8 +164,8 @@ class NSMDetectionService(DetectionService):
                 # Detect MWEs using lexical patterns
                 mwes = self._detect_mwes_lexical(doc, language)
                 
-                # Detect MWEs using dependency patterns
-                mwes.extend(self._detect_mwes_dependency(doc, language))
+                # Skip dependency patterns for now - use only lexical patterns
+                # mwes.extend(self._detect_mwes_dependency(doc, language))
                 
                 # Remove overlapping MWEs
                 mwes = self._remove_overlapping_mwes(mwes)
@@ -250,10 +254,18 @@ class NSMDetectionService(DetectionService):
         for pattern_name, pattern in mwe_patterns.items():
             matches = self._find_mwe_matches(doc, pattern)
             for match in matches:
+                # Find the specific pattern that matched
+                matched_primes = []
+                if "patterns" in pattern:
+                    for p in pattern["patterns"]:
+                        if "text" in p and p["text"].lower() == match.text.lower():
+                            matched_primes = p.get("primes", [])
+                            break
+                
                 mwe_obj = MWE(
                     text=match.text,
                     type=self._get_mwe_type(pattern_name),
-                    primes=pattern.get("primes", []),
+                    primes=matched_primes,
                     confidence=0.8,
                     start=match.start_char,
                     end=match.end_char,
@@ -265,33 +277,9 @@ class NSMDetectionService(DetectionService):
     
     def _detect_mwes_dependency(self, doc, language: Language) -> List[MWE]:
         """Detect MWEs using dependency patterns."""
-        mwes = []
-        
-        # Use SpaCy's dependency matcher
-        matcher = self.spacy_models[language.value].get_pipe("dependency_matcher")
-        
-        # Define dependency patterns for MWEs
-        dep_patterns = self._get_dependency_patterns(language)
-        
-        for pattern_name, pattern in dep_patterns.items():
-            matches = matcher(doc)
-            for match_id, token_ids in matches:
-                if match_id == pattern_name:
-                    start_token = doc[token_ids[0]]
-                    end_token = doc[token_ids[-1]]
-                    
-                    mwe_obj = MWE(
-                        text=doc[start_token.i:end_token.i + 1].text,
-                        type=self._get_mwe_type(pattern_name),
-                        primes=pattern.get("primes", []),
-                        confidence=0.9,
-                        start=start_token.idx,
-                        end=end_token.idx + len(end_token.text),
-                        language=language
-                    )
-                    mwes.append(mwe_obj)
-        
-        return mwes
+        # Skip dependency patterns for now - use only lexical patterns
+        # This method is kept for future implementation
+        return []
     
     def _deduplicate_primes(self, primes: List[NSMPrime]) -> List[NSMPrime]:
         """Remove duplicate primes and merge confidence scores."""
@@ -363,6 +351,15 @@ class NSMDetectionService(DetectionService):
             "BAD": {"lemma": "bad", "pos": "ADJ"},
             "BIG": {"lemma": "big", "pos": "ADJ"},
             "SMALL": {"lemma": "small", "pos": "ADJ"},
+            "PEOPLE": {"lemma": "people", "pos": "NOUN"},
+            "THIS": {"lemma": "this", "pos": "DET"},
+            "VERY": {"lemma": "very", "pos": "ADV"},
+            "NOT": {"lemma": "not", "pos": "PART"},
+            "MORE": {"lemma": "more", "pos": "ADJ"},
+            "MANY": {"lemma": "many", "pos": "ADJ"},
+            "READ": {"lemma": "read", "pos": "VERB"},
+            "FALSE": {"lemma": "false", "pos": "ADJ"},
+            "DO": {"lemma": "do", "pos": "VERB"},
         }
         
         # Add language-specific patterns
@@ -373,6 +370,15 @@ class NSMDetectionService(DetectionService):
                 "WANT": {"lemma": "querer", "pos": "VERB"},
                 "GOOD": {"lemma": "bueno", "pos": "ADJ"},
                 "BAD": {"lemma": "malo", "pos": "ADJ"},
+                "PEOPLE": {"lemma": "gente", "pos": "NOUN"},
+                "THIS": {"lemma": "esto", "pos": "DET"},
+                "VERY": {"lemma": "muy", "pos": "ADV"},
+                "NOT": {"lemma": "no", "pos": "PART"},
+                "MORE": {"lemma": "más", "pos": "ADJ"},
+                "MANY": {"lemma": "muchos", "pos": "ADJ"},
+                "READ": {"lemma": "leer", "pos": "VERB"},
+                "FALSE": {"lemma": "falso", "pos": "ADJ"},
+                "DO": {"lemma": "hacer", "pos": "VERB"},
             })
         elif language == Language.FRENCH:
             patterns.update({
@@ -381,6 +387,15 @@ class NSMDetectionService(DetectionService):
                 "WANT": {"lemma": "vouloir", "pos": "VERB"},
                 "GOOD": {"lemma": "bon", "pos": "ADJ"},
                 "BAD": {"lemma": "mauvais", "pos": "ADJ"},
+                "PEOPLE": {"lemma": "gens", "pos": "NOUN"},
+                "THIS": {"lemma": "ce", "pos": "DET"},
+                "VERY": {"lemma": "très", "pos": "ADV"},
+                "NOT": {"lemma": "ne", "pos": "PART"},
+                "MORE": {"lemma": "plus", "pos": "ADJ"},
+                "MANY": {"lemma": "beaucoup", "pos": "ADJ"},
+                "READ": {"lemma": "lire", "pos": "VERB"},
+                "FALSE": {"lemma": "faux", "pos": "ADJ"},
+                "DO": {"lemma": "faire", "pos": "VERB"},
             })
         
         return patterns
@@ -395,6 +410,15 @@ class NSMDetectionService(DetectionService):
             "BAD": PrimeType.EVALUATOR,
             "BIG": PrimeType.DESCRIPTOR,
             "SMALL": PrimeType.DESCRIPTOR,
+            "PEOPLE": PrimeType.SUBSTANTIVE,
+            "THIS": PrimeType.SUBSTANTIVE,
+            "VERY": PrimeType.DESCRIPTOR,
+            "NOT": PrimeType.LOGICAL_OPERATOR,
+            "MORE": PrimeType.QUANTIFIER,
+            "MANY": PrimeType.QUANTIFIER,
+            "READ": PrimeType.ACTION,
+            "FALSE": PrimeType.EVALUATOR,
+            "DO": PrimeType.ACTION,
         }
         return type_mapping.get(prime_name, PrimeType.SUBSTANTIVE)
     
@@ -440,8 +464,56 @@ class NSMDetectionService(DetectionService):
     
     def _get_mwe_patterns(self, language: Language) -> Dict[str, Any]:
         """Get MWE patterns."""
-        # This would be loaded from configuration
-        return {}
+        patterns = {
+            "quantifier": {
+                "patterns": [
+                    {"text": "at least", "primes": ["MORE"]},
+                    {"text": "no more than", "primes": ["NOT", "MORE"]},
+                    {"text": "a lot of", "primes": ["MANY"]},
+                    {"text": "at most", "primes": ["NOT", "MORE"]},
+                    {"text": "half of", "primes": ["HALF"]},
+                    {"text": "some of", "primes": ["SOME"]},
+                    {"text": "all of", "primes": ["ALL"]},
+                    {"text": "none of", "primes": ["NOT", "SOME"]},
+                ]
+            },
+            "intensifier": {
+                "patterns": [
+                    {"text": "very good", "primes": ["VERY", "GOOD"]},
+                    {"text": "very bad", "primes": ["VERY", "BAD"]},
+                    {"text": "really good", "primes": ["VERY", "GOOD"]},
+                    {"text": "really bad", "primes": ["VERY", "BAD"]},
+                ]
+            },
+            "negation": {
+                "patterns": [
+                    {"text": "not true", "primes": ["NOT", "TRUE"]},
+                    {"text": "not good", "primes": ["NOT", "GOOD"]},
+                    {"text": "not bad", "primes": ["NOT", "BAD"]},
+                ]
+            }
+        }
+        
+        # Add language-specific patterns
+        if language == Language.SPANISH:
+            patterns["quantifier"]["patterns"].extend([
+                {"text": "muy bueno", "primes": ["VERY", "GOOD"]},
+                {"text": "muy malo", "primes": ["VERY", "BAD"]},
+                {"text": "muchos", "primes": ["MANY"]},
+                {"text": "al menos", "primes": ["MORE"]},
+                {"text": "no más de", "primes": ["NOT", "MORE"]},
+                {"text": "mucho de", "primes": ["MANY"]},
+            ])
+        elif language == Language.FRENCH:
+            patterns["quantifier"]["patterns"].extend([
+                {"text": "très bon", "primes": ["VERY", "GOOD"]},
+                {"text": "très mauvais", "primes": ["VERY", "BAD"]},
+                {"text": "beaucoup de", "primes": ["MANY"]},
+                {"text": "au moins", "primes": ["MORE"]},
+                {"text": "pas plus de", "primes": ["NOT", "MORE"]},
+            ])
+        
+        return patterns
     
     def _get_dependency_patterns(self, language: Language) -> Dict[str, Any]:
         """Get dependency patterns."""
@@ -455,8 +527,31 @@ class NSMDetectionService(DetectionService):
     
     def _find_mwe_matches(self, doc, pattern) -> List[Any]:
         """Find MWE pattern matches."""
-        # Implementation would depend on the specific matching strategy
-        return []
+        matches = []
+        text = doc.text.lower()
+        
+        if "patterns" in pattern:
+            for p in pattern["patterns"]:
+                if "text" in p:
+                    pattern_text = p["text"].lower()
+                    start = 0
+                    while True:
+                        pos = text.find(pattern_text, start)
+                        if pos == -1:
+                            break
+                        
+                        # Create a simple match object
+                        class Match:
+                            def __init__(self, text, start_char, end_char):
+                                self.text = text
+                                self.start_char = start_char
+                                self.end_char = end_char
+                        
+                        match = Match(p["text"], pos, pos + len(pattern_text))
+                        matches.append(match)
+                        start = pos + 1
+        
+        return matches
 
 
 # Service factory
