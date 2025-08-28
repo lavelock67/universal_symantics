@@ -111,6 +111,15 @@ class NSMDetectionService(DetectionService):
                 self.logger.warning(f"Failed to load MWE detector: {str(e)}")
                 self.mwe_detector = None
             
+            # Initialize Missing Prime Detector (from implement_missing_primes.py)
+            try:
+                from implement_missing_primes import MissingPrimeDetector
+                self.missing_prime_detector = MissingPrimeDetector()
+                self.logger.info("Loaded Missing Prime Detector for ABOVE/INSIDE/NEAR/ONE/WORDS")
+            except Exception as e:
+                self.logger.warning(f"Failed to load Missing Prime Detector: {str(e)}")
+                self.missing_prime_detector = None
+            
         except Exception as e:
             self.logger.error(f"Failed to initialize detection components: {str(e)}")
             raise
@@ -181,6 +190,29 @@ class NSMDetectionService(DetectionService):
                         self.logger.warning(f"MWE detection traceback: {traceback.format_exc()}")
                 else:
                     self.logger.warning("MWE detector not available")
+                
+                # 5. Missing Prime detection (ABOVE, INSIDE, NEAR, ONE, WORDS)
+                if self.missing_prime_detector:
+                    try:
+                        self.logger.info(f"Calling Missing Prime detector for text: '{text}'")
+                        missing_primes = self.missing_prime_detector.detect_all_missing_primes(text, language)
+                        self.logger.info(f"Missing Prime detector returned: {len(missing_primes)} primes")
+                        for prime_name, confidence in missing_primes.items():
+                            prime_obj = NSMPrime(
+                                text=prime_name.upper(),  # Normalize to uppercase
+                                type=self._get_prime_type(prime_name),
+                                language=language,
+                                confidence=confidence,
+                                frequency=1
+                            )
+                            primes.append(prime_obj)
+                        self.logger.info(f"Missing Prime detection found: {list(missing_primes.keys())}")
+                    except Exception as e:
+                        self.logger.warning(f"Missing Prime detection failed: {str(e)}")
+                        import traceback
+                        self.logger.warning(f"Missing Prime detection traceback: {traceback.format_exc()}")
+                else:
+                    self.logger.warning("Missing Prime detector not available")
                 
                 # Remove duplicates and sort by confidence
                 unique_primes = self._deduplicate_primes(primes)
