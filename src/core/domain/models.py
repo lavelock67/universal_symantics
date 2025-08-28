@@ -39,6 +39,8 @@ class PrimeType(str, Enum):
     ACTION = "action"
     DESCRIPTOR = "descriptor"
     MODAL = "modal"
+    SPEECH = "speech"
+    INTENSIFIER = "intensifier"
 
 
 class MWEType(str, Enum):
@@ -169,6 +171,7 @@ class DetectionResult:
     confidence: float
     processing_time: float
     language: Language
+    source_text: str = ""
     metadata: Dict[str, Any] = field(default_factory=dict)
     
     def __post_init__(self):

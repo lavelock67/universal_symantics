@@ -28,6 +28,9 @@ from src.core.domain.models import (
 )
 from src.core.application.services import create_detection_service
 from src.core.infrastructure.model_manager import initialize_model_manager
+from src.core.eil.service import EILService
+from src.core.translation.universal_translator import UniversalTranslator
+from src.core.generation.prime_generator import GenerationStrategy
 
 # Research API removed during cleanup - functionality consolidated into main API
 
@@ -57,14 +60,124 @@ app.add_middleware(
 # Global service instances
 detection_service = None
 model_manager = None
+eil_service = None
+translator = None
 
 # Research API routes removed during cleanup - functionality consolidated into main API
+
+
+# EIL Processing Endpoints
+@app.post("/eil/process", response_model=Dict[str, Any])
+async def process_with_eil(request: PrimeDetectionRequest):
+    """Process text through the complete EIL pipeline."""
+    with PerformanceContext("api_eil_process"):
+        try:
+            # Detect primes first
+            detection_result = detection_service.detect_primes(request.text, request.language)
+            
+            # Process through EIL pipeline
+            eil_result = eil_service.process_text(
+                text=request.text,
+                source_language=request.language,
+                target_language=request.language,  # Same language for now
+                detection_result=detection_result
+            )
+            
+            return {
+                "success": True,
+                "result": {
+                    "source_graph": eil_result.source_graph.to_dict(),
+                    "validation_result": {
+                        "is_valid": eil_result.validation_result.is_valid,
+                        "error_count": len(eil_result.validation_result.errors),
+                        "warning_count": len(eil_result.validation_result.warnings),
+                        "metrics": eil_result.validation_result.metrics
+                    },
+                    "router_decision": eil_result.router_result.decision.value,
+                    "router_confidence": eil_result.router_result.confidence,
+                    "router_reasoning": eil_result.router_result.reasoning,
+                    "processing_times": eil_result.processing_times,
+                    "metadata": eil_result.metadata
+                },
+                "error": None
+            }
+            
+        except Exception as e:
+            logger.error(f"EIL processing failed: {str(e)}")
+            return format_error_response("EIL processing failed", str(e))
+
+
+@app.post("/eil/translate", response_model=Dict[str, Any])
+async def translate_with_eil(request: Dict[str, Any]):
+    """Translate text using EIL pipeline."""
+    with PerformanceContext("api_eil_translate"):
+        try:
+            text = request.get("text", "")
+            source_language = request.get("source_language", "en")
+            target_language = request.get("target_language", "en")
+            
+            if not text:
+                raise ValueError("Text is required")
+            
+            # Detect primes first
+            detection_result = detection_service.detect_primes(text, source_language)
+            
+            # Process through EIL pipeline with translation
+            eil_result = eil_service.process_text(
+                text=text,
+                source_language=source_language,
+                target_language=target_language,
+                detection_result=detection_result
+            )
+            
+            # Extract translation result
+            translation_text = ""
+            translation_confidence = 0.0
+            
+            if eil_result.realization_result:
+                translation_text = eil_result.realization_result.text
+                translation_confidence = eil_result.realization_result.confidence
+            
+            return {
+                "success": True,
+                "result": {
+                    "source_text": text,
+                    "target_text": translation_text,
+                    "translation_confidence": translation_confidence,
+                    "router_decision": eil_result.router_result.decision.value,
+                    "router_confidence": eil_result.router_result.confidence,
+                    "router_reasoning": eil_result.router_result.reasoning,
+                    "processing_times": eil_result.processing_times,
+                    "source_language": source_language,
+                    "target_language": target_language
+                },
+                "error": None
+            }
+            
+        except Exception as e:
+            logger.error(f"EIL translation failed: {str(e)}")
+            return format_error_response("EIL translation failed", str(e))
+
+
+@app.get("/eil/stats", response_model=Dict[str, Any])
+async def get_eil_stats():
+    """Get EIL service statistics."""
+    try:
+        stats = eil_service.get_processing_stats()
+        return {
+            "success": True,
+            "result": stats,
+            "error": None
+        }
+    except Exception as e:
+        logger.error(f"Failed to get EIL stats: {str(e)}")
+        return format_error_response("Failed to get EIL stats", str(e))
 
 
 @app.on_event("startup")
 async def startup_event():
     """Initialize services on startup."""
-    global detection_service, model_manager
+    global detection_service, model_manager, eil_service, translator
     
     logger.info("Starting NSM Research Platform API...")
     
@@ -80,6 +193,14 @@ async def startup_event():
         # Initialize detection service
         detection_service = create_detection_service()
         logger.info("Detection service initialized")
+        
+        # Initialize EIL service
+        eil_service = EILService()
+        logger.info("EIL service initialized")
+        
+        # Initialize universal translator
+        translator = UniversalTranslator()
+        logger.info("Universal translator initialized")
         
         logger.info("NSM Research Platform API started successfully")
         
@@ -505,6 +626,68 @@ async def analyze_mdl(request: Dict[str, Any]):
     except Exception as e:
         logger.error(f"MDL analysis failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"MDL analysis failed: {str(e)}")
+
+# Translation endpoints
+@app.post("/translate")
+async def translate_text(request: dict):
+    """Translate text using universal translator."""
+    if translator is None:
+        raise HTTPException(status_code=503, detail="Translation service not available")
+    
+    try:
+        source_text = request.get("text", "")
+        source_language = Language(request.get("source_language", "en"))
+        target_language = Language(request.get("target_language", "es"))
+        strategy = GenerationStrategy(request.get("strategy", "lexical"))
+        
+        if not source_text:
+            raise HTTPException(status_code=400, detail="Source text is required")
+        
+        result = translator.translate(source_text, source_language, target_language, strategy)
+        
+        return {
+            "success": True,
+            "translation": {
+                "source_text": result.source_text,
+                "target_text": result.target_text,
+                "source_language": result.source_language.value,
+                "target_language": result.target_language.value,
+                "confidence": result.confidence,
+                "processing_time": result.processing_time,
+                "detected_primes": [p.text for p in result.detected_primes],
+                "metadata": result.metadata
+            }
+        }
+    except Exception as e:
+        logger.error(f"Translation error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/translate/languages")
+async def get_supported_languages():
+    """Get supported languages for translation."""
+    if translator is None:
+        raise HTTPException(status_code=503, detail="Translation service not available")
+    
+    try:
+        languages = translator.get_supported_languages()
+        return {"success": True, "languages": languages}
+    except Exception as e:
+        logger.error(f"Error getting supported languages: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/translate/coverage/{language}")
+async def get_language_coverage(language: str):
+    """Get coverage statistics for a language."""
+    if translator is None:
+        raise HTTPException(status_code=503, detail="Translation service not available")
+    
+    try:
+        lang = Language(language)
+        coverage = translator.get_language_coverage(lang)
+        return {"success": True, "coverage": coverage}
+    except Exception as e:
+        logger.error(f"Error getting language coverage: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     import uvicorn

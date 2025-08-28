@@ -1,0 +1,1318 @@
+{
+  "timestamp": "2025-08-26T21:23:35.898425",
+  "overall_score": 0.8167475577763148,
+  "overall_pass_rate": 1.0,
+  "total_tests": 32,
+  "passed_tests": 32,
+  "assessment": "EXCELLENT - System is working very well",
+  "category_scores": {
+    "Basic Functionality": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "pass_rate": 1.0
+    },
+    "Prime Detection Accuracy": {
+      "total": 4,
+      "passed": 4,
+      "score": 0.8309523809523809,
+      "pass_rate": 1.0
+    },
+    "MWE Detection Accuracy": {
+      "total": 3,
+      "passed": 3,
+      "score": 0.6666666666666666,
+      "pass_rate": 1.0
+    },
+    "Text Generation Quality": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "pass_rate": 1.0
+    },
+    "Cross-Lingual Capabilities": {
+      "total": 3,
+      "passed": 3,
+      "score": 1.0,
+      "pass_rate": 1.0
+    },
+    "System Performance": {
+      "total": 4,
+      "passed": 4,
+      "score": 0.9946947479248047,
+      "pass_rate": 1.0
+    },
+    "Error Handling": {
+      "total": 4,
+      "passed": 4,
+      "score": 0.75,
+      "pass_rate": 1.0
+    },
+    "Real-World Usefulness": {
+      "total": 3,
+      "passed": 3,
+      "score": 0.4444444444444444,
+      "pass_rate": 1.0
+    },
+    "Consistency & Reliability": {
+      "total": 3,
+      "passed": 3,
+      "score": 0.5,
+      "pass_rate": 1.0
+    }
+  },
+  "detailed_results": {
+    "Basic Functionality": [
+      {
+        "test_name": "Health Check",
+        "success": true,
+        "score": 1.0,
+        "details": "Health check: 200",
+        "execution_time": 0.008230209350585938,
+        "raw_response": {
+          "status": "healthy",
+          "timestamp": 1756268613.9526012,
+          "services": {
+            "model_manager": "healthy",
+            "detection_service": "healthy"
+          },
+          "memory": {
+            "total_memory_mb": 89.8125,
+            "cache_memory_mb": 0.0,
+            "cache_size": 5,
+            "available_memory_mb": 8102.1875,
+            "memory_limit_mb": 8192
+          },
+          "version": "2.0.0"
+        }
+      },
+      {
+        "test_name": "Prime Detection Basic",
+        "success": true,
+        "score": 1.0,
+        "details": "Prime detection: 3 primes found",
+        "execution_time": 0.2929232120513916,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "People",
+                "type": "substantive",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "think",
+                "type": "mental_predicate",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "good",
+                "type": "evaluator",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [],
+            "confidence": 0.8000000000000002,
+            "processing_time": 0.2891108989715576,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.28921079635620117
+        }
+      },
+      {
+        "test_name": "MWE Detection Basic",
+        "success": true,
+        "score": 1.0,
+        "details": "MWE detection: 2 MWEs found",
+        "execution_time": 0.00722813606262207,
+        "raw_response": {
+          "success": true,
+          "mwes": [
+            {
+              "text": "at least",
+              "type": "quantifier",
+              "primes": [
+                "MORE"
+              ],
+              "confidence": 0.8,
+              "start": 0,
+              "end": 8,
+              "language": "en",
+              "frequency": 0
+            },
+            {
+              "text": "half of",
+              "type": "quantifier",
+              "primes": [
+                "HALF"
+              ],
+              "confidence": 0.8,
+              "start": 9,
+              "end": 16,
+              "language": "en",
+              "frequency": 0
+            }
+          ],
+          "primes": [
+            "MORE",
+            "HALF"
+          ],
+          "coverage": {
+            "quantifier": 0.5172413793103449,
+            "total": 0.5172413793103449
+          },
+          "processing_time": 0.003815174102783203,
+          "error": null
+        }
+      },
+      {
+        "test_name": "Text Generation Basic",
+        "success": true,
+        "score": 1.0,
+        "details": "Text generation: 'this is good'",
+        "execution_time": 0.0030601024627685547,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "this is good",
+            "source_primes": [
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 0.0001811981201171875,
+            "target_language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.0001811981201171875
+        }
+      }
+    ],
+    "Prime Detection Accuracy": [
+      {
+        "test_name": "Prime Detection 1",
+        "success": true,
+        "score": 1.0,
+        "details": "Basic evaluative statement: Precision=1.00, Recall=1.00, F1=1.00",
+        "execution_time": 0.09662818908691406,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "People",
+                "type": "substantive",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "think",
+                "type": "mental_predicate",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "very",
+                "type": "descriptor",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "good",
+                "type": "evaluator",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [
+              {
+                "text": "very good",
+                "type": "intensifier",
+                "primes": [
+                  "VERY",
+                  "GOOD"
+                ],
+                "confidence": 0.8,
+                "start": 21,
+                "end": 30,
+                "language": "en",
+                "frequency": 0
+              }
+            ],
+            "confidence": 0.8,
+            "processing_time": 0.09404802322387695,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.0940859317779541
+        }
+      },
+      {
+        "test_name": "Prime Detection 2",
+        "success": true,
+        "score": 0.6666666666666666,
+        "details": "Complex mental predicate: Precision=1.00, Recall=0.50, F1=0.67",
+        "execution_time": 0.09272384643554688,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "want",
+                "type": "mental_predicate",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "read",
+                "type": "action",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "many",
+                "type": "quantifier",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [],
+            "confidence": 0.8000000000000002,
+            "processing_time": 0.08950686454772949,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.08955597877502441
+        }
+      },
+      {
+        "test_name": "Prime Detection 3",
+        "success": true,
+        "score": 0.8,
+        "details": "Negation with evaluator: Precision=1.00, Recall=0.67, F1=0.80",
+        "execution_time": 0.09045100212097168,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "not",
+                "type": "logical_operator",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "bad",
+                "type": "evaluator",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [
+              {
+                "text": "not bad",
+                "type": "negation",
+                "primes": [
+                  "NOT",
+                  "BAD"
+                ],
+                "confidence": 0.8,
+                "start": 8,
+                "end": 15,
+                "language": "en",
+                "frequency": 0
+              }
+            ],
+            "confidence": 0.8000000000000002,
+            "processing_time": 0.08737874031066895,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.0874180793762207
+        }
+      },
+      {
+        "test_name": "Prime Detection 4",
+        "success": true,
+        "score": 0.8571428571428571,
+        "details": "Quantification with action: Precision=1.00, Recall=0.75, F1=0.86",
+        "execution_time": 0.09169888496398926,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "people",
+                "type": "substantive",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "do",
+                "type": "action",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "this",
+                "type": "substantive",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [],
+            "confidence": 0.8000000000000002,
+            "processing_time": 0.08878207206726074,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.08881783485412598
+        }
+      }
+    ],
+    "MWE Detection Accuracy": [
+      {
+        "test_name": "MWE Detection 1",
+        "success": true,
+        "score": 1.0,
+        "details": "Quantifier MWEs: Precision=1.00, Recall=1.00, F1=1.00",
+        "execution_time": 0.0069200992584228516,
+        "raw_response": {
+          "success": true,
+          "mwes": [
+            {
+              "text": "at least",
+              "type": "quantifier",
+              "primes": [
+                "MORE"
+              ],
+              "confidence": 0.8,
+              "start": 0,
+              "end": 8,
+              "language": "en",
+              "frequency": 0
+            },
+            {
+              "text": "a lot of",
+              "type": "quantifier",
+              "primes": [
+                "MANY"
+              ],
+              "confidence": 0.8,
+              "start": 35,
+              "end": 43,
+              "language": "en",
+              "frequency": 0
+            },
+            {
+              "text": "half of",
+              "type": "quantifier",
+              "primes": [
+                "HALF"
+              ],
+              "confidence": 0.8,
+              "start": 9,
+              "end": 16,
+              "language": "en",
+              "frequency": 0
+            }
+          ],
+          "primes": [
+            "MORE",
+            "MANY",
+            "HALF"
+          ],
+          "coverage": {
+            "quantifier": 0.4693877551020408,
+            "total": 0.4693877551020408
+          },
+          "processing_time": 0.004300117492675781,
+          "error": null
+        }
+      },
+      {
+        "test_name": "MWE Detection 2",
+        "success": true,
+        "score": 1.0,
+        "details": "Intensifier MWE: Precision=1.00, Recall=1.00, F1=1.00",
+        "execution_time": 0.006731986999511719,
+        "raw_response": {
+          "success": true,
+          "mwes": [
+            {
+              "text": "very good",
+              "type": "intensifier",
+              "primes": [
+                "VERY",
+                "GOOD"
+              ],
+              "confidence": 0.8,
+              "start": 25,
+              "end": 34,
+              "language": "en",
+              "frequency": 0
+            }
+          ],
+          "primes": [
+            "VERY",
+            "GOOD"
+          ],
+          "coverage": {
+            "intensifier": 0.2647058823529412,
+            "total": 0.2647058823529412
+          },
+          "processing_time": 0.004185199737548828,
+          "error": null
+        }
+      },
+      {
+        "test_name": "MWE Detection 3",
+        "success": true,
+        "score": 0,
+        "details": "Negation MWE: Precision=0.00, Recall=0.00, F1=0.00",
+        "execution_time": 0.0072820186614990234,
+        "raw_response": {
+          "success": true,
+          "mwes": [],
+          "primes": [],
+          "coverage": {
+            "total": 0.0
+          },
+          "processing_time": 0.004182100296020508,
+          "error": null
+        }
+      }
+    ],
+    "Text Generation Quality": [
+      {
+        "test_name": "Text Generation 1",
+        "success": true,
+        "score": 1.0,
+        "details": "Single evaluator: 'this is good' (score: 1.00)",
+        "execution_time": 0.002777099609375,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "this is good",
+            "source_primes": [
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 0.0001201629638671875,
+            "target_language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.0001201629638671875
+        }
+      },
+      {
+        "test_name": "Text Generation 2",
+        "success": true,
+        "score": 1.0,
+        "details": "Intensifier + evaluator: 'very good' (score: 1.00)",
+        "execution_time": 0.002763032913208008,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "very good",
+            "source_primes": [
+              "VERY",
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 8.893013000488281e-05,
+            "target_language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 8.893013000488281e-05
+        }
+      },
+      {
+        "test_name": "Text Generation 3",
+        "success": true,
+        "score": 1.0,
+        "details": "Complex statement: 'people thinks good is good' (score: 1.00)",
+        "execution_time": 0.0033202171325683594,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "people thinks good is good",
+            "source_primes": [
+              "PEOPLE",
+              "THINK",
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 0.0001308917999267578,
+            "target_language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.0001308917999267578
+        }
+      },
+      {
+        "test_name": "Text Generation 4",
+        "success": true,
+        "score": 1.0,
+        "details": "Negation: 'this is not good' (score: 1.00)",
+        "execution_time": 0.002590179443359375,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "this is not good",
+            "source_primes": [
+              "NOT",
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 0.00010585784912109375,
+            "target_language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.00010585784912109375
+        }
+      }
+    ],
+    "Cross-Lingual Capabilities": [
+      {
+        "test_name": "Cross-Lingual en 1",
+        "success": true,
+        "score": 1.0,
+        "details": "Cross-lingual intensifier (en): 'very good' (score: 1.00)",
+        "execution_time": 0.0024619102478027344,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "very good",
+            "source_primes": [
+              "VERY",
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 0.00013589859008789062,
+            "target_language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.00013589859008789062
+        }
+      },
+      {
+        "test_name": "Cross-Lingual es 1",
+        "success": true,
+        "score": 1.0,
+        "details": "Cross-lingual intensifier (es): 'muy bueno' (score: 1.00)",
+        "execution_time": 0.0026428699493408203,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "muy bueno",
+            "source_primes": [
+              "VERY",
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 0.0001361370086669922,
+            "target_language": "es",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.0001361370086669922
+        }
+      },
+      {
+        "test_name": "Cross-Lingual fr 1",
+        "success": true,
+        "score": 1.0,
+        "details": "Cross-lingual intensifier (fr): 'tr\u00e8s bon' (score: 1.00)",
+        "execution_time": 0.002421855926513672,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "tr\u00e8s bon",
+            "source_primes": [
+              "VERY",
+              "GOOD"
+            ],
+            "confidence": 0.9,
+            "processing_time": 0.00010991096496582031,
+            "target_language": "fr",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.00010991096496582031
+        }
+      }
+    ],
+    "System Performance": [
+      {
+        "test_name": "Performance Health Check",
+        "success": true,
+        "score": 0.9995635986328125,
+        "details": "Avg time: 0.002s, Success rate: 1.00",
+        "execution_time": 0.0021820068359375,
+        "raw_response": null
+      },
+      {
+        "test_name": "Performance Prime Detection",
+        "success": true,
+        "score": 0.9809130764007569,
+        "details": "Avg time: 0.095s, Success rate: 1.00",
+        "execution_time": 0.09543461799621582,
+        "raw_response": null
+      },
+      {
+        "test_name": "Performance MWE Detection",
+        "success": true,
+        "score": 0.9987918376922608,
+        "details": "Avg time: 0.006s, Success rate: 1.00",
+        "execution_time": 0.006040811538696289,
+        "raw_response": null
+      },
+      {
+        "test_name": "Performance Text Generation",
+        "success": true,
+        "score": 0.9995104789733886,
+        "details": "Avg time: 0.002s, Success rate: 1.00",
+        "execution_time": 0.0024476051330566406,
+        "raw_response": null
+      }
+    ],
+    "Error Handling": [
+      {
+        "test_name": "Error Handling 1",
+        "success": true,
+        "score": 0.5,
+        "details": "Empty text: Status 422",
+        "execution_time": 0.002103090286254883,
+        "raw_response": {}
+      },
+      {
+        "test_name": "Error Handling 2",
+        "success": true,
+        "score": 1.0,
+        "details": "Very long text: Status 200",
+        "execution_time": 0.09683680534362793,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [],
+            "mwes": [],
+            "confidence": 0.0,
+            "processing_time": 0.09446215629577637,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.09450387954711914
+        }
+      },
+      {
+        "test_name": "Error Handling 3",
+        "success": true,
+        "score": 0.5,
+        "details": "Empty primes list: Status 422",
+        "execution_time": 0.0025720596313476562,
+        "raw_response": {}
+      },
+      {
+        "test_name": "Error Handling 4",
+        "success": true,
+        "score": 1.0,
+        "details": "Invalid prime: Status 200",
+        "execution_time": 0.002256155014038086,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "generated_text": "invalid_prime",
+            "source_primes": [
+              "INVALID_PRIME"
+            ],
+            "confidence": 0.5,
+            "processing_time": 6.890296936035156e-05,
+            "target_language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 6.890296936035156e-05
+        }
+      }
+    ],
+    "Real-World Usefulness": [
+      {
+        "test_name": "Real-World Usefulness 1",
+        "success": true,
+        "score": 0.3333333333333333,
+        "details": "Customer feedback analysis: Primes=['thinks', 'this', 'very', 'good'], Insight score=0.33",
+        "execution_time": 0.10036373138427734,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "thinks",
+                "type": "mental_predicate",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "this",
+                "type": "substantive",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "very",
+                "type": "descriptor",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "good",
+                "type": "evaluator",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [
+              {
+                "text": "very good",
+                "type": "intensifier",
+                "primes": [
+                  "VERY",
+                  "GOOD"
+                ],
+                "confidence": 0.8,
+                "start": 36,
+                "end": 45,
+                "language": "en",
+                "frequency": 0
+              }
+            ],
+            "confidence": 0.8,
+            "processing_time": 0.09795093536376953,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.09798502922058105
+        }
+      },
+      {
+        "test_name": "Real-World Usefulness 2",
+        "success": true,
+        "score": 0.6666666666666666,
+        "details": "Interest quantification: Primes=['Many', 'people', 'want', 'read', 'this'], Insight score=0.67",
+        "execution_time": 0.09506416320800781,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "Many",
+                "type": "quantifier",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "people",
+                "type": "substantive",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "want",
+                "type": "mental_predicate",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "read",
+                "type": "action",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              },
+              {
+                "text": "this",
+                "type": "substantive",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [],
+            "confidence": 0.8,
+            "processing_time": 0.09180521965026855,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.09185194969177246
+        }
+      },
+      {
+        "test_name": "Real-World Usefulness 3",
+        "success": true,
+        "score": 0.3333333333333333,
+        "details": "Expectation mismatch: Primes=['not'], Insight score=0.33",
+        "execution_time": 0.09641885757446289,
+        "raw_response": {
+          "success": true,
+          "result": {
+            "primes": [
+              {
+                "text": "not",
+                "type": "logical_operator",
+                "language": "en",
+                "universality_score": 1.0,
+                "frequency": 1,
+                "related_primes": [],
+                "semantic_cluster": null,
+                "confidence": 0.8
+              }
+            ],
+            "mwes": [],
+            "confidence": 0.8,
+            "processing_time": 0.09362411499023438,
+            "language": "en",
+            "metadata": {}
+          },
+          "error": null,
+          "processing_time": 0.09365677833557129
+        }
+      }
+    ],
+    "Consistency & Reliability": [
+      {
+        "test_name": "Consistency Prime Detection",
+        "success": true,
+        "score": 0.5,
+        "details": "Consistency: False, All 3 calls successful",
+        "execution_time": 0.27749204635620117,
+        "raw_response": [
+          {
+            "success": true,
+            "result": {
+              "primes": [
+                {
+                  "text": "People",
+                  "type": "substantive",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                },
+                {
+                  "text": "think",
+                  "type": "mental_predicate",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                },
+                {
+                  "text": "good",
+                  "type": "evaluator",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                }
+              ],
+              "mwes": [],
+              "confidence": 0.8000000000000002,
+              "processing_time": 0.09676098823547363,
+              "language": "en",
+              "metadata": {}
+            },
+            "error": null,
+            "processing_time": 0.09679532051086426
+          },
+          {
+            "success": true,
+            "result": {
+              "primes": [
+                {
+                  "text": "People",
+                  "type": "substantive",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                },
+                {
+                  "text": "think",
+                  "type": "mental_predicate",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                },
+                {
+                  "text": "good",
+                  "type": "evaluator",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                }
+              ],
+              "mwes": [],
+              "confidence": 0.8000000000000002,
+              "processing_time": 0.08942580223083496,
+              "language": "en",
+              "metadata": {}
+            },
+            "error": null,
+            "processing_time": 0.08946585655212402
+          },
+          {
+            "success": true,
+            "result": {
+              "primes": [
+                {
+                  "text": "People",
+                  "type": "substantive",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                },
+                {
+                  "text": "think",
+                  "type": "mental_predicate",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                },
+                {
+                  "text": "good",
+                  "type": "evaluator",
+                  "language": "en",
+                  "universality_score": 1.0,
+                  "frequency": 1,
+                  "related_primes": [],
+                  "semantic_cluster": null,
+                  "confidence": 0.8
+                }
+              ],
+              "mwes": [],
+              "confidence": 0.8000000000000002,
+              "processing_time": 0.08229398727416992,
+              "language": "en",
+              "metadata": {}
+            },
+            "error": null,
+            "processing_time": 0.08233118057250977
+          }
+        ]
+      },
+      {
+        "test_name": "Consistency MWE Detection",
+        "success": true,
+        "score": 0.5,
+        "details": "Consistency: False, All 3 calls successful",
+        "execution_time": 0.018424034118652344,
+        "raw_response": [
+          {
+            "success": true,
+            "mwes": [
+              {
+                "text": "at least",
+                "type": "quantifier",
+                "primes": [
+                  "MORE"
+                ],
+                "confidence": 0.8,
+                "start": 0,
+                "end": 8,
+                "language": "en",
+                "frequency": 0
+              },
+              {
+                "text": "half of",
+                "type": "quantifier",
+                "primes": [
+                  "HALF"
+                ],
+                "confidence": 0.8,
+                "start": 9,
+                "end": 16,
+                "language": "en",
+                "frequency": 0
+              }
+            ],
+            "primes": [
+              "MORE",
+              "HALF"
+            ],
+            "coverage": {
+              "quantifier": 0.5172413793103449,
+              "total": 0.5172413793103449
+            },
+            "processing_time": 0.003412008285522461,
+            "error": null
+          },
+          {
+            "success": true,
+            "mwes": [
+              {
+                "text": "at least",
+                "type": "quantifier",
+                "primes": [
+                  "MORE"
+                ],
+                "confidence": 0.8,
+                "start": 0,
+                "end": 8,
+                "language": "en",
+                "frequency": 0
+              },
+              {
+                "text": "half of",
+                "type": "quantifier",
+                "primes": [
+                  "HALF"
+                ],
+                "confidence": 0.8,
+                "start": 9,
+                "end": 16,
+                "language": "en",
+                "frequency": 0
+              }
+            ],
+            "primes": [
+              "MORE",
+              "HALF"
+            ],
+            "coverage": {
+              "quantifier": 0.5172413793103449,
+              "total": 0.5172413793103449
+            },
+            "processing_time": 0.003566265106201172,
+            "error": null
+          },
+          {
+            "success": true,
+            "mwes": [
+              {
+                "text": "at least",
+                "type": "quantifier",
+                "primes": [
+                  "MORE"
+                ],
+                "confidence": 0.8,
+                "start": 0,
+                "end": 8,
+                "language": "en",
+                "frequency": 0
+              },
+              {
+                "text": "half of",
+                "type": "quantifier",
+                "primes": [
+                  "HALF"
+                ],
+                "confidence": 0.8,
+                "start": 9,
+                "end": 16,
+                "language": "en",
+                "frequency": 0
+              }
+            ],
+            "primes": [
+              "MORE",
+              "HALF"
+            ],
+            "coverage": {
+              "quantifier": 0.5172413793103449,
+              "total": 0.5172413793103449
+            },
+            "processing_time": 0.003609895706176758,
+            "error": null
+          }
+        ]
+      },
+      {
+        "test_name": "Consistency Text Generation",
+        "success": true,
+        "score": 0.5,
+        "details": "Consistency: False, All 3 calls successful",
+        "execution_time": 0.007115840911865234,
+        "raw_response": [
+          {
+            "success": true,
+            "result": {
+              "generated_text": "this is good",
+              "source_primes": [
+                "GOOD"
+              ],
+              "confidence": 0.9,
+              "processing_time": 6.389617919921875e-05,
+              "target_language": "en",
+              "metadata": {}
+            },
+            "error": null,
+            "processing_time": 6.389617919921875e-05
+          },
+          {
+            "success": true,
+            "result": {
+              "generated_text": "this is good",
+              "source_primes": [
+                "GOOD"
+              ],
+              "confidence": 0.9,
+              "processing_time": 4.982948303222656e-05,
+              "target_language": "en",
+              "metadata": {}
+            },
+            "error": null,
+            "processing_time": 4.982948303222656e-05
+          },
+          {
+            "success": true,
+            "result": {
+              "generated_text": "this is good",
+              "source_primes": [
+                "GOOD"
+              ],
+              "confidence": 0.9,
+              "processing_time": 0.00011181831359863281,
+              "target_language": "en",
+              "metadata": {}
+            },
+            "error": null,
+            "processing_time": 0.00011181831359863281
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -610,21 +610,23 @@
                 
                 const result = await response.json();
                 
-                if (response.ok) {
-                    const detectedPrimes = result.detected_primes || [];
-                    const processingTime = result.processing_time || 0;
+                if (result.success) {
+                    const detectedPrimes = result.result.primes.map(p => p.text) || [];
+                    const processingTime = result.result.processing_time || 0;
+                    const confidence = result.result.confidence || 0;
                     
                     showSuccess('detection-results', `
                         <div class="result-item">
                             <strong>Detected Primes:</strong> ${detectedPrimes.join(', ') || 'None'}
                         </div>
                         <div class="result-item">
+                            <span class="metric">Confidence: ${(confidence * 100).toFixed(1)}%</span>
                             <span class="metric">Processing Time: ${processingTime.toFixed(3)}s</span>
                             <span class="metric">Response Time: ${responseTime}ms</span>
                         </div>
                     `);
                 } else {
-                    showError('detection-results', result.detail || 'Detection failed');
+                    showError('detection-results', result.error || 'Detection failed');
                 }
                 
             } catch (error) {
@@ -660,12 +662,13 @@
                     })
                 });
                 
-                if (detectResponse.ok) {
-                    const detectResult = await detectResponse.json();
-                    const detectedPrimes = detectResult.detected_primes || [];
+                const detectResult = await detectResponse.json();
+                
+                if (detectResult.success) {
+                    const detectedPrimes = detectResult.result.primes.map(p => p.text) || [];
                     
                     // Try to generate in target language
-                    const generateResponse = await fetch(`${API_BASE}/generate/nsm`, {
+                    const generateResponse = await fetch(`${API_BASE}/generate`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -679,9 +682,10 @@
                     const responseTime = Date.now() - startTime;
                     updatePerformanceChart(responseTime);
                     
-                    if (generateResponse.ok) {
-                        const generateResult = await generateResponse.json();
-                        const generatedText = generateResult.generated_text || '';
+                    const generateResult = await generateResponse.json();
+                    
+                    if (generateResult.success) {
+                        const generatedText = generateResult.result.generated_text || '';
                         
                         showSuccess('translation-results', `
                             <div class="result-item">
@@ -738,20 +742,30 @@
                 
                 const result = await response.json();
                 
-                if (response.ok) {
-                    const mwes = result.detected_mwes || [];
+                if (result.success) {
+                    const mwes = result.mwes || [];
+                    const primes = result.primes || [];
                     
                     let output = `<div class="result-item">
                         <strong>Detected MWEs:</strong> ${mwes.length}
                     </div>`;
                     
-                    mwes.forEach((mwe, index) => {
+                    if (mwes.length > 0) {
                         output += `<div class="result-item">
-                            <strong>${index + 1}. ${mwe.text}</strong>
-                            <span class="metric">Type: ${mwe.type}</span>
-                            <span class="metric">Primes: ${mwe.primes.join(', ')}</span>
+                            <strong>MWE Details:</strong>
                         </div>`;
-                    });
+                        mwes.forEach(mwe => {
+                            output += `<div class="result-item">
+                                • "${mwe.text}" → [${mwe.primes.join(', ')}]
+                            </div>`;
+                        });
+                    }
+                    
+                    if (primes.length > 0) {
+                        output += `<div class="result-item">
+                            <strong>Extracted Primes:</strong> ${primes.join(', ')}
+                        </div>`;
+                    }
                     
                     showSuccess('mwe-results', output);
                 } else {

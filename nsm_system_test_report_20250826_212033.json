@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-08-26T21:20:33.990734",
+  "overall_score": 0.8167603790334292,
+  "overall_pass_rate": 1.0,
+  "total_tests": 32,
+  "passed_tests": 32,
+  "assessment": "EXCELLENT - System is working very well",
+  "category_scores": {
+    "Basic Functionality": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "pass_rate": 1.0
+    },
+    "Prime Detection Accuracy": {
+      "total": 4,
+      "passed": 4,
+      "score": 0.8309523809523809,
+      "pass_rate": 1.0
+    },
+    "MWE Detection Accuracy": {
+      "total": 3,
+      "passed": 3,
+      "score": 0.6666666666666666,
+      "pass_rate": 1.0
+    },
+    "Text Generation Quality": {
+      "total": 4,
+      "passed": 4,
+      "score": 1.0,
+      "pass_rate": 1.0
+    },
+    "Cross-Lingual Capabilities": {
+      "total": 3,
+      "passed": 3,
+      "score": 1.0,
+      "pass_rate": 1.0
+    },
+    "System Performance": {
+      "total": 4,
+      "passed": 4,
+      "score": 0.99479731798172,
+      "pass_rate": 1.0
+    },
+    "Error Handling": {
+      "total": 4,
+      "passed": 4,
+      "score": 0.75,
+      "pass_rate": 1.0
+    },
+    "Real-World Usefulness": {
+      "total": 3,
+      "passed": 3,
+      "score": 0.4444444444444444,
+      "pass_rate": 1.0
+    },
+    "Consistency & Reliability": {
+      "total": 3,
+      "passed": 3,
+      "score": 0.5,
+      "pass_rate": 1.0
+    }
+  },
+  "detailed_results": {
+    "Basic Functionality": [
+      

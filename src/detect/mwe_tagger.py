@@ -10,23 +10,10 @@ from typing import List, Dict, Set, Tuple, Optional
 import re
 from dataclasses import dataclass
 from enum import Enum
-
-class MWEType(Enum):
-    """Types of multi-word expressions."""
-    QUANTIFIER = "quantifier"
-    INTENSIFIER = "intensifier"
-    NEGATION = "negation"
-    MODALITY = "modality"
-
-@dataclass
-class MWE:
-    """Multi-word expression."""
-    text: str
-    type: MWEType
-    primes: List[str]
-    confidence: float
-    start: int
-    end: int
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'core', 'domain'))
+from models import MWE, Language, MWEType
 
 class MWETagger:
     """Multi-word expression tagger for NSM detection."""
@@ -69,6 +56,14 @@ class MWETagger:
             "exactly": {"primes": ["SAME"], "confidence": 0.9, "type": "quantifier"},
             "precisely": {"primes": ["SAME"], "confidence": 0.9, "type": "quantifier"},
             "just": {"primes": ["SAME"], "confidence": 0.8, "type": "quantifier"},
+            "a long time": {"primes": ["A_LONG_TIME"], "confidence": 0.9, "type": "quantifier"},
+            "a short time": {"primes": ["A_SHORT_TIME"], "confidence": 0.9, "type": "quantifier"},
+            "for some time": {"primes": ["FOR_SOME_TIME"], "confidence": 0.9, "type": "quantifier"},
+            "there is": {"primes": ["THERE_IS"], "confidence": 0.9, "type": "quantifier"},
+            "there are": {"primes": ["THERE_IS"], "confidence": 0.9, "type": "quantifier"},
+            "be someone": {"primes": ["BE_SOMEONE"], "confidence": 0.9, "type": "quantifier"},
+            "be somewhere": {"primes": ["BE_SOMEWHERE"], "confidence": 0.9, "type": "quantifier"},
+            "the same": {"primes": ["THE_SAME"], "confidence": 0.9, "type": "quantifier"},
             
             # Spanish quantifiers
             "a lo sumo": {"primes": ["NOT", "MORE"], "confidence": 0.9},
@@ -197,11 +192,12 @@ class MWETagger:
                 pattern = re.compile(r'\b' + re.escape(mwe_text.lower()) + r'\b', re.IGNORECASE)
                 self.patterns[lang][mwe_text] = pattern
     
-    def detect_mwes(self, text: str) -> List[MWE]:
+    def detect_mwes(self, text: str, language: Language = Language.ENGLISH) -> List[MWE]:
         """Detect multi-word expressions in text.
         
         Args:
             text: Input text to analyze
+            language: Language of the text (default: English)
             
         Returns:
             List of detected MWEs
@@ -230,7 +226,8 @@ class MWETagger:
                             primes=mwe_info.get("primes", []),
                             confidence=mwe_info.get("confidence", 0.8),
                             start=pos,
-                            end=pos + len(mwe_text)
+                            end=pos + len(mwe_text),
+                            language=language
                         )
                         all_mwes.append(mwe)
                         start_pos = pos + 1
@@ -265,7 +262,8 @@ class MWETagger:
                         primes=mwe_info["primes"],
                         confidence=mwe_info.get("confidence", 0.8),
                         start=start_pos,
-                        end=end_pos
+                        end=end_pos,
+                        language=language
                     ))
         
         # Sort by start position
@@ -334,6 +332,16 @@ class MWETagger:
                 "some of": {"type": MWEType.QUANTIFIER, "primes": ["SOME"]},
                 "all of": {"type": MWEType.QUANTIFIER, "primes": ["ALL"]},
                 "none of": {"type": MWEType.QUANTIFIER, "primes": ["NOT", "SOME"]},
+                
+                # Critical missing MWEs
+                "a long time": {"type": MWEType.QUANTIFIER, "primes": ["A_LONG_TIME"]},
+                "a short time": {"type": MWEType.QUANTIFIER, "primes": ["A_SHORT_TIME"]},
+                "for some time": {"type": MWEType.QUANTIFIER, "primes": ["FOR_SOME_TIME"]},
+                "there is": {"type": MWEType.QUANTIFIER, "primes": ["THERE_IS"]},
+                "there are": {"type": MWEType.QUANTIFIER, "primes": ["THERE_IS"]},
+                "be someone": {"type": MWEType.QUANTIFIER, "primes": ["BE_SOMEONE"]},
+                "be somewhere": {"type": MWEType.QUANTIFIER, "primes": ["BE_SOMEWHERE"]},
+                "the same": {"type": MWEType.QUANTIFIER, "primes": ["THE_SAME"]},
                 
                 # Intensifiers
                 "very": {"type": MWEType.INTENSIFIER, "primes": ["VERY"]},

@@ -37,7 +37,7 @@ class NSMTextGenerator:
             NSMGrammarRule(
                 pattern=["PEOPLE", "THINK", "GOOD"],
                 template="people think this is good",
-                constraints={"subject": "PEOPLE", "object": "THIS"},
+                constraints={},
                 confidence=0.9
             ),
             NSMGrammarRule(

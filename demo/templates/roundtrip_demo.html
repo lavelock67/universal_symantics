@@ -159,7 +159,7 @@
             
             try {
                 // Step 1: Detect primes in source language
-                const detectResponse = await fetch('/api/detect', {
+                const detectResponse = await fetch('http://localhost:8001/detect', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -170,38 +170,35 @@
                     })
                 });
                 
-                if (!detectResponse.ok) {
-                    throw new Error(`Detection failed: ${detectResponse.status}`);
-                }
-                
                 const detectResult = await detectResponse.json();
                 
-                // Step 2: Generate explication using DeepNSM
-                const deepnsmResponse = await fetch('/api/deepnsm', {
+                if (!detectResult.success) {
+                    throw new Error(`Detection failed: ${detectResult.error}`);
+                }
+                
+                // Step 2: Generate text in target language
+                const detectedPrimes = detectResult.result.primes.map(p => p.text) || [];
+                
+                const generateResponse = await fetch('http://localhost:8001/generate', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        text: sourceText,
-                        language: sourceLang,
-                        include_validation: true
+                        primes: detectedPrimes,
+                        target_language: targetLang
                     })
                 });
                 
-                if (!deepnsmResponse.ok) {
-                    throw new Error(`DeepNSM failed: ${deepnsmResponse.status}`);
+                const generateResult = await generateResponse.json();
+                
+                if (!generateResult.success) {
+                    throw new Error(`Generation failed: ${generateResult.error}`);
                 }
                 
-                const deepnsmResult = await deepnsmResponse.json();
-                
                 // Display results
-                const detectedPrimes = detectResult.detected_primes && Array.isArray(detectResult.detected_primes) 
-                    ? detectResult.detected_primes.join(', ') 
-                    : 'None';
-                const primitives = deepnsmResult.explication?.primitives && Array.isArray(deepnsmResult.explication.primitives)
-                    ? deepnsmResult.explication.primitives.join(', ')
-                    : 'None';
+                const primeTexts = detectedPrimes.length > 0 ? detectedPrimes.join(', ') : 'None';
+                const generatedText = generateResult.result.generated_text || 'Generation failed';
                 
                 resultContent.innerHTML = `
                     <div class="success">
@@ -210,18 +207,21 @@
                         <p><strong>Target:</strong> ${targetLang.toUpperCase()}</p>
                         
                         <h5>🔍 Detection Results:</h5>
-                        <p><strong>Detected Primes:</strong> ${detectedPrimes}</p>
-                        <p><strong>Processing Time:</strong> ${detectResult.processing_time?.toFixed(3)}s</p>
+                        <p><strong>Detected Primes:</strong> ${primeTexts}</p>
+                        <p><strong>Confidence:</strong> ${(detectResult.result.confidence * 100).toFixed(1)}%</p>
+                        <p><strong>Processing Time:</strong> ${detectResult.result.processing_time?.toFixed(3)}s</p>
                         
-                        <h5>🧠 DeepNSM Explication:</h5>
-                        <p><strong>Primitives:</strong> ${primitives}</p>
-                        <p><strong>Explication:</strong> ${deepnsmResult.explication?.explication || 'None'}</p>
-                        <p><strong>Confidence:</strong> ${deepnsmResult.explication?.confidence || 'N/A'}</p>
+                        <h5>🌐 Translation Results:</h5>
+                        <p><strong>Generated Text:</strong> "${generatedText}"</p>
+                        <p><strong>Generation Confidence:</strong> ${(generateResult.result.confidence * 100).toFixed(1)}%</p>
+                        <p><strong>Generation Time:</strong> ${generateResult.result.processing_time?.toFixed(3)}s</p>
                         
                         <h5>📊 System Status:</h5>
                         <p><strong>Source Language:</strong> ${sourceLang.toUpperCase()}</p>
                         <p><strong>Target Language:</strong> ${targetLang.toUpperCase()}</p>
                         <p><strong>Cross-language Support:</strong> ✅ Active</p>
+                        <p><strong>UD Integration:</strong> ✅ Active</p>
+                        <p><strong>MWE Detection:</strong> ✅ Active</p>
                     </div>
                 `;
                 
