@@ -89,15 +89,16 @@ class UnifiedTranslationPipeline:
             # Step 1: Semantic Analysis
             step1 = PipelineStep("semantic_analysis", time.time())
             try:
-                detected_primes = self.detection_service.detect_primes(
+                detection_result = self.detection_service.detect_primes(
                     request.source_text, 
                     request.source_language
                 )
+                detected_primes = detection_result.primes
                 step1.success = True
                 step1.end_time = time.time()
                 step1.metadata = {
                     "primes_detected": len(detected_primes),
-                    "prime_names": [p.prime_name for p in detected_primes]
+                    "prime_names": [p.text for p in detected_primes]
                 }
                 pipeline_steps.append(step1)
                 logger.info(f"Semantic analysis completed: {len(detected_primes)} primes detected")

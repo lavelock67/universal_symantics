@@ -112,8 +112,8 @@ class UniversalTranslator:
             nodes.append({
                 "id": f"prime_{i}",
                 "type": "prime",
-                "text": prime.prime_name,
-                "prime_type": prime.prime_type,
+                "text": prime.text,
+                "prime_type": prime.type.value,
                 "confidence": prime.confidence
             })
         
