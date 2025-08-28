@@ -960,11 +960,11 @@ class NSMDetectionService(DetectionService):
         return matches
 
     def _detect_primes_semantic_enhanced(self, doc, language: Language) -> List[NSMPrime]:
-        """Enhanced semantic detection using comprehensive embeddings."""
+        """Enhanced semantic detection using comprehensive embeddings - CANONICAL PRIMES ONLY."""
         primes = []
         
-        # Get comprehensive prime embeddings for the language
-        known_primes = self._get_comprehensive_prime_embeddings(language)
+        # Get ONLY canonical NSM prime embeddings (no language-specific variations)
+        canonical_primes = self._get_canonical_prime_embeddings()
         
         # Process each token for semantic similarity
         for token in doc:
@@ -972,22 +972,24 @@ class NSMDetectionService(DetectionService):
             if token.is_punct or token.is_space:
                 continue
             
+            # Skip very short tokens (likely noise)
+            if len(token.text) < 2:
+                continue
+            
             # Get token embedding
             token_embedding = self.sbert_model.encode(token.text)
             
-            # Compare with all known primes
-            for prime_text, prime_type in known_primes.items():
+            # Compare with canonical primes only
+            for prime_text, prime_type in canonical_primes.items():
                 prime_embedding = self.sbert_model.encode(prime_text)
                 similarity = self._cosine_similarity(token_embedding, prime_embedding)
                 
-                # Lower threshold for better coverage
-                if similarity > 0.5:  # Reduced from 0.7
+                # Higher threshold to reduce false positives
+                if similarity > 0.75:  # Increased from 0.5
                     # Ensure confidence is between 0.0 and 1.0
                     confidence = max(0.0, min(1.0, similarity))
-                    # Get canonical English prime name for cross-lingual consistency
-                    canonical_prime_name = self._get_canonical_prime_name(prime_text, language)
                     prime_obj = NSMPrime(
-                        text=canonical_prime_name,
+                        text=prime_text.upper(),  # Use canonical English prime name
                         type=prime_type,
                         language=language,
                         confidence=confidence,
@@ -995,19 +997,17 @@ class NSMDetectionService(DetectionService):
                     )
                     primes.append(prime_obj)
         
-        # Also check document-level semantic similarity
+        # Document-level semantic similarity (more restrictive)
         doc_embedding = self.sbert_model.encode(doc.text)
-        for prime_text, prime_type in known_primes.items():
+        for prime_text, prime_type in canonical_primes.items():
             prime_embedding = self.sbert_model.encode(prime_text)
             similarity = self._cosine_similarity(doc_embedding, prime_embedding)
             
-            if similarity > 0.6:  # Document-level threshold
+            if similarity > 0.8:  # Higher document-level threshold
                 # Ensure confidence is between 0.0 and 1.0
                 confidence = max(0.0, min(1.0, similarity))
-                # Get canonical English prime name for cross-lingual consistency
-                canonical_prime_name = self._get_canonical_prime_name(prime_text, language)
                 prime_obj = NSMPrime(
-                    text=canonical_prime_name,
+                    text=prime_text.upper(),  # Use canonical English prime name
                     type=prime_type,
                     language=language,
                     confidence=confidence,
@@ -1327,6 +1327,104 @@ class NSMDetectionService(DetectionService):
             ))
         
         return primes
+
+    def _get_canonical_prime_embeddings(self) -> Dict[str, PrimeType]:
+        """Get ONLY the 65 canonical NSM primes from Anna Wierzbicka's theory - no language variations."""
+        # ONLY the 65 canonical NSM primes - no language-specific variations
+        canonical_primes = {
+            # Phase 1: Substantives (7 primes)
+            "i": PrimeType.SUBSTANTIVE,
+            "you": PrimeType.SUBSTANTIVE,
+            "someone": PrimeType.SUBSTANTIVE,
+            "people": PrimeType.SUBSTANTIVE,
+            "something": PrimeType.SUBSTANTIVE,
+            "thing": PrimeType.SUBSTANTIVE,
+            "body": PrimeType.SUBSTANTIVE,
+            
+            # Phase 2: Relational substantives (2 primes)
+            "kind": PrimeType.SUBSTANTIVE,
+            "part": PrimeType.SUBSTANTIVE,
+            
+            # Phase 3: Determiners and quantifiers (9 primes)
+            "this": PrimeType.SUBSTANTIVE,
+            "the_same": PrimeType.SUBSTANTIVE,
+            "other": PrimeType.SUBSTANTIVE,
+            "one": PrimeType.QUANTIFIER,
+            "two": PrimeType.QUANTIFIER,
+            "some": PrimeType.QUANTIFIER,
+            "all": PrimeType.QUANTIFIER,
+            "much": PrimeType.QUANTIFIER,
+            "many": PrimeType.QUANTIFIER,
+            
+            # Phase 4: Evaluators and descriptors (4 primes)
+            "good": PrimeType.EVALUATOR,
+            "bad": PrimeType.EVALUATOR,
+            "big": PrimeType.DESCRIPTOR,
+            "small": PrimeType.DESCRIPTOR,
+            
+            # Phase 5: Mental predicates (6 primes)
+            "think": PrimeType.MENTAL_PREDICATE,
+            "know": PrimeType.MENTAL_PREDICATE,
+            "want": PrimeType.MENTAL_PREDICATE,
+            "feel": PrimeType.MENTAL_PREDICATE,
+            "see": PrimeType.MENTAL_PREDICATE,
+            "hear": PrimeType.MENTAL_PREDICATE,
+            
+            # Phase 6: Speech (4 primes)
+            "say": PrimeType.MENTAL_PREDICATE,
+            "words": PrimeType.SUBSTANTIVE,
+            "true": PrimeType.EVALUATOR,
+            "false": PrimeType.EVALUATOR,
+            
+            # Phase 7: Actions and events (4 primes)
+            "do": PrimeType.ACTION,
+            "happen": PrimeType.ACTION,
+            "move": PrimeType.ACTION,
+            "touch": PrimeType.ACTION,
+            
+            # Phase 8: Location, existence, possession, specification (4 primes)
+            "be_somewhere": PrimeType.SPATIAL,
+            "there_is": PrimeType.SPATIAL,
+            "have": PrimeType.MODAL,
+            "be_someone": PrimeType.SUBSTANTIVE,
+            
+            # Phase 9: Life and death (2 primes)
+            "live": PrimeType.ACTION,
+            "die": PrimeType.ACTION,
+            
+            # Phase 10: Time (8 primes)
+            "when": PrimeType.TEMPORAL,
+            "now": PrimeType.TEMPORAL,
+            "before": PrimeType.TEMPORAL,
+            "after": PrimeType.TEMPORAL,
+            "a_long_time": PrimeType.TEMPORAL,
+            "a_short_time": PrimeType.TEMPORAL,
+            "for_some_time": PrimeType.TEMPORAL,
+            "moment": PrimeType.TEMPORAL,
+            
+            # Phase 11: Space (7 primes)
+            "where": PrimeType.SPATIAL,
+            "here": PrimeType.SPATIAL,
+            "above": PrimeType.SPATIAL,
+            "below": PrimeType.SPATIAL,
+            "far": PrimeType.SPATIAL,
+            "near": PrimeType.SPATIAL,
+            "inside": PrimeType.SPATIAL,
+            
+            # Logical concepts (5 primes)
+            "not": PrimeType.LOGICAL_OPERATOR,
+            "maybe": PrimeType.LOGICAL_OPERATOR,
+            "can": PrimeType.MODAL,
+            "because": PrimeType.LOGICAL_OPERATOR,
+            "if": PrimeType.LOGICAL_OPERATOR,
+            
+            # Intensifier and augmentor (3 primes)
+            "very": PrimeType.INTENSIFIER,
+            "more": PrimeType.QUANTIFIER,
+            "like": PrimeType.INTENSIFIER,
+        }
+        
+        return canonical_primes
 
     def _get_comprehensive_prime_embeddings(self, language: Language) -> Dict[str, PrimeType]:
         """Get comprehensive prime embeddings for semantic detection - CANONICAL NSM PRIMES ONLY."""

@@ -368,16 +368,333 @@ class MissingPrimeDetector:
         
         return True
     
+    def detect_false(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect FALSE prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for false-related terms
+            false_patterns = {
+                Language.SPANISH: ["falso", "falsa", "falsos", "falsas"],
+                Language.FRENCH: ["faux", "fausse", "fausses", "faux"],
+                Language.ENGLISH: ["false", "falsely"]
+            }
+            
+            patterns = false_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="FALSE",
+                        type=PrimeType.EVALUATOR,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting FALSE: {e}")
+        
+        return primes
+    
+    def detect_do(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect DO prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for do-related terms
+            do_patterns = {
+                Language.SPANISH: ["hacer", "hace", "hacen", "hacerlo", "funcionir", "funcionar"],
+                Language.FRENCH: ["faire", "fait", "font", "faire"],
+                Language.ENGLISH: ["do", "does", "doing", "done"]
+            }
+            
+            patterns = do_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="DO",
+                        type=PrimeType.ACTION,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting DO: {e}")
+        
+        return primes
+    
+    def detect_happen(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect HAPPEN prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for happen-related terms
+            happen_patterns = {
+                Language.SPANISH: ["pasar", "pasa", "pasan", "pasará"],
+                Language.FRENCH: ["arriver", "arrive", "arrivent", "arrivera"],
+                Language.ENGLISH: ["happen", "happens", "happening", "happened"]
+            }
+            
+            patterns = happen_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="HAPPEN",
+                        type=PrimeType.ACTION,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting HAPPEN: {e}")
+        
+        return primes
+    
+    def detect_half(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect HALF prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for half-related terms
+            half_patterns = {
+                Language.SPANISH: ["mitad", "medio", "media"],
+                Language.FRENCH: ["moitié", "demi", "demie"],
+                Language.ENGLISH: ["half", "halves"]
+            }
+            
+            patterns = half_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="HALF",
+                        type=PrimeType.QUANTIFIER,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting HALF: {e}")
+        
+        return primes
+    
+    def detect_people(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect PEOPLE prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for people-related terms
+            people_patterns = {
+                Language.SPANISH: ["gente", "personas", "gente"],
+                Language.FRENCH: ["gens", "personnes", "gens"],
+                Language.ENGLISH: ["people", "persons", "folk"]
+            }
+            
+            patterns = people_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="PEOPLE",
+                        type=PrimeType.SUBSTANTIVE,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting PEOPLE: {e}")
+        
+        return primes
+    
+    def detect_read(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect READ prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for read-related terms
+            read_patterns = {
+                Language.SPANISH: ["leer", "lee", "leen", "leyendo"],
+                Language.FRENCH: ["lire", "lit", "lisent", "lisant"],
+                Language.ENGLISH: ["read", "reads", "reading", "read"]
+            }
+            
+            patterns = read_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="READ",
+                        type=PrimeType.ACTION,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting READ: {e}")
+        
+        return primes
+    
+    def detect_many(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect MANY prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for many-related terms
+            many_patterns = {
+                Language.SPANISH: ["muchos", "muchas", "mucho", "mucha"],
+                Language.FRENCH: ["beaucoup", "nombreux", "nombreuse"],
+                Language.ENGLISH: ["many", "much", "numerous"]
+            }
+            
+            patterns = many_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="MANY",
+                        type=PrimeType.QUANTIFIER,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting MANY: {e}")
+        
+        return primes
+    
+    def detect_this(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect THIS prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for this-related terms
+            this_patterns = {
+                Language.SPANISH: ["esto", "esta", "este", "estos", "estas"],
+                Language.FRENCH: ["ceci", "cette", "ce", "ces"],
+                Language.ENGLISH: ["this", "these", "that", "those"]
+            }
+            
+            patterns = this_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="THIS",
+                        type=PrimeType.SUBSTANTIVE,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting THIS: {e}")
+        
+        return primes
+    
+    def detect_not(self, text: str, language: Language) -> List[NSMPrime]:
+        """Detect NOT prime."""
+        primes = []
+        
+        if language not in self.nlp_models:
+            return primes
+        
+        try:
+            doc = self.nlp_models[language](text)
+            
+            # Look for not-related terms
+            not_patterns = {
+                Language.SPANISH: ["no", "nunca", "jamás"],
+                Language.FRENCH: ["ne", "pas", "jamais", "plus"],
+                Language.ENGLISH: ["not", "never", "no"]
+            }
+            
+            patterns = not_patterns.get(language, [])
+            for token in doc:
+                if token.lemma_.lower() in patterns:
+                    primes.append(NSMPrime(
+                        text="NOT",
+                        type=PrimeType.LOGICAL_OPERATOR,
+                        language=language,
+                        confidence=0.9,
+                        frequency=1
+                    ))
+                    break
+            
+        except Exception as e:
+            print(f"Error detecting NOT: {e}")
+        
+        return primes
+    
     def detect_all_missing_primes(self, text: str, language: Language) -> Dict[str, float]:
-        """Detect all missing primes (ABOVE, INSIDE, NEAR, ONE, WORDS) and return as dict."""
+        """Detect all missing primes and return as dict."""
         results = {}
         
-        # Detect each missing prime
+        # Detect the 5 original missing primes
         above_primes = self.detect_above(text, language)
         inside_primes = self.detect_inside(text, language)
         near_primes = self.detect_near(text, language)
         one_primes = self.detect_one(text, language)
         words_primes = self.detect_words(text, language)
+        
+        # Detect additional expected primes
+        false_primes = self.detect_false(text, language)
+        not_primes = self.detect_not(text, language)
+        do_primes = self.detect_do(text, language)
+        happen_primes = self.detect_happen(text, language)
+        half_primes = self.detect_half(text, language)
+        people_primes = self.detect_people(text, language)
+        read_primes = self.detect_read(text, language)
+        many_primes = self.detect_many(text, language)
+        this_primes = self.detect_this(text, language)
         
         # Convert to dict format expected by the detection service
         for prime in above_primes:
@@ -389,6 +706,24 @@ class MissingPrimeDetector:
         for prime in one_primes:
             results[prime.text] = prime.confidence
         for prime in words_primes:
+            results[prime.text] = prime.confidence
+        for prime in false_primes:
+            results[prime.text] = prime.confidence
+        for prime in not_primes:
+            results[prime.text] = prime.confidence
+        for prime in do_primes:
+            results[prime.text] = prime.confidence
+        for prime in happen_primes:
+            results[prime.text] = prime.confidence
+        for prime in half_primes:
+            results[prime.text] = prime.confidence
+        for prime in people_primes:
+            results[prime.text] = prime.confidence
+        for prime in read_primes:
+            results[prime.text] = prime.confidence
+        for prime in many_primes:
+            results[prime.text] = prime.confidence
+        for prime in this_primes:
             results[prime.text] = prime.confidence
         
         return results

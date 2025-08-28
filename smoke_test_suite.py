@@ -295,7 +295,26 @@ class SmokeTestSuite:
                 print(f"Result: {translated_text}")
                 
                 # Basic validation
-                if translated_text and not translated_text.startswith("[Translation Error"):
+                if translated_text and hasattr(translated_text, 'adapted_text'):
+                    # Handle AdaptationResult object
+                    adapted_text = translated_text.adapted_text
+                    if adapted_text and not adapted_text.startswith("[Translation Error"):
+                        print("✅ PASSED")
+                        results["passed"] += 1
+                        results["details"].append({
+                            "test": test['name'],
+                            "status": "PASSED",
+                            "translated_text": adapted_text
+                        })
+                    else:
+                        print("❌ FAILED")
+                        results["failed"] += 1
+                        results["details"].append({
+                            "test": test['name'],
+                            "status": "FAILED",
+                            "translated_text": adapted_text
+                        })
+                elif translated_text and not translated_text.startswith("[Translation Error"):
                     print("✅ PASSED")
                     results["passed"] += 1
                     results["details"].append({
