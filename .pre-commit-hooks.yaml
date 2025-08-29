@@ -1,0 +1,32 @@
+repos:
+  - repo: local
+    hooks:
+      - id: no-mocks-in-prod
+        name: No Mocks in Production
+        entry: bash -c 'grep -r --include="*.py" -E "#\s*MOCK|\bMock[A-Za-z]*\b|return\s+\[\]\s*#\s*mock|raise\s+NotImplementedError" src/ && exit 1 || exit 0'
+        language: system
+        description: "Prevent mock structures in production code"
+        
+      - id: only-semgen-emits-primes
+        name: Only SemanticGenerator Emits Primes
+        entry: bash -c 'grep -r --include="*.py" -E "emit_prime|\.primes\s*=" src/ | grep -v "src/semgen/" && exit 1 || exit 0'
+        language: system
+        description: "Ensure only SemanticGenerator emits primes (ADR-001)"
+        
+      - id: no-pattern-matching-detectors
+        name: No Pattern Matching Detectors
+        entry: bash -c 'grep -r --include="*.py" -E "pattern.*match|regex.*prime|string.*prime" src/detect/ && exit 1 || exit 0'
+        language: system
+        description: "Prevent pattern matching prime detectors"
+        
+      - id: pipeline-path-semantic
+        name: Pipeline Path Must Be Semantic
+        entry: bash -c 'grep -r --include="*.py" -E "pipeline_path.*semantic|manual_detector_count.*0" src/ || echo "Pipeline path checks found"'
+        language: system
+        description: "Ensure semantic pipeline path is asserted"
+        
+      - id: official-primes-only
+        name: Official Primes Only
+        entry: bash -c 'grep -r --include="*.py" -E "BOY|HOUSE|BALL|KICK|THE\b|A\b|AN\b" src/ | grep -v "test" | grep -v "comment" && exit 1 || exit 0'
+        language: system
+        description: "Prevent non-official primes in production code"

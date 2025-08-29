@@ -10,6 +10,7 @@ from dataclasses import dataclass
 
 # EILGraph is defined in generator.py, so we'll use a type hint
 EILGraph = Any  # Type hint for EILGraph
+from .timing import timed_method
 
 
 @dataclass
@@ -58,6 +59,7 @@ class PrimeSparsifier:
     def __init__(self, config: PrimeSparsifierConfig = None):
         self.config = config or PrimeSparsifierConfig()
     
+    @timed_method("sparsify", "semantic")
     def sparsify(self, graph: EILGraph) -> EILGraph:
         """
         Remove unlicensed primes from the graph.

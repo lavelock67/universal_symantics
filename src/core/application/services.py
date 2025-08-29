@@ -9,18 +9,19 @@ architecture principles and proper dependency injection.
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
 import time
+import numpy as np
 
-from src.shared.config.settings import get_settings
-from src.shared.logging.logger import get_logger, PerformanceContext
-from src.shared.exceptions.exceptions import (
+from ...shared.config.settings import get_settings
+from ...shared.logging.logger import get_logger, PerformanceContext
+from ...shared.exceptions.exceptions import (
     NSMBaseException, DiscoveryError, CorpusProcessingError, 
     PerformanceError, create_error_context
 )
-from src.core.domain.models import (
+from ..domain.models import (
     NSMPrime, MWE, PrimeCandidate, Corpus, DetectionResult, 
     DiscoveryResult, GenerationResult, Language, PrimeType, MWEType
 )
-from src.core.infrastructure.model_manager import get_model_manager
+from ..infrastructure.model_manager import get_model_manager
 
 
 class DetectionService(ABC):
@@ -92,7 +93,7 @@ class NSMDetectionService(DetectionService):
             
             # Initialize UD detector (from srl_ud_detectors.py)
             try:
-                from src.detect.srl_ud_detectors import detect_primitives_dep, detect_primitives_lexical
+                from ...detect.srl_ud_detectors import detect_primitives_dep, detect_primitives_lexical
                 self.ud_detector = {
                     'dependency': detect_primitives_dep,
                     'lexical': detect_primitives_lexical
@@ -104,21 +105,22 @@ class NSMDetectionService(DetectionService):
             
             # Initialize MWE detector (from mwe_tagger.py)
             try:
-                from src.detect.mwe_tagger import MWETagger
+                from ...detect.mwe_tagger import MWETagger
                 self.mwe_detector = MWETagger()
                 self.logger.info("Loaded MWE detector for multi-word expressions")
             except Exception as e:
                 self.logger.warning(f"Failed to load MWE detector: {str(e)}")
                 self.mwe_detector = None
             
-            # Initialize Missing Prime Detector (from implement_missing_primes.py)
-            try:
-                from implement_missing_primes import MissingPrimeDetector
-                self.missing_prime_detector = MissingPrimeDetector()
-                self.logger.info("Loaded Missing Prime Detector for ABOVE/INSIDE/NEAR/ONE/WORDS")
-            except Exception as e:
-                self.logger.warning(f"Failed to load Missing Prime Detector: {str(e)}")
-                self.missing_prime_detector = None
+            # Initialize Missing Prime Detector (commented out - module doesn't exist)
+            # try:
+            #     from ...detect.implement_missing_primes import MissingPrimeDetector
+            #     self.missing_prime_detector = MissingPrimeDetector()
+            #     self.logger.info("Loaded Missing Prime Detector for ABOVE/INSIDE/NEAR/ONE/WORDS")
+            # except Exception as e:
+            #     self.logger.warning(f"Failed to load Missing Prime Detector: {str(e)}")
+            #     self.missing_prime_detector = None
+            self.missing_prime_detector = None
             
         except Exception as e:
             self.logger.error(f"Failed to initialize detection components: {str(e)}")
@@ -231,13 +233,25 @@ class NSMDetectionService(DetectionService):
                 # Calculate processing time
                 processing_time = time.time() - start_time
                 
+                # Add pipeline metadata
+                metadata = {
+                    "pipeline_path": "semantic",
+                    "manual_detector_count": 0,
+                    "detection_methods": ["semantic_enhanced", "ud_enhanced", "mwe", "missing_prime"],
+                    "semantic_enhanced_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'semantic_enhanced']),
+                    "ud_enhanced_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'ud_enhanced']),
+                    "mwe_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'mwe']),
+                    "missing_prime_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'missing_prime'])
+                }
+                
                 return DetectionResult(
                     primes=unique_primes,
                     mwes=mwes,
                     confidence=confidence,
                     processing_time=processing_time,
                     language=language,
-                    source_text=text
+                    source_text=text,
+                    metadata=metadata
                 )
                 
             except Exception as e:
@@ -815,7 +829,6 @@ class NSMDetectionService(DetectionService):
     
     def _cosine_similarity(self, vec1, vec2) -> float:
         """Calculate cosine similarity between two vectors."""
-        import numpy as np
         return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
     
     def _get_known_primes(self, language: Language) -> Dict[str, PrimeType]:

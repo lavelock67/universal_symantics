@@ -1,6 +1,6 @@
 # Universal Translator Evaluation Report
 
-**Timestamp**: 2025-08-28T21:34:49.382742
+**Timestamp**: 2025-08-29T07:50:33.746725
 **Languages**: en, es, fr
 **Modes**: standard, neural, hybrid
 
@@ -34,15 +34,15 @@
 - **invariants_glossary**: ❌ FAIL
 - **performance**: ❌ FAIL
 
-## Failures (27 total)
+## Failures (45 total)
 
+- **NEAR_es_01** (prime): "Attempt to overwrite 'exc_info' in LogRecord"
 - **NEAR_es_01** (prime): Test failed
 - **NEAR_es_01** (prime): Test failed
-- **NEAR_es_01** (prime): Test failed
-- **NEGATION_es_01** (scope): Test failed
-- **NEGATION_es_01** (scope): Test failed
-- **NEGATION_es_01** (scope): Test failed
-- **QUANTIFIER_fr_01** (scope): Test failed
-- **QUANTIFIER_fr_01** (scope): Test failed
-- **QUANTIFIER_fr_01** (scope): Test failed
-- **IDIOM_en_01** (idiom): Test failed
+- **INSIDE_es_01** (prime): "Attempt to overwrite 'exc_info' in LogRecord"
+- **INSIDE_es_01** (prime): Test failed
+- **INSIDE_es_01** (prime): Test failed
+- **ABOVE_fr_01** (prime): "Attempt to overwrite 'exc_info' in LogRecord"
+- **ABOVE_fr_01** (prime): Test failed
+- **ABOVE_fr_01** (prime): Test failed
+- **ONE_fr_01** (prime): "Attempt to overwrite 'exc_info' in LogRecord"

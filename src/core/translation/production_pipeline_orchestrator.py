@@ -4,7 +4,6 @@ Comprehensive end-to-end translation pipeline with observability, error handling
 """
 
 import time
-import logging
 import asyncio
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Any, Union
@@ -21,12 +20,8 @@ from ..generation.neural_generator import MultilingualNeuralGenerator
 from ..generation.prime_generator import PrimeGenerator
 from .universal_translator import UniversalTranslator
 from .unified_translation_pipeline import UnifiedTranslationPipeline
-from cultural_adaptation_system import CulturalAdaptationSystem
-from neural_realizer_with_guarantees import GlossaryBinder
 from ...realize.neural import NeuralRealizer
-from ud_srl_enhanced_decomposition import UDSRLEnhancedDecompositionEngine
-from knowledge_graph_integrator import KnowledgeGraphIntegrator
-from improved_entity_extraction import ImprovedEntityExtractor
+from ...shared.logging import get_logger, log_error, PerformanceContext
 
 # Prometheus metrics
 TRANSLATION_REQUESTS = Counter('translation_requests_total', 'Total translation requests', ['source_lang', 'target_lang', 'mode'])
@@ -104,38 +99,89 @@ class ProductionPipelineOrchestrator:
     
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         self.config = config or {}
-        self.logger = logging.getLogger(__name__)
+        self.logger = get_logger("production_pipeline")
         
-        # Initialize core components
-        self.detection_service = NSMDetectionService()  # Keep for compatibility
-        # Use semantic generator - the ONLY place allowed to emit primes
-        from ...semgen.generator import SemanticGenerator
-        self.semantic_generator = SemanticGenerator()
-        self.universal_translator = UniversalTranslator()
-        self.neural_generator = MultilingualNeuralGenerator()
-        self.prime_generator = PrimeGenerator()
-        self.cultural_adapter = CulturalAdaptationSystem()
-        # Create a mock backend for now - would be Marian/M2M/NLLB in production
-        class MockBackend:
-            def generate(self, eil, lang, binder=None, config=None):
-                return f"Generated text in {lang}"
-        mock_backend = MockBackend()
-        self.neural_realizer = NeuralRealizer(mock_backend)
-        self.ud_srl_engine = UDSRLEnhancedDecompositionEngine()
-        self.kg_integrator = KnowledgeGraphIntegrator()
-        self.entity_extractor = ImprovedEntityExtractor()
-        
-        # Unified pipeline for fallback
-        self.unified_pipeline = UnifiedTranslationPipeline()
-        
-        # Thread pool for parallel processing
-        self.executor = ThreadPoolExecutor(max_workers=4)
-        
-        # Performance tracking
-        self.request_count = 0
-        self.error_count = 0
-        
-        self.logger.info("Production Pipeline Orchestrator initialized")
+        try:
+            # Initialize core components
+            self.detection_service = NSMDetectionService()  # Keep for compatibility
+            self.logger.info("NSMDetectionService initialized successfully")
+            
+            # Use semantic generator - the ONLY place allowed to emit primes
+            from ...semgen.generator import SemanticGenerator
+            self.semantic_generator = SemanticGenerator()
+            self.logger.info("SemanticGenerator initialized successfully")
+            
+            self.universal_translator = UniversalTranslator()
+            self.logger.info("UniversalTranslator initialized successfully")
+            
+            self.neural_generator = MultilingualNeuralGenerator()
+            self.logger.info("MultilingualNeuralGenerator initialized successfully")
+            
+            self.prime_generator = PrimeGenerator()
+            self.logger.info("PrimeGenerator initialized successfully")
+            
+            # Try to initialize optional components
+            try:
+                from cultural_adaptation_system import CulturalAdaptationSystem
+                self.cultural_adapter = CulturalAdaptationSystem()
+                self.logger.info("CulturalAdaptationSystem initialized successfully")
+            except ImportError as e:
+                self.logger.warning(f"CulturalAdaptationSystem not available: {e}")
+                self.cultural_adapter = None
+            
+            try:
+                from ud_srl_enhanced_decomposition import UDSRLEnhancedDecompositionEngine
+                self.ud_srl_engine = UDSRLEnhancedDecompositionEngine()
+                self.logger.info("UDSRLEnhancedDecompositionEngine initialized successfully")
+            except ImportError as e:
+                self.logger.warning(f"UDSRLEnhancedDecompositionEngine not available: {e}")
+                self.ud_srl_engine = None
+            
+            try:
+                from knowledge_graph_integrator import KnowledgeGraphIntegrator
+                self.kg_integrator = KnowledgeGraphIntegrator()
+                self.logger.info("KnowledgeGraphIntegrator initialized successfully")
+            except ImportError as e:
+                self.logger.warning(f"KnowledgeGraphIntegrator not available: {e}")
+                self.kg_integrator = None
+            
+            try:
+                from improved_entity_extraction import ImprovedEntityExtractor
+                self.entity_extractor = ImprovedEntityExtractor()
+                self.logger.info("ImprovedEntityExtractor initialized successfully")
+            except ImportError as e:
+                self.logger.warning(f"ImprovedEntityExtractor not available: {e}")
+                self.entity_extractor = None
+            
+            # Initialize neural realizer with proper backend
+            try:
+                # Try to use a real backend if available
+                from ...realize.backends import get_backend
+                backend = get_backend()
+                self.neural_realizer = NeuralRealizer(backend)
+                self.logger.info("NeuralRealizer initialized with real backend")
+            except ImportError as e:
+                # No mock fallback - fail fast if backend is not available
+                self.logger.error(f"NeuralRealizer backend not available: {e}")
+                raise RuntimeError(f"NeuralRealizer backend not available: {e}")
+            
+            # Unified pipeline for fallback
+            self.unified_pipeline = UnifiedTranslationPipeline()
+            self.logger.info("UnifiedTranslationPipeline initialized successfully")
+            
+            # Thread pool for parallel processing
+            self.executor = ThreadPoolExecutor(max_workers=4)
+            
+            # Performance tracking
+            self.request_count = 0
+            self.error_count = 0
+            
+            self.logger.info("Production Pipeline Orchestrator initialized successfully")
+            
+        except Exception as e:
+            self.logger.error(f"Failed to initialize Production Pipeline Orchestrator: {e}")
+            log_error(e, {"context": "pipeline_initialization"})
+            raise
     
     async def translate(self, request: ProductionTranslationRequest) -> ProductionTranslationResult:
         """
@@ -182,6 +228,13 @@ class ProductionPipelineOrchestrator:
             self.error_count += 1
             error_msg = f"Translation failed: {str(e)}"
             self.logger.error(error_msg, exc_info=True)
+            log_error(e, {
+                "context": "translation_request",
+                "source_language": request.source_language,
+                "target_language": request.target_language,
+                "mode": request.mode.value,
+                "text_length": len(request.source_text)
+            })
             
             # Record error metrics
             TRANSLATION_ERRORS.labels(
@@ -330,41 +383,68 @@ class ProductionPipelineOrchestrator:
         """Detect primes using semantic decomposition."""
         loop = asyncio.get_event_loop()
         
-        # Use UD + SRL decomposition to generate NSM primes
-        semantic_decomp = await asyncio.wait_for(
-            loop.run_in_executor(self.executor, self.ud_srl_engine.decompose_with_ud_srl, text, language),
-            timeout=timeout
-        )
+        def detect_primes():
+            try:
+                from ..application.services import NSMDetectionService
+                from ..domain.models import Language
+                
+                detection_service = NSMDetectionService()
+                result = detection_service.detect_primes(text, Language(language))
+                self.logger.info(f"Prime detection successful for language {language}: {len(result.primes) if result.primes else 0} primes found")
+                return result
+            except Exception as e:
+                self.logger.error(f"Prime detection failed for language {language}: {e}")
+                log_error(e, {"context": "prime_detection", "language": language, "text": text})
+                raise
         
-        # Generate EIL graph using semantic generator
-        def generate_eil():
-            return self.semantic_generator.generate(
-                semantic_decomp['enhanced_structure'].ud_tree,
-                language,
-                mwe_tags=None,  # TODO: Add MWE tags
-                srl=semantic_decomp['enhanced_structure'].semantic_roles
+        try:
+            detection_result = await asyncio.wait_for(
+                loop.run_in_executor(self.executor, detect_primes),
+                timeout=timeout
             )
-        
-        eil_graph = await asyncio.wait_for(
-            loop.run_in_executor(self.executor, generate_eil),
-            timeout=timeout
-        )
-        
-        @dataclass
-        class DetectionResult:
-            primes: List[str]
-            confidence: float = 0.0
-            pipeline_path: str = "semantic"
-            manual_detector_count: int = 0
-        
-        primes = eil_graph.get_primes()
-        return DetectionResult(primes=primes, pipeline_path="semantic", manual_detector_count=0)
+            
+            # Extract primes from the detection result
+            primes = [prime.text for prime in detection_result.primes] if detection_result.primes else []
+            
+            @dataclass
+            class DetectionResult:
+                primes: List[str]
+                confidence: float = 0.0
+                pipeline_path: str = "semantic"
+                manual_detector_count: int = 0
+            
+            return DetectionResult(primes=primes, pipeline_path="semantic", manual_detector_count=0)
+            
+        except asyncio.TimeoutError:
+            self.logger.error(f"Prime detection timed out for language {language}")
+            raise
+        except Exception as e:
+            self.logger.error(f"Prime detection failed for language {language}: {e}")
+            log_error(e, {"context": "prime_detection_timeout", "language": language, "text": text})
+            raise
     
     async def _decompose_semantics_with_timeout(self, text: str, language: str, timeout: int):
         """Decompose semantics with timeout."""
         loop = asyncio.get_event_loop()
+        
+        def decompose():
+            from ..application.services import NSMDetectionService
+            from ..domain.models import Language
+            
+            detection_service = NSMDetectionService()
+            result = detection_service.detect_primes(text, Language(language))
+            
+            # Return enhanced structure with UD and SRL information
+            return {
+                'enhanced_structure': {
+                    'ud_tree': result.ud_tree if hasattr(result, 'ud_tree') else None,
+                    'semantic_roles': result.semantic_roles if hasattr(result, 'semantic_roles') else [],
+                    'primes': [prime.text for prime in result.primes] if result.primes else []
+                }
+            }
+        
         return await asyncio.wait_for(
-            loop.run_in_executor(self.executor, self.ud_srl_engine.decompose_with_ud_srl, text, language),
+            loop.run_in_executor(self.executor, decompose),
             timeout=timeout
         )
     
@@ -378,37 +458,62 @@ class ProductionPipelineOrchestrator:
     
     async def _adapt_culturally_with_timeout(self, text: str, target_language: str, cultural_context: Optional[Dict], timeout: int):
         """Adapt culturally with timeout."""
-        loop = asyncio.get_event_loop()
-        return await asyncio.wait_for(
-            loop.run_in_executor(self.executor, self.cultural_adapter.adapt_text, text, target_language, cultural_context),
-            timeout=timeout
-        )
+        if self.cultural_adapter is None:
+            self.logger.warning("Cultural adaptation skipped - CulturalAdaptationSystem not available")
+            return text
+        
+        try:
+            loop = asyncio.get_event_loop()
+            return await asyncio.wait_for(
+                loop.run_in_executor(self.executor, self.cultural_adapter.adapt_text, text, target_language, cultural_context),
+                timeout=timeout
+            )
+        except Exception as e:
+            self.logger.error(f"Cultural adaptation failed: {e}")
+            log_error(e, {"context": "cultural_adaptation", "target_language": target_language})
+            return text  # Return original text on failure
     
     async def _neural_realize_with_timeout(self, detection_result, target_language: str, glossary_terms: Optional[Dict], timeout: int):
         """Neural realize with timeout."""
-        loop = asyncio.get_event_loop()
-        
-        # Create binder from glossary terms
-        binder = None
-        if glossary_terms:
-            binder = type('Binder', (), {
-                'preserve_terms': list(glossary_terms.keys()),
-                'gloss_terms': []
+        try:
+            loop = asyncio.get_event_loop()
+            
+            # Create binder from glossary terms
+            binder = None
+            if glossary_terms:
+                binder = type('Binder', (), {
+                    'preserve_terms': list(glossary_terms.keys()),
+                    'gloss_terms': []
+                })()
+            
+            # Use unified interface with keyword arguments
+            result = await asyncio.wait_for(
+                loop.run_in_executor(
+                    self.executor, 
+                    lambda: self.neural_realizer.realize(
+                        detection_result, 
+                        target_language, 
+                        binder=binder, 
+                        config=RealizeConfig()
+                    )
+                ),
+                timeout=timeout
+            )
+            
+            self.logger.info(f"Neural realization successful for language {target_language}")
+            return result
+            
+        except Exception as e:
+            self.logger.error(f"Neural realization failed for language {target_language}: {e}")
+            log_error(e, {"context": "neural_realization", "target_language": target_language})
+            
+            # Return fallback result
+            return type('RealizeResult', (), {
+                'translated_text': f"[Translation failed - {target_language}]",
+                'confidence': 0.0,
+                'realization_time_ms': 0.0,
+                'realized_primes': getattr(detection_result, 'primes', [])
             })()
-        
-        # Use unified interface with keyword arguments
-        return await asyncio.wait_for(
-            loop.run_in_executor(
-                self.executor, 
-                lambda: self.neural_realizer.realize(
-                    detection_result, 
-                    target_language, 
-                    binder=binder, 
-                    config=RealizeConfig()
-                )
-            ),
-            timeout=timeout
-        )
     
     async def _calculate_graph_f1_with_timeout(self, detection_result, realized_result, timeout: int):
         """Calculate Graph-F1 with timeout."""

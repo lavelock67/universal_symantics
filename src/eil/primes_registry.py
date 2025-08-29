@@ -12,7 +12,7 @@ ALLOWED_PRIMES = {
     'KIND', 'PART',
     
     # Determiners
-    'THIS', 'THE SAME', 'OTHER', 'ONE', 'TWO', 'SOME', 'ALL', 'MUCH', 'MANY',
+    'THIS', 'THE_SAME', 'OTHER', 'ONE', 'TWO', 'SOME', 'ALL', 'MUCH', 'MANY',
     
     # Quantifiers
     'GOOD', 'BAD', 'BIG', 'SMALL', 'WAY',
@@ -30,7 +30,7 @@ ALLOWED_PRIMES = {
     'LIVE', 'DIE',
     
     # Time
-    'WHEN', 'NOW', 'BEFORE', 'AFTER', 'A LONG TIME', 'A SHORT TIME', 'FOR SOME TIME', 'MOMENT', 'TIME',
+    'WHEN', 'NOW', 'BEFORE', 'AFTER', 'A_LONG_TIME', 'A_SHORT_TIME', 'FOR_SOME_TIME', 'MOMENT', 'TIME',
     
     # Space
     'WHERE', 'HERE', 'ABOVE', 'BELOW', 'FAR', 'NEAR', 'SIDE', 'INSIDE', 'TOUCH', 'PLACE',
@@ -45,7 +45,10 @@ ALLOWED_PRIMES = {
     'LIKE',
     
     # Additional primes (4)
-    'WORDS', 'TRUE', 'FALSE', 'HALF'
+    'WORDS', 'TRUE', 'FALSE', 'HALF',
+    
+    # Missing core NSM primes
+    'THERE_IS', 'HAVE', 'BE_SOMEWHERE'
 }
 
 def assert_only_allowed(primes: list[str]):

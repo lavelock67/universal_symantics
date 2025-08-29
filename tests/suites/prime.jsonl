@@ -1,14 +1,14 @@
-{"id":"NEAR_es_01","lang":"es","text":"Vive cerca de la estación.","expect_primes":["NEAR","PLACE","TIME","SOMETHING","WAY"]}
-{"id":"INSIDE_es_01","lang":"es","text":"El libro está dentro de la caja.","expect_primes":["INSIDE","SOMETHING","SOMETHING"]}
-{"id":"ABOVE_fr_01","lang":"fr","text":"La lampe est au-dessus de la table.","expect_primes":["ABOVE","SOMETHING","SOMETHING"]}
-{"id":"ONE_fr_01","lang":"fr","text":"Il y a une solution.","expect_primes":["ONE","SOMETHING"]}
-{"id":"WORDS_es_01","lang":"es","text":"Dijo estas palabras.","expect_primes":["WORDS","SOMEONE"]}
-{"id":"NOT_en_01","lang":"en","text":"The cat did not sleep.","expect_primes":["NOT","SOMEONE","SOMETHING"]}
-{"id":"FALSE_en_01","lang":"en","text":"That statement is false.","expect_primes":["FALSE","SOMETHING"]}
-{"id":"TRUE_en_01","lang":"en","text":"This is true.","expect_primes":["TRUE","SOMETHING"]}
-{"id":"DO_en_01","lang":"en","text":"I do not understand.","expect_primes":["I","NOT","DO","SOMETHING"]}
-{"id":"HAPPEN_en_01","lang":"en","text":"What happened yesterday?","expect_primes":["WHAT","HAPPEN","TIME"]}
-{"id":"HALF_en_01","lang":"en","text":"Half of the students left.","expect_primes":["HALF","PEOPLE","SOMETHING"]}
-{"id":"PEOPLE_en_01","lang":"en","text":"Many people came to the party.","expect_primes":["MANY","PEOPLE","SOMETHING","SOMETHING"]}
-{"id":"MANY_en_01","lang":"en","text":"Many cars are on the road.","expect_primes":["MANY","SOMETHING","PLACE"]}
-{"id":"THIS_en_01","lang":"en","text":"This is my house.","expect_primes":["THIS","SOMETHING"]}
+{"id":"NEAR_es_01","lang":"es","text":"Vive cerca de la estación.","expect_primes":["NEAR","DO"],"expect_eil":{"relations":[["NEAR","person","station"]],"nodes":[{"id":"person","type":"SOMEONE","binder":{"surface":"vive"}},{"id":"station","type":"THING","binder":{"surface":"estación"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"INSIDE_es_01","lang":"es","text":"El libro está dentro de la caja.","expect_primes":["INSIDE","DO"],"expect_eil":{"relations":[["INSIDE","book","box"]],"nodes":[{"id":"book","type":"THING","binder":{"surface":"libro"}},{"id":"box","type":"THING","binder":{"surface":"caja"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"ABOVE_fr_01","lang":"fr","text":"La lampe est au-dessus de la table.","expect_primes":["ABOVE","DO"],"expect_eil":{"relations":[["ABOVE","lamp","table"]],"nodes":[{"id":"lamp","type":"THING","binder":{"surface":"lampe"}},{"id":"table","type":"THING","binder":{"surface":"table"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"ONE_fr_01","lang":"fr","text":"Il y a une solution.","expect_primes":["ONE"],"expect_eil":{"relations":[["ONE","solution"]],"nodes":[{"id":"solution","type":"THING","binder":{"surface":"solution"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"WORDS_es_01","lang":"es","text":"Dijo estas palabras.","expect_primes":["DO"],"expect_eil":{"relations":[["SAY","person","words"]],"nodes":[{"id":"person","type":"SOMEONE","binder":{"surface":"dijo"}},{"id":"words","type":"WORDS","binder":{"surface":"palabras"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"NOT_en_01","lang":"en","text":"The cat did not sleep.","expect_primes":["NOT"],"expect_eil":{"relations":[["NOT","sleep"]],"nodes":[{"id":"cat","type":"SOMEONE","binder":{"surface":"cat"}},{"id":"sleep","type":"DO","binder":{"surface":"sleep"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"FALSE_en_01","lang":"en","text":"That statement is false.","expect_primes":[],"expect_eil":{"relations":[["FALSE","statement"]],"nodes":[{"id":"statement","type":"THING","binder":{"surface":"statement"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"TRUE_en_01","lang":"en","text":"This is true.","expect_primes":[],"expect_eil":{"relations":[["TRUE","this"]],"nodes":[{"id":"this","type":"THIS","binder":{"surface":"this"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"DO_en_01","lang":"en","text":"I do not understand.","expect_primes":["DO"],"expect_eil":{"relations":[["NOT","understand"]],"nodes":[{"id":"i","type":"I","binder":{"surface":"I"}},{"id":"understand","type":"DO","binder":{"surface":"understand"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"HAPPEN_en_01","lang":"en","text":"What happened yesterday?","expect_primes":[],"expect_eil":{"relations":[["HAPPEN","event","yesterday"]],"nodes":[{"id":"event","type":"WHAT","binder":{"surface":"what"}},{"id":"yesterday","type":"TIME","binder":{"surface":"yesterday"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"HALF_en_01","lang":"en","text":"Half of the students left.","expect_primes":[],"expect_eil":{"relations":[["HALF","students"]],"nodes":[{"id":"students","type":"PEOPLE","binder":{"surface":"students"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"PEOPLE_en_01","lang":"en","text":"Many people came to the party.","expect_primes":[],"expect_eil":{"relations":[["MANY","people"]],"nodes":[{"id":"people","type":"PEOPLE","binder":{"surface":"people"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"MANY_en_01","lang":"en","text":"Many cars are on the road.","expect_primes":[],"expect_eil":{"relations":[["MANY","cars"]],"nodes":[{"id":"cars","type":"THING","binder":{"surface":"cars"}}]},"roundtrip_min_graph_f1":0.85}
+{"id":"THIS_en_01","lang":"en","text":"This is my house.","expect_primes":[],"expect_eil":{"relations":[["THIS","house"]],"nodes":[{"id":"house","type":"THING","binder":{"surface":"house"}}]},"roundtrip_min_graph_f1":0.85}

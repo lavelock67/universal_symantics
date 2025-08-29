@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 from ..eil.primes_registry import assert_only_allowed, ALLOWED_PRIMES
 from .prime_sparsifier import PrimeSparsifier, PrimeSparsifierConfig
 from .adapters.umr_adapter import UMRAdapter, SemFeatures
+from .timing import timed_method, get_metrics
 
 logger = logging.getLogger(__name__)
 
@@ -124,6 +125,7 @@ class SemanticGenerator:
             "negation": ["not", "no", "ne", "pas", "nicht", "non"]
         }
     
+    @timed_method("generate", "semantic")
     def generate(self, doc, lang: str, *, mwe_tags=None, srl=None, umr_graph=None) -> EILGraph:
         """
         Generate EIL graph from UD + MWE + SRL.
@@ -170,6 +172,7 @@ class SemanticGenerator:
         logger.info(f"Generated {len(primes)} NSM primes: {primes}")
         return graph
     
+    @timed_method("primes_from_umr", "semantic")
     def _primes_from_umr(self, umr_graph, lang: str, graph: EILGraph):
         """Generate primes from UMR features."""
         # Convert UMR graph to semantic features
@@ -230,13 +233,20 @@ class SemanticGenerator:
         time_words = {"today", "yesterday", "tomorrow", "now", "then", "when", "before", "after"}
         return any(word in time_expr["time_expression"].lower() for word in time_words)
     
+    @timed_method("spatial_from_ud", "semantic")
     def _spatial_from_ud(self, doc, lang: str, mwe_tags, graph: EILGraph):
-        """Generate spatial primes from UD analysis."""
+        """Generate spatial primes from UD analysis with MWE normalization."""
+        # Ensure MWE processing happens before UD analysis
+        # Process MWE spans first if available
+        mwe_spans = {}
+        if mwe_tags:
+            for span in mwe_tags:
+                mwe_spans[span.start] = span
+        
         # First, try to detect multi-word spatial expressions
         text = " ".join([t.token for t in doc]).lower()
-        # logger.info(f"Checking spatial patterns in text: '{text}'")
         
-        # Check for multi-word spatial expressions
+        # Check for multi-word spatial expressions (MWE normalization)
         if lang in self.spatial_maps:
             for prime, patterns in self.spatial_maps[lang].items():
                 for pattern in patterns:
@@ -244,29 +254,26 @@ class SemanticGenerator:
                     normalized_text = text.replace(" - ", "").replace("-", "").replace(" ", "")
                     normalized_pattern = pattern.replace(" ", "")
                     
-                    # logger.info(f"Checking pattern '{pattern}' -> normalized '{normalized_pattern}' against text '{normalized_text}'")
-                    
                     # Check for exact pattern match
                     if pattern in text:
-                        # logger.info(f"Found spatial prime (exact): {prime}")
-                        graph.add_prime(prime, confidence=0.9)
-                        return  # Only add one spatial prime per sentence
+                        if self._is_spatial_licensed(pattern, lang, prime, doc):
+                            graph.add_prime(prime, confidence=0.9)
+                            return  # Only add one spatial prime per sentence
                     
                     # Check for normalized pattern match
                     if normalized_pattern in normalized_text:
-                        # logger.info(f"Found spatial prime (normalized): {prime}")
-                        graph.add_prime(prime, confidence=0.9)
-                        return  # Only add one spatial prime per sentence
+                        if self._is_spatial_licensed(pattern, lang, prime, doc):
+                            graph.add_prime(prime, confidence=0.9)
+                            return  # Only add one spatial prime per sentence
                     
                     # Check for token sequence match (for hyphenated compounds)
                     tokens = [t.token.lower() for t in doc if t.pos != "PUNCT"]
                     pattern_tokens = pattern.split()
-                    # logger.info(f"Checking token sequence: tokens={tokens}, pattern_tokens={pattern_tokens}")
                     for i in range(len(tokens) - len(pattern_tokens) + 1):
                         if tokens[i:i+len(pattern_tokens)] == pattern_tokens:
-                            # logger.info(f"Found spatial prime (token sequence): {prime}")
-                            graph.add_prime(prime, confidence=0.9)
-                            return  # Only add one spatial prime per sentence
+                            if self._is_spatial_licensed(pattern, lang, prime, doc):
+                                graph.add_prime(prime, confidence=0.9)
+                                return  # Only add one spatial prime per sentence
         
         # Fallback to single token detection
         for token in doc:
@@ -283,19 +290,47 @@ class SemanticGenerator:
                 if not spatial_label:
                     continue
                 
-                # Guards: topical senses
-                # Find the head token by index
-                head_token = None
-                for t in doc:
-                    if t.index == token.head:
-                        head_token = t
-                        break
-                
-                if head_token and head_token.lemma.lower() in {"sujet", "thème", "tema", "asunto"}:
-                    continue  # Skip topical 'sur/sobre'
+                # Apply topical/figurative guards
+                if not self._is_spatial_licensed(surface, lang, spatial_label, doc):
+                    continue
                 
                 # Add spatial prime
                 graph.add_prime(spatial_label, confidence=0.9)
+    
+    def _is_spatial_licensed(self, text: str, lang: str, relation: str, doc) -> bool:
+        """Check if spatial expression is properly licensed (not topical/figurative)."""
+        # Topical/figurative guards
+        topical_patterns = {
+            "fr": {
+                "sur": ["sujet", "thème", "question", "problème"],  # Topic markers
+                "dans": ["équipe", "groupe", "organisation", "société"]  # Social/organizational
+            },
+            "es": {
+                "sobre": ["tema", "asunto", "sujeto", "problema"],  # Topic markers
+                "en": ["equipo", "grupo", "organización", "sociedad"]  # Social/organizational
+            },
+            "en": {
+                "on": ["topic", "subject", "matter", "issue"],  # Topic markers
+                "in": ["team", "group", "organization", "society"]  # Social/organizational
+            },
+            "de": {
+                "über": ["Thema", "Gegenstand", "Frage", "Problem"],  # Topic markers
+                "in": ["Team", "Gruppe", "Organisation", "Gesellschaft"]  # Social/organizational
+            }
+        }
+        
+        # Check if this is a topical/figurative use
+        if lang in topical_patterns:
+            for prep, topics in topical_patterns[lang].items():
+                if text.lower() == prep.lower():
+                    # Check if followed by topical words
+                    # Look for topical words in the sentence
+                    sentence_text = " ".join([t.token.lower() for t in doc])
+                    for topic in topics:
+                        if topic.lower() in sentence_text:
+                            return False  # Topical use detected
+        
+        return True
     
     def _lookup_spatial(self, lang: str, surface: str) -> Optional[str]:
         """Look up spatial relation from data table."""
@@ -305,6 +340,7 @@ class SemanticGenerator:
                     return prime
         return None
     
+    @timed_method("primes_from_srl", "semantic")
     def _primes_from_srl(self, srl, graph: EILGraph):
         """Generate primes from semantic role labeling."""
         # Only emit primes for explicit semantic roles, not generic mappings
@@ -334,6 +370,7 @@ class SemanticGenerator:
                 })
             # Other roles become nodes with binders, not global primes
     
+    @timed_method("primes_from_morphology", "semantic")
     def _primes_from_morphology(self, doc, graph: EILGraph):
         """Generate primes from morphological features."""
         for token in doc:
@@ -373,6 +410,7 @@ class SemanticGenerator:
         idioms = ["tenir parole", "dar la palabra", "keep word"]
         return any(idiom in text for idiom in idioms)
     
+    @timed_method("primes_from_negation", "semantic")
     def _primes_from_negation(self, doc, graph: EILGraph):
         """Generate primes from negation markers."""
         negation_markers = {"not", "no", "ne", "pas", "non"}
@@ -382,6 +420,7 @@ class SemanticGenerator:
                 graph.add_prime("NOT", confidence=0.9)
                 break
     
+    @timed_method("binders_from_open_class", "semantic")
     def _binders_from_open_class(self, doc, graph: EILGraph):
         """Generate binders for open-class words (not primes)."""
         for token in doc:

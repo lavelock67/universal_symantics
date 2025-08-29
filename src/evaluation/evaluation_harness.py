@@ -14,6 +14,7 @@ import statistics
 from datetime import datetime
 import prometheus_client as prom
 from prometheus_client import push_to_gateway
+from ..semgen.timing import timed, get_metrics
 
 # Import the actual production pipeline orchestrator
 from ..core.translation.production_pipeline_orchestrator import (
@@ -157,6 +158,7 @@ class EvaluationHarness:
         
         return self._calculate_suite_metrics(suite_name, results)
     
+    @timed("run_test_case", "evaluation")
     async def _run_test_case(self, test_case: TestCase, mode: str) -> TestResult:
         """Run a single test case"""
         start_time = time.time()
@@ -373,6 +375,11 @@ class EvaluationHarness:
         """Generate comprehensive evaluation report"""
         timestamp = datetime.now().isoformat()
         
+        # Get timing metrics
+        timing_metrics = get_metrics()
+        stage_metrics = timing_metrics.get_all_metrics()
+        histograms = timing_metrics.export_histograms()
+        
         # Aggregate metrics
         metrics = {
             "prime_f1": {lang: 0.0 for lang in langs},
@@ -382,7 +389,9 @@ class EvaluationHarness:
             "adapter_invariant_violations": 0,
             "glossary_violations": 0,
             "latency_p95_ms": {mode: 0.0 for mode in modes},
-            "error_rate": 0.0
+            "error_rate": 0.0,
+            "stage_timings": stage_metrics,
+            "histograms": histograms
         }
         
         # Calculate aggregated metrics

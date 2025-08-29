@@ -21,8 +21,8 @@ from ..application.services import NSMDetectionService
 from .universal_translator import UniversalTranslator
 from ..generation.neural_generator import MultilingualNeuralGenerator, NeuralGenerationResult
 from ..generation.prime_generator import PrimeGenerator
-from cultural_adaptation_system import CulturalAdaptationSystem
-from neural_realizer_with_guarantees import NeuralRealizer, GlossaryBinder
+# from cultural_adaptation_system import CulturalAdaptationSystem
+# from neural_realizer_with_guarantees import NeuralRealizer, GlossaryBinder
 
 logger = logging.getLogger(__name__)
 
@@ -74,15 +74,15 @@ class UnifiedTranslationPipeline:
         self.universal_translator = UniversalTranslator()
         self.neural_generator = MultilingualNeuralGenerator()
         self.prime_generator = PrimeGenerator()
-        self.cultural_adaptation = CulturalAdaptationSystem()
+        # self.cultural_adaptation = CulturalAdaptationSystem()
         
         # Initialize neural realizer with guarantees
-        self.glossary_binder = GlossaryBinder()
-        self.neural_realizer = NeuralRealizer(
-            backend_type="hybrid",
-            binder=self.glossary_binder,
-            style="neutral"
-        )
+        # self.glossary_binder = GlossaryBinder()
+        # self.neural_realizer = NeuralRealizer(
+        #     backend_type="hybrid",
+        #     binder=self.glossary_binder,
+        #     style="neutral"
+        # )
         
         logger.info("Unified translation pipeline initialized with neural realizer")
     
