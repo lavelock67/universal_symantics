@@ -1,62 +1,78 @@
 version: '3.8'
 
 services:
-  nsm-api:
+  # Universal Translator API
+  universal-translator-api:
     build:
       context: ..
       dockerfile: deployment/Dockerfile
+    container_name: universal-translator-api
     ports:
-      - "8001:8001"
+      - "8000:8000"
     environment:
-      - PYTHONPATH=/app
-      - LOG_LEVEL=INFO
+      - ENVIRONMENT=production
+      - LOG_LEVEL=info
       - MAX_WORKERS=4
-      - HOST=0.0.0.0
-      - PORT=8001
+      - TIMEOUT_SECONDS=30
     volumes:
-      - ../data:/app/data
       - ../models:/app/models
+      - ../logs:/app/logs
+    depends_on:
+      - redis
+    networks:
+      - translator-network
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
-    networks:
-      - nsm-network
 
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./ssl:/etc/nginx/ssl
-    depends_on:
-      - nsm-api
-    restart: unless-stopped
-    networks:
-      - nsm-network
-
+  # Redis for caching and session management
   redis:
-    image: redis:alpine
+    image: redis:7-alpine
+    container_name: universal-translator-redis
     ports:
       - "6379:6379"
     volumes:
-      - redis-data:/data
-    restart: unless-stopped
+      - redis_data:/data
     networks:
-      - nsm-network
+      - translator-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
 
+  # PostgreSQL for persistent data storage
+  postgres:
+    image: postgres:15-alpine
+    container_name: universal-translator-postgres
+    environment:
+      - POSTGRES_DB=universal_translator
+      - POSTGRES_USER=translator_user
+      - POSTGRES_PASSWORD=translator_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - translator-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U translator_user -d universal_translator"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Prometheus for metrics collection
   prometheus:
     image: prom/prometheus:latest
+    container_name: universal-translator-prometheus
     ports:
       - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
-      - prometheus-data:/prometheus
+      - prometheus_data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
@@ -64,31 +80,97 @@ services:
       - '--web.console.templates=/etc/prometheus/consoles'
       - '--storage.tsdb.retention.time=200h'
       - '--web.enable-lifecycle'
-    restart: unless-stopped
     networks:
-      - nsm-network
+      - translator-network
+    restart: unless-stopped
 
+  # Grafana for metrics visualization
   grafana:
     image: grafana/grafana:latest
+    container_name: universal-translator-grafana
     ports:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
     volumes:
-      - grafana-data:/var/lib/grafana
+      - grafana_data:/var/lib/grafana
       - ./grafana/dashboards:/etc/grafana/provisioning/dashboards
       - ./grafana/datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - translator-network
+    restart: unless-stopped
     depends_on:
       - prometheus
-    restart: unless-stopped
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: universal-translator-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - universal-translator-api
     networks:
-      - nsm-network
+      - translator-network
+    restart: unless-stopped
+
+  # Elasticsearch for log aggregation
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.8.0
+    container_name: universal-translator-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - translator-network
+    restart: unless-stopped
+
+  # Kibana for log visualization
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.8.0
+    container_name: universal-translator-kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - translator-network
+    restart: unless-stopped
+
+  # Filebeat for log shipping
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.8.0
+    container_name: universal-translator-filebeat
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ../logs:/var/log/universal-translator:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - elasticsearch
+    networks:
+      - translator-network
+    restart: unless-stopped
 
 volumes:
-  redis-data:
-  prometheus-data:
-  grafana-data:
+  redis_data:
+  postgres_data:
+  prometheus_data:
+  grafana_data:
+  elasticsearch_data:
 
 networks:
-  nsm-network:
+  translator-network:
     driver: bridge

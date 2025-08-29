@@ -1,0 +1,14 @@
+{"id":"NEAR_es_01","lang":"es","text":"Vive cerca de la estación.","expect_primes":["NEAR","PLACE","TIME","SOMETHING","WAY"]}
+{"id":"INSIDE_es_01","lang":"es","text":"El libro está dentro de la caja.","expect_primes":["INSIDE","SOMETHING","SOMETHING"]}
+{"id":"ABOVE_fr_01","lang":"fr","text":"La lampe est au-dessus de la table.","expect_primes":["ABOVE","SOMETHING","SOMETHING"]}
+{"id":"ONE_fr_01","lang":"fr","text":"Il y a une solution.","expect_primes":["ONE","SOMETHING"]}
+{"id":"WORDS_es_01","lang":"es","text":"Dijo estas palabras.","expect_primes":["WORDS","SOMEONE"]}
+{"id":"NOT_en_01","lang":"en","text":"The cat did not sleep.","expect_primes":["NOT","SOMEONE","SOMETHING"]}
+{"id":"FALSE_en_01","lang":"en","text":"That statement is false.","expect_primes":["FALSE","SOMETHING"]}
+{"id":"TRUE_en_01","lang":"en","text":"This is true.","expect_primes":["TRUE","SOMETHING"]}
+{"id":"DO_en_01","lang":"en","text":"I do not understand.","expect_primes":["I","NOT","DO","SOMETHING"]}
+{"id":"HAPPEN_en_01","lang":"en","text":"What happened yesterday?","expect_primes":["WHAT","HAPPEN","TIME"]}
+{"id":"HALF_en_01","lang":"en","text":"Half of the students left.","expect_primes":["HALF","PEOPLE","SOMETHING"]}
+{"id":"PEOPLE_en_01","lang":"en","text":"Many people came to the party.","expect_primes":["MANY","PEOPLE","SOMETHING","SOMETHING"]}
+{"id":"MANY_en_01","lang":"en","text":"Many cars are on the road.","expect_primes":["MANY","SOMETHING","PLACE"]}
+{"id":"THIS_en_01","lang":"en","text":"This is my house.","expect_primes":["THIS","SOMETHING"]}

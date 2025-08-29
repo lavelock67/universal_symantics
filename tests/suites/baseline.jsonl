@@ -1,0 +1,10 @@
+{"id":"BASELINE_01","lang":"en","text":"The cat does not sleep inside the house.","expect_primes":["SOMEONE","NOT","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"BASELINE_02","lang":"en","text":"At most half of the students passed.","expect_primes":["NOT","MORE","HALF","PEOPLE","SOMETHING"]}
+{"id":"BASELINE_03","lang":"en","text":"The defendant must not leave the country.","expect_primes":["SOMEONE","MUST","NOT","SOMETHING","SOMETHING"]}
+{"id":"BASELINE_04","lang":"en","text":"The meeting is at 3 PM tomorrow.","expect_primes":["SOMETHING","TIME","TIME"]}
+{"id":"BASELINE_05","lang":"en","text":"The patient takes Metformin daily.","expect_primes":["SOMEONE","SOMETHING","TIME"]}
+{"id":"BASELINE_06","lang":"es","text":"El gato no duerme dentro de la casa.","expect_primes":["SOMEONE","NOT","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"BASELINE_07","lang":"es","text":"A lo sumo la mitad de los estudiantes aprobaron.","expect_primes":["NOT","MORE","HALF","PEOPLE","SOMETHING"]}
+{"id":"BASELINE_08","lang":"fr","text":"Le chat ne dort pas dans la maison.","expect_primes":["SOMEONE","NOT","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"BASELINE_09","lang":"fr","text":"Au plus la moitié des élèves ont réussi.","expect_primes":["NOT","MORE","HALF","PEOPLE","SOMETHING"]}
+{"id":"BASELINE_10","lang":"en","text":"The contract contains a force majeure clause.","expect_primes":["SOMETHING","SOMETHING"]}

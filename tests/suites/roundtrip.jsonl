@@ -1,0 +1,10 @@
+{"id":"ROUNDTRIP_01","lang":"en","text":"The cat sleeps inside the house.","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROUNDTRIP_02","lang":"en","text":"The boy kicked the ball.","expect_primes":["SOMEONE","SOMETHING","SOMETHING"]}
+{"id":"ROUNDTRIP_03","lang":"en","text":"Many people live in this city.","expect_primes":["MANY","PEOPLE","SOMETHING","THIS","SOMETHING"]}
+{"id":"ROUNDTRIP_04","lang":"en","text":"The student read the book yesterday.","expect_primes":["SOMEONE","SOMETHING","SOMETHING","TIME"]}
+{"id":"ROUNDTRIP_05","lang":"en","text":"The weather is nice today.","expect_primes":["SOMETHING","GOOD","TIME"]}
+{"id":"ROUNDTRIP_06","lang":"es","text":"El gato duerme dentro de la casa.","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROUNDTRIP_07","lang":"es","text":"El niño pateó la pelota.","expect_primes":["SOMEONE","SOMETHING","SOMETHING"]}
+{"id":"ROUNDTRIP_08","lang":"es","text":"Mucha gente vive en esta ciudad.","expect_primes":["MANY","PEOPLE","SOMETHING","THIS","SOMETHING"]}
+{"id":"ROUNDTRIP_09","lang":"fr","text":"Le chat dort dans la maison.","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROUNDTRIP_10","lang":"fr","text":"Le garçon a frappé le ballon.","expect_primes":["SOMEONE","SOMETHING","SOMETHING"]}

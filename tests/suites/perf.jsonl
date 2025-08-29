@@ -1,0 +1,10 @@
+{"id":"PERF_01","lang":"en","text":"The quick brown fox jumps over the lazy dog.","expect_primes":["SOMEONE","SOMETHING","ABOVE","SOMETHING"]}
+{"id":"PERF_02","lang":"en","text":"Hello world.","expect_primes":["SOMETHING","SOMETHING"]}
+{"id":"PERF_03","lang":"en","text":"The intelligent student carefully read the difficult book yesterday.","expect_primes":["SOMEONE","SOMETHING","SOMETHING","TIME"]}
+{"id":"PERF_04","lang":"en","text":"Good morning.","expect_primes":["GOOD","TIME"]}
+{"id":"PERF_05","lang":"en","text":"The weather is nice today.","expect_primes":["SOMETHING","GOOD","TIME"]}
+{"id":"PERF_06","lang":"es","text":"Hola mundo.","expect_primes":["SOMETHING","SOMETHING"]}
+{"id":"PERF_07","lang":"es","text":"Buenos días.","expect_primes":["GOOD","TIME"]}
+{"id":"PERF_08","lang":"fr","text":"Bonjour le monde.","expect_primes":["SOMETHING","SOMETHING"]}
+{"id":"PERF_09","lang":"fr","text":"Bonjour.","expect_primes":["SOMETHING"]}
+{"id":"PERF_10","lang":"en","text":"The cat sleeps.","expect_primes":["SOMEONE","SOMETHING"]}

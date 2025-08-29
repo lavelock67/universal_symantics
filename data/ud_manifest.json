@@ -1,0 +1,23 @@
+{
+  "dataset_name": "ud_treebank_mined",
+  "version": "1.0",
+  "created_at": "/Users/robertlavelock/dev/primitive",
+  "languages": {
+    "en": {
+      "prime_candidates": 683,
+      "scope_candidates": 193,
+      "total_sentences": 1000
+    },
+    "es": {
+      "prime_candidates": 8,
+      "scope_candidates": 0,
+      "total_sentences": 1000
+    },
+    "fr": {
+      "prime_candidates": 0,
+      "scope_candidates": 0,
+      "total_sentences": 1000
+    }
+  },
+  "total_candidates": 884
+}

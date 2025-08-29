@@ -1,0 +1,80 @@
+# UMR to EIL Mapping Configuration
+# Maps UMR graph elements to EIL/NSM building blocks
+
+events:
+  agentive: "DO"           # Agentive events (has AGENT argument)
+  non_agentive: "HAPPEN"   # Non-agentive events (no AGENT)
+
+arguments:
+  ARG0: "AGENT"            # Agent argument
+  ARG1: "PATIENT"          # Patient/theme argument  
+  ARG2: "GOAL"             # Goal/beneficiary argument
+  ARG3: "BENEFICIARY"      # Beneficiary argument
+  ARG4: "INSTRUMENT"       # Instrument argument
+  ARG5: "LOCATION"         # Location argument
+
+modality:
+  can: "CAN"               # Ability/permission (only official NSM prime)
+  # Note: MUST, SHOULD, MAY, WILL, WOULD are not in official NSM primes
+  # These should be represented as combinations of official primes
+
+quantifiers:
+  all: "ALL"               # Universal quantifier
+  some: "SOME"             # Existential quantifier
+  one: "ONE"               # Singular quantifier
+  many: "MANY"             # Large quantity
+  few: "FEW"               # Small quantity
+  half: "HALF"             # Half quantity
+  most: "MOST"             # Majority
+  none: "NOT+ANY"          # Negation + existential
+
+negation:
+  polarity: "NOT"          # Negation marker
+  scope: "local"           # Scope of negation
+
+spatial:
+  prep: "spatial_relation" # Maps to spatial_maps.json
+  location: "PLACE"        # Location marker
+  direction: "WAY"         # Direction marker
+
+temporal:
+  time: "TIME"             # Time expression
+  before: "BEFORE"         # Temporal ordering
+  after: "AFTER"           # Temporal ordering
+  when: "WHEN"             # Temporal reference
+  now: "NOW"               # Present time
+  moment: "MOMENT"         # Point in time
+
+logical:
+  and: "AND"               # Conjunction
+  or: "OR"                 # Disjunction
+  if: "IF"                 # Conditional
+  because: "BECAUSE"       # Causation
+  maybe: "MAYBE"           # Possibility
+
+speech:
+  say: "SAY"               # Speech act
+  words: "WORDS"           # Linguistic content
+  true: "TRUE"             # Truth value
+  false: "FALSE"           # Truth value
+
+# Confidence weights for UMR vs UD/SRL
+confidence_weights:
+  umr_event: 0.9           # UMR events are high confidence
+  umr_argument: 0.85       # UMR arguments are high confidence
+  umr_quantifier: 0.9      # UMR quantifiers are high confidence
+  umr_modality: 0.9        # UMR modality is high confidence
+  umr_negation: 0.95       # UMR negation is very high confidence
+  umr_spatial: 0.85        # UMR spatial relations are high confidence
+  umr_temporal: 0.9        # UMR temporal expressions are high confidence
+
+# Fusion rules
+fusion_rules:
+  # When UMR and UD/SRL disagree, use confidence-weighted combination
+  disagreement_threshold: 0.3  # Minimum confidence difference to trigger fusion
+  umr_weight: 0.6              # Weight for UMR features
+  ud_srl_weight: 0.4           # Weight for UD/SRL features
+  
+  # UMR can fill gaps but never override existing high-confidence features
+  gap_filling: true            # Allow UMR to fill missing roles
+  override_protection: true    # Protect existing high-confidence features

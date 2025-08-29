@@ -1,0 +1,298 @@
+{
+  "timestamp": "2025-08-28T08:30:00.000000",
+  "total_cases": 5,
+  "successful_cases": 0,
+  "failed_cases": 5,
+  "overall_f1": 0.0,
+  "scope_accuracy": 0.0,
+  "avg_latency_ms": 100.0,
+  "avg_confidence": 0.85,
+  "avg_graph_f1": 0.8800000000000001,
+  "language_results": {
+    "en": {
+      "total": 3,
+      "success": 0,
+      "f1": 0.0
+    },
+    "es": {
+      "total": 1,
+      "success": 0,
+      "f1": 0.0
+    },
+    "fr": {
+      "total": 1,
+      "success": 0,
+      "f1": 0.0
+    }
+  },
+  "results": [
+    {
+      "test_id": "SIMPLE_EN_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP",
+        "INSIDE",
+        "HOUSE"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "HOUSE",
+        "INSIDE"
+      ],
+      "lang": "en",
+      "text": "The cat sleeps inside the house.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "SIMPLE_EN_02",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "BOY",
+        "KICK",
+        "BALL"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "BOY",
+        "KICK",
+        "BALL"
+      ],
+      "lang": "en",
+      "text": "The boy kicked the ball.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "NEGATION_EN_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "NOT",
+        "SLEEP"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "NOT"
+      ],
+      "lang": "en",
+      "text": "The cat does not sleep.",
+      "require_scope": true,
+      "scope_correct": null,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "SIMPLE_ES_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP",
+        "INSIDE",
+        "HOUSE"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "HOUSE",
+        "INSIDE"
+      ],
+      "lang": "es",
+      "text": "El gato duerme dentro de la casa.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "SIMPLE_FR_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP",
+        "INSIDE",
+        "HOUSE"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "HOUSE",
+        "INSIDE"
+      ],
+      "lang": "fr",
+      "text": "Le chat dort dans la maison.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    }
+  ],
+  "failures": [
+    {
+      "test_id": "SIMPLE_EN_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP",
+        "INSIDE",
+        "HOUSE"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "HOUSE",
+        "INSIDE"
+      ],
+      "lang": "en",
+      "text": "The cat sleeps inside the house.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "SIMPLE_EN_02",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "BOY",
+        "KICK",
+        "BALL"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "BOY",
+        "KICK",
+        "BALL"
+      ],
+      "lang": "en",
+      "text": "The boy kicked the ball.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "NEGATION_EN_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "NOT",
+        "SLEEP"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "NOT"
+      ],
+      "lang": "en",
+      "text": "The cat does not sleep.",
+      "require_scope": true,
+      "scope_correct": null,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "SIMPLE_ES_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP",
+        "INSIDE",
+        "HOUSE"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "HOUSE",
+        "INSIDE"
+      ],
+      "lang": "es",
+      "text": "El gato duerme dentro de la casa.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    },
+    {
+      "test_id": "SIMPLE_FR_01",
+      "success": false,
+      "expected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP",
+        "INSIDE",
+        "HOUSE"
+      ],
+      "detected_primes": [
+        "THE",
+        "CAT",
+        "SLEEP"
+      ],
+      "missing_primes": [
+        "HOUSE",
+        "INSIDE"
+      ],
+      "lang": "fr",
+      "text": "Le chat dort dans la maison.",
+      "require_scope": false,
+      "scope_correct": true,
+      "latency_ms": 100.0,
+      "confidence_score": 0.85,
+      "graph_f1_score": 0.88
+    }
+  ]
+}

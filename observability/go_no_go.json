@@ -1,0 +1,417 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Universal Translator - Go/No-Go Dashboard",
+    "tags": ["universal-translator", "production", "monitoring"],
+    "style": "dark",
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Prime Detection F1 Score",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_prime_f1{prime=\"overall\"}",
+            "legendFormat": "{{lang}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.75},
+                {"color": "green", "value": 0.85}
+              ]
+            },
+            "unit": "short",
+            "decimals": 3
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Scope Accuracy",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_scope_accuracy",
+            "legendFormat": "{{lang}} - {{mode}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.85},
+                {"color": "green", "value": 0.90}
+              ]
+            },
+            "unit": "short",
+            "decimals": 3
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Graph-F1 Score",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_graph_f1",
+            "legendFormat": "{{lang}} - {{mode}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.75},
+                {"color": "green", "value": 0.85}
+              ]
+            },
+            "unit": "short",
+            "decimals": 3
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Router Selective Accuracy",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_router_sel_acc",
+            "legendFormat": "{{lang}} - {{mode}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.85},
+                {"color": "green", "value": 0.90}
+              ]
+            },
+            "unit": "short",
+            "decimals": 3
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Adapter Invariant Violations",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_adapter_violations_total",
+            "legendFormat": "Total Violations"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "red", "value": 1}
+              ]
+            },
+            "unit": "short"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "Glossary Violations",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_glossary_violations_total",
+            "legendFormat": "Total Violations"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "red", "value": 1}
+              ]
+            },
+            "unit": "short"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16}
+      },
+      {
+        "id": 7,
+        "title": "P95 Latency by Mode",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_latency_p95",
+            "legendFormat": "{{mode}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 2000},
+                {"color": "red", "value": 5000}
+              ]
+            },
+            "unit": "ms",
+            "decimals": 0
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 24}
+      },
+      {
+        "id": 8,
+        "title": "Error Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_error_rate",
+            "legendFormat": "Overall Error Rate"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 0.005},
+                {"color": "red", "value": 0.01}
+              ]
+            },
+            "unit": "percentunit",
+            "decimals": 3
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 24}
+      },
+      {
+        "id": 9,
+        "title": "Production Status - Overall",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "eval_prime_f1{prime=\"overall\", lang=\"en\"} >= 0.85 and eval_scope_accuracy{lang=\"en\"} >= 0.90 and eval_graph_f1{lang=\"en\"} >= 0.85 and eval_adapter_violations_total == 0 and eval_glossary_violations_total == 0 and eval_error_rate < 0.01",
+            "legendFormat": "Production Ready"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "green", "value": 1}
+              ]
+            },
+            "unit": "short",
+            "mappings": [
+              {"options": {"0": {"text": "❌ NOT READY"}}, "type": "value"},
+              {"options": {"1": {"text": "✅ PRODUCTION READY"}}, "type": "value"}
+            ]
+          }
+        },
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 32}
+      },
+      {
+        "id": 10,
+        "title": "Translation Requests",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(translation_requests_total[5m])",
+            "legendFormat": "{{source_lang}} -> {{target_lang}} ({{mode}})"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "unit": "reqps"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 40}
+      },
+      {
+        "id": 11,
+        "title": "Translation Duration",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(translation_duration_seconds_bucket[5m]))",
+            "legendFormat": "P95 - {{source_lang}} -> {{target_lang}} ({{mode}})"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "unit": "s"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 40}
+      },
+      {
+        "id": 12,
+        "title": "Prime Detection Count",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(prime_detection_count[5m])",
+            "legendFormat": "{{language}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "unit": "primes/sec"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 48}
+      },
+      {
+        "id": 13,
+        "title": "Graph-F1 Score Distribution",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.5, rate(graph_f1_score_bucket[5m]))",
+            "legendFormat": "P50 - {{complexity}}"
+          },
+          {
+            "expr": "histogram_quantile(0.95, rate(graph_f1_score_bucket[5m]))",
+            "legendFormat": "P95 - {{complexity}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "unit": "short",
+            "decimals": 3
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 48}
+      },
+      {
+        "id": 14,
+        "title": "Cultural Adaptations",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(cultural_adaptations_total[5m])",
+            "legendFormat": "{{adaptation_type}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "unit": "adaptations/sec"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 56}
+      },
+      {
+        "id": 15,
+        "title": "UD+SRL Disagreements",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(udsrl_disagreement_total[5m])",
+            "legendFormat": "{{lang}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "unit": "disagreements/sec"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 56}
+      }
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "30s",
+    "schemaVersion": 30,
+    "version": 1,
+    "links": [],
+    "annotations": {
+      "list": []
+    },
+    "templating": {
+      "list": [
+        {
+          "name": "language",
+          "type": "query",
+          "query": "label_values(eval_prime_f1, lang)",
+          "refresh": 2,
+          "includeAll": true,
+          "multi": true
+        },
+        {
+          "name": "mode",
+          "type": "query",
+          "query": "label_values(eval_scope_accuracy, mode)",
+          "refresh": 2,
+          "includeAll": true,
+          "multi": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "language": "es",
+  "total_sentences": 1000,
+  "prime_candidates_count": 8,
+  "scope_candidates_count": 0,
+  "source": "ud_treebank",
+  "version": "1.0"
+}

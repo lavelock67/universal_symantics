@@ -1,0 +1,10 @@
+{"id":"NEGATION_es_01","lang":"es","text":"No es falso que el informe existe.","expect_primes":["NOT","FALSE","SOMETHING"],"require_scope":true}
+{"id":"NEGATION_fr_01","lang":"fr","text":"Ce n'est pas vrai qu'ils ne viennent pas.","expect_primes":["NOT","TRUE","NOT","SOMEONE","SOMETHING"],"require_scope":true}
+{"id":"QUANTIFIER_fr_01","lang":"fr","text":"Au plus la moitié des élèves lisent beaucoup.","expect_primes":["NOT","MORE","HALF","PEOPLE","SOMETHING","MANY"],"require_scope":true}
+{"id":"QUANTIFIER_es_01","lang":"es","text":"A lo menos la mitad de los estudiantes leen mucho.","expect_primes":["NOT","LESS","HALF","PEOPLE","SOMETHING","MANY"],"require_scope":true}
+{"id":"MODALITY_en_01","lang":"en","text":"You must finish the work.","expect_primes":["YOU","MUST","SOMETHING","SOMETHING"],"require_scope":true}
+{"id":"MODALITY_en_02","lang":"en","text":"You should try harder.","expect_primes":["YOU","SHOULD","SOMETHING","MORE"],"require_scope":true}
+{"id":"MODALITY_en_03","lang":"en","text":"You can do it.","expect_primes":["YOU","CAN","DO","SOMETHING"],"require_scope":true}
+{"id":"Q_AT_MOST_fr_01","lang":"fr","text":"Au plus la moitié des élèves lisent.","expect_primes":["NOT","MORE","HALF","PEOPLE","SOMETHING"],"require_scope":true}
+{"id":"Q_AT_LEAST_es_01","lang":"es","text":"A lo menos diez personas vinieron.","expect_primes":["NOT","LESS","TEN","PEOPLE","SOMETHING"],"require_scope":true}
+{"id":"Q_HALF_en_01","lang":"en","text":"Half of the students passed.","expect_primes":["HALF","PEOPLE","SOMETHING"],"require_scope":true}

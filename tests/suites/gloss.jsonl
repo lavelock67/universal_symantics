@@ -1,0 +1,8 @@
+{"id":"GLOSS_drug_01","lang":"en","text":"Metformin must not be stopped abruptly.","glossary":[{"surface":"Metformin","type":"MED_DRUG","policy":"preserve"}],"required_primes":["MUST","NOT"]}
+{"id":"GLOSS_drug_02","lang":"en","text":"The patient takes Aspirin daily.","glossary":[{"surface":"Aspirin","type":"MED_DRUG","policy":"preserve"}],"required_primes":["SOMEONE","SOMETHING","TIME"]}
+{"id":"GLOSS_legal_01","lang":"en","text":"The contract contains a force majeure clause.","glossary":[{"surface":"force majeure","type":"LEGAL_TERM","policy":"preserve"}],"required_primes":["SOMETHING","SOMETHING"]}
+{"id":"GLOSS_legal_02","lang":"en","text":"The defendant pleaded not guilty.","glossary":[{"surface":"defendant","type":"LEGAL_TERM","policy":"preserve"}],"required_primes":["SOMEONE","NOT","SOMETHING"]}
+{"id":"GLOSS_tech_01","lang":"en","text":"The API connects to the database server.","glossary":[{"surface":"API","type":"TECH_TERM","policy":"preserve"},{"surface":"database","type":"TECH_TERM","policy":"preserve"}],"required_primes":["SOMETHING","SOMETHING"]}
+{"id":"GLOSS_tech_02","lang":"en","text":"The server uses HTTPS protocol.","glossary":[{"surface":"HTTPS","type":"TECH_TERM","policy":"preserve"}],"required_primes":["SOMETHING","SOMETHING"]}
+{"id":"GLOSS_medical_01","lang":"en","text":"The patient has diabetes mellitus.","glossary":[{"surface":"diabetes mellitus","type":"MEDICAL_TERM","policy":"preserve"}],"required_primes":["SOMEONE","SOMETHING"]}
+{"id":"GLOSS_medical_02","lang":"en","text":"The doctor prescribed antibiotics.","glossary":[{"surface":"antibiotics","type":"MEDICAL_TERM","policy":"preserve"}],"required_primes":["SOMEONE","SOMETHING"]}

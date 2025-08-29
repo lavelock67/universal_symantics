@@ -22,6 +22,7 @@ from .universal_translator import UniversalTranslator
 from ..generation.neural_generator import MultilingualNeuralGenerator, NeuralGenerationResult
 from ..generation.prime_generator import PrimeGenerator
 from cultural_adaptation_system import CulturalAdaptationSystem
+from neural_realizer_with_guarantees import NeuralRealizer, GlossaryBinder
 
 logger = logging.getLogger(__name__)
 
@@ -75,7 +76,15 @@ class UnifiedTranslationPipeline:
         self.prime_generator = PrimeGenerator()
         self.cultural_adaptation = CulturalAdaptationSystem()
         
-        logger.info("Unified translation pipeline initialized")
+        # Initialize neural realizer with guarantees
+        self.glossary_binder = GlossaryBinder()
+        self.neural_realizer = NeuralRealizer(
+            backend_type="hybrid",
+            binder=self.glossary_binder,
+            style="neutral"
+        )
+        
+        logger.info("Unified translation pipeline initialized with neural realizer")
     
     def translate(self, request: TranslationRequest) -> TranslationResult:
         """Translate text using the unified pipeline."""
@@ -327,9 +336,144 @@ class UnifiedTranslationPipeline:
                 "universal_translator": "Universal Translator",
                 "neural_generator": "Multilingual Neural Generator",
                 "prime_generator": "Prime Generator",
-                "cultural_adaptation": "Cultural Adaptation System"
+                "cultural_adaptation": "Cultural Adaptation System",
+                "neural_realizer": "Neural Realizer with Guarantees"
             }
         }
+    
+    def translate_with_neural_realizer(self, request: TranslationRequest) -> TranslationResult:
+        """Translate using neural realizer with guarantees."""
+        
+        start_time = time.time()
+        pipeline_steps = []
+        
+        try:
+            logger.info(f"Starting neural realizer translation: {request.source_language} -> {request.target_language}")
+            
+            # Step 1: Semantic Analysis to EIL
+            step1 = PipelineStep("semantic_analysis", time.time())
+            try:
+                detection_result = self.detection_service.detect_primes(
+                    request.source_text, 
+                    request.source_language
+                )
+                
+                # Convert to EIL format
+                src_eil = {
+                    "primes": [{"text": p.text, "type": p.type.value, "confidence": p.confidence} for p in detection_result.primes],
+                    "source_text": request.source_text,
+                    "language": request.source_language.value,
+                    "detection_result": detection_result
+                }
+                
+                step1.success = True
+                step1.end_time = time.time()
+                step1.metadata = {
+                    "primes_detected": len(detection_result.primes),
+                    "primes": [p.text for p in detection_result.primes]
+                }
+                pipeline_steps.append(step1)
+                
+            except Exception as e:
+                step1.success = False
+                step1.error = str(e)
+                step1.end_time = time.time()
+                pipeline_steps.append(step1)
+                raise
+            
+            # Step 2: Neural Realization with Post-Check
+            step2 = PipelineStep("neural_realization", time.time())
+            try:
+                generated_text, graph_f1 = self.neural_realizer.realize(src_eil, request.target_language)
+                
+                step2.success = True
+                step2.end_time = time.time()
+                step2.metadata = {
+                    "generated_text": generated_text,
+                    "graph_f1_score": graph_f1,
+                    "post_check_passed": graph_f1 >= 0.85
+                }
+                pipeline_steps.append(step2)
+                
+            except Exception as e:
+                step2.success = False
+                step2.error = str(e)
+                step2.end_time = time.time()
+                pipeline_steps.append(step2)
+                raise
+            
+            # Step 3: Cultural Adaptation (if needed)
+            step3 = PipelineStep("cultural_adaptation", time.time())
+            try:
+                if request.cultural_context:
+                    adaptation_result = self.cultural_adaptation.adapt_text(
+                        generated_text,
+                        request.target_language,
+                        request.cultural_context
+                    )
+                    final_text = adaptation_result.adapted_text
+                else:
+                    final_text = generated_text
+                
+                step3.success = True
+                step3.end_time = time.time()
+                step3.metadata = {
+                    "adapted": request.cultural_context is not None,
+                    "final_text": final_text
+                }
+                pipeline_steps.append(step3)
+                
+            except Exception as e:
+                step3.success = False
+                step3.error = str(e)
+                step3.end_time = time.time()
+                pipeline_steps.append(step3)
+                # Don't raise - cultural adaptation is optional
+                final_text = generated_text
+            
+            # Calculate overall metrics
+            processing_time = time.time() - start_time
+            confidence = graph_f1  # Use graph-F1 as confidence
+            
+            metadata = {
+                "pipeline_steps": [step.__dict__ for step in pipeline_steps],
+                "neural_realizer_used": True,
+                "glossary_binding_applied": True,
+                "post_check_passed": graph_f1 >= 0.85,
+                "graph_f1_score": graph_f1
+            }
+            
+            logger.info(f"Neural realizer translation completed in {processing_time:.3f}s")
+            logger.info(f"Graph-F1 score: {graph_f1:.3f}")
+            
+            return TranslationResult(
+                source_text=request.source_text,
+                target_text=final_text,
+                source_language=request.source_language,
+                target_language=request.target_language,
+                confidence=confidence,
+                mode=TranslationMode.NEURAL_GENERATION,
+                processing_time=processing_time,
+                metadata=metadata
+            )
+            
+        except Exception as e:
+            logger.error(f"Neural realizer translation failed: {e}")
+            processing_time = time.time() - start_time
+            
+            return TranslationResult(
+                source_text=request.source_text,
+                target_text=f"[Translation Error: {str(e)}]",
+                source_language=request.source_language,
+                target_language=request.target_language,
+                confidence=0.0,
+                mode=TranslationMode.NEURAL_GENERATION,
+                processing_time=processing_time,
+                metadata={
+                    "error": str(e),
+                    "pipeline_steps": [step.__dict__ for step in pipeline_steps]
+                }
+            )
 
 # Factory function for creating unified translation pipeline
 def create_unified_translation_pipeline() -> UnifiedTranslationPipeline:

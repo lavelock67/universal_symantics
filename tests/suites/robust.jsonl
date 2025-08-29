@@ -1,0 +1,11 @@
+{"id":"ROBUST_typo_01","lang":"en","text":"The cat sleepz inside the house.","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROBUST_typo_02","lang":"en","text":"The boy kickd the ball.","expect_primes":["SOMEONE","SOMETHING","SOMETHING"]}
+{"id":"ROBUST_typo_03","lang":"es","text":"El gato duerm dentro de la casa.","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROBUST_punct_01","lang":"en","text":"The cat sleeps inside the house!!!","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROBUST_punct_02","lang":"en","text":"The boy kicked the ball...","expect_primes":["SOMEONE","SOMETHING","SOMETHING"]}
+{"id":"ROBUST_emoji_01","lang":"en","text":"The cat 😺 sleeps inside the house 🏠","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROBUST_emoji_02","lang":"en","text":"The boy ⚽ kicked the ball 🥅","expect_primes":["SOMEONE","SOMETHING","SOMETHING"]}
+{"id":"ROBUST_codeswitch_01","lang":"en","text":"The cat está sleeping inside la casa.","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROBUST_codeswitch_02","lang":"es","text":"El gato is sleeping dentro de the house.","expect_primes":["SOMEONE","SOMETHING","INSIDE","SOMETHING"]}
+{"id":"ROBUST_fragment_01","lang":"en","text":"Cat sleeps.","expect_primes":["SOMEONE","SOMETHING"]}
+{"id":"ROBUST_fragment_02","lang":"en","text":"Boy kicked ball.","expect_primes":["SOMEONE","SOMETHING","SOMETHING"]}

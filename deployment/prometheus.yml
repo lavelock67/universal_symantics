@@ -12,23 +12,32 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  # NSM API
-  - job_name: 'nsm-api'
+  # Universal Translator API
+  - job_name: 'universal-translator-api'
     static_configs:
-      - targets: ['nsm-api:8001']
+      - targets: ['universal-translator-api:8000']
     metrics_path: '/metrics'
     scrape_interval: 10s
     scrape_timeout: 5s
+    honor_labels: true
 
-  # Nginx (if nginx-exporter is added)
-  # - job_name: 'nginx'
-  #   static_configs:
-  #     - targets: ['nginx-exporter:9113']
+  # Node Exporter (if running on host)
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['host.docker.internal:9100']
+    scrape_interval: 30s
 
-  # Redis (if redis-exporter is added)
-  # - job_name: 'redis'
-  #   static_configs:
-  #     - targets: ['redis-exporter:9121']
+  # Redis
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']
+    scrape_interval: 30s
+
+  # PostgreSQL (if using postgres_exporter)
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres:5432']
+    scrape_interval: 30s
 
 alerting:
   alertmanagers:

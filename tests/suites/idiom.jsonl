@@ -1,0 +1,10 @@
+{"id":"IDIOM_en_01","lang":"en","text":"That exam was a piece of cake.","expect_molecules":["EASY"],"invariants":["time_of_day","numbers"],"adapter_expected":"polite"}
+{"id":"IDIOM_en_02","lang":"en","text":"Break a leg!","expect_molecules":["GOOD_LUCK"],"invariants":["time_of_day"]}
+{"id":"IDIOM_en_03","lang":"en","text":"It's raining cats and dogs.","expect_molecules":["RAIN_HARD"],"invariants":["time_of_day","numbers"]}
+{"id":"IDIOM_es_01","lang":"es","text":"Eso es pan comido.","expect_molecules":["EASY"],"invariants":["time_of_day","numbers"]}
+{"id":"IDIOM_es_02","lang":"es","text":"¡Buena suerte!","expect_molecules":["GOOD_LUCK"],"invariants":["time_of_day"]}
+{"id":"IDIOM_fr_01","lang":"fr","text":"C'est du gâteau.","expect_molecules":["EASY"],"invariants":["time_of_day","numbers"]}
+{"id":"IDIOM_fr_02","lang":"fr","text":"Bonne chance!","expect_molecules":["GOOD_LUCK"],"invariants":["time_of_day"]}
+{"id":"INVARIANT_time_01","lang":"en","text":"The meeting is at 3 PM tomorrow.","invariants":["time_of_day","numbers"],"adapter_expected":"formal"}
+{"id":"INVARIANT_numbers_01","lang":"en","text":"There are 42 students in the class.","invariants":["numbers"],"adapter_expected":"neutral"}
+{"id":"INVARIANT_entities_01","lang":"en","text":"John Smith lives in Paris.","invariants":["entities"],"adapter_expected":"polite"}

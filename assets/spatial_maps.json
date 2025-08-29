@@ -1,0 +1,22 @@
+{
+  "es": {
+    "NEAR": ["cerca de", "cerca"],
+    "INSIDE": ["dentro de", "en el interior de", "dentro"],
+    "ABOVE": ["encima de", "sobre"]
+  },
+  "fr": {
+    "NEAR": ["près de", "près"],
+    "INSIDE": ["dans", "à l'intérieur de", "dedans"],
+    "ABOVE": ["au dessus de", "sur"]
+  },
+  "en": {
+    "NEAR": ["near", "close to"],
+    "INSIDE": ["inside", "inside of", "in"],
+    "ABOVE": ["above", "over", "on top of"]
+  },
+  "de": {
+    "NEAR": ["nahe", "in der Nähe von", "bei"],
+    "INSIDE": ["in", "innerhalb", "drinnen"],
+    "ABOVE": ["über", "oberhalb", "auf"]
+  }
+}

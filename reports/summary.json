@@ -1,0 +1,445 @@
+{
+  "timestamp": "2025-08-28T21:34:49.382742",
+  "langs": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "modes": [
+    "standard",
+    "neural",
+    "hybrid"
+  ],
+  "metrics": {
+    "prime_f1": {
+      "en": 0.0,
+      "es": 0.0,
+      "fr": 0.0
+    },
+    "scope_accuracy": {
+      "en": 0.0,
+      "es": 0.0,
+      "fr": 0.0
+    },
+    "graph_f1": {
+      "en": 0.0,
+      "es": 0.0,
+      "fr": 0.0
+    },
+    "router_sel_acc": {
+      "en": 0.0,
+      "es": 0.0,
+      "fr": 0.0
+    },
+    "adapter_invariant_violations": 0,
+    "glossary_violations": 0,
+    "latency_p95_ms": {
+      "standard": 0.0,
+      "neural": 0.0,
+      "hybrid": 0.0
+    },
+    "error_rate": 0.0
+  },
+  "failures": [
+    {
+      "test_id": "NEAR_es_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NEAR",
+        "PLACE",
+        "SOMEONE"
+      ],
+      "detected_primes": [
+        "NEAR",
+        "DO"
+      ],
+      "suite": "prime"
+    },
+    {
+      "test_id": "NEAR_es_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NEAR",
+        "PLACE",
+        "SOMEONE"
+      ],
+      "detected_primes": [
+        "NEAR",
+        "DO"
+      ],
+      "suite": "prime"
+    },
+    {
+      "test_id": "NEAR_es_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NEAR",
+        "PLACE",
+        "SOMEONE"
+      ],
+      "detected_primes": [
+        "NEAR",
+        "DO"
+      ],
+      "suite": "prime"
+    },
+    {
+      "test_id": "NEGATION_es_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NOT",
+        "FALSE",
+        "BE"
+      ],
+      "detected_primes": [
+        "SOMEONE",
+        "DO",
+        "NOT"
+      ],
+      "suite": "scope"
+    },
+    {
+      "test_id": "NEGATION_es_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NOT",
+        "FALSE",
+        "BE"
+      ],
+      "detected_primes": [
+        "SOMEONE",
+        "DO",
+        "NOT"
+      ],
+      "suite": "scope"
+    },
+    {
+      "test_id": "NEGATION_es_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NOT",
+        "FALSE",
+        "BE"
+      ],
+      "detected_primes": [
+        "SOMEONE",
+        "DO",
+        "NOT"
+      ],
+      "suite": "scope"
+    },
+    {
+      "test_id": "QUANTIFIER_fr_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NOT",
+        "MORE",
+        "HALF",
+        "PEOPLE",
+        "READ",
+        "MANY"
+      ],
+      "detected_primes": [
+        "SOMEONE"
+      ],
+      "suite": "scope"
+    },
+    {
+      "test_id": "QUANTIFIER_fr_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NOT",
+        "MORE",
+        "HALF",
+        "PEOPLE",
+        "READ",
+        "MANY"
+      ],
+      "detected_primes": [
+        "SOMEONE"
+      ],
+      "suite": "scope"
+    },
+    {
+      "test_id": "QUANTIFIER_fr_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "NOT",
+        "MORE",
+        "HALF",
+        "PEOPLE",
+        "READ",
+        "MANY"
+      ],
+      "detected_primes": [
+        "SOMEONE"
+      ],
+      "suite": "scope"
+    },
+    {
+      "test_id": "IDIOM_en_01",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "SOMEONE",
+        "THING",
+        "THING",
+        "THING"
+      ],
+      "suite": "idiom"
+    },
+    {
+      "test_id": "IDIOM_en_01",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "SOMEONE",
+        "THING",
+        "THING",
+        "THING"
+      ],
+      "suite": "idiom"
+    },
+    {
+      "test_id": "IDIOM_en_01",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "SOMEONE",
+        "THING",
+        "THING",
+        "THING"
+      ],
+      "suite": "idiom"
+    },
+    {
+      "test_id": "IDIOM_en_02",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "THING",
+        "DO"
+      ],
+      "suite": "idiom"
+    },
+    {
+      "test_id": "IDIOM_en_02",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "THING",
+        "DO"
+      ],
+      "suite": "idiom"
+    },
+    {
+      "test_id": "IDIOM_en_02",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "THING",
+        "DO"
+      ],
+      "suite": "idiom"
+    },
+    {
+      "test_id": "GLOSS_drug_01",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "DO",
+        "NOT"
+      ],
+      "suite": "gloss"
+    },
+    {
+      "test_id": "GLOSS_drug_01",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "DO",
+        "NOT"
+      ],
+      "suite": "gloss"
+    },
+    {
+      "test_id": "GLOSS_drug_01",
+      "reason": "Test failed",
+      "expected_primes": [],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "DO",
+        "NOT"
+      ],
+      "suite": "gloss"
+    },
+    {
+      "test_id": "ROBUST_typo_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "INSIDE",
+        "THING"
+      ],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "THING"
+      ],
+      "suite": "robust"
+    },
+    {
+      "test_id": "ROBUST_typo_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "INSIDE",
+        "THING"
+      ],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "THING"
+      ],
+      "suite": "robust"
+    },
+    {
+      "test_id": "ROBUST_typo_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "INSIDE",
+        "THING"
+      ],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "THING"
+      ],
+      "suite": "robust"
+    },
+    {
+      "test_id": "ROBUST_emoji_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "INSIDE",
+        "THING"
+      ],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "THING",
+        "THING"
+      ],
+      "suite": "robust"
+    },
+    {
+      "test_id": "ROBUST_emoji_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "INSIDE",
+        "THING"
+      ],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "THING",
+        "THING"
+      ],
+      "suite": "robust"
+    },
+    {
+      "test_id": "ROBUST_emoji_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "INSIDE",
+        "THING"
+      ],
+      "detected_primes": [
+        "INSIDE",
+        "SOMEONE",
+        "THING",
+        "THING",
+        "THING"
+      ],
+      "suite": "robust"
+    },
+    {
+      "test_id": "PERF_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "ABOVE",
+        "THING"
+      ],
+      "detected_primes": [
+        "ABOVE",
+        "SOMEONE",
+        "DO"
+      ],
+      "suite": "perf"
+    },
+    {
+      "test_id": "PERF_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "ABOVE",
+        "THING"
+      ],
+      "detected_primes": [
+        "ABOVE",
+        "SOMEONE",
+        "DO"
+      ],
+      "suite": "perf"
+    },
+    {
+      "test_id": "PERF_01",
+      "reason": "Test failed",
+      "expected_primes": [
+        "SOMEONE",
+        "DO",
+        "ABOVE",
+        "THING"
+      ],
+      "detected_primes": [
+        "ABOVE",
+        "SOMEONE",
+        "DO"
+      ],
+      "suite": "perf"
+    }
+  ],
+  "acceptance_gates": {
+    "prime_coverage": false,
+    "scope_accuracy": true,
+    "roundtrip_fidelity": true,
+    "invariants_glossary": false,
+    "performance": false
+  }
+}
