@@ -419,7 +419,9 @@ class SemanticGenerator:
             },
             "en": {
                 "on": ["on the internet", "on the web", "on television"],  # Media/technology
-                "in": ["in time", "in history", "in life"]  # Abstract domains
+                "in": ["in time", "in history", "in life", "in the team", "in the organization", "in the group"],  # Abstract domains
+                "near": ["near the future", "near the past", "near the deadline", "near the time"],  # Temporal/figurative
+                "inside": ["inside the team", "inside the organization", "inside the group"]  # Social/organizational
             },
             "de": {
                 "über": ["über das Internet", "über das Web", "über das Fernsehen"],  # Media/technology
