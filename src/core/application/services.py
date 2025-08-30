@@ -77,6 +77,27 @@ class NSMDetectionService(DetectionService):
         # Initialize detection components
         self._init_detection_components()
     
+    def _assert_pipeline_order(self, nlp):
+        """Assert that pipeline components are in the correct order for MWE processing."""
+        # Only check SpaCy pipeline components that should be present
+        # UD, SRL, and generator are handled by SemanticGenerator internally
+        req = ["attribute_ruler", "mwe_normalizer"]
+        names = nlp.pipe_names
+        
+        # Check that required SpaCy components are present
+        missing = [comp for comp in req if comp not in names]
+        if missing:
+            raise RuntimeError(f"Missing required pipeline components: {missing}. Available: {names}")
+        
+        # Check order constraints for SpaCy components
+        if "attribute_ruler" in names and "mwe_normalizer" in names:
+            attr_idx = names.index("attribute_ruler")
+            mwe_idx = names.index("mwe_normalizer")
+            if attr_idx >= mwe_idx:
+                raise RuntimeError(f"attribute_ruler must come before mwe_normalizer, got {names}")
+        
+        self.logger.info(f"Pipeline order validated: {names}")
+
     def _init_detection_components(self):
         """Initialize detection components."""
         try:
@@ -93,8 +114,8 @@ class NSMDetectionService(DetectionService):
                     if 'mwe_normalizer' not in nlp.pipe_names:
                         nlp.add_pipe('mwe_normalizer', name='mwe_normalizer', after='attribute_ruler')
                     
-                    # Ensure MWE normalizer runs after POS attributes are set
-                    # but before lemmatizer and NER
+                    # Assert pipeline order at startup
+                    self._assert_pipeline_order(nlp)
                     
                     self.spacy_models[lang] = nlp
                     self.logger.info(f"Loaded SpaCy model for {lang} with MWE normalizer")

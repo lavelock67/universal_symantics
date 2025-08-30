@@ -315,10 +315,11 @@ class SemanticGenerator:
         
         # If no MWE spans from normalizer, check if MWE normalizer ran but blocked figurative uses
         # This prevents fallback to single token detection for figurative expressions
-        if hasattr(doc._, 'mwe_spans_by_token') and doc._.mwe_spans_by_token is not None:
+        if mwe_spans_by_token is not None:
             # MWE normalizer ran but found no valid spans (likely blocked by guards)
             # Don't fall back to single token detection for spatial expressions
-            if len(doc._.mwe_spans_by_token) == 0:
+            if len(mwe_spans_by_token) == 0:
+                # MWE normalizer explicitly blocked this as figurative - don't emit spatial primes
                 return
         
         # Fallback to single token detection with enhanced MWE span access
