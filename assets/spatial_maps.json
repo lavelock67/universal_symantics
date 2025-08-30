@@ -1,22 +1,570 @@
 {
+  "en": {
+    "entries": [
+      {
+        "id": "NEAR__near",
+        "category": "spatial_adposition",
+        "prime_hint": "NEAR",
+        "canonical_lemma": "near",
+        "surface_variants": [
+          {
+            "pattern": ["near"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["close", "to"],
+            "tag_constraints": ["ADJ", "ADP"]
+          },
+          {
+            "pattern": ["next", "to"],
+            "tag_constraints": ["ADJ", "ADP"]
+          },
+          {
+            "pattern": ["beside"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["by"],
+            "tag_constraints": ["ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["future", "past", "time", "deadline", "topic", "subject"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["future|past|time|deadline|topic|subject"]
+        },
+        "notes": "Blocks figurative 'near future'. Allows places/physical nouns."
+      },
+      {
+        "id": "INSIDE__inside",
+        "category": "spatial_adposition",
+        "prime_hint": "INSIDE",
+        "canonical_lemma": "inside",
+        "surface_variants": [
+          {
+            "pattern": ["inside"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["inside", "of"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["in"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["within"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["within", "the"],
+            "tag_constraints": ["ADP", "DET"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["team", "group", "organization", "company", "family", "community"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["team|group|organization|company|family|community"]
+        },
+        "notes": "Blocks social/organizational 'inside the team'. Allows physical containers."
+      },
+      {
+        "id": "ABOVE__above",
+        "category": "spatial_adposition",
+        "prime_hint": "ABOVE",
+        "canonical_lemma": "above",
+        "surface_variants": [
+          {
+            "pattern": ["above"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["over"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["on", "top", "of"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["up", "above"],
+            "tag_constraints": ["ADV", "ADP"]
+          },
+          {
+            "pattern": ["higher", "than"],
+            "tag_constraints": ["ADJ", "SCONJ"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["topic", "subject", "theme", "matter", "issue"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["topic|subject|theme|matter|issue"]
+        },
+        "notes": "Blocks topical 'over the subject'. Allows physical objects."
+      },
+      {
+        "id": "IN_FRONT__in_front_of",
+        "category": "spatial_adposition",
+        "prime_hint": "IN_FRONT",
+        "canonical_lemma": "in_front_of",
+        "surface_variants": [
+          {
+            "pattern": ["in", "front", "of"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["future", "past", "time"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"]
+        },
+        "notes": "Blocks temporal 'in front of time'. Allows physical objects."
+      }
+    ]
+  },
   "es": {
-    "NEAR": ["cerca de", "cerca"],
-    "INSIDE": ["dentro de", "en el interior de", "dentro"],
-    "ABOVE": ["encima de", "sobre"]
+    "entries": [
+      {
+        "id": "NEAR__cerca_de",
+        "category": "spatial_adposition",
+        "prime_hint": "NEAR",
+        "canonical_lemma": "cerca_de",
+        "surface_variants": [
+          {
+            "pattern": ["cerca", "de"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["cerca"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["junto", "a"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["al", "lado", "de"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["próximo", "a"],
+            "tag_constraints": ["ADJ", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["futuro", "plazo", "tema", "asunto", "tiempo"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["futuro|plazo|tema|asunto|tiempo"]
+        },
+        "notes": "Blocks figurative 'cerca del futuro'. Allows places/physical nouns."
+      },
+      {
+        "id": "INSIDE__dentro_de",
+        "category": "spatial_adposition",
+        "prime_hint": "INSIDE",
+        "canonical_lemma": "dentro_de",
+        "surface_variants": [
+          {
+            "pattern": ["dentro", "de"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["en", "el", "interior", "de"],
+            "tag_constraints": ["ADP", "DET", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["dentro"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["en"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["adentro", "de"],
+            "tag_constraints": ["ADV", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["equipo", "grupo", "organización", "empresa", "familia", "comunidad"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["equipo|grupo|organización|empresa|familia|comunidad"]
+        },
+        "notes": "Blocks social/organizational 'en el equipo'. Allows physical containers."
+      },
+      {
+        "id": "ABOVE__encima_de",
+        "category": "spatial_adposition",
+        "prime_hint": "ABOVE",
+        "canonical_lemma": "encima_de",
+        "surface_variants": [
+          {
+            "pattern": ["encima", "de"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["sobre"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["arriba", "de"],
+            "tag_constraints": ["ADV", "ADP"]
+          },
+          {
+            "pattern": ["por", "encima", "de"],
+            "tag_constraints": ["ADP", "ADP", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["tema", "asunto", "sujeto", "materia", "cuestión"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["tema|asunto|sujeto|materia|cuestión"]
+        },
+        "notes": "Blocks topical 'sobre el tema'. Allows physical objects."
+      },
+      {
+        "id": "IN_FRONT__en_frente_de",
+        "category": "spatial_adposition",
+        "prime_hint": "IN_FRONT",
+        "canonical_lemma": "en_frente_de",
+        "surface_variants": [
+          {
+            "pattern": ["en", "frente", "de"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["enfrente", "de"],
+            "tag_constraints": ["ADV", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["futuro", "pasado", "tiempo"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"]
+        },
+        "notes": "Blocks temporal 'en frente del tiempo'. Allows physical objects."
+      }
+    ]
   },
   "fr": {
-    "NEAR": ["près de", "près"],
-    "INSIDE": ["dans", "à l'intérieur de", "dedans"],
-    "ABOVE": ["au dessus de", "sur"]
-  },
-  "en": {
-    "NEAR": ["near", "close to"],
-    "INSIDE": ["inside", "inside of", "in"],
-    "ABOVE": ["above", "over", "on top of"]
+    "entries": [
+      {
+        "id": "NEAR__près_de",
+        "category": "spatial_adposition",
+        "prime_hint": "NEAR",
+        "canonical_lemma": "près_de",
+        "surface_variants": [
+          {
+            "pattern": ["près", "de"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["près"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["à", "côté", "de"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["à", "proximité", "de"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["auprès", "de"],
+            "tag_constraints": ["ADP", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["futur", "passé", "sujet", "thème", "temps"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["futur|passé|sujet|thème|temps"]
+        },
+        "notes": "Blocks figurative 'près du futur'. Allows places/physical nouns."
+      },
+      {
+        "id": "INSIDE__dans",
+        "category": "spatial_adposition",
+        "prime_hint": "INSIDE",
+        "canonical_lemma": "dans",
+        "surface_variants": [
+          {
+            "pattern": ["dans"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["à", "l'intérieur", "de"],
+            "tag_constraints": ["ADP", "DET", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["dedans"],
+            "tag_constraints": ["ADV"]
+          },
+          {
+            "pattern": ["en"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["au", "sein", "de"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["équipe", "groupe", "organisation", "entreprise", "famille", "communauté"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["équipe|groupe|organisation|entreprise|famille|communauté"]
+        },
+        "notes": "Blocks social/organizational 'dans l'équipe'. Allows physical containers."
+      },
+      {
+        "id": "ABOVE__au_dessus_de",
+        "category": "spatial_adposition",
+        "prime_hint": "ABOVE",
+        "canonical_lemma": "au_dessus_de",
+        "surface_variants": [
+          {
+            "pattern": ["au-dessus", "de"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["sur"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["par-dessus"],
+            "tag_constraints": ["ADP", "ADP"]
+          },
+          {
+            "pattern": ["au-dessus"],
+            "tag_constraints": ["ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["sujet", "thème", "matière", "question", "problème"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["sujet|thème|matière|question|problème"]
+        },
+        "notes": "Blocks topical 'sur le sujet'. Allows physical objects."
+      },
+      {
+        "id": "IN_FRONT__en_face_de",
+        "category": "spatial_adposition",
+        "prime_hint": "IN_FRONT",
+        "canonical_lemma": "en_face_de",
+        "surface_variants": [
+          {
+            "pattern": ["en", "face", "de"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["futur", "passé", "temps"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"]
+        },
+        "notes": "Blocks temporal 'en face du temps'. Allows physical objects."
+      }
+    ]
   },
   "de": {
-    "NEAR": ["nahe", "in der Nähe von", "bei"],
-    "INSIDE": ["in", "innerhalb", "drinnen"],
-    "ABOVE": ["über", "oberhalb", "auf"]
+    "entries": [
+      {
+        "id": "NEAR__nahe",
+        "category": "spatial_adposition",
+        "prime_hint": "NEAR",
+        "canonical_lemma": "nahe",
+        "surface_variants": [
+          {
+            "pattern": ["nahe"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["in", "der", "Nähe", "von"],
+            "tag_constraints": ["ADP", "DET", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["bei"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["neben"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["an"],
+            "tag_constraints": ["ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["zukunft", "vergangenheit", "thema", "zeit"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["zukunft|vergangenheit|thema|zeit"]
+        },
+        "notes": "Blocks figurative 'nahe der Zukunft'. Allows places/physical nouns."
+      },
+      {
+        "id": "INSIDE__in",
+        "category": "spatial_adposition",
+        "prime_hint": "INSIDE",
+        "canonical_lemma": "in",
+        "surface_variants": [
+          {
+            "pattern": ["in"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["innerhalb"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["drinnen"],
+            "tag_constraints": ["ADV"]
+          },
+          {
+            "pattern": ["im", "Inneren", "von"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["darin"],
+            "tag_constraints": ["ADV"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["mannschaft", "gruppe", "organisation", "unternehmen", "familie", "gemeinschaft"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["mannschaft|gruppe|organisation|unternehmen|familie|gemeinschaft"]
+        },
+        "notes": "Blocks social/organizational 'in der Mannschaft'. Allows physical containers."
+      },
+      {
+        "id": "ABOVE__über",
+        "category": "spatial_adposition",
+        "prime_hint": "ABOVE",
+        "canonical_lemma": "über",
+        "surface_variants": [
+          {
+            "pattern": ["über"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["oberhalb"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["auf"],
+            "tag_constraints": ["ADP"]
+          },
+          {
+            "pattern": ["darüber"],
+            "tag_constraints": ["ADV"]
+          },
+          {
+            "pattern": ["höher", "als"],
+            "tag_constraints": ["ADJ", "SCONJ"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["thema", "sujet", "materie", "frage", "problem"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["thema|sujet|materie|frage|problem"]
+        },
+        "notes": "Blocks topical 'über das Thema'. Allows physical objects."
+      },
+      {
+        "id": "IN_FRONT__vor",
+        "category": "spatial_adposition",
+        "prime_hint": "IN_FRONT",
+        "canonical_lemma": "vor",
+        "surface_variants": [
+          {
+            "pattern": ["vor"],
+            "tag_constraints": ["ADP"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["zukunft", "vergangenheit", "zeit"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"]
+        },
+        "notes": "Blocks temporal 'vor der Zeit'. Allows physical objects."
+      }
+    ]
   }
 }

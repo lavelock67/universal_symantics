@@ -84,6 +84,7 @@ class PipelineMetrics:
     
     def __init__(self):
         self.metrics: Dict[str, StageMetrics] = {}
+        self.counters: Dict[str, int] = defaultdict(int)
         self.logger = logging.getLogger(__name__)
     
     def observe_stage(self, stage: str, mode: str, time_ms: float):
@@ -97,6 +98,14 @@ class PipelineMetrics:
         # Log if timing is unusually high
         if time_ms > 1000:  # More than 1 second
             self.logger.warning(f"Slow stage: {stage} ({mode}) took {time_ms:.2f}ms")
+    
+    def increment_counter(self, counter_name: str, value: int = 1):
+        """Increment a counter."""
+        self.counters[counter_name] += value
+    
+    def get_counter(self, counter_name: str) -> int:
+        """Get counter value."""
+        return self.counters.get(counter_name, 0)
     
     def get_stage_metrics(self, stage: str, mode: str) -> Optional[StageMetrics]:
         """Get metrics for a specific stage and mode."""

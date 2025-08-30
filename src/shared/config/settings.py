@@ -20,6 +20,7 @@ class ModelSettings(BaseSettings):
     spacy_model_en: str = Field(default="en_core_web_sm", description="English SpaCy model")
     spacy_model_es: str = Field(default="es_core_news_sm", description="Spanish SpaCy model")
     spacy_model_fr: str = Field(default="fr_core_news_sm", description="French SpaCy model")
+    spacy_model_de: str = Field(default="de_core_news_sm", description="German SpaCy model")
     
     # Transformer model configurations
     sbert_model: str = Field(default="sentence-transformers/all-mpnet-base-v2", description="SBERT model for semantic similarity")

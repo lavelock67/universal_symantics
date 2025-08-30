@@ -22,6 +22,8 @@ from ..domain.models import (
     DiscoveryResult, GenerationResult, Language, PrimeType, MWEType
 )
 from ..infrastructure.model_manager import get_model_manager
+from ...semgen.generator import SemanticGenerator
+from ...semgen.timing import get_metrics
 
 
 class DetectionService(ABC):
@@ -80,7 +82,7 @@ class NSMDetectionService(DetectionService):
         try:
             # Load SpaCy models for supported languages
             self.spacy_models = {}
-            for lang in ["en", "es", "fr"]:
+            for lang in ["en", "es", "fr", "de"]:
                 try:
                     self.spacy_models[lang] = self.model_manager.get_spacy_model(lang)
                     self.logger.info(f"Loaded SpaCy model for {lang}")
@@ -122,13 +124,22 @@ class NSMDetectionService(DetectionService):
             #     self.missing_prime_detector = None
             self.missing_prime_detector = None
             
+            # Initialize SemanticGenerator (ADR-001: single prime emitter)
+            try:
+                self.semantic_generator = SemanticGenerator()
+                self.logger.info("Loaded SemanticGenerator for ADR-001 compliant prime generation")
+            except Exception as e:
+                self.logger.error(f"Failed to load SemanticGenerator: {str(e)}")
+                raise RuntimeError(f"SemanticGenerator is required for ADR-001 compliance: {str(e)}")
+            
         except Exception as e:
             self.logger.error(f"Failed to initialize detection components: {str(e)}")
             raise
     
     def detect_primes(self, text: str, language: Language) -> DetectionResult:
-        """Detect NSM primes in the given text."""
+        """Detect NSM primes in the given text using ADR-001 compliant SemanticGenerator."""
         start_time = time.time()
+        semantic_trace = []
         with PerformanceContext("detect_primes", self.logger):
             try:
                 # Validate input
@@ -151,81 +162,98 @@ class NSMDetectionService(DetectionService):
                 
                 # Process text with SpaCy
                 doc = spacy_model(text)
+                semantic_trace.append("mwe")
                 
-                # Detect primes using multiple methods
-                primes = []
-                
-                # 1. Enhanced Semantic detection (SBERT-based) - PRIMARY METHOD
-                semantic_primes = self._detect_primes_semantic_enhanced(doc, language)
-                primes.extend(semantic_primes)
-                self.logger.info(f"Enhanced semantic detection found: {[p.text for p in semantic_primes]}")
-                
-                # 2. Enhanced UD-based detection (dependency parsing)
-                ud_primes = self._detect_primes_ud_enhanced(doc, language)
-                primes.extend(ud_primes)
-                self.logger.info(f"Enhanced UD detection found: {[p.text for p in ud_primes]}")
-                
-                # 3. MWE detection (multi-word expressions)
-                
-                # 4. MWE detection
+                # 1. MWE Detection (must happen before UD)
+                mwes = []
                 if self.mwe_detector:
                     try:
                         self.logger.info(f"Calling MWE detector for text: '{text}'")
                         mwes = self.mwe_detector.detect_mwes(text, language)
                         self.logger.info(f"MWE detector returned: {len(mwes)} MWEs")
+                        
+                        # PHASE 5: Store MWE spans by token for full span access
+                        # This ensures MWE spans are available for ADP chains
+                        mwe_spans_by_token = {}
                         for mwe in mwes:
-                            self.logger.info(f"Processing MWE: {mwe.text} with primes: {mwe.primes}")
-                            for prime_text in mwe.primes:
-                                prime_obj = NSMPrime(
-                                    text=prime_text.upper(),  # Normalize to uppercase
-                                    type=self._get_prime_type(prime_text),
-                                    language=language,
-                                    confidence=mwe.confidence,
-                                    frequency=1
-                                )
-                                primes.append(prime_obj)
-                        self.logger.info(f"MWE detection found: {[mwe.text for mwe in mwes]}")
-                        self.logger.info(f"MWE primes found: {[prime for mwe in mwes for prime in mwe.primes]}")
+                            # Map each token position in the MWE span to the full MWE
+                            for i in range(mwe.start, mwe.end):
+                                if i not in mwe_spans_by_token:
+                                    mwe_spans_by_token[i] = []
+                                mwe_spans_by_token[i].append(mwe)
+                        
+                        self.logger.info(f"Stored MWE spans for {len(mwe_spans_by_token)} token positions")
+                        semantic_trace.append("ud")
                     except Exception as e:
                         self.logger.warning(f"MWE detection failed: {str(e)}")
-                        import traceback
-                        self.logger.warning(f"MWE detection traceback: {traceback.format_exc()}")
+                        mwes = []
+                        mwe_spans_by_token = {}
                 else:
                     self.logger.warning("MWE detector not available")
+                    mwe_spans_by_token = {}
                 
-                # 5. Missing Prime detection (ABOVE, INSIDE, NEAR, ONE, WORDS)
-                if self.missing_prime_detector:
+                # 2. UD Analysis (dependency parsing)
+                # Extract UD information for the SemanticGenerator
+                ud_info = self._extract_ud_info(doc)
+                semantic_trace.append("generator")
+                
+                # 3. SRL Hint (optional)
+                srl_hint = None
+                if hasattr(self, 'ud_detector') and self.ud_detector:
                     try:
-                        self.logger.info(f"Calling Missing Prime detector for text: '{text}'")
-                        missing_primes = self.missing_prime_detector.detect_all_missing_primes(text, language)
-                        self.logger.info(f"Missing Prime detector returned: {len(missing_primes)} primes")
-                        for prime_name, confidence in missing_primes.items():
+                        # Extract basic SRL information as hint
+                        srl_hint = self._extract_srl_hint(doc)
+                        semantic_trace.append("srl")
+                    except Exception as e:
+                        self.logger.warning(f"SRL hint extraction failed: {str(e)}")
+                
+                # 4. UMR (optional - for future integration)
+                umr = None
+                
+                # 5. SEMANTIC GENERATOR (ADR-001: single prime emitter)
+                self.logger.info("Calling SemanticGenerator for ADR-001 compliant prime generation")
+                try:
+                    # Increment generator invocation counter
+                    metrics = get_metrics()
+                    metrics.increment_counter("generator_invocations_total")
+                    
+                    # Call the SemanticGenerator
+                    eil_result = self.semantic_generator.generate(
+                        doc=doc,
+                        lang=language.value,
+                        mwe_tags=mwes,
+                        srl=srl_hint,
+                        umr_graph=umr,
+                        mwe_spans_by_token=mwe_spans_by_token
+                    )
+                    
+                    # Assert generator returned valid result
+                    assert eil_result is not None, "SemanticGenerator returned None"
+                    
+                    # Extract primes from EIL result
+                    primes = []
+                    if hasattr(eil_result, 'get_primes'):
+                        prime_list = eil_result.get_primes()
+                        for prime in prime_list:
                             prime_obj = NSMPrime(
-                                text=prime_name.upper(),  # Normalize to uppercase
-                                type=self._get_prime_type(prime_name),
+                                text=prime.upper(),
+                                type=self._get_prime_type(prime),
                                 language=language,
-                                confidence=confidence,
+                                confidence=0.9,  # High confidence for semantic generation
                                 frequency=1
                             )
                             primes.append(prime_obj)
-                        self.logger.info(f"Missing Prime detection found: {list(missing_primes.keys())}")
-                    except Exception as e:
-                        self.logger.warning(f"Missing Prime detection failed: {str(e)}")
-                        import traceback
-                        self.logger.warning(f"Missing Prime detection traceback: {traceback.format_exc()}")
-                else:
-                    self.logger.warning("Missing Prime detector not available")
+                    
+                    self.logger.info(f"SemanticGenerator produced {len(primes)} primes: {[p.text for p in primes]}")
+                    
+                except Exception as e:
+                    self.logger.error(f"SemanticGenerator failed: {str(e)}")
+                    import traceback
+                    self.logger.error(f"SemanticGenerator traceback: {traceback.format_exc()}")
+                    raise RuntimeError(f"SemanticGenerator is required for ADR-001 compliance: {str(e)}")
                 
-                # Remove duplicates and sort by confidence
+                # Remove duplicates
                 unique_primes = self._deduplicate_primes(primes)
-                
-                # Use MWEs from the MWE detector (already detected above)
-                mwes = []
-                if self.mwe_detector:
-                    try:
-                        mwes = self.mwe_detector.detect_mwes(text, language)
-                    except Exception as e:
-                        self.logger.warning(f"MWE detection failed: {str(e)}")
                 
                 # Calculate overall confidence
                 confidence = self._calculate_confidence(unique_primes, mwes)
@@ -233,15 +261,17 @@ class NSMDetectionService(DetectionService):
                 # Calculate processing time
                 processing_time = time.time() - start_time
                 
-                # Add pipeline metadata
+                # Add pipeline metadata (ADR-001 compliance)
                 metadata = {
                     "pipeline_path": "semantic",
                     "manual_detector_count": 0,
-                    "detection_methods": ["semantic_enhanced", "ud_enhanced", "mwe", "missing_prime"],
-                    "semantic_enhanced_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'semantic_enhanced']),
-                    "ud_enhanced_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'ud_enhanced']),
-                    "mwe_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'mwe']),
-                    "missing_prime_count": len([p for p in primes if hasattr(p, 'source_method') and p.source_method == 'missing_prime'])
+                    "semantic_trace": semantic_trace,
+                    "generator_invocations_total": metrics.get_counter("generator_invocations_total") if 'metrics' in locals() else 0,
+                    "detection_methods": ["semantic_generator"],
+                    "semantic_generator_count": len(primes),
+                    "ud_enhanced_count": 0,
+                    "mwe_count": len(mwes),
+                    "missing_prime_count": 0
                 }
                 
                 return DetectionResult(
@@ -1888,6 +1918,64 @@ class NSMDetectionService(DetectionService):
             "total_covered_types": total_covered,
         }
 
+
+    def _extract_ud_info(self, doc) -> dict:
+        """Extract UD information for the SemanticGenerator."""
+        ud_info = {
+            'tokens': [],
+            'dependencies': [],
+            'pos_tags': [],
+            'lemmas': []
+        }
+        
+        for token in doc:
+            ud_info['tokens'].append({
+                'text': token.text,
+                'lemma': token.lemma_,
+                'pos': token.pos_,
+                'dep': token.dep_,
+                'head': token.head.text if token.head else None,
+                'head_idx': token.head.i if token.head else None,
+                'idx': token.i
+            })
+            ud_info['dependencies'].append((token.head.i if token.head else token.i, token.i, token.dep_))
+            ud_info['pos_tags'].append(token.pos_)
+            ud_info['lemmas'].append(token.lemma_)
+        
+        return ud_info
+
+    def _extract_srl_hint(self, doc) -> list:
+        """Extract basic SRL information as hint for SemanticGenerator."""
+        srl_roles = []
+        
+        # Basic SRL extraction using dependency patterns
+        for token in doc:
+            if token.pos_ in ['VERB', 'AUX']:
+                # Find arguments (subjects, objects, etc.)
+                for child in token.children:
+                    if child.dep_ in ['nsubj', 'nsubjpass']:
+                        # AGENT role
+                        srl_roles.append({
+                            'role': 'AGENT',
+                            'text': child.text,
+                            'confidence': 0.9
+                        })
+                    elif child.dep_ in ['dobj', 'iobj']:
+                        # PATIENT role
+                        srl_roles.append({
+                            'role': 'PATIENT',
+                            'text': child.text,
+                            'confidence': 0.8
+                        })
+                    elif child.dep_ in ['pobj']:
+                        # THEME role
+                        srl_roles.append({
+                            'role': 'THEME',
+                            'text': child.text,
+                            'confidence': 0.7
+                        })
+        
+        return srl_roles
 
 # Service factory
 def create_detection_service() -> DetectionService:
