@@ -80,6 +80,33 @@
         "notes": "Blocks social/organizational 'inside the team'. Allows physical containers."
       },
       {
+        "id": "IN_FRONT__in_front_of",
+        "category": "spatial_adposition",
+        "prime_hint": "IN_FRONT",
+        "canonical_lemma": "in_front_of",
+        "surface_variants": [
+          {
+            "pattern": ["in", "front", "of"],
+            "tag_constraints": ["ADP", "NOUN", "ADP"]
+          },
+          {
+            "pattern": ["in", "front"],
+            "tag_constraints": ["ADP", "NOUN"]
+          }
+        ],
+        "ud_constraints": {
+          "head_pos_any": ["NOUN", "PROPN", "PRON"],
+          "dep_ok": ["case", "fixed", "mark"]
+        },
+        "guards": {
+          "forbid_lemmas_on_object": ["time", "future", "past", "deadline"],
+          "require_object_ner_any": ["LOC", "GPE", "FAC", "PLACE"],
+          "disallow_heads_pos": ["VERB:aux", "SCONJ"],
+          "regex_forbid_right_context": ["time|future|past|deadline"]
+        },
+        "notes": "Blocks temporal 'in front of time'. Allows physical objects."
+      },
+      {
         "id": "ABOVE__above",
         "category": "spatial_adposition",
         "prime_hint": "ABOVE",

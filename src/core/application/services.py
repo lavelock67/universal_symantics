@@ -80,12 +80,24 @@ class NSMDetectionService(DetectionService):
     def _init_detection_components(self):
         """Initialize detection components."""
         try:
-            # Load SpaCy models for supported languages
+            # Import MWE normalizer to register factory
+            from ...nlp.components.mwe_normalizer import MWENormalizer, create_mwe_normalizer
+            
+            # Load SpaCy models for supported languages with MWE normalizer
             self.spacy_models = {}
             for lang in ["en", "es", "fr", "de"]:
                 try:
-                    self.spacy_models[lang] = self.model_manager.get_spacy_model(lang)
-                    self.logger.info(f"Loaded SpaCy model for {lang}")
+                    nlp = self.model_manager.get_spacy_model(lang)
+                    
+                    # Force MWE normalizer to run after attribute_ruler (for POS attributes)
+                    if 'mwe_normalizer' not in nlp.pipe_names:
+                        nlp.add_pipe('mwe_normalizer', name='mwe_normalizer', after='attribute_ruler')
+                    
+                    # Ensure MWE normalizer runs after POS attributes are set
+                    # but before lemmatizer and NER
+                    
+                    self.spacy_models[lang] = nlp
+                    self.logger.info(f"Loaded SpaCy model for {lang} with MWE normalizer")
                 except Exception as e:
                     self.logger.warning(f"Failed to load SpaCy model for {lang}: {str(e)}")
             
@@ -160,42 +172,36 @@ class NSMDetectionService(DetectionService):
                 if not spacy_model:
                     raise ValueError(f"No SpaCy model available for language: {language.value}")
                 
-                # Process text with SpaCy
+                # Process text with SpaCy pipeline (MWE → UD → SRL → Generator)
+                # This ensures MWE normalizer runs first and UD sees normalized tokens
                 doc = spacy_model(text)
                 semantic_trace.append("mwe")
                 
-                # 1. MWE Detection (must happen before UD)
+                # Extract MWE spans from the processed document
+                mwe_spans_by_token = doc._.mwe_spans_by_token if hasattr(doc._, 'mwe_spans_by_token') else {}
                 mwes = []
-                if self.mwe_detector:
-                    try:
-                        self.logger.info(f"Calling MWE detector for text: '{text}'")
-                        mwes = self.mwe_detector.detect_mwes(text, language)
-                        self.logger.info(f"MWE detector returned: {len(mwes)} MWEs")
-                        
-                        # PHASE 5: Store MWE spans by token for full span access
-                        # This ensures MWE spans are available for ADP chains
-                        mwe_spans_by_token = {}
-                        for mwe in mwes:
-                            # Map each token position in the MWE span to the full MWE
-                            for i in range(mwe.start, mwe.end):
-                                if i not in mwe_spans_by_token:
-                                    mwe_spans_by_token[i] = []
-                                mwe_spans_by_token[i].append(mwe)
-                        
-                        self.logger.info(f"Stored MWE spans for {len(mwe_spans_by_token)} token positions")
-                        semantic_trace.append("ud")
-                    except Exception as e:
-                        self.logger.warning(f"MWE detection failed: {str(e)}")
-                        mwes = []
-                        mwe_spans_by_token = {}
-                else:
-                    self.logger.warning("MWE detector not available")
-                    mwe_spans_by_token = {}
+                
+                # Convert MWE spans to MWE objects for compatibility
+                for token_indices, spans in mwe_spans_by_token.items():
+                    for span in spans:
+                        mwe = MWE(
+                            text=span.text,
+                            start=span.start,
+                            end=span.end,
+                            type=MWEType.IDIOM,  # Use IDIOM for spatial expressions
+                            primes=[],  # Empty list for now
+                            confidence=0.9,  # High confidence for normalized MWEs
+                            language=language
+                        )
+                        mwes.append(mwe)
+                
+                self.logger.info(f"Extracted {len(mwes)} MWEs from pipeline")
+                semantic_trace.append("ud")
                 
                 # 2. UD Analysis (dependency parsing)
                 # Extract UD information for the SemanticGenerator
                 ud_info = self._extract_ud_info(doc)
-                semantic_trace.append("generator")
+                semantic_trace.append("ud")
                 
                 # 3. SRL Hint (optional)
                 srl_hint = None
@@ -206,6 +212,9 @@ class NSMDetectionService(DetectionService):
                         semantic_trace.append("srl")
                     except Exception as e:
                         self.logger.warning(f"SRL hint extraction failed: {str(e)}")
+                
+                # 4. SEMANTIC GENERATOR (ADR-001: single prime emitter)
+                semantic_trace.append("generator")
                 
                 # 4. UMR (optional - for future integration)
                 umr = None
@@ -263,7 +272,7 @@ class NSMDetectionService(DetectionService):
                 
                 # Add pipeline metadata (ADR-001 compliance)
                 metadata = {
-                    "pipeline_path": "semantic",
+                    "pipeline_path": "semantic+umr" if umr else "semantic",
                     "manual_detector_count": 0,
                     "semantic_trace": semantic_trace,
                     "generator_invocations_total": metrics.get_counter("generator_invocations_total") if 'metrics' in locals() else 0,
@@ -273,6 +282,27 @@ class NSMDetectionService(DetectionService):
                     "mwe_count": len(mwes),
                     "missing_prime_count": 0
                 }
+                
+                # Add debug information if enabled
+                import os
+                if os.getenv("USYM_DEBUG") == "1":
+                    metadata["debug"] = {
+                        "mwe": {
+                            "spans": {
+                                "count": len(mwe_spans_by_token),
+                                "examples": list(mwe_spans_by_token.keys())[:3] if mwe_spans_by_token else []
+                            }
+                        },
+                        "ud": {
+                            "n_tokens": len(doc)
+                        }
+                    }
+                
+                # Critical pipeline integrity checks
+                assert semantic_trace[0] == "mwe", "MWE must run first"
+                assert "generator" in semantic_trace, "Generator must run"
+                assert metadata["manual_detector_count"] == 0, "No manual detectors allowed"
+                assert metadata["pipeline_path"] in ["semantic", "semantic+umr"], "Invalid pipeline path"
                 
                 return DetectionResult(
                     primes=unique_primes,

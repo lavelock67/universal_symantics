@@ -259,33 +259,67 @@ class SemanticGenerator:
         text = " ".join([t.text for t in doc]).lower()
         
         # Check for multi-word spatial expressions (MWE normalization)
-        if lang in self.spatial_maps:
-            for prime, patterns in self.spatial_maps[lang].items():
-                for pattern in patterns:
+        if lang in self.spatial_maps and "entries" in self.spatial_maps[lang]:
+            for entry in self.spatial_maps[lang]["entries"]:
+                prime_hint = entry.get("prime_hint")
+                if not prime_hint:
+                    continue
+                
+                # Check each surface variant
+                for variant in entry.get("surface_variants", []):
+                    pattern = variant.get("pattern", [])
+                    if not pattern:
+                        continue
+                    
+                    # Convert pattern to string for matching
+                    pattern_text = " ".join(pattern)
+                    
                     # Handle hyphenated compounds like "au-dessus de"
                     normalized_text = text.replace(" - ", "").replace("-", "").replace(" ", "")
-                    normalized_pattern = pattern.replace(" ", "")
+                    normalized_pattern = pattern_text.replace(" ", "")
                     
                     # Check for exact pattern match
-                    if pattern in text:
-                        if self._is_spatial_licensed(pattern, lang, prime, doc):
-                            graph.add_prime(prime, confidence=0.9)
+                    if pattern_text in text:
+                        if self._is_spatial_licensed(pattern_text, lang, prime_hint, doc):
+                            graph.add_prime(prime_hint, confidence=0.9)
                             return  # Only add one spatial prime per sentence
                     
                     # Check for normalized pattern match
                     if normalized_pattern in normalized_text:
-                        if self._is_spatial_licensed(pattern, lang, prime, doc):
-                            graph.add_prime(prime, confidence=0.9)
+                        if self._is_spatial_licensed(pattern_text, lang, prime_hint, doc):
+                            graph.add_prime(prime_hint, confidence=0.9)
                             return  # Only add one spatial prime per sentence
                     
                     # Check for token sequence match (for hyphenated compounds)
                     tokens = [t.text.lower() for t in doc if t.pos_ != "PUNCT"]
-                    pattern_tokens = pattern.split()
+                    pattern_tokens = [p.lower() for p in pattern]
                     for i in range(len(tokens) - len(pattern_tokens) + 1):
                         if tokens[i:i+len(pattern_tokens)] == pattern_tokens:
-                            if self._is_spatial_licensed(pattern, lang, prime, doc):
-                                graph.add_prime(prime, confidence=0.9)
+                            if self._is_spatial_licensed(pattern_text, lang, prime_hint, doc):
+                                graph.add_prime(prime_hint, confidence=0.9)
                                 return  # Only add one spatial prime per sentence
+        
+        # Use MWE spans from MWE normalizer if available
+        if hasattr(doc._, 'mwe_spans_by_token') and doc._.mwe_spans_by_token:
+            # Process MWE spans from the normalizer
+            for token_i, spans in doc._.mwe_spans_by_token.items():
+                for span in spans:
+                    if hasattr(span._, 'mwe_meta') and span._.mwe_meta:
+                        meta = span._.mwe_meta
+                        prime_hint = meta.get('prime_hint')
+                        if prime_hint:
+                            # Apply guards using the span metadata
+                            if self._is_spatial_licensed(span.text, lang, prime_hint, doc):
+                                graph.add_prime(prime_hint, confidence=0.9)
+                                return  # Only add one spatial prime per sentence
+        
+        # If no MWE spans from normalizer, check if MWE normalizer ran but blocked figurative uses
+        # This prevents fallback to single token detection for figurative expressions
+        if hasattr(doc._, 'mwe_spans_by_token') and doc._.mwe_spans_by_token is not None:
+            # MWE normalizer ran but found no valid spans (likely blocked by guards)
+            # Don't fall back to single token detection for spatial expressions
+            if len(doc._.mwe_spans_by_token) == 0:
+                return
         
         # Fallback to single token detection with enhanced MWE span access
         for token in doc:

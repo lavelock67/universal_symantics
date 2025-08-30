@@ -24,9 +24,9 @@ from spacy.language import Language
 
 # Register extensions
 if not Doc.has_extension("mwe_spans_by_token"):
-    Doc.set_extension("mwe_spans_by_token", default=None, force=True)
+    Doc.set_extension("mwe_spans_by_token", default={}, force=True)
 if not Span.has_extension("mwe_meta"):
-    Span.set_extension("mwe_meta", default=None, force=True)
+    Span.set_extension("mwe_meta", default={}, force=True)
 
 
 def load_spatial_maps() -> Dict[str, Dict]:
@@ -342,4 +342,13 @@ class MWENormalizer:
 @Language.factory("mwe_normalizer")
 def create_mwe_normalizer(nlp: Language, name: str) -> MWENormalizer:
     """Factory function for SpaCy pipeline integration."""
-    return MWENormalizer(nlp)
+    # Ensure extensions are registered on this specific nlp instance
+    if not Doc.has_extension("mwe_spans_by_token"):
+        Doc.set_extension("mwe_spans_by_token", default={}, force=True)
+    if not Span.has_extension("mwe_meta"):
+        Span.set_extension("mwe_meta", default={}, force=True)
+    
+    # Load spatial maps for the factory
+    spatial_maps = load_spatial_maps()
+    
+    return MWENormalizer(nlp, spatial_maps)
