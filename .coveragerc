@@ -1,0 +1,40 @@
+[run]
+omit = 
+    src/core/research/*
+    src/mining/*
+    src/table/*
+    src/umr/*
+    src/specialists/*
+    src/ui/*
+    src/core/infrastructure/*
+    tests/*
+    .venv/*
+    */__pycache__/*
+    */migrations/*
+    */migrations/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    if settings.DEBUG
+    raise AssertionError
+    raise NotImplementedError
+    if 0:
+    if __name__ == .__main__.:
+    class .*\bProtocol\):
+    @(abc\.)?abstractmethod
+
+[html]
+directory = htmlcov
+
+# Module-specific targets
+[coverage:src/nlp/components/mwe_normalizer.py]
+target = 85
+
+[coverage:src/semgen/generator.py]
+target = 70
+
+[coverage:src/core/application/services.py]
+target = 60
