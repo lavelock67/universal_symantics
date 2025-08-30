@@ -22,6 +22,7 @@ from src.core.translation.production_pipeline_orchestrator import (
     PipelineMode,
     QualityLevel
 )
+from src.core.application.health_panel import get_health_panel
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -123,6 +124,39 @@ async def health_check():
         error_rate=health_status["error_rate"],
         components=health_status["components"]
     )
+
+
+@app.get("/health/panel")
+async def health_panel():
+    """Comprehensive health panel with pipeline integrity metrics."""
+    try:
+        health_panel = get_health_panel()
+        return health_panel.get_health_status()
+    except Exception as e:
+        logger.error(f"Health panel failed: {e}")
+        raise HTTPException(status_code=500, detail=f"Health panel failed: {e}")
+
+
+@app.get("/health/performance")
+async def performance_metrics():
+    """Detailed performance metrics with histograms."""
+    try:
+        health_panel = get_health_panel()
+        return health_panel.get_performance_metrics()
+    except Exception as e:
+        logger.error(f"Performance metrics failed: {e}")
+        raise HTTPException(status_code=500, detail=f"Performance metrics failed: {e}")
+
+
+@app.get("/health/integrity")
+async def pipeline_integrity():
+    """Pipeline integrity report."""
+    try:
+        health_panel = get_health_panel()
+        return health_panel.get_pipeline_integrity_report()
+    except Exception as e:
+        logger.error(f"Pipeline integrity report failed: {e}")
+        raise HTTPException(status_code=500, detail=f"Pipeline integrity report failed: {e}")
 
 # Metrics endpoint for Prometheus
 @app.get("/metrics")

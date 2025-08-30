@@ -1,0 +1,930 @@
+{
+  "canary_results": {
+    "total_tests": 11,
+    "passed": 10,
+    "failed": 1,
+    "success_rate": 0.9090909090909091,
+    "tests": [
+      {
+        "test_id": 1,
+        "language": "en",
+        "text": "The book is inside the box.",
+        "expected_primes": [
+          "INSIDE"
+        ],
+        "detected_primes": [
+          "INSIDE",
+          "SOMEONE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 2,
+        "language": "en",
+        "text": "He lives near the station.",
+        "expected_primes": [
+          "NEAR"
+        ],
+        "detected_primes": [
+          "NEAR",
+          "SOMEONE",
+          "DO",
+          "LIVE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 3,
+        "language": "en",
+        "text": "At most half the students read a lot.",
+        "expected_primes": [
+          "NOT",
+          "MORE",
+          "HALF",
+          "MANY"
+        ],
+        "detected_primes": [
+          "SOMEONE",
+          "THING",
+          "DO",
+          "NOT",
+          "MORE",
+          "HALF",
+          "MANY"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 4,
+        "language": "es",
+        "text": "El libro est\u00e1 dentro de la caja.",
+        "expected_primes": [
+          "INSIDE"
+        ],
+        "detected_primes": [
+          "INSIDE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 5,
+        "language": "es",
+        "text": "Vive cerca de la estaci\u00f3n.",
+        "expected_primes": [
+          "NEAR"
+        ],
+        "detected_primes": [
+          "NEAR",
+          "DO",
+          "LIVE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 6,
+        "language": "es",
+        "text": "Es falso que el medicamento no funcione.",
+        "expected_primes": [
+          "FALSE",
+          "NOT"
+        ],
+        "detected_primes": [
+          "INSIDE",
+          "SOMEONE",
+          "DO",
+          "NOT",
+          "FALSE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 7,
+        "language": "fr",
+        "text": "La lampe est au-dessus de la table.",
+        "expected_primes": [
+          "ABOVE"
+        ],
+        "detected_primes": [
+          "ABOVE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 8,
+        "language": "fr",
+        "text": "Les gens pensent que c'est tr\u00e8s bon.",
+        "expected_primes": [
+          "PEOPLE",
+          "THINK",
+          "THIS",
+          "VERY",
+          "GOOD"
+        ],
+        "detected_primes": [
+          "INSIDE",
+          "GOOD",
+          "VERY",
+          "THIS"
+        ],
+        "passed": false,
+        "status": "\u274c FAIL"
+      },
+      {
+        "test_id": 9,
+        "language": "de",
+        "text": "Das Buch ist in der Kiste.",
+        "expected_primes": [
+          "INSIDE"
+        ],
+        "detected_primes": [
+          "INSIDE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 10,
+        "language": "de",
+        "text": "Die Lampe ist \u00fcber dem Tisch.",
+        "expected_primes": [
+          "ABOVE"
+        ],
+        "detected_primes": [
+          "ABOVE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      },
+      {
+        "test_id": 11,
+        "language": "de",
+        "text": "Er wohnt in der N\u00e4he von dem Bahnhof.",
+        "expected_primes": [
+          "NEAR"
+        ],
+        "detected_primes": [
+          "NEAR",
+          "DO",
+          "LIVE"
+        ],
+        "passed": true,
+        "status": "\u2705 PASS"
+      }
+    ]
+  },
+  "performance": {
+    "total_stages": 11,
+    "stage_metrics": {
+      "spatial_from_ud_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.06327654545454545,
+        "p95_time_ms": 0.100583,
+        "max_time_ms": 0.100583
+      },
+      "primes_from_srl_semantic": {
+        "count": 4,
+        "avg_time_ms": 0.0035835,
+        "p95_time_ms": 0.005709,
+        "max_time_ms": 0.005709
+      },
+      "primes_from_morphology_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.005905272727272728,
+        "p95_time_ms": 0.0125,
+        "max_time_ms": 0.0125
+      },
+      "primes_from_negation_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.0028598181818181813,
+        "p95_time_ms": 0.005416,
+        "max_time_ms": 0.005416
+      },
+      "primes_from_residence_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.0052387272727272725,
+        "p95_time_ms": 0.020917,
+        "max_time_ms": 0.020917
+      },
+      "primes_from_truth_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.007261272727272727,
+        "p95_time_ms": 0.017583,
+        "max_time_ms": 0.017583
+      },
+      "primes_from_quantifiers_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.028530363636363635,
+        "p95_time_ms": 0.078958,
+        "max_time_ms": 0.078958
+      },
+      "primes_from_mental_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.015242454545454547,
+        "p95_time_ms": 0.048125,
+        "max_time_ms": 0.048125
+      },
+      "binders_from_open_class_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.0062728181818181815,
+        "p95_time_ms": 0.02075,
+        "max_time_ms": 0.02075
+      },
+      "sparsify_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.00778409090909091,
+        "p95_time_ms": 0.013875,
+        "max_time_ms": 0.013875
+      },
+      "generate_semantic": {
+        "count": 11,
+        "avg_time_ms": 0.19679945454545456,
+        "p95_time_ms": 0.296958,
+        "max_time_ms": 0.296958
+      }
+    }
+  },
+  "histograms": {
+    "stage_latency_ms{stage=\"spatial_from_ud\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.6960419999999999,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"primes_from_srl\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 4
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.014334,
+      "count": 4
+    },
+    "stage_latency_ms{stage=\"primes_from_morphology\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.064958,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"primes_from_negation\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.03145799999999999,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"primes_from_residence\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.057626,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"primes_from_truth\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.079874,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"primes_from_quantifiers\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.313834,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"primes_from_mental\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.167667,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"binders_from_open_class\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.06900099999999999,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"sparsify\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 0.085625,
+      "count": 11
+    },
+    "stage_latency_ms{stage=\"generate\",mode=\"semantic\"}": {
+      "buckets": [
+        {
+          "le": 0,
+          "count": 0
+        },
+        {
+          "le": 1,
+          "count": 11
+        },
+        {
+          "le": 5,
+          "count": 0
+        },
+        {
+          "le": 10,
+          "count": 0
+        },
+        {
+          "le": 25,
+          "count": 0
+        },
+        {
+          "le": 50,
+          "count": 0
+        },
+        {
+          "le": 100,
+          "count": 0
+        },
+        {
+          "le": 250,
+          "count": 0
+        },
+        {
+          "le": 500,
+          "count": 0
+        },
+        {
+          "le": 1000,
+          "count": 0
+        },
+        {
+          "le": 2500,
+          "count": 0
+        },
+        {
+          "le": 5000,
+          "count": 0
+        },
+        {
+          "le": 10000,
+          "count": 0
+        }
+      ],
+      "sum": 2.164794,
+      "count": 11
+    }
+  },
+  "counters": {
+    "generator_invocations_total": 11
+  },
+  "pipeline_integrity": {
+    "traces_not_ending_with_generator": 0,
+    "manual_detector_violations": 0,
+    "invalid_pipeline_paths": 0,
+    "compliance_status": "compliant",
+    "error_rates": {
+      "total_requests": 11,
+      "failed_requests": 0,
+      "error_rate_percent": 0.0
+    },
+    "performance_alerts": {
+      "slow_stages": [],
+      "high_latency_alerts": 0
+    }
+  },
+  "summary": {
+    "evaluation_timestamp": 1756568187.5232818,
+    "overall_status": "healthy",
+    "key_metrics": {
+      "canary_success_rate": 0.9090909090909091,
+      "pipeline_compliance": "compliant",
+      "total_requests": 11,
+      "error_rate_percent": 0.0
+    },
+    "acceptance_gates": {
+      "canaries_11_11": false,
+      "pipeline_compliant": true,
+      "error_rate_acceptable": true,
+      "performance_healthy": true
+    },
+    "recommendations": [
+      "Fix failing canary tests to achieve 100% success rate"
+    ]
+  }
+}

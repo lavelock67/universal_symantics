@@ -319,6 +319,13 @@ class NSMDetectionService(DetectionService):
                         }
                     }
                 
+                # Record pipeline integrity metrics
+                metrics.record_pipeline_integrity(
+                    semantic_trace=semantic_trace,
+                    manual_detector_count=metadata["manual_detector_count"],
+                    pipeline_path=metadata["pipeline_path"]
+                )
+                
                 # Critical pipeline integrity checks
                 assert semantic_trace[0] == "mwe", "MWE must run first"
                 assert "generator" in semantic_trace, "Generator must run"
